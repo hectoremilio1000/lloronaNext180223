@@ -5,7 +5,7 @@ import React from 'react'
 
 function QuickInfo2() {
   return (
-    <div className="mt-2 fondo2 py-2 px-2">
+    <div className="container-llorona mt-2 fondo2 py-2 px-2">
       <div>
         <h1 className="text-center text-3xl md:text-4xl uppercase font-black">Llorona's Culture</h1>
       </div>
@@ -15,7 +15,7 @@ function QuickInfo2() {
         <div className="linea1"></div>
       </div>
 
-      <div className="py-3 px-3">
+      <div className="py-3 px-3 row-qh">
         <p className="text-center text-black sm:text-2xl text-xl">
           La Llorona surge de la fusión de la riqueza de la cocina urbana
           contemporánea y la vida de la cantina mexicana. Nuestros sabores son

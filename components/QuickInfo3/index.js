@@ -4,7 +4,7 @@ import React from 'react'
 
 function QuickInfo3() {
   return (
-    <div className="mt-2 px-2 py-2">
+    <div className="container-llorona mt-2 px-2 py-2">
       <div>
         <h1 className="text-center text-3xl md:text-4xl uppercase font-black">Llorona's Passion</h1>
       </div>
@@ -14,7 +14,7 @@ function QuickInfo3() {
         <div className="linea"></div>
       </div>
 
-      <div className="py-3 px-3">
+      <div className="row-qh py-3 px-3">
         <p className="text-center text-black sm:text-2xl text-xl">
           Los <b>jueves</b> disfruta de <b>Música en vivo</b>. Así como de diferentes
           djs que tocarán los mejores sones para ti. Atrévete a <b>bailar</b> y
@@ -22,7 +22,7 @@ function QuickInfo3() {
         </p>
       </div>
       <div
-        style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}
+        style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "20px" }}
       >
         <Link href="/reserva">
           <div>
