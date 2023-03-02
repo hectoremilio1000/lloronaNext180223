@@ -4,17 +4,17 @@ import Link from 'next/link';
 
 function QuickInfo() {
   return (
-    <div className="mt-2 px-2 py-2">
+    <div className="container-llorona mt-2 px-2 py-2">
       <div>
         <h1 className="text-center text-3xl md:text-4xl uppercase font-black">La Llorona Xperience</h1>
       </div>
-      <div>
+      <div className='row-qh'>
         <h4 className="text-center text-emerald-300 text-3xl md:text-4xl m-0">¿Cómo ser un</h4>
         <h2 className="text-center text-3xl md:text-5xl capitalize">Mexicano?</h2>
         <div className="linea"></div>
       </div>
 
-      <div className="py-3 px-3">
+      <div className="py-3 px-3 row-qh">
         <p className="text-center text-black sm:text-2xl text-xl ">
           Toma nuestros cocteles con <b>Pulque, Tepache o Mezcal</b>. Prueba con nosotros
           la gastronomía urbana mexicana que va desde{" "}
@@ -47,7 +47,7 @@ function QuickInfo() {
               de Camarón
             </p>
           </div>
-         </Link> 
+        </Link>
         <Link href="/menullorona/menualimentos">
           <div className="py-1">
             <img
@@ -61,7 +61,7 @@ function QuickInfo() {
             </p>
           </div>
         </Link>
-        <Link href="/menullorona/menubebidas/artesanal"> 
+        <Link href="/menullorona/menubebidas/artesanal">
           <div className="py-1">
             <img
               className="imagenAbajoTexto1Home"
@@ -70,8 +70,8 @@ function QuickInfo() {
             />
             <p className="textoFotosHome">
               Pulque
-             
-             
+
+
             </p>
           </div>
         </Link>

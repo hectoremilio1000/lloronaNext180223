@@ -2,36 +2,14 @@ import Link from 'next/link'
 import React, { useState } from "react";
 import Image from 'next/image'
 import logo from '../../data/imagenes/logo_alta_sin_nombre.png'
+
+// css navbar
+
+// icons react
+import { FaAlignRight } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import './navbar.module.css'
-import { Menu } from 'antd';
 import { useRouter } from 'next/navigation';
-
-import {
-  SmileOutlined,
-  GlobalOutlined,
-  FileSearchOutlined,
-  DollarCircleOutlined,
-  BorderOuterOutlined,
-} from "@ant-design/icons";
-
-function getItem(label, key, icon, children, type) {
-  return {
-    key,
-    icon,
-    children,
-    label,
-    type,
-  };
-}
-
-const items = [
-  getItem("Menú", "sub1", null, [
-    getItem("Reserva", "reserva", <SmileOutlined />),
-    getItem("Menú", "menu", <FileSearchOutlined />),
-    getItem("Mezcal", "mezcal", <DollarCircleOutlined />),
-    getItem("Franquicias", "franquicias", <GlobalOutlined />),
-  ]),
-];
 
 
 function NavBar() {
@@ -46,22 +24,63 @@ function NavBar() {
 
   return (
 
-    <div className="Container" style={{ display: 'flex', justifyContent:'space-between', alignItems: 'center' }}>
+    <div className="header-container">
+      <div className='row-qh'>
 
-      <Link href="/">
+        {/* <Link href="/">
         <Image src={logo} width={100}
           alt="llorona" priority />
 
-      </Link>
+      </Link> */}
+        <div className='header-logo'>
+          <Link href="/" className="logo">
+            <Image src={logo} width={100}
+              alt="llorona" priority />
+          </Link>
+          <FaAlignRight
+            className="toggle-icon"
+            onClick={() => {
+              handleNavbar();
+            }}
+          />
+        </div>
+        <div className='linkswraper'>
+          <li key="0">
+            <Link href="/" className="nav-link">
+              Inicio
+            </Link>
+          </li>
+          <li key="1">
+            <Link href="/reserva" className="nav-link">
+              Reserva
+            </Link>
+          </li>
+          <li key="2">
+            <Link href="/menullorona" className="nav-link">
+              Menu
+            </Link>
+          </li>
+          <li key="3">
+            <Link href="/mezcal" className="nav-link">
+              Mezcal
+            </Link>
+          </li>
+          <li key="4">
+            <Link href="/franquicias" className="nav-link">
+              Franquicias
+            </Link>
+          </li>
+        </div>
+        <div className='header-icons'>
+          <a key="0" href="https://www.facebook.com/Lalloronacantinacdmx" target="_blank" rel="noopener noreferrer">
+            <FaFacebook className="icon facebook-icon" />
+          </a>
+          <a key="1" href="https://www.instagram.com/cantinalallorona/" target="_blank" rel="noopener noreferrer">
+            <FaInstagram className="icon instagram-icon" />
+          </a>
+        </div>
+      </div>
 
-      <Menu
-        selectedKeys={current}
-        onClick={cambiarComponent}
-        mode="horizontal"
-        items={items}
-        className="menuPrincipal"
-        style={{ minWidth: 100 }}
-      />
     </div>
 
   )

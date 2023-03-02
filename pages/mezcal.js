@@ -1,9 +1,9 @@
 import React from 'react'
-import MezcalInfo from '../../Components/MezcalInfo/index';
-import NuestroMezcalImages from '../../Components/NuestroMezcalImages';
-import NuestroMezcalInfo from '../../Components/NuestroMezcalInfo';
-import ProcesoElaboracion from '../../Components/ProcesoElaborarion/index';
-import TitlebarImageList from '../../Components/TitlebarImageList/index';
+// import MezcalInfo from '../../Components/MezcalInfo/index';
+// import NuestroMezcalImages from '../../Components/NuestroMezcalImages';
+// import NuestroMezcalInfo from '../../Components/NuestroMezcalInfo';
+// import ProcesoElaboracion from '../../Components/ProcesoElaborarion/index';
+// import TitlebarImageList from '../../Components/TitlebarImageList/index';
 
 function Mezcal() {
   return (

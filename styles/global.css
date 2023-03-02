@@ -1,30 +1,50 @@
+@font-face {
+  font-family: 'Gagalin-Regular';
+  src: url('./Gagalin-Regular.otf')
+}
+
+@import url('https://fonts.cdnfonts.com/css/berthold-akzidenz-grotesk-be-9');
+
+h1 {
+  font-family: "Gagalin-Regular";
+}
+
 /* BANEER*/
-.ant-menu-horizontal{
+.ant-menu-horizontal {
   border-bottom: 0px !important;
 }
 
+.container-llorona {
+  padding: 120px 0px !important;
+}
+
+.row-qh {
+  width: 100%;
+  max-width: 1300px !important;
+  margin: auto;
+}
 
 .bannerFinal2 {
   display: flex;
   align-items: flex-start;
 }
 
-.contenedorLenguaje{
+.contenedorLenguaje {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
 }
 
-.textoFotosHome{
+.textoFotosHome {
   font-size: 20px;
   text-align: center;
   color: black;
   margin-top: 10px;
 }
-.imagen2AbajoTexto1Home{
-   width: 200px;
+
+.imagen2AbajoTexto1Home {
+  width: 200px;
   height: 300px;
-  margin-right: 20px;
   border-radius: 10px;
   object-fit: cover
 }
@@ -45,49 +65,49 @@
   vertical-align: middle
 }
 
-.contenedorMenu{
-display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.contenedorMenu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.buttonText{
-  color:rgba(0, 0, 0, 0.85);
+.buttonText {
+  color: rgba(0, 0, 0, 0.85);
   font-size: 20px;
   text-align: center;
-  margin:0
+  margin: 0
 }
 
 
 .iconoAbajoTexto1Home {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   margin-right: 20px;
   border-radius: 10px;
   object-fit: cover
 }
 
- .texto1Home{
-    font-size: 25px;
-  }
+.texto1Home {
+  font-size: 25px;
+}
 
-  .bannerMenu{
+.bannerMenu {
   background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/banner/bannerMenu.jpg");
-            background-size: cover !important;
-background-repeat: no-repeat;
-            height: 100vh;
-            background-position: center;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
 }
 
 
 
 
-                .bannerFranquicias{
+.bannerFranquicias {
   background-image: url("../public/images/banner/franquicias/franquiciasBanner.jpg");
-            background-size: cover !important;
-background-repeat: no-repeat;
-            height: 90vh;
-            background-position: center;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  height: 90vh;
+  background-position: center;
 }
 
 /* .imagenesDefinidas{
@@ -96,29 +116,57 @@ background-repeat: no-repeat;
   height: 425px;
 } */
 
-.bannerHome{
-  background-image: url("../public/images/banner/Home/bannerHomeLucha.jpg");
-            background-size: cover !important;
-background-repeat: no-repeat;
-            height: 100vh;
-            background-position: center;
+.bannerHome {
+  background-image: url("../public/images/bannercalaca.png");
+  background-size: cover !important;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+  height: 100vh;
+  background-position: center;
+  position: relative;
+  /* background-color: #2c2c2c; */
 }
 
-.fondo2{
-    background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/subfondo/subfondo1/Asset+1+copy.png");
+.title-portada {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2000;
+  margin: 0 !important;
+}
+
+.bannerHome::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00000047;
+  z-index: 1000;
+}
+
+.fondo2 {
+  /* background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/subfondo/subfondo1/Asset+1+copy.png");
             background-size: cover !important;
 background-repeat: no-repeat;
             height: 100%;
             width: 100% !important;
-            background-position: center;
-            
+            background-position: center; */
+  background-color: #9ff9d2;
 }
 
-.bannerCantina{
+.bannerCantina {
   background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/cantina/bannerCantina.jpg");
   background-size: cover;
   height: 100vh;
-  background-position: top;  
+  background-position: top;
 }
 
 .LloronaNombre {
@@ -158,8 +206,9 @@ background-repeat: no-repeat;
   color: black !important;
   margin-top: -10px;
 }
-.bannerHomeTexto{
-   font-size: 30px !important;
+
+.bannerHomeTexto {
+  font-size: 30px !important;
   color: rgba(255, 255, 255, 0) !important;
   text-align: center !important;
 }
@@ -178,8 +227,9 @@ background-repeat: no-repeat;
 
 .subContenedor1Banner {
   display: flex;
-  justify-content: flex-end;
-  padding-top: 10px;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .subContenedor2Banner {
@@ -212,7 +262,7 @@ background-repeat: no-repeat;
   padding-top: 10px;
 }
 
-.tituloSection2{
+.tituloSection2 {
   letter-spacing: 0.3rem;
   font-size: 2rem;
   color: white;
@@ -235,15 +285,15 @@ background-repeat: no-repeat;
   text-align: center !important;
 }
 
-.subTituloSection1{
- letter-spacing: 0.3rem;
+.subTituloSection1 {
+  letter-spacing: 0.3rem;
   font-size: 2rem;
   text-transform: uppercase;
   text-align: center !important;
   color: black;
 }
 
-.linea1{
+.linea1 {
   width: 5rem;
   height: 0.2rem;
   background: white;
@@ -332,18 +382,20 @@ ul {
   .iniciar_sesion {
     font-size: 13px;
   }
-  .contenedorMenu{
+
+  .contenedorMenu {
     flex-wrap: nowrap;
   }
+
   .registrar_sesion {
     font-size: 13px;
   }
 
-  .textoFotosHome{
-margin-top: 0px;
+  .textoFotosHome {
+    margin-top: 0px;
   }
 
-   .texto1Home{
+  .texto1Home {
     font-size: 18px;
     color: black !important;
   }
@@ -352,57 +404,60 @@ margin-top: 0px;
     margin-bottom: 20px;
   }
 
-  .iconoAbajoTexto1Home{
+  .iconoAbajoTexto1Home {
     margin-bottom: 20px;
   }
 
-    .bannerMenu{
-  background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/banner/bannerMenuMovil.jpg");
-            background-size: cover !important;
-background-repeat: no-repeat;
-            height: 100vh;
-            background-position: center;
-}
+  .bannerMenu {
+    background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/banner/bannerMenuMovil.jpg");
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+  }
 
-.bannerHome{
-  background-image: url("../public//images/banner//Home/bannerHomeMole.jpg");
-            background-size: cover !important;
-background-repeat: no-repeat;
-            height: 100vh;
-            background-position: center;
-}
-.bannerHomeTexto{
-   font-size: 30px !important;
-  color: white !important;
-  text-align: center !important;
-}
+
+  .bannerHomeTexto {
+    font-size: 30px !important;
+    color: white !important;
+    text-align: center !important;
+  }
 }
 
 /* css de celular*/
-@media (max-width: 500px) {
+@media (max-width: 650px) {
+  .container-cards {
+    gap: 10px !important;
 
-  .contenedorMenu{
-display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card-menu {
+    width: 100%;
+  }
+
+  .contenedorMenu {
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
+  }
 
-.contenedorA{
-  margin-top: 20px;
-}
+  .contenedorA {
+    margin-top: 20px;
+  }
 
-  .bannerCantina{
-  background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/cantina/bannerCantina500x1000.jpg") !important;
-  background-size: cover !important;
-  height: 90vh !important;
-  background-position: center !important;    
-}
+  .bannerCantina {
+    background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/cantina/bannerCantina500x1000.jpg") !important;
+    background-size: cover !important;
+    height: 90vh !important;
+    background-position: center !important;
+  }
 
-.imagenAbajoTexto1Home {
-  margin-right: 0px;
-}
+  .imagenAbajoTexto1Home {
+    margin-right: 0px;
+  }
 
- .iconoAbajoTexto1Home{
+  .iconoAbajoTexto1Home {
     margin-right: 0px;
   }
 
@@ -415,8 +470,8 @@ display: flex;
     align-items: center;
   }
 
- 
-  
+
+
 
   /* Calendario*/
   .tituloCalendario {
@@ -450,6 +505,7 @@ display: flex;
     font-size: 20px !important;
     color: black !important;
   }
+
   .proximamente2 {
     font-size: 20px !important;
   }
@@ -483,6 +539,7 @@ display: flex;
   .nombre_logo {
     width: 200px;
   }
+
   .bloque_sesion {
     margin: 0;
   }
@@ -490,6 +547,7 @@ display: flex;
   .iniciar_sesion {
     font-size: 10px;
   }
+
   .registrar_sesion {
     font-size: 10px;
   }
@@ -502,9 +560,43 @@ display: flex;
   .atrevete_footer {
     font-size: 14px !important;
   }
+
   .descripcion_footer {
     font-size: 11px !important;
   }
+
+  /* css de nabvar */
+  .header-container {
+    padding: 10px 20px !important;
+  }
+
+  .header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff !important;
+    width: 100%;
+  }
+
+  .linkswraper {
+    display: none !important;
+    width: 100%;
+    position: fixed;
+    top: 150px;
+    left: 0;
+    flex-direction: column;
+    background-color: #fff;
+  }
+
+  .linkswraper .nav-link {
+    color: #000;
+    padding: 20px 0px !important;
+  }
+
+  .header-icons {
+    display: none !important;
+  }
+
 }
 
 /*revisar*/
@@ -534,6 +626,7 @@ h4 {
   line-height: 1.25;
   margin-bottom: 0.75rem;
 }
+
 h2 {
   font-size: 50px;
 }
@@ -562,9 +655,11 @@ p {
     width: 95vw;
   }
 }
+
 .menu {
   padding: 5rem 0 !important;
 }
+
 .title {
   text-align: center;
   margin-bottom: 2rem;
@@ -633,12 +728,15 @@ p {
   justify-content: space-between;
   border-bottom: 0.5px dotted hsl(210, 22%, 49%);
 }
+
 .item-info h4 {
   margin-bottom: 0.5rem;
 }
+
 .price {
   color: #c59d5f;
 }
+
 .item-text {
   margin-bottom: 0;
   padding-top: 1rem;
@@ -650,16 +748,211 @@ p {
     gap: 0 1.25rem;
     max-width: 40rem;
   }
+
   .photo {
     height: 175px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .section-center {
     width: 95vw;
     grid-template-columns: 1fr 1fr;
   }
+
   .photo {
     height: 150px;
   }
+}
+
+/* menu detail css */
+.menu-detail {
+  margin-top: -300px;
+  position: relative;
+  z-index: 2500;
+  padding-bottom: 0 !important;
+
+}
+
+.menu-detail .row-qh {
+  padding: 80px;
+  background-color: #9ff9d2;
+  border-bottom: 1px solid #ededed;
+  /* box-shadow: -1px 10px 33px -5px #ececec; */
+}
+
+.subTitle {
+  font-size: 22px;
+  display: block;
+  text-align: center;
+  font-family: 'Berthold Akzidenz Grotesk BE', sans-serif;
+}
+
+.container-cards {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+}
+
+.container-cards .card-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card-menu .card-detail {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-detail .separator {
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+
+.card-detail .separator .content-name-plat {
+
+  display: block;
+  margin-right: 20px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.card-detail .separator::after {
+  display: block;
+  content: "";
+  border-bottom: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  border-top: 2px dashed #000;
+}
+
+.card-detail .precio-plat {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.card-detail .content-platillo {
+  width: 100%;
+  font-size: 20px;
+}
+
+/* css promociones */
+.subbanner {
+  margin-top: 40px;
+  display: flex;
+  gap: 30px;
+}
+
+.subbanner .card-banner {
+  width: 100%;
+}
+
+.subbanner .card-banner:nth-child(1) {
+  width: 42%;
+}
+
+.subbanner .card-banner:nth-child(2) {
+  width: 35.3%;
+}
+
+.subbanner .card-banner:nth-child(3) {
+  width: 22.7%;
+}
+
+.card-banner.banner-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-banner .img-banner {
+  width: 100%;
+  height: 100%;
+  display: block;
+
+  position: relative;
+}
+
+.card-banner .subbanner-text {
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 9;
+  padding: 30px;
+}
+
+/* .subbanner-text .offer-title {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 25px;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.22px;
+  text-align: center;
+  padding: 0;
+} */
+
+/* 
+.subbanner-text .offer-title::before {
+  background: url("https://capricathemes.com/prestashop/PRS12/PRS120292/themes/WallFood/assets/img/codezeel/offer-pattern.png") no-repeat scroll 0 0px;
+  content: "";
+  width: 119px;
+  height: 117px;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: -10px;
+} */
+
+.offer-title span {
+  display: block;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 0.22px;
+}
+
+.subbanner-text .main-title {
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.subbanner-text .sub-title {
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0.22px;
+  line-height: 32px;
+}
+
+.subbanner-text .shopnow>a {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  background: #07ebac;
+  padding: 7px 22px;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.img-banner img {
+  width: 100%;
+  height: 100%;
+  margin: 0 !important;
+  object-fit: cover;
+  object-position: center center;
 }
