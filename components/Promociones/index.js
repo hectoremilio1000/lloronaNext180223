@@ -46,7 +46,7 @@ function Promociones() {
                     <div className="card-banner">
                         <Link className='img-banner' href="/promociones/cards0">
                             <Image src={promo4} alt="" />
-                            <div class="subbanner-text">
+                            <div className="subbanner-text">
                                 <div className="offer-title">30% Discount</div>
                                 <div className="main-title">Healthy Breakfast</div>
                                 <div className="shopnow"><a className="shop-now" href="#">Order Now</a></div>
