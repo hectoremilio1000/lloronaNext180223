@@ -25,7 +25,7 @@ function NavBar() {
   return (
 
     <div className="header-container">
-      <div className='row-qh'>
+      <div className='row-qh px-4'>
 
         {/* <Link href="/">
         <Image src={logo} width={100}
@@ -46,7 +46,7 @@ function NavBar() {
         </div>
         <div className='linkswraper'>
           <li key="0">
-            <Link href="/" className="nav-link">
+            <Link href="/" className="text-white font-bold hover:text-emerald-300">
               Inicio
             </Link>
           </li>

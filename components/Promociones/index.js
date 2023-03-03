@@ -17,28 +17,28 @@ function Promociones() {
                     <div className="banner-col card-banner">
                         <Link className='img-banner' href="/promociones/cards0">
                             <Image src={promo2} alt="" />
-                            <div class="subbanner-text">
-                                <div class="offer-title">30% <span>Dcto.</span></div>
-                                <div class="main-title">Weekend Special</div>
-                                <div class="sub-title">Italian Veg Pizza</div>
-                                <div class="shopnow"><a class="shop-now" href="#">Order Now</a></div>
+                            <div className="subbanner-text">
+                                <div className="offer-title">30% <span>Dcto.</span></div>
+                                <div className="main-title">Weekend Special</div>
+                                <div className="sub-title">Italian Veg Pizza</div>
+                                <div className="shopnow"><a className="shop-now" href="#">Order Now</a></div>
                             </div>
                         </Link>
                         <Link className='img-banner' href="/promociones/cards0">
                             <Image src={promo3} alt="" />
-                            <div class="subbanner-text">
-                                <div class="offer-title">Up To <span>50%</span> <span class="desc">Descuento</span></div>
+                            <div className="subbanner-text">
+                                <div className="offer-title">Up To <span>50%</span> <span className="desc">Descuento</span></div>
                             </div>
                         </Link>
                     </div>
                     <div className="card-banner">
                         <Link className='img-banner' href="/promociones/cards0">
                             <Image src={promo1} alt="" />
-                            <div class="subbanner-text">
-                                <div class="offer-title"><span>40%</span> Discount</div>
-                                <div class="subbanner-desc">
-                                    <div class="main-title">Today's Menu</div>
-                                    <div class="sub-title">Weekend Special Offer</div>
+                            <div className="subbanner-text">
+                                <div className="offer-title"><span>40%</span> Discount</div>
+                                <div claclassName="subbanner-desc">
+                                    <div className="main-title">Today's Menu</div>
+                                    <div className="sub-title">Weekend Special Offer</div>
                                 </div>
                             </div>
                         </Link>
@@ -47,9 +47,9 @@ function Promociones() {
                         <Link className='img-banner' href="/promociones/cards0">
                             <Image src={promo4} alt="" />
                             <div class="subbanner-text">
-                                <div class="offer-title">30% Discount</div>
-                                <div class="main-title">Healthy Breakfast</div>
-                                <div class="shopnow"><a class="shop-now" href="#">Order Now</a></div>
+                                <div className="offer-title">30% Discount</div>
+                                <div className="main-title">Healthy Breakfast</div>
+                                <div className="shopnow"><a className="shop-now" href="#">Order Now</a></div>
                             </div>
                         </Link>
                     </div>
