@@ -36,11 +36,11 @@ export default function Home() {
         </div>
       </div>
       <MenuDetail />
-      <Promociones />
+      {/* <Promociones /> */}
       <QuickInfo />
       <QuickInfo2 />
       <QuickInfo3 />
-      <div className="">
+      {/* <div className="">
         <div>
           <h4 className="text-center text-emerald-300 text-3xl md:text-4xl m-0">Ubicación</h4>
           <h2 className="text-center text-3xl md:text-5xl capitalize">
@@ -62,7 +62,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

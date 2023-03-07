@@ -1,22 +1,23 @@
 import Link from 'next/link';
-import React from 'react'
+import React, { useState } from 'react'
 
 
 
 function QuickInfo2() {
+
   return (
-    <div className="container-llorona mt-2 fondo2 py-2 px-2">
+    <div className="container-llorona py-2 px-2">
       <div>
-        <h1 className="text-center text-3xl md:text-4xl uppercase font-black">Llorona's Culture</h1>
+        <h1 className="text-center text-3xl md:text-4xl uppercase">Llorona's Culture</h1>
       </div>
       <div>
-        <h4 className="text-center tituloSection2 m-0">Nuestras</h4>
-        <h2 className="text-center subTituloSection1">Raíces</h2>
+        <h4 className="text-center  text-black tituloSection2 m-0">Nuestras</h4>
+        <h2 className="text-center text-3xl">Raíces</h2>
         <div className="linea1"></div>
       </div>
 
       <div className="py-3 px-3 row-qh">
-        <p className="text-center text-black sm:text-2xl text-xl">
+        <p className="text-center sm:text-2xl text-xl">
           La Llorona surge de la fusión de la riqueza de la cocina urbana
           contemporánea y la vida de la cantina mexicana. Nuestros sabores son
           inconfundibles y amados en todo el mundo. Nuestra{" "}
@@ -27,7 +28,7 @@ function QuickInfo2() {
         </p>
       </div>
       <div
-        style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}
+        style={{ gap: "20px", display: "flex", justifyContent: "center", flexWrap: "wrap" }}
       >
         <Link href="/menullorona/menualimentos">
           <div>
@@ -36,7 +37,7 @@ function QuickInfo2() {
               src="https://imagenesrutalab.s3.amazonaws.com/llorona/iconos/bol.png"
               alt="Tacos deliciosos de Cochinita Pibil"
             />
-            <p className="textoFotosHome">Menú Alimentos</p>
+            <p className="textoFotosHome text-black">Menú Alimentos</p>
           </div>
         </Link>
         <Link href="/menullorona/menubebidas/artesanal">
@@ -46,7 +47,7 @@ function QuickInfo2() {
               src="https://imagenesrutalab.s3.amazonaws.com/llorona/iconos/tequila.png"
               alt="Pierde Almas con Mezcal"
             />
-            <p className="textoFotosHome">Mixología Artesanal</p>
+            <p className="textoFotosHome text-black">Mixología Artesanal</p>
           </div>
         </Link>
         <Link href="/menullorona/menubebidas/artesanal">
@@ -56,7 +57,7 @@ function QuickInfo2() {
               src="https://imagenesrutalab.s3.amazonaws.com/llorona/iconos/mezcal.png"
               alt="Mezcales y Pulque Artesanal"
             />
-            <p className="textoFotosHome">
+            <p className="textoFotosHome text-black">
               Mezcales & Sotoles
               <br />
               Artesanales
@@ -70,7 +71,7 @@ function QuickInfo2() {
               src="https://imagenesrutalab.s3.amazonaws.com/llorona/iconos/cerveza+(1).png"
               alt="Cervezas Artesanales"
             />
-            <p className="textoFotosHome">
+            <p className="textoFotosHome text-black">
               Cerveza Artesanal
               <br />
               Mexicana
@@ -84,7 +85,7 @@ function QuickInfo2() {
               src="https://imagenesrutalab.s3.amazonaws.com/llorona/iconos/whisky.png"
               alt="Destilados"
             />
-            <p className="textoFotosHome">Destilados</p>
+            <p className="textoFotosHome text-black">Destilados</p>
           </div>
         </Link>
         <Link href="/menullorona/menubebidas/industrial">
@@ -94,7 +95,7 @@ function QuickInfo2() {
               src="https://imagenesrutalab.s3.amazonaws.com/llorona/iconos/taza-de-cafe.png"
               alt="Pierde Almas con Mezcal"
             />
-            <p className="textoFotosHome">
+            <p className="textoFotosHome text-black">
               Café, Sodas <br /> y Cervezas Industriales
             </p>
           </div>

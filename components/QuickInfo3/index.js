@@ -4,18 +4,18 @@ import React from 'react'
 
 function QuickInfo3() {
   return (
-    <div className="container-llorona mt-2 px-2 py-2">
+    <div className="container-llorona px-2 py-2">
       <div>
         <h1 className="text-center text-3xl md:text-4xl uppercase font-black">Llorona's Passion</h1>
       </div>
       <div>
         <h4 className="text-center text-emerald-300 text-3xl md:text-4xl m-0">Buen Son y Sazón</h4>
-        <h2 className="text-center text-3xl md:text-5xl capitalize">para todo Corazón</h2>
+        <h2 className="text-center text-white text-3xl md:text-5xl capitalize">para todo Corazón</h2>
         <div className="linea"></div>
       </div>
 
       <div className="row-qh py-3 px-3">
-        <p className="text-center text-black sm:text-2xl text-xl">
+        <p className="text-center sm:text-2xl text-xl">
           Los <b>jueves</b> disfruta de <b>Música en vivo</b>. Así como de diferentes
           djs que tocarán los mejores sones para ti. Atrévete a <b>bailar</b> y
           disfrutar de la <b>felicidad Mexicana </b>que traemos para ti.

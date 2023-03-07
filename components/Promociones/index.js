@@ -21,7 +21,7 @@ function Promociones() {
                                 <div className="offer-title">30% <span>Dcto.</span></div>
                                 <div className="main-title">Weekend Special</div>
                                 <div className="sub-title">Italian Veg Pizza</div>
-                                <div className="shopnow"><a className="shop-now" href="#">Order Now</a></div>
+                                <div className="shopnow"></div>
                             </div>
                         </Link>
                         <Link className='img-banner' href="/promociones/cards0">
@@ -36,7 +36,7 @@ function Promociones() {
                             <Image src={promo1} alt="" />
                             <div className="subbanner-text">
                                 <div className="offer-title"><span>40%</span> Discount</div>
-                                <div claclassName="subbanner-desc">
+                                <div className="subbanner-desc">
                                     <div className="main-title">Today's Menu</div>
                                     <div className="sub-title">Weekend Special Offer</div>
                                 </div>
@@ -49,7 +49,7 @@ function Promociones() {
                             <div className="subbanner-text">
                                 <div className="offer-title">30% Discount</div>
                                 <div className="main-title">Healthy Breakfast</div>
-                                <div className="shopnow"><a className="shop-now" href="#">Order Now</a></div>
+                                <div className="shopnow"></div>
                             </div>
                         </Link>
                     </div>

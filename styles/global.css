@@ -38,7 +38,6 @@ h1 {
 .textoFotosHome {
   font-size: 20px;
   text-align: center;
-  color: black;
   margin-top: 10px;
 }
 
@@ -52,8 +51,6 @@ h1 {
 .imagenAbajoTexto1Home {
   width: 300px;
   height: 300px;
-  margin-right: 20px;
-  border-radius: 10px;
   object-fit: cover
 }
 
@@ -99,7 +96,11 @@ h1 {
   background-position: center;
 }
 
-
+/* .bannerMexicano {
+  background-image: url("../public/images/banner2.jpg");
+  background-repeat: repeat;
+  background-position: center;
+} */
 
 
 .bannerFranquicias {
@@ -148,7 +149,7 @@ h1 {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #00000047;
+  background-color: #000000c2;
   z-index: 1000;
 }
 
@@ -159,7 +160,7 @@ background-repeat: no-repeat;
             height: 100%;
             width: 100% !important;
             background-position: center; */
-  background-color: #9ff9d2;
+  background-color: #000;
 }
 
 .bannerCantina {
@@ -263,9 +264,7 @@ background-repeat: no-repeat;
 }
 
 .tituloSection2 {
-  letter-spacing: 0.3rem;
   font-size: 2rem;
-  color: white;
   text-align: center !important;
   font-weight: 800;
 }
@@ -565,37 +564,7 @@ ul {
     font-size: 11px !important;
   }
 
-  /* css de nabvar */
-  .header-container {
-    padding: 10px 20px !important;
-  }
 
-  .header-logo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #fff !important;
-    width: 100%;
-  }
-
-  .linkswraper {
-    display: none !important;
-    width: 100%;
-    position: fixed;
-    top: 150px;
-    left: 0;
-    flex-direction: column;
-    background-color: #fff;
-  }
-
-  .linkswraper .nav-link {
-    color: #000;
-    padding: 20px 0px !important;
-  }
-
-  .header-icons {
-    display: none !important;
-  }
 
 }
 
@@ -770,6 +739,7 @@ p {
   margin-top: -300px;
   position: relative;
   z-index: 2500;
+  padding: 80px 20px !important;
   padding-bottom: 0 !important;
 
 }
@@ -834,6 +804,7 @@ p {
   width: 10%;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   padding-left: 10px;
   font-weight: 500;
   font-size: 22px;
@@ -843,6 +814,25 @@ p {
   width: 100%;
   font-size: 20px;
 }
+
+@media screen and (max-width: 650px) {
+  .card-detail .separator .content-name-plat {
+    font-size: 18px;
+  }
+
+  .card-detail .content-platillo {
+    font-size: 15px;
+  }
+
+  .card-detail .separator {
+    width: 70%;
+  }
+
+  .card-detail .precio-plat {
+    width: 30%;
+  }
+}
+
 
 /* css promociones */
 .subbanner {
@@ -881,13 +871,25 @@ p {
   position: relative;
 }
 
+.card-banner .img-banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8631827731092436) 0%, rgba(255, 255, 255, 0.04525560224089631) 100%);
+  z-index: 1000;
+}
+
 .card-banner .subbanner-text {
   color: #fff;
   position: absolute;
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: 9;
+  z-index: 2000;
   padding: 30px;
 }
 
@@ -955,4 +957,18 @@ p {
   margin: 0 !important;
   object-fit: cover;
   object-position: center center;
+}
+
+@media (max-width: 650px) {
+  .subbanner {
+    flex-wrap: wrap;
+  }
+
+  .card-banner {
+    width: 100% !important;
+  }
+
+  .menu-detail .row-qh {
+    padding: 80px 20px !important;
+  }
 }

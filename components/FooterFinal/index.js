@@ -5,7 +5,7 @@ import { FaFacebook, FaInstagram } from 'react-icons/fa';
 
 function FooterFinal() {
     return (
-        <footer className="bg-emerald-300 py-12">
+        <footer className=" fondo2 py-12">
 
             <div className="max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8">
                 <nav className="-mx-5 -my-2 flex flex-wrap justify-center">
@@ -31,14 +31,14 @@ function FooterFinal() {
                     </div>
                 </nav>
                 <div className="mt-8 flex justify-center space-x-6">
-                    
+
                     <a href="https://www.facebook.com/Lalloronacantinacdmx">
                         <FaFacebook className="w-6 h-6 text-blue-600 hover:text-white" />
                     </a>
                     <a href="https://www.instagram.com/cantinalallorona/">
-                        <FaInstagram className="w-6 h-6 text-pink-600 hover:text-white"/>
-                       
-                       </a>
+                        <FaInstagram className="w-6 h-6 text-pink-600 hover:text-white" />
+
+                    </a>
                 </div>
             </div>
             <div className="pt-3">

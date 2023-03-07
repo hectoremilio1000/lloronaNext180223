@@ -14,8 +14,27 @@ import { useRouter } from 'next/navigation';
 
 function NavBar() {
   const [current, setCurrent] = useState("");
+  const [linkswraper, setLinkswraper] = useState(false);
+  const [navbar, setNavbar] = useState(false)
 
+  const changeBackground = () => {
+    if (typeof window !== "undefined") {
+      if (window.scrollY >= 80) {
+        setNavbar(true)
+      } else {
+        setNavbar(false)
+      }
+    }
+  }
+  if (typeof window !== "undefined") {
+    // browser code
+    window.addEventListener("scroll", changeBackground);
+  }
   const navigate = useRouter();
+
+  const handleNavbar = () => {
+    setLinkswraper(!linkswraper)
+  }
 
   const cambiarComponent = e => {
     setCurrent(e.key);
@@ -24,7 +43,7 @@ function NavBar() {
 
   return (
 
-    <div className="header-container">
+    <div className={navbar ? "header-container sticky" : "header-container"}>
       <div className='row-qh px-4'>
 
         {/* <Link href="/">
@@ -44,9 +63,9 @@ function NavBar() {
             }}
           />
         </div>
-        <div className='linkswraper'>
+        <div className={linkswraper ? 'linkswraper active' : 'linkswraper'}>
           <li key="0">
-            <Link href="/" className="text-white font-bold hover:text-emerald-300">
+            <Link href="/" className="nav-link">
               Inicio
             </Link>
           </li>
