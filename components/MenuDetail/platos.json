@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "nombre": "Pescado Frito",
+        "precio": "95",
+        "category": "bebidas",
+        "description" : "Classic greek salad, barrel aged feta cheese, bread"
+    },
+    {
+        "id": 2,
+        "nombre": "Hamburguesa",
+        "precio": "95",
+        "category": "comida",
+        "description" : "Classic greek salad, barrel aged feta cheese, bread"
+    },
+    { 
+        "id": 3,
+        "nombre": "Pizza",
+        "precio": "95",
+        "category": "bebidas",
+        "description" : "Classic greek salad, barrel aged feta cheese, bread"
+    },
+    {
+        "id": 4,
+        "nombre": "Salchiboraster",
+        "precio": "95",
+        "category": "postres",
+        "description" : "Classic greek salad, barrel aged feta cheese, bread"
+    },
+    {
+        "id": 5,
+        "nombre": "Mojitos",
+        "precio": "95",
+        "category": "bebidas",
+        "description" : "Classic greek salad, barrel aged feta cheese, bread"
+    },
+    {
+        "id": 6,
+        "nombre": "Pescado Frito",
+        "precio": "95",
+        "category": "postres",
+        "description" : "Classic greek salad, barrel aged feta cheese, bread"
+    },
+    {
+        "id": 7,
+        "nombre": "Pescado Frito",
+        "precio": "95",
+        "category": "comida",
+        "description" : "Classic greek salad, barrel aged feta cheese, bread"
+    },
+    {
+        "id": 8,
+        "nombre": "Pescado Frito",
+        "precio": "95",
+        "category": "bebidas",
+        "description" : "Classic greek salad, barrel aged feta cheese, bread"
+    }
+]

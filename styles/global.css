@@ -1,9 +1,9 @@
+@import url('https://fonts.cdnfonts.com/css/berthold-akzidenz-grotesk-be-9');
+
 @font-face {
   font-family: 'Gagalin-Regular';
   src: url('./Gagalin-Regular.otf')
 }
-
-@import url('https://fonts.cdnfonts.com/css/berthold-akzidenz-grotesk-be-9');
 
 h1 {
   font-family: "Gagalin-Regular";
