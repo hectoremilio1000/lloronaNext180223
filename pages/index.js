@@ -16,7 +16,7 @@ export default function Home() {
         <title>La Llorona</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="d-flex subContenedor1Banner bannerHome">
+      <div className="d-flex subContenedor1Banner banner bannerHome">
         {/* <video autoPlay muted loop src={videoPort} /> */}
 
         <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada">

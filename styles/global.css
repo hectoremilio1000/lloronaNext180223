@@ -142,7 +142,7 @@ h1 {
   margin: 0 !important;
 }
 
-.bannerHome::before {
+.banner::before {
   content: "";
   position: absolute;
   top: 0;

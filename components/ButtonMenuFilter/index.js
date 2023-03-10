@@ -1,13 +1,12 @@
 import React from 'react'
 import styles from "../Main/menuCategory.module.css"
 
-function ButtonMenuFilter({ categories, filterCategory }) {
-    console.log(categories)
+function ButtonMenuFilter({ categories, filterCategory, viewCategory }) {
     return (
         <div className={styles.menu_categories}>
             {categories.map(category => {
                 return (
-                    <button className='activeM'
+                    <button className={viewCategory === category ? styles.activeM : null}
                         onClick={() => filterCategory(category)}
                         key={category}
                     >

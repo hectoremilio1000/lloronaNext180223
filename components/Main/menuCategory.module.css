@@ -12,8 +12,8 @@
     color: #000;
 }
 
-.menu_categories button.activeM {
-    background-color: #058344;
+.menu_categories .activeM {
+    background-color: #058344 !important;
     color: #fff;
 }
 
