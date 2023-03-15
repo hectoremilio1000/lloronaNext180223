@@ -11,22 +11,22 @@ function FooterFinal() {
                 <nav className="-mx-5 -my-2 flex flex-wrap justify-center">
                     <div className="px-5 py-2">
                         <Link href="/reserva">
-                            <p className="text-black hover:text-white">Reserva</p>
+                            <p className="text-white hover:text-white">Reserva</p>
                         </Link>
                     </div>
                     <div className="px-5 py-2">
                         <Link href="/menu">
-                            <p className="text-black hover:text-white">Menú</p>
+                            <p className="text-white hover:text-white">Menú</p>
                         </Link>
                     </div>
                     <div className="px-5 py-2">
                         <Link href="/mezcal">
-                            <p className="text-black hover:text-white">Mezcal</p>
+                            <p className="text-white hover:text-white">Mezcal</p>
                         </Link>
                     </div>
                     <div className="px-5 py-2">
                         <Link href="/franquicias">
-                            <p className="text-black hover:text-white">Franquicias</p>
+                            <p className="text-white hover:text-white">Franquicias</p>
                         </Link>
                     </div>
                 </nav>

@@ -15,6 +15,10 @@ export default function Home() {
       <Head>
         <title>La Llorona</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="of:title" content="Llorona" />
+        <meta key="title" name="of:description" content="Somos un restaurante mexicano con buen son" />
+        <meta key="desciption" name="og:description" content="Somos un restaurante mexicano con buen son" />
+        <meta key="image" name="og:image" content="https://www.lalloronacantina.com/static/media/logo_alta_sin_nombre.88d01e7e1b755567658f.png">0</meta>
       </Head>
       <div className="d-flex subContenedor1Banner banner bannerHome">
         {/* <video autoPlay muted loop src={videoPort} /> */}
@@ -35,7 +39,7 @@ export default function Home() {
           </div> */}
         </div>
       </div>
-      <MenuDetail />
+      {/* <MenuDetail /> */}
       {/* <Promociones /> */}
       <QuickInfo />
       <QuickInfo2 />

@@ -32,7 +32,7 @@ function Reserva() {
         style={{
           backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/pinatacumpleanera.JPG")`,
           backgroundSize: "cover",
-          height: "40vh",
+          height: "60vh",
           backgroundPosition: "center",
           position: "relative"
         }}>

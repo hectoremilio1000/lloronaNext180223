@@ -1,9 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import Link from "next/link";
 
 function ButtonComponent({ titulo, enlace }) {
   return (
-    <Link to={enlace} className="contenedorA">
+    <Link href={enlace} className="contenedorA">
       <div className="buttonComponent">
         <p className="buttonText">{titulo}</p>
       </div>
