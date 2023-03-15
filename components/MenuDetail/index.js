@@ -1,27 +1,43 @@
 import React, { useState } from 'react'
+import ButtonMenuCategory from '../ButtonMenuCategory'
 import ButtonMenuFilter from '../ButtonMenuFilter'
 import ModalPlatillo from '../ModalPlatillo'
 import platos from "./platos.json"
 
 function MenuDetail() {
 
-    const category_platos = ["All", ... new Set(platos.map(plato => plato.category))]
+    const category_platos = [... new Set(platos.map(plato => plato.category))]
 
     const [categories, setCategories] = useState(category_platos)
-    const [platillos, setPlatillos] = useState(platos)
-    const [viewCategory, setViewCategory] = useState("All")
+    const [viewCategory, setViewCategory] = useState("alimentos")
 
     const filterCategory = (category) => {
-        if (category === "All") {
-            setPlatillos(platos)
-            setViewCategory(category)
-            return
-        }
 
         const filterData = platos.filter(plato => plato.category === category)
-        setPlatillos(filterData)
+        // console.log(filterData)
+        const subcategories = [... new Set(filterData.map(plato => plato.list_category))]
+        // console.log(subcategories)
+        setPlatillos(platos.filter(plato => plato.list_category === subcategories[0]))
         setViewCategory(category)
+        setSubcategory(subcategories)
+        setViewSubCategory(subcategories[0])
+
     }
+    // subcatyegories
+    const subfilterData = platos.filter(plato => plato.category === viewCategory)
+    const subcategory_platos = [... new Set(subfilterData.map(plato => plato.list_category))]
+
+    const [platillos, setPlatillos] = useState(platos.filter(plato => plato.list_category === subcategory_platos[0]))
+
+
+    const [subcategory, setSubcategory] = useState(subcategory_platos)
+    const [viewSubCategory, setViewSubCategory] = useState(subcategory_platos[0])
+    const filterSubCategory = (subcategory) => {
+        const subdata = platos.filter(plato => plato.list_category === subcategory)
+        setPlatillos(subdata)
+        setViewSubCategory(subcategory)
+    }
+
     // modal view
     const [platilloview, setPlatilloview] = useState(platos)
     const [viewModal, setViewModal] = useState(false)
@@ -39,8 +55,9 @@ function MenuDetail() {
                 <div className='row-qh'>
                     <h1 className="text-center text-3xl md:text-4xl uppercase font-black">Menú</h1>
                     <span className="subTitle mb-4">Disfruta de nuestros platillos</span>
+                    <ButtonMenuCategory viewCategory={viewCategory} categories={categories} filterCategory={filterCategory} />
                     <div className="container-cards">
-                        <ButtonMenuFilter viewCategory={viewCategory} categories={categories} filterCategory={filterCategory} />
+                        <ButtonMenuFilter filterSubCategory={filterSubCategory} viewSubCategory={viewSubCategory} subcategory={subcategory} />
                         <div className="card-menu">
                             {platillos.map(plato => {
                                 return (
