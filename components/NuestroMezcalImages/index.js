@@ -1,7 +1,7 @@
 import React from 'react'
 
 import title from '../Main/title.module.css'
-
+import card from "../Main/card.module.css"
 
 function NuestroMezcalImages() {
   const image1 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_0043+(1).jpg"
@@ -16,48 +16,46 @@ function NuestroMezcalImages() {
         <div className="linea"></div>
       </div>
 
-      <div className="max-w-2xl mx-auto py-4 px-4 sm:py-4 sm:px-6 lg:max-w-7xl lg:px-8">
-        <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-          <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-            <img
-              alt=""
-              src={image1}
-              layout="fill"
-              objectFit="cover"
-              className="group-hover:opacity-75"
-            />
+      <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "20px" }}>
+        <div className={card.card_box}>
+          <img
+            alt=""
+            src={image1}
+            layout="fill"
+            objectFit="cover"
+            className="group-hover:opacity-75"
+          />
 
-          </div>
-          <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-            <img
-              alt=""
-              src={image2}
-              layout="fill"
-              objectFit="cover"
-              className="group-hover:opacity-75"
-            />
+        </div>
+        <div className={card.card_box}>
+          <img
+            alt=""
+            src={image2}
+            layout="fill"
+            objectFit="cover"
+            className="group-hover:opacity-75"
+          />
 
-          </div>
-          <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-            <img
-              alt=""
-              src={image3}
-              layout="fill"
-              objectFit="cover"
-              className="group-hover:opacity-75"
-            />
+        </div>
+        <div className={card.card_box}>
+          <img
+            alt=""
+            src={image3}
+            layout="fill"
+            objectFit="cover"
+            className="group-hover:opacity-75"
+          />
 
-          </div>
-          <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-            <img
-              alt=""
-              src={image4}
-              layout="fill"
-              objectFit="cover"
-              className="group-hover:opacity-75"
-            />
+        </div>
+        <div className={card.card_box}>
+          <img
+            alt=""
+            src={image4}
+            layout="fill"
+            objectFit="cover"
+            className="group-hover:opacity-75"
+          />
 
-          </div>
         </div>
       </div>
 
