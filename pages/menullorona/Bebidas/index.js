@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link';
 import title from "../../../components/Main/title.module.css"
 import ButtonComponent from '../../../components/ButtonComponent';
 
