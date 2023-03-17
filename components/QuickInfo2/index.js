@@ -37,7 +37,7 @@ function QuickInfo2() {
             <img
               className="iconoAbajoTexto1Home"
               src="https://imagenesrutalab.s3.amazonaws.com/llorona/iconos/bol.png"
-              alt="Tacos deliciosos de Cochinita Pibil"
+              alt="menú alimentos"
             />
             <p className="textoFotosHome text-black">Menú Alimentos</p>
           </div>

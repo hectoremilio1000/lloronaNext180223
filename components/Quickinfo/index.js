@@ -7,7 +7,6 @@ import image1 from '../../public/images/home/quickinfo1/mexican-shredded-pork-re
 import image2 from '../../public/images/home/quickinfo1/aguachileVerde (1).jpg'
 import image3 from '../../public/images/home/quickinfo1/HAMBURGUESA_jack_suizo (2).jpeg'
 import image4 from '../../public/images/home/quickinfo1/IMG_8064.jpg'
-import Image from 'next/image';
 
 
 
@@ -32,71 +31,15 @@ function QuickInfo() {
         </p>
       </div>
 
-      <div sytle={{ maxWidth: 100}}>
-
      
-      <div className="max-w-3xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-10">
-        <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-          <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-            <Link href="/menullorona/Alimentos">
-            <Image
-              alt=""
-              src={image1}
-              layout="fill"
-              objectFit="cover"
-              className="group-hover:opacity-75"
-            />
-            </Link>
-          
-          </div>
-          
-          <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-            <Link href="/menullorona/Alimentos">
-            <Image
-              alt=""
-              src={image2}
-              layout="fill"
-              objectFit="cover"
-              className="group-hover:opacity-75"
-              />
-            </Link>
        
-            
-       
-            
-          </div>
-
-
-          <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-            <Link href="/menullorona/Alimentos">
-            <Image
-              alt=""
-              src={image3}
-              layout="fill"
-              objectFit="cover"
-              className="group-hover:opacity-75"
-            />
-            </Link>
-          </div>
-          <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-            <Link href="/menullorona/Bebidas/Artesanal">
-            <Image
-              alt=""
-              src={image4}
-              layout="fill"
-              objectFit="cover"
-              className="group-hover:opacity-75"
-            />
-            </Link>
-          </div>
-          
-        </div>
-      </div>
-      </div>
-      {/* <div className={card.cardContainer}
+   
+      <div
+        style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}
       >
+      
         <Link href="/menullorona/Alimentos">
-          <div className={card.cardBox}>
+          <div>
             <img
               className="imagenAbajoTexto1Home"
               src="https://imagenesrutalab.s3.amazonaws.com/llorona/galeriaimagenes/mexican-shredded-pork-recipes-900x900.jpg"
@@ -104,6 +47,9 @@ function QuickInfo() {
             />
             <p className="textoFotosHome text-black">Tacos de Cochinita Pibil</p>
           </div>
+
+
+         
         </Link>
         <Link href="/menullorona/Alimentos">
           <div className={card.cardBox}>
@@ -145,7 +91,7 @@ function QuickInfo() {
             </p>
           </div>
         </Link>
-      </div> */}
+      </div>
 
       <div style={{ display: "flex", justifyContent: "center" }}>
         <Link href="reserva">
