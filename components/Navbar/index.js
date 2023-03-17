@@ -63,7 +63,7 @@ function NavBar() {
             }}
           />
         </div>
-        <div className={linkswraper ? 'linkswraper active' : 'linkswraper'}>
+        <div onClick={() => { handleNavbar() }} className={linkswraper ? 'linkswraper active' : 'linkswraper'}>
           <li key="0">
             <Link href="/" className="nav-link hover:text-emerald-500">
               Inicio

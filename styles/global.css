@@ -676,9 +676,9 @@ p {
   border-radius: 0.25rem;
 }
 
-.active {
+/* .active {
   border-bottom: 2px solid;
-}
+} */
 
 .section-center {
   width: 90vw;
