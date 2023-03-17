@@ -6,9 +6,11 @@ module.exports = (phase, { defaultConfig }) => {
         /* config options here */
     }
     module.exports = {
+        // ...
         images: {
-            unoptimized: true
-        }
-    }
+            loader: "imgix",
+            path: "",
+        },
+    };
     return nextConfig
 }
