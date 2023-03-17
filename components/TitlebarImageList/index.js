@@ -1,4 +1,4 @@
-import Image from 'next/image';
+
 import React from 'react'
 import card from '../Main/card.module.css'
 
@@ -24,7 +24,7 @@ function TitlebarImageList() {
             alt=""
             src={image1}
             layout="fill"
-            objectFit="cover"
+           
             className="group-hover:opacity-75"
           />
 
@@ -34,7 +34,7 @@ function TitlebarImageList() {
             alt=""
             src={image2}
             layout="fill"
-            objectFit="cover"
+            
             className="group-hover:opacity-75"
           />
 
