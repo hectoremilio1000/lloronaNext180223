@@ -26,7 +26,7 @@ export default function Home() {
 
         <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada">
           <img src={logo2} width={450}
-            alt="llorona" className="mt-5" />
+            alt="llorona" className="mt-5"  />
           {/* <h3 className=" font-weight-bold text-3xl md:text-4xl uppercase font-black text-center text-white">
             Mexican Experience
           </h3> */}
