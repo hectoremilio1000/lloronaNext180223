@@ -31,13 +31,13 @@ function QuickInfo() {
         </p>
       </div>
 
-     
-       
-   
+
+
+
       <div
-        style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}
+        style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "20px" }}
       >
-      
+
         <Link href="/menullorona/Alimentos">
           <div>
             <img
@@ -49,7 +49,7 @@ function QuickInfo() {
           </div>
 
 
-         
+
         </Link>
         <Link href="/menullorona/Alimentos">
           <div className={card.cardBox}>

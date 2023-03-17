@@ -1,40 +1,15 @@
 import Link from 'next/link';
 import React from 'react'
-import Image from 'next/image';
-
-import image1 from '../public/images/reserva/IMG_9585.jpg'
-
-import image2 from '../public/images/reserva/nina2pinata.jpeg'
-import image3 from '../public/images/reserva/ninapinata.jpeg'
-import image4 from '../public/images/reserva/ninas4pinata.jpeg'
-
-
-
 import Calendario from '../components/Calendario/index';
 
-
+import title from "../components/Main/title.module.css"
 function Reserva() {
+  const image1 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg"
+  const image2 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg"
+  const image3 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg"
+  const image4 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninas4pinata.jpeg"
   return (
     <>
-      {/* <header
-        className="col jumbotron-fluid pt-5"
-        style={{
-          backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/pinatacumpleanera.JPG")`,
-          backgroundSize: "cover",
-          height: "100vh",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="d-flex ">
-          <div className="subDiv2Banner">
-            <h3 className=" font-weight-bold proximamente2 text-white">
-              <b>Los jueves piñata cumpleañera con una botella de mezcal</b>
-            </h3>
-
-            <div className="subSubDiv1Banner"></div>
-          </div>
-        </div>
-      </header> */}
       <div className="d-flex subContenedor1Banner banner"
         style={{
           backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/pinatacumpleanera.JPG")`,
@@ -48,7 +23,7 @@ function Reserva() {
 
         <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada">
           <h3 className=" font-weight-bold proximamente2 text-white">
-            <b>Los jueves piñata cumpleañera <br/>con una botella de mezcal</b>
+            <b>Los jueves piñata cumpleañera <br />con una botella de mezcal</b>
           </h3>
 
           {/* <div className="subSubDiv1Banner">
@@ -63,8 +38,8 @@ function Reserva() {
       <Calendario />
       <div className='container-llorona'>
         <div className="mt-2 px-2 py-2">
-          <h4 className="text-center text-emerald-300 text-3xl md:text-4xl m-0">Celebra tu cumpleaños</h4>
-          <h2 className="text-center text-3xl md:text-5xl capitalize">
+          <h4 className={title.fontTitleSub}>Celebra tu cumpleaños</h4>
+          <h2 className={title.fontTitleline}>
             los jueves con nosotros
           </h2>
           <div className="linea"></div>
@@ -73,7 +48,7 @@ function Reserva() {
         <div className="py-3 px-3 row-qh">
           <p className="text-center text-black sm:text-2xl text-xl">
             La piñata cumpleañera no tiene costo, y aplica todos los jueves si
-            cumples años en el mes ❤️🪅 y solo tienen que hacer reservación en
+            cumples años en el mes ❤️ y solo tienen que hacer reservación en
             cualquiera de nuestras redes sociales. Les regalamos dulces típicos
             mexicanos y una botella de nuestro mejor mezcal de la casa 🍶🥃
             madre cuishe el cual está elaborado artesanalmente.
@@ -84,7 +59,7 @@ function Reserva() {
           <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
             <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
               <Link href="/menullorona/Alimentos">
-                <Image
+                <img style={{ width: "100%", height: "100%", objectFit: "cover" }}
                   alt=""
                   src={image1}
                   layout="fill"
@@ -97,7 +72,7 @@ function Reserva() {
 
             <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
               <Link href="/menullorona/Alimentos">
-                <Image
+                <img style={{ width: "100%", height: "100%", objectFit: "cover" }}
                   alt=""
                   src={image2}
                   layout="fill"
@@ -114,7 +89,7 @@ function Reserva() {
 
             <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
               <Link href="/menullorona/Alimentos">
-                <Image
+                <img style={{ width: "100%", height: "100%", objectFit: "cover" }}
                   alt=""
                   src={image3}
                   layout="fill"
@@ -125,7 +100,7 @@ function Reserva() {
             </div>
             <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
               <Link href="/menullorona/Bebidas/Artesanal">
-                <Image
+                <img style={{ width: "100%", height: "100%", objectFit: "cover" }}
                   alt=""
                   src={image4}
                   layout="fill"

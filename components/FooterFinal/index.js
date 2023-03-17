@@ -15,7 +15,7 @@ function FooterFinal() {
                         </Link>
                     </div>
                     <div className="px-5 py-2">
-                        <Link href="/menu">
+                        <Link href="/menullorona">
                             <p className="text-white hover:text-white">Menú</p>
                         </Link>
                     </div>

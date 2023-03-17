@@ -1,14 +1,13 @@
 import React from 'react'
-import image1 from '../../public/images/Mezcal/mezcal2/IMG_0043 (1).jpg'
-import image2 from '../../public/images/Mezcal/mezcal2/foto+botella+calaca+mezcal+abbywood.jpeg'
-import image3 from '../../public/images/Mezcal/mezcal2/IMG_9973 (1).jpg'
-import image4 from '../../public/images/Mezcal/mezcal2/mezcal+cannabis+llorona.jpg'
-import Image from 'next/image';
 
 import title from '../Main/title.module.css'
 
 
 function NuestroMezcalImages() {
+  const image1 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_0043+(1).jpg"
+  const image2 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/foto%2Bbotella%2Bcalaca%2Bmezcal%2Babbywood.jpeg"
+  const image3 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9973+(1).jpg"
+  const image4 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mezcal%2Bcannabis%2Bllorona.jpg"
   return (
     <div>
       <div>
@@ -20,7 +19,7 @@ function NuestroMezcalImages() {
       <div className="max-w-2xl mx-auto py-4 px-4 sm:py-4 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
           <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-            <Image
+            <img
               alt=""
               src={image1}
               layout="fill"
@@ -30,7 +29,7 @@ function NuestroMezcalImages() {
 
           </div>
           <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-            <Image
+            <img
               alt=""
               src={image2}
               layout="fill"
@@ -40,7 +39,7 @@ function NuestroMezcalImages() {
 
           </div>
           <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-            <Image
+            <img
               alt=""
               src={image3}
               layout="fill"
@@ -50,7 +49,7 @@ function NuestroMezcalImages() {
 
           </div>
           <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-            <Image
+            <img
               alt=""
               src={image4}
               layout="fill"

@@ -24,6 +24,15 @@
   gap: 20px;
 }
 
+.linkswraper li {
+  height: max-content;
+}
+
+.linkswraper li::marker {
+  display: none;
+  content: "";
+}
+
 
 .nav-link {
   display: block;
@@ -33,7 +42,8 @@
   font-weight: 700;
   text-transform: capitalize;
   cursor: pointer;
-  transition: all 0.5s;}
+  transition: all 0.5s;
+}
 
 
 .header-icons {

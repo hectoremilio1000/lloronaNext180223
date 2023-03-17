@@ -1,19 +1,14 @@
 import React from 'react'
 import title from "../../../../components/Main/title.module.css"
 
-
-import menuComida1 from '../../../../public/images/menuIngles/food1.jpg'
-import menuComida2 from '../../../../public/images/menuIngles//food2.jpg'
-import mixologia from '../../../../public/images/menuIngles//MixologyEnglish.jpg'
-import soda from '../../../../public/images/menuIngles/SpiritsBeersSodas.jpg'
-import cervezaArtesanal from '../../../../public/images/menuIngles/draftbeer.jpg'
-import mezcales from '../../../../public/images/menuIngles/mezcalIngles.jpg'
-import destilados from '../../../../public/images/menuIngles/distillates.jpg'
-
-
-
-import Image from 'next/image';
 function Drinks() {
+    const menuComida1 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/food1.jpg"
+    const menuComida2 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/food2.jpg"
+    const mixologia = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/MixologyEnglish.jpg"
+    const soda = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/SpiritsBeersSodas.jpg"
+    const cervezaArtesanal = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/draftbeer.jpg"
+    const mezcales = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mezcalIngles.jpg"
+    const destilados = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/distillates.jpg"
     return (
         <>
             <div className="d-flex subContenedor1Banner banner"
@@ -35,14 +30,14 @@ function Drinks() {
 
             <div className="pt-3">
                 <>
-                    <h4 className="text-center tituloSection">Mexican drinks</h4>
-                    <h2 className="text-center subTituloSection">
+                    <h4 className={title.fontTitleSub}>Mexican drinks</h4>
+                    <h2 className={title.fontTitleline}>
                         Mixology with liquors and mexican flavors, Craft Mexican Beers and Mexican Mezcals
                     </h2>
                     <div className="linea"></div>
 
                     <div className="w-full px-4">
-                        <Image
+                        <img
                             src={mixologia}
                             alt="comida sabrosa"
                             width={1000}
@@ -51,7 +46,7 @@ function Drinks() {
                         />
                     </div>
                     <div className="w-full px-4">
-                        <Image
+                        <img
                             src={cervezaArtesanal}
                             alt="comida sabrosa"
                             width={1000}
@@ -59,7 +54,7 @@ function Drinks() {
                             className="w-full"
                         />
                     </div> <div className="w-full px-4">
-                        <Image
+                        <img
                             src={mezcales}
                             alt="comida sabrosa"
                             width={1000}
@@ -69,14 +64,14 @@ function Drinks() {
                     </div>
                 </>
                 <>
-                    <h4 className="text-center tituloSection">Mexican dishes</h4>
-                    <h2 className="text-center subTituloSection">
+                    <h4 className={title.fontTitleSub}>Mexican dishes</h4>
+                    <h2 className={title.fontTitleline}>
                         Cooked with love and lots of passion
                     </h2>
                     <div className="linea"></div>
 
                     <div className="w-full px-4">
-                        <Image
+                        <img
                             src={menuComida1}
                             alt="comida sabrosa"
                             width={1000}
@@ -85,7 +80,7 @@ function Drinks() {
                         />
                     </div>
                     <div className="w-full px-4">
-                        <Image
+                        <img
                             src={menuComida2}
                             alt="comida sabrosa"
                             width={1000}
@@ -94,14 +89,14 @@ function Drinks() {
                         />
                     </div>
                 </>
-                
+
 
                 <>
-                    <h4 className="text-center tituloSection">Sodas & Spirits</h4>
-                    <h2 className="text-center subTituloSection">Industrial Mexican Beers</h2>
+                    <h4 className={title.fontTitleSub}>Sodas & Spirits</h4>
+                    <h2 className={title.fontTitleline}>Industrial Mexican Beers</h2>
                     <div className="linea"></div>
                     <div className="w-full px-4">
-                        <Image
+                        <img
                             src={destilados}
                             alt="destilados"
                             width={1000}
@@ -109,7 +104,7 @@ function Drinks() {
                             className="w-full"
                         />
                     </div> <div className="w-full px-4">
-                        <Image
+                        <img
                             src={soda}
                             alt="soda"
                             width={1000}

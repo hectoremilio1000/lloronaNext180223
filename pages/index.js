@@ -1,8 +1,5 @@
 import Head from "next/head";
-import Link from "next/link";
 import QuickInfo from '../components/Quickinfo/index';
-import Image from 'next/image'
-import logo2 from '../public/images/nombrelogo.png'
 import QuickInfo2 from '../components/QuickInfo2/index';
 import QuickInfo3 from '../components/QuickInfo3/index';
 import MenuDetail from "../components/MenuDetail";
@@ -10,6 +7,7 @@ import Promociones from "../components/Promociones";
 // import videoPort from '../data/assets/portada.mp4'
 
 export default function Home() {
+  const logo2 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/logo_page_altaNUEVO_blanco.png"
   return (
     <div>
       <Head>
@@ -19,7 +17,7 @@ export default function Home() {
         <meta name="of:description" content="Somos un restaurante mexicano con buen son" />
         <meta name="og:description" content="Somos un restaurante mexicano con buen son" />
         <meta name="og:title" content="La Llorona" />
-        <meta property="og:image" content="https://www.lalloronacantina.com/static/media/logo_alta_sin_nombre.88d01e7e1b755567658f.png"/>
+        <meta property="og:image" content="https://www.lalloronacantina.com/static/media/logo_alta_sin_nombre.88d01e7e1b755567658f.png" />
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
       </Head>
@@ -27,8 +25,8 @@ export default function Home() {
         {/* <video autoPlay muted loop src={videoPort} /> */}
 
         <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada">
-          <Image src={logo2} width={450}
-            alt="llorona" priority className="mt-5"/>
+          <img src={logo2} width={450}
+            alt="llorona" className="mt-5" />
           {/* <h3 className=" font-weight-bold text-3xl md:text-4xl uppercase font-black text-center text-white">
             Mexican Experience
           </h3> */}

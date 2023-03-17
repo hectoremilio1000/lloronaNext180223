@@ -11,8 +11,8 @@ h1 {
   font-family: "Gagalin-Regular";
 }
 
-.buttonCheck{
-  background:#1677ff;
+.buttonCheck {
+  background: #1677ff;
 }
 
 /* BANEER*/
@@ -55,8 +55,9 @@ h1 {
 }
 
 .imagenAbajoTexto1Home {
+  border-radius: 10px;
   width: 300px;
-  height: 300px;
+  height: 400px;
   object-fit: cover
 }
 
@@ -73,7 +74,7 @@ h1 {
 }
 
 .contenedorMenu {
-    display: flex;
+  display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
