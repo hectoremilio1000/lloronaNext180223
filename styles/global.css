@@ -116,7 +116,7 @@ h1 {
 
 
 .bannerFranquicias {
-  background-image: url("../public/images/banner/franquicias/franquiciasBanner.jpg");
+  background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/franquiciasBanner.jpg");
   background-size: cover !important;
   background-repeat: no-repeat;
   height: 90vh;
@@ -130,7 +130,7 @@ h1 {
 } */
 
 .bannerHome {
-  background-image: url("../public/images/franquicia/lugarafuera.jpg");
+  background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/lugarafuera.jpg");
   background-size: cover !important;
   background-repeat: no-repeat;
 
