@@ -2,6 +2,13 @@ import Link from 'next/link';
 import React from 'react'
 import Image from 'next/image';
 
+import image1 from '../public/images/reserva/IMG_9585.jpg'
+
+import image2 from '../public/images/reserva/nina2pinata.jpeg'
+import image3 from '../public/images/reserva/ninapinata.jpeg'
+import image4 from '../public/images/reserva/ninas4pinata.jpeg'
+
+
 
 import Calendario from '../components/Calendario/index';
 
@@ -32,7 +39,7 @@ function Reserva() {
         style={{
           backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/pinatacumpleanera.JPG")`,
           backgroundSize: "cover",
-          height: "60vh",
+          height: "90vh",
           backgroundPosition: "center",
           position: "relative"
         }}>
@@ -41,7 +48,7 @@ function Reserva() {
 
         <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada">
           <h3 className=" font-weight-bold proximamente2 text-white">
-            <b>Los jueves piñata cumpleañera con una botella de mezcal</b>
+            <b>Los jueves piñata cumpleañera <br/>con una botella de mezcal</b>
           </h3>
 
           {/* <div className="subSubDiv1Banner">
@@ -72,7 +79,68 @@ function Reserva() {
             madre cuishe el cual está elaborado artesanalmente.
           </p>
         </div>
-        <div
+
+        <div className="max-w-3xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-10">
+          <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+            <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <Link href="/menullorona/Alimentos">
+                <Image
+                  alt=""
+                  src={image1}
+                  layout="fill"
+                  objectFit="cover"
+                  className="group-hover:opacity-75"
+                />
+              </Link>
+
+            </div>
+
+            <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <Link href="/menullorona/Alimentos">
+                <Image
+                  alt=""
+                  src={image2}
+                  layout="fill"
+                  objectFit="cover"
+                  className="group-hover:opacity-75"
+                />
+              </Link>
+
+
+
+
+            </div>
+
+
+            <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <Link href="/menullorona/Alimentos">
+                <Image
+                  alt=""
+                  src={image3}
+                  layout="fill"
+                  objectFit="cover"
+                  className="group-hover:opacity-75"
+                />
+              </Link>
+            </div>
+            <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <Link href="/menullorona/Bebidas/Artesanal">
+                <Image
+                  alt=""
+                  src={image4}
+                  layout="fill"
+                  objectFit="cover"
+                  className="group-hover:opacity-75"
+                />
+              </Link>
+            </div>
+
+          </div>
+        </div>
+
+
+
+        {/* <div
           style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }} className="py-3"
         >
           <Link href="/menullorona/menualimentos">
@@ -124,7 +192,7 @@ function Reserva() {
               </p>
             </div>
           </Link>
-        </div>
+        </div> */}
       </div>
 
 

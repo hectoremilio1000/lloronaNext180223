@@ -2,10 +2,18 @@ import React from 'react'
 import title from "../Main/title.module.css"
 import card from "../Main/card.module.css"
 import Link from 'next/link';
+import image1 from '../../public/images/home/quickinfo1/mexican-shredded-pork-recipes-900x900 (1).jpg'
+
+import image2 from '../../public/images/home/quickinfo1/aguachileVerde (1).jpg'
+import image3 from '../../public/images/home/quickinfo1/HAMBURGUESA_jack_suizo (2).jpeg'
+import image4 from '../../public/images/home/quickinfo1/IMG_8064.jpg'
+import Image from 'next/image';
+
+
 
 function QuickInfo() {
   return (
-    <div className="container-llorona px-2 py-2">
+    <div className="container-llorona px-2">
       <div>
         <h1 className={title.fontTitlemain}>La Llorona Xperience</h1>
       </div>
@@ -23,9 +31,68 @@ function QuickInfo() {
           <b> Cerveza Artesanal Mexicana</b> que encontraras AQUÍ.
         </p>
       </div>
-      <div className={card.cardContainer}
+
+      <div className="max-w-3xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-10">
+        <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+          <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+            <Link href="/menullorona/Alimentos">
+            <Image
+              alt=""
+              src={image1}
+              layout="fill"
+              objectFit="cover"
+              className="group-hover:opacity-75"
+            />
+            </Link>
+          
+          </div>
+          
+          <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+            <Link href="/menullorona/Alimentos">
+            <Image
+              alt=""
+              src={image2}
+              layout="fill"
+              objectFit="cover"
+              className="group-hover:opacity-75"
+              />
+            </Link>
+       
+            
+       
+            
+          </div>
+
+
+          <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+            <Link href="/menullorona/Alimentos">
+            <Image
+              alt=""
+              src={image3}
+              layout="fill"
+              objectFit="cover"
+              className="group-hover:opacity-75"
+            />
+            </Link>
+          </div>
+          <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+            <Link href="/menullorona/Bebidas/Artesanal">
+            <Image
+              alt=""
+              src={image4}
+              layout="fill"
+              objectFit="cover"
+              className="group-hover:opacity-75"
+            />
+            </Link>
+          </div>
+          
+        </div>
+      </div>
+
+      {/* <div className={card.cardContainer}
       >
-        <Link href="/menullorona/menualimentos">
+        <Link href="/menullorona/Alimentos">
           <div className={card.cardBox}>
             <img
               className="imagenAbajoTexto1Home"
@@ -35,7 +102,7 @@ function QuickInfo() {
             <p className="textoFotosHome text-black">Tacos de Cochinita Pibil</p>
           </div>
         </Link>
-        <Link href="/menullorona/menualimentos">
+        <Link href="/menullorona/Alimentos">
           <div className={card.cardBox}>
             <img
               className="imagenAbajoTexto1Home"
@@ -48,7 +115,7 @@ function QuickInfo() {
             </p>
           </div>
         </Link>
-        <Link href="/menullorona/menualimentos">
+        <Link href="/menullorona/Alimentos">
           <div className={card.cardBox}>
             <img
               className="imagenAbajoTexto1Home"
@@ -61,7 +128,7 @@ function QuickInfo() {
             </p>
           </div>
         </Link>
-        <Link href="/menullorona/menubebidas/artesanal">
+        <Link href="/menullorona/Bebidas/Artesanal">
           <div className={card.cardBox}>
             <img
               className="imagenAbajoTexto1Home"
@@ -75,7 +142,8 @@ function QuickInfo() {
             </p>
           </div>
         </Link>
-      </div>
+      </div> */}
+
       <div style={{ display: "flex", justifyContent: "center" }}>
         <Link href="reserva">
           <button type="button" className="buttonComponente">
@@ -83,7 +151,8 @@ function QuickInfo() {
           </button>
         </Link>
       </div>
-    </div >
+    </div>
+
   );
 }
 

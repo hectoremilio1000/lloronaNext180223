@@ -1,9 +1,18 @@
 import React from 'react'
 import title from "../../../components/Main/title.module.css"
-// import Image from 'next/image';
-import Link from "next/link";
-// import { QuickInfoWrapper } from '../../../Modules/styles/globalStyles';
 
+
+import menuComida1 from '../../../public/images/menuEspa/menuComida1.jpg'
+import menuComida2 from '../../../public/images/menuEspa/menuComida2.jpg'
+import mixologia from '../../../public/images/menuEspa/Mixologia.jpg'
+import soda from '../../../public/images/menuEspa/licoresCervezasSodas.jpg'
+import cervezaArtesanal from '../../../public/images/menuEspa/cervezaArtesanal.jpg'
+import mezcales from '../../../public/images/menuEspa/mezcales.jpg'
+import destilados from '../../../public/images/menuEspa/destilados.jpg'
+
+
+
+import Image from 'next/image';
 function Alimentos() {
   return (
     <>
@@ -20,27 +29,100 @@ function Alimentos() {
           <h3 className=" font-weight-bold proximamente2 text-white">
             <b>Mexican Experience</b>
           </h3>
+           
         </div>
       </div>
-      <div className='mt-16 mb-16'>
-        <h4 className={title.fontTitleSub}>Platillos mexicanos</h4>
-        <h2 className={title.fontTitleline}>
+      
+      <div className="pt-3">
+        <>
+        <h4 className="text-center tituloSection">Platillos mexicanos</h4>
+        <h2 className="text-center subTituloSection">
           Cocinados con amor y mucho sazón
         </h2>
         <div className="linea"></div>
-        <div className='row-qh'>
-          <img
-            src="https://imagenesrutalab.s3.amazonaws.com/llorona/menuDigital/espanol/jpg3/menuComida1.jpg"
-            style={{ height: "30%", width: "100%" }}
-          />
-          <img
-            src="https://imagenesrutalab.s3.amazonaws.com/llorona/menuDigital/espanol/jpg3/menuComida2.jpg"
-            style={{ height: "30%", width: "100%" }}
+      
+        <div className="w-full px-4">
+          <Image
+            src={menuComida1}
+            alt="comida sabrosa"
+            width={1000}
+            height={500}
+            className="w-full"
           />
         </div>
-      </div>
+        <div className="w-full px-4">
+          <Image
+            src={menuComida2}
+            alt="comida sabrosa"
+            width={1000}
+            height={500}
+            className="w-full"
+          />
+        </div>
+        </>
+        <>
+          <h4 className="text-center tituloSection">Bebidas Mexicanas</h4>
+          <h2 className="text-center subTituloSection">
+            CERVEZAS ARTESANALES MEXICANAS, MEZCALES ARTESANALES Y MIXOLOGÍA CON SABORES Y DESTILADOS MEXICANOS
+          </h2>
+          <div className="linea"></div>
+        
+          <div className="w-full px-4">
+            <Image
+              src={mixologia}
+              alt="comida sabrosa"
+              width={1000}
+              height={500}
+              className="w-full"
+            />
+          </div>
+          <div className="w-full px-4">
+            <Image
+              src={cervezaArtesanal}
+              alt="comida sabrosa"
+              width={1000}
+              height={500}
+              className="w-full"
+            />
+          </div> <div className="w-full px-4">
+            <Image
+              src={mezcales}
+              alt="comida sabrosa"
+              width={1000}
+              height={500}
+              className="w-full"
+            />
+          </div>
+      </>
+      
+     <>
+          <h4 className="text-center tituloSection">Sodas, Destilados</h4>
+          <h2 className="text-center subTituloSection">Cervezas Industriales</h2>
+          <div className="linea"></div>
+        <div className="w-full px-4">
+          <Image
+            src={destilados}
+            alt="destilados"
+            width={1000}
+            height={500}
+            className="w-full"
+          />
+        </div> <div className="w-full px-4">
+          <Image
+            src={soda}
+            alt="soda"
+            width={1000}
+            height={500}
+            className="w-full"
+          />
+        </div>
+       
+        </>
+
+     
+        </div>
     </>
-  );
+  )
 }
 
 export default Alimentos

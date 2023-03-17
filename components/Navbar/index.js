@@ -65,37 +65,37 @@ function NavBar() {
         </div>
         <div className={linkswraper ? 'linkswraper active' : 'linkswraper'}>
           <li key="0">
-            <Link href="/" className="nav-link">
+            <Link href="/" className="nav-link hover:text-emerald-500">
               Inicio
             </Link>
           </li>
           <li key="1">
-            <Link href="/reserva" className="nav-link">
+            <Link href="/reserva" className="nav-link hover:text-emerald-500">
               Reserva
             </Link>
           </li>
           <li key="2">
-            <Link href="/menullorona" className="nav-link">
+            <Link href="/menullorona" className="nav-link hover:text-emerald-500">
               Menu
             </Link>
           </li>
           <li key="3">
-            <Link href="/mezcal" className="nav-link">
+            <Link href="/mezcal" className="nav-link hover:text-emerald-500">
               Mezcal
             </Link>
           </li>
           <li key="4">
-            <Link href="/franquicias" className="nav-link">
+            <Link href="/franquicias" className="nav-link hover:text-emerald-500">
               Franquicias
             </Link>
           </li>
         </div>
         <div className='header-icons'>
           <a key="0" href="https://www.facebook.com/Lalloronacantinacdmx" target="_blank" rel="noopener noreferrer">
-            <FaFacebook className="icon facebook-icon" />
+            <FaFacebook className="icon facebook-icon hover:text-emerald-500 cursor-pointer" />
           </a>
           <a key="1" href="https://www.instagram.com/cantinalallorona/" target="_blank" rel="noopener noreferrer">
-            <FaInstagram className="icon instagram-icon" />
+            <FaInstagram className="icon instagram-icon hover:text-emerald-500" />
           </a>
         </div>
       </div>

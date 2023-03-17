@@ -3,6 +3,7 @@ import { useState } from "react";
 // import { Button } from "react-bootstrap";
 import Link from "next/link";
 import ButtonComponent from '../Components/ButtonComponent';
+import { Button } from 'antd';
 
 function MenuLlorona() {
   const [english, setEnglish] = useState(false);
@@ -19,7 +20,7 @@ function MenuLlorona() {
   };
 
   return (
-    <>
+    <div>
       <div className="d-flex subContenedor1Banner banner"
         style={{
           backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/llorona/banner/bannerMenu.jpg")`,
@@ -53,8 +54,8 @@ function MenuLlorona() {
         <div>
           <h2 className="text-center font-weight-bold">Menú</h2>
           <div className="contenedorLenguaje">
-            <div onClick={onEnglish}>English</div>
-            <div onClick={onSpanish}>Español</div>
+            <Button onClick={onEnglish} type="primary" className='buttonCheck'>English</Button>
+            <Button onClick={onSpanish} type="primary" className='buttonCheck'>Español</Button>
           </div>
         </div>
 
@@ -62,28 +63,28 @@ function MenuLlorona() {
           <div className="contenedorMenu">
             <ButtonComponent
               titulo="ALIMENTOS"
-              enlace="./menullorona/Alimentos"
+              enlace="/menullorona/Alimentos"
             />
             <ButtonComponent
               titulo="BEBIDAS"
-              enlace="./menullorona/Bebidas"
+              enlace="/menullorona/Bebidas"
             />
             <ButtonComponent
               titulo="ESPECIAL"
-              enlace="./menullorona/Cantinero"
+              enlace="/menullorona/Cantinero"
             />
           </div>
         )}
 
         {english && (
           <div className="contenedorMenu">
-            <ButtonComponent titulo="FOOD" enlace="menufood" />
-            <ButtonComponent titulo="DRINKS & BEERS" enlace="drinks" />
-            <ButtonComponent titulo="SPECIAL" enlace="menuTavern" />
+            <ButtonComponent titulo="FOOD" enlace="/menullorona/menufood" />
+            <ButtonComponent titulo="DRINKS & BEERS" enlace="/menullorona/drinks" />
+            <ButtonComponent titulo="SPECIAL" enlace="/menullorona/special" />
           </div>
         )}
       </div>
-    </>
+    </div>
   );
 }
 

@@ -5,20 +5,20 @@ import FranquiciaInfo from '../components/FranquiciaInfo/FranquiciaInfo';
 
 function Franquicias() {
     return (
-        <>
+        <div className="pb-8">
             <div className="d-flex subContenedor1Banner bannerFranquicias banner">
 
                 {/* <video autoPlay muted loop src={videoPort} /> */}
 
                 <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada">
                     <h3 className=" font-weight-bold proximamente2 text-white">
-                        Cómpralo aquí o en Nuestra Sucursal de la Roma Condesa
+                        <b>Franquicias</b>
                     </h3>
 
                     <div className="subSubDiv1Banner">
                         <a href="https://wa.me/+5215549242477">
                             <button type="button" className="buttonComponente">
-                                ¡Comprar!
+                                ¡Solicita información ya!
                             </button>
                         </a>
                     </div>
@@ -32,8 +32,15 @@ function Franquicias() {
           </div> */}
                 </div>
             </div>
-            <FranquiciaInfo className="mt-2" />
-        </>
+            <FranquiciaInfo className="" />
+            <div className="subSubDiv1Banner">
+                <a href="https://wa.me/+5215549242477">
+                    <button type="button" className="buttonComponente">
+                        ¡Solicita información ya!
+                    </button>
+                </a>
+            </div>
+        </div>
     );
 }
 

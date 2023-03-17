@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import React from 'react'
+import title from "../Main/title.module.css"
+import card from "../Main/card.module.css"
 
 
 function QuickInfo3() {
@@ -9,13 +11,13 @@ function QuickInfo3() {
         <h1 className="text-center text-3xl md:text-4xl uppercase font-black">Llorona's Passion</h1>
       </div>
       <div>
-        <h4 className="text-center text-emerald-300 text-3xl md:text-4xl m-0">Buen Son y Sazón</h4>
-        <h2 className="text-center text-white text-3xl md:text-5xl capitalize">para todo Corazón</h2>
+        <h4 className={title.fontTitleSub}>Buen Son y Sazón</h4>
+        <h2 className={title.fontTitleline}>para todo Corazón</h2>
         <div className="linea"></div>
       </div>
 
       <div className="row-qh py-3 px-3">
-        <p className="text-center sm:text-2xl text-xl">
+        <p className="text-center sm:text-2xl text-xl text-black">
           Los <b>jueves</b> disfruta de <b>Música en vivo</b>. Así como de diferentes
           djs que tocarán los mejores sones para ti. Atrévete a <b>bailar</b> y
           disfrutar de la <b>felicidad Mexicana </b>que traemos para ti.
@@ -31,7 +33,7 @@ function QuickInfo3() {
               src="https://imagenesrutalab.s3.amazonaws.com/llorona/galeriaimagenes/Screen+Shot+2023-02-06+at+1.43.06.png"
               alt="Música en vivo"
             />
-            <p className="textoFotosHome pt-2">
+            <p className="textoFotosHome text-black">
               Jueves Música
               <br />
               en Vivo
@@ -45,20 +47,20 @@ function QuickInfo3() {
               src="https://imagenesrutalab.s3.amazonaws.com/llorona/galeriaimagenes/Screen+Shot+2023-02-06+at+12.36.30.png"
               alt="Djs por día"
             />
-            <p className="textoFotosHome pt-2">
+            <p className="textoFotosHome text-black">
               Djs <br />
               por día
             </p>
           </div>
         </Link>
-        <Link href="/menullorona/menubebidas/artesanal">
+        <Link href="/menullorona/Bebidas/Artesanal">
           <div>
             <img
               className="imagen2AbajoTexto1Home"
               src="https://imagenesrutalab.s3.amazonaws.com/llorona/galeriaimagenes/Screen+Shot+2023-02-06+at+12.36.39.png"
               alt="Bebe y Baila la vida "
             />
-            <p className="textoFotosHome pt-2">
+            <p className="textoFotosHome text-black">
               Mixología con
               <br />
               Pulque, Mezcal

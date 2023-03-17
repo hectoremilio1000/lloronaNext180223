@@ -1,36 +1,39 @@
 import React from 'react'
-import Section from "../../Modules/styles/section";
-import { QuickInfoWrapper } from "../../Modules/styles/globalStyles";
-import "../../styles/global.css";
+import title from "../Main/title.module.css"
+import card from "../Main/card.module.css"
 
 function ProcesoElaboracion() {
   return (
-    <Section className="mt-0">
+    <div className=" py-2">
       <div>
-        <h4 className="text-center tituloSection">PROCESO ANCESTRAL</h4>
-        <h2 className="text-center subTituloSection">DE ELABORACIÓN</h2>
+        <h4 className={title.fontTitlemain}>PROCESO ANCESTRAL</h4>
+        <h2 className={title.fontTitleSub}>DE ELABORACIÓN</h2>
         <div className="linea"></div>
       </div>
 
-      <QuickInfoWrapper>
-        <p className="text text-center">
+      <div className="py-3 px-3 row-qh">
+        <p className="text-center sm:text-2xl text-xl text-black">
           Nuestro proceso de elaboración es de un mezcal ancestral, en el cual
           el agave debe de cocerse por completo en un horno de tierra, además de
           que el proceso de fermentación se realiza en tinas de ayacahuite- y,
           posteriormente, debe destilarse en alambiques de barro.
         </p>
 
-        <p className="text text-center">
+        <p className="text-center sm:text-2xl text-xl text-black">
           Nuestro mezcal es 100% natural, sin ningún químico agregado a
           diferencia de otros destilados y, por tanto, nunca te causará ningún
           tipo de malestar, incluso por eso le decimos que es virgen ya que no
           causa cruda.
         </p>
-        <div>
-          <p className="text text-justify">
+        <div className="py-3 px-3 row-qh">
+          <p className="sm:text-2xl text-xl text-black">
             El proceso es:
-            <ol>
-              <li>
+            </p>
+          <div className="px-3 row-qh" >
+            
+        
+          <ul className='sm:text-2xl text-xl text-black list-disc' >
+            <li className='list'>
                 Se escoge el mejor agave silvestre en este caso Jabalí o
                 Tepeztate.
               </li>
@@ -61,11 +64,11 @@ function ProcesoElaboracion() {
                 tradicional que se remonta a generaciones, se encarga de darle
                 la graduación correcta.
               </li>
-            </ol>
-          </p>
+            </ul>
+          </div>
         </div>
-      </QuickInfoWrapper>
-    </Section>
+      </div>
+    </div>
   );
 }
 

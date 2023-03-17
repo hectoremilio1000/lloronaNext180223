@@ -1,23 +1,25 @@
 import Link from 'next/link';
 import React, { useState } from 'react'
+import title from "../Main/title.module.css"
+import card from "../Main/card.module.css"
 
 
 
 function QuickInfo2() {
 
   return (
-    <div className="container-llorona py-2 px-2">
+    <div className="container-llorona px-2">
       <div>
-        <h1 className="text-center text-3xl md:text-4xl uppercase">Llorona's Culture</h1>
+        <h1 className={title.fontTitlemain}>Llorona's Culture</h1>
       </div>
       <div>
-        <h4 className="text-center  text-black tituloSection2 m-0">Nuestras</h4>
-        <h2 className="text-center text-3xl">Raíces</h2>
+        <h4 className={title.fontTitleSub}>Nuestras</h4>
+        <h2 className={title.fontTitleline}>Raíces</h2>
         <div className="linea1"></div>
       </div>
 
       <div className="py-3 px-3 row-qh">
-        <p className="text-center sm:text-2xl text-xl">
+        <p className="text-center sm:text-2xl text-xl text-black">
           La Llorona surge de la fusión de la riqueza de la cocina urbana
           contemporánea y la vida de la cantina mexicana. Nuestros sabores son
           inconfundibles y amados en todo el mundo. Nuestra{" "}
@@ -30,7 +32,7 @@ function QuickInfo2() {
       <div
         style={{ gap: "20px", display: "flex", justifyContent: "center", flexWrap: "wrap" }}
       >
-        <Link href="/menullorona/menualimentos">
+        <Link href="/menullorona/Alimentos">
           <div>
             <img
               className="iconoAbajoTexto1Home"
@@ -40,7 +42,7 @@ function QuickInfo2() {
             <p className="textoFotosHome text-black">Menú Alimentos</p>
           </div>
         </Link>
-        <Link href="/menullorona/menubebidas/artesanal">
+        <Link href="/menullorona/Bebidas/Artesanal">
           <div>
             <img
               className="iconoAbajoTexto1Home"
@@ -50,7 +52,7 @@ function QuickInfo2() {
             <p className="textoFotosHome text-black">Mixología Artesanal</p>
           </div>
         </Link>
-        <Link href="/menullorona/menubebidas/artesanal">
+        <Link href="/menullorona/Bebidas/Artesanal">
           <div>
             <img
               className="iconoAbajoTexto1Home"
@@ -64,7 +66,7 @@ function QuickInfo2() {
             </p>
           </div>
         </Link>
-        <Link href="/menullorona/menubebidas/artesanal">
+        <Link href="/menullorona/Bebidas/Artesanal">
           <div>
             <img
               className="iconoAbajoTexto1Home"
@@ -78,7 +80,7 @@ function QuickInfo2() {
             </p>
           </div>
         </Link>
-        <Link href="/menullorona/menubebidas/industrial">
+        <Link href="/menullorona/Bebidas/Industrial">
           <div>
             <img
               className="iconoAbajoTexto1Home"
@@ -88,7 +90,7 @@ function QuickInfo2() {
             <p className="textoFotosHome text-black">Destilados</p>
           </div>
         </Link>
-        <Link href="/menullorona/menubebidas/industrial">
+        <Link href="/menullorona/Bebidas/Industrial">
           <div>
             <img
               className="iconoAbajoTexto1Home"

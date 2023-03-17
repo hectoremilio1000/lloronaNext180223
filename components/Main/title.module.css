@@ -4,11 +4,25 @@
     font-weight: 500;
 }
 
+.bullets{
+    list-style-type: circle !important;
+    color: black;
+}
+
+ul.a {
+  list-style-type: circle;
+}
+
+.list{
+    list-style-type:circle !important
+}
+
 .fontTitleSub {
-    text-align: center;
-    font-size: 35px;
-    font-weight: 800;
-    text-align: center !important;
+   letter-spacing: 0.3rem;
+  font-size: 2rem;
+  color: #3eeb91;
+  text-align: center !important;
+  font-weight: 800;
 }
 
 .fontTitleline {

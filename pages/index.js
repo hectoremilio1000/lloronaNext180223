@@ -14,18 +14,21 @@ export default function Home() {
     <div>
       <Head>
         <title>La Llorona</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
         <meta name="of:title" content="Llorona" />
-        <meta key="title" name="of:description" content="Somos un restaurante mexicano con buen son" />
-        <meta key="desciption" name="og:description" content="Somos un restaurante mexicano con buen son" />
-        <meta key="image" name="og:image" content="https://www.lalloronacantina.com/static/media/logo_alta_sin_nombre.88d01e7e1b755567658f.png">0</meta>
+        <meta name="of:description" content="Somos un restaurante mexicano con buen son" />
+        <meta name="og:description" content="Somos un restaurante mexicano con buen son" />
+        <meta name="og:title" content="La Llorona" />
+        <meta property="og:image" content="https://www.lalloronacantina.com/static/media/logo_alta_sin_nombre.88d01e7e1b755567658f.png"/>
+        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
       </Head>
       <div className="d-flex subContenedor1Banner banner bannerHome">
         {/* <video autoPlay muted loop src={videoPort} /> */}
 
         <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada">
-          <Image src={logo2} width={600}
-            alt="llorona" priority />
+          <Image src={logo2} width={450}
+            alt="llorona" priority className="mt-5"/>
           {/* <h3 className=" font-weight-bold text-3xl md:text-4xl uppercase font-black text-center text-white">
             Mexican Experience
           </h3> */}

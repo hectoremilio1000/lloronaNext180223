@@ -1,35 +1,34 @@
 import React from 'react'
-import Section from "../../Modules/styles/section";
-import { QuickInfoWrapper } from "../../Modules/styles/globalStyles";
-import "../../styles/global.css";
+import title from "../Main/title.module.css"
+import card from "../Main/card.module.css"
 
 function MezcalInfo() {
   return (
-    <Section className="mt-2">
-      <div>
-        <h1 className="text-center font-weight-bold">Mezcal Llorona</h1>
+    <div className="container-llorona py-2">
+      <div className='px-2'>
+        <h1 className={title.fontTitlemain}>Mezcal Llorona</h1>
       </div>
       <div>
-        <h4 className="text-center tituloSection">Nuestro Mezcal</h4>
+        <h4 className={title.fontTitleSub}>Nuestro Mezcal</h4>
 
         <div className="linea"></div>
       </div>
 
-      <QuickInfoWrapper>
-        <p className="text text-center">
+      <div className="py-3 px-3 row-qh">
+        <p className="text-center sm:text-2xl text-xl text-black">
           La llorona es una canción escrita en la comunidad zapoteca del Istmo
           de Tehuantepec, Oaxaca; cuenta la historia de la búsqueda de un gran
           amor.
         </p>
 
-        <p className="text text-center">
+        <p className="text-center sm:text-2xl text-xl text-black">
           En honor a esta búsqueda del amor hacia la perfección elaboramos un
           sabor que se remonta a 500 años de tradición en la elaboración del
           elixir llamado “mezcal minero”, haciendo alusión al nombre de la
           población donde lo producimos y el cuál se caracteriza por su
           elaboración a mano y su doble destilación en olla de barro.
         </p>
-      </QuickInfoWrapper>
+      </div>
       <div className="subSubDiv1Banner">
         <a href="https://wa.me/+5215549242477">
           <button type="button" className="buttonComponente">
@@ -37,7 +36,7 @@ function MezcalInfo() {
           </button>
         </a>
       </div>
-    </Section>
+    </div>
   );
 }
 

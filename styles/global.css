@@ -5,8 +5,14 @@
   src: url('./Gagalin-Regular.otf')
 }
 
+
+
 h1 {
   font-family: "Gagalin-Regular";
+}
+
+.buttonCheck{
+  background:#1677ff;
 }
 
 /* BANEER*/
@@ -15,7 +21,7 @@ h1 {
 }
 
 .container-llorona {
-  padding: 120px 0px !important;
+  padding: 100px 0px !important;
 }
 
 .row-qh {
@@ -55,16 +61,21 @@ h1 {
 }
 
 .buttonComponent {
-  display: table-cell;
   width: 200px;
-  height: 75px;
-  border: 2px solid #2be989;
-  vertical-align: middle
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 4px;
+  padding: 20px 14px;
+}
+
+.buttonComponent p {
+  color: #fff;
 }
 
 .contenedorMenu {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+  justify-content: center;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
