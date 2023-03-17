@@ -1,9 +1,7 @@
 import React from 'react'
 import { useState } from "react";
-// import { Button } from "react-bootstrap";
 import Link from "next/link";
-import ButtonComponent from '../Components/ButtonComponent';
-import { Button } from 'antd';
+import ButtonComponent from '../components/ButtonComponent/index';
 
 function MenuLlorona() {
   const [english, setEnglish] = useState(false);
@@ -54,8 +52,8 @@ function MenuLlorona() {
         <div>
           <h2 className="text-center font-weight-bold">Menú</h2>
           <div className="contenedorLenguaje">
-            <Button onClick={onEnglish} type="primary" className='buttonCheck'>English</Button>
-            <Button onClick={onSpanish} type="primary" className='buttonCheck'>Español</Button>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={onEnglish}>English</button>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={onSpanish}>Español</button>
           </div>
         </div>
 
