@@ -2,7 +2,7 @@ import React from 'react'
 import title from "../Main/title.module.css"
 
 
-function TitlebarImageListFranquicias() {
+function TitlebarImageListFranquicias() { 
   const image1 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_0059+(1).jpg"
   const image2 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_0062+(1).jpg"
   const image3 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_0063+(1).jpg"
