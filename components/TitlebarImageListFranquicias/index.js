@@ -32,8 +32,7 @@ function TitlebarImageListFranquicias() {
             <Image
               alt=""
               src={image1}
-              layout="fill"
-              objectFit="cover"
+            
               className="group-hover:opacity-75"
             />
 
@@ -42,8 +41,7 @@ function TitlebarImageListFranquicias() {
             <Image
               alt=""
               src={image2}
-              layout="fill"
-              objectFit="cover"
+             
               className="group-hover:opacity-75"
             />
 
