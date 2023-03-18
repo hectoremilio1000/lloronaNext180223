@@ -17,7 +17,7 @@ function Mezcal() {
           backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/PHOTO-2022-04-27-10-56-11.jpg")`,
           backgroundSize: "cover",
           height: "100vh",
-          backgroundPosition: "center",
+          backgroundPosition: "right center",
           position: "relative"
         }}>
 
@@ -25,7 +25,7 @@ function Mezcal() {
 
         <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada">
           <h3 className=" font-weight-bold proximamente2 text-white">
-            Cómpralo aquí o <br/> en Nuestra Sucursal de la Roma Condesa
+            Cómpralo aquí o <br /> en Nuestra Sucursal de la Roma Condesa
           </h3>
 
           <div className="subSubDiv1Banner">
@@ -45,11 +45,11 @@ function Mezcal() {
           </div> */}
         </div>
       </div>
-       <MezcalInfo className="mt-0" />
-     <ProcesoElaboracion />
+      <MezcalInfo className="mt-0" />
+      <ProcesoElaboracion />
       <TitlebarImageList />
       <NuestroMezcalInfo />
-      <NuestroMezcalImages/> 
+      <NuestroMezcalImages />
     </div>
   );
 }
