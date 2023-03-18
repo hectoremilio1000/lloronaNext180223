@@ -21,7 +21,7 @@ export default function Home() {
         <link rel="apple-touch-icon" href="../logo192.png" />
         <link rel="manifest" href="../manifest.json" />
       </Head>
-      <div className="d-flex subContenedor1Banner bannerFranquicias banner">
+      <div className="d-flex subContenedor1Banner bannerHomeFinal banner">
 
         {/* <video autoPlay muted loop src={videoPort} /> */}
 

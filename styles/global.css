@@ -117,9 +117,18 @@ h1 {
   background-position: center;
 } */
 
+.bannerHomeFinal {
+  background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/franquiciasBanner.jpg");
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  height: 90vh;
+  background-position: center;
+  position: relative;
+}
+
 
 .bannerFranquicias {
-  background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/franquiciasBanner.jpg");
+  background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/fotosBanner/IMG_0903.jpg") !important;
   background-size: cover !important;
   background-repeat: no-repeat;
   height: 90vh;
@@ -398,6 +407,7 @@ ul {
     font-size: 13px;
   }
 
+
   .contenedorMenu {
     flex-wrap: nowrap;
   }
@@ -446,6 +456,15 @@ ul {
 
     flex-wrap: wrap;
   }
+    .bannerFranquicias {
+  background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/fotosBanner/IMG_0904.jpg") !important;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  height: 90vh;
+  background-position: center;
+  position: relative;
+}
+
 
   .card-menu {
     width: 100%;
