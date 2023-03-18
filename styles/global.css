@@ -5,7 +5,10 @@
   src: url('./Gagalin-Regular.otf')
 }
 
-
+body {
+  margin: 0;
+  padding: 0;
+}
 
 h1 {
   font-family: "Gagalin-Regular";
@@ -121,6 +124,7 @@ h1 {
   background-repeat: no-repeat;
   height: 90vh;
   background-position: center;
+  position: relative;
 }
 
 /* .imagenesDefinidas{

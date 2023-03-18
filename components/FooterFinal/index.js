@@ -8,7 +8,7 @@ function FooterFinal() {
         <footer className=" fondo2 py-12">
 
             <div className="max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8">
-                <nav className="-mx-5 -my-2 flex flex-wrap justify-center">
+                <nav className="-my-2 flex flex-wrap justify-center" style={{ width: "100%" }}>
                     <div className="px-5 py-2">
                         <Link href="/reserva">
                             <p className="text-white hover:text-white">Reserva</p>
