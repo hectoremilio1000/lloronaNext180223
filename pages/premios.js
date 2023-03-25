@@ -40,10 +40,10 @@ function Mezcal() {
                     <div>
                         <img
                             className="imagenAbajoTexto1Home"
-                            src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/burguerMasRicaMExicoLlorona.jpg"
+                            src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/hamburguesas/1528926142blue-cheese-and-caramelized-onion-burgers-large.jpg"
                             alt="Premio pruébala"
                         />
-                        <p className="textoFotosHome text-black">Hamburguesa con Aros <br/>de cebolla y queso cheddar</p>
+                        <p className="textoFotosHome text-black">Hamburguesa Caramelo <br/>con queso azul</p>
                     </div>
 
 
@@ -55,7 +55,7 @@ function Mezcal() {
                         <img
                             className="imagenAbajoTexto1Home"
                             src="https://imagenesrutalab.s3.amazonaws.com/llorona/HAMBURGUESA_jack_suizo.JPG"
-                            alt="Tacos deliciosos de Cochinita Pibil"
+                            alt="Hamburguesa deliciosa Llorona"
                         />
                         <p className="textoFotosHome text-black">
                             Hamburguesa Méxicana <br />
