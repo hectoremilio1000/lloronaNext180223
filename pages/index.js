@@ -16,8 +16,10 @@ export default function Home() {
         <meta name="of:title" content="Llorona" />
         <meta name="of:description" content="Somos un restaurante mexicano con buen son" />
         <meta name="og:description" content="Somos un restaurante mexicano con buen son" />
+        <meta property="og:url" content="https://lalloronacantina.com/" />
         <meta name="og:title" content="La Llorona" />
-        <meta property="og:image" content="https://www.lalloronacantina.com/static/media/logo_alta_sin_nombre.88d01e7e1b755567658f.png" />
+        <meta property="og:type" content="La Llorona" />
+        <meta property="og:image" content="https://imagenesrutalab.s3.amazonaws.com/llorona/logo/logo_alta_sin_nombre.png" />
         <link rel="apple-touch-icon" href="../logo192.png" />
         <link rel="manifest" href="../manifest.json" />
       </Head>
