@@ -7,7 +7,18 @@ const nextConfig = {
 
 module.exports = {
     nextConfig,
+    trailingSlash: true,
     images: {
         unoptimized: true,
+    },
+    async redirects() {
+        return [
+            {
+                source: '/menullorona',
+                destination: '/menullorona',
+                permanent: true,
+            },
+
+        ];
     },
 }

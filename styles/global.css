@@ -118,7 +118,7 @@ h1 {
 } */
 
 .bannerHomeFinal {
-  background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/franquiciasBanner.jpg");
+  background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/lugarafuera.jpg");
   background-size: cover !important;
   background-repeat: no-repeat;
   height: 90vh;
@@ -126,6 +126,15 @@ h1 {
   position: relative;
 }
 
+
+.bannerPremios {
+  background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/HAMBURGUESA_jack_suizo.JPG") !important;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  height: 90vh;
+  background-position: center;
+  position: relative;
+}
 
 .bannerFranquicias {
   background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/fotosBanner/IMG_0903.jpg") !important;
@@ -456,6 +465,19 @@ ul {
 
     flex-wrap: wrap;
   }
+
+
+
+     .bannerHomeFinal {
+  background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/HAMBURGUESA_jack_suizo+(2).jpeg") !important;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  height: 90vh;
+  background-position: center;
+  position: relative;
+}
+
+
     .bannerFranquicias {
   background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/fotosBanner/IMG_0904.jpg") !important;
   background-size: cover !important;
