@@ -16,7 +16,7 @@ function NuestroMezcalImages() {
         <div className="linea"></div>
       </div>
 
-      <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "20px" }}>
+      <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "20px", margin: 20 }}>
         <div className={card.card_box}>
           <img
             alt=""

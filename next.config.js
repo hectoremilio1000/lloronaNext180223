@@ -11,6 +11,10 @@ module.exports = {
     images: {
         unoptimized: true,
     },
+    i18n: {
+        locales: ['es', 'en'], // Lista de códigos de idioma que deseas soportar
+        defaultLocale: 'es', // El idioma predeterminado
+    },
     async redirects() {
         return [
             {

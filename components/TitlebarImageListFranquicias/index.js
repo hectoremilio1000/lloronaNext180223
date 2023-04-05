@@ -27,7 +27,7 @@ function TitlebarImageListFranquicias() {
             <img style={{ objectFit: "cover" }}
               alt=""
               src={image1}
-              objectFit="cover"
+              
               className="group-hover:opacity-75"
             />
 
@@ -36,7 +36,7 @@ function TitlebarImageListFranquicias() {
             <img style={{ objectFit: "cover" }}
               alt=""
               src={image2}
-              objectFit="cover"
+              
               className="group-hover:opacity-75"
             />
 
@@ -46,7 +46,7 @@ function TitlebarImageListFranquicias() {
               alt=""
               src={image3}
               layout="fill"
-              objectFit="cover"
+            
               className="group-hover:opacity-75"
             />
 
@@ -56,7 +56,7 @@ function TitlebarImageListFranquicias() {
               alt=""
               src={image5}
               layout="fill"
-              objectFit="cover"
+          
               className="group-hover:opacity-75"
             />
 
@@ -66,7 +66,7 @@ function TitlebarImageListFranquicias() {
               alt=""
               src={image6}
               layout="fill"
-              objectFit="cover"
+             
               className="group-hover:opacity-75"
             />
 
@@ -76,7 +76,7 @@ function TitlebarImageListFranquicias() {
               alt=""
               src={image7}
               layout="fill"
-              objectFit="cover"
+          
               className="group-hover:opacity-75"
             />
 
@@ -86,7 +86,7 @@ function TitlebarImageListFranquicias() {
               alt=""
               src={image8}
               layout="fill"
-              objectFit="cover"
+           
               className="group-hover:opacity-75"
             />
 
@@ -96,7 +96,7 @@ function TitlebarImageListFranquicias() {
               alt=""
               src={image4}
               layout="fill"
-              objectFit="cover"
+            
               className="group-hover:opacity-75"
             />
 
