@@ -1,14 +1,22 @@
 import React from 'react'
 import title from "../../../components/Main/title.module.css"
 
+import { menuFood1 } from '../../../data/menu/menuIngles'
+import { menuFood2 } from '../../../data/menu/menuIngles'
+import { mixoIngles } from '../../../data/menu/menuIngles'
+import { CervezaArteIngles } from '../../../data/menu/menuIngles'
+import { sodaEspaIngles } from '../../../data/menu/menuIngles'
+import { destiladosEspaIngles } from '../../../data/menu/menuIngles'
+import { mezcaEspaIngles } from '../../../data/menu/menuIngles'
+
 function MenuFood() {
-    const menuComida1 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/food1.jpg"
-    const menuComida2 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/food2.jpg"
-    const mixologia = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/MixologyEnglish.jpg"
-    const soda = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/SpiritsBeersSodas.jpg"
-    const cervezaArtesanal = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/draftbeer.jpg"
-    const mezcales = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mezcalIngles.jpg"
-    const destilados = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/distillates.jpg"
+    const menuComida1 = menuFood1;
+    const menuComida2 = menuFood2;
+    const mixologia = mixoIngles;
+    const soda = sodaEspaIngles;
+    const cervezaArtesanal = CervezaArteIngles;
+    const mezcales = mezcaEspaIngles
+    const destilados = destiladosEspaIngles; 
     return (
         <>
             <div className="d-flex subContenedor1Banner banner"

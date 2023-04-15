@@ -5,22 +5,31 @@ import QuickInfo3 from '../components/QuickInfo3/index';
 import MenuDetail from "../components/MenuDetail";
 import Promociones from "../components/Promociones";
 // import videoPort from '../data/assets/portada.mp4'
+import { useRouter } from 'next/router';
+import HeaderEn from '../components/Header-en/HeaderEn';
+import HeaderEs from '../components/Header-es/Header-es';
 
 export default function Home() {
+  const router = useRouter();
+  const { locale } = router;
+  let HeaderComponent;
   const logo2 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/logo_page_altaNUEVO_blanco.png"
+
+  switch (locale) {
+    case 'en':
+      HeaderComponent = HeaderEn;
+      break;
+    case 'es':
+      HeaderComponent = HeaderEs;
+      break;
+    default:
+      HeaderComponent = HeaderEs;
+  }
+
+
   return (
     <div>
-      <Head>
-        <title>La Llorona</title>
-        <link rel="icon" href="../favicon.ico" />
-        <meta name="of:title" content="Llorona" />
-        <meta name="of:description" content="Somos un restaurante mexicano con buen son" />
-        <meta name="og:description" content="Somos un restaurante mexicano con buen son" />
-        <meta name="og:title" content="La Llorona" />
-        <meta property="og:image" content="https://www.lalloronacantina.com/static/media/logo_alta_sin_nombre.88d01e7e1b755567658f.png" />
-        <link rel="apple-touch-icon" href="../logo192.png" />
-        <link rel="manifest" href="../manifest.json" />
-      </Head>
+      <HeaderComponent />
       <div className="d-flex subContenedor1Banner bannerHomeFinal banner">
 
         {/* <video autoPlay muted loop src={videoPort} /> */}

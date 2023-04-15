@@ -25,6 +25,11 @@ function FooterFinal() {
                         </Link>
                     </div>
                     <div className="px-5 py-2">
+                        <Link href="/premios">
+                            <p className="text-white hover:text-white">Premios</p>
+                        </Link>
+                    </div>
+                    <div className="px-5 py-2">
                         <Link href="/franquicias">
                             <p className="text-white hover:text-white">Franquicias</p>
                         </Link>

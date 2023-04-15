@@ -24,10 +24,8 @@ function QuickInfo() {
 
       <div className="py-3 px-3 row-qh">
         <p className="text-center sm:text-2xl text-xl text-black">
-          Toma nuestros cocteles con <b>Pulque, Tepache o Mezcal</b>. Prueba con nosotros
-          la gastronomía urbana mexicana que va desde{" "}
-          <b>tacos, memelas hasta hamburguesas</b> y deleítate con una exquisita
-          <b> Cerveza Artesanal Mexicana</b> que encontraras AQUÍ.
+        Somos un lugar que ama y le encanta su México. Atrévete a probar las hamburguesas más premiadas de todo México, en especial la galardonada <b>Oaxaca Burguer</b> que tiene una torre de aros de cebolla y un fondue con queso Oaxaca. Toma las pocimas (mixología) de la llorona, preparadas con <b>Pulque, Tepache o Mezcal</b>, y deleítate con nuestra exquisita selección de
+          <b> Cervezas Artesanales Mexicanas</b>.
         </p>
       </div>
 
@@ -37,33 +35,6 @@ function QuickInfo() {
       <div
         style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "20px" }}
       >
-
-        <Link href="/menullorona/Alimentos">
-          <div>
-            <img
-              className="imagenAbajoTexto1Home"
-              src="https://imagenesrutalab.s3.amazonaws.com/llorona/galeriaimagenes/mexican-shredded-pork-recipes-900x900.jpg"
-              alt="Tacos deliciosos de Cochinita Pibil"
-            />
-            <p className="textoFotosHome text-black">Tacos de Cochinita Pibil</p>
-          </div>
-
-
-
-        </Link>
-        <Link href="/menullorona/Alimentos">
-          <div className={card.cardBox}>
-            <img
-              className="imagenAbajoTexto1Home"
-              src="https://imagenesrutalab.s3.amazonaws.com/llorona/galeriaimagenes/aguachileVerde.jpg"
-              alt="Aguachile Verde Camarón"
-            />
-            <p className="textoFotosHome text-black">
-              Aguachile Verde <br />
-              de Camarón
-            </p>
-          </div>
-        </Link>
         <Link href="/menullorona/Alimentos">
           <div className={card.cardBox}>
             <img
@@ -72,20 +43,49 @@ function QuickInfo() {
               alt="Tacos deliciosos de Cochinita Pibil"
             />
             <p className="textoFotosHome text-black">
-              Hamburguesa Méxicana <br />
-              con especias mexicanas
+              La más galardonada <br />
+              <b> Oaxaca Burguer</b>
             </p>
           </div>
         </Link>
+        <Link href="/menullorona/Alimentos">
+          <div>
+            <img
+              className="imagenAbajoTexto1Home"
+              src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/FotosBurguer/IMG_2177.jpg"
+              alt="Las hamburguesas más deliciosas CDMX LLORONA"
+            />
+            <p className="textoFotosHome text-black">Hamburguesas deliciosas = <br/><b>Clientes felices</b></p>
+          </div>
+
+
+
+        </Link>
+        <Link href="/menullorona/Alimentos">
+          <div className={card.cardBox}>
+            <img
+              className="imagenAbajoTexto1Home"
+              src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/FotosBurguer/IMG_2178.jpg"
+              alt="Las hamburguesas más ricas"
+            />
+            <p className="textoFotosHome text-black">
+              Las más ricas hamburguesas <br />
+              <b>de CDMX</b>
+            </p>
+          </div>
+        </Link>
+        
         <Link href="/menullorona/Bebidas/Artesanal">
           <div className={card.cardBox}>
             <img
               className="imagenAbajoTexto1Home"
-              src="https://imagenesrutalab.s3.amazonaws.com/llorona/mixologia/IMG_8064.jpg"
+              src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/FotosBurguer/IMG_2179.jpg"
               alt="Pierde Almas con Mezcal"
             />
             <p className="textoFotosHome text-black">
-              Pulque
+              Hamburguesas Ricas hacen<b>
+                <br/>hombres sonrientes
+              </b>
 
 
             </p>
