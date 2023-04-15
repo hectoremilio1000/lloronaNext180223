@@ -24,7 +24,7 @@ function QuickInfo() {
 
       <div className="py-3 px-3 row-qh">
         <p className="text-center sm:text-2xl text-xl text-black">
-        Atrévete a probar las hamburguesas más premiadas de todo México, sobre toda la galardonada <b>Oaxaca Burguer</b>. Toma las pocimas de la llorona preparadas con <b>Pulque, Tepache o Mezcal</b>, y deleítate con nuestra exquisita selección de
+        Somos un lugar que ama y le encanta su México. Atrévete a probar las hamburguesas más premiadas de todo México, en especial la galardonada <b>Oaxaca Burguer</b> que tiene una torre de aros de cebolla y un fondue con queso Oaxaca. Toma las pocimas (mixología) de la llorona, preparadas con <b>Pulque, Tepache o Mezcal</b>, y deleítate con nuestra exquisita selección de
           <b> Cervezas Artesanales Mexicanas</b>.
         </p>
       </div>
