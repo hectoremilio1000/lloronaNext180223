@@ -7,25 +7,25 @@ import NavBarEs from '../components/NavBarEs/NavBarEs';
 
 export default function Layout({ children }) {
 
-    const router = useRouter();
-    const { locale } = router;
+    // const router = useRouter();
+    // const { locale } = router;
 
-    let NavBarComponent;
+    // let NavBarComponent;
 
-    switch (locale) {
-        case 'en':
-            NavBarComponent = NavBarEn;
-            break;
-        case 'es':
-            NavBarComponent = NavBarEs;
-            break;
-        default:
-            NavBarComponent = NavBarEs;
-    }
+    // switch (locale) {
+    //     case 'en':
+    //         NavBarComponent = NavBarEn;
+    //         break;
+    //     case 'es':
+    //         NavBarComponent = NavBarEs;
+    //         break;
+    //     default:
+    //         NavBarComponent = NavBarEs;
+    // }
 
     return (
         <>
-            <NavBarComponent/>
+            <NavBarEs/>
            
             <main>{children}</main>
             <FooterFinal />
