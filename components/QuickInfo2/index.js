@@ -20,13 +20,7 @@ function QuickInfo2() {
 
       <div className="py-3 px-3 row-qh">
         <p className="text-center sm:text-2xl text-xl text-black">
-          La Llorona surge de la fusión de la riqueza de la cocina urbana
-          contemporánea y la vida de la cantina mexicana. Por eso <b>Nuestro nombre</b> representa el ambiente que se vive en una cantina de felicidad, amor y pasión, siendo así el son <b> </b>"La Llorona" que canta Nuestra Chavela Vargas. <br/> Nuestros sabores son
-          inconfundibles y amados en todo el mundo. Nuestra{" "}
-          <b>
-            fiesta, nuestra energía, nuestra vibra, nuestro baile y nuestra
-            gastronomía.
-          </b>
+          If you're looking to explore a wide selection of <b>Mexican craft beers </b> or indulge in mixology with Mexican flavors featuring Mezcal and Tequila, this is the place to be. Enjoy our <b>Avocado Martini or Mazapan Martini </b>, or try some of our cocktails made with Pulque, an ancient Mexican beverage. Experience the fusion of tradition and innovation in every sip!
         </p>
       </div>
       <div

@@ -2,6 +2,7 @@ import React from 'react'
 import title from "../../../components/Main/title.module.css"
 import { menuEspa1 } from '../../../data/menu/menuEspa/menuEspa'
 import { menuEspa2 } from '../../../data/menu/menuEspa/menuEspa'
+import { menuEspa3 } from '../../../data/menu/menuEspa/menuEspa'
 import { mixoEspa } from '../../../data/menu/menuEspa/menuEspa'
 import { CervezaArte } from '../../../data/menu/menuEspa/menuEspa'
 import { sodaEspa } from '../../../data/menu/menuEspa/menuEspa'
@@ -11,6 +12,7 @@ import { mezcaEspa } from '../../../data/menu/menuEspa/menuEspa'
 function Alimentos() {
   const menuComida1 = menuEspa1;
   const menuComida2 = menuEspa2;
+  const menuComida3 = menuEspa3;
   const mixologia = mixoEspa;
   const soda = sodaEspa;
   const cervezaArtesanal = CervezaArte;
@@ -55,6 +57,15 @@ function Alimentos() {
           <div className="w-full px-4">
             <img
               src={menuComida2}
+              alt="comida sabrosa"
+              width={1000}
+              height={500}
+              className="w-full"
+            />
+          </div>
+          <div className="w-full px-4">
+            <img
+              src={menuComida3}
               alt="comida sabrosa"
               width={1000}
               height={500}

@@ -3,6 +3,7 @@ import title from "../../../../components/Main/title.module.css"
 
 import { menuFood1 } from '../../../../data/menu/menuIngles'
 import { menuFood2 } from '../../../../data/menu/menuIngles'
+import { menuFood3 } from '../../../../data/menu/menuIngles'
 import { mixoIngles } from '../../../../data/menu/menuIngles'
 import { CervezaArteIngles } from '../../../../data/menu/menuIngles'
 import { sodaEspaIngles } from '../../../../data/menu/menuIngles'
@@ -12,6 +13,7 @@ import { mezcaEspaIngles } from '../../../../data/menu/menuIngles'
 function Drinks() {
     const menuComida1 = menuFood1;
     const menuComida2 = menuFood2;
+    const menuComida3 = menuFood3;
     const mixologia = mixoIngles;
     const soda = sodaEspaIngles;
     const cervezaArtesanal = CervezaArteIngles;
@@ -90,6 +92,15 @@ function Drinks() {
                     <div className="w-full px-4">
                         <img
                             src={menuComida2}
+                            alt="comida sabrosa"
+                            width={1000}
+                            height={500}
+                            className="w-full"
+                        />
+                    </div>
+                    <div className="w-full px-4">
+                        <img
+                            src={menuComida3}
                             alt="comida sabrosa"
                             width={1000}
                             height={500}

@@ -85,6 +85,14 @@
     width: 100%;
   }
 
+    .header-derecha {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #fff !important;
+    width: 100%;
+  }
+
   .linkswraper {
     position: fixed;
     top: 120px;

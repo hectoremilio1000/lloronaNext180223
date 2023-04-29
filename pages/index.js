@@ -8,6 +8,7 @@ import Promociones from "../components/Promociones";
 import { useRouter } from 'next/router';
 import HeaderEn from '../components/Header-en/HeaderEn';
 import HeaderEs from '../components/Header-es/Header-es';
+import { useAppContext } from "../components/context/Context";
 
 export default function Home() {
   const router = useRouter();
@@ -15,21 +16,14 @@ export default function Home() {
   let HeaderComponent;
   const logo2 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/logo_page_altaNUEVO_blanco.png"
 
-  // switch (locale) {
-  //   case 'en':
-  //     HeaderComponent = HeaderEn;
-  //     break;
-  //   case 'es':
-  //     HeaderComponent = HeaderEs;
-  //     break;
-  //   default:
-  //     HeaderComponent = HeaderEs;
-  // }
+  const { ingles, espa } = useAppContext();
 
 
   return (
     <div>
-      <Head>
+      
+    
+      {espa ? <Head>
         <title>La Llorona</title>
         <link rel="icon" href="../favicon.ico" />
         <meta name="of:title" content="Llorona" />
@@ -42,25 +36,46 @@ export default function Home() {
         <link rel="apple-touch-icon" href="../logo192.png" />
         <link rel="manifest" href="../manifest.json" />
       </Head>
-      <div className="d-flex subContenedor1Banner bannerHomeFinal banner">
+        : <Head>
+          <title>Llorona Best Mexican cousine in town</title>
+          <link rel="alternate" hrefLang="en" href="https://lalloronacantina.com" />
+          <link rel="alternate" hrefLang="es" href="https://lalloronacantina.com" />
+          <link rel="icon" href="../favicon.ico" />
+          <meta name="of:title" content="Llorona" />
+          <meta name="of:description" content="Experience the best cuisine in Mexico City in Roma Condesa at our restaurant." />
+          <meta name="og:description" content="Experience the best cuisine in Mexico City in Roma Condesa at our restaurant." />
+          <meta property="og:url" content="https://lalloronacantina.com/" />
+          <meta name="og:title" content="Llorona" />
+          <meta property="og:type" content="Llorona" />
+          <meta property="og:image" content="https://imagenesrutalab.s3.amazonaws.com/llorona/logo/logo_alta_sin_nombre.png" />
+          <link rel="apple-touch-icon" href="../logo192.png" />
+          <link rel="manifest" href="../manifest.json" />
+        </Head>}
+      
 
-        {/* <video autoPlay muted loop src={videoPort} /> */}
-
-        <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada">
-          <img src={logo2} width={450}
-            alt="llorona" className="mt-5" />
+      {
+        espa ? <div className="d-flex subContenedor1Banner bannerHomeFinal banner">
+          <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada">
+            <img src={logo2} width={450}
+              alt="llorona" className="mt-5" />
           </div>
-
-          {/* <div className="subSubDiv1Banner">
+        </div> : 
+          <div className="d-flex subContenedor1Banner bannerHomeIngles banner">
+            <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada">
+              <img src={logo2} width={450}
+                alt="llorona" className="mt-5" />
+            </div>
+          </div>
+      }
+      
+      {/* <video autoPlay muted loop src={videoPort} /> */}
+      {/* <div className="subSubDiv1Banner">
             <Link href="/reserva">
               <button type="button" className="buttonComponente focus:outline-none text-white bg-green-400 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
                 ¡Reserva ya!
               </button>
             </Link>
           </div> */}
-      
-      </div>
-
       {/* <div className="d-flex subContenedor1Banner banner bannerHome">
         <video autoPlay muted loop src={videoPort} /> 
 

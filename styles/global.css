@@ -117,6 +117,15 @@ h1 {
   background-position: center;
 } */
 
+.bannerHomeIngles {
+  background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/lugarafuera.jpg") !important;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  height: 90vh;
+  background-position: center;
+  position: relative;
+}
+
 .bannerHomeFinal {
   background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/lugarafuera.jpg");
   background-size: cover !important;
@@ -477,6 +486,14 @@ ul {
   position: relative;
 }
 
+.bannerHomeIngles {
+  background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/coctelDeliciosoMEzcal.jpg") !important;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  height: 90vh;
+  background-position: center;
+  position: relative;
+}
 
     .bannerFranquicias {
   background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/fotosBanner/IMG_0904.jpg") !important;

@@ -2,6 +2,8 @@ export const menuFood1 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextI
 
 export const menuFood2 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/menuIngles/food2.jpg"
 
+export const menuFood3 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/menuIngles/food3.jpg"
+
 export const mixoIngles = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/menuIngles/MixologyEnglish.jpg";
 
 export const CervezaArteIngles =

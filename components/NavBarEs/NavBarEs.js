@@ -10,12 +10,20 @@ import { FaAlignRight } from "react-icons/fa";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import './navbar.module.css'
 import { useRouter } from 'next/navigation';
+import { useAppContext } from '../context/Context';
 
+const usFlag = 'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/banderas/um.svg'
+
+const mxFlag = 'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/banderas/mx.svg'
 
 function NavBar() {
   const [current, setCurrent] = useState("");
   const [linkswraper, setLinkswraper] = useState(false);
-  const [navbar, setNavbar] = useState(false)
+  const [navbar, setNavbar] = useState(false);
+
+  const { espa, ingles, onIdiomaIngles, onIdiomaEspa } = useAppContext();
+
+  console.log(espa, ingles);
 
   const changeBackground = () => {
     if (typeof window !== "undefined") {
@@ -52,48 +60,100 @@ function NavBar() {
 
       </Link> */}
         <div className='header-logo'>
-          <Link href="/" className="logo">
+          <div>
+
+          
+          <Link href="/" className="logo ">
             <Image src={logo} width={100}
               alt="llorona" priority />
-          </Link>
+            </Link>
+          </div>
+
+          <div className='flex justify-center'>
           <FaAlignRight
-            className="toggle-icon"
+            className="toggle-icon mr-2"
             onClick={() => {
               handleNavbar();
             }}
+              
           />
+            <div onClick={onIdiomaIngles} className="hover:text-emerald-500 toggle-icon cursor-pointer mr-2" >
+            <img src={usFlag}
+              width={20}
+              height={20} />
+          </div>
+
+            <div onClick={onIdiomaEspa} className="hover:text-emerald-500 cursor-pointer toggle-icon">
+            <img src={mxFlag}
+              width={20}
+              height={20} />
+            </div>
+          </div>
         </div>
         <div onClick={() => { handleNavbar() }} className={linkswraper ? 'linkswraper active' : 'linkswraper'}>
-          <li key="0">
+          <>  {espa ? <> <li key="0">
             <Link href="/" className="nav-link hover:text-emerald-500">
               Inicio
             </Link>
           </li>
-          <li key="1">
-            <Link href="/reserva" className="nav-link hover:text-emerald-500">
-              Reserva
+            <li key="1">
+              <Link href="/reserva" className="nav-link hover:text-emerald-500">
+                Reserva
+              </Link>
+            </li>
+            <li key="2">
+              <Link href="/menullorona" className="nav-link hover:text-emerald-500">
+                Menu
+              </Link>
+            </li>
+            <li key="3">
+              <Link href="/mezcal" className="nav-link hover:text-emerald-500">
+                Mezcal
+              </Link>
+            </li>
+            <li key="4">
+              <Link href="/premios" className="nav-link hover:text-emerald-500">
+                Premios
+              </Link>
+            </li>
+            <li key="5">
+              <Link href="/franquicias" className="nav-link hover:text-emerald-500">
+                Franquicias
+              </Link>
+            </li>
+          </> : <> <li key="0">
+            <Link href="/" className="nav-link hover:text-emerald-500">
+              Home
             </Link>
           </li>
-          <li key="2">
-            <Link href="/menullorona" className="nav-link hover:text-emerald-500">
-              Menu
-            </Link>
-          </li>
-          <li key="3">
-            <Link href="/mezcal" className="nav-link hover:text-emerald-500">
-              Mezcal
-            </Link>
-          </li>
-          <li key="4">
-            <Link href="/premios" className="nav-link hover:text-emerald-500">
-              Premios
-            </Link>
-          </li>
-          <li key="5">
-            <Link href="/franquicias" className="nav-link hover:text-emerald-500">
-              Franquicias
-            </Link>
-          </li>
+            <li key="1">
+              <Link href="/reserva" className="nav-link hover:text-emerald-500">
+                Book
+              </Link>
+            </li>
+            <li key="2">
+              <Link href="/menullorona" className="nav-link hover:text-emerald-500">
+                Menu
+              </Link>
+            </li>
+            <li key="3">
+              <Link href="/mezcal" className="nav-link hover:text-emerald-500">
+                Mezcal
+              </Link>
+            </li>
+            <li key="4">
+              <Link href="/premios" className="nav-link hover:text-emerald-500">
+                Rewards
+              </Link>
+            </li>
+            <li key="5">
+              <Link href="/franquicias" className="nav-link hover:text-emerald-500">
+                  Franchises
+              </Link>
+            </li> </> }
+          
+          </>
+          
         </div>
         <div className='header-icons'>
           <a key="0" href="https://www.facebook.com/Lalloronacantinacdmx" target="_blank" rel="noopener noreferrer">
@@ -102,6 +162,18 @@ function NavBar() {
           <a key="1" href="https://www.instagram.com/cantinalallorona/" target="_blank" rel="noopener noreferrer">
             <FaInstagram className="icon instagram-icon hover:text-emerald-500" />
           </a>
+          <div onClick={onIdiomaIngles} className="hover:text-emerald-500 cursor-pointer" >
+          <img src={usFlag}
+            width={20}
+            height={20} />
+          </div>
+
+          <div onClick={onIdiomaEspa} className="hover:text-emerald-500 cursor-pointer">
+            <img src={mxFlag}
+              width={20}
+              height={20} />
+          </div>
+
         </div>
       </div>
 
