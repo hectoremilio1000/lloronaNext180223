@@ -3,7 +3,10 @@ import React from 'react'
 import Calendario from '../components/Calendario/index';
 
 import title from "../components/Main/title.module.css"
+import { useAppContext } from '../components/context/Context';
 function Reserva() {
+
+  const { espa } = useAppContext();
   const image1 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg"
   const image2 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg"
   const image3 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg"
@@ -21,7 +24,7 @@ function Reserva() {
 
         {/* <video autoPlay muted loop src={videoPort} /> */}
 
-        <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada">
+        {espa ? <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada">
           <h3 className=" font-weight-bold proximamente2 text-white">
             <b>Los jueves piñata cumpleañera <br />con una botella de mezcal</b>
           </h3>
@@ -33,10 +36,26 @@ function Reserva() {
               </button>
             </Link>
           </div> */}
-        </div>
+        </div> : 
+          <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada">
+            <h3 className=" font-weight-bold proximamente2 text-white">
+              <b>On Thursdays, a birthday <br />piñata with a bottle of mezcal</b>
+            </h3>
+
+            {/* <div className="subSubDiv1Banner">
+            <Link href="/reserva">
+              <button type="button" className="buttonComponente focus:outline-none text-white bg-green-400 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+                ¡Reserva ya!
+              </button>
+            </Link>
+          </div> */}
+          </div>}
+
+       
       </div>
       <Calendario />
-      <div className='container-llorona'>
+      {espa ?
+        <div className='container-llorona'>
         <div className="mt-2 px-2 py-2">
           <h4 className={title.fontTitleSub}>Celebra tu cumpleaños</h4>
           <h2 className={title.fontTitleline}>
@@ -47,11 +66,13 @@ function Reserva() {
 
         <div className="py-3 px-3 row-qh">
           <p className="text-center text-black sm:text-2xl text-xl">
-            La piñata cumpleañera no tiene costo, y aplica todos los jueves si
+            La <b>piñata cumpleañera</b> no tiene costo, y aplica todos los jueves si
             cumples años en el mes ❤️ y solo tienen que hacer reservación en
             cualquiera de nuestras redes sociales. Les regalamos dulces típicos
             mexicanos y una botella de nuestro mejor mezcal de la casa 🍶🥃
             madre cuishe el cual está elaborado artesanalmente.
+
+            Este <b>mezcal premium </b>de la más alta calidad y está elaborado con un proceso artesanal proveniente de un gran maestro mezcalero de la Ciudad de Oaxaca, México.
           </p>
         </div>
 
@@ -115,7 +136,88 @@ function Reserva() {
 
 
 
-        {/* <div
+        
+      </div> : 
+        <div className='container-llorona'>
+          <div className="mt-2 px-2 py-2">
+            <h4 className={title.fontTitleSub}>Celebrate your birthday</h4>
+            <h2 className={title.fontTitleline}>
+              on Thursdays with 
+            </h2>
+            <div className="linea"></div>
+          </div>
+
+          <div className="py-3 px-3 row-qh">
+            <p className="text-center text-black sm:text-2xl text-xl">
+              The <b>birthday piñata </b>is free of charge and is available every <b>Thursday </b>if you celebrate your birthday within the month ❤️. All you have to do is make a reservation through any of our social media platforms. We'll gift you traditional Mexican candies and a bottle of our finest house Mezcal, Madre Cuishe 🍶🥃, which is crafted by hand.
+
+              <b>This premium Mezcal </b>is of the highest quality and is produced through an artisanal process by a master Mezcal distiller from Oaxaca City, Mexico.
+              
+              
+            </p>
+          </div>
+
+          <div className="max-w-3xl mx-auto py-16 px-4 sm:py-12 sm:px-6 lg:max-w-7xl lg:px-10">
+            <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+              <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+                <Link href="/menullorona/Alimentos">
+                  <img style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                    alt=""
+                    src={image1}
+                    layout="fill"
+                    objectFit="cover"
+                    className="group-hover:opacity-75"
+                  />
+                </Link>
+
+              </div>
+
+              <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+                <Link href="/menullorona/Alimentos">
+                  <img style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                    alt=""
+                    src={image2}
+                    layout="fill"
+                    objectFit="cover"
+                    className="group-hover:opacity-75"
+                  />
+                </Link>
+
+
+
+
+              </div>
+
+
+              <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+                <Link href="/menullorona/Alimentos">
+                  <img style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                    alt=""
+                    src={image3}
+                    layout="fill"
+                    objectFit="cover"
+                    className="group-hover:opacity-75"
+                  />
+                </Link>
+              </div>
+              <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+                <Link href="/menullorona/Bebidas/Artesanal">
+                  <img style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                    alt=""
+                    src={image4}
+                    layout="fill"
+                    objectFit="cover"
+                    className="group-hover:opacity-75"
+                  />
+                </Link>
+              </div>
+
+            </div>
+          </div>
+
+
+
+          {/* <div
           style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }} className="py-3"
         >
           <Link href="/menullorona/menualimentos">
@@ -168,7 +270,8 @@ function Reserva() {
             </div>
           </Link>
         </div> */}
-      </div>
+        </div>}
+      
 
 
 

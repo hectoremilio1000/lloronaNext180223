@@ -9,6 +9,8 @@ import { useRouter } from 'next/router';
 import HeaderEn from '../components/Header-en/HeaderEn';
 import HeaderEs from '../components/Header-es/Header-es';
 import { useAppContext } from "../components/context/Context";
+import Encontramos from "../components/Encontramos";
+import Resena from '../components/Resena/index';
 
 export default function Home() {
   const router = useRouter();
@@ -100,6 +102,8 @@ export default function Home() {
       <QuickInfo />
       <QuickInfo2 />
       <QuickInfo3 />
+      {/* <Resena/> */}
+      <Encontramos/>
       {/* <div className="">
         <div>
           <h4 className="text-center text-emerald-300 text-3xl md:text-4xl m-0">Ubicación</h4>

@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from "react";
 import ButtonComponent from '../components/ButtonComponent/index';
+import { useAppContext } from '../components/context/Context';
 
 function MenuLlorona() {
   const [english, setEnglish] = useState(false);
@@ -15,6 +16,8 @@ function MenuLlorona() {
     setEnglish(false);
     setSpanish(true);
   };
+
+  const { espa } = useAppContext();
 
   return (
     <div>
@@ -49,7 +52,10 @@ function MenuLlorona() {
         margin: "0 auto"
       }}>
         <div>
-          <h2 className="text-center font-weight-bold">Menú</h2>
+          
+          {espa ? <h2 className="text-center font-weight-bold">Menú</h2> :
+            <h2 className="text-center font-weight-bold">Menu</h2>}
+          
           <div className="contenedorLenguaje">
             <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={onEnglish}>English</button>
             <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={onSpanish}>Español</button>
