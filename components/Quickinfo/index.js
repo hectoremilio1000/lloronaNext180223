@@ -142,8 +142,8 @@ function QuickInfo() {
                   alt="guacamole con chapulines"
                 />
                 <p className="textoFotosHome text-black">
-                  Guacamole con <br />
-                  <b> Chapulines</b>
+                  Guacamole with <br />
+                  <b> Grasshoppers</b>
                 </p>
               </div>
             </Link>
@@ -152,9 +152,9 @@ function QuickInfo() {
                 <img
                   className="imagenAbajoTexto1Home"
                   src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/tacosEstiloBaja.png"
-                  alt="Tacos de camarón estilo Baja California"
+                  alt="Baja California style shrimp tacos"
                 />
-                <p className="textoFotosHome text-black">Tacos de camarón estilo<br /><b>Baja California</b></p>
+                <p className="textoFotosHome text-black">Baja California style <br /><b>shrimp Tacos</b></p>
               </div>
 
 
@@ -179,11 +179,11 @@ function QuickInfo() {
                 <img
                   className="imagenAbajoTexto1Home"
                   src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/hamburguesaLlorona.jpg"
-                  alt="Hamburguesa Llorona chile"
+                  alt="Llorona Burger with a jalapeño"
                 />
                 <p className="textoFotosHome text-black">
-                  Hamburguesas Llorona<b>
-                    <br />con Jalapeño
+                  Llorona Burger<b>
+                    <br />with a jalapeño
                   </b>
 
                 </p>
@@ -194,7 +194,7 @@ function QuickInfo() {
                 <img
                   className="imagenAbajoTexto1Home"
                   src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/hawaiian-pizza.jpg"
-                  alt="Hamburguesa Llorona chile"
+                  alt="Pizza hawaiana with sesame seeds"
                 />
                 <p className="textoFotosHome text-black">
                   Pizza hawaiana<b>

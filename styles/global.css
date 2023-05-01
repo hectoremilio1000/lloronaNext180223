@@ -94,9 +94,9 @@ h1 {
 .iconoAbajoTexto1Home {
   width: 150px;
   height: 150px;
-  margin-right: 20px;
   border-radius: 10px;
-  object-fit: cover
+  object-fit: cover;
+  margin-right: 0px !important;
 }
 
 .texto1Home {
@@ -443,10 +443,6 @@ ul {
     color: black !important;
   }
 
-  .imagenAbajoTexto1Home {
-    margin-bottom: 20px;
-  }
-
   .iconoAbajoTexto1Home {
     margin-bottom: 20px;
   }
@@ -530,9 +526,6 @@ ul {
     margin-right: 0px;
   }
 
-  .iconoAbajoTexto1Home {
-    margin-right: 0px;
-  }
 
   .boton_orina {
     margin-top: 2.4rem !important;
