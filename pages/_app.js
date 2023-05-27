@@ -13,6 +13,8 @@ import * as fbq from '../lib/fpixel'
 
 export default function MyApp({ Component, pageProps }) {
 
+  const router = useRouter()
+
   useEffect(() => {
     // This pageview only triggers the first time (it's important for Pixel to have real information)
     fbq.pageview()
