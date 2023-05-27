@@ -11,6 +11,7 @@ import HeaderEs from '../components/Header-es/Header-es';
 import { useAppContext } from "../components/context/Context";
 import Encontramos from "../components/Encontramos";
 import Resena from '../components/Resena/index';
+import * as fbq from '../lib/fpixel'
 
 export default function Home() {
   const router = useRouter();
@@ -25,7 +26,8 @@ export default function Home() {
     <div>
       
     
-      {espa ? <Head>
+      {espa ?
+        <Head>
         <title>La Llorona</title>
         <link rel="icon" href="../favicon.ico" />
         <meta name="of:title" content="Llorona" />
@@ -38,7 +40,8 @@ export default function Home() {
         <link rel="apple-touch-icon" href="../logo192.png" />
         <link rel="manifest" href="../manifest.json" />
       </Head>
-        : <Head>
+        :
+        <Head>
           <title>Llorona Best Mexican cousine in town</title>
           <link rel="alternate" hrefLang="en" href="https://lalloronacantina.com" />
           <link rel="alternate" hrefLang="es" href="https://lalloronacantina.com" />
@@ -54,7 +57,7 @@ export default function Home() {
           <link rel="manifest" href="../manifest.json" />
         </Head>}
       
-
+      {/* <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=267500287719039&ev=PageView" /> */}
       {
         espa ? <div className="d-flex subContenedor1Banner bannerHomeFinal banner">
           <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada">

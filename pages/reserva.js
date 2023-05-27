@@ -4,6 +4,10 @@ import Calendario from '../components/Calendario/index';
 
 import title from "../components/Main/title.module.css"
 import { useAppContext } from '../components/context/Context';
+import Head from 'next/head';
+import Script from 'next/script';
+
+
 function Reserva() {
 
   const { espa } = useAppContext();
@@ -13,6 +17,21 @@ function Reserva() {
   const image4 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninas4pinata.jpeg"
   return (
     <>
+      
+      {espa ? 
+        <Head>
+          <Script
+            strategy="beforeInteractive"
+            src="https://www.googletagmanager.com/gtag/js?id=AW-11160821109" // reemplaza con tu código de seguimiento de Google
+          />
+        </Head> : 
+        <Head>
+          <Script
+            strategy="beforeInteractive"
+            src="https://www.googletagmanager.com/gtag/js?id=AW-11160821109" // reemplaza con tu código de seguimiento de Google
+          />
+          
+        </Head>}
       <div className="d-flex subContenedor1Banner banner"
         style={{
           backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/pinatacumpleanera.JPG")`,
@@ -21,6 +40,7 @@ function Reserva() {
           backgroundPosition: "center",
           position: "relative"
         }}>
+        {/* <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=267500287719039&ev=PageView" /> */}
 
         {/* <video autoPlay muted loop src={videoPort} /> */}
 
@@ -80,11 +100,10 @@ function Reserva() {
           <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
             <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
               <Link href="/menullorona/Alimentos">
-                <img style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  <img style={{ width: "100%", height: "100%", objectFit: "cover" }}
                   alt=""
                   src={image1}
                   layout="fill"
-                  objectFit="cover"
                   className="group-hover:opacity-75"
                 />
               </Link>
@@ -93,11 +112,11 @@ function Reserva() {
 
             <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
               <Link href="/menullorona/Alimentos">
-                <img style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  <img style={{ width: "100%", height: "100%", objectFit: "cover" }}
                   alt=""
                   src={image2}
                   layout="fill"
-                  objectFit="cover"
+             
                   className="group-hover:opacity-75"
                 />
               </Link>
@@ -110,22 +129,22 @@ function Reserva() {
 
             <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
               <Link href="/menullorona/Alimentos">
-                <img style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  <img style={{ width: "100%", height: "100%", objectFit: "cover" }}
                   alt=""
                   src={image3}
                   layout="fill"
-                  objectFit="cover"
+       
                   className="group-hover:opacity-75"
                 />
               </Link>
             </div>
             <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
               <Link href="/menullorona/Bebidas/Artesanal">
-                <img style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  <img style={{ width: "100%", height: "100%", objectFit: "cover" }}
                   alt=""
                   src={image4}
                   layout="fill"
-                  objectFit="cover"
+         
                   className="group-hover:opacity-75"
                 />
               </Link>
@@ -165,7 +184,7 @@ function Reserva() {
                     alt=""
                     src={image1}
                     layout="fill"
-                    objectFit="cover"
+                
                     className="group-hover:opacity-75"
                   />
                 </Link>
@@ -178,7 +197,7 @@ function Reserva() {
                     alt=""
                     src={image2}
                     layout="fill"
-                    objectFit="cover"
+                  
                     className="group-hover:opacity-75"
                   />
                 </Link>
@@ -191,11 +210,11 @@ function Reserva() {
 
               <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
                 <Link href="/menullorona/Alimentos">
-                  <img style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  <img style={{ width: "100%", height: "100%", objectFit:"cover" }}
                     alt=""
                     src={image3}
                     layout="fill"
-                    objectFit="cover"
+                    
                     className="group-hover:opacity-75"
                   />
                 </Link>
@@ -206,7 +225,7 @@ function Reserva() {
                     alt=""
                     src={image4}
                     layout="fill"
-                    objectFit="cover"
+                
                     className="group-hover:opacity-75"
                   />
                 </Link>

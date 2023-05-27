@@ -64,8 +64,28 @@ function Mezcal() {
                     </div>
                 </Link>
               
+                <Link href="/menullorona/Alimentos">
+                    <div className={card.cardBox}>
+                        <img
+                            className="imagenAbajoTexto1Home"
+                            src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/hamburguesaChile.jpg"
+                            alt="Hamburguesa chile llorona"
+                        />
+                        <p className="textoFotosHome text-black">
+                            Hamburguesa Llorona <br />
+                            con Chile Jalapeño
+                        </p>
+                    </div>
+                </Link>
             </div>
            
+            <div className="subSubDiv1Banner">
+                <Link href="/reserva">
+                    <button type="button" className="buttonComponente">
+                        ¡Reserva!
+                    </button>
+                </Link>
+            </div>
         </div>
     );
 }
