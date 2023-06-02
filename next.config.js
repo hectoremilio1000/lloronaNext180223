@@ -11,14 +11,5 @@ module.exports = {
         unoptimized: true,
     },
 
-    async redirects() {
-        return [
-            {
-                source: '/menullorona',
-                destination: '/menullorona',
-                permanent: true,
-            },
-
-        ];
-    },
+    
 }
