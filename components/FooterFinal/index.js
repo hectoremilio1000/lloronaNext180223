@@ -41,6 +41,11 @@ function FooterFinal() {
                                 <p className="text-white hover:text-white">Franquicias</p>
                             </Link>
                         </div>
+                        <div className="px-5 py-2">
+                            <Link href="/vacantes">
+                                <p className="text-white hover:text-white">Vacantes</p>
+                            </Link>
+                        </div>
                     </nav>
                     <div className="mt-8 flex justify-center space-x-6">
 
@@ -84,6 +89,11 @@ function FooterFinal() {
                             <div className="px-5 py-2">
                                 <Link href="/franquicias">
                                     <p className="text-white hover:text-white">Franchises</p>
+                                </Link>
+                            </div>
+                            <div className="px-5 py-2">
+                                <Link href="/vacantes">
+                                    <p className="text-white hover:text-white">Vacancies</p>
                                 </Link>
                             </div>
                         </nav>
