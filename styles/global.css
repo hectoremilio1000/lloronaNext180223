@@ -135,6 +135,15 @@ h1 {
   position: relative;
 }
 
+.bannerVacantes {
+  background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/vacante/Screenshot+2023-06-03+at+3.43.28.png");
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  height: 90vh;
+  background-position: center;
+  position: relative;
+}
+
 
 .bannerPremios {
   background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/hamburguesas/1528926142blue-cheese-and-caramelized-onion-burgers-large.jpg") !important;
@@ -477,6 +486,15 @@ ul {
   background-repeat: no-repeat;
   height: 90vh;
   background-position: bottom;
+  position: relative;
+}
+
+.bannerVacantes {
+  background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/vacante/Screenshot+2023-06-03+at+3.43.28.png");
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  height: 90vh;
+  background-position: center;
   position: relative;
 }
 
