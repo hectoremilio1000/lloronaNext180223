@@ -11,7 +11,6 @@ import HeaderEs from '../components/Header-es/Header-es';
 import { useAppContext } from "../components/context/Context";
 import Encontramos from "../components/Encontramos";
 import Resena from '../components/Resena/index';
-import * as fbq from '../lib/fpixel'
 
 export default function Home() {
   const router = useRouter();
