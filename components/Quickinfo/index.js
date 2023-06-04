@@ -8,10 +8,15 @@ import image2 from '../../public/images/home/quickinfo1/aguachileVerde (1).jpg'
 import image3 from '../../public/images/home/quickinfo1/HAMBURGUESA_jack_suizo (2).jpeg'
 import image4 from '../../public/images/home/quickinfo1/IMG_8064.jpg'
 import AppContextProvider, { useAppContext } from '../context/Context';
+import * as fbq from '../../lib/fpixel'
 
 
 
 function QuickInfo() {
+
+  const handleClick = () => {
+    fbq.event('Reserva')
+  }
 
   const { ingles, espa } = useAppContext();
 
@@ -102,7 +107,7 @@ function QuickInfo() {
 
         <div style={{ display: "flex", justifyContent: "center" }}>
           <Link href="reserva">
-            <button type="button" className="buttonComponente">
+            <button type="button" className="buttonComponente" >
               ¡Reserva ya!
             </button>
           </Link>
@@ -208,7 +213,7 @@ function QuickInfo() {
 
           <div style={{ display: "flex", justifyContent: "center" }}>
             <Link href="reserva">
-              <button type="button" className="buttonComponente">
+              <button type="button" className="buttonComponente" onClick={handleClick}>
                 Book now!
               </button>
             </Link>
