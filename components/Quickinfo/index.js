@@ -15,7 +15,7 @@ import * as fbq from '../../lib/fpixel'
 function QuickInfo() {
 
   const handleClick = () => {
-    fbq.event('Reserva')
+    fbq.event('track', 'Reserva')
   }
 
   const { ingles, espa } = useAppContext();
@@ -107,7 +107,7 @@ function QuickInfo() {
 
         <div style={{ display: "flex", justifyContent: "center" }}>
           <Link href="reserva">
-            <button type="button" className="buttonComponente" >
+            <button className="buttonComponente" onClick={handleClick}>
               ¡Reserva ya!
             </button>
           </Link>
