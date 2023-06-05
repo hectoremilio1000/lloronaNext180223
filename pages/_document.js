@@ -13,6 +13,11 @@ export default function Document() {
             style={{ display: 'none' }}
             src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
           />
+        </noscript>
+        
+      </Head>
+      <body>
+        <noscript>
           <iframe
             src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
             height="0"
@@ -20,9 +25,6 @@ export default function Document() {
             style={{ display: 'none', visibility: 'hidden' }}
           />
         </noscript>
-        
-      </Head>
-      <body>
         <Main />
         <NextScript />
       </body>
