@@ -98,12 +98,11 @@ export default function MyApp({ Component, pageProps }) {
         }}
       />
     </Head>
-    <>
-      <Script
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
-      /> 
-    </>
+    <Script
+      strategy="afterInteractive"
+      src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
+    /> 
+    
  
     <AppContextProvider>
     <LayoutFinal >

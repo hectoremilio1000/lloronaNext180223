@@ -29,8 +29,6 @@ export default function Home() {
 
   return (
     <div>
-      
-    
       {espa ?
         <Head>
         <title>La Llorona</title>

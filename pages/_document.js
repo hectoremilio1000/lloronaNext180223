@@ -1,6 +1,6 @@
 import { Html, Head, Main, NextScript } from "next/document";
 import { FB_PIXEL_ID } from '../lib/fpixel';
-import { GTM_ID, pageview } from '../lib/gtm'
+import { GTM_ID } from '../lib/gtm'
 
 export default function Document() {
   return (
