@@ -10,6 +10,7 @@ import Script from 'next/script'
 import { useRouter } from 'next/router'
 import * as fbq from '../lib/fpixel';
 import { GTM_ID, pageview } from '../lib/gtm'
+import * as gtag from '../lib/gtag'
 
 
 
@@ -37,6 +38,16 @@ export default function MyApp({ Component, pageProps }) {
     router.events.on('routeChangeComplete', pageview)
     return () => {
       router.events.off('routeChangeComplete', pageview)
+    }
+  }, [router.events]);
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url)
+    }
+    router.events.on('routeChangeComplete', handleRouteChange)
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
     }
   }, [router.events])
 
@@ -73,7 +84,26 @@ export default function MyApp({ Component, pageProps }) {
           `,
         }}
       />
+      <Script
+        dangerouslySetInnerHTML={{
+          __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', '${gtag.GA_TRACKING_ID}', {
+                page_path: window.location.pathname,
+              });
+            `,
+        }}
+      />
     </Head>
+    <>
+      <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
+      />
+    </>
  
     <AppContextProvider>
     <LayoutFinal >
