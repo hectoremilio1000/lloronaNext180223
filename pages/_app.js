@@ -11,6 +11,7 @@ import { useRouter } from 'next/router'
 import * as fbq from '../lib/fpixel';
 import { GTM_ID, pageview } from '../lib/gtm'
 import * as gtag from '../lib/gtag'
+import * as tikp from '../lib/tikp'
 
 
 
@@ -34,7 +35,13 @@ export default function MyApp({ Component, pageProps }) {
     }
   }, [router.events])
 
-
+  // useEffect(() => {
+  //   !function (w, d, t) {
+  //     w.TiktokAnalyticsObject = t; var ttq = w[t] = w[t] || []; ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie"], ttq.setAndDefer = function (t, e) { t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } }; for (var i = 0; i < ttq.methods.length; i++)ttq.setAndDefer(ttq, ttq.methods[i]); ttq.instance = function (t) { for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++)ttq.setAndDefer(e, ttq.methods[n]); return e }, ttq.load = function (e, n) { var i = "https://analytics.tiktok.com/i18n/pixel/events.js"; ttq._i = ttq._i || {}, ttq._i[e] = [], ttq._i[e]._u = i, ttq._t = ttq._t || {}, ttq._t[e] = +new Date, ttq._o = ttq._o || {}, ttq._o[e] = n || {}; var o = document.createElement("script"); o.type = "text/javascript", o.async = !0, o.src = i + "?sdkid=" + e + "&lib=" + t; var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(o, a) };
+  //     ttq.load('${tikp.TIXTOK_PIXEL_ID}');
+  //     ttq.page();
+  //   }(window, document, 'ttq');
+  // }, []);
 
   useEffect(() => {
     const handleRouteChange = (url) => {
@@ -53,35 +60,63 @@ export default function MyApp({ Component, pageProps }) {
     }
   }, [router.events]);
 
-  useEffect(() => {
-    window.TiktokAnalyticsObject = 'ttq';
-    const ttq = window['ttq'] = window['ttq'] || [];
-    ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie"];
-    ttq.setAndDefer = function (t, e) {
-      t[e] = function () {
-        t.push([e].concat(Array.prototype.slice.call(arguments, 0)))
-      }
-    };
-    for (var i = 0; i < ttq.methods.length; i++) ttq.setAndDefer(ttq, ttq.methods[i]);
-    ttq.instance = function (t) {
-      for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++) ttq.setAndDefer(e, ttq.methods[n]);
-      return e
-    };
+  // useEffect(() => {
+  //   if (typeof window !== 'undefined') {
+  //     window.TiktokAnalyticsObject = 'ttq';
+  //     const ttq = window['ttq'] = window['ttq'] || [];
+  //     ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie"];
+  //     ttq.setAndDefer = function (t, e) {
+  //       t[e] = function () {
+  //         t.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+  //       }
+  //     };
+  //     for (var i = 0; i < ttq.methods.length; i++) ttq.setAndDefer(ttq, ttq.methods[i]);
+  //     ttq.instance = function (t) {
+  //       for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++) ttq.setAndDefer(e, ttq.methods[n]);
+  //       return e
+  //     };
+  //     ttq.load = function (e, n) {
+  //       var i = "https://analytics.tiktok.com/i18n/pixel/events.js";
+  //       ttq._i = ttq._i || {}, ttq._i[e] = [], ttq._i[e]._u = i;
+  //       ttq._t = ttq._t || {}, ttq._t[e] = +new Date;
+  //       ttq._o = ttq._o || {}, ttq._o[e] = n || {};
+  //     };
 
-    ttq.load = function (e, n) {
-      var i = "https://analytics.tiktok.com/i18n/pixel/events.js";
-      ttq._i = ttq._i || {}, ttq._i[e] = [], ttq._i[e]._u = i;
-      ttq._t = ttq._t || {}, ttq._t[e] = +new Date;
-      ttq._o = ttq._o || {}, ttq._o[e] = n || {};
-    };
+  //     ttq.load('CHL89MRC77U441D08I30');
+  //     ttq.page();
+  //   }
+  // }, []);
 
-    ttq.load('CHL89MRC77U441D08I30');
-    ttq.page();
-  }, []);
 
  
   return (<> 
     <Head>
+      <Script
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+          !function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
+
+  ttq.load('${tikp.TIXTOK_PIXEL_ID}');
+  ttq.page();
+}(window, document, 'ttq');
+
+          `
+        }}
+      />
+      
+      {/* <Script
+        strategy="afterInteractive"
+        src={`https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=${tikp.TIXTOK_PIXEL_ID}&lib=ttq`}
+        onLoad={() => {
+          window.ttq = window.ttq || [];
+          window.ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie"];
+          window.ttq.load(tikp.TIXTOK_PIXEL_ID);
+          window.ttq.page();
+        }}
+      /> */}
+      
       <Script
         id="fb-pixel"
         strategy="afterInteractive"
@@ -126,10 +161,6 @@ export default function MyApp({ Component, pageProps }) {
         }}
       />
 
-      <Script
-        src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=CHL89MRC77U441D08I30&lib=ttq"
-        strategy="beforeInteractive"
-      />
      
     </Head>
    
@@ -140,7 +171,8 @@ export default function MyApp({ Component, pageProps }) {
  
     <AppContextProvider>
     <LayoutFinal >
-      <Component {...pageProps} />
+        <Component {...pageProps} />
+
       </LayoutFinal> 
     </AppContextProvider>
     </>
