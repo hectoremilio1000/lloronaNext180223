@@ -23,7 +23,7 @@ function NavBar() {
 
   const { espa, ingles, onIdiomaIngles, onIdiomaEspa } = useAppContext();
 
-  console.log(espa, ingles);
+  // console.log(espa, ingles);
 
   const changeBackground = () => {
     if (typeof window !== "undefined") {
