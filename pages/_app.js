@@ -34,12 +34,7 @@ export default function MyApp({ Component, pageProps }) {
     }
   }, [router.events])
 
-  useEffect(() => {
-    router.events.on('routeChangeComplete', pageview)
-    return () => {
-      router.events.off('routeChangeComplete', pageview)
-    }
-  }, [router.events]);
+
 
   useEffect(() => {
     const handleRouteChange = (url) => {
@@ -49,7 +44,40 @@ export default function MyApp({ Component, pageProps }) {
     return () => {
       router.events.off('routeChangeComplete', handleRouteChange)
     }
-  }, [router.events])
+  }, [router.events]);
+
+  useEffect(() => {
+    router.events.on('routeChangeComplete', pageview)
+    return () => {
+      router.events.off('routeChangeComplete', pageview)
+    }
+  }, [router.events]);
+
+  useEffect(() => {
+    window.TiktokAnalyticsObject = 'ttq';
+    const ttq = window['ttq'] = window['ttq'] || [];
+    ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie"];
+    ttq.setAndDefer = function (t, e) {
+      t[e] = function () {
+        t.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+      }
+    };
+    for (var i = 0; i < ttq.methods.length; i++) ttq.setAndDefer(ttq, ttq.methods[i]);
+    ttq.instance = function (t) {
+      for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++) ttq.setAndDefer(e, ttq.methods[n]);
+      return e
+    };
+
+    ttq.load = function (e, n) {
+      var i = "https://analytics.tiktok.com/i18n/pixel/events.js";
+      ttq._i = ttq._i || {}, ttq._i[e] = [], ttq._i[e]._u = i;
+      ttq._t = ttq._t || {}, ttq._t[e] = +new Date;
+      ttq._o = ttq._o || {}, ttq._o[e] = n || {};
+    };
+
+    ttq.load('CHL89MRC77U441D08I30');
+    ttq.page();
+  }, []);
 
  
   return (<> 
@@ -97,13 +125,18 @@ export default function MyApp({ Component, pageProps }) {
             `,
         }}
       />
+
+      <Script
+        src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=CHL89MRC77U441D08I30&lib=ttq"
+        strategy="beforeInteractive"
+      />
      
     </Head>
    
-     <Script
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
-      /> 
+    <Script
+      strategy="afterInteractive"
+      src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
+    /> 
  
     <AppContextProvider>
     <LayoutFinal >
