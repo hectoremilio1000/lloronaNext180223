@@ -51,7 +51,7 @@ export default function MyApp({ Component, pageProps }) {
     }
   }, [router.events])
 
-
+ 
   return (<> 
     <Head>
       <Script
