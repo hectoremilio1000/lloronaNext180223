@@ -106,7 +106,7 @@ function QuickInfo() {
         </div>
 
         <div style={{ display: "flex", justifyContent: "center" }}>
-          <Link>
+          <Link href="reserva">
             <button className="buttonComponente" onClick={handleClick}>
               ¡Reserva ya!
             </button>
@@ -212,7 +212,7 @@ function QuickInfo() {
           </div>
 
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <Link>
+            <Link >
               <button type="button" className="buttonComponente" onClick={handleClick}>
                 Book now!
               </button>
