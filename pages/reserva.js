@@ -1,14 +1,20 @@
 import Link from 'next/link';
-import React from 'react'
+import React, { useEffect } from 'react'
 import Calendario from '../components/Calendario/index';
 
 import title from "../components/Main/title.module.css"
 import { useAppContext } from '../components/context/Context';
 import Head from 'next/head';
 import Script from 'next/script';
+import * as fbq from '../lib/fpixel'
 
 
 function Reserva() {
+
+  useEffect(() => {
+    fbq.event('reserva')
+  }, [])
+  
 
   const { espa } = useAppContext();
   const image1 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg"
