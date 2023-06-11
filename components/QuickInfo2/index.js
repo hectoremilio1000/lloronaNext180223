@@ -210,7 +210,7 @@ function QuickInfo2() {
         </div>
       </div>}
     </>
-   
+
   );
 }
 

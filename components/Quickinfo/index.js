@@ -2,11 +2,7 @@ import React from 'react'
 import title from "../Main/title.module.css"
 import card from "../Main/card.module.css"
 import Link from 'next/link';
-import image1 from '../../public/images/home/quickinfo1/mexican-shredded-pork-recipes-900x900 (1).jpg'
 
-import image2 from '../../public/images/home/quickinfo1/aguachileVerde (1).jpg'
-import image3 from '../../public/images/home/quickinfo1/HAMBURGUESA_jack_suizo (2).jpeg'
-import image4 from '../../public/images/home/quickinfo1/IMG_8064.jpg'
 import AppContextProvider, { useAppContext } from '../context/Context';
 import * as fbq from '../../lib/fpixel'
 
@@ -44,7 +40,7 @@ function QuickInfo() {
 
 
 
-        <div
+       <div
           style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "20px" }}
         >
           <Link href="/menullorona/Alimentos">
@@ -104,15 +100,15 @@ function QuickInfo() {
             </div>
           </Link>
         </div>
-
+      
         <div style={{ display: "flex", justifyContent: "center" }}>
-          <Link href="reserva">
+          <Link href="/reserva">
             <button className="buttonComponente" onClick={handleClick}>
               ¡Reserva ya!
             </button>
           </Link>
-        </div>
-      </div> : 
+        </div> 
+      </div> :
       
         
         <div className="container-llorona px-2">
@@ -127,7 +123,7 @@ function QuickInfo() {
           </div>
 
 
-          <div className="py-3 px-3 row-qh">
+         <div className="py-3 px-3 row-qh">
             <p className="text-center sm:text-2xl text-xl text-black">
               Experience the true spirit of Mexico at La Llorona Restaurant! To immerse yourself in the authentic Mexican culture, you must come and savor our exquisite dishes. Taste our mouth-watering <b>Suadero tacos</b>, a delectable treasure from Mexico City, or indulge in traditional Mexican <b>Pulque, Mezcal or Tepache </b>. And if you're looking for a unique twist on a classic guacamole, try our special <b>Guacamole with grasshoppers and our Oaxacan peanuts, brought to you straight from Oaxaca</b>. Don't miss the chance to awaken your senses with the vibrant flavors of Mexico!
             </p>
@@ -136,7 +132,7 @@ function QuickInfo() {
 
 
 
-          <div
+       <div
             style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "20px" }}
           >
             <Link href="/menullorona/Alimentos">
@@ -209,19 +205,20 @@ function QuickInfo() {
                 </p>
               </div>
             </Link>
-          </div>
+          </div> 
 
-          <div style={{ display: "flex", justifyContent: "center" }}>
-            <Link >
+        <div style={{ display: "flex", justifyContent: "center" }}>
+            <Link href='/reserva'>
               <button type="button" className="buttonComponente" onClick={handleClick}>
                 Book now!
               </button>
             </Link>
-          </div>
+          </div> 
         </div>}
     
     
     </>
+  
   );
 }
 

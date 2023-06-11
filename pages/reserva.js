@@ -20,7 +20,7 @@ function Reserva() {
   const image1 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg"
   const image2 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg"
   const image3 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg"
-  const image4 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninas4pinata.jpeg"
+  const image4 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nin%CC%83as+hermosas+en+cantina+la+llorona.JPG"
   return (
     <>
       
