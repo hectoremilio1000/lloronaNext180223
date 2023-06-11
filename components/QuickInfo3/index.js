@@ -131,9 +131,7 @@ function QuickInfo3() {
           >
 
             <div>
-              <video autoPlay loop className='imagen2AbajoTexto1Home'>
-                <source src='https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/Video+(1).mov' />
-              </video>
+              <YouTube videoId="NEuu3WR1uYo" opts={opts} onReady={videoOnReady} />
               <p className="textoFotosHome text-black">
                 Live salsa 
                 <br />
