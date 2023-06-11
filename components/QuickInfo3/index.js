@@ -3,9 +3,27 @@ import React from 'react'
 import title from "../Main/title.module.css"
 import card from "../Main/card.module.css"
 import { useAppContext } from '../context/Context';
+import YouTube from 'react-youtube';
 
 
 function QuickInfo3() {
+
+  const opts = {
+    height: '300',
+    width: '200',
+
+ 
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+      autoplay: 1,  // Auto-play the video on load,
+ 
+    },
+  };
+
+  const videoOnReady = (event) => {
+    // access to player in all event handlers via event.target
+    event.target.pauseVideo();
+  }
 
   const { espa } = useAppContext();
 
@@ -33,9 +51,7 @@ function QuickInfo3() {
         >
           
           <div>
-            <video autoPlay loop className='imagen2AbajoTexto1Home'>
-              <source src='https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/Video+(1).mov'/>
-            </video>
+            <YouTube videoId="NEuu3WR1uYo"  opts={opts} onReady={videoOnReady} />
           <p className="textoFotosHome text-black">
               Son Cubano 
               <br />
