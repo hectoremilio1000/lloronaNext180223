@@ -17,7 +17,7 @@ import * as tikp from '../lib/tikp'
 
 export default function MyApp({ Component, pageProps }) {
 
-  console.log(tikp.TIXTOK_PIXEL_ID);
+  // console.log(tikp.TIXTOK_PIXEL_ID);
 
   const router = useRouter()
 

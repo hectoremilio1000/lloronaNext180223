@@ -50,7 +50,7 @@ function QuickInfo3() {
         >
           
           <div>
-            <YouTube videoId="NEuu3WR1uYo" opts={opts} onReady={videoOnReady} />
+            {/* <YouTube videoId="NEuu3WR1uYo" opts={opts} onReady={videoOnReady} /> */}
             
           
           <p className="textoFotosHome text-black">
@@ -132,7 +132,7 @@ function QuickInfo3() {
           >
 
             <div>
-             && <YouTube videoId="NEuu3WR1uYo" opts={opts} onReady={videoOnReady} />
+             {/* <YouTube videoId="NEuu3WR1uYo" opts={opts} onReady={videoOnReady} /> */}
 
               <p className="textoFotosHome text-black">
                 Live salsa 
