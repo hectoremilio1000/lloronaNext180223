@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import React from 'react'
 import title from "../Main/title.module.css"
-import card from "../Main/card.module.css"
 import { useAppContext } from '../context/Context';
 import YouTube from 'react-youtube';
 

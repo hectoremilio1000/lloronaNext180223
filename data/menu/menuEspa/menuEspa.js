@@ -1,4 +1,4 @@
-export const menuEspa1 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/menuEspa/menuComida1Testear.jpg"
+export const menuEspa1 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/menuEspa/menuComida1.jpg"
 
 export const menuEspa2 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/menuEspa/menuComida2.jpg"
 
