@@ -14,7 +14,7 @@ function QuickInfo3() {
  
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
-      autoplay: 1,  // Auto-play the video on load,
+      // autoplay: 1,  // Auto-play the video on load,
  
     },
   };
