@@ -55,7 +55,7 @@ The best live <br />
 
           <>
               {espa ?
-                  <>
+                  <div className='px-2'>
                   
                       <div className="container-llorona px-2">
                           <div>
@@ -246,11 +246,11 @@ The best live <br />
                       </>
 
                       
-                  </>
+                  </div>
 
                   :
 
-                  <>
+                  <div className='px-2'>
 
                       <div className="container-llorona px-2">
                           <div>
@@ -429,7 +429,7 @@ The best live <br />
                       </>
 
 
-                  </>
+                  </div>
 
               }
 
