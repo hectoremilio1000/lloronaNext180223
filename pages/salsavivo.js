@@ -55,20 +55,20 @@ The best live <br />
 
           <>
               {espa ?
-                  <div className='px-2'>
+                  <>
                   
-                      <div className="container-llorona px-2">
-                          <div>
+                      <div className="container-llorona px-4">
+                          <div className="px-4">
                               <h1 className={title.fontTitlemain}>Cantina La Llorona: Un Baile de Sabores y Ritmo</h1>
                           </div>
-                          <div className='row-qh'>
+                          <div className='row-qh px-4'>
                               <h4 className={title.fontTitleSub}>Descubre el Alma de la Salsa</h4>
                               <h2 className={title.fontTitleline}>y la Esencia de la Cantina en un Solo Lugar</h2>
                               <div className="linea"></div>
                           </div>
 
 
-                          <div className="py-3 px-3 row-qh">
+                          <div className="py-3 px-4 row-qh">
                               <p className="text-center sm:text-2xl text-xl text-black">
                                   En La Cantina La Llorona, estamos orgullosos de presentar los mejores grupos de salsa en vivo que llenan nuestras <b>noches de energía y pasión</b>.
                                   <br />
@@ -155,9 +155,9 @@ The best live <br />
 
                       <>
 
-                          <div className="container-llorona px-2">
+                
                              
-                              <div className="py-0 px-3 row-qh">
+                              <div className="py-0 px-4 row-qh">
                                   <p className="text-center sm:text-2xl text-xl text-black">
                                       Si eres amante de la música, te encantará saber que contamos con los mejores grupos de son cubano que llenarán tus <b>noches de ritmo y sabor</b>.
                                       <br />
@@ -242,28 +242,28 @@ The best live <br />
                                       </Link>
                                   </div>
                               </>
-                          </div>
+                         
                       </>
 
                       
-                  </div>
+                  </>
 
                   :
 
-                  <div className='px-2'>
+                  <>
 
                       <div className="container-llorona px-2">
-                          <div>
+                          <div className="px-4">
                               <h1 className={title.fontTitlemain}>Cantina La Llorona: A Dance of Flavors and Rhythm</h1>
                           </div>
-                          <div className='row-qh'>
+                          <div className='row-qh px-4'>
                               <h4 className={title.fontTitleSub}>Discover the Soul of Salsa</h4>
                               <h2 className={title.fontTitleline}>And the Essence of the Cantina in One Place</h2>
                               <div className="linea"></div>
                           </div>
 
 
-                          <div className="py-3 px-3 row-qh">
+                          <div className="py-3 px-4 row-qh">
                               <p className="text-center sm:text-2xl text-xl text-black">
                                   EAt Cantina La Llorona, we are proud to present the best live salsa bands that fill our <b>nights with energy and passion</b>. Let yourself be carried away by the sway of salsa, a rhythm that is felt in every corner of our restaurant. Here, every dish is an excuse to celebrate, and every song is an <b>invitation to get up from your seat and dance</b>. If you delight in both your auditory and gustatory senses, you are in the right place.
                               </p>
@@ -342,9 +342,9 @@ The best live <br />
 
                       <>
 
-                          <div className="container-llorona px-2">
+                          
 
-                              <div className="py-0 px-3 row-qh">
+                              <div className="py-0 px-4 row-qh">
                                   <p className="text-center sm:text-2xl text-xl text-black">
                                       If you are a music lover, you will be delighted to know that we have the best <b>Cuban son bands that will fill your nights with rhythm and flavor</b>. But that's not all, our kitchen awaits you with irresistible dishes designed to make every bite a flavorful journey. And to pair with your meals, we present our special mixology with tequila and mezcal, original creations that will surprise you.
 
@@ -425,11 +425,11 @@ The best live <br />
                                       </Link>
                                   </div>
                               </>
-                          </div>
+                       
                       </>
 
 
-                  </div>
+                  </>
 
               }
 
