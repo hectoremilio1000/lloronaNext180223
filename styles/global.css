@@ -140,7 +140,6 @@ h1 {
   background-repeat: no-repeat;
   height: 90vh;
   background-position: left !important;
-  
 }
 
 
@@ -524,6 +523,15 @@ ul {
   background-size: cover !important;
   background-repeat: no-repeat;
   height: 90vh;
+  background-position: center;
+  position: relative;
+}
+
+.bannerSalsa {
+  background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/grupo+cubano+en+vivo.JPG");
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  height: 90vh !important;
   background-position: center;
   position: relative;
 }
