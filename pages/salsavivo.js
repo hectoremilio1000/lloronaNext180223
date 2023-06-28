@@ -265,7 +265,7 @@ The best live <br />
 
                           <div className="py-3 px-4 row-qh">
                               <p className="text-center sm:text-2xl text-xl text-black">
-                                  EAt Cantina La Llorona, we are proud to present the best live salsa bands that fill our <b>nights with energy and passion</b>. Let yourself be carried away by the sway of salsa, a rhythm that is felt in every corner of our restaurant. Here, every dish is an excuse to celebrate, and every song is an <b>invitation to get up from your seat and dance</b>. If you delight in both your auditory and gustatory senses, you are in the right place.
+                                  At Cantina La Llorona, we are proud to present the best live salsa bands that fill our <b>nights with energy and passion</b>. Let yourself be carried away by the sway of salsa, a rhythm that is felt in every corner of our restaurant. Here, every dish is an excuse to celebrate, and every song is an <b>invitation to get up from your seat and dance</b>. If you delight in both your auditory and gustatory senses, you are in the right place.
                               </p>
                           </div>
 
