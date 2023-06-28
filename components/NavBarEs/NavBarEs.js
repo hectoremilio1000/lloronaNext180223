@@ -112,8 +112,8 @@ function NavBar() {
               </Link>
             </li>
             <li key="4">
-              <Link href="/premios" className="nav-link hover:text-emerald-500">
-                Premios
+              <Link href="/salsavivo" className="nav-link hover:text-emerald-500">
+                Salsa en Vivo
               </Link>
             </li>
             <li key="5">
@@ -142,8 +142,8 @@ function NavBar() {
               </Link>
             </li>
             <li key="4">
-              <Link href="/premios" className="nav-link hover:text-emerald-500">
-                Rewards
+              <Link href="/salsavivo" className="nav-link hover:text-emerald-500">
+                  Live salsa
               </Link>
             </li>
             <li key="5">

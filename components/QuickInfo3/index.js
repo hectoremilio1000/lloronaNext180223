@@ -132,12 +132,10 @@ function QuickInfo3() {
           >
 
             <div>
-             {/* <YouTube videoId="NEuu3WR1uYo" opts={opts} onReady={videoOnReady} /> */}
+            <YouTube videoId="NEuu3WR1uYo" opts={opts} onReady={videoOnReady} />
 
               <p className="textoFotosHome text-black">
-                Live salsa 
-                <br />
-                Group
+                Live Cuban <br/>salsa groups.
               </p>
             </div>
 
@@ -149,9 +147,7 @@ function QuickInfo3() {
                   alt="Música en vivo"
                 />
                 <p className="textoFotosHome text-black">
-                  Festeja con
-                  <br />
-                  Música en Vivo
+                  We love food and <br/>salsa bands.
                 </p>
               </div>
             </Link>
@@ -163,8 +159,7 @@ function QuickInfo3() {
                   alt="Baila en grande con tus amigos"
                 />
                 <p className="textoFotosHome text-black">
-                  Festeja y Baila <br />
-                  con tus amigos
+                  Come dance with <br/>your friends.
                 </p>
               </div>
             </Link>
@@ -175,10 +170,7 @@ function QuickInfo3() {
                   src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/niurka+cantina+la+llorona+festejo.jpg"
                 />
                 <p className="textoFotosHome text-black">
-                  Baila y disfruta
-                  <br />
-                  con grandes Artistas
-                  <br />Niurka
+                  Dance and enjoy with great <br/>artists, including Niurka
                 </p>
               </div>
             </Link>

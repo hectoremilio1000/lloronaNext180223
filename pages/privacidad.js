@@ -5,7 +5,7 @@ import title from "../components/Main/title.module.css"
 function Privacidad() {
     return (
       <>
-      <div className='pb-4'>
+        <div className='pb-4'>
           <div className="d-flex subContenedor1Banner"
               style={{
                   backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/FotosBurguer/IMG_2177.jpg")`,
@@ -28,10 +28,10 @@ function Privacidad() {
                   </div>
               </div>
               </div>
-            </div>
-            <div>
+        </div>
+        <div>
                 <h1 className={title.fontTitlemain}>POLÍTICA DE PRIVACIDAD</h1>
-            </div>
+        </div>
             <div className="py-3 px-4 row-qh">
                 <p className="text-justify sm:text-2xl text-xl text-black">
                     Última actualización: 20 de junio, 2023

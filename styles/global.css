@@ -57,6 +57,14 @@ h1 {
   object-fit: cover
 }
 
+.imagenTopTexto {
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: top;
+}
+
 .imagenAbajoTexto1Home {
   border-radius: 10px;
   width: 300px;
@@ -125,6 +133,17 @@ h1 {
   background-position: center;
   position: relative;
 }
+
+.bannerSalsa {
+  background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/grupo+cubano+en+vivo.JPG");
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  height: 90vh;
+  background-position: left !important;
+  
+}
+
+
 
 .bannerHomeFinal {
   background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/lugarafuera.jpg");
