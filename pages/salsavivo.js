@@ -91,9 +91,9 @@ The best live <br />
 
 
                                       <p className="textoFotosHome text-black">
-                                          Son Cubano
+                                          Grandes compositores
                                           <br />
-                                          en Vivo
+                                          y bandas de salsa Aquí
                                       </p>
                                   </div>
 
