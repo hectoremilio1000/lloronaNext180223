@@ -314,7 +314,7 @@ function Reserva() {
               <Link href="/reserva">
                 <div>
                   <img
-                    className="imagen2AbajoTexto1Home"
+                    className="imagenReserva"
                     src={image1}
                     alt="Música en vivo"
                   />
@@ -327,7 +327,7 @@ function Reserva() {
               <Link href="/reserva">
                 <div>
                   <img
-                    className="imagen2AbajoTexto1Home"
+                    className="imagenReserva"
                     src={image2}
                     alt="Música en vivo"
                   />
@@ -341,7 +341,7 @@ function Reserva() {
               <Link href="/reserva">
                 <div>
                   <img
-                    className="imagen2AbajoTexto1Home"
+                    className="imagenReserva"
                     src={image3}
                     alt="Música en vivo"
                   />
@@ -356,7 +356,7 @@ function Reserva() {
               <Link href="/reserva">
                 <div>
                   <img
-                    className="imagen2AbajoTexto1Home"
+                    className="imagenReserva"
                     src={image4}
                     alt="Música en vivo"
                   />
@@ -409,7 +409,7 @@ function Reserva() {
                 <Link href="/reserva">
                   <div>
                     <img
-                      className="imagen2AbajoTexto1Home"
+                      className="imagenReserva"
                       src={image6}
                       alt="Música en vivo"
                     />
@@ -434,7 +434,7 @@ function Reserva() {
                 <Link href="/reserva">
                   <div>
                     <img
-                      className="imagen2AbajoTexto1Home"
+                      className="imagenReserva"
                       src={image8}
                       alt="Música en vivo"
                     />
