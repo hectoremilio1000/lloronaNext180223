@@ -6,14 +6,32 @@ import title from "../components/Main/title.module.css"
 import { useAppContext } from '../components/context/Context';
 import Head from 'next/head';
 import Script from 'next/script';
-import * as fbq from '../lib/fpixel'
+import * as fbq from '../lib/fpixel';
+import YouTube from 'react-youtube';
 
 
 function Reserva() {
 
   useEffect(() => {
     fbq.event('reserva')
-  }, [])
+  }, []);
+
+  const opts = {
+    height: '300',
+    width: '200',
+
+
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+      // autoplay: 1,  // Auto-play the video on load,
+
+    },
+  };
+
+  const videoOnReady = (event) => {
+    // access to player in all event handlers via event.target
+    event.target.pauseVideo();
+  }
   
 
   const { espa } = useAppContext();
@@ -21,6 +39,13 @@ function Reserva() {
   const image2 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg"
   const image3 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg"
   const image4 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nin%CC%83as+hermosas+en+cantina+la+llorona.JPG"
+
+  const image5 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg"
+  const image6 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia+mexicana+tragos+increibles.jpg"
+  const image7 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg"
+  const image8 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nin%CC%83as+hermosas+cantina+llorona+mexico+cantina.JPEG"
+
+
   return (
     <>
       
@@ -100,65 +125,160 @@ function Reserva() {
 
             Este <b>mezcal premium </b>de la más alta calidad y está elaborado con un proceso artesanal proveniente de un gran maestro mezcalero de la Ciudad de Oaxaca, México.
           </p>
-        </div>
-
-        <div className="max-w-3xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-10">
-          <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-            <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-              <Link href="/menullorona/Alimentos">
-                  <img style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                  alt=""
-                  src={image1}
-                  layout="fill"
-                  className="group-hover:opacity-75"
-                />
-              </Link>
-
-            </div>
-
-            <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-              <Link href="/menullorona/Alimentos">
-                  <img style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                  alt=""
-                  src={image2}
-                  layout="fill"
-             
-                  className="group-hover:opacity-75"
-                />
-              </Link>
-
-
-
-
-            </div>
-
-
-            <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-              <Link href="/menullorona/Alimentos">
-                  <img style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                  alt=""
-                  src={image3}
-                  layout="fill"
-       
-                  className="group-hover:opacity-75"
-                />
-              </Link>
-            </div>
-            <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-              <Link href="/menullorona/Bebidas/Artesanal">
-                  <img style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                  alt=""
-                  src={image4}
-                  layout="fill"
-         
-                  className="group-hover:opacity-75"
-                />
-              </Link>
-            </div>
-
           </div>
-        </div>
+          
+          <>
+            <div
+              style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "20px" }}
+            >
 
+              <Link href="/reserva">
+                <div>
+                  <img
+                    className="imagen2AbajoTexto1Home"
+                    src={image1}
+                    alt="Música en vivo"
+                  />
+                  <p className="textoFotosHome text-black">
+                    Mixología mexicana <br /> contemporánea
+                  </p>
+                </div>
+              </Link>
+
+              <Link href="/reserva">
+                <div>
+                  <img
+                    className="imagen2AbajoTexto1Home"
+                    src={image2}
+                    alt="Música en vivo"
+                  />
+                  <p className="textoFotosHome text-black">
+                    Piñata cumpleañera<br /> con mezcal
+                  </p>
+                </div>
+              </Link>
+
+
+               <Link href="/reserva">
+                <div>
+                  <img
+                    className="imagen2AbajoTexto1Home"
+                    src={image3}
+                    alt="Música en vivo"
+                  />
+                  <p className="textoFotosHome text-black">
+                   Disfruta, baile <br />y festeja
+                  </p>
+                </div>
+              </Link>
+
+
+
+              <Link href="/reserva">
+                <div>
+                  <img
+                    className="imagen2AbajoTexto1Home"
+                    src={image4}
+                    alt="Música en vivo"
+                  />
+                  <p className="textoFotosHome text-black">
+                    Grandes artistas <br />aman nuestro lugar
+                  </p>
+                </div>
+              </Link>
+            </div>
+
+
+
+
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              <Link href="/reserva">
+                <button className="buttonComponente" >
+                  ¡Reserva ya!
+                </button>
+              </Link>
+            </div>
+          </>
+
+        
+          
+          <>
+            <h4 className={title.fontTitleSub}>Grupo de Salsa en Vivo</h4>
+            <h2 className={title.fontTitleline}>
+              Baila y festeja con Nosotros
+            </h2>
+            <div className="py-3 px-3 row-qh">
+              <p className="text-center text-black sm:text-2xl text-xl">
+                Si te gustó lo que viste en las redes y en nuestra página, te encantará la <b>experiencia en vivo aún más</b>. Cada noche, nuestro acogedor restaurante se llena de vibrante música de salsa, creando un ambiente único y emocionante que invita a todos a unirse en la pista de baile. Nuestro menú ofrece una variedad de delicias culinarias que deleitarán tu paladar mientras disfrutas del espectáculo en vivo. Además, nuestra amplia selección de vinos y cócteles te asegurará una noche inolvidable. Te <b>recomendamos hacer una reserva pronto </b> ya que nuestros eventos de salsa suelen ser muy populares y queremos asegurarnos de que tengas un lugar reservado. ¿Qué te parece si te ayudamos a asegurar tu mesa para la próxima noche de salsa?"
+              </p>
+            </div>
+
+            <>
+              <div
+                style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "20px" }}
+              >
+
+                <Link href="/reserva">
+                  <div>
+                    <YouTube videoId="8mRlH_RxiP8" opts={opts} onReady={videoOnReady} />
+                    <p className="textoFotosHome text-black">
+                      Grandes noches de<br /> grupos de salsa en vivo
+                    </p>
+                  </div>
+                </Link>
+
+                <Link href="/reserva">
+                  <div>
+                    <img
+                      className="imagen2AbajoTexto1Home"
+                      src={image6}
+                      alt="Música en vivo"
+                    />
+                    <p className="textoFotosHome text-black">
+                      Mixología que cautiva <br />y enamora
+                    </p>
+                  </div>
+                </Link>
+
+
+                <Link href="/reserva">
+                  <div>
+                    <YouTube videoId="kA1hP5nFRYM" opts={opts} onReady={videoOnReady} />
+                    <p className="textoFotosHome text-black">
+                      Parceros aquí<br /> mucha bachata y salsa
+                    </p>
+                  </div>
+                </Link>
+
+
+
+                <Link href="/reserva">
+                  <div>
+                    <img
+                      className="imagen2AbajoTexto1Home"
+                      src={image8}
+                      alt="Música en vivo"
+                    />
+                    <p className="textoFotosHome text-black">
+                      Ven a disfrutar <br />de tardes cautivadoras
+                    </p>
+                  </div>
+                </Link>
+              </div>
+
+
+
+
+              <div style={{ display: "flex", justifyContent: "center" }}>
+                <Link href="/reserva">
+                  <button className="buttonComponente" >
+                    ¡Reserva ya!
+                  </button>
+                </Link>
+              </div>
+            </>
+            
+          </>
 
 
         
@@ -182,119 +302,158 @@ function Reserva() {
             </p>
           </div>
 
-          <div className="max-w-3xl mx-auto py-16 px-4 sm:py-12 sm:px-6 lg:max-w-7xl lg:px-10">
-            <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-              <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                <Link href="/menullorona/Alimentos">
-                  <img style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                    alt=""
+          <>
+            <div
+              style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "20px" }}
+            >
+
+              <Link href="/reserva">
+                <div>
+                  <img
+                    className="imagen2AbajoTexto1Home"
                     src={image1}
-                    layout="fill"
-                
-                    className="group-hover:opacity-75"
+                    alt="Música en vivo"
                   />
-                </Link>
+                  <p className="textoFotosHome text-black">
+                    Contemporary <br/> mexican mixology
+                  </p>
+                </div>
+              </Link>
 
-              </div>
-
-              <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                <Link href="/menullorona/Alimentos">
-                  <img style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                    alt=""
+              <Link href="/reserva">
+                <div>
+                  <img
+                    className="imagen2AbajoTexto1Home"
                     src={image2}
-                    layout="fill"
-                  
-                    className="group-hover:opacity-75"
+                    alt="Música en vivo"
                   />
-                </Link>
+                  <p className="textoFotosHome text-black">
+                    Birthday piñata<br /> with a bottle of mezcal
+                  </p>
+                </div>
+              </Link>
 
 
-
-
-              </div>
-
-
-              <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                <Link href="/menullorona/Alimentos">
-                  <img style={{ width: "100%", height: "100%", objectFit:"cover" }}
-                    alt=""
+              <Link href="/reserva">
+                <div>
+                  <img
+                    className="imagen2AbajoTexto1Home"
                     src={image3}
-                    layout="fill"
-                    
-                    className="group-hover:opacity-75"
+                    alt="Música en vivo"
                   />
-                </Link>
-              </div>
-              <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                <Link href="/menullorona/Bebidas/Artesanal">
-                  <img style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                    alt=""
+                  <p className="textoFotosHome text-black">
+                    Enjoy, dance <br />and celebrate
+                  </p>
+                </div>
+              </Link>
+
+
+
+              <Link href="/reserva">
+                <div>
+                  <img
+                    className="imagen2AbajoTexto1Home"
                     src={image4}
-                    layout="fill"
-                
-                    className="group-hover:opacity-75"
+                    alt="Música en vivo"
                   />
+                  <p className="textoFotosHome text-black">
+                    Great artists <br />love our place
+                  </p>
+                </div>
+              </Link>
+            </div>
+
+
+
+
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              <Link href="/reserva">
+                <button className="buttonComponente" >
+                  ¡Reserva ya!
+                </button>
+              </Link>
+            </div>
+          </>
+
+
+
+          <>
+            <h4 className={title.fontTitleSub}>Live Salsa Band</h4>
+            <h2 className={title.fontTitleline}>
+              Dance and Celebrate with Us
+            </h2>
+            <div className="py-3 px-3 row-qh">
+              <p className="text-center text-black sm:text-2xl text-xl">
+                If you liked what you saw on social media and on our page, you will love the <b>live experience even more</b>. Every night, our welcoming restaurant fills with vibrant salsa music, creating a unique and exciting atmosphere that invites everyone to join the dance floor. Our menu offers a variety of culinary delights that will tantalize your palate while you enjoy the live show. In addition, our wide selection of wines and cocktails will ensure you have an unforgettable night. We <b>recommend making a reservation soon</b> as our salsa events tend to be very popular and we want to make sure you have a spot reserved. How about we help you secure your table for the next salsa night?
+              </p>
+            </div>
+
+            <>
+              <div
+                style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "20px" }}
+              >
+
+                <Link href="/reserva">
+                  <div>
+                    <YouTube videoId="8mRlH_RxiP8" opts={opts} onReady={videoOnReady} />
+                    <p className="textoFotosHome text-black">
+                      Great nights of <br/>live salsa bands
+                    </p>
+                  </div>
+                </Link>
+
+                <Link href="/reserva">
+                  <div>
+                    <img
+                      className="imagen2AbajoTexto1Home"
+                      src={image6}
+                      alt="Música en vivo"
+                    />
+                    <p className="textoFotosHome text-black">
+                      Mixology that captivates <br />and falls in love 
+                    </p>
+                  </div>
+                </Link>
+
+
+                <Link href="/reserva">
+                  <div>
+                    <YouTube videoId="kA1hP5nFRYM" opts={opts} onReady={videoOnReady} />
+                    <p className="textoFotosHome text-black">
+                      Partners here<br /> lots of bachata and salsa
+                    </p>
+                  </div>
+                </Link>
+
+
+
+                <Link href="/reserva">
+                  <div>
+                    <img
+                      className="imagen2AbajoTexto1Home"
+                      src={image8}
+                      alt="Música en vivo"
+                    />
+                    <p className="textoFotosHome text-black">
+                      Come and enjoy <br />captivating evenings
+                    </p>
+                  </div>
                 </Link>
               </div>
 
-            </div>
-          </div>
 
 
 
-          {/* <div
-          style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }} className="py-3"
-        >
-          <Link href="/menullorona/menualimentos">
-            <div className="py-1">
-              <img
-                className="imagenAbajoTexto1Home"
-                src="https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/nina2pinata.JPG"
-                alt="Tacos deliciosos de Cochinita Pibil"
-              />
-              <p className="textoFotosHome">Festeja con Nosotros</p>
-            </div>
-          </Link>
-          <Link href="/menullorona/menualimentos">
-            <div className="py-1">
-              <img
-                className="imagenAbajoTexto1Home"
-                src="https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/ninapinata.JPG"
-                alt="Aguachile Verde Camarón"
-              />
-              <p className="textoFotosHome">
-                Muchas Sorpresas
-              </p>
-            </div>
-          </Link>
-          <Link href="/menullorona/menualimentos">
-            <div className="py-1">
-              <img
-                className="imagenAbajoTexto1Home"
-                src="https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/IMG_9585.jpg"
-                alt="Tacos deliciosos de Cochinita Pibil"
-              />
-              <p className="textoFotosHome">
-                Regalos
-                Únicos
-              </p>
-            </div>
-          </Link>
-          <Link href="/menullorona/menubebidas/artesanal">
-            <div className="py-1">
-              <img
-                className="imagenAbajoTexto1Home"
-                src="https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/ninas4pinata.JPG"
-                alt="Pierde Almas con Mezcal"
-              />
-              <p className="textoFotosHome">
-                Fiesta en grande
+              <div style={{ display: "flex", justifyContent: "center" }}>
+                <Link href="/reserva">
+                  <button className="buttonComponente" >
+                    ¡Reserva ya!
+                  </button>
+                </Link>
+              </div>
+            </>
 
-
-              </p>
-            </div>
-          </Link>
-        </div> */}
+          </>
         </div>}
       
 

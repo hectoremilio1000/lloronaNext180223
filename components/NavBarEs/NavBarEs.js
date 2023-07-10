@@ -128,7 +128,7 @@ function NavBar() {
           </li>
             <li key="1">
               <Link href="/reserva" className="nav-link hover:text-emerald-500">
-                Book
+                Book Now
               </Link>
             </li>
             <li key="2">
