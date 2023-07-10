@@ -17,8 +17,8 @@ function Reserva() {
   }, []);
 
   const opts = {
-    height: '300',
-    width: '200',
+    height: '350',
+    width: '300',
 
 
     playerVars: {
@@ -132,23 +132,25 @@ function Reserva() {
               style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "20px" }}
             >
 
-              <Link href="/reserva">
+              
                 <div>
+                <Link href="/reserva">
                   <img
-                    className="imagen2AbajoTexto1Home"
+                    className="imagenReserva"
                     src={image1}
                     alt="Música en vivo"
                   />
                   <p className="textoFotosHome text-black">
                     Mixología mexicana <br /> contemporánea
                   </p>
+                </Link>
                 </div>
-              </Link>
+              
 
               <Link href="/reserva">
                 <div>
                   <img
-                    className="imagen2AbajoTexto1Home"
+                    className="imagenReserva"
                     src={image2}
                     alt="Música en vivo"
                   />
@@ -162,7 +164,7 @@ function Reserva() {
                <Link href="/reserva">
                 <div>
                   <img
-                    className="imagen2AbajoTexto1Home"
+                    className="imagenReserva"
                     src={image3}
                     alt="Música en vivo"
                   />
@@ -177,7 +179,7 @@ function Reserva() {
               <Link href="/reserva">
                 <div>
                   <img
-                    className="imagen2AbajoTexto1Home"
+                    className="imagenReserva"
                     src={image4}
                     alt="Música en vivo"
                   />
@@ -218,19 +220,21 @@ function Reserva() {
                 style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "20px" }}
               >
 
-                <Link href="/reserva">
-                  <div>
+               
+                <div>
+                  <Link href="/reserva">
                     <YouTube videoId="8mRlH_RxiP8" opts={opts} onReady={videoOnReady} />
                     <p className="textoFotosHome text-black">
                       Grandes noches de<br /> grupos de salsa en vivo
                     </p>
+                  </Link>
                   </div>
-                </Link>
+              
 
                 <Link href="/reserva">
                   <div>
                     <img
-                      className="imagen2AbajoTexto1Home"
+                      className="imagenReserva"
                       src={image6}
                       alt="Música en vivo"
                     />
@@ -255,7 +259,7 @@ function Reserva() {
                 <Link href="/reserva">
                   <div>
                     <img
-                      className="imagen2AbajoTexto1Home"
+                      className="imagenReserva"
                       src={image8}
                       alt="Música en vivo"
                     />

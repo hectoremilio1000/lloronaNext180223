@@ -57,6 +57,14 @@ h1 {
   object-fit: cover
 }
 
+.imagenReserva {
+  width: 300px;
+  height: 350px;
+  border-radius: 10px;
+object-fit: cover;
+object-position: top;
+}
+
 .imagenTopTexto {
   width: 200px;
   height: 300px;
