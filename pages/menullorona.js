@@ -72,10 +72,7 @@ function MenuLlorona() {
               titulo="BEBIDAS"
               enlace="/menullorona/Bebidas"
             />
-            <ButtonComponent
-              titulo="ESPECIAL"
-              enlace="/menullorona/Cantinero"
-            />
+            
           </div>
         )}
 
@@ -83,7 +80,7 @@ function MenuLlorona() {
           <div className="contenedorMenu">
             <ButtonComponent titulo="FOOD" enlace="/menullorona/menufood" />
             <ButtonComponent titulo="DRINKS & BEERS" enlace="/menullorona/drinks" />
-            <ButtonComponent titulo="SPECIAL" enlace="/menullorona/special" />
+           
           </div>
         )}
       </div>
