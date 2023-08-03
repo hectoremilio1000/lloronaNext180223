@@ -117,8 +117,8 @@ function NavBar() {
               </Link>
             </li>
             <li key="5">
-              <Link href="/franquicias" className="nav-link hover:text-emerald-500">
-                Franquicias
+              <Link href="/mixologia" className="nav-link hover:text-emerald-500">
+                Mixología
               </Link>
             </li>
           </> : <> <li key="0">
@@ -147,8 +147,8 @@ function NavBar() {
               </Link>
             </li>
             <li key="5">
-              <Link href="/franquicias" className="nav-link hover:text-emerald-500">
-                  Franchises
+              <Link href="/mixologia" className="nav-link hover:text-emerald-500">
+                  Mixology
               </Link>
             </li> </> }
           
