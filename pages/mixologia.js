@@ -211,7 +211,7 @@ function Migologia() {
                             <p className="text-center text-black sm:text-2xl text-xl">
                                 Imagínense un lugar donde <b>cada trago es una historia</b>, una narración que captura la esencia y la riqueza de nuestra tierra. Imagínense los ricos sabores de los agaves, las técnicas de destilación que han sido transmitidas de generación en generación, todo mezclado con toques contemporáneos y creatividad sin límites. Esa es la experiencia que les ofrecemos aquí, en la Llorona.
 
-                                <br/><br/>
+                                <br /><br />
                                 Permítanos llevarles en un <b>viaje culinario que trasciende lo convencional</b>. Nuestros bartenders son artistas que pintan con sabores y aromas, mezclando lo familiar con lo sorprendente, creando cócteles que encantarán tanto a los paladares tradicionales como a los más aventureros.
                             </p>
                         </div>
