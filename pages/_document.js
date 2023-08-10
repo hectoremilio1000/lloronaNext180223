@@ -1,11 +1,14 @@
 import { Html, Head, Main, NextScript } from "next/document";
 import { FB_PIXEL_ID } from '../lib/fpixel';
-import { GTM_ID } from '../lib/gtm'
+import { GTM_ID } from '../lib/gtm';
+import Script from 'next/script';
+import * as fbq from '../lib/fpixel';
 
 export default function Document() {
   return (
     <Html>
       <Head >
+        <Script strategy="afterInteractive" src="/public/facebookPixel.js"/>
         <noscript>
           <img
             height="1"
