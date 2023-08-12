@@ -12,6 +12,8 @@ import { useAppContext } from "../components/context/Context";
 import Encontramos from "../components/Encontramos";
 import Resena from '../components/Resena/index';
 import * as fbq from '../lib/fpixel'
+import Reserva from './reserva';
+import Calendario from "../components/Calendario";
 
 export default function Home() {
 
@@ -78,6 +80,7 @@ export default function Home() {
       
      
       <QuickInfo />
+      <Calendario />
       <QuickInfo2 />
       <QuickInfo3 />
     
