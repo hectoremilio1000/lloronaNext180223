@@ -83,7 +83,7 @@ export default function Home() {
       <Calendario />
       <QuickInfo2 />
       <QuickInfo3 />
-    
+     
       <Encontramos/>
      
     </div>
