@@ -8,6 +8,7 @@ import Head from 'next/head';
 import Script from 'next/script';
 import * as fbq from '../lib/fpixel';
 import YouTube from 'react-youtube';
+import { FB_PIXEL_ID } from '../lib/fpixel';
 
 
 function Reserva() {
@@ -48,6 +49,18 @@ function Reserva() {
 
   return (
     <>
+    <Head>
+<noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: 'none' }}
+            src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
+          />
+        </noscript>
+    </Head>
+    <>
+      
       
       {espa ? 
         <Head>
@@ -464,6 +477,7 @@ function Reserva() {
 
 
 
+      </>
     </>
   );
 }
