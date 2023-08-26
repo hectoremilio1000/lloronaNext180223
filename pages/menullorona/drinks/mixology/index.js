@@ -111,8 +111,8 @@ function Drinks() {
 
 
                 <>
-                    <h4 className={title.fontTitleSub}>Sodas & Spirits</h4>
-                    <h2 className={title.fontTitleline}>Industrial Mexican Beers</h2>
+                    <h4 className={title.fontTitleSub}>Spirits & wine</h4>
+                    
                     <div className="linea"></div>
                     <div className="w-full px-4">
                         <img
@@ -123,6 +123,7 @@ function Drinks() {
                             className="w-full"
                         />
                     </div> <div className="w-full px-4">
+                        <h2 className={title.fontTitleline}>Industrial Mexican Beers & Sodas</h2>
                         <img
                             src={soda}
                             alt="soda"
