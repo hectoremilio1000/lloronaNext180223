@@ -2,6 +2,9 @@ import React from 'react'
 import { useState } from "react";
 import ButtonComponent from '../components/ButtonComponent/index';
 import { useAppContext } from '../components/context/Context';
+import Alimentos from './menullorona/Alimentos';
+import Food from './menullorona/menufood';
+
 
 function MenuLlorona() {
   const [english, setEnglish] = useState(false);
@@ -34,7 +37,7 @@ function MenuLlorona() {
 
         <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada">
           <h3 className=" font-weight-bold proximamente2 text-white">
-            <b>Mexican Experience</b>
+            <b>Menú</b>
           </h3>
 
           {/* <div className="subSubDiv1Banner">
@@ -64,22 +67,18 @@ function MenuLlorona() {
 
         {spanish && (
           <div className="contenedorMenu">
-            <ButtonComponent
-              titulo="ALIMENTOS"
-              enlace="/menullorona/Alimentos"
-            />
-            <ButtonComponent
+           <Alimentos/>
+            {/* <ButtonComponent
               titulo="BEBIDAS"
               enlace="/menullorona/Bebidas"
-            />
+            /> */}
             
           </div>
         )}
 
         {english && (
           <div className="contenedorMenu">
-            <ButtonComponent titulo="FOOD" enlace="/menullorona/menufood" />
-            <ButtonComponent titulo="DRINKS & BEERS" enlace="/menullorona/drinks" />
+            <Food/>
            
           </div>
         )}

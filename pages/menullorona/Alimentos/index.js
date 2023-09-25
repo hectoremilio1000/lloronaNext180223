@@ -8,19 +8,26 @@ import { CervezaArte } from '../../../data/menu/menuEspa/menuEspa'
 import { sodaEspa } from '../../../data/menu/menuEspa/menuEspa'
 import { destiladosEspa } from '../../../data/menu/menuEspa/menuEspa'
 import { mezcaEspa } from '../../../data/menu/menuEspa/menuEspa'
+import { portada } from '../../../data/menu/menuEspa/menuEspa'
+import { menuEspa11 } from '../../../data/menu/menuEspa/menuEspa'
+import { mixoEspa2 } from '../../../data/menu/menuEspa/menuEspa'
 
 function Alimentos() {
   const menuComida1 = menuEspa1;
   const menuComida2 = menuEspa2;
   const menuComida3 = menuEspa3;
   const mixologia = mixoEspa;
+  const mixologia2 = mixoEspa2;
   const soda = sodaEspa;
   const cervezaArtesanal = CervezaArte;
   const mezcales = mezcaEspa
   const destilados = destiladosEspa; 
+  const portadaF = portada;
+  const menuComida11 = menuEspa11;
+
   return (
     <>
-      <div className="d-flex subContenedor1Banner banner"
+      {/* <div className="d-flex subContenedor1Banner banner"
         style={{
           backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/llorona/banner/bannerMenu.jpg")`,
           backgroundSize: "cover",
@@ -31,19 +38,31 @@ function Alimentos() {
 
         <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada">
           <h3 className=" font-weight-bold proximamente2 text-white">
-            <b>Mexican Experience</b>
+            <b>Menú</b>
           </h3>
 
         </div>
-      </div>
+      </div> */}
 
       <div className="pt-3">
         <>
-          <h4 className={title.fontTitleSub}>Platillos mexicanos</h4>
+          {/* <h4 className={title.fontTitleSub}>Platillos mexicanos</h4>
           <h2 className={title.fontTitleline}>
             Cocinados con amor y mucho sazón
           </h2>
-          <div className="linea"></div>
+          <div className="linea"></div> */}
+
+          <div className="w-full px-4">
+            <img
+              src={portadaF}
+              alt="comida sabrosa"
+              width={1000}
+              height={500}
+              className="w-full"
+            />
+          </div>
+
+         
 
           <div className="w-full px-4">
             <img
@@ -54,6 +73,17 @@ function Alimentos() {
               className="w-full"
             />
           </div>
+
+          <div className="w-full px-4">
+            <img
+              src={menuComida11}
+              alt="comida sabrosa"
+              width={1000}
+              height={500}
+              className="w-full"
+            />
+          </div>
+
           <div className="w-full px-4">
             <img
               src={menuComida2}
@@ -89,6 +119,18 @@ function Alimentos() {
               className="w-full"
             />
           </div>
+
+          <div className="w-full px-4">
+            <img
+              src={mixologia2}
+              alt="comida sabrosa"
+              width={1000}
+              height={500}
+              className="w-full"
+            />
+          </div>
+
+          
           <div className="w-full px-4">
             <img
               src={cervezaArtesanal}
