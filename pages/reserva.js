@@ -39,12 +39,12 @@ function Reserva() {
   const image1 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg"
   const image2 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg"
   const image3 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg"
-  const image4 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nin%CC%83as+hermosas+en+cantina+la+llorona.JPG"
+  const image4 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2048.jpg"
 
   const image5 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg"
   const image6 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia+mexicana+tragos+increibles.jpg"
   const image7 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg"
-  const image8 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nin%CC%83as+hermosas+cantina+llorona+mexico+cantina.JPEG"
+  const image8 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/coctelDeliciosoMEzcal.jpg"
 
 
   return (

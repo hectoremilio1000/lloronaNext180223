@@ -21,19 +21,18 @@ function QuickInfo() {
     <>
       {espa ? <div className="container-llorona px-2">
         <div>
-          <h1 className={title.fontTitlemain}>La Llorona Xperience</h1>
+          <h1 className={title.fontTitlemain}>Te queremos acá</h1>
         </div>
         <div className='row-qh'>
-          <h4 className={title.fontTitleSub}>¿Cómo ser un</h4>
-          <h2 className={title.fontTitleline}>Mexicano?</h2>
+          <h4 className={title.fontTitleSub}>taco & Trago </h4>
+          
           <div className="linea"></div>
         </div>
 
 
         <div className="py-3 px-3 row-qh">
           <p className="text-center sm:text-2xl text-xl text-black">
-            Atrévete a probar una experiencia mexicana diferente. Somos un restaurante con una propuesta inovadora que fusiona <b>la cocina urbana contemporánea con la vida de la cantina Mexicana</b>. Prueba las hamburguesas más premiadas de todo México, en especial la galardonada <b>Miss Jack</b> que tiene una torre de aros de cebolla y un fondue de Quesos. Toma las pocimas (mixología) de la llorona, preparadas con <b>Pulque, Tepache o Mezcal</b>, y deleítate con nuestra exquisita selección de
-            <b> Cervezas Artesanales Mexicanas</b>.
+            En nuestra innovadora propuesta, no solamente servimos <b>tacos</b>, sino que llevamos la experiencia culinaria a un nivel superior. Cada <b>taco que ofrecemos va acompañado de una mixología única</b>, diseñada meticulosamente para complementar y realzar los sabores de cada ingrediente. Esta combinación de tradición y modernidad no solo satisface el paladar, sino que también ofrece un viaje sensorial inigualable, haciendo de cada bocado y sorbo una sinfonía de sabor inolvidable. Invitamos a todos a descubrir esta experiencia única donde la <b>gastronomía y la coctelería se entrelazan en perfecta armonía</b>.
           </p>
         </div>
 
@@ -47,23 +46,23 @@ function QuickInfo() {
             <div className={card.cardBox}>
               <img
                 className="imagenAbajoTexto1Home"
-                src="https://imagenesrutalab.s3.amazonaws.com/llorona/HAMBURGUESA_jack_suizo.JPG"
-                alt="Tacos deliciosos de Cochinita Pibil"
+                src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2049.jpg"
+                alt="Tacos y cocteles"
               />
-              <p className="textoFotosHome text-black">
+              {/* <p className="textoFotosHome text-black">
                 La más galardonada <br />
                 <b> Oaxaca Burguer</b>
-              </p>
+              </p> */}
             </div>
           </Link>
           <Link href="/menullorona/Alimentos">
             <div>
               <img
                 className="imagenAbajoTexto1Home"
-                src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/FotosBurguer/IMG_2177.jpg"
-                alt="Las hamburguesas más deliciosas CDMX LLORONA"
+                src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2050.jpg"
+                alt="cocteles y tacos"
               />
-              <p className="textoFotosHome text-black">Hamburguesas deliciosas = <br /><b>Clientes felices</b></p>
+              {/* <p className="textoFotosHome text-black">Hamburguesas deliciosas = <br /><b>Clientes felices</b></p> */}
             </div>
 
 
@@ -73,13 +72,13 @@ function QuickInfo() {
             <div className={card.cardBox}>
               <img
                 className="imagenAbajoTexto1Home"
-                src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/FotosBurguer/IMG_2178.jpg"
-                alt="Las hamburguesas más ricas"
+                src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2046.jpg"
+                alt="tacos y cocteles"
               />
-              <p className="textoFotosHome text-black">
+              {/* <p className="textoFotosHome text-black">
                 Las más ricas hamburguesas <br />
                 <b>de CDMX</b>
-              </p>
+              </p> */}
             </div>
           </Link>
 
@@ -87,21 +86,21 @@ function QuickInfo() {
             <div className={card.cardBox}>
               <img
                 className="imagenAbajoTexto1Home"
-                src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/FotosBurguer/IMG_2179.jpg"
-                alt="Pierde Almas con Mezcal"
+                src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2047.jpg"
+                alt="tacos y cocteles"
               />
-              <p className="textoFotosHome text-black">
+              {/* <p className="textoFotosHome text-black">
                 Hamburguesas Ricas hacen<b>
                   <br />hombres sonrientes
                 </b>
 
 
-              </p>
+              </p> */}
             </div>
           </Link>
         </div>
       
-        <div style={{ display: "flex", justifyContent: "center" }}>
+        <div style={{ display: "flex", justifyContent: "center", marginTop:30}}>
           <Link href="/reserva">
             <button className="buttonComponente" onClick={handleClick}>
               ¡Reserva ya!
@@ -125,7 +124,7 @@ function QuickInfo() {
 
          <div className="py-3 px-3 row-qh">
             <p className="text-center sm:text-2xl text-xl text-black">
-              Experience the true spirit of Mexico at La Llorona Restaurant! To immerse yourself in the authentic Mexican culture, you must come and savor our exquisite dishes. Taste our mouth-watering <b>Suadero tacos</b>, a delectable treasure from Mexico City, or indulge in traditional Mexican <b>Pulque, Mezcal or Tepache </b>. And if you're looking for a unique twist on a classic guacamole, try our special <b>Guacamole with grasshoppers and our Oaxacan peanuts, brought to you straight from Oaxaca</b>. Don't miss the chance to awaken your senses with the vibrant flavors of Mexico!
+              In our innovative proposal, we don't just serve <b>tacos</b>, but we elevate the culinary experience to a higher level. Each <b>taco we offer is paired with a unique mixology</b>, meticulously designed to complement and enhance the flavors of each ingredient. This blend of tradition and modernity not only satisfies the palate but also offers an unparalleled sensory journey, making each bite and sip an unforgettable flavor symphony. We invite everyone to discover this unique experience where <b>gastronomy and mixology intertwine in perfect harmony</b>.
             </p>
           </div>
 
@@ -152,10 +151,10 @@ function QuickInfo() {
               <div>
                 <img
                   className="imagenAbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/tacosEstiloBaja.png"
+                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2049.jpg"
                   alt="Baja California style shrimp tacos"
                 />
-                <p className="textoFotosHome text-black">Baja California style <br /><b>shrimp Tacos</b></p>
+                <p className="textoFotosHome text-black">Squash blossom tacos </p>
               </div>
 
 
@@ -165,12 +164,12 @@ function QuickInfo() {
               <div className={card.cardBox}>
                 <img
                   className="imagenAbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/tacosdesuadero2.jpg"
+                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2047.jpg"
                   alt="Tacos suadero"
                 />
                 <p className="textoFotosHome text-black">
-                  Tacos Suadero = <br />
-                  <b>Happy Clients</b>
+                  Tacos Veggies <br />
+                  
                 </p>
               </div>
             </Link>
@@ -179,32 +178,18 @@ function QuickInfo() {
               <div className={card.cardBox}>
                 <img
                   className="imagenAbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/hamburguesaLlorona.jpg"
-                  alt="Llorona Burger with a jalapeño"
+                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2046.jpg"
+                  alt="Tacos"
                 />
                 <p className="textoFotosHome text-black">
-                  Llorona Burger<b>
-                    <br />with a jalapeño
+                  Tacos<b>
+                    <br />& cocktails
                   </b>
 
                 </p>
               </div>
             </Link>
-            <Link href="/menullorona/Bebidas/Artesanal">
-              <div className={card.cardBox}>
-                <img
-                  className="imagenAbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/hawaiian-pizza.jpg"
-                  alt="Pizza hawaiana with sesame seeds"
-                />
-                <p className="textoFotosHome text-black">
-                  Pizza hawaiana<b>
-                    <br />with sesame seeds
-                  </b>
-
-                </p>
-              </div>
-            </Link>
+            
           </div> 
 
         <div style={{ display: "flex", justifyContent: "center" }}>
