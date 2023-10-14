@@ -138,8 +138,8 @@ function QuickInfo() {
               <div className={card.cardBox}>
                 <img
                   className="imagenAbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/receta-de-guacamole-con-chapulines.jpg"
-                  alt="guacamole con chapulines"
+                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/coctelDeliciosoMEzcal.jpg"
+                  alt="el cráneo"
                 />
                 <p className="textoFotosHome text-black">
                   Guacamole with <br />
