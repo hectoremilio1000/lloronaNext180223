@@ -14,6 +14,7 @@ import Resena from '../components/Resena/index';
 import * as fbq from '../lib/fpixel'
 import Reserva from './reserva';
 import Calendario from "../components/Calendario";
+import QuickInfo4 from "../components/QuickInfo4";
 
 export default function Home() {
 
@@ -83,7 +84,7 @@ export default function Home() {
       <Calendario />
       <QuickInfo2 />
       <QuickInfo3 />
-     
+     <QuickInfo4/>
       <Encontramos/>
      
     </div>
