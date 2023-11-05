@@ -74,7 +74,7 @@ function Alimentos() {
             />
           </div>
 
-          <div className="w-full px-4">
+          {/* <div className="w-full px-4">
             <img
               src={menuComida11}
               alt="comida sabrosa"
@@ -82,7 +82,7 @@ function Alimentos() {
               height={500}
               className="w-full"
             />
-          </div>
+          </div> */}
 
           <div className="w-full px-4">
             <img
