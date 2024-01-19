@@ -1,16 +1,16 @@
-import React from 'react'
-import title from "../../../components/Main/title.module.css"
-import { menuEspa1 } from '../../../data/menu/menuEspa/menuEspa'
-import { menuEspa2 } from '../../../data/menu/menuEspa/menuEspa'
-import { menuEspa3 } from '../../../data/menu/menuEspa/menuEspa'
-import { mixoEspa } from '../../../data/menu/menuEspa/menuEspa'
-import { CervezaArte } from '../../../data/menu/menuEspa/menuEspa'
-import { sodaEspa } from '../../../data/menu/menuEspa/menuEspa'
-import { destiladosEspa } from '../../../data/menu/menuEspa/menuEspa'
-import { mezcaEspa } from '../../../data/menu/menuEspa/menuEspa'
-import { portada } from '../../../data/menu/menuEspa/menuEspa'
-import { menuEspa11 } from '../../../data/menu/menuEspa/menuEspa'
-import { mixoEspa2 } from '../../../data/menu/menuEspa/menuEspa'
+import React from "react";
+import title from "../../../components/Main/title.module.css";
+import { menuEspa1 } from "../../../data/menu/menuEspa/menuEspa";
+import { menuEspa2 } from "../../../data/menu/menuEspa/menuEspa";
+import { menuEspa3 } from "../../../data/menu/menuEspa/menuEspa";
+import { mixoEspa } from "../../../data/menu/menuEspa/menuEspa";
+import { CervezaArte } from "../../../data/menu/menuEspa/menuEspa";
+import { sodaEspa } from "../../../data/menu/menuEspa/menuEspa";
+import { destiladosEspa } from "../../../data/menu/menuEspa/menuEspa";
+import { mezcaEspa } from "../../../data/menu/menuEspa/menuEspa";
+import { portada } from "../../../data/menu/menuEspa/menuEspa";
+import { menuEspa11 } from "../../../data/menu/menuEspa/menuEspa";
+import { mixoEspa2 } from "../../../data/menu/menuEspa/menuEspa";
 
 function Alimentos() {
   const menuComida1 = menuEspa1;
@@ -20,8 +20,8 @@ function Alimentos() {
   const mixologia2 = mixoEspa2;
   const soda = sodaEspa;
   const cervezaArtesanal = CervezaArte;
-  const mezcales = mezcaEspa
-  const destilados = destiladosEspa; 
+  const mezcales = mezcaEspa;
+  const destilados = destiladosEspa;
   const portadaF = portada;
   const menuComida11 = menuEspa11;
 
@@ -52,7 +52,7 @@ function Alimentos() {
           </h2>
           <div className="linea"></div> */}
 
-          <div className="w-full px-4">
+          {/* <div className="w-full px-4">
             <img
               src={portadaF}
               alt="comida sabrosa"
@@ -60,9 +60,7 @@ function Alimentos() {
               height={500}
               className="w-full"
             />
-          </div>
-
-         
+          </div> */}
 
           <div className="w-full px-4">
             <img
@@ -106,10 +104,10 @@ function Alimentos() {
         <>
           <h4 className={title.fontTitleSub}>Bebidas Mexicanas</h4>
           <h2 className={title.fontTitleline}>
-            CERVEZAS ARTESANALES MEXICANAS, MEZCALES ARTESANALES Y MIXOLOGÍA CON SABORES Y DESTILADOS MEXICANOS
+            CERVEZAS ARTESANALES MEXICANAS, MEZCALES ARTESANALES Y MIXOLOGÍA CON
+            SABORES Y DESTILADOS MEXICANOS
           </h2>
           <div className="linea"></div>
-
           <div className="w-full px-4">
             <img
               src={mixologia}
@@ -119,7 +117,6 @@ function Alimentos() {
               className="w-full"
             />
           </div>
-
           <div className="w-full px-4">
             <img
               src={mixologia2}
@@ -129,8 +126,6 @@ function Alimentos() {
               className="w-full"
             />
           </div>
-
-          
           <div className="w-full px-4">
             <img
               src={cervezaArtesanal}
@@ -139,7 +134,8 @@ function Alimentos() {
               height={500}
               className="w-full"
             />
-          </div> <div className="w-full px-4">
+          </div>{" "}
+          <div className="w-full px-4">
             <img
               src={mezcales}
               alt="comida sabrosa"
@@ -162,7 +158,8 @@ function Alimentos() {
               height={500}
               className="w-full"
             />
-          </div> <div className="w-full px-4">
+          </div>{" "}
+          <div className="w-full px-4">
             <img
               src={soda}
               alt="soda"
@@ -171,13 +168,10 @@ function Alimentos() {
               className="w-full"
             />
           </div>
-
         </>
-
-
       </div>
     </>
-  )
+  );
 }
 
-export default Alimentos
+export default Alimentos;
