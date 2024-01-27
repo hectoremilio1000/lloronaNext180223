@@ -1,38 +1,40 @@
-import React from 'react'
-import title from "../Main/title.module.css"
-import card from "../Main/card.module.css"
+import React from "react";
+import title from "../Main/title.module.css";
+import card from "../Main/card.module.css";
 
 function MezcalInfo() {
   return (
     <div className="container-llorona py-2">
-      <div className='px-2'>
+      <div className="px-2">
         <h1 className={title.fontTitlemain}>Mezcal Llorona</h1>
       </div>
       <div>
-        <h4 className={title.fontTitleSub}>Nuestro Mezcal</h4>
+        <h4 className="text-3xl text-center mx-auto">Un amigo, un mezcal</h4>
 
         <div className="linea"></div>
       </div>
 
       <div className="py-3 px-3 row-qh">
-        <p className="text-center sm:text-2xl text-xl text-black">
-          La llorona es una canción escrita en la comunidad zapoteca del Istmo
-          de Tehuantepec, Oaxaca; cuenta la historia de la búsqueda de un gran
-          amor.
+        <p className="w-full max-w-[800px]  mx-auto text-center sm:text-2xl text-xl text-black">
+          Bienvenido a La Llorona Cantina, el lugar donde las fronteras
+          desaparecen y la diversidad se convierte en nuestra mejor compañía. En
+          nuestra cantina, no solo ofrecemos mezcales artesanales de calidad,
+          sino también la oportunidad de conocer a amigos de todos los rincones
+          del mundo.
         </p>
 
-        <p className="text-center sm:text-2xl text-xl text-black">
-          En honor a esta búsqueda del amor hacia la perfección elaboramos un
-          sabor que se remonta a 500 años de tradición en la elaboración del
-          elixir llamado “mezcal minero”, haciendo alusión al nombre de la
-          población donde lo producimos y el cuál se caracteriza por su
-          elaboración a mano y su doble destilación en olla de barro.
+        <p className="w-full max-w-[800px] mx-auto  text-center sm:text-2xl text-xl text-black">
+          En La Llorona, creemos que la mejor forma de disfrutar un buen mezcal
+          es en excelente compañía. Nuestro ambiente acogedor y vibrante es el
+          escenario perfecto para entablar conversaciones significativas con
+          personas de diferentes culturas. ¡Aquí, cada visita se convierte en
+          una experiencia internacional!
         </p>
       </div>
       <div className="subSubDiv1Banner">
         <a href="https://wa.me/+5215549242477">
           <button type="button" className="buttonComponente">
-            ¡Ordenar ya!
+            Buscanos aqui
           </button>
         </a>
       </div>
@@ -40,4 +42,4 @@ function MezcalInfo() {
   );
 }
 
-export default MezcalInfo
+export default MezcalInfo;
