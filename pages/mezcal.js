@@ -36,7 +36,7 @@ function Mezcal() {
         >
           {/* <video autoPlay muted loop src={videoPort} /> */}
 
-          <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada">
+          <div className="flex w-full mx-2 title-portada">
             <h1 className="text-4xl text-white font-bold">
               Vive la experiencia de tomar un buen
             </h1>
