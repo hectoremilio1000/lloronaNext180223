@@ -44,7 +44,7 @@ function Promo2() {
                   rodeado de buena compañía y un ambiente inigualable.
                 </p>
 
-                <InlineWidget url="https://calendly.com/reservaciones-14/reservaciones-llorona" />
+                <InlineWidget url="https://calendly.com/reservaciones-14/reserva-al-superbowl-te-regalamos-una-cerveza-de-clon" />
               </>
             ) : (
               <>
@@ -61,7 +61,7 @@ function Promo2() {
                   atmosphere.
                 </p>
 
-                <InlineWidget url="https://calendly.com/reservaciones-14/reservaciones-llorona" />
+                <InlineWidget url="https://calendly.com/reservaciones-14/book-for-the-super-bowl-and-get-a-free-draft-bee-clon" />
               </>
             )}
           </div>

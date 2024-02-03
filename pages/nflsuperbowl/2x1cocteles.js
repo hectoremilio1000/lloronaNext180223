@@ -44,7 +44,7 @@ function Promo3() {
                   rodeado de buena compañía y un ambiente inigualable.
                 </p>
 
-                <InlineWidget url="https://calendly.com/reservaciones-14/reservaciones-llorona" />
+                <InlineWidget url="https://calendly.com/reservaciones-14/reserva-al-superbowl-recibe-un-15-dcto-en-tu-cu-clon" />
               </>
             ) : (
               <>
@@ -61,7 +61,7 @@ function Promo3() {
                   atmosphere.
                 </p>
 
-                <InlineWidget url="https://calendly.com/reservaciones-14/reservaciones-llorona" />
+                <InlineWidget url="https://calendly.com/reservaciones-14/book-now-and-get-a-15-discount-on-the-billrel-o-clon" />
               </>
             )}
           </div>
