@@ -1,22 +1,34 @@
-import React from 'react'
+import React from "react";
 
-import title from '../Main/title.module.css'
-import card from "../Main/card.module.css"
+import title from "../Main/title.module.css";
+import card from "../Main/card.module.css";
 
 function NuestroMezcalImages() {
-  const image1 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_0043+(1).jpg"
-  const image2 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/foto%2Bbotella%2Bcalaca%2Bmezcal%2Babbywood.jpeg"
-  const image3 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9973+(1).jpg"
-  const image4 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mezcal%2Bcannabis%2Bllorona.jpg"
+  const image1 =
+    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_0043+(1).jpg";
+  const image2 =
+    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/foto%2Bbotella%2Bcalaca%2Bmezcal%2Babbywood.jpeg";
+  const image3 =
+    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9973+(1).jpg";
+  const image4 =
+    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mezcal%2Bcannabis%2Bllorona.jpg";
   return (
     <div>
       <div>
-        <h4 className={title.fontTitleSub}>La pasión al mezcal</h4>
-        <h2 className={title.fontTitleline}>Nos une</h2>
+        <h1 className={title.fontTitlemain}>La pasión al mezcal</h1>
+        <h2 className="text-3xl text-center mx-auto">Nos une</h2>
         <div className="linea"></div>
       </div>
 
-      <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "20px", margin: 20 }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          flexWrap: "wrap",
+          gap: "20px",
+          margin: 20,
+        }}
+      >
         <div className={card.card_box}>
           <img
             alt=""
@@ -25,7 +37,6 @@ function NuestroMezcalImages() {
             objectFit="cover"
             className="group-hover:opacity-75"
           />
-
         </div>
         <div className={card.card_box}>
           <img
@@ -35,7 +46,6 @@ function NuestroMezcalImages() {
             objectFit="cover"
             className="group-hover:opacity-75"
           />
-
         </div>
         <div className={card.card_box}>
           <img
@@ -45,7 +55,6 @@ function NuestroMezcalImages() {
             objectFit="cover"
             className="group-hover:opacity-75"
           />
-
         </div>
         <div className={card.card_box}>
           <img
@@ -55,13 +64,12 @@ function NuestroMezcalImages() {
             objectFit="cover"
             className="group-hover:opacity-75"
           />
-
         </div>
       </div>
-
-
-
-
+      <p className="w-full max-w-[800px]  mx-auto text-center sm:text-2xl text-xl text-black">
+        Compra un buen mezcal envíos a todo mexico, restaurante ubicado en
+        Alvaro Obregón 308 Roma Condesa, hacemos delivery.
+      </p>
 
       {/* <div className={card.cardContainer}>
         
@@ -120,7 +128,6 @@ function NuestroMezcalImages() {
         </a>
       </div>
     </div>
-
 
     // <Section>
     //   <div>
