@@ -55,31 +55,30 @@ function Promo1() {
                 </h1>
                 <p className="text-white">
                   ¡Prepárate para la gran noche del fútbol americano en
-                  <strong>Cantina La Llorona</strong>! Ubicados en el corazón de
-                  la ciudad, te ofrecemos el ambiente más animado y casual para
+                  <strong> Cantina La Llorona</strong>! Ubicados en el corazón
+                  de la roma condesa, te ofrecemos el ambiente más animado para
                   disfrutar del Super Bowl como nunca antes. Nuestra cantina es
                   el lugar perfecto para sumergirte en la emoción del juego,
                   rodeado de buena compañía y un ambiente inigualable.
                 </p>
 
-                <InlineWidget url="https://calendly.com/reservaciones-14/reservaciones-llorona" />
+                <InlineWidget url="https://calendly.com/reservaciones-14/cervezabarrilgratissuperbowl" />
               </>
             ) : (
               <>
                 <h1 className="text-5xl text-white">
-                  Book Now And Win <br /> A Free Barrel Of Beer
+                  Book Now And Win <br /> A Free Free Keg of Draft Beer
                 </h1>
                 <p className="text-white">
-                  Get ready for the big American football night at{" "}
-                  <strong>Cantina La Llorona</strong>! Located in the heart of
-                  the city, we offer the liveliest and most casual atmosphere
-                  for enjoying the Super Bowl like never before. Our cantina is
-                  the perfect place to immerse yourself in the excitement of the
-                  game, surrounded by good company and an unparalleled
-                  atmosphere.
+                  Gear up for the ultimate football night at
+                  <strong>Cantina La Llorona! </strong> Nestled in the vibrant
+                  heart of Roma Condesa, we provide the most spirited setting to
+                  experience the Super Bowl like never before. Our cantina is
+                  the ideal spot to dive into the thrill of the game, amidst
+                  great company and an unparalleled ambiance.
                 </p>
 
-                <InlineWidget url="https://calendly.com/reservaciones-14/reservaciones-llorona" />
+                <InlineWidget url="https://calendly.com/reservaciones-14/bookforthesuperbowlandgetafreedraftbeer" />
               </>
             )}
           </div>
