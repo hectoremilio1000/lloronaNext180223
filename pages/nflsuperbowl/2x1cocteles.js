@@ -28,11 +28,11 @@ function Promo3() {
         </Head>
       )}
       <div className="w-full bg-gray-900 py-[150px] ">
-        <div className="max-w-[1300px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="form px-4 py-4">
+        <div className="max-w-[1300px] grid-col-reverse mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 px-6">
+          <div className="form py-4 order-2 md:order-1">
             {espa ? (
               <>
-                <h1 className="text-5xl text-white">
+                <h1 className="text-3xl md:text-5xl text-white">
                   Reserva Ahora Y Gana un <br /> 2x1 en cocteles llorona
                 </h1>
                 <p className="text-white">
@@ -48,7 +48,7 @@ function Promo3() {
               </>
             ) : (
               <>
-                <h1 className="text-5xl text-white">
+                <h1 className="text-3xl md:text-5xl text-white">
                   Book Now And Win <br /> 2x1 on Llorona Cocktails
                 </h1>
                 <p className="text-white">
@@ -65,7 +65,7 @@ function Promo3() {
               </>
             )}
           </div>
-          <div className="w-full">
+          <div className="w-full order-1 md:order-2">
             <img src="../../images/adsreservas/promocion3.png" alt="" />
           </div>
         </div>
