@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import Link from "next/link";
 // import title from "../components/Main/title.module.css";
 import { useAppContext } from "../../components/context/Context";
+
+import { InlineWidget } from "react-calendly";
 import Head from "next/head";
 import Script from "next/script";
 
@@ -25,7 +27,7 @@ function Promo2() {
           />
         </Head>
       )}
-      <div className="w-full h-[100vh] bg-gray-900 py-[150px] ">
+      <div className="w-full bg-gray-900 py-[150px] ">
         <div className="max-w-[1300px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="form px-4 py-4">
             {espa ? (
@@ -41,6 +43,8 @@ function Promo2() {
                   el lugar perfecto para sumergirte en la emoción del juego,
                   rodeado de buena compañía y un ambiente inigualable.
                 </p>
+
+                <InlineWidget url="https://calendly.com/reservaciones-14/reservaciones-llorona" />
               </>
             ) : (
               <>
@@ -56,6 +60,8 @@ function Promo2() {
                   game, surrounded by good company and an unparalleled
                   atmosphere.
                 </p>
+
+                <InlineWidget url="https://calendly.com/reservaciones-14/reservaciones-llorona" />
               </>
             )}
           </div>
