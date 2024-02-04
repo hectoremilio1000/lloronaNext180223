@@ -32,36 +32,36 @@ function Promo2() {
           <div className="form py-4 order-2 md:order-1">
             {espa ? (
               <>
-                <h1 className="text-3xl md:text-5xl text-white">
-                  Reserva Ahora Y Gana un <br /> 15% dcto en LA CUENTA
+                <h1 className="text-3xl md:text-5xl text-white text-center">
+                  Reserva Ahora Y Gana un <br /> 15% de descuento en TU CUENTA
                 </h1>
                 <p className="text-white">
                   ¡Prepárate para la gran noche del fútbol americano en
-                  <strong>Cantina La Llorona</strong>! Ubicados en el corazón de
-                  la ciudad, te ofrecemos el ambiente más animado y casual para
-                  disfrutar del Super Bowl como nunca antes. Nuestra cantina es
-                  el lugar perfecto para sumergirte en la emoción del juego,
-                  rodeado de buena compañía y un ambiente inigualable.
+                  <strong> Cantina La Llorona</strong>! Ubicados en el corazón
+                  de la Cudad de México, Roma Condesa, te ofrecemos el ambiente
+                  más animado para disfrutar del Super Bowl como nunca antes.
+                  Nuestra cantina es el lugar perfecto para sumergirte en la
+                  emoción del juego, rodeado de buena compañía y una comida
+                  inigualable.
                 </p>
 
-                <InlineWidget url="https://calendly.com/reservaciones-14/reserva-al-superbowl-te-regalamos-una-cerveza-de-clon" />
+                <InlineWidget url="https://calendly.com/reservaciones-14/reserva-al-superbowl-recibe-descuento-llorona-cantina" />
               </>
             ) : (
               <>
-                <h1 className="text-3xl md:text-5xl text-white">
-                  Book Now and Get a <br /> 15% Discount on THE BILLrel Of Beer
+                <h1 className="text-3xl md:text-5xl text-white text-center">
+                  Book Now and Get a <br /> 15% Discount on THE BILL
                 </h1>
                 <p className="text-white">
                   Get ready for the big American football night at{" "}
                   <strong>Cantina La Llorona</strong>! Located in the heart of
-                  the city, we offer the liveliest and most casual atmosphere
-                  for enjoying the Super Bowl like never before. Our cantina is
-                  the perfect place to immerse yourself in the excitement of the
-                  game, surrounded by good company and an unparalleled
-                  atmosphere.
+                  Mexico City in Roma Condesa, we offer the liveliest and most
+                  casual atmosphere for enjoying the Super Bowl like never
+                  before. Our cantina is the perfect place to immerse yourself
+                  in the excitement of the game.
                 </p>
 
-                <InlineWidget url="https://calendly.com/reservaciones-14/book-for-the-super-bowl-and-get-a-free-draft-bee-clon" />
+                <InlineWidget url="https://calendly.com/reservaciones-14/book-superbowl-discount-15-percent-account-llorona" />
               </>
             )}
           </div>
