@@ -11,6 +11,7 @@ import { mezcaEspa } from "../../../data/menu/menuEspa/menuEspa";
 import { portada } from "../../../data/menu/menuEspa/menuEspa";
 import { menuEspa11 } from "../../../data/menu/menuEspa/menuEspa";
 import { mixoEspa2 } from "../../../data/menu/menuEspa/menuEspa";
+import MenuDetail from "../../../components/MenuDetail";
 
 function Alimentos() {
   const menuComida1 = menuEspa1;
@@ -43,8 +44,8 @@ function Alimentos() {
 
         </div>
       </div> */}
-
-      <div className="pt-3">
+      {/* <MenuDetail /> */}
+      <div className="pt-3 grid grid-cols-1 md:grid-cols-3 gap-2">
         <>
           {/* <h4 className={title.fontTitleSub}>Platillos mexicanos</h4>
           <h2 className={title.fontTitleline}>

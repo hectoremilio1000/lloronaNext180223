@@ -1,10 +1,9 @@
-import React from 'react'
+import React from "react";
 import { useState } from "react";
-import ButtonComponent from '../components/ButtonComponent/index';
-import { useAppContext } from '../components/context/Context';
-import Alimentos from './menullorona/Alimentos';
-import Food from './menullorona/menufood';
-
+import ButtonComponent from "../components/ButtonComponent/index";
+import { useAppContext } from "../components/context/Context";
+import Alimentos from "./menullorona/Alimentos";
+import Food from "./menullorona/menufood";
 
 function MenuLlorona() {
   const [english, setEnglish] = useState(false);
@@ -24,15 +23,16 @@ function MenuLlorona() {
 
   return (
     <div>
-      <div className="d-flex subContenedor1Banner banner"
+      <div
+        className="d-flex subContenedor1Banner banner"
         style={{
           backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/llorona/banner/bannerMenu.jpg")`,
           backgroundSize: "cover",
           height: "40vh",
           backgroundPosition: "center",
-          position: "relative"
-        }}>
-
+          position: "relative",
+        }}
+      >
         {/* <video autoPlay muted loop src={videoPort} /> */}
 
         <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada">
@@ -49,37 +49,50 @@ function MenuLlorona() {
           </div> */}
         </div>
       </div>
-      <div className="mt-2" style={{
-        padding: "2rem 0",
-        width: "90vw",
-        margin: "0 auto"
-      }}>
+      <div
+        className="mt-2"
+        style={{
+          padding: "2rem 0",
+          width: "90vw",
+          margin: "0 auto",
+        }}
+      >
         <div>
-          
-          {espa ? <h2 className="text-center font-weight-bold">Menú</h2> :
-            <h2 className="text-center font-weight-bold">Menu</h2>}
-          
+          {espa ? (
+            <h1 className="text-center text-3xl">Menú</h1>
+          ) : (
+            <h1 className="text-center font-weight-bold">Menu</h1>
+          )}
+
           <div className="contenedorLenguaje">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={onEnglish}>English</button>
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={onSpanish}>Español</button>
+            <button
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              onClick={onEnglish}
+            >
+              English
+            </button>
+            <button
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              onClick={onSpanish}
+            >
+              Español
+            </button>
           </div>
         </div>
 
         {spanish && (
           <div className="contenedorMenu">
-           <Alimentos/>
+            <Alimentos />
             {/* <ButtonComponent
               titulo="BEBIDAS"
               enlace="/menullorona/Bebidas"
             /> */}
-            
           </div>
         )}
 
         {english && (
           <div className="contenedorMenu">
-            <Food/>
-           
+            <Food />
           </div>
         )}
       </div>
@@ -87,4 +100,4 @@ function MenuLlorona() {
   );
 }
 
-export default MenuLlorona
+export default MenuLlorona;
