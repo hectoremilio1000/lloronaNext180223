@@ -50,8 +50,8 @@ function Promo1() {
           <div className="form py-4 order-2 md:order-1">
             {espa ? (
               <>
-                <h1 className="text-3xl md:text-5xl text-white">
-                  Reserva Ahora Y Gana un <br /> Barril de cerveza Gratis
+                <h1 className="text-3xl md:text-5xl text-white text-center">
+                  Reserva Ahora y Gana un <br /> una Cerveza de Barril Gratis
                 </h1>
                 <p className="text-white">
                   ¡Prepárate para la gran noche del fútbol americano en
@@ -66,8 +66,8 @@ function Promo1() {
               </>
             ) : (
               <>
-                <h1 className="text-3xl md:text-5xl text-white">
-                  Book Now And Win <br /> A Free Free Keg of Draft Beer
+                <h1 className="text-3xl md:text-5xl text-white text-center">
+                  Book Now And Win <br /> A Free Draft Beer
                 </h1>
                 <p className="text-white">
                   Gear up for the ultimate football night at
