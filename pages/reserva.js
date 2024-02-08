@@ -83,7 +83,7 @@ function Reserva() {
         <div className="w-full bg-black h-[400px]"></div>
         <div className="w-full bg-[#020a06] -mt-[200px]">
           {espa ? (
-            <div className="w-full max-w-[1300px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-8">
+            <div className="w-full max-w-[1184px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-8">
               <div className="w-full">
                 <h1 className=" font-bold text-4xl text-white">
                   Los jueves piñata cumpleañera <br />
@@ -259,7 +259,7 @@ function Reserva() {
               </h1>
             </div>
           </div>
-          <div className="mx-auto max-w-[1300px] grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 px-8">
+          <div className="mx-auto max-w-[1184px] grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 px-8">
             <div>
               <Link href="/reserva">
                 <YouTube

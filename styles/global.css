@@ -168,6 +168,7 @@ h1 {
   height: 90vh;
   background-position: center;
   position: relative;
+  background-attachment: fixed;
 }
 
 .bannerVacantes {
