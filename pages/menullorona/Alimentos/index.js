@@ -28,148 +28,107 @@ function Alimentos() {
 
   return (
     <>
-      {/* <div className="d-flex subContenedor1Banner banner"
-        style={{
-          backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/llorona/banner/bannerMenu.jpg")`,
-          backgroundSize: "cover",
-          height: "40vh",
-          backgroundPosition: "center",
-          position: "relative"
-        }}>
-
-        <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada">
-          <h3 className=" font-weight-bold proximamente2 text-white">
-            <b>Menú</b>
-          </h3>
-
-        </div>
-      </div> */}
       {/* <MenuDetail /> */}
       <div className="pt-3 grid grid-cols-1 md:grid-cols-3 gap-2">
-        <>
-          {/* <h4 className={title.fontTitleSub}>Platillos mexicanos</h4>
-          <h2 className={title.fontTitleline}>
-            Cocinados con amor y mucho sazón
-          </h2>
-          <div className="linea"></div> */}
+        <div className="w-full px-4">
+          <img
+            src={menuComida1}
+            alt="comida sabrosa"
+            width={1000}
+            height={500}
+            className="w-full"
+          />
+        </div>
 
-          {/* <div className="w-full px-4">
-            <img
-              src={portadaF}
-              alt="comida sabrosa"
-              width={1000}
-              height={500}
-              className="w-full"
-            />
-          </div> */}
+        <div className="w-full px-4">
+          <img
+            src={menuComida2}
+            alt="comida sabrosa"
+            width={1000}
+            height={500}
+            className="w-full"
+          />
+        </div>
+        <div className="w-full px-4">
+          <img
+            src={menuComida3}
+            alt="comida sabrosa"
+            width={1000}
+            height={500}
+            className="w-full"
+          />
+        </div>
+      </div>
 
-          <div className="w-full px-4">
-            <img
-              src={menuComida1}
-              alt="comida sabrosa"
-              width={1000}
-              height={500}
-              className="w-full"
-            />
-          </div>
+      <h4 className={title.fontTitleSub}>Bebidas Mexicanas</h4>
+      <h2 className={title.fontTitleline}>
+        CERVEZAS ARTESANALES MEXICANAS, MEZCALES ARTESANALES Y MIXOLOGÍA CON
+        SABORES Y DESTILADOS MEXICANOS
+      </h2>
+      <div className="linea"></div>
 
-          {/* <div className="w-full px-4">
-            <img
-              src={menuComida11}
-              alt="comida sabrosa"
-              width={1000}
-              height={500}
-              className="w-full"
-            />
-          </div> */}
+      <div className="pt-3 grid grid-cols-1 md:grid-cols-3 gap-2">
+        <div className="w-full px-4">
+          <img
+            src={mixologia}
+            alt="comida sabrosa"
+            width={1000}
+            height={500}
+            className="w-full"
+          />
+        </div>
+        <div className="w-full px-4">
+          <img
+            src={mixologia2}
+            alt="comida sabrosa"
+            width={1000}
+            height={500}
+            className="w-full"
+          />
+        </div>
+        <div className="w-full px-4">
+          <img
+            src={cervezaArtesanal}
+            alt="comida sabrosa"
+            width={1000}
+            height={500}
+            className="w-full"
+          />
+        </div>
+        <div className="w-full px-4">
+          <img
+            src={mezcales}
+            alt="comida sabrosa"
+            width={1000}
+            height={500}
+            className="w-full"
+          />
+        </div>
+      </div>
 
-          <div className="w-full px-4">
-            <img
-              src={menuComida2}
-              alt="comida sabrosa"
-              width={1000}
-              height={500}
-              className="w-full"
-            />
-          </div>
-          <div className="w-full px-4">
-            <img
-              src={menuComida3}
-              alt="comida sabrosa"
-              width={1000}
-              height={500}
-              className="w-full"
-            />
-          </div>
-        </>
-        <>
-          <h4 className={title.fontTitleSub}>Bebidas Mexicanas</h4>
-          <h2 className={title.fontTitleline}>
-            CERVEZAS ARTESANALES MEXICANAS, MEZCALES ARTESANALES Y MIXOLOGÍA CON
-            SABORES Y DESTILADOS MEXICANOS
-          </h2>
-          <div className="linea"></div>
-          <div className="w-full px-4">
-            <img
-              src={mixologia}
-              alt="comida sabrosa"
-              width={1000}
-              height={500}
-              className="w-full"
-            />
-          </div>
-          <div className="w-full px-4">
-            <img
-              src={mixologia2}
-              alt="comida sabrosa"
-              width={1000}
-              height={500}
-              className="w-full"
-            />
-          </div>
-          <div className="w-full px-4">
-            <img
-              src={cervezaArtesanal}
-              alt="comida sabrosa"
-              width={1000}
-              height={500}
-              className="w-full"
-            />
-          </div>{" "}
-          <div className="w-full px-4">
-            <img
-              src={mezcales}
-              alt="comida sabrosa"
-              width={1000}
-              height={500}
-              className="w-full"
-            />
-          </div>
-        </>
+      <h4 className={title.fontTitleSub}>Sodas, Destilados</h4>
+      <h2 className={title.fontTitleline}>Cervezas Industriales</h2>
+      <div className="linea"></div>
 
-        <>
-          <h4 className={title.fontTitleSub}>Sodas, Destilados</h4>
-          <h2 className={title.fontTitleline}>Cervezas Industriales</h2>
-          <div className="linea"></div>
-          <div className="w-full px-4">
-            <img
-              src={destilados}
-              alt="destilados"
-              width={1000}
-              height={500}
-              className="w-full"
-            />
-          </div>{" "}
-          <div className="w-full px-4">
-            <img
-              src={soda}
-              alt="soda"
-              width={1000}
-              height={500}
-              className="w-full"
-            />
-          </div>
-        </>
+      <div className="pt-3 grid grid-cols-1 md:grid-cols-3 gap-2">
+        <div className="w-full px-4">
+          <img
+            src={destilados}
+            alt="destilados"
+            width={1000}
+            height={500}
+            className="w-full"
+          />
+        </div>{" "}
+        <div className="w-full px-4">
+          <img
+            src={soda}
+            alt="soda"
+            width={1000}
+            height={500}
+            className="w-full"
+          />
+        </div>
       </div>
     </>
   );
