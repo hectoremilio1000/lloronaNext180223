@@ -19,7 +19,7 @@ function QuickInfo() {
         <div className="w-full max-w-[1184px] py-[80px] px-[20px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="w-full flex flex-col justify-center">
             {/* <h2 className="font-bold text-2xl">No solo somos</h2> */}
-            <h1 className="text2xl md:text-5xl font-bold">
+            <h1 className="text-2xl md:text-5xl font-bold">
               No solo somos Un Restaurante, sino una experiencia
             </h1>
 
@@ -37,12 +37,12 @@ function QuickInfo() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
             <div className="">
               <Link href="/menullorona/Alimentos">
                 <div className="w-full">
                   <img
-                    className="w-full rounded"
+                    className="w-full h-[280px]  object-cover rounded"
                     src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2049.jpg"
                     alt="Tacos y cocteles"
                   />
@@ -51,7 +51,7 @@ function QuickInfo() {
               <Link href="/menullorona/Alimentos" className="mt-4 block">
                 <div>
                   <img
-                    className="h-[150px] object-cover w-full rounded"
+                    className="h-[220px] object-cover w-full rounded"
                     src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2050.jpg"
                     alt="cocteles y tacos"
                   />
@@ -60,19 +60,22 @@ function QuickInfo() {
             </div>
             <div className="w-full grid grid-cols-1">
               <Link href="/menullorona/Alimentos" className="mt-12">
-                <div className={card.cardBox}>
+                <div>
                   <img
-                    className="h-[250px] object-cover w-full rounded"
+                    className="h-[220px] object-cover w-full rounded"
                     src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2046.jpg"
                     alt="tacos y cocteles"
                   />
                 </div>
               </Link>
 
-              <Link href="/menullorona/Bebidas/Artesanal">
-                <div className={card.cardBox}>
+              <Link
+                href="/menullorona/Bebidas/Artesanal"
+                className="mt-4 block"
+              >
+                <div>
                   <img
-                    className="h-[250px] object-cover w-full rounded"
+                    className="h-[280px] object-cover w-full rounded"
                     src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2047.jpg"
                     alt="tacos y cocteles"
                   />

@@ -254,7 +254,7 @@ function Reserva() {
         <div className="w-full bg-[#020a06] py-12">
           <div className="overflow-hidden bg-black">
             <div className="inline-block whitespace-nowrap animate-marquee">
-              <h1 className="inline-block text-white text-[150px] font-bold px-4 py-2 w-full">
+              <h1 className="inline-block text-white text-[100px] font-bold px-4 py-2 w-full">
                 MUSICA Y SALSA EN VIVO EN CANTINA LA LLORONA
               </h1>
             </div>
@@ -317,7 +317,7 @@ function Reserva() {
           </div>
           <div className="overflow-hidden bg-black">
             <div className="inline-block whitespace-nowrap animate-marquee">
-              <h1 className="inline-block text-white text-[150px] font-bold px-4 py-2 w-full">
+              <h1 className="inline-block text-white text-[100px] font-bold px-4 py-2 w-full">
                 YO SOY COMO EL CHILE VERDE LLORONA, PICANTE PERO SABROSO
               </h1>
             </div>

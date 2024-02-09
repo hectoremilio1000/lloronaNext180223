@@ -9,129 +9,55 @@ function QuickInfo4() {
   return (
     <>
       {espa ? (
-        <div className="container-llorona px-2 py-2">
-          <div>
-            <h1 className="text-center text-3xl md:text-4xl uppercase font-black">
-              Los mejores mezcales los tenemos nosotros
+        <div className="overflow-hidden bg-black">
+          <div className="flex items-center gap-4 whitespace-nowrap">
+            <h1 className="inline-block animate-marquee text-white text-[70px] md:text-[100px] font-bold  w-full">
+              LOS MEJORES MEZCALES ESTAN AQUI
+            </h1>
+            <h1 className="animate-marquee inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+              LOS MEJORES MEZCALES ESTAN AQUI
             </h1>
           </div>
-          <div>
-            <h4 className={title.fontTitleSub}>Agaves silveltres</h4>
-            <h2 className={title.fontTitleline}>
-              Nuestros mezcales artesanales
-            </h2>
-            <div className="linea"></div>
-          </div>
+          <div className="bg-black py-[50px]">
+            <div className="mx-auto max-w-[1184px] grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 px-8">
+              <Link href="/reserva">
+                <div>
+                  <img
+                    className="w-full object-cover h-[400px]"
+                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/mezcalArtesanalllorona.jpg"
+                    alt="mezcales oaxaca"
+                  />
+                </div>
+              </Link>
 
-          <div className="row-qh py-3 px-3">
-            <p className="text-center sm:text-2xl text-xl text-black">
-              <b> ¡Vive la Autenticidad de Oaxaca en La Llorona!</b>
-              <br />
-              ¿Eres un apasionado del mezcal o simplemente alguien con un
-              paladar curioso y aventurero? La Llorona es tu destino ideal. No
-              solo somos un bar, somos una experiencia que transporta a los
-              rincones más auténticos y tradicionales de Oaxaca.
-              <br />
-              <br />
-              🌵 <b>Mezcales Auténticos</b>: Nuestra colección de mezcales
-              artesanales es inigualable. Destilados directamente de agaves
-              silvestres como Madre Cuishe, Arroqueño y Espadín, cada gota
-              cuenta la historia del maguey y del maestro mezcalero detrás de la
-              botella. Además, te invitamos a sumergirte en catas especializadas
-              donde aprenderás sobre la riqueza y diversidad de cada tipo de
-              agave y su sabor distintivo.
-              <br />
-              <br />
-              🌍 <b>Punto de Encuentro Internacional</b>: Nuestro espacio no
-              solo ofrece bebidas, es un crisol de culturas. Extranjeros de
-              todas partes del mundo eligen La Llorona para reunirse,
-              intercambiar historias y descubrir juntos los secretos del mezcal.
-              <br />
-              <br />
-              🧂 Sal de Gusano y Sal de Chicatana: Elevará tu experiencia del
-              mezcal a otro nivel. Estas sales, tradicionales de Oaxaca, aportan
-              un toque especial y terroso a tu bebida, ofreciendo una
-              combinación que no encontrarás en ningún otro lugar.
-              <br />
-              <br />
-              🥑 <b>Sabor y Tradición en tu Mesa</b>: Nuestro guacamole con
-              chapulín es una delicia que tienes que probar. Imagina la
-              cremosidad del aguacate combinada con el crujiente y sabor
-              característico del chapulín, un manjar auténtico y lleno de
-              tradición.
-              <br />
-              <br />
-              🥃 <b>Bacanora y Pulque</b>: Además de nuestro extenso menú de
-              mezcales, ofrecemos otras joyas mexicanas. El Bacanora, originario
-              de Sonora, y el Pulque, bebida milenaria fermentada del maguey,
-              esperan ser descubiertos por ti.
-              <br />
-              <br />
-              <b>La Llorona no es solo un lugar</b>, es una experiencia, un
-              viaje a través de sabores, aromas y tradiciones. ¡Te esperamos
-              para vivir juntos esta aventura única y auténtica! 🍷
-              #ExperienciaLlorona.
-            </p>
-          </div>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              flexWrap: "wrap",
-              gap: "20px",
-            }}
-          >
-            <Link href="/reserva">
-              <div>
-                <img
-                  className="imagen2AbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/mezcalArtesanalllorona.jpg"
-                  alt="mezcales oaxaca"
-                />
-              </div>
-            </Link>
-
-            <Link href="/reserva">
-              <div>
-                <img
-                  className="imagen2AbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/mezcales+artesanales+de+oaxaca+cdmx.jpg"
-                  alt="mezcales oaxaca"
-                />
-              </div>
-            </Link>
-            <Link href="/reserva">
-              <div>
-                <img
-                  className="imagen2AbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/mezcales+con+sabor+unico+traidos+directamente+de+oaxaca.jpg"
-                  alt="mezcales oaxaca"
-                />
-              </div>
-            </Link>
-            <Link href="/menullorona/Bebidas/Artesanal">
-              <div>
-                <img
-                  className="imagen2AbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/sotoles+bacanoras+mezcales+en+cdmx+unicos.jpg"
-                  alt="mezcales oaxaca"
-                />
-              </div>
-            </Link>
-          </div>
-
-          <div
-            style={{ display: "flex", justifyContent: "center" }}
-            className="py-3"
-          >
-            <Link href="/reserva">
-              <button
-                type="button"
-                className="buttonComponente focus:outline-none text-white bg-green-400 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
-              >
-                ¡Reserva ya!
-              </button>
-            </Link>
+              <Link href="/reserva">
+                <div>
+                  <img
+                    className="w-full object-cover h-[400px]"
+                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/mezcales+artesanales+de+oaxaca+cdmx.jpg"
+                    alt="mezcales oaxaca"
+                  />
+                </div>
+              </Link>
+              <Link href="/reserva">
+                <div>
+                  <img
+                    className="w-full object-cover h-[400px]"
+                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/mezcales+con+sabor+unico+traidos+directamente+de+oaxaca.jpg"
+                    alt="mezcales oaxaca"
+                  />
+                </div>
+              </Link>
+              <Link href="/menullorona/Bebidas/Artesanal">
+                <div>
+                  <img
+                    className="w-full object-cover h-[400px]"
+                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/sotoles+bacanoras+mezcales+en+cdmx+unicos.jpg"
+                    alt="mezcales oaxaca"
+                  />
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       ) : (
