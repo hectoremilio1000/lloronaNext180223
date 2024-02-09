@@ -135,72 +135,155 @@ export default function Home() {
           </div>
         </div>
       )}
-      <div className="overflow-hidden bg-black">
-        <div className="inline-block whitespace-nowrap animate-marquee">
-          <h1 className="inline-block text-white text-[70px] md:text-[100px] font-bold px-4 py-2 w-full">
-            Te queremos acá
-          </h1>
+      {espa ? (
+        <div className="overflow-hidden bg-black">
+          <div className="inline-block whitespace-nowrap animate-marquee">
+            <h1 className="inline-block text-white text-[70px] md:text-[100px] font-bold px-4 py-2 w-full">
+              Te queremos acá
+            </h1>
+          </div>
         </div>
-      </div>
+      ) : (
+        <div className="overflow-hidden bg-black">
+          <div className="inline-block whitespace-nowrap animate-marquee">
+            <h1 className="inline-block text-white text-[70px] md:text-[100px] font-bold px-4 py-2 w-full">
+              We want you here
+            </h1>
+          </div>
+        </div>
+      )}
 
       <QuickInfo />
       <Slider />
       <Calendario />
-      <div className="overflow-hidden bg-black">
-        <div className="flex items-center gap-4 whitespace-nowrap">
-          <h1 className="inline-block animate-marquee text-white text-[70px] md:text-[100px] font-bold  w-full">
-            MUSICA Y SALSA EN VIVO
-          </h1>
-          <h1 className="animate-marquee inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
-            MUSICA Y SALSA EN VIVO
-          </h1>
-        </div>
-      </div>
-      <div className="bg-black py-[50px]">
-        <div className="mx-auto max-w-[1184px] grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 px-8">
-          <div>
-            <YouTube videoId="8mRlH_RxiP8" opts={opts} onReady={videoOnReady} />
-            <p className="text-white">
-              Grandes noches de
-              <br /> grupos de salsa en vivo
-            </p>
+      {espa ? (
+        <>
+          <div className="overflow-hidden bg-black">
+            <div className="flex items-center gap-4 whitespace-nowrap">
+              <h1 className="inline-block animate-marquee text-white text-[70px] md:text-[100px] font-bold  w-full">
+                MUSICA Y SALSA EN VIVO
+              </h1>
+              <h1 className="animate-marquee inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                MUSICA Y SALSA EN VIVO
+              </h1>
+            </div>
           </div>
+          <div className="bg-black py-[50px]">
+            <div className="mx-auto max-w-[1184px] grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 px-8">
+              <div>
+                <YouTube
+                  videoId="8mRlH_RxiP8"
+                  opts={opts}
+                  onReady={videoOnReady}
+                />
+                <p className="text-white">
+                  Grandes noches de
+                  <br /> grupos de salsa en vivo
+                </p>
+              </div>
 
-          <div>
-            <img
-              className="rounded-lg w-full h-[350px] object-cover"
-              src={image6}
-              alt="Música en vivo"
-            />
-            <p className="text-white">
-              Mixología que cautiva <br />y enamora
-            </p>
+              <div>
+                <img
+                  className="rounded-lg w-full h-[350px] object-cover"
+                  src={image6}
+                  alt="Música en vivo"
+                />
+                <p className="text-white">
+                  Mixología que cautiva <br />y enamora
+                </p>
+              </div>
+
+              <div>
+                <YouTube
+                  videoId="kA1hP5nFRYM"
+                  opts={opts}
+                  onReady={videoOnReady}
+                />
+                <p className="text-white">
+                  Parceros aquí
+                  <br /> mucha bachata y salsa
+                </p>
+              </div>
+
+              <div>
+                <img
+                  className="rounded-lg w-full h-[350px] object-cover"
+                  src={image8}
+                  alt="Música en vivo"
+                />
+                <p className="text-white">
+                  Ven a disfrutar <br />
+                  de tardes cautivadoras
+                </p>
+              </div>
+            </div>
           </div>
-
-          <div>
-            <YouTube videoId="kA1hP5nFRYM" opts={opts} onReady={videoOnReady} />
-            <p className="text-white">
-              Parceros aquí
-              <br /> mucha bachata y salsa
-            </p>
+        </>
+      ) : (
+        <>
+          <div className="overflow-hidden bg-black">
+            <div className="flex items-center gap-4 whitespace-nowrap">
+              <h1 className="inline-block animate-marquee text-white text-[70px] md:text-[100px] font-bold  w-full">
+                Live Music and Salsa
+              </h1>
+              <h1 className="animate-marquee inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                Live Music and Salsa
+              </h1>
+            </div>
           </div>
+          <div className="bg-black py-[50px]">
+            <div className="mx-auto max-w-[1184px] grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 px-8">
+              <div>
+                <YouTube
+                  videoId="8mRlH_RxiP8"
+                  opts={opts}
+                  onReady={videoOnReady}
+                />
+                <p className="text-white">
+                  Great nights of
+                  <br /> live salsa bands
+                </p>
+              </div>
 
-          <div>
-            <img
-              className="rounded-lg w-full h-[350px] object-cover"
-              src={image8}
-              alt="Música en vivo"
-            />
-            <p className="text-white">
-              Ven a disfrutar <br />
-              de tardes cautivadoras
-            </p>
+              <div>
+                <img
+                  className="rounded-lg w-full h-[350px] object-cover"
+                  src={image6}
+                  alt="Música en vivo"
+                />
+                <p className="text-white">
+                  Mixology that captivates <br />
+                  and enchants
+                </p>
+              </div>
+
+              <div>
+                <YouTube
+                  videoId="kA1hP5nFRYM"
+                  opts={opts}
+                  onReady={videoOnReady}
+                />
+                <p className="text-white">
+                  Friends, here
+                  <br /> we have a lot of bachata and salsa
+                </p>
+              </div>
+
+              <div>
+                <img
+                  className="rounded-lg w-full h-[350px] object-cover"
+                  src={image8}
+                  alt="Música en vivo"
+                />
+                <p className="text-white">
+                  Come and enjoy <br />
+                  captivating afternoons
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-
-      {/* <QuickInfo2 />
-      <QuickInfo3 /> */}
+        </>
+      )}
       <QuickInfo4 />
       <Encontramos />
     </div>
