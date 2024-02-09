@@ -20,20 +20,16 @@ function QuickInfo() {
           <div className="w-full flex flex-col justify-center">
             {/* <h2 className="font-bold text-2xl">No solo somos</h2> */}
             <h1 className="text-2xl md:text-5xl font-bold">
-              No solo somos Un Restaurante, sino una experiencia
+              Bienvenidos a Cantina la Llorona
             </h1>
 
             {/* <div className="h-2 bg-white w-full rounded"></div> */}
 
             <p className="text-start sm:text-2xl text-xl text-black">
-              Esta combinación de tradición y modernidad no solo satisface el
-              paladar, sino que también ofrece un viaje sensorial inigualable,
-              haciendo de cada bocado y sorbo una sinfonía de sabor inolvidable.
-              Invitamos a todos a descubrir esta experiencia única donde la{" "}
-              <b>
-                gastronomía y la coctelería se entrelazan en perfecta armonía
-              </b>
-              .
+              Combinación de tradición y modernidad en un espacio acogedor.
+              Situados enfrente del Parque España en el corazón de la Roma
+              Condesa, ofrecemos un <b>viaje sensorial único </b>, haciendo de
+              cada bocado y cada sorbo una sinfonía de sabores inolvidable.
             </p>
           </div>
 
@@ -97,26 +93,20 @@ function QuickInfo() {
       ) : (
         <div className="container-llorona px-2">
           <div>
-            <h1 className={title.fontTitlemain}>Llorona Xperience</h1>
+            <h1 className={title.fontTitlemain}>Llorona Experience</h1>
           </div>
           <div className="row-qh">
-            <h4 className={title.fontTitleSub}>How to be a</h4>
-            <h2 className={title.fontTitleline}>Mexican?</h2>
+            <h4 className={title.fontTitleSub}>Welcome to</h4>
+            <h2 className={title.fontTitleline}>Cantina La Llorona</h2>
             <div className="linea"></div>
           </div>
 
           <div className="py-3 px-3 row-qh">
             <p className="text-center sm:text-2xl text-xl text-black">
-              In our innovative proposal, we don't just serve <b>tacos</b>, but
-              we elevate the culinary experience to a higher level. Each{" "}
-              <b>taco we offer is paired with a unique mixology</b>,
-              meticulously designed to complement and enhance the flavors of
-              each ingredient. This blend of tradition and modernity not only
-              satisfies the palate but also offers an unparalleled sensory
-              journey, making each bite and sip an unforgettable flavor
-              symphony. We invite everyone to discover this unique experience
-              where <b>gastronomy and mixology intertwine in perfect harmony</b>
-              .
+              A blend of tradition and modernity in a cozy space. The restaurant
+              overlooks Parque España in the heart of Roma Condesa, we offer a{" "}
+              <b>unique sensory journey</b>, making each bite and each sip an
+              unforgettable symphony of flavors.
             </p>
           </div>
 

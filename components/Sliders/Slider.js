@@ -54,14 +54,14 @@ const Slider = () => {
             <div className="w-full">
               <img
                 className="rounded-lg border-2 border-white w-full object-cover"
-                src="https://www.goiko.com/es/wp-content/uploads/2023/07/TO-SHARE.png"
+                src="https://imagenesrutalab.s3.amazonaws.com/llorona/IMG_8754.jpg"
                 alt=""
               />
               <h1 className="text-2xl md:text-5xl text-white mt-3">
-                Ensaladas
+                pizza llorona
               </h1>
               <p className="text-xs md:text-xl text-white">
-                Para compartir y no compartir
+                Nuestra pizza de masa madre
               </p>
             </div>
           </SwiperSlide>
@@ -69,14 +69,14 @@ const Slider = () => {
             <div className="w-full">
               <img
                 className="rounded-lg border-2 border-white w-full object-cover"
-                src="https://www.goiko.com/es/wp-content/uploads/2023/07/TO-SHARE.png"
+                src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologiaIncreible.jpg"
                 alt=""
               />
               <h1 className="text-2xl md:text-5xl text-white mt-3">
-                Ensaladas
+                Tacos con maíz criollo
               </h1>
               <p className="text-xs md:text-xl text-white">
-                Para compartir y no compartir
+                100% nixtamal, sin conservadores
               </p>
             </div>
           </SwiperSlide>
@@ -84,14 +84,14 @@ const Slider = () => {
             <div className="w-full">
               <img
                 className="rounded-lg border-2 border-white w-full object-cover"
-                src="https://www.goiko.com/es/wp-content/uploads/2023/07/TO-SHARE.png"
+                src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/postresDeliciosos.jpeg"
                 alt=""
               />
               <h1 className="text-2xl md:text-5xl text-white mt-3">
-                Ensaladas
+                Molten de chocolate
               </h1>
               <p className="text-xs md:text-xl text-white">
-                Para compartir y no compartir
+                con Helado de Plátano
               </p>
             </div>
           </SwiperSlide>
@@ -99,14 +99,14 @@ const Slider = () => {
             <div className="w-full">
               <img
                 className="rounded-lg border-2 border-white w-full object-cover"
-                src="https://www.goiko.com/es/wp-content/uploads/2023/07/TO-SHARE.png"
+                src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologiaMexicana.jpg"
                 alt=""
               />
               <h1 className="text-2xl md:text-5xl text-white mt-3">
-                Ensaladas
+                Mixología moderna
               </h1>
               <p className="text-xs md:text-xl text-white">
-                Para compartir y no compartir
+                con sabores mexicanos
               </p>
             </div>
           </SwiperSlide>
