@@ -83,9 +83,9 @@ function Reserva() {
         <div className="w-full bg-black h-[400px]"></div>
         <div className="w-full bg-[#020a06] -mt-[200px]">
           {espa ? (
-            <div className="w-full max-w-[1184px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-8">
+            <div className="w-full max-w-[1184px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-8 text-center">
               <div className="w-full">
-                <h1 className=" font-bold text-4xl text-white">
+                <h1 className="font-bold text-4xl text-white">
                   Los jueves piñata cumpleañera <br />
                   con una botella de mezcal
                 </h1>
@@ -137,7 +137,7 @@ function Reserva() {
                         src={image4}
                         alt="Música en vivo"
                       />
-                      <p className="text-white">
+                      <p className="text-white text-center">
                         Grandes artistas <br />
                         aman nuestro lugar
                       </p>
@@ -168,7 +168,7 @@ function Reserva() {
                 </div>
               </div>
               <div className="w-full">
-                <div className="bg-[#3eeb91] grid grid-cols-1 px-10 py-12 gap-4 sticky top-[100px]">
+                {/* <div className="bg-[#3eeb91] grid grid-cols-1 px-10 py-12 gap-4 sticky top-[100px]">
                   <h1 className="text-black text-3xl">Reserva Ahora</h1>
                   <div className="box w-full">
                     <label
@@ -229,7 +229,9 @@ function Reserva() {
                   <button className="bg-black text-white text-sm font-bold px-4 py-3">
                     Rerservar
                   </button>
-                </div>
+                </div> */}
+
+                <Calendario />
               </div>
             </div>
           ) : (
@@ -240,6 +242,8 @@ function Reserva() {
                   piñata with a bottle of mezcal
                 </b>
               </h3>
+
+              <Calendario />
 
               {/* <div className="subSubDiv1Banner">
             <Link href="/reserva">
