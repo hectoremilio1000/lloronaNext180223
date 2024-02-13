@@ -1,29 +1,24 @@
 import "../styles/main.css";
-import "../styles/global.css"
-import "../components/Navbar/navBar.css"
+import "../styles/global.css";
+import "../components/Navbar/navBar.css";
 import LayoutFinal from "../components/layout";
 
 import AppContextProvider from "../components/context/Context";
-import Head from 'next/head';
-import { useEffect } from 'react'
-import Script from 'next/script'
-import { useRouter } from 'next/router'
-import * as fbq from '../lib/fpixel';
-import { GTM_ID, pageview } from '../lib/gtm'
-import * as gtag from '../lib/gtag'
-import * as tikp from '../lib/tikp'
+import Head from "next/head";
 
-
-
-
-
-
+import TagManager from "react-gtm-module";
+import { useEffect } from "react";
+import Script from "next/script";
+import { useRouter } from "next/router";
+import * as fbq from "../lib/fpixel";
+import { GTM_ID, pageview } from "../lib/gtm";
+import * as gtag from "../lib/gtag";
+import * as tikp from "../lib/tikp";
 
 export default function MyApp({ Component, pageProps }) {
-
   // console.log(tikp.TIXTOK_PIXEL_ID);
 
-  const router = useRouter()
+  const router = useRouter();
 
   // useEffect(() => {
   //   // This pageview only triggers the first time (it's important for Pixel to have real information)
@@ -39,14 +34,10 @@ export default function MyApp({ Component, pageProps }) {
   //   }
   // }, [router.events])
 
-
-
-  
-
-  // useEffect(() => { 
+  // useEffect(() => {
   //   new Promise((resolve) => {
   //     !function (w, d, t) {
-        // w.TiktokAnalyticsObject = t; var ttq = w[t] = w[t] || []; ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie"], ttq.setAndDefer = function (t, e) { t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } }; for (var i = 0; i < ttq.methods.length; i++)ttq.setAndDefer(ttq, ttq.methods[i]); ttq.instance = function (t) { for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++)ttq.setAndDefer(e, ttq.methods[n]); return e }, ttq.load = function (e, n) { var i = "https://analytics.tiktok.com/i18n/pixel/events.js"; ttq._i = ttq._i || {}, ttq._i[e] = [], ttq._i[e]._u = i, ttq._t = ttq._t || {}, ttq._t[e] = +new Date, ttq._o = ttq._o || {}, ttq._o[e] = n || {}; var o = document.createElement("script"); o.type = "text/javascript", o.async = !0, o.src = i + "?sdkid=" + e + "&lib=" + t; var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(o, a) };
+  // w.TiktokAnalyticsObject = t; var ttq = w[t] = w[t] || []; ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie"], ttq.setAndDefer = function (t, e) { t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } }; for (var i = 0; i < ttq.methods.length; i++)ttq.setAndDefer(ttq, ttq.methods[i]); ttq.instance = function (t) { for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++)ttq.setAndDefer(e, ttq.methods[n]); return e }, ttq.load = function (e, n) { var i = "https://analytics.tiktok.com/i18n/pixel/events.js"; ttq._i = ttq._i || {}, ttq._i[e] = [], ttq._i[e]._u = i, ttq._t = ttq._t || {}, ttq._t[e] = +new Date, ttq._o = ttq._o || {}, ttq._o[e] = n || {}; var o = document.createElement("script"); o.type = "text/javascript", o.async = !0, o.src = i + "?sdkid=" + e + "&lib=" + t; var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(o, a) };
   //       resolve(ttq);
   //     }(window, document, 'ttq');
   //   }).then(ttq => {
@@ -55,52 +46,68 @@ export default function MyApp({ Component, pageProps }) {
   //   });
   // }, []);
 
+  // useEffect(() => {
+  //   const handleRouteChange = (url) => {
+  //     gtag.pageview(url)
+  //   }
+  //   router.events.on('routeChangeComplete', handleRouteChange)
+  //   return () => {
+  //     router.events.off('routeChangeComplete', handleRouteChange)
+  //   }
+  // }, [router.events]);
+
+  // useEffect(() => {
+  //   router.events.on('routeChangeComplete', pageview)
+  //   return () => {
+  //     router.events.off('routeChangeComplete', pageview)
+  //   }
+  // }, [router.events]);
 
   useEffect(() => {
+    console.log(process.env.NEXT_PUBLIC_GTM_ID);
+    // Configuración de Google Tag Manager
+    const tagManagerArgs = {
+      gtmId: process.env.NEXT_PUBLIC_GTM_ID, // Reemplaza con tu propio ID de GTM
+    };
+    TagManager.initialize(tagManagerArgs);
+
+    // Este código se ejecutará en cada cambio de ruta para enviar la información de la página a Google Tag Manager
     const handleRouteChange = (url) => {
-      gtag.pageview(url)
-    }
-    router.events.on('routeChangeComplete', handleRouteChange)
+      TagManager.dataLayer({
+        dataLayer: {
+          event: "page_view",
+          page_path: url,
+        },
+      });
+    };
+
+    router.events.on("routeChangeComplete", handleRouteChange);
+
     return () => {
-      router.events.off('routeChangeComplete', handleRouteChange)
-    }
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
   }, [router.events]);
 
-  useEffect(() => {
-    router.events.on('routeChangeComplete', pageview)
-    return () => {
-      router.events.off('routeChangeComplete', pageview)
-    }
-  }, [router.events]);
-
-  
-
-
- 
-  return (<> 
-    <Head>
-     
-
-      
-
-      
-      <Script
-        id="gtag-base"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
+  return (
+    <>
+      <Head>
+        <Script
+          id="gtag-base"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer', '${GTM_ID}');
           `,
-        }}
-      />
-      <Script
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
+          }}
+        />
+        <Script
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
         !function (w, d, t) {
           w.TiktokAnalyticsObject = t;
           var ttq = w[t] = w[t] || [];
@@ -127,12 +134,12 @@ export default function MyApp({ Component, pageProps }) {
           ttq.load(tikp.TIXTOK_PIXEL_ID);
           ttq.page();
         }(window, document, 'ttq');
-  }, []) `
-        }}
-      />
-      <Script
-        dangerouslySetInnerHTML={{
-          __html: `
+  }, []) `,
+          }}
+        />
+        <Script
+          dangerouslySetInnerHTML={{
+            __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
@@ -141,28 +148,20 @@ export default function MyApp({ Component, pageProps }) {
                 page_path: window.location.pathname,
               });
             `,
-        }}
+          }}
+        />
+      </Head>
+
+      <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
       />
 
-      
-
-     
-    </Head>
-   
-    <Script
-      strategy="afterInteractive"
-      src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
-    /> 
-
-    
- 
-    <AppContextProvider>
-      <LayoutFinal >
-      
-        <Component {...pageProps} />
-
-      </LayoutFinal> 
-    </AppContextProvider>
+      <AppContextProvider>
+        <LayoutFinal>
+          <Component {...pageProps} />
+        </LayoutFinal>
+      </AppContextProvider>
     </>
-  )
+  );
 }
