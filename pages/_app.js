@@ -20,6 +20,7 @@ export default function MyApp({ Component, pageProps }) {
   // console.log(tikp.TIXTOK_PIXEL_ID);
 
   const router = useRouter();
+  const pixelIdLlorona = process.env.NEXT_PUBLIC_TIKTOK_PIXEL_LLORONA;
 
   // useEffect(() => {
   //   // This pageview only triggers the first time (it's important for Pixel to have real information)
@@ -160,7 +161,7 @@ export default function MyApp({ Component, pageProps }) {
 
       <AppContextProvider>
         <LayoutFinal>
-          <TikTokPixel />
+          <TikTokPixel pixedId={pixelIdLlorona} />
           <Component {...pageProps} />
         </LayoutFinal>
       </AppContextProvider>

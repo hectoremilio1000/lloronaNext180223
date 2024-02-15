@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-const TikTokPixel = () => {
+const TikTokPixel = ({ pixedId }) => {
   useEffect(() => {
     !(function (w, d, t) {
       w.TiktokAnalyticsObject = t;
@@ -50,7 +50,7 @@ const TikTokPixel = () => {
           (e = document.getElementsByTagName("script")[0]),
             e.parentNode.insertBefore(n, e);
         });
-      ttq.load(process.env.NEXT_PUBLIC_TIKTOK_PIXEL_LLORONA);
+      ttq.load(pixedId);
       ttq.page();
     })(window, document, "ttq");
   }, []);
