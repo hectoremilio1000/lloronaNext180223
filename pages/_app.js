@@ -14,6 +14,7 @@ import * as fbq from "../lib/fpixel";
 import { GTM_ID, pageview } from "../lib/gtm";
 import * as gtag from "../lib/gtag";
 import * as tikp from "../lib/tikp";
+import TikTokPixel from "../components/PixelTiktok/TiktokPixel";
 
 export default function MyApp({ Component, pageProps }) {
   // console.log(tikp.TIXTOK_PIXEL_ID);
@@ -159,6 +160,7 @@ export default function MyApp({ Component, pageProps }) {
 
       <AppContextProvider>
         <LayoutFinal>
+          <TikTokPixel />
           <Component {...pageProps} />
         </LayoutFinal>
       </AppContextProvider>
