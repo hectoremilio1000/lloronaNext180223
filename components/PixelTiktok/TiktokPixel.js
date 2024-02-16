@@ -43,13 +43,14 @@ const TikTokPixel = ({ pixedId }) => {
             (ttq._t[e] = +new Date()),
             (ttq._o = ttq._o || {}),
             (ttq._o[e] = n || {});
-          (n = document.createElement("script")),
-            (n.type = "text/javascript"),
-            (n.async = !0),
-            (n.src = i + "?sdkid=" + e + "&lib=" + t);
-          (e = document.getElementsByTagName("script")[0]),
-            e.parentNode.insertBefore(n, e);
+          var o = document.createElement("script");
+          (o.type = "text/javascript"),
+            (o.async = !0),
+            (o.src = i + "?sdkid=" + e + "&lib=" + t);
+          var a = document.getElementsByTagName("script")[0];
+          a.parentNode.insertBefore(o, a);
         });
+
       ttq.load(pixedId);
       ttq.page();
     })(window, document, "ttq");
