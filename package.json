@@ -21,7 +21,8 @@
     "react-youtube": "^10.1.0",
     "sharp": "^0.31.3",
     "styled-components": "^5.3.6",
-    "swiper": "^11.0.6"
+    "swiper": "^11.0.6",
+    "tiktok-pixel": "^2.0.3"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",

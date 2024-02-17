@@ -18,6 +18,7 @@ import QuickInfo4 from "../components/QuickInfo4";
 import Slider from "../components/Sliders/Slider";
 
 import YouTube from "react-youtube";
+import Link from "next/link";
 // imagenes
 const image1 =
   "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg";
@@ -124,20 +125,283 @@ export default function Home() {
 
       {espa ? (
         <div className="d-flex subContenedor1Banner bannerHomeFinal banner">
-          <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada">
-            <img src={logo2} width={450} alt="llorona" className="mt-5" />
+          <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada trans-transform">
+            {/* <img src={logo2} width={450} alt="llorona" className="mt-5" /> */}
+            <video
+              className="h-[75vh] scale-100"
+              playsinline="true"
+              webkit-playsinline="true"
+              x-webkit-airplay="true"
+              preload="auto"
+              autoplay="autoplay"
+              loop="loop"
+              muted="muted"
+              poster=""
+            >
+              <source
+                src="https://www.goiko.com/es/wp-content/uploads/2023/07/KB-360x2-1.mov"
+                type='video/mp4; codecs="hvc1"'
+              />
+              <source
+                src="https://www.goiko.com/es/wp-content/uploads/2023/07/kb-360x2-1.webm"
+                type="video/webm"
+              />
+            </video>
+            <Link
+              href={"/reserva"}
+              className="inline-block max-w-max mx-auto px-4 py-3 rounded-md text-green-900 font-bold bg-[#3eeb91] text-xl m:text-2xl"
+            >
+              Reserva Ahora
+            </Link>
+          </div>
+          <div className="absolute overflow-hidden z-[1000] top-[50%] translate-y-[-50%] left-0 w-full flex flex-col justify-center">
+            <div className="flex items-center whitespace-nowrap rail-left">
+              <div className="whitespace-nowrap inline-block  animate-marquee">
+                <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  RESERVA
+                </h1>
+                <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
+                  AHORA
+                </h1>
+              </div>
+              <div className="whitespace-nowrap  inline-block animate-marquee">
+                <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  RESERVA
+                </h1>
+                <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none">
+                  AHORA
+                </h1>
+              </div>
+              <div className="whitespace-nowrap inline-block  animate-marquee">
+                <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  RESERVA
+                </h1>
+                <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
+                  AHORA
+                </h1>
+              </div>
+              <div className="whitespace-nowrap  inline-block animate-marquee">
+                <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  RESERVA
+                </h1>
+                <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none">
+                  AHORA
+                </h1>
+              </div>
+            </div>
+            <div className="flex items-center whitespace-nowrap rail-right">
+              <div className="whitespace-nowrap inline-block  animate-marquee delay-300">
+                <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  RESERVA
+                </h1>
+                <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
+                  AHORA
+                </h1>
+              </div>
+              <div className="whitespace-nowrap  inline-block animate-marquee delay-300">
+                <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  RESERVA
+                </h1>
+                <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none">
+                  AHORA
+                </h1>
+              </div>
+              <div className="whitespace-nowrap inline-block  animate-marquee delay-300">
+                <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  RESERVA
+                </h1>
+                <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
+                  AHORA
+                </h1>
+              </div>
+              <div className="whitespace-nowrap  inline-block animate-marquee delay-300">
+                <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  RESERVA
+                </h1>
+                <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none">
+                  AHORA
+                </h1>
+              </div>
+            </div>
+            <div className="flex items-center whitespace-nowrap rail-left">
+              <div className="whitespace-nowrap inline-block  animate-marquee delay-300">
+                <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  RESERVA
+                </h1>
+                <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
+                  AHORA
+                </h1>
+              </div>
+              <div className="whitespace-nowrap  inline-block animate-marquee delay-300">
+                <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  RESERVA
+                </h1>
+                <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none">
+                  AHORA
+                </h1>
+              </div>
+              <div className="whitespace-nowrap inline-block  animate-marquee delay-300">
+                <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  RESERVA
+                </h1>
+                <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
+                  AHORA
+                </h1>
+              </div>
+              <div className="whitespace-nowrap  inline-block animate-marquee delay-300">
+                <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  RESERVA
+                </h1>
+                <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none">
+                  AHORA
+                </h1>
+              </div>
+            </div>
           </div>
         </div>
       ) : (
-        <div className="d-flex subContenedor1Banner bannerHomeIngles banner">
-          <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada">
-            <img src={logo2} width={450} alt="llorona" className="mt-5" />
+        <div className="d-flex subContenedor1Banner bannerHomeFinal banner">
+          <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada trans-transform">
+            {/* <img src={logo2} width={450} alt="llorona" className="mt-5" /> */}
+            <video
+              className="h-[75vh] scale-100"
+              playsinline="true"
+              webkit-playsinline="true"
+              x-webkit-airplay="true"
+              preload="auto"
+              autoplay="autoplay"
+              loop="loop"
+              muted="muted"
+              poster=""
+            >
+              <source
+                src="https://www.goiko.com/es/wp-content/uploads/2023/07/KB-360x2-1.mov"
+                type='video/mp4; codecs="hvc1"'
+              />
+              <source
+                src="https://www.goiko.com/es/wp-content/uploads/2023/07/kb-360x2-1.webm"
+                type="video/webm"
+              />
+            </video>
+            <Link
+              href={"/reserva"}
+              className="inline-block max-w-max mx-auto px-4 py-3 rounded-md text-green-900 font-bold bg-[#3eeb91] text-xl m:text-2xl"
+            >
+              Book Now
+            </Link>
+          </div>
+          <div className="absolute overflow-hidden z-[1000] top-[50%] translate-y-[-50%] left-0 w-full flex flex-col justify-center">
+            <div className="flex items-center whitespace-nowrap rail-left">
+              <div className="whitespace-nowrap inline-block  animate-marquee">
+                <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  BOOK
+                </h1>
+                <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
+                  NOW
+                </h1>
+              </div>
+              <div className="whitespace-nowrap inline-block  animate-marquee">
+                <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  BOOK
+                </h1>
+                <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
+                  NOW
+                </h1>
+              </div>
+              <div className="whitespace-nowrap inline-block  animate-marquee">
+                <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  BOOK
+                </h1>
+                <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
+                  NOW
+                </h1>
+              </div>
+              <div className="whitespace-nowrap inline-block  animate-marquee">
+                <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  BOOK
+                </h1>
+                <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
+                  NOW
+                </h1>
+              </div>
+            </div>
+            <div className="flex items-center whitespace-nowrap rail-right">
+              <div className="whitespace-nowrap inline-block  animate-marquee">
+                <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  BOOK
+                </h1>
+                <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
+                  NOW
+                </h1>
+              </div>
+              <div className="whitespace-nowrap inline-block  animate-marquee">
+                <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  BOOK
+                </h1>
+                <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
+                  NOW
+                </h1>
+              </div>
+              <div className="whitespace-nowrap inline-block  animate-marquee">
+                <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  BOOK
+                </h1>
+                <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
+                  NOW
+                </h1>
+              </div>
+              <div className="whitespace-nowrap inline-block  animate-marquee">
+                <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  BOOK
+                </h1>
+                <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
+                  NOW
+                </h1>
+              </div>
+            </div>
+            <div className="flex items-center whitespace-nowrap rail-left">
+              <div className="whitespace-nowrap inline-block  animate-marquee">
+                <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  BOOK
+                </h1>
+                <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
+                  NOW
+                </h1>
+              </div>
+              <div className="whitespace-nowrap inline-block  animate-marquee">
+                <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  BOOK
+                </h1>
+                <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
+                  NOW
+                </h1>
+              </div>
+              <div className="whitespace-nowrap inline-block  animate-marquee">
+                <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  BOOK
+                </h1>
+                <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
+                  NOW
+                </h1>
+              </div>
+              <div className="whitespace-nowrap inline-block  animate-marquee">
+                <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  BOOK
+                </h1>
+                <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
+                  NOW
+                </h1>
+              </div>
+            </div>
           </div>
         </div>
       )}
       {espa ? (
         <div className="overflow-hidden bg-black">
-          <div className="inline-block whitespace-nowrap animate-marquee">
+          <div className="inline-block whitespace-nowrap animate-marqueeleft">
+            <h1 className="inline-block text-white text-[70px] md:text-[100px] font-bold px-4 py-2 w-full">
+              Te queremos acá
+            </h1>
             <h1 className="inline-block text-white text-[70px] md:text-[100px] font-bold px-4 py-2 w-full">
               Te queremos acá
             </h1>
@@ -145,7 +409,10 @@ export default function Home() {
         </div>
       ) : (
         <div className="overflow-hidden bg-black">
-          <div className="inline-block whitespace-nowrap animate-marquee">
+          <div className="inline-block whitespace-nowrap animate-marqueeleft">
+            <h1 className="inline-block text-white text-[70px] md:text-[100px] font-bold px-4 py-2 w-full">
+              We want you here
+            </h1>
             <h1 className="inline-block text-white text-[70px] md:text-[100px] font-bold px-4 py-2 w-full">
               We want you here
             </h1>
@@ -160,15 +427,15 @@ export default function Home() {
         <>
           <div className="overflow-hidden bg-black">
             <div className="flex items-center gap-4 whitespace-nowrap">
-              <h1 className="inline-block animate-marquee text-white text-[70px] md:text-[100px] font-bold  w-full">
+              <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
                 MUSICA Y SALSA EN VIVO
               </h1>
-              <h1 className="animate-marquee inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+              <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
                 MUSICA Y SALSA EN VIVO
               </h1>
             </div>
           </div>
-          <div className="bg-black py-[50px]">
+          <div clas leading-nonesName="bg-black py-[50px]">
             <div className="mx-auto max-w-[1184px] grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 px-8">
               <div>
                 <YouTube
@@ -224,14 +491,14 @@ export default function Home() {
           <div className="overflow-hidden bg-black">
             <div className="flex items-center gap-4 whitespace-nowrap">
               <h1 className="inline-block animate-marquee text-white text-[70px] md:text-[100px] font-bold  w-full">
-                Live Music and Salsa
+                Live Music and Salsa leading-none{" "}
               </h1>
               <h1 className="animate-marquee inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
-                Live Music and Salsa
+                Live Music and Salsa leading-none leading-none{" "}
               </h1>
             </div>
           </div>
-          <div className="bg-black py-[50px]">
+          <div clas leading-nonesName="bg-black py-[50px]">
             <div className="mx-auto max-w-[1184px] grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 px-8">
               <div>
                 <YouTube

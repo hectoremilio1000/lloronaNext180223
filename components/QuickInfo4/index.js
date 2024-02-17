@@ -11,10 +11,10 @@ function QuickInfo4() {
       {espa ? (
         <div className="overflow-hidden bg-black">
           <div className="flex items-center gap-4 whitespace-nowrap">
-            <h1 className="inline-block animate-marquee text-white text-[70px] md:text-[100px] font-bold  w-full">
+            <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold">
               LOS MEJORES MEZCALES ESTAN AQUI
             </h1>
-            <h1 className="animate-marquee inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+            <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
               LOS MEJORES MEZCALES ESTAN AQUI
             </h1>
           </div>
@@ -63,10 +63,10 @@ function QuickInfo4() {
       ) : (
         <div className="overflow-hidden bg-black">
           <div className="flex items-center gap-4 whitespace-nowrap">
-            <h1 className="inline-block animate-marquee text-white text-[70px] md:text-[100px] font-bold  w-full">
+            <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold">
               The best mezcals are here
             </h1>
-            <h1 className="animate-marquee inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+            <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold">
               The best mezcals are here
             </h1>
           </div>

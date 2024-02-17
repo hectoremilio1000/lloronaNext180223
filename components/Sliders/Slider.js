@@ -18,10 +18,10 @@ const Slider = () => {
         <div className="w-full bg-black py-12">
           <div className="overflow-hidden bg-black">
             <div className="flex items-center gap-4 whitespace-nowrap ">
-              <h1 className="animate-marquee inline-block text-white text-[70px] md:text-[100px] font-bold">
+              <h1 className="animate-marqueeleft inline-block text-white text-[70px] md:text-[100px] font-bold">
                 Nuestra CARTA
               </h1>
-              <h1 className="animate-marquee inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold ">
+              <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold ">
                 NUESTRA CARTA
               </h1>
             </div>
