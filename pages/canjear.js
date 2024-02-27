@@ -7,7 +7,7 @@ const Canjear = () => {
   const searchCodigo = async () => {
     try {
       const response = await fetch(
-        `https://apilloronaregalos.vercel.app/api/datos?codigo=${codigo}`
+        `https://apilloronaregalos.vercel.app/api/datos/${codigo}`
       );
       if (response.ok) {
         const data = await response.json();
