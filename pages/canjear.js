@@ -6,7 +6,9 @@ const Canjear = () => {
   const [registroEncontrado, setRegistroEncontrado] = useState("");
   const searchCodigo = async () => {
     try {
-      const response = await fetch(`/api/datos?codigo=${codigo}`);
+      const response = await fetch(
+        `https://apilloronaregalos.vercel.app/api/datos?codigo=${codigo}`
+      );
       if (response.ok) {
         const data = await response.json();
         if (data.registro) {

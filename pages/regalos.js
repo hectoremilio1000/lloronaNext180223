@@ -16,13 +16,16 @@ const Regalos = () => {
     const codigoUnico = generarCodigoUnico();
     const nuevoRegistro = { nombre, email, codigoUnico, status: "no canjeado" };
     try {
-      const response = await fetch("/api/datos", {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(nuevoRegistro),
-      });
+      const response = await fetch(
+        "https://apilloronaregalos.vercel.app/api/datos",
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(nuevoRegistro),
+        }
+      );
 
       if (response.ok) {
         const queryParams = new URLSearchParams({
