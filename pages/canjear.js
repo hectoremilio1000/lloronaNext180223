@@ -9,16 +9,17 @@ const Canjear = () => {
       const response = await fetch(
         `https://apilloronaregalos.vercel.app/api/datos/${codigo}`
       );
-      if (response.ok) {
+      if (!response.error) {
         const data = await response.json();
-        if (data.registro) {
+        console.log(data);
+        if (!data.msg) {
           setRegistroEncontrado(data.registro);
         } else {
           setRegistroEncontrado("no-register");
-          console.log("No se encontró ningún registro con ese código");
+          console.log(data.msg);
         }
       } else {
-        console.error("Error al buscar el registro:", response.statusText);
+        console.error(response.error);
       }
     } catch (error) {
       console.error("Error al buscar el registro:", error);
