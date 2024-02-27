@@ -13,7 +13,7 @@ const Canjear = () => {
         const data = await response.json();
         console.log(data);
         if (!data.msg) {
-          setRegistroEncontrado(data.registro);
+          setRegistroEncontrado(data);
         } else {
           setRegistroEncontrado("no-register");
           console.log(data.msg);
