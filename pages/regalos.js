@@ -16,18 +16,17 @@ const Regalos = () => {
     const codigoUnico = generarCodigoUnico();
     const nuevoRegistro = { nombre, email, codigoUnico, status: "no canjeado" };
     try {
-      const response = await fetch(
-        "https://apilloronaregalos.vercel.app/api/datos",
-        {
-          method: "PUT",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(nuevoRegistro),
-        }
-      );
+      const response = await fetch("http://localhost:8080/api/datos", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(nuevoRegistro),
+      });
+      const data = await response.json();
+      console.log(data);
 
-      if (response.ok) {
+      if (!data.error) {
         const queryParams = new URLSearchParams({
           nombre,
           email,
@@ -36,10 +35,10 @@ const Regalos = () => {
 
         router.push(`/bookpoint?${queryParams.toString()}`);
       } else {
-        console.error("Error al guardar los datos:", response.statusText);
+        console.log(data.error);
       }
     } catch (error) {
-      console.error("Error al guardar los datos:", error);
+      console.log(error);
     }
   };
   return (
