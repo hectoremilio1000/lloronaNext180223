@@ -2,21 +2,78 @@ import React, { useState } from "react";
 
 const Canjear = () => {
   const [codigo, setCodigo] = useState("");
-
+  const [respuestaCanje, setRespuestaCanje] = useState("");
   const [registroEncontrado, setRegistroEncontrado] = useState("");
   const searchCodigo = async () => {
     try {
+      var formdata = new FormData();
+      formdata.append("funcion", "buscar_premio");
+      formdata.append("codigo_unico", codigo);
+
+      var requestOptions = {
+        method: "POST",
+        body: formdata,
+        redirect: "follow",
+      };
       const response = await fetch(
-        `https://apilloronaregalos.vercel.app/api/datos/${codigo}`
+        `https://api.lalloronacantina.com/controlador/UsuarioController.php`,
+        requestOptions
       );
       if (!response.error) {
         const data = await response.json();
         console.log(data);
-        if (!data.msg) {
-          setRegistroEncontrado(data);
-        } else {
+
+        if (data.mensaje === "no-data") {
           setRegistroEncontrado("no-register");
-          console.log(data.msg);
+        } else {
+          if (data.error) {
+            console.log(data.error);
+            setRegistroEncontrado("no-register");
+          } else {
+            setRegistroEncontrado(data);
+          }
+        }
+      } else {
+        console.error(response.error);
+      }
+    } catch (error) {
+      console.error("Error al buscar el registro:", error);
+    }
+  };
+  const canjearCodigo = async () => {
+    const id = registroEncontrado[0]?.id;
+    console.log(id);
+    try {
+      var formdata = new FormData();
+      formdata.append("funcion", "canjear_premio");
+      formdata.append("id", id);
+
+      var requestOptions = {
+        method: "POST",
+        body: formdata,
+        redirect: "follow",
+      };
+      const response = await fetch(
+        `https://api.lalloronacantina.com/controlador/UsuarioController.php`,
+        requestOptions
+      );
+      if (!response.error) {
+        const data = await response.text();
+        console.log(data);
+
+        if (data === "canjeado") {
+          setRespuestaCanje("Se canjeo tu codigo");
+          setTimeout(() => {
+            setRespuestaCanje("");
+          }, 1000);
+          searchCodigo();
+        } else {
+          setRespuestaCanje(
+            "Ocurrio algo inesperado, no se pudo canjear tu codigo"
+          );
+          setTimeout(() => {
+            setRespuestaCanje("");
+          }, 1000);
         }
       } else {
         console.error(response.error);
@@ -39,10 +96,20 @@ const Canjear = () => {
         {registroEncontrado !== "no-register" && registroEncontrado !== "" ? (
           <div className="mt-8">
             <h2 className="text-xl font-bold">Registro Encontrado:</h2>
-            <p>Nombre: {registroEncontrado?.nombre}</p>
-            <p>Email: {registroEncontrado?.email}</p>
-            <p>Código Único: {registroEncontrado?.codigoUnico}</p>
-            <p>Status: {registroEncontrado?.status}</p>
+            <p>Nombre: {registroEncontrado[0]?.nombre}</p>
+            <p>Email: {registroEncontrado[0]?.email}</p>
+            <p>Código Único: {registroEncontrado[0]?.codigo_unico}</p>
+            <p>Status: {registroEncontrado[0]?.status}</p>
+            {registroEncontrado[0]?.status === "NO CANJEADO" ? (
+              <button
+                onClick={canjearCodigo}
+                className="px-4 py-3 bg-green-700 text-white"
+              >
+                Canjear
+              </button>
+            ) : null}
+
+            <p>{respuestaCanje}</p>
           </div>
         ) : (
           <p>No se encontro el codigo</p>
