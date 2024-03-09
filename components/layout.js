@@ -1,34 +1,31 @@
 import NavBar from "./Navbar";
-import FooterFinal from './FooterFinal';
+import FooterFinal from "./FooterFinal";
 
-import { useRouter } from 'next/router';
-import NavBarEn from '../components/NavBarEn/NavBarEn';
-import NavBarEs from '../components/NavBarEs/NavBarEs';
+import { useRouter } from "next/router";
+import NavBarEn from "../components/NavBarEn/NavBarEn";
+import NavBarEs from "../components/NavBarEs/NavBarEs";
 
 export default function Layout({ children }) {
+  // const router = useRouter();
+  // const { locale } = router;
 
-    // const router = useRouter();
-    // const { locale } = router;
+  // let NavBarComponent;
 
-    // let NavBarComponent;
+  // switch (locale) {
+  //     case 'en':
+  //         NavBarComponent = NavBarEn;
+  //         break;
+  //     case 'es':
+  //         NavBarComponent = NavBarEs;
+  //         break;
+  //     default:
+  //         NavBarComponent = NavBarEs;
+  // }
 
-    // switch (locale) {
-    //     case 'en':
-    //         NavBarComponent = NavBarEn;
-    //         break;
-    //     case 'es':
-    //         NavBarComponent = NavBarEs;
-    //         break;
-    //     default:
-    //         NavBarComponent = NavBarEs;
-    // }
-
-    return (
-        <>
-            <NavBarEs/>
-           
-            <main>{children}</main>
-            <FooterFinal />
-        </>
-    )
+  return (
+    <>
+      <main>{children}</main>
+      <FooterFinal />
+    </>
+  );
 }

@@ -4,6 +4,7 @@ import ButtonComponent from "../components/ButtonComponent/index";
 import { useAppContext } from "../components/context/Context";
 import Alimentos from "./menullorona/Alimentos";
 import Food from "./menullorona/menufood";
+import NavBar from "../components/NavBarEs/NavBarEs";
 
 function MenuLlorona() {
   const [english, setEnglish] = useState(false);
@@ -23,6 +24,7 @@ function MenuLlorona() {
 
   return (
     <div>
+      <NavBar />
       <div
         className="d-flex subContenedor1Banner banner"
         style={{

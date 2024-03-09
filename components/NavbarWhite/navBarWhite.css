@@ -1,5 +1,5 @@
-.header-container {
-  background-color: transparent !important;
+.header-container-white {
+  background-color: white !important;
   position: fixed;
   top: 0;
   left: 0;
@@ -8,38 +8,38 @@
   z-index: 3000;
 }
 
-.header-container.sticky {
-  background-color: black !important;
+.header-container-white.sticky {
+  background-color: white !important;
 }
 
-.header-container .row-qh {
+.header-container-white .row-qh {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.linkswraper {
+.linkswraper-white {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.linkswraper li {
+.linkswraper-white li {
   height: max-content;
   list-style: none;
   text-align: center;
 }
 
-.linkswraper li::marker {
+.linkswraper-white li::marker {
   display: none;
   content: "";
 }
 
-.nav-link {
+.nav-link-white {
   display: block;
   text-decoration: none;
   padding: 0.5rem 1rem 0.5rem 1rem;
-  color: #fff;
+  color: #1e1e1e;
   font-weight: 700;
   font-size: 16px;
   text-transform: capitalize;
@@ -47,45 +47,45 @@
   transition: all 0.5s;
 }
 
-.header-icons {
+.header-icons-white {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.header-icons .icon {
-  color: #fff;
+.header-icons-white .icon {
+  color: #1e1e1e;
 }
 
 @media only screen and (min-width: 768px) {
-  .toggle-icon {
+  .toggle-icon-white {
     display: none;
   }
 }
 
 @media (max-width: 650px) {
   /* css de nabvar */
-  .header-container {
+  .header-container-white {
     padding: 10px 20px !important;
   }
 
-  .header-logo {
+  .header-logo-white {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #fff !important;
+    color: #1e1e1e !important;
     width: 100%;
   }
 
-  .header-derecha {
+  .header-derecha-white {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    color: #fff !important;
+    color: #1e1e1e !important;
     width: 100%;
   }
 
-  .linkswraper {
+  .linkswraper-white {
     position: fixed;
     top: 120px;
     left: 0;
@@ -99,19 +99,19 @@
     overflow: hidden;
   }
 
-  .linkswraper.active {
+  .linkswraper-white.active {
     visibility: visible;
     display: flex !important;
     width: 100%;
     padding: 0 5px;
   }
 
-  .linkswraper .nav-link {
-    color: #000;
+  .linkswraper-white .nav-link-white {
+    color: #1e1e1e;
     padding: 20px 0px !important;
   }
 
-  .header-icons {
+  .header-icons-white {
     display: none !important;
   }
 }

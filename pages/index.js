@@ -16,9 +16,9 @@ import Reserva from "./reserva";
 import Calendario from "../components/Calendario";
 import QuickInfo4 from "../components/QuickInfo4";
 import Slider from "../components/Sliders/Slider";
-
 import YouTube from "react-youtube";
 import Link from "next/link";
+import NavBar from "../components/NavBarEs/NavBarEs";
 // imagenes
 const image1 =
   "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg";
@@ -122,7 +122,7 @@ export default function Home() {
           <link rel="manifest" href="../manifest.json" />
         </Head>
       )}
-
+      <NavBar />
       {espa ? (
         <div className="d-flex subContenedor1Banner bannerHomeFinal banner">
           <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada trans-transform">

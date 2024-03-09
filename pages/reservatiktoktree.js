@@ -12,9 +12,10 @@ import { FB_PIXEL_ID } from "../lib/fpixel";
 
 import { InlineWidget } from "react-calendly";
 import ModalAll from "../components/ModalAll";
-import NavBar from "../components/NavBarEs/NavBarEs";
+import CalendarioTiktokTree from "../components/CalendarioTiktokTree";
+import NavBarWhiteEs from "../components/NavbarWhite/Navbarwhitees";
 
-function Reserva() {
+function ReservaTiktokTree() {
   // useEffect(() => {
   //   fbq.event('reserva')
   // }, []);
@@ -81,13 +82,13 @@ function Reserva() {
             />
           </Head>
         )}
-        <NavBar />
-        <div className="w-full bg-black h-[400px]"></div>
-        <div className="w-full bg-[#020a06] -mt-[200px]">
+        <NavBarWhiteEs />
+        <div className="w-full bg-white h-[400px]"></div>
+        <div className="w-full bg-white -mt-[200px]">
           {espa ? (
             <div className="w-full max-w-[1184px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-8 text-center">
               <div className="w-full">
-                <h1 className="font-bold text-4xl text-white">
+                <h1 className="font-bold text-4xl text-gray-900">
                   Los jueves piñata cumpleañera <br />
                   con una botella de mezcal
                 </h1>
@@ -99,7 +100,7 @@ function Reserva() {
                         src={image1}
                         alt="Música en vivo"
                       />
-                      <p className="text-white">
+                      <p className="text-gray-900">
                         Mixología mexicana <br /> contemporánea
                       </p>
                     </Link>
@@ -112,7 +113,7 @@ function Reserva() {
                         src={image2}
                         alt="Música en vivo"
                       />
-                      <p className="text-white">
+                      <p className="text-gray-900">
                         Piñata cumpleañera
                         <br /> con mezcal
                       </p>
@@ -126,7 +127,7 @@ function Reserva() {
                         src={image3}
                         alt="Música en vivo"
                       />
-                      <p className="text-white">
+                      <p className="text-gray-900">
                         Disfruta, baile <br />y festeja
                       </p>
                     </div>
@@ -139,14 +140,14 @@ function Reserva() {
                         src={image4}
                         alt="Música en vivo"
                       />
-                      <p className="text-white text-center">
+                      <p className="text-gray-900 text-center">
                         Grandes artistas <br />
                         aman nuestro lugar
                       </p>
                     </div>
                   </Link>
                 </div>
-                <p className="text-start text-white sm:text-xs md:text-md">
+                <p className="text-start text-gray-900 sm:text-xs md:text-md">
                   La <b>piñata cumpleañera</b> no tiene costo, y aplica todos
                   los jueves si cumples años en el mes ❤️ y solo tienen que
                   hacer reservación en cualquiera de nuestras redes sociales.
@@ -158,7 +159,7 @@ function Reserva() {
                   Oaxaca, México.
                 </p>
                 {/* <button
-                  className="bg-[#3eeb91] px-4 py-3 text-white text-xs font-bold"
+                  className="bg-[#3eeb91] px-4 py-3 text-gray-900 text-xs font-bold"
                   onClick={() => setOpen(true)}
                 >
                   Reservar Ahora
@@ -183,7 +184,7 @@ function Reserva() {
                     <input
                       type="text"
                       placeholder="Ingresa aqui tus nombres completos"
-                      className="border-2 w-full bg-black border-black text-white rounded px-4 py-2"
+                      className="border-2 w-full bg-black border-black text-gray-900 rounded px-4 py-2"
                     />
                   </div>
                   <div className="box w-full">
@@ -197,7 +198,7 @@ function Reserva() {
                     <input
                       type="text"
                       placeholder="Ingresa aqui tus nombres completos"
-                      className="border-2 w-full bg-black border-black text-white rounded px-4 py-2"
+                      className="border-2 w-full bg-black border-black text-gray-900 rounded px-4 py-2"
                     />
                   </div>
                   <div className="box w-full">
@@ -211,7 +212,7 @@ function Reserva() {
                     <input
                       type="text"
                       placeholder="Ingresa aqui tus nombres completos"
-                      className="border-2 w-full bg-black border-black text-white rounded px-4 py-2"
+                      className="border-2 w-full bg-black border-black text-gray-900 rounded px-4 py-2"
                     />
                   </div>
                   <div className="box w-full">
@@ -225,31 +226,31 @@ function Reserva() {
                     <input
                       type="text"
                       placeholder="Ingresa aqui tus nombres completos"
-                      className="border-2 w-full bg-black border-black text-white rounded px-4 py-2"
+                      className="border-2 w-full bg-black border-black text-gray-900 rounded px-4 py-2"
                     />
                   </div>
-                  <button className="bg-black text-white text-sm font-bold px-4 py-3">
+                  <button className="bg-black text-gray-900 text-sm font-bold px-4 py-3">
                     Rerservar
                   </button>
                 </div> */}
 
-                <Calendario />
+                <CalendarioTiktokTree />
               </div>
             </div>
           ) : (
             <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada">
-              <h3 className=" font-weight-bold proximamente2 text-white">
+              <h3 className=" font-weight-bold proximamente2 text-gray-900">
                 <b>
                   On Thursdays, a birthday <br />
                   piñata with a bottle of mezcal
                 </b>
               </h3>
 
-              <Calendario />
+              <CalendarioTiktokTree />
 
               {/* <div className="subSubDiv1Banner">
             <Link href="/reserva">
-              <button type="button" className="buttonComponente focus:outline-none text-white bg-green-400 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+              <button type="button" className="buttonComponente focus:outline-none text-gray-900 bg-green-400 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
                 ¡Reserva ya!
               </button>
             </Link>
@@ -257,103 +258,9 @@ function Reserva() {
             </div>
           )}
         </div>
-        <div className="w-full bg-[#020a06] py-12">
-          <div className="overflow-hidden bg-black">
-            <div className="inline-block whitespace-nowrap animate-marqueeleft">
-              <h1 className="inline-block text-white text-[100px] font-bold px-4 py-2">
-                MUSICA Y SALSA EN VIVO EN CANTINA LA LLORONA
-              </h1>
-            </div>
-          </div>
-          <div className="mx-auto max-w-[1184px] grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 px-8">
-            <div>
-              <Link href="/reserva">
-                <YouTube
-                  videoId="8mRlH_RxiP8"
-                  opts={opts}
-                  onReady={videoOnReady}
-                />
-                <p className="text-white">
-                  Grandes noches de
-                  <br /> grupos de salsa en vivo
-                </p>
-              </Link>
-            </div>
-
-            <Link href="/reserva">
-              <div>
-                <img
-                  className="rounded-lg w-full h-[350px] object-cover"
-                  src={image6}
-                  alt="Música en vivo"
-                />
-                <p className="text-white">
-                  Mixología que cautiva <br />y enamora
-                </p>
-              </div>
-            </Link>
-
-            <Link href="/reserva">
-              <div>
-                <YouTube
-                  videoId="kA1hP5nFRYM"
-                  opts={opts}
-                  onReady={videoOnReady}
-                />
-                <p className="text-white">
-                  Parceros aquí
-                  <br /> mucha bachata y salsa
-                </p>
-              </div>
-            </Link>
-
-            <Link href="/reserva">
-              <div>
-                <img
-                  className="rounded-lg w-full h-[350px] object-cover"
-                  src={image8}
-                  alt="Música en vivo"
-                />
-                <p className="text-white">
-                  Ven a disfrutar <br />
-                  de tardes cautivadoras
-                </p>
-              </div>
-            </Link>
-          </div>
-          <div className="overflow-hidden bg-black">
-            <div className="inline-block whitespace-nowrap animate-marqueeleft">
-              <h1 className="inline-block text-white text-[100px] font-bold px-4 py-2">
-                YO SOY COMO EL CHILE VERDE LLORONA, PICANTE PERO SABROSO
-              </h1>
-            </div>
-          </div>
-        </div>
       </>
     </>
   );
 }
-const itemData = [
-  {
-    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/nina2pinata.JPG",
-    title: "Piñata cumpleañera",
-    rows: 2,
-    cols: 2,
-    featured: true,
-  },
-  {
-    img: "",
-    title: "novios",
-  },
-  {
-    img: "",
-    title: "Pierde almas",
-  },
-  {
-    img: "",
-    title: "amigas",
-    cols: 2,
-  },
-];
 
-export default Reserva;
+export default ReservaTiktokTree;

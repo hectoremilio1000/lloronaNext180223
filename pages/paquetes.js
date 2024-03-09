@@ -4,6 +4,7 @@ import { useState } from "react";
 import ButtonComponent from "../components/ButtonComponent/index";
 import title from "../components/Main/title.module.css";
 import { paqueteSinAlcohol } from "../data/paquetes";
+import NavBar from "../components/NavBarEs/NavBarEs";
 
 function Paquetes() {
   const [english, setEnglish] = useState(false);
@@ -28,6 +29,7 @@ function Paquetes() {
 
   return (
     <>
+      <NavBar />
       <div
         className="d-flex subContenedor1Banner banner"
         style={{

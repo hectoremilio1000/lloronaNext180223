@@ -1,6 +1,7 @@
 import "../styles/main.css";
 import "../styles/global.css";
 import "../components/Navbar/navBar.css";
+import "../components/NavbarWhite/navBarWhite.css";
 import LayoutFinal from "../components/layout";
 
 import AppContextProvider from "../components/context/Context";

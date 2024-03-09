@@ -1,3 +1,42 @@
+/* .navbar {
+  padding: 0 !important;
+}
+.ant-layout-header {
+  padding: 0 !important;
+}
+
+.menuPrincipal {
+  width: fit-content !important;
+  margin-left: auto !important;
+}
+
+.logoPrincipal {
+  margin-left: 19px !important;
+  float: left !important;
+}
+
+.navbar-brand {
+  padding-top: 0 !important;
+}
+
+.container {
+  padding: 0 !important;
+}
+
+.item-nav {
+  margin-left: auto;
+} */
+
+.ant-menu-horizontal {
+  border-bottom: 0px !important;
+}
+@media screen and (max-width: 575px) {
+  .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
 .header-container {
   background-color: transparent !important;
   position: fixed;
@@ -27,6 +66,7 @@
 .linkswraper li {
   height: max-content;
   list-style: none;
+  width: 100%;
   text-align: center;
 }
 
@@ -39,9 +79,8 @@
   display: block;
   text-decoration: none;
   padding: 0.5rem 1rem 0.5rem 1rem;
-  color: #fff;
+  color: #1e1e1e;
   font-weight: 700;
-  font-size: 16px;
   text-transform: capitalize;
   cursor: pointer;
   transition: all 0.5s;
@@ -54,7 +93,7 @@
 }
 
 .header-icons .icon {
-  color: #fff;
+  color: #1e1e1e;
 }
 
 @media only screen and (min-width: 768px) {

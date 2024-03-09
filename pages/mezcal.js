@@ -6,6 +6,7 @@ import TitlebarImageList from "../components/TitlebarImageList/index";
 import NuestroMezcalInfo from "../components/NuestroMezcalInfo/index";
 import NuestroMezcalImages from "../components/NuestroMezcalImages/index";
 import Head from "next/head";
+import NavBar from "../components/NavBarEs/NavBarEs";
 
 function Mezcal() {
   return (
@@ -23,6 +24,7 @@ function Mezcal() {
           Mezcal artesanal y Cómodo lugar en México | Cantina la llorona
         </title>
       </Head>
+      <NavBar />
       <div className="pb-4">
         <div
           className="d-flex subContenedor1Banner"
