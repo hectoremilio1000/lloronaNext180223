@@ -90,7 +90,7 @@ function ReservaTiktokTree() {
               <div className="w-full">
                 <h1 className="font-bold text-4xl text-gray-900">
                   Los jueves piñata cumpleañera <br />
-                  con una botella de mezcal
+                  con una botella de mezcal para disfrutar
                 </h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {/* <div>
