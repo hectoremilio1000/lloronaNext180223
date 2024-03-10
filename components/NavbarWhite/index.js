@@ -18,7 +18,7 @@ const usFlag =
 const mxFlag =
   "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/banderas/mx.svg";
 
-function NavBarWhiteEs() {
+function NavBarWhite() {
   const [current, setCurrent] = useState("");
   const [linkswraper, setLinkswraper] = useState(false);
   const [navbar, setNavbar] = useState(false);
@@ -245,4 +245,4 @@ function NavBarWhiteEs() {
   );
 }
 
-export default NavBarWhiteEs;
+export default NavBarWhite;

@@ -13,7 +13,7 @@ import { FB_PIXEL_ID } from "../lib/fpixel";
 import { InlineWidget } from "react-calendly";
 import ModalAll from "../components/ModalAll";
 import CalendarioTiktokTree from "../components/CalendarioTiktokTree";
-import NavBarWhiteEs from "../components/NavbarWhite/Navbarwhitees";
+import NavBarWhite from "../components/NavbarWhite";
 
 function ReservaTiktokTree() {
   // useEffect(() => {
@@ -82,7 +82,7 @@ function ReservaTiktokTree() {
             />
           </Head>
         )}
-        <NavBarWhiteEs />
+        <NavBarWhite />
         <div className="w-full bg-white h-[400px]"></div>
         <div className="w-full bg-white -mt-[200px]">
           {espa ? (
