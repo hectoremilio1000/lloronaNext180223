@@ -54,6 +54,24 @@ function ReservaFacebook() {
   const image8 =
     "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/coctelDeliciosoMEzcal.jpg";
   const [open, setOpen] = useState(false);
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      // Busca el elemento <a> con la ruta específica
+      const specificLink = document.querySelector(
+        'a[href="https://elfsight.com/google-reviews-widget/?utm_source=websites&utm_medium=clients&utm_content=google-reviews&utm_term=localhost&utm_campaign=free-widget"]'
+      );
+      console.log(specificLink);
+
+      // Si se encuentra el elemento, elimínalo del DOM y detén la verificación
+      if (specificLink) {
+        specificLink.parentNode.removeChild(specificLink);
+        clearInterval(intervalId);
+      }
+    }, 1000); // Verifica cada 1 segundo
+
+    // Detén la verificación cuando el componente se desmonte
+    return () => clearInterval(intervalId);
+  }, []); // Ejecuta el efecto solo una vez al montar el componente
   return (
     <>
       <Head>
@@ -65,6 +83,11 @@ function ReservaFacebook() {
             src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
           />
         </noscript>
+        <script
+          src="https://static.elfsight.com/platform/platform.js"
+          data-use-service-core
+          defer
+        ></script>
       </Head>
       <>
         {espa ? (
@@ -257,6 +280,16 @@ function ReservaFacebook() {
           </div> */}
             </div>
           )}
+          <div className="w-full max-w-[1184px] mx-auto my-16">
+            <h1 className="font-bold text-4xl text-center text-gray-900 mt-16 mb-8">
+              Clientes satisfechos <br />
+              Testimonios
+            </h1>
+            <div
+              className="elfsight-app-061d54f3-a4df-48b1-96c3-7355ad5360c9"
+              data-elfsight-app-lazy
+            ></div>
+          </div>
         </div>
       </>
     </>

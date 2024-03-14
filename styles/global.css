@@ -25,7 +25,16 @@ body {
     transform: translateX(0);
   }
 }
-
+a[href="https://elfsight.com/google-reviews-widget/?utm_source=websites&utm_medium=clients&utm_content=google-reviews&utm_term=localhost&utm_campaign=free-widget"]
+{
+  display: none;
+}
+.eapps-widget-toolbar {
+  display: none !important;
+}
+.WidgetTitle__Container-sc-j91g46-0 {
+  display: none !important;
+}
 .rail-left .animate-marquee {
   animation: marqueeleft 15s linear infinite;
 }
