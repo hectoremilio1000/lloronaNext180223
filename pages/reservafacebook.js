@@ -58,9 +58,8 @@ function ReservaFacebook() {
     const intervalId = setInterval(() => {
       // Busca el elemento <a> con la ruta específica
       const specificLink = document.querySelector(
-        'a[href="https://elfsight.com/google-reviews-widget/?utm_source=websites&utm_medium=clients&utm_content=google-reviews&utm_term=localhost&utm_campaign=free-widget"]'
+        'a[href="https://elfsight.com/google-reviews-widget/?utm_source=websites&utm_medium=clients&utm_content=google-reviews&utm_term=www.lalloronacantina.com&utm_campaign=free-widget"]'
       );
-      console.log(specificLink);
 
       // Si se encuentra el elemento, elimínalo del DOM y detén la verificación
       if (specificLink) {
