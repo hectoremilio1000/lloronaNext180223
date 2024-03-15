@@ -17,8 +17,8 @@ function CalendarioTiktokTree() {
           </div>
         </div>
       ) : (
-        <div className="w-full bg-black">
-          <div className="w-full rounded bg-[#141414] max-w-[1184px] py-[80px] px-[20px] mx-auto">
+        <div className="w-full bg-white">
+          <div className="w-full rounded bg-gray-200 max-w-[1184px] py-[80px] px-[20px] mx-auto">
             <h1 className="text2xl md:text-5xl font-bold text-center text-gray-900">
               My house is your house, Book now.
             </h1>
