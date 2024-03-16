@@ -165,7 +165,7 @@ function Reserva() {
                 </button> */}
                 <div className="overflow-auto">
                   <ModalAll className="w-[850px]" open={open} setOpen={setOpen}>
-                    <InlineWidget url="https://calendly.com/reservaciones-14/reservaciones-llorona" />
+                    <InlineWidget url="https://calendly.com/reservaciones-14/reservaciones-llorona?hide_gdpr_banner=1" />
                   </ModalAll>
                 </div>
               </div>
