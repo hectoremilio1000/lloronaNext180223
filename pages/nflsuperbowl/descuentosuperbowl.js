@@ -61,7 +61,7 @@ function Promo2() {
                   in the excitement of the game.
                 </p>
 
-                <InlineWidget url="https://calendly.com/reservaciones-14/book-superbowl-discount-15-percent-account-llorona" />
+                <InlineWidget url="https://calendly.com/reservaciones-14/book-superbowl-discount-15-percent-account-llorona?hide_gdpr_banner=1" />
               </>
             )}
           </div>

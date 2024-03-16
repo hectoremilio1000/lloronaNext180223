@@ -62,7 +62,7 @@ function Promo1() {
                   rodeado de buena compañía y un ambiente inigualable.
                 </p>
 
-                <InlineWidget url="https://calendly.com/reservaciones-14/cervezabarrilgratissuperbowl" />
+                <InlineWidget url="https://calendly.com/reservaciones-14/cervezabarrilgratissuperbowl?hide_gdpr_banner=1" />
               </>
             ) : (
               <>

@@ -160,7 +160,7 @@ function ReservaFacebook() {
                       open={open}
                       setOpen={setOpen}
                     >
-                      <InlineWidget url="https://calendly.com/reservaciones-14/tiktok-reservaciones-llorona-clon" />
+                      <InlineWidget url="https://calendly.com/reservaciones-14/tiktok-reservaciones-llorona-clon?hide_gdpr_banner=1" />
                     </ModalAll>
                   </div>
                 </div>

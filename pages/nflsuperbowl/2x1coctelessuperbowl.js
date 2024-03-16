@@ -38,11 +38,11 @@ function Promo3() {
                 <p className="text-white">
                   ¡Prepárate para la gran noche del fútbol americano en
                   <strong> Cantina La Llorona</strong>! Ubicados en el corazón
-                  de la ciudad en la Roma Condesa, te ofrecemos el ambiente más
-                  animado y casual para disfrutar del Super Bowl como nunca
-                  antes. Nuestra cantina es el lugar perfecto para sumergirte en
-                  la emoción del juego, rodeado de buena compañía y un ambiente
-                  inigualable.
+                  de la ciudad de México en la Roma Condesa, te ofrecemos el
+                  ambiente más animado y casual para disfrutar del Super Bowl
+                  como nunca antes. Nuestra cantina es el lugar perfecto para
+                  sumergirte en la emoción del juego, rodeado de buena compañía
+                  y un ambiente inigualable.
                 </p>
 
                 <InlineWidget url="https://calendly.com/reservaciones-14/reserva-al-superbowl-recibe-2x1-cocteles-llorona" />
@@ -62,7 +62,7 @@ function Promo3() {
                   an unparalleled atmosphere.
                 </p>
 
-                <InlineWidget url="https://calendly.com/reservaciones-14/book-now-and-get-2-for-1-on-cocktails-llorona-superbowl-super-bowl" />
+                <InlineWidget url="https://calendly.com/reservaciones-14/book-now-and-get-2-for-1-on-cocktails-llorona-superbowl-super-bowl?hide_gdpr_banner=1" />
               </>
             )}
           </div>
