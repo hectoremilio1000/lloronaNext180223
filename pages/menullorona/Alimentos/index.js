@@ -29,7 +29,9 @@ function Alimentos() {
   return (
     <>
       {/* <MenuDetail /> */}
-      <div className="pt-3 grid grid-cols-1 md:grid-cols-3 gap-2">
+      <h2 className={title.fontTitleline}>Cocinado Con Amor Y Mucha Pasión</h2>
+      <div className="linea"></div>
+      <div className="pt-3 grid grid-cols-1 md:grid-cols-3 gap-2 my-8">
         <div className="w-full px-4">
           <img
             src={menuComida1}
@@ -61,13 +63,12 @@ function Alimentos() {
       </div>
 
       <h4 className={title.fontTitleSub}>Bebidas Mexicanas</h4>
+      <div className="linea"></div>
       <h2 className={title.fontTitleline}>
         CERVEZAS ARTESANALES MEXICANAS, MEZCALES ARTESANALES Y MIXOLOGÍA CON
         SABORES Y DESTILADOS MEXICANOS
       </h2>
-      <div className="linea"></div>
-
-      <div className="pt-3 grid grid-cols-1 md:grid-cols-3 gap-2">
+      <div className="pt-3 grid grid-cols-1 md:grid-cols-3 gap-2 my-8">
         <div className="w-full px-4">
           <img
             src={mixologia}
@@ -105,12 +106,11 @@ function Alimentos() {
           />
         </div>
       </div>
-
       <h4 className={title.fontTitleSub}>Sodas, Destilados</h4>
-      <h2 className={title.fontTitleline}>Cervezas Industriales</h2>
       <div className="linea"></div>
+      <h2 className={title.fontTitleline}>Cervezas Industriales</h2>
 
-      <div className="pt-3 grid grid-cols-1 md:grid-cols-3 gap-2">
+      <div className="pt-3 grid grid-cols-1 md:grid-cols-3 gap-2 my-8">
         <div className="w-full px-4">
           <img
             src={destilados}

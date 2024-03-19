@@ -46,13 +46,13 @@ function MenuFood() {
                 </div>
             </div> */}
 
-      <div className="pt-3">
+      <h2 className={title.fontTitleline}>
+        Cooked with love and lots of passion
+      </h2>
+      <div className="linea"></div>
+      <div className="pt-3 grid grid-cols-1 md:grid-cols-3 gap-2 my-8">
         <>
           {/* <h4 className={title.fontTitleSub}>Mexican dishes</h4> */}
-          <h2 className={title.fontTitleline}>
-            Cooked with love and lots of passion
-          </h2>
-          <div className="linea"></div>
           {/* <div className="w-full px-4">
                         <img
                             src={portadaF}
@@ -102,76 +102,73 @@ function MenuFood() {
             />
           </div>
         </>
-        <>
-          <h4 className={title.fontTitleSub}>Mexican drinks</h4>
-          <h2 className={title.fontTitleline}>
-            Mixology with liquors and mexican flavors, Craft Mexican Beers and
-            Mexican Mezcals
-          </h2>
-          <div className="linea"></div>
-          <div className="w-full px-4">
-            <img
-              src={mixologia}
-              alt="comida sabrosa"
-              width={1000}
-              height={500}
-              className="w-full"
-            />
-          </div>
-          <div className="w-full px-4">
-            <img
-              src={mixologia2}
-              alt="comida sabrosa"
-              width={1000}
-              height={500}
-              className="w-full"
-            />
-          </div>
-          <div className="w-full px-4">
-            <img
-              src={cervezaArtesanal}
-              alt="comida sabrosa"
-              width={1000}
-              height={500}
-              className="w-full"
-            />
-          </div>{" "}
-          <div className="w-full px-4">
-            <img
-              src={mezcales}
-              alt="comida sabrosa"
-              width={1000}
-              height={500}
-              className="w-full"
-            />
-          </div>
-        </>
-
-        <>
-          <h4 className={title.fontTitleSub}>Spirits & wine</h4>
-          <div className="linea"></div>
-          <div className="w-full px-4">
-            <img
-              src={destilados}
-              alt="destilados"
-              width={1000}
-              height={500}
-              className="w-full"
-            />
-          </div>{" "}
-          <div className="w-full px-4">
-            <h2 className={title.fontTitleline}>
-              Industrial Mexican Beers & Sodas
-            </h2>
-            <img
-              src={soda}
-              alt="soda"
-              width={1000}
-              height={500}
-              className="w-full"
-            />
-          </div>
-        </>
+      </div>
+      <h4 className={title.fontTitleSub}>Mexican drinks</h4>
+      <div className="linea"></div>
+      <h2 className={title.fontTitleline}>
+        Mixology with liquors and mexican flavors, Craft Mexican Beers and
+        Mexican Mezcals
+      </h2>
+      <div className="pt-3 grid grid-cols-1 md:grid-cols-3 gap-2 my-8">
+        <div className="w-full px-4">
+          <img
+            src={mixologia}
+            alt="comida sabrosa"
+            width={1000}
+            height={500}
+            className="w-full"
+          />
+        </div>
+        <div className="w-full px-4">
+          <img
+            src={mixologia2}
+            alt="comida sabrosa"
+            width={1000}
+            height={500}
+            className="w-full"
+          />
+        </div>
+        <div className="w-full px-4">
+          <img
+            src={cervezaArtesanal}
+            alt="comida sabrosa"
+            width={1000}
+            height={500}
+            className="w-full"
+          />
+        </div>{" "}
+        <div className="w-full px-4">
+          <img
+            src={mezcales}
+            alt="comida sabrosa"
+            width={1000}
+            height={500}
+            className="w-full"
+          />
+        </div>
+      </div>
+      <h4 className={title.fontTitleSub}>Spirits & wine</h4>
+      <div className="linea"></div>
+      <h2 className={title.fontTitleline}>Industrial Mexican Beers & Sodas</h2>
+      <div className="pt-3 grid grid-cols-1 md:grid-cols-3 gap-2 my-8">
+        <div className="w-full px-4">
+          <img
+            src={destilados}
+            alt="destilados"
+            width={1000}
+            height={500}
+            className="w-full"
+          />
+        </div>{" "}
+        <div className="w-full px-4">
+          <img
+            src={soda}
+            alt="soda"
+            width={1000}
+            height={500}
+            className="w-full"
+          />
+        </div>
       </div>
     </>
   );

@@ -421,7 +421,7 @@ background-repeat: no-repeat;
 .linea {
   width: 5rem;
   height: 0.2rem;
-  background: #3eeb91;
+  background: #1c8665;
   margin: 0.5rem auto;
 }
 
@@ -767,7 +767,7 @@ h4 {
 }
 
 p {
-  margin-bottom: 1.25rem;
+  /* margin-bottom: 1.25rem; */
   color: hsl(210, 22%, 49%);
 }
 
