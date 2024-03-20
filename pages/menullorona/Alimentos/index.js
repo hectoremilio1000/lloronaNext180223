@@ -31,12 +31,12 @@ function Alimentos() {
       {/* <MenuDetail /> */}
       <h2 className={title.fontTitleline}>Cocinado Con Amor Y Mucha Pasión</h2>
       <div className="linea"></div>
-      <div className="pt-3 grid grid-cols-1 md:grid-cols-3 gap-2 my-8">
+      <div className="pt-3 grid grid-cols-1 md:grid-cols-1 gap-2 my-8">
         <div className="w-full px-4">
           <img
             src={menuComida1}
             alt="comida sabrosa"
-            width={1000}
+            width={400}
             height={500}
             className="w-full"
           />
@@ -46,7 +46,7 @@ function Alimentos() {
           <img
             src={menuComida2}
             alt="comida sabrosa"
-            width={1000}
+            width={400}
             height={500}
             className="w-full"
           />
@@ -55,7 +55,7 @@ function Alimentos() {
           <img
             src={menuComida3}
             alt="comida sabrosa"
-            width={1000}
+            width={400}
             height={500}
             className="w-full"
           />
@@ -68,12 +68,12 @@ function Alimentos() {
         CERVEZAS ARTESANALES MEXICANAS, MEZCALES ARTESANALES Y MIXOLOGÍA CON
         SABORES Y DESTILADOS MEXICANOS
       </h2>
-      <div className="pt-3 grid grid-cols-1 md:grid-cols-3 gap-2 my-8">
+      <div className="pt-3 grid grid-cols-1 md:grid-cols-1 gap-2 my-8">
         <div className="w-full px-4">
           <img
             src={mixologia}
             alt="comida sabrosa"
-            width={1000}
+            width={400}
             height={500}
             className="w-full"
           />
@@ -82,7 +82,7 @@ function Alimentos() {
           <img
             src={mixologia2}
             alt="comida sabrosa"
-            width={1000}
+            width={400}
             height={500}
             className="w-full"
           />
@@ -91,7 +91,7 @@ function Alimentos() {
           <img
             src={cervezaArtesanal}
             alt="comida sabrosa"
-            width={1000}
+            width={400}
             height={500}
             className="w-full"
           />
@@ -100,7 +100,7 @@ function Alimentos() {
           <img
             src={mezcales}
             alt="comida sabrosa"
-            width={1000}
+            width={400}
             height={500}
             className="w-full"
           />
@@ -110,12 +110,12 @@ function Alimentos() {
       <div className="linea"></div>
       <h2 className={title.fontTitleline}>Cervezas Industriales</h2>
 
-      <div className="pt-3 grid grid-cols-1 md:grid-cols-3 gap-2 my-8">
+      <div className="pt-3 grid grid-cols-1 md:grid-cols-1 gap-2 my-8">
         <div className="w-full px-4">
           <img
             src={destilados}
             alt="destilados"
-            width={1000}
+            width={400}
             height={500}
             className="w-full"
           />
@@ -124,7 +124,7 @@ function Alimentos() {
           <img
             src={soda}
             alt="soda"
-            width={1000}
+            width={400}
             height={500}
             className="w-full"
           />

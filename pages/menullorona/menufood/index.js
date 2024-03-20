@@ -50,7 +50,7 @@ function MenuFood() {
         Cooked with love and lots of passion
       </h2>
       <div className="linea"></div>
-      <div className="pt-3 grid grid-cols-1 md:grid-cols-3 gap-2 my-8">
+      <div className="pt-3 grid grid-cols-1 md:grid-cols-1 gap-2 my-8">
         <>
           {/* <h4 className={title.fontTitleSub}>Mexican dishes</h4> */}
           {/* <div className="w-full px-4">
@@ -109,7 +109,7 @@ function MenuFood() {
         Mixology with liquors and mexican flavors, Craft Mexican Beers and
         Mexican Mezcals
       </h2>
-      <div className="pt-3 grid grid-cols-1 md:grid-cols-3 gap-2 my-8">
+      <div className="pt-3 grid grid-cols-1 md:grid-cols-1 gap-2 my-8">
         <div className="w-full px-4">
           <img
             src={mixologia}
@@ -150,7 +150,7 @@ function MenuFood() {
       <h4 className={title.fontTitleSub}>Spirits & wine</h4>
       <div className="linea"></div>
       <h2 className={title.fontTitleline}>Industrial Mexican Beers & Sodas</h2>
-      <div className="pt-3 grid grid-cols-1 md:grid-cols-3 gap-2 my-8">
+      <div className="pt-3 grid grid-cols-1 md:grid-cols-1 gap-2 my-8">
         <div className="w-full px-4">
           <img
             src={destilados}
