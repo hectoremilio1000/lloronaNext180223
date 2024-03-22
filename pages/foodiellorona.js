@@ -112,7 +112,6 @@ function FoodieLlorona() {
               <div className="w-full max-w-[1184px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-8 text-center">
                 <div className="w-full">
                   <h1 className="font-bold text-4xl text-gray-900">
-                    Cantina La Llorona <br />
                     Donde los sabores de México se fusionan con técnicas de
                     vanguardia
                   </h1>
@@ -175,7 +174,6 @@ function FoodieLlorona() {
               <div className="w-full max-w-[1184px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-8 text-center">
                 <div className="w-full">
                   <h1 className="font-bold text-4xl text-gray-900">
-                    Cantina La Llorona <br />
                     Where Mexico's flavors blend with cutting-edge culinary
                     techniques
                   </h1>
@@ -230,9 +228,7 @@ function FoodieLlorona() {
                 <h1 className="font-bold text-4xl text-center text-gray-900 mt-16 mb-8">
                   Satisfied Customers
                 </h1>
-                <div
-                  className="elfsight-app-061d54f3-a4df-48b1-96c3-7355ad5360c9"
-                ></div>
+                <div className="elfsight-app-061d54f3-a4df-48b1-96c3-7355ad5360c9"></div>
               </div>
             </>
           )}
