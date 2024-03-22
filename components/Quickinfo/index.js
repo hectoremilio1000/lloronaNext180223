@@ -26,10 +26,9 @@ function QuickInfo() {
             {/* <div className="h-2 bg-white w-full rounded"></div> */}
 
             <p className="text-start sm:text-2xl text-xl text-black">
-              Combinación de tradición y modernidad en un espacio acogedor.
-              Situados enfrente del Parque España en el corazón de la Roma
-              Condesa, ofrecemos un <b>viaje sensorial único </b>, haciendo de
-              cada bocado y cada sorbo una sinfonía de sabores inolvidable.
+              Menú inspirado en <b>Cantinas Mexicanas</b>. Es honesto pero con
+              jiribilla para acompañar una buena mixología y recordarnos al
+              méxico que nos hace vibrar.
             </p>
           </div>
 
@@ -48,7 +47,7 @@ function QuickInfo() {
                 <div>
                   <img
                     className="h-[220px] object-cover w-full rounded"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2050.jpg"
+                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2047.jpg"
                     alt="cocteles y tacos"
                   />
                 </div>
@@ -59,7 +58,7 @@ function QuickInfo() {
                 <div>
                   <img
                     className="h-[220px] object-cover w-full rounded"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2046.jpg"
+                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/aguacateRibeyeLlorona.jpg"
                     alt="tacos y cocteles"
                   />
                 </div>
@@ -71,8 +70,8 @@ function QuickInfo() {
               >
                 <div>
                   <img
-                    className="h-[280px] object-cover w-full rounded"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2047.jpg"
+                    className="h-[280px] object-contain w-full rounded"
+                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2050.jpg"
                     alt="tacos y cocteles"
                   />
                 </div>
