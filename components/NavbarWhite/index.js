@@ -137,22 +137,22 @@ function NavBarWhite() {
                     Mezcal
                   </Link>
                 </li>
-                <li key="4">
+                {/* <li key="4">
                   <Link
                     href="/salsavivo"
                     className="nav-link-white hover:text-emerald-500"
                   >
                     Salsa en Vivo
                   </Link>
-                </li>
-                <li key="5">
+                </li> */}
+                {/* <li key="5">
                   <Link
                     href="/paquetes"
                     className="nav-link-white hover:text-emerald-500"
                   >
                     Paquetes navideños
                   </Link>
-                </li>
+                </li> */}
               </>
             ) : (
               <>
@@ -189,14 +189,14 @@ function NavBarWhite() {
                     Mezcal
                   </Link>
                 </li>
-                <li key="4">
+                {/* <li key="4">
                   <Link
                     href="/salsavivo"
                     className="nav-link-white hover:text-emerald-500"
                   >
                     Live salsa
                   </Link>
-                </li>
+                </li> */}
                 <li key="5">
                   <Link
                     href="/mixologia"

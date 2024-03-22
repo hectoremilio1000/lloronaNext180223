@@ -128,7 +128,7 @@ function NavBar() {
                     Mezcal
                   </Link>
                 </li>
-                <li key="4">
+                {/* <li key="4">
                   <Link
                     href="/salsavivo"
                     className="nav-link hover:text-emerald-500"
@@ -143,7 +143,7 @@ function NavBar() {
                   >
                     Paquetes navideños
                   </Link>
-                </li>
+                </li> */}
               </>
             ) : (
               <>
@@ -177,14 +177,14 @@ function NavBar() {
                     Mezcal
                   </Link>
                 </li>
-                <li key="4">
+                {/* <li key="4">
                   <Link
                     href="/salsavivo"
                     className="nav-link hover:text-emerald-500"
                   >
                     Live salsa
                   </Link>
-                </li>
+                </li> */}
                 <li key="5">
                   <Link
                     href="/mixologia"
