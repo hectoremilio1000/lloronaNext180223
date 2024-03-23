@@ -15,6 +15,7 @@ import ModalAll from "../components/ModalAll";
 import NavBarWhite from "../components/NavbarWhite";
 import CalendarioTiktokTree from "../components/CalendarioTiktokTree";
 import QuickInfo5 from "../components/QuickInfo5";
+import CalendarioFoodie from "../components/CalendarioFoodie";
 
 function FoodieLlorona() {
   // useEffect(() => {
@@ -160,7 +161,7 @@ function FoodieLlorona() {
                   </div>
                 </div>
                 <div className="w-full">
-                  <CalendarioTiktokTree />
+                  <CalendarioFoodie />
                 </div>
               </div>
               <div className="overflow-hidden bg-black">
@@ -230,7 +231,7 @@ function FoodieLlorona() {
                   </div>
                 </div>
                 <div className="w-full">
-                  <CalendarioTiktokTree />
+                  <CalendarioFoodie />
                 </div>
               </div>
               <div className="w-full max-w-[1184px] mx-auto my-16">

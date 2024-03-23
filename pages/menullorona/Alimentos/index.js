@@ -16,7 +16,7 @@ import MenuDetail from "../../../components/MenuDetail";
 function Alimentos() {
   const menuComida1 = menuEspa1;
   const menuComida2 = menuEspa2;
-  const menuComida3 = menuEspa3;
+  const menuComida3 = "../images/menupostresEs.png";
   const mixologia = mixoEspa;
   const mixologia2 = mixoEspa2;
   const soda = sodaEspa;
