@@ -19,6 +19,7 @@ import Slider from "../components/Sliders/Slider";
 import YouTube from "react-youtube";
 import Link from "next/link";
 import NavBar from "../components/NavBarEs/NavBarEs";
+import QuickInfo5 from "../components/QuickInfo5";
 // imagenes
 const image1 =
   "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg";
@@ -428,14 +429,17 @@ export default function Home() {
           <div className="overflow-hidden bg-black">
             <div className="flex items-center gap-4 whitespace-nowrap">
               <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
-                MUSICA Y SALSA EN VIVO
+                TESTIMONIOS
               </h1>
               <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
-                MUSICA Y SALSA EN VIVO
+                TESTIMONIOS
               </h1>
             </div>
           </div>
-          <div clas leading-nonesName="bg-black py-[50px]">
+
+          <div className="bg-black py-[50px]">
+            {/* <QuickInfo5 />  */}
+
             <div className="mx-auto max-w-[1184px] grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 px-8">
               <div>
                 <YouTube

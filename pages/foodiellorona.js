@@ -14,6 +14,7 @@ import { InlineWidget } from "react-calendly";
 import ModalAll from "../components/ModalAll";
 import NavBarWhite from "../components/NavbarWhite";
 import CalendarioTiktokTree from "../components/CalendarioTiktokTree";
+import QuickInfo5 from "../components/QuickInfo5";
 
 function FoodieLlorona() {
   // useEffect(() => {
@@ -162,11 +163,19 @@ function FoodieLlorona() {
                   <CalendarioTiktokTree />
                 </div>
               </div>
-              <div className="w-full max-w-[1184px] mx-auto my-16">
-                <h1 className="font-bold text-4xl text-center text-gray-900 mt-16 mb-8">
-                  Clientes satisfechos
-                </h1>
-                <div className="elfsight-app-061d54f3-a4df-48b1-96c3-7355ad5360c9"></div>
+              <div className="overflow-hidden bg-black">
+                <div className="flex items-center gap-4 whitespace-nowrap">
+                  <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
+                    TESTIMONIOS
+                  </h1>
+                  <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                    TESTIMONIOS
+                  </h1>
+                </div>
+              </div>
+
+              <div className="bg-black py-[50px]">
+                <QuickInfo5 />
               </div>
             </>
           ) : (
