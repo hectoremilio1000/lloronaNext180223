@@ -9,12 +9,11 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 const TestimonialCard = ({ testimonial }) => {
   const { photo, rating, text, date, url } = testimonial;
-
   return (
     <a
       href={url}
       target="_blank"
-      className="flex flex-col justify-center items-center px-8 py-4 bg-white rounded-xl shadow-md overflow-hidden"
+      className="flex flex-col justify-center items-center px-8 py-4 bg-white rounded-xl shadow-md "
     >
       {/* Contenedor de la imagen ajustado para dispositivos móviles y escritorio */}
       <img
@@ -40,11 +39,13 @@ const TestimonialCard = ({ testimonial }) => {
             <path d="M9.049 2.927c.384-.955 1.683-.955 2.067 0l1.462 3.635a1.5 1.5 0 001.419 1.034h3.813c1.054 0 1.488 1.33.71 1.997l-3.08 3.004a1.5 1.5 0 00-.432 1.34l.73 4.259c.177 1.041-1.045 1.84-1.949 1.347l-3.613-1.9a1.5 1.5 0 00-1.395 0l-3.613 1.9c-.903.493-2.125-.306-1.949-1.347l.73-4.259a1.5 1.5 0 00-.432-1.34l-3.08-3.004c-.778-.667-.344-1.997.71-1.997h3.813a1.5 1.5 0 001.419-1.034l1.462-3.635z"></path>
           </svg>
         </div>
-        <p
-          className="text-sm md:text-md text-gray-900 mt-1"
-          dangerouslySetInnerHTML={{ __html: text }}
-        ></p>
         <p className="text-xs md:text-sm text-gray-500 mt-1">{date}</p>
+        <div className="overflow-hidden">
+          <p
+            className="text-ellipsis-vertical text-sm md:text-md text-gray-900 mt-1"
+            dangerouslySetInnerHTML={{ __html: text }}
+          ></p>
+        </div>
       </div>
     </a>
   );
@@ -53,7 +54,7 @@ const TestimonialCard = ({ testimonial }) => {
 const Carousel = ({ testimonials }) => {
   return (
     <div className="relative max-w-[1080px] mx-auto">
-      <div className="flex overflow-hidden gap-x-1 md:gap-x-4">
+      <div className="flex gap-x-1 md:gap-x-4">
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
@@ -78,11 +79,13 @@ const Carousel = ({ testimonials }) => {
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
         >
-          {testimonials.map((testimonial, index) => (
-            <SwiperSlide key={index}>
-              <TestimonialCard testimonial={testimonial} />
-            </SwiperSlide>
-          ))}
+          {testimonials.map((testimonial, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <TestimonialCard testimonial={testimonial} />
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
         {/* gap-x-1 para móviles y md:gap-x-4 para escritorio */}
       </div>

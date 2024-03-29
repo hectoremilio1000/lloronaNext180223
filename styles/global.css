@@ -424,7 +424,18 @@ background-repeat: no-repeat;
   background: #1c8665;
   margin: 0.5rem auto;
 }
-
+.text-ellipsis-vertical {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-height: 51px; /* Altura máxima deseada */
+  -webkit-line-clamp: 3;
+  line-height: 17px;
+  margin: 0 !important;
+}
+.swiper-pagination {
+  bottom: 0 !important;
+}
 ul {
   padding-inline-start: 0px !important;
 }
