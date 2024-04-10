@@ -16,7 +16,6 @@ import MenuDetail from "../../../components/MenuDetail";
 function Alimentos() {
   const menuComida1 = menuEspa1;
   const menuComida2 = menuEspa2;
-  const menuComida3 = "../images/menupostresEs.png";
   const mixologia = mixoEspa;
   const mixologia2 = mixoEspa2;
   const soda = sodaEspa;
@@ -29,8 +28,8 @@ function Alimentos() {
   return (
     <>
       {/* <MenuDetail /> */}
-      <h2 className={title.fontTitleline}>Cocinado Con Amor Y Mucha Pasión</h2>
-      <div className="linea"></div>
+      {/* <h2 className={title.fontTitleline}>Cocinado Con Amor Y Mucha Pasión</h2>
+      <div className="linea"></div> */}
       <div className="pt-3 grid grid-cols-1 md:grid-cols-1 gap-2 my-8">
         <div className="w-full px-4">
           <img
@@ -51,7 +50,7 @@ function Alimentos() {
             className="w-full"
           />
         </div>
-        <div className="w-full px-4">
+        {/* <div className="w-full px-4">
           <img
             src={menuComida3}
             alt="comida sabrosa"
@@ -59,15 +58,15 @@ function Alimentos() {
             height={500}
             className="w-full"
           />
-        </div>
+        </div> */}
       </div>
 
-      <h4 className={title.fontTitleSub}>Bebidas Mexicanas</h4>
+      {/* <h4 className={title.fontTitleSub}>Bebidas Mexicanas</h4>
       <div className="linea"></div>
       <h2 className={title.fontTitleline}>
         CERVEZAS ARTESANALES MEXICANAS, MEZCALES ARTESANALES Y MIXOLOGÍA CON
         SABORES Y DESTILADOS MEXICANOS
-      </h2>
+      </h2> */}
       <div className="pt-3 grid grid-cols-1 md:grid-cols-1 gap-2 my-8">
         <div className="w-full px-4">
           <img
@@ -78,7 +77,7 @@ function Alimentos() {
             className="w-full"
           />
         </div>
-        <div className="w-full px-4">
+        {/* <div className="w-full px-4">
           <img
             src={mixologia2}
             alt="comida sabrosa"
@@ -86,7 +85,7 @@ function Alimentos() {
             height={500}
             className="w-full"
           />
-        </div>
+        </div> */}
         <div className="w-full px-4">
           <img
             src={cervezaArtesanal}
@@ -106,9 +105,9 @@ function Alimentos() {
           />
         </div>
       </div>
-      <h4 className={title.fontTitleSub}>Sodas, Destilados</h4>
+      {/* <h4 className={title.fontTitleSub}>Sodas, Destilados</h4>
       <div className="linea"></div>
-      <h2 className={title.fontTitleline}>Cervezas Industriales</h2>
+      <h2 className={title.fontTitleline}>Cervezas Industriales</h2> */}
 
       <div className="pt-3 grid grid-cols-1 md:grid-cols-1 gap-2 my-8">
         <div className="w-full px-4">
