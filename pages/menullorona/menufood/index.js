@@ -17,7 +17,7 @@ import { portadaIngles } from "../../../data/menu/menuIngles";
 function MenuFood() {
   const menuComida1 = menuFood1;
   const menuComida11 = menuFood11;
-  const menuComida2 = menuFood2;
+  const menuComida2 = menuFood11;
   const menuComida3 = menuFood3;
   const mixologia = mixoIngles;
   const soda = sodaEspaIngles;
@@ -46,10 +46,6 @@ function MenuFood() {
                 </div>
             </div> */}
 
-      <h2 className={title.fontTitleline}>
-        Cooked with love and lots of passion
-      </h2>
-      <div className="linea"></div>
       <div className="pt-3 grid grid-cols-1 md:grid-cols-1 gap-2 my-8">
         <>
           {/* <h4 className={title.fontTitleSub}>Mexican dishes</h4> */}
@@ -92,7 +88,7 @@ function MenuFood() {
               className="w-full"
             />
           </div>
-          <div className="w-full px-4">
+          {/* <div className="w-full px-4">
             <img
               src={menuComida3}
               alt="comida sabrosa"
@@ -100,15 +96,10 @@ function MenuFood() {
               height={500}
               className="w-full"
             />
-          </div>
+          </div> */}
         </>
       </div>
-      <h4 className={title.fontTitleSub}>Mexican drinks</h4>
-      <div className="linea"></div>
-      <h2 className={title.fontTitleline}>
-        Mixology with liquors and mexican flavors, Craft Mexican Beers and
-        Mexican Mezcals
-      </h2>
+
       <div className="pt-3 grid grid-cols-1 md:grid-cols-1 gap-2 my-8">
         <div className="w-full px-4">
           <img
@@ -147,9 +138,7 @@ function MenuFood() {
           />
         </div>
       </div>
-      <h4 className={title.fontTitleSub}>Spirits & wine</h4>
-      <div className="linea"></div>
-      <h2 className={title.fontTitleline}>Industrial Mexican Beers & Sodas</h2>
+
       <div className="pt-3 grid grid-cols-1 md:grid-cols-1 gap-2 my-8">
         <div className="w-full px-4">
           <img

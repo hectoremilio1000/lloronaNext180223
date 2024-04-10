@@ -6,8 +6,6 @@ import title from "../components/Main/title.module.css";
 import { useAppContext } from "../components/context/Context";
 import Head from "next/head";
 import Script from "next/script";
-import * as fbq from "../lib/fpixel";
-import YouTube from "react-youtube";
 import { FB_PIXEL_ID } from "../lib/fpixel";
 
 import { InlineWidget } from "react-calendly";
