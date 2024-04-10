@@ -55,7 +55,7 @@ function Roadopening() {
         </div>
         <div className="lg:w-3/4">
           {" "}
-          <p className="w-full max-w-[800px]  mx-auto text-justify sm:text-2xl text-xl text-black text-bold ml-4">
+          <p className="w-full max-w-[800px]  mx-auto text-justify sm:text-2xl text-xl text-black text-bold ml-4 ">
             Tenemos el gusto de invitarte a que degustes algunos de nuestros
             platillos que tendremos en nuestro nuevo menú. acompañados de Luis
             Bartender de Fifty mills y de la dj rasnyshh.
