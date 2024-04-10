@@ -60,12 +60,6 @@ function MenuLlorona() {
         }}
       >
         <div className="max-w-[1184px] mx-auto w-full px-[20px]">
-          {espa ? (
-            <h1 className="text-center text-3xl">Menú</h1>
-          ) : (
-            <h1 className="text-center font-weight-bold">Menu</h1>
-          )}
-
           <div className="contenedorLenguaje">
             <button
               class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
