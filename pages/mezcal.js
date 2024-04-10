@@ -1,6 +1,5 @@
 import React from "react";
 import MezcalInfo from "../components/MezcalInfo";
-import title from "../Main/title.module.css";
 import ProcesoElaboracion from "../components/ProcesoElaborarion/index";
 import TitlebarImageList from "../components/TitlebarImageList/index";
 
@@ -72,9 +71,7 @@ function Mezcal() {
           </div>
         </div>
         <MezcalInfo className="mt-0" />
-        {/* <ProcesoElaboracion /> */}
-        {/* <TitlebarImageList /> */}
-        {/* <NuestroMezcalInfo /> */}
+
         <NuestroMezcalImages />
       </div>
     </>
