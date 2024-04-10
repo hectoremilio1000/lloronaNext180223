@@ -46,9 +46,6 @@ function Mezcal() {
             <p className="text-2xl text-white font-medium">
               en compañia de amigos internacionales
             </p>
-            {/* <h3 className=" font-weight-bold proximamente2 text-white">
-              Cómpralo aquí o <br /> en Nuestra Sucursal de la Roma Condesa
-            </h3> */}
 
             <div className="subSubDiv1Banner">
               <a href="https://wa.me/+5215549242477">
