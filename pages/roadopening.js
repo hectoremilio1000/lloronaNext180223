@@ -63,18 +63,14 @@ function Roadopening() {
         </div>
       </div>
       <>
-        <div className="overflow-auto">
-          <ModalAll className="w-[850px]" open={open} setOpen={setOpen}>
-            <InlineWidget url="https://calendly.com/reservaciones-14/tiktok-reservaciones-llorona-clon?hide_gdpr_banner=1" />
-          </ModalAll>
-        </div>
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between lg:p-8">
           <div className="lg:w-1/3">
             <div class="max-w-sm rounded overflow-hidden shadow-lg">
               <img
                 class="w-full"
-                src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/aguacatechicharronrobeye.jpg"
+                src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/jorgedumit.jpg"
                 alt="Sunset in the mountains"
+                height="400"
               />{" "}
               <div class="px-6 py-4">
                 <div class="font-bold text-xl mb-2">Jorge dumit</div>
