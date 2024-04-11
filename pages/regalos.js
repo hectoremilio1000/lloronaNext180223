@@ -1,14 +1,118 @@
+import axios from "axios";
 import dayjs from "dayjs";
 import { useRouter } from "next/router";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Modal from "../utils/Modal";
 
 const Regalos = () => {
   const [nombre, setNombre] = useState("");
   const [email, setEmail] = useState("");
   const [celular, setCelular] = useState([]);
+  const [formActive, setFormActive] = useState([]);
   // Agrega más campos según sea necesario
+  const buscar_formulario_activo = async () => {
+    try {
+      var formdata = new FormData();
+      formdata.append("funcion", "buscar_formulario_activo");
+      var ruta_static = "http://localhost/apillorona/";
+      var requestOptions = {
+        method: "POST",
+        body: formdata,
+        redirect: "follow",
+      };
+      const response = await fetch(
+        ruta_static + `controlador/UsuarioController.php`,
+        requestOptions
+      );
+      if (!response.error) {
+        const data = await response.json();
+        console.log(data);
 
+        if (data.mensaje === "no-data") {
+          setFormActive([]);
+        } else {
+          if (data.error) {
+            console.log(data.error);
+          } else {
+            let formatedResponseData = data.map((pregunta) => ({
+              ...pregunta,
+              respuesta: "",
+            }));
+            setFormActive(formatedResponseData);
+          }
+        }
+      } else {
+        console.error(response.error);
+      }
+    } catch (error) {
+      console.error("Error al buscar el registro:", error);
+    }
+  };
+  const handleChangeResponse = (e, id) => {
+    const nuevasRespuestas = formActive.map((item) => {
+      if (item.id === id) {
+        return { ...item, respuesta: e.target.value };
+      }
+      return item;
+    });
+    setFormActive(nuevasRespuestas);
+  };
+  const handleChangeCalificacion = (id, calificacion) => {
+    const nuevasRespuestas = formActive.map((item) => {
+      if (item.id === id) {
+        return { ...item, calificacion: calificacion };
+      }
+      return item;
+    });
+    setFormActive(nuevasRespuestas);
+  };
+
+  const registrar_respuestas = async (respuestas) => {
+    try {
+      console.log(respuestas);
+      var formdata = new FormData();
+      formdata.append("funcion", "registrar_respuestas");
+      formdata.append("respuestas", JSON.stringify(respuestas));
+      var ruta_static = "http://localhost/apillorona/";
+      const response = await axios.post(
+        ruta_static + "controlador/UsuarioController.php",
+        formdata,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
+      console.log(response.data);
+      return response.data;
+    } catch (error) {
+      console.error("Error al actualizar el registro:", error);
+    }
+  };
+  const handleSubmitRespuestas = async () => {
+    const respuestasCompletas = formActive.every(
+      (item) => item.respuesta.trim() !== "" && item?.calificacion
+    );
+    const nuevasRespuestas = formActive.map((item) => ({
+      pregunta_id: item?.id,
+      calificaicon: item?.calificacion,
+      repsuesta: item?.respuesta,
+    }));
+    if (respuestasCompletas) {
+      let registro = await registrar_respuestas(nuevasRespuestas);
+      console.log(registro);
+      // Aquí puedes enviar el formulario
+      console.log("Formulario enviado");
+    } else {
+      toast.warning("Por favor llena todos los campos del formulario");
+      console.log("Por favor completa todas las respuestas");
+    }
+  };
+  useEffect(() => {
+    buscar_formulario_activo();
+  }, [0]);
   const router = useRouter();
   const generarCodigoUnico = () => {
     const randomNumber = Math.floor(Math.random() * 900000) + 100000;
@@ -113,9 +217,106 @@ const Regalos = () => {
     // }
   };
   return (
-    <div className="bg-black z-[10000] fixed top-0 left-0 w-full flex items-center justify-center h-screen">
+    <div className="bg-gray-100 w-full flex items-center justify-center py-[80px] px-4">
       <ToastContainer />
-      <form onSubmit={handleSubmit} className="w-full max-w-md">
+      {/* form de cliente para premio */}
+      <div className="form_questions w-full max-w-[800px] mx-auto bg-white  py-12">
+        <div className="bg-white sticky top-[0] px-8 py-4 shadow-lg">
+          <h1 className="text-4xl text-center text-gray-900 sticky top-[20px]">
+            {formActive.length > 0
+              ? formActive[0].nombre_formulario
+              : "cargando formulario"}
+          </h1>
+          <p className="text-xl text-center text-gray-900 sticky top-[80px]">
+            Llena la encuesta y canjea tu codigo con nosotros
+          </p>
+        </div>
+        <div className="grid grid-cols-1 gap-4 px-8 py-12">
+          {formActive.map((question, index) => {
+            return (
+              <div className="group" key={index}>
+                <label className="text-gray-900 font-bold block mb-2">
+                  {question.nombre_pregunta}
+                </label>
+                {question.is_rating === "SI" ? (
+                  <div className="my-6 w-full flex items-center gap-4 justify-center">
+                    {Array.from({ length: question.max_rating }, (_, i) => (
+                      <div
+                        className={`cursor-pointer w-[40px] h-[40px] rounded-full bg-gray-200 font-bold text-center flex items-center justify-center text-xs ${
+                          question.calificacion !== null &&
+                          i < question.calificacion
+                            ? "bg-green-500 text-white"
+                            : ""
+                        }`}
+                        key={i + 1}
+                        onClick={() =>
+                          handleChangeCalificacion(question.id, i + 1)
+                        }
+                      >
+                        {i + 1}
+                      </div>
+                    ))}
+                  </div>
+                ) : null}
+
+                <textarea
+                  key_id={question.id}
+                  type="text"
+                  placeholder="Ingresa tu respuesta aqui"
+                  onChange={(e) => handleChangeResponse(e, question.id)}
+                  className="w-full mb-4 p-2 border border-gray-300"
+                />
+                {question?.status === false ? (
+                  <p style={{ color: "red" }}>Este campo es obligatorio</p>
+                ) : null}
+              </div>
+            );
+          })}
+        </div>
+        <button
+          type="button"
+          onClick={handleSubmitRespuestas}
+          className="mt-8 w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Enviar
+        </button>
+      </div>
+      {/* <Modal
+        width={"800px"}
+        open={modalIsOpen}
+        setOpen={setModalIsOpen}
+        onConfirm={handleFormSubmit}
+        textConfirm={"Crear Formulario"}
+        footer={false}
+      >
+        <div>
+          <h2 className="text-xl font-bold mb-4">Crear Formulario</h2>
+          <input
+            type="text"
+            placeholder="Nombre del formulario"
+            className="border border-gray-400 rounded w-full px-3 py-2 mb-4"
+            value={formName}
+            onChange={(e) => setFormName(e.target.value)}
+          />
+        </div>
+        <div className="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+          <button
+            type="button"
+            className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-green-600 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 sm:ml-3 sm:w-auto sm:text-sm"
+            onClick={handleFormSubmit}
+          >
+            Guardar
+          </button>
+          <button
+            type="button"
+            className="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 sm:mt-0 sm:w-auto sm:text-sm"
+            onClick={closeModal}
+          >
+            Cancelar
+          </button>
+        </div>
+      </Modal> */}
+      <form onSubmit={handleSubmit} className="w-full max-w-md hidden">
         <h1 className="text-4xl text-white">
           Llena la encuesta y canjea tu codigo con nosotros
         </h1>
