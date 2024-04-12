@@ -130,9 +130,9 @@ function RoadopeningFacebook() {
             <div className="md:w-3/4">
               {" "}
               <p className="w-full max-w-[800px]  mx-auto text-justify sm:text-2xl text-xl text-black text-bold sm:pl-4 sm:text-lg text-sm pt-2 px-2">
-                We are pleased to invite you to taste dishes that we have
-                selected for you from our new menu, accompanied by our guest
-                bartender and DJ rasnyshh.
+                We are pleased to invite you to taste dishes that the chef Jorge
+                Dumit have selected for you from our new menu, accompanied by
+                our guest bartender and DJ rasnyshh.
               </p>
             </div>
           </div>
