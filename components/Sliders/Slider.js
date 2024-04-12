@@ -62,11 +62,9 @@ const Slider = () => {
                     alt=""
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
-                    pizza llorona
+                    Masa madre
                   </h1>
-                  <p className="text-xs md:text-xl text-white">
-                    Nuestra pizza de masa madre
-                  </p>
+                  <p className="text-xs md:text-xl text-white">Artesanal </p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>

@@ -53,7 +53,7 @@ const TestimonialCard = ({ testimonial }) => {
 
 const Carousel = ({ testimonials }) => {
   return (
-    <div className="relative max-w-[1080px] mx-auto">
+    <div className="relative max-w-[1080px] mx-auto bg-black">
       <div className="flex gap-x-1 md:gap-x-4">
         <Swiper
           slidesPerView={1}

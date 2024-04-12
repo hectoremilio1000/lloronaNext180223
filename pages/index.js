@@ -457,7 +457,7 @@ export default function Home() {
           </div>
         </>
       )}
-      <QuickInfo4 />
+      {/* <QuickInfo4 /> */}
       <Encontramos />
     </div>
   );

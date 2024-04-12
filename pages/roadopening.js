@@ -43,7 +43,7 @@ function Roadopening() {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between lg:p-8">
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-center lg:p-8">
         <div className="lg:w-1/4">
           <p className="w-full max-w-[1000px]  mx-auto text-justify sm:text-2xl text-xl text-black text-bold">
             Primer acto
@@ -64,7 +64,7 @@ function Roadopening() {
       </div>
       <>
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between lg:p-8">
-          <div className="lg:w-1/3">
+          <div className="lg:w-1/2 flex lg:justify-center">
             <div class="max-w-sm rounded overflow-hidden shadow-lg">
               <img
                 class="w-full"
@@ -78,29 +78,17 @@ function Roadopening() {
               </div>
             </div>
           </div>
-          <div className="lg:w-1/3">
+          <div className="lg:w-1/2 flex lg:justify-center">
             <div class="max-w-sm rounded overflow-hidden shadow-lg">
               <img
                 class="w-full"
-                src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/aguacatechicharronrobeye.jpg"
+                src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/Screenshot+2024-04-11+at+20.20.30.png"
                 alt="Sunset in the mountains"
+                height="400"
               />{" "}
               <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">Jorge dumit</div>
-                <p class="text-gray-700 text-base">chef</p>
-              </div>
-            </div>
-          </div>
-          <div className="lg:w-1/3">
-            <div class="max-w-sm rounded overflow-hidden shadow-lg">
-              <img
-                class="w-full"
-                src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/aguacatechicharronrobeye.jpg"
-                alt="Sunset in the mountains"
-              />{" "}
-              <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">Jorge dumit</div>
-                <p class="text-gray-700 text-base">chef</p>
+                <div class="font-bold text-xl mb-2">rasnyshhdj</div>
+                <p class="text-gray-700 text-base">dj</p>
               </div>
             </div>
           </div>

@@ -6,6 +6,8 @@ import title from "../components/Main/title.module.css";
 import { useAppContext } from "../components/context/Context";
 import Head from "next/head";
 import Script from "next/script";
+import * as fbq from "../lib/fpixel";
+import YouTube from "react-youtube";
 import { FB_PIXEL_ID } from "../lib/fpixel";
 
 import { InlineWidget } from "react-calendly";
@@ -119,16 +121,12 @@ function Reserva() {
                       </div>
                     </Link>
                   </div>
-                  <p className="text-start text-white sm:text-xs md:text-md">
+                  <p className="text-start text-white sm:text-xs md:text-md mt-3">
                     La <b>piñata cumpleañera</b> no tiene costo, y aplica todos
                     los jueves si cumples años en el mes ❤️ y solo tienen que
-                    hacer reservación en cualquiera de nuestras redes sociales.
-                    Les regalamos dulces típicos mexicanos y una botella de
-                    nuestro mejor mezcal de la casa 🍶🥃 madre cuishe el cual
-                    está elaborado artesanalmente. Este <b>mezcal premium </b>de
-                    la más alta calidad y está elaborado con un proceso
-                    artesanal proveniente de un gran maestro mezcalero de la
-                    Ciudad de Oaxaca, México.
+                    hacer reservación. Les regalamos dulces típicos mexicanos y
+                    una botella de nuestro{" "}
+                    <b>mezcal premium madre cuishe 🍶🥃</b>.
                   </p>
                   <div className="overflow-auto">
                     <ModalAll
@@ -174,9 +172,6 @@ function Reserva() {
                           src={image3}
                           alt="Música en vivo"
                         />
-                        <p className="text-white">
-                          Disfruta, baile <br />y festeja
-                        </p>
                       </div>
                     </Link>
 
@@ -187,23 +182,15 @@ function Reserva() {
                           src={image4}
                           alt="Música en vivo"
                         />
-                        <p className="text-white text-center">
-                          Grandes artistas <br />
-                          aman nuestro lugar
-                        </p>
                       </div>
                     </Link>
                   </div>
-                  <p className="text-start text-white sm:text-xs md:text-md">
-                    La <b>piñata cumpleañera</b> no tiene costo, y aplica todos
-                    los jueves si cumples años en el mes ❤️ y solo tienen que
-                    hacer reservación en cualquiera de nuestras redes sociales.
-                    Les regalamos dulces típicos mexicanos y una botella de
-                    nuestro mejor mezcal de la casa 🍶🥃 madre cuishe el cual
-                    está elaborado artesanalmente. Este <b>mezcal premium </b>de
-                    la más alta calidad y está elaborado con un proceso
-                    artesanal proveniente de un gran maestro mezcalero de la
-                    Ciudad de Oaxaca, México.
+                  <p className="text-start text-white sm:text-xs md:text-md mt-3">
+                    The birthday piñata is free of charge and applies every
+                    Thursday if your birthday is in the month. You just need to
+                    make a reservation. We give away traditional Mexican candies
+                    and a bottle of our best house mezcal 🍶🥃 madre cuishe,
+                    which is handcrafted.
                   </p>
                   <div className="overflow-auto">
                     <ModalAll

@@ -12,16 +12,14 @@ function Encontramos() {
           <>
             <div>
               <h1 className="text-center text-white text-3xl md:text-4xl uppercase font-black">
-                Ubicación de esta Increíble experiencia
+                Nuestra ubicación
               </h1>
             </div>
             <div>
               <h4 className="text-white text-lg md:text-xl text-center">
                 Alvaro Obregón 308 Roma Condesa
               </h4>
-              <h4 className="text-white text-lg md:text-xl text-center">
-                Somos un Restaurante premiado
-              </h4>
+              
               <div className="linea"></div>
             </div>
             <div
@@ -66,9 +64,7 @@ function Encontramos() {
               <h4 className="text-white text-lg md:text-xl text-center">
                 Alvaro Obregón 308 Roma Condesa
               </h4>
-              <h4 className="text-white text-lg md:text-xl text-center">
-                We are an award-winning restaurant
-              </h4>
+             
               <div className="linea"></div>
             </div>
             <div
