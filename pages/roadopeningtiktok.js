@@ -59,9 +59,9 @@ function RoadopeningTiktok() {
             <div className="lg:w-3/4">
               {" "}
               <p className="w-full max-w-[800px]  mx-auto text-justify sm:text-2xl text-xl text-black text-bold ml-4 sm:text-lg text-sm">
-                Tenemos el gusto de invitarte a que degustes platillos que hemos
-                seleccionado para ti de nuestro nuevo menú, acompañados de
-                nuestro bartender invitado y de dj rasnyshh.
+                Tenemos el gusto de invitarte a que degustes platillos que el
+                chef Jorge Dumit ha seleccionado para ti de nuestro nuevo menú,
+                acompañados de nuestro bartender invitado y de dj rasnyshh.
               </p>
             </div>
           </div>
