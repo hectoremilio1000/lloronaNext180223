@@ -90,7 +90,7 @@ function ReservaTiktok() {
             <>
               <div className="w-full max-w-[1184px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-8 text-center">
                 <div className="w-full">
-                  <h1 className="font-bold text-2xl text-white">
+                  <h1 className="text2xl md:text-4xl font-bold text-center text-white">
                     Los jueves piñata cumpleañera <br />
                     con una botella de mezcal
                   </h1>
