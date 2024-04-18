@@ -20,7 +20,8 @@ const Loginapp = () => {
     try {
       var formdata = new FormData();
       formdata.append("funcion", "buscar_formularios");
-      var ruta_static = "http://localhost/apillorona/";
+      // var ruta_static = "http://localhost/apillorona/";
+      var ruta_static = "https://api.lalloronacantina.com/";
       var requestOptions = {
         method: "POST",
         body: formdata,
@@ -57,7 +58,9 @@ const Loginapp = () => {
       formdata.append("id", id);
       formdata.append("nombre", nombre);
       formdata.append("status", status);
-      var ruta_static = "http://localhost/apillorona/";
+      // var ruta_static = "http://localhost/apillorona/";
+
+      var ruta_static = "https://api.lalloronacantina.com/";
       const response = await axios.post(
         ruta_static + "controlador/UsuarioController.php",
         formdata,
@@ -123,7 +126,9 @@ const Loginapp = () => {
   const addQuestion = async () => {
     try {
       var indice = 0;
-      var ruta_static = "http://localhost/apillorona/";
+      // var ruta_static = "http://localhost/apillorona/";
+
+      var ruta_static = "https://api.lalloronacantina.com/";
       const formdata = new FormData();
       const fecha_created = dayjs().format("YYYY-MM-DD HH:mm:ss");
       formdata.append("funcion", "crear_pregunta");
@@ -166,7 +171,9 @@ const Loginapp = () => {
       console.log(id);
       let confirmado = confirm("Estas seguro de eliminar esta pregunta");
       if (confirmado) {
-        var ruta_static = "http://localhost/apillorona/";
+        // var ruta_static = "http://localhost/apillorona/";
+
+        var ruta_static = "https://api.lalloronacantina.com/";
         const formdata = new FormData();
         const fecha_created = dayjs().format("YYYY-MM-DD HH:mm:ss");
         formdata.append("funcion", "eliminar_pregunta");
@@ -237,7 +244,9 @@ const Loginapp = () => {
   const updateQuestion = async (id, newData) => {
     try {
       // Llamar a una función para enviar la petición a PHP
-      var ruta_static = "http://localhost/apillorona/";
+      // var ruta_static = "http://localhost/apillorona/";
+
+      var ruta_static = "https://api.lalloronacantina.com/";
       const formdata = new FormData();
       formdata.append("funcion", "update_pregunta");
       formdata.append("id_question", id);
@@ -264,7 +273,9 @@ const Loginapp = () => {
   // formulario api llorona
   const crear_formulario = async (name, fecha_created) => {
     try {
-      var ruta_static = "http://localhost/apillorona/";
+      // var ruta_static = "http://localhost/apillorona/";
+
+      var ruta_static = "https://api.lalloronacantina.com/";
       const formdata = new FormData();
       formdata.append("funcion", "crear_formulario");
       formdata.append("nombre", name);
@@ -301,7 +312,9 @@ const Loginapp = () => {
   // eventos de preguntas
   const buscar_preguntas = async (id) => {
     try {
-      var ruta_static = "http://localhost/apillorona/";
+      // var ruta_static = "http://localhost/apillorona/";
+
+      var ruta_static = "https://api.lalloronacantina.com/";
       const formdata = new FormData();
       formdata.append("funcion", "buscar_preguntas");
       formdata.append("id", id);

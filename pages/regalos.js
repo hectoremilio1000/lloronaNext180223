@@ -11,12 +11,52 @@ const Regalos = () => {
   const [email, setEmail] = useState("");
   const [celular, setCelular] = useState([]);
   const [formActive, setFormActive] = useState([]);
+  const [premios, setPremios] = useState([]);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
   // Agrega más campos según sea necesario
+  const buscar_premios = async () => {
+    try {
+      var formdata = new FormData();
+      formdata.append("funcion", "buscar_premios");
+      // var ruta_static = "http://localhost/apillorona/";
+
+      var ruta_static = "https://api.lalloronacantina.com/";
+      var requestOptions = {
+        method: "POST",
+        body: formdata,
+        redirect: "follow",
+      };
+      const response = await fetch(
+        ruta_static + `controlador/UsuarioController.php`,
+        requestOptions
+      );
+      if (!response.error) {
+        const data = await response.json();
+        console.log(data);
+
+        if (data.mensaje === "no-data") {
+          setPremios([]);
+        } else {
+          if (data.error) {
+            console.log(data.error);
+          } else {
+            setPremios(data);
+          }
+        }
+      } else {
+        console.error(response.error);
+      }
+    } catch (error) {
+      console.error("Error al buscar el registro:", error);
+    }
+  };
   const buscar_formulario_activo = async () => {
     try {
       var formdata = new FormData();
       formdata.append("funcion", "buscar_formulario_activo");
-      var ruta_static = "http://localhost/apillorona/";
+      // var ruta_static = "http://localhost/apillorona/";
+
+      var ruta_static = "https://api.lalloronacantina.com/";
       var requestOptions = {
         method: "POST",
         body: formdata,
@@ -69,13 +109,136 @@ const Regalos = () => {
     setFormActive(nuevasRespuestas);
   };
 
-  const registrar_respuestas = async (respuestas) => {
+  const registrar_con_cliente = async () => {
+    try {
+      if (nombre !== "" && celular !== "" && email !== "") {
+        var formdata = new FormData();
+        formdata.append("funcion", "registrar_cliente");
+        formdata.append("nombre", nombre);
+        formdata.append("email", email);
+        formdata.append("celular", celular);
+        // var ruta_static = "http://localhost/apillorona/";
+
+        var ruta_static = "https://api.lalloronacantina.com/";
+        const response = await axios.post(
+          ruta_static + "controlador/UsuarioController.php",
+          formdata,
+          {
+            headers: {
+              "Content-Type": "multipart/form-data",
+            },
+          }
+        );
+        let data = response.data;
+        console.log(response.data);
+        if (data[0].msg === "add-cliente") {
+          const respuestasSend = await registrar_respuestas(
+            formActive,
+            data[0].cliente_id
+          );
+          if (respuestasSend[0].msg === "add-respuestas") {
+            await generar_premio(data[0].cliente_id);
+
+            toast.success("Se registraron las respuestas, revisa tu email");
+            setFormActive([]);
+            setNombre("");
+            setCelular("");
+            setEmail("");
+            setModalIsOpen(false);
+          } else {
+            toast.error("Ocurrio un error intentalo mas tarde");
+          }
+        } else {
+          toast.error(
+            "ocurrio un error y no se pudo registrar tus datos personales"
+          );
+        }
+      } else {
+        toast.warning("Los campos de tus datos deben estar llenos");
+      }
+    } catch (error) {
+      console.error("Error al actualizar el registro:", error);
+    }
+  };
+  const registrar_sin_cliente = async () => {
+    try {
+      var formdata = new FormData();
+      formdata.append("funcion", "registrar_cliente");
+      formdata.append("nombre", "DEFECTO");
+      formdata.append("email", "");
+      formdata.append("celular", "");
+      // var ruta_static = "http://localhost/apillorona/";
+
+      var ruta_static = "https://api.lalloronacantina.com/";
+      const response = await axios.post(
+        ruta_static + "controlador/UsuarioController.php",
+        formdata,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
+      let data = response.data;
+      console.log(response.data);
+      if (data[0].msg === "add-cliente") {
+        const respuestasSend = await registrar_respuestas(
+          formActive,
+          data[0].cliente_id
+        );
+        if (respuestasSend[0].msg === "add-respuestas") {
+          toast.success("Se registraron las respuestas, revisa tu email");
+          setFormActive([]);
+          setNombre("");
+          setCelular("");
+          setEmail("");
+          setModalIsOpen(false);
+        } else {
+          toast.error("Ocurrio un error intentalo mas tarde");
+        }
+      } else {
+        toast.error(
+          "ocurrio un error y no se pudo registrar tus datos personales"
+        );
+      }
+    } catch (error) {
+      console.error("Error al actualizar el registro:", error);
+    }
+  };
+  const registrar_cliente = async () => {
     try {
       console.log(respuestas);
       var formdata = new FormData();
-      formdata.append("funcion", "registrar_respuestas");
+      formdata.append("funcion", "registrar_cliente");
+      formdata.append("id_cliente", id_cliente);
       formdata.append("respuestas", JSON.stringify(respuestas));
-      var ruta_static = "http://localhost/apillorona/";
+      // var ruta_static = "http://localhost/apillorona/";
+
+      var ruta_static = "https://api.lalloronacantina.com/";
+      const response = await axios.post(
+        ruta_static + "controlador/UsuarioController.php",
+        formdata,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
+      console.log(response.data);
+      return response.data;
+    } catch (error) {
+      console.error("Error al actualizar el registro:", error);
+    }
+  };
+  const registrar_respuestas = async (respuestas, id_cliente) => {
+    try {
+      var formdata = new FormData();
+      formdata.append("funcion", "registrar_respuestas");
+      formdata.append("id_cliente", id_cliente);
+      formdata.append("respuestas", JSON.stringify(respuestas));
+      // var ruta_static = "http://localhost/apillorona/";
+
+      var ruta_static = "https://api.lalloronacantina.com/";
       const response = await axios.post(
         ruta_static + "controlador/UsuarioController.php",
         formdata,
@@ -95,23 +258,22 @@ const Regalos = () => {
     const respuestasCompletas = formActive.every(
       (item) => item.respuesta.trim() !== "" && item?.calificacion
     );
-    const nuevasRespuestas = formActive.map((item) => ({
-      pregunta_id: item?.id,
-      calificaicon: item?.calificacion,
-      repsuesta: item?.respuesta,
-    }));
+    // const nuevasRespuestas = formActive.map((item) => ({
+    //   pregunta_id: item?.id,
+    //   calificaicon: item?.calificacion,
+    //   repsuesta: item?.respuesta,
+    // }));
     if (respuestasCompletas) {
-      let registro = await registrar_respuestas(nuevasRespuestas);
-      console.log(registro);
-      // Aquí puedes enviar el formulario
-      console.log("Formulario enviado");
+      setModalIsOpen(true);
+      // let registro = await registrar_respuestas(nuevasRespuestas);
+      // console.log(registro);
     } else {
       toast.warning("Por favor llena todos los campos del formulario");
-      console.log("Por favor completa todas las respuestas");
     }
   };
   useEffect(() => {
     buscar_formulario_activo();
+    buscar_premios();
   }, [0]);
   const router = useRouter();
   const generarCodigoUnico = () => {
@@ -119,21 +281,10 @@ const Regalos = () => {
     return randomNumber.toString();
   };
   const generarRegalo = () => {
-    const numeroAleatorio = Math.floor(Math.random() * 3) + 1;
+    const numeroAleatorio = Math.floor(Math.random() * premios.length) + 1;
     // Asociar cada premio con el número aleatorio
-    let premio = "";
-    switch (numeroAleatorio) {
-      case 1:
-        premio = "2x1 en cocteles";
-        break;
-      case 2:
-        premio = "Piñata estilo llorona";
-        break;
-      case 3:
-        premio = "Barril de cerveza";
-        break;
-    }
-    return premio;
+    const premioEncontrado = premios[numeroAleatorio - 1];
+    return premioEncontrado;
   };
   function validateInputs(nombre, email, celular) {
     // Expresiones regulares para validar el nombre, email y celular
@@ -167,44 +318,72 @@ const Regalos = () => {
     // Si todas las validaciones pasan, retorna true
     return true;
   }
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    // Validar los inputs
-    // if (validateInputs(nombre, email, celular)) {
-    //   // Si la validación pasa, aquí puedes realizar acciones adicionales, como enviar los datos al servidor
-    //   console.log(
-    //     "Los datos son válidos. Puedes proceder con el envío del formulario."
-    //   );
-    // } else {
-    const codigoUnico = generarCodigoUnico();
-    const regalo_seleccionado = generarRegalo();
-    const fecha_vigente = dayjs().add(15, "day").format("YYYY-MM-DD HH:mm:ss");
-    console.log(fecha_vigente);
-    var formdata = new FormData();
-    formdata.append("funcion", "crear_premio");
-    formdata.append("nombre", nombre);
-    formdata.append("email", email);
-    formdata.append("celular", celular);
-    formdata.append("regalo", regalo_seleccionado);
-    formdata.append("codigo_unico", codigoUnico);
-    formdata.append("fecha_vigente", fecha_vigente);
-    var requestOptions = {
-      method: "POST",
-      body: formdata,
-      redirect: "follow",
-    };
+  const enviar_email = async (nombre, email, premio, codigoUnico) => {
     try {
-      const response = await fetch(
-        "https://api.lalloronacantina.com/controlador/UsuarioController.php",
-        requestOptions
+      // var ruta_static = "http://localhost/apillorona/";
+
+      var ruta_static = "https://api.lalloronacantina.com/";
+      const response = await axios.post(ruta_static + "sendemail.php", {
+        nombre,
+        email,
+        premio,
+        codigo_unico: codigoUnico,
+      });
+      console.log(response.data);
+      return response.data;
+    } catch (error) {
+      console.error("Error al enviar el email:", error);
+    }
+  };
+  const generar_premio = async (id_cliente) => {
+    try {
+      const codigoUnico = generarCodigoUnico();
+      const regalo_seleccionado = generarRegalo();
+      console.log(regalo_seleccionado);
+      const fecha_creacion = dayjs().format("YYYY-MM-DD HH:mm:ss");
+      const fecha_vigente = dayjs()
+        .add(15, "day")
+        .format("YYYY-MM-DD HH:mm:ss");
+      console.log(fecha_vigente);
+      var formdata = new FormData();
+      formdata.append("funcion", "crear_premio");
+      formdata.append("cliente_id", id_cliente);
+      formdata.append("premio_id", regalo_seleccionado.id);
+      formdata.append("codigo_unico", codigoUnico);
+      formdata.append("fecha_creacion", fecha_creacion);
+      formdata.append("fecha_vigente", fecha_vigente);
+
+      // var ruta_static = "http://localhost/apillorona/";
+
+      var ruta_static = "https://api.lalloronacantina.com/";
+      const response = await axios.post(
+        ruta_static + "controlador/UsuarioController.php",
+        formdata,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
       );
-      const data = await response.text();
+      const data = response.data;
       console.log(data);
       if (data === "add-premio") {
+        const emailSend = await enviar_email(
+          nombre,
+          email,
+          regalo_seleccionado.regalo,
+          codigoUnico
+        );
+        if (emailSend === "add-email") {
+          toast.success(
+            "Se ha registrado tus respuestas, revisa tu correo electronico"
+          );
+        } else {
+          toast.error("No se envio el email por SMTP");
+        }
         const queryParams = new URLSearchParams({
           nombre,
-          regalo_seleccionado,
+          regalo_seleccionado: regalo_seleccionado.regalo,
           codigoUnico,
         });
         router.push(`/bookpoint?${queryParams.toString()}`);
@@ -281,78 +460,64 @@ const Regalos = () => {
           Enviar
         </button>
       </div>
-      {/* <Modal
+      <Modal
         width={"800px"}
         open={modalIsOpen}
         setOpen={setModalIsOpen}
-        onConfirm={handleFormSubmit}
-        textConfirm={"Crear Formulario"}
+        textConfirm={"Enviar"}
         footer={false}
       >
-        <div>
-          <h2 className="text-xl font-bold mb-4">Crear Formulario</h2>
+        {" "}
+        <h1 className="text-4xl">
+          Hola Gracias por completar la encuesta.
+          <br />
+        </h1>
+        <div className="w-full">
+          <label className="text-gray-900 block mb-2">Nombre:</label>
           <input
             type="text"
-            placeholder="Nombre del formulario"
-            className="border border-gray-400 rounded w-full px-3 py-2 mb-4"
-            value={formName}
-            onChange={(e) => setFormName(e.target.value)}
+            placeholder="Ingresa tu nombre aqui"
+            value={nombre}
+            onChange={(e) => setNombre(e.target.value)}
+            className="w-full mb-4 p-2 border border-gray-300"
           />
-        </div>
-        <div className="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-          <button
-            type="button"
-            className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-green-600 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 sm:ml-3 sm:w-auto sm:text-sm"
-            onClick={handleFormSubmit}
-          >
-            Guardar
-          </button>
-          <button
-            type="button"
-            className="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 sm:mt-0 sm:w-auto sm:text-sm"
-            onClick={closeModal}
-          >
-            Cancelar
-          </button>
-        </div>
-      </Modal> */}
-      <form onSubmit={handleSubmit} className="w-full max-w-md hidden">
-        <h1 className="text-4xl text-white">
-          Llena la encuesta y canjea tu codigo con nosotros
-        </h1>
-        <label className="text-white block mb-2">Nombre:</label>
-        <input
-          type="text"
-          placeholder="Ingresa tu nombre aqui"
-          value={nombre}
-          onChange={(e) => setNombre(e.target.value)}
-          className="w-full mb-4 p-2 border border-gray-300"
-        />
 
-        <label className="text-white block mb-2">Email:</label>
-        <input
-          type="email"
-          placeholder="Ingresa tu @correo aqui"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className="w-full mb-4 p-2 border border-gray-300"
-        />
-        <label className="text-white block mb-2">Whatsapp o celular:</label>
-        <input
-          type="text"
-          placeholder="Ingresa tu +52 celular aqui"
-          value={celular}
-          onChange={(e) => setCelular(e.target.value)}
-          className="w-full mb-4 p-2 border border-gray-300"
-        />
-
-        <button
-          type="submit"
-          className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-        >
-          Enviar
-        </button>
-      </form>
+          <label className="text-gray-900 block mb-2">Email:</label>
+          <input
+            type="email"
+            placeholder="Ingresa tu @correo aqui"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="w-full mb-4 p-2 border border-gray-300"
+          />
+          <label className="text-gray-900 block mb-2">
+            Whatsapp o celular:
+          </label>
+          <input
+            type="text"
+            placeholder="Ingresa tu +52 celular aqui"
+            value={celular}
+            onChange={(e) => setCelular(e.target.value)}
+            className="w-full mb-4 p-2 border border-gray-300"
+          />
+          <div className="flex">
+            <button
+              type="button"
+              onClick={registrar_con_cliente}
+              className="mt-8 w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            >
+              Enviar
+            </button>
+            <button
+              type="button"
+              onClick={registrar_sin_cliente}
+              className="mt-8 w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            >
+              Solo enviar respuestas
+            </button>
+          </div>
+        </div>
+      </Modal>
     </div>
   );
 };

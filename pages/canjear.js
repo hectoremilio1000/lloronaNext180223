@@ -15,8 +15,12 @@ const Canjear = () => {
         body: formdata,
         redirect: "follow",
       };
+
+      // var ruta_static = "http://localhost/apillorona/";
+
+      var ruta_static = "https://api.lalloronacantina.com/";
       const response = await fetch(
-        `https://api.lalloronacantina.com/controlador/UsuarioController.php`,
+        `${ruta_static}controlador/UsuarioController.php`,
         requestOptions
       );
       if (!response.error) {
@@ -53,8 +57,11 @@ const Canjear = () => {
         body: formdata,
         redirect: "follow",
       };
+      // var ruta_static = "http://localhost/apillorona/";
+
+      var ruta_static = "https://api.lalloronacantina.com/";
       const response = await fetch(
-        `https://api.lalloronacantina.com/controlador/UsuarioController.php`,
+        `${ruta_static}controlador/UsuarioController.php`,
         requestOptions
       );
       if (!response.error) {
