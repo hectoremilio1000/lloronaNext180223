@@ -17,11 +17,7 @@ import QuickInfo5 from "../components/QuickInfo5";
 import NavBar from "../components/NavBarEs/NavBarEs";
 import CalendarioFoodieFacebook from "../components/CalendarioFoodieFacebook";
 
-function Foodiefacebook() {
-  // useEffect(() => {
-  //   fbq.event('reserva')
-  // }, []);
-
+function Foodieface() {
   const opts = {
     height: "350",
     width: "300",
@@ -239,4 +235,4 @@ function Foodiefacebook() {
   );
 }
 
-export default Foodiefacebook;
+export default Foodieface;
