@@ -14,6 +14,9 @@ import { InlineWidget } from "react-calendly";
 import ModalAll from "../components/ModalAll";
 import NavBarWhite from "../components/NavbarWhite";
 import CalendarioFacebook from "../components/CalendarioFacebook";
+import QuickInfo5 from "../components/QuickInfo5";
+import NavBar from "../components/NavBarEs/NavBarEs";
+import CalendarioTiktok from "../components/CalendarioTiktok";
 
 function ReservaFacebook() {
   // useEffect(() => {
@@ -82,11 +85,6 @@ function ReservaFacebook() {
             src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
           />
         </noscript>
-        <script
-          src="https://static.elfsight.com/platform/platform.js"
-          data-use-service-core
-          defer
-        ></script>
       </Head>
       <>
         {espa ? (
@@ -104,16 +102,16 @@ function ReservaFacebook() {
             />
           </Head>
         )}
-        <NavBarWhite />
-        <div className="w-full bg-white h-[400px]"></div>
-        <div className="w-full bg-white -mt-[200px]">
+        <NavBar />
+        <div className="w-full bg-black h-[400px]"></div>
+        <div className="w-full bg-[#020a06] -mt-[200px]">
           {espa ? (
             <>
               <div className="w-full max-w-[1184px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-8 text-center">
                 <div className="w-full">
-                  <h1 className="font-bold text-4xl text-gray-900">
+                  <h1 className="text2xl md:text-4xl font-bold text-center text-white">
                     Los jueves piñata cumpleañera <br />
-                    con una botella de mezcal para disfrutar
+                    con una botella de mezcal
                   </h1>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <Link href="/reserva">
@@ -123,9 +121,6 @@ function ReservaFacebook() {
                           src={image3}
                           alt="Música en vivo"
                         />
-                        <p className="text-gray-900">
-                          Disfruta, baile <br />y festeja
-                        </p>
                       </div>
                     </Link>
 
@@ -136,55 +131,52 @@ function ReservaFacebook() {
                           src={image4}
                           alt="Música en vivo"
                         />
-                        <p className="text-gray-900 text-center">
-                          Grandes artistas <br />
-                          aman nuestro lugar
-                        </p>
                       </div>
                     </Link>
                   </div>
-                  <p className="text-start text-gray-900 sm:text-xs md:text-md">
+                  <p className="text-start text-white sm:text-xs md:text-md mt-4">
                     La <b>piñata cumpleañera</b> no tiene costo, y aplica todos
                     los jueves si cumples años en el mes ❤️ y solo tienen que
-                    hacer reservación en cualquiera de nuestras redes sociales.
-                    Les regalamos dulces típicos mexicanos y una botella de
-                    nuestro mejor mezcal de la casa 🍶🥃 madre cuishe el cual
-                    está elaborado artesanalmente. Este <b>mezcal premium </b>de
-                    la más alta calidad y está elaborado con un proceso
-                    artesanal proveniente de un gran maestro mezcalero de la
-                    Ciudad de Oaxaca, México.
+                    hacer reservación. Les regalamos dulces típicos mexicanos y
+                    una botella de nuestro{" "}
+                    <b>mezcal premium madre cuishe 🍶🥃</b>.
                   </p>
+
                   <div className="overflow-auto">
                     <ModalAll
                       className="w-[850px]"
                       open={open}
                       setOpen={setOpen}
                     >
-                      <InlineWidget url="https://calendly.com/reservaciones-14/tiktok-reservaciones-llorona-clon?hide_gdpr_banner=1" />
+                      <InlineWidget url="https://calendly.com/reservaciones-14/reservaciones-llorona?hide_gdpr_banner=1" />
                     </ModalAll>
                   </div>
                 </div>
                 <div className="w-full">
-                  <CalendarioFacebook />
+                  <CalendarioTiktok />
                 </div>
               </div>
-              <div className="w-full max-w-[1184px] mx-auto my-16">
-                <h1 className="font-bold text-4xl text-center text-gray-900 mt-16 mb-8">
-                  Clientes satisfechos
-                </h1>
-                <div
-                  className="elfsight-app-061d54f3-a4df-48b1-96c3-7355ad5360c9"
-                  data-elfsight-app-lazy
-                ></div>
+              <div className="overflow-hidden bg-black">
+                <div className="flex items-center gap-4 whitespace-nowrap">
+                  <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
+                    TESTIMONIOS
+                  </h1>
+                  <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                    TESTIMONIOS
+                  </h1>
+                </div>
+              </div>
+              <div className="bg-black py-[50px]">
+                <QuickInfo5 idioma={espa} />
               </div>
             </>
           ) : (
             <>
               <div className="w-full max-w-[1184px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-8 text-center">
                 <div className="w-full">
-                  <h1 className="font-bold text-4xl text-gray-900">
-                    Los jueves piñata cumpleañera <br />
-                    con una botella de mezcal para disfrutar
+                  <h1 className="font-bold text-4xl text-white">
+                    On Thursdays, a birthday <br />
+                    piñata with a bottle of mezcal
                   </h1>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <Link href="/reserva">
@@ -194,9 +186,6 @@ function ReservaFacebook() {
                           src={image3}
                           alt="Música en vivo"
                         />
-                        <p className="text-gray-900">
-                          Disfruta, baile <br />y festeja
-                        </p>
                       </div>
                     </Link>
 
@@ -207,23 +196,15 @@ function ReservaFacebook() {
                           src={image4}
                           alt="Música en vivo"
                         />
-                        <p className="text-gray-900 text-center">
-                          Grandes artistas <br />
-                          aman nuestro lugar
-                        </p>
                       </div>
                     </Link>
                   </div>
-                  <p className="text-start text-gray-900 sm:text-xs md:text-md">
-                    La <b>piñata cumpleañera</b> no tiene costo, y aplica todos
-                    los jueves si cumples años en el mes ❤️ y solo tienen que
-                    hacer reservación en cualquiera de nuestras redes sociales.
-                    Les regalamos dulces típicos mexicanos y una botella de
-                    nuestro mejor mezcal de la casa 🍶🥃 madre cuishe el cual
-                    está elaborado artesanalmente. Este <b>mezcal premium </b>de
-                    la más alta calidad y está elaborado con un proceso
-                    artesanal proveniente de un gran maestro mezcalero de la
-                    Ciudad de Oaxaca, México.
+                  <p className="text-start text-white sm:text-xs md:text-md mt-3">
+                    The birthday piñata is free of charge and applies every
+                    Thursday if your birthday is in the month. You just need to
+                    make a reservation. We give away traditional Mexican candies
+                    and a bottle of our best house mezcal 🍶🥃 madre cuishe,
+                    which is handcrafted.
                   </p>
                   <div className="overflow-auto">
                     <ModalAll
@@ -231,19 +212,27 @@ function ReservaFacebook() {
                       open={open}
                       setOpen={setOpen}
                     >
-                      <InlineWidget url="https://calendly.com/reservaciones-14/tiktok-reservaciones-llorona-clon?hide_gdpr_banner=1" />
+                      <InlineWidget url="https://calendly.com/reservaciones-14/reservaciones-llorona?hide_gdpr_banner=1" />
                     </ModalAll>
                   </div>
                 </div>
                 <div className="w-full">
-                  <CalendarioFacebook />
+                  <CalendarioTiktok />
                 </div>
               </div>
-              <div className="w-full max-w-[1184px] mx-auto my-16">
-                <h1 className="font-bold text-4xl text-center text-gray-900 mt-16 mb-8">
-                  Satisfied Customers
-                </h1>
-                <div className="elfsight-app-061d54f3-a4df-48b1-96c3-7355ad5360c9"></div>
+
+              <div className="overflow-hidden bg-black">
+                <div className="flex items-center gap-4 whitespace-nowrap">
+                  <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
+                    TESTIMONIALS
+                  </h1>
+                  <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                    TESTIMONIALS
+                  </h1>
+                </div>
+              </div>
+              <div className="bg-black py-[50px]">
+                <QuickInfo5 idioma={espa} />
               </div>
             </>
           )}
