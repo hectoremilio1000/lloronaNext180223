@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper/modules";
 const TestimonialCard = ({ testimonial }) => {
-  const { photo, rating, text, date, url } = testimonial;
+  const { photo, rating, text, date, url, nombre } = testimonial;
   return (
     <a
       href={url}
@@ -40,6 +40,7 @@ const TestimonialCard = ({ testimonial }) => {
           </svg>
         </div>
         <p className="text-xs md:text-sm text-gray-500 mt-1">{date}</p>
+        <p className="text-xs md:text-sm text-gray-500 mt-1">{nombre}</p>
         <div className="overflow-hidden">
           <p
             className="text-ellipsis-vertical text-sm md:text-md text-gray-900 mt-1"

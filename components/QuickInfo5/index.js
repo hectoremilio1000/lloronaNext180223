@@ -14,12 +14,12 @@ function QuickInfo5({ idioma }) {
     },
     {
       photo:
-        "https://lh3.googleusercontent.com/a-/ALV-UjXYp55Vw7rkN8VpKPZ943gxa3x58PDNlOmPUk8FJwrpobKV=w120-h120-p-rp-mo-ba3-br100",
+        "https://lh3.googleusercontent.com/a-/ALV-UjV3DD882RNwLvufn4autcgyzu711qUmhKI2TzdjlOYcvcwBsaSYsA=w120-h120-p-rp-mo-br100",
       rating: 5,
-      nombre: "Dale Piceno",
-      url: "https://g.co/kgs/rJAd94s",
-      text: "Un lugar muy chic, menú de autor, buen sabor y presentación. Muy recomendable y las hamburguesas son delis",
-      date: "2023-03-16",
+      nombre: "Julia Didriksson",
+      url: "https://g.co/kgs/aSThmNh",
+      text: "Es un lugar que me encanta 💌 los cócteles son lo màximo! Recomiendo mucho Cate de mi corazón y el martini de mazapán ❤️‍🔥",
+      date: "2024-03-20",
     },
     {
       photo:
@@ -61,7 +61,7 @@ function QuickInfo5({ idioma }) {
     },
     {
       photo:
-        "https://lh3.googleusercontent.com/a/ACg8ocItU4W0dCOiujTKHmB8VH7wDRsH8AR0F-ho-Gvg0DFD=w72-h72-p-rp-mo-br100",
+        "https://lh3.googleusercontent.com/a/ACg8ocLmTG6uUsqqWar2n-Vg3S6tGYq7FP_j-tT4fO4Tza_eZ9gupg=w120-h120-p-rp-mo-br100",
       rating: 5,
       nombre: "lowell moore",
       url: "https://maps.app.goo.gl/qzCD2gzVXMMeFQRy6",
@@ -70,7 +70,7 @@ function QuickInfo5({ idioma }) {
     },
     {
       photo:
-        "https://lh3.googleusercontent.com/a-/ALV-UjUGcZfuqJgBQdnyKgdkg-oceqZRcc3CqaFmPRfe29OYCnY=w72-h72-p-rp-mo-br100",
+        "https://lh3.googleusercontent.com/a-/ALV-UjUnq3kLCqTg8Ya2Y47-8DBMxQOerAIr0nW9afCrheO4nW6HIWTN=w72-h72-p-rp-mo-br100",
       rating: 5,
       nombre: "sandra baca",
       url: "https://maps.app.goo.gl/ZJMTbNCMEd9dgDLo7",
@@ -79,7 +79,7 @@ function QuickInfo5({ idioma }) {
     },
     {
       photo:
-        "https://lh3.googleusercontent.com/a-/ALV-UjV59R_Omgyfga0TgY28SuqcWYiDp2Z25csoTFPE0c13xEk=w72-h72-p-rp-mo-ba4-br100",
+        "https://lh3.googleusercontent.com/a-/ALV-UjV53O_B5w84E9nEn6l0Bg66cBJv5NwirO2VUOV4PNpqLcaolJ0S=w72-h72-p-rp-mo-ba4-br100",
       rating: 5,
       nombre: "Kelly Ording",
       url: "https://maps.app.goo.gl/C6YMzKvwJMA3i1JPA",
@@ -88,7 +88,7 @@ function QuickInfo5({ idioma }) {
     },
     {
       photo:
-        "https://lh3.googleusercontent.com/a-/ALV-UjUtcBpPxtrulJCOXAOBGTrHtLcvjZ8xse4TBRKRPWKSJ0k=w72-h72-p-rp-mo-ba5-br100",
+        "https://lh3.googleusercontent.com/a-/ALV-UjW7BjPqjw-TVmDTjUfsZkcvUkEOvPby-ELyAOYgDDTC9NboaM8r=w72-h72-p-rp-mo-ba5-br100",
       rating: 5,
       nombre: "Pratik Desai",
       url: "https://maps.app.goo.gl/Rv94nb1T1xtXC8U37",
@@ -97,7 +97,7 @@ function QuickInfo5({ idioma }) {
     },
     {
       photo:
-        "https://lh3.googleusercontent.com/a-/ALV-UjXiW3l7abC7CeoVxAqmpCrki47n0HymK-Qn7z4Qb3K_RA=w72-h72-p-rp-mo-br100",
+        "https://lh3.googleusercontent.com/a-/ALV-UjWsuBUWoGfABlax52aiF1MsOcMiKvDf_taeMRozKrkYobD3RcU=w72-h72-p-rp-mo-br100",
       rating: 5,
       nombre: "Christophe Diot",
       url: "https://maps.app.goo.gl/hidk1jdyDYwZjmFT6",
