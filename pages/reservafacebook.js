@@ -17,6 +17,7 @@ import CalendarioFacebook from "../components/CalendarioFacebook";
 import QuickInfo5 from "../components/QuickInfo5";
 import NavBar from "../components/NavBarEs/NavBarEs";
 import CalendarioTiktok from "../components/CalendarioTiktok";
+import CalendarioFestejoFacebook from "../components/CalendarioFestejoFacebook";
 
 function ReservaFacebook() {
   // useEffect(() => {
@@ -153,9 +154,10 @@ function ReservaFacebook() {
                   </div>
                 </div>
                 <div className="w-full">
-                  <CalendarioTiktok />
+                  <CalendarioFestejoFacebook />
                 </div>
               </div>
+
               <div className="overflow-hidden bg-black">
                 <div className="flex items-center gap-4 whitespace-nowrap">
                   <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
