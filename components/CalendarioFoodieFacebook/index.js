@@ -2,7 +2,7 @@ import React from "react";
 import { InlineWidget } from "react-calendly";
 import { useAppContext } from "../context/Context";
 
-function CalendarioFacebook() {
+function CalendarioFoodieFacebook() {
   const { espa } = useAppContext();
   return (
     <div id="reserva">
@@ -12,7 +12,7 @@ function CalendarioFacebook() {
             <h1 className="text2xl md:text-5xl font-bold text-center text-gray-900">
               Mi casa es tu Casa, Reserva ya
             </h1>
-            <InlineWidget url="https://calendly.com/reservaciones-14/tiktok-reservaciones-llorona-clon" />
+            <InlineWidget url="https://calendly.com/reservaciones-14/foodie-facebook" />
           </div>
         </div>
       ) : (
@@ -21,7 +21,7 @@ function CalendarioFacebook() {
             <h1 className="text2xl md:text-5xl font-bold text-center text-gray-900">
               My house is your house, Book now.
             </h1>
-            <InlineWidget url="https://calendly.com/reservaciones-14/tiktok-reservaciones-llorona-clon" />
+            <InlineWidget url="https://calendly.com/reservaciones-14/foodie-facebook" />
           </div>
         </div>
       )}
@@ -29,4 +29,4 @@ function CalendarioFacebook() {
   );
 }
 
-export default CalendarioFacebook;
+export default CalendarioFoodieFacebook;

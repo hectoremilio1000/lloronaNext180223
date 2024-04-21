@@ -13,11 +13,9 @@ import { FB_PIXEL_ID } from "../lib/fpixel";
 import { InlineWidget } from "react-calendly";
 import ModalAll from "../components/ModalAll";
 import NavBarWhite from "../components/NavbarWhite";
-import CalendarioFacebook from "../components/CalendarioFoodieFacebook";
 import QuickInfo5 from "../components/QuickInfo5";
 import NavBar from "../components/NavBarEs/NavBarEs";
-import CalendarioTiktok from "../components/CalendarioTiktok";
-import CalendarioFestejoFacebook from "../components/CalendarioFestejoFacebook";
+import CalendarioFoodieFacebook from "../components/CalendarioFoodieFacebook";
 
 function ReservaFacebook() {
   // useEffect(() => {
@@ -110,9 +108,9 @@ function ReservaFacebook() {
             <>
               <div className="w-full max-w-[1184px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-8 text-center">
                 <div className="w-full">
-                  <h1 className="text2xl md:text-4xl font-bold text-center text-white">
-                    Los jueves piñata cumpleañera <br />
-                    con una botella de mezcal
+                  <h1 className="font-bold text-4xl text-white">
+                    Donde los sabores de México se fusionan con técnicas de
+                    vanguardia
                   </h1>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <Link href="/reserva">
@@ -135,12 +133,10 @@ function ReservaFacebook() {
                       </div>
                     </Link>
                   </div>
-                  <p className="text-start text-white sm:text-xs md:text-md mt-4">
-                    La <b>piñata cumpleañera</b> no tiene costo, y aplica todos
-                    los jueves si cumples años en el mes ❤️ y solo tienen que
-                    hacer reservación. Les regalamos dulces típicos mexicanos y
-                    una botella de nuestro{" "}
-                    <b>mezcal premium madre cuishe 🍶🥃</b>.
+                  <p className="text-start text-white sm:text-xs md:text-md">
+                    Menú inspirado en <b>Cantinas Mexicanas</b>. Es honesto pero
+                    con jiribilla para acompañar una buena mixología y
+                    recordarnos al méxico que nos hace vibrar.
                   </p>
 
                   <div className="overflow-auto">
@@ -154,7 +150,7 @@ function ReservaFacebook() {
                   </div>
                 </div>
                 <div className="w-full">
-                  <CalendarioFestejoFacebook />
+                  <CalendarioFoodieFacebook />
                 </div>
               </div>
 
@@ -177,8 +173,8 @@ function ReservaFacebook() {
               <div className="w-full max-w-[1184px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-8 text-center">
                 <div className="w-full">
                   <h1 className="font-bold text-4xl text-white">
-                    On Thursdays, a birthday <br />
-                    piñata with a bottle of mezcal
+                    Where Mexico's flavors blend with cutting-edge culinary
+                    techniques
                   </h1>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <Link href="/reserva">
@@ -201,12 +197,10 @@ function ReservaFacebook() {
                       </div>
                     </Link>
                   </div>
-                  <p className="text-start text-white sm:text-xs md:text-md mt-3">
-                    The birthday piñata is free of charge and applies every
-                    Thursday if your birthday is in the month. You just need to
-                    make a reservation. We give away traditional Mexican candies
-                    and a bottle of our best house mezcal 🍶🥃 madre cuishe,
-                    which is handcrafted.
+                  <p className="text-start text-white sm:text-xs md:text-md">
+                    Menu inspired by <b>Mexican Cantinas</b>. It's authentic yet
+                    playful, designed to complement exquisite mixology and evoke
+                    the vibrant Mexico that stirs our souls.
                   </p>
                   <div className="overflow-auto">
                     <ModalAll
@@ -219,7 +213,7 @@ function ReservaFacebook() {
                   </div>
                 </div>
                 <div className="w-full">
-                  <CalendarioTiktok />
+                  <CalendarioFoodieFacebook />
                 </div>
               </div>
 
