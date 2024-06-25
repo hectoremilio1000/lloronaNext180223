@@ -29,7 +29,7 @@ const Slider = () => {
           <div className="w-full max-w-[1184px] mx-auto px-[20px]">
             <Swiper
               spaceBetween={50}
-              slidesPerView={3}
+              slidesPerView={2}
               pagination={{
                 clickable: true,
               }}
@@ -42,7 +42,7 @@ const Slider = () => {
                 },
                 // cuando el ancho de la ventana es igual o mayor a 768px
                 768: {
-                  slidesPerView: 2,
+                  slidesPerView: 3,
                   spaceBetween: 20,
                 },
                 // cuando el ancho de la ventana es igual o mayor a 1024px
@@ -58,27 +58,27 @@ const Slider = () => {
                 <div className="w-full">
                   <img
                     className="rounded-lg border-2 border-white w-full h-[300px] object-top object-cover"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/IMG_8754.jpg"
+                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/tostadaCantinera.jpg"
                     alt=""
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
-                    Masa madre
+                    Tostada
                   </h1>
-                  <p className="text-xs md:text-xl text-white">Artesanal </p>
+                  <p className="text-xs md:text-xl text-white">Cantinera </p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="w-full">
                   <img
-                    className="rounded-lg border-2 border-white w-full h-[300px] object-top object-cover"
+                    className="rounded-lg border-2 border-white w-full h-[300px] object-bottom object-cover"
                     src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologiaIncreible.jpg"
                     alt=""
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
-                    Tacos con maíz criollo
+                    Tacos
                   </h1>
                   <p className="text-xs md:text-xl text-white">
-                    100% nixtamal, sin conservadores
+                    de maíz criollo
                   </p>
                 </div>
               </SwiperSlide>
@@ -105,7 +105,7 @@ const Slider = () => {
                     alt=""
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
-                    Mixología moderna
+                    Mixología
                   </h1>
                   <p className="text-xs md:text-xl text-white">
                     con sabores mexicanos
@@ -159,11 +159,11 @@ const Slider = () => {
                 <div className="w-full">
                   <img
                     className="rounded-lg border-2 border-white w-full h-[300px] object-top object-cover"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/IMG_8754.jpg"
+                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/tostadaCantinera.jpg"
                     alt=""
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
-                    Llorona Pizza
+                    Tostada Cantinera
                   </h1>
                   <p className="text-xs md:text-xl text-white">
                     Our sourdough pizza

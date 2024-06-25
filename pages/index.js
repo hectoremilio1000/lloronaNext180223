@@ -10,13 +10,10 @@ import HeaderEn from "../components/Header-en/HeaderEn";
 import HeaderEs from "../components/Header-es/Header-es";
 import { useAppContext } from "../components/context/Context";
 import Encontramos from "../components/Encontramos";
-import Resena from "../components/Resena/index";
 import * as fbq from "../lib/fpixel";
-import Reserva from "./reserva";
 import Calendario from "../components/Calendario";
 import QuickInfo4 from "../components/QuickInfo4";
 import Slider from "../components/Sliders/Slider";
-import YouTube from "react-youtube";
 import Link from "next/link";
 import NavBar from "../components/NavBarEs/NavBarEs";
 import QuickInfo5 from "../components/QuickInfo5";
@@ -130,11 +127,11 @@ export default function Home() {
             {/* <img src={logo2} width={450} alt="llorona" className="mt-5" /> */}
             <video
               className="h-[75vh] scale-100"
-              playsinline="true"
+              playsInline={true}
               webkit-playsinline="true"
               x-webkit-airplay="true"
               preload="auto"
-              autoplay="autoplay"
+              autoPlay="autoplay"
               loop="loop"
               muted="muted"
               poster=""
