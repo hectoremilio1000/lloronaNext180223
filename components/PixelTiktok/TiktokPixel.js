@@ -2,8 +2,13 @@
 
 import { useEffect } from "react";
 
-const TikTokPixel = ({ pixedId }) => {
+const TikTokPixel = ({ pixelId }) => {
   useEffect(() => {
+    if (!pixelId) {
+      console.error("TikTok Pixel ID is missing.");
+      return;
+    }
+
     !(function (w, d, t) {
       w.TiktokAnalyticsObject = t;
       var ttq = (w[t] = w[t] || []);
@@ -51,7 +56,7 @@ const TikTokPixel = ({ pixedId }) => {
           a.parentNode.insertBefore(o, a);
         });
 
-      ttq.load(pixedId);
+      ttq.load(pixelId);
       ttq.page();
     })(window, document, "ttq");
   }, []);
