@@ -12,7 +12,7 @@ export default function Document() {
           async
           src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
         />
-        ;
+
         <script
           dangerouslySetInnerHTML={{
             __html: `
