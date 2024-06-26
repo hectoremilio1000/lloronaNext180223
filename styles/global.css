@@ -194,7 +194,7 @@ h1 {
 }
 
 .bannerHomeFinal {
-  background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/lugarafuera.jpg");
+  background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/lugarperfectoCDMXlloronaterraza.jpg");
   background-size: cover !important;
   background-repeat: no-repeat;
   height: 90vh;
@@ -521,16 +521,16 @@ ul {
   }
 
   .bannerHome {
-  background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/lugarafuera.jpg");
-  background-size: cover !important;
-  background-repeat: no-repeat;
+    background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/lugarafuera.jpg");
+    background-size: cover !important;
+    background-repeat: no-repeat;
 
-  background-attachment: fixed;
-  height: 100vh;
-  background-position: center;
-  position: relative;
-  /* background-color: #2c2c2c; */
-}
+    background-attachment: fixed;
+    height: 100vh;
+    background-position: center;
+    position: relative;
+    /* background-color: #2c2c2c; */
+  }
 
   .textoFotosHome {
     margin-top: 0px;
@@ -587,7 +587,7 @@ ul {
   }
 
   .bannerHomeFinal {
-    background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/portadaHome/muertosDiamexicollorona.jpg") !important;
+    background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/lugarperfectoCDMXlloronaterraza.jpg") !important;
     background-size: cover !important;
     background-repeat: no-repeat;
     height: 90vh;
