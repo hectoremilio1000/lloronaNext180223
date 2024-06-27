@@ -27,7 +27,7 @@ const CalendlyWidget = () => {
       <div
         className="calendly-inline-widget"
         data-url="https://calendly.com/reservaciones-14/googleads-foodie-llorona?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=3eeb91"
-        style={{ minWidth: "320px", height: "700px" }}
+        style={{ minWidth: "320px", height: "650px" }}
       ></div>
     </>
   );
@@ -39,7 +39,7 @@ function CalendarioGoogleAds() {
     <div id="reserva">
       {espa ? (
         <div className="w-full bg-white">
-          <div className="w-full rounded bg-gray-200 max-w-[1184px] py-[80px] px-[20px] mx-auto">
+          <div className="w-full rounded max-w-[1184px] pt-4 mx-auto bg-gray-200">
             <h1 className="text2xl md:text-5xl font-bold text-center text-gray-900">
               Mi casa es tu Casa, Reserva ya
             </h1>

@@ -443,7 +443,7 @@ function CitaGoogleLlorona() {
                 Reserva ahora 
               </Link> y pide en tu confirmación por whatsapp un postre especial por parte de uno los mejores chefs de México.
                   </p>
-                  <div className="overflow-auto">
+                  {/* <div className="overflow-auto">
                     <ModalAll
                       className="w-[850px]"
                       open={open}
@@ -451,7 +451,7 @@ function CitaGoogleLlorona() {
                     >
                       <InlineWidget url="https://calendly.com/reservaciones-14/googleads-foodie-llorona" />
                     </ModalAll>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="w-full">
                   <CalendarioGoogleAds />
