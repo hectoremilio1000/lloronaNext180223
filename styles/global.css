@@ -204,7 +204,7 @@ h1 {
 }
 
 .bannerHomeFinal1 {
-  background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/terrazaespecialromanceromacondesaamigoscantina.jpg");
+  background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/terrazaespecialromanceromacondesaamigosllorona.jpg");
   background-size: cover !important;
   background-repeat: no-repeat;
   height: 90vh;
@@ -606,10 +606,10 @@ ul {
   }
 
   .bannerHomeFinal1 {
-    background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/terrazaespecialromanceromacondesaamigoscantina.jpg");
+    background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/terrazaespecialromanceromacondesaamigosllorona.jpg");
     background-size: contain !important;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 100vh;
     background-position: bottom;
     position: relative;
     background-attachment: fixed;
