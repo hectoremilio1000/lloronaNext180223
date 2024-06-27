@@ -385,7 +385,7 @@ function CitaGoogleLlorona() {
             </div>
           </div>
         )}
-        <div className="w-full bg-white h-[400px]"></div>
+        <div className="w-full bg-white h-[250px]"></div>
         <div className="w-full bg-white -mt-[200px]">
           {espa ? (
             <>
@@ -394,21 +394,12 @@ function CitaGoogleLlorona() {
                   <h1 className="font-bold text-4xl text-gray-900">
                     Disfruta de la terraza más impactante de CDMX
                   </h1>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
                     {/* <Link href="/reserva"> */}
-                    <div>
-                      <img
-                        className="rounded-lg w-full h-[350px] object-cover"
-                        src={image3}
-                        alt=""
-                      />
-                      {/* <p className="text-gray-900">
-                          Disfruta, baile <br />y festeja
-                        </p> */}
-                    </div>
-                    {/* </Link> */}
+                   
+              
 
-                    {/* <Link href="/reserva"> */}
+          
                     <div>
                       <img
                         className="rounded-lg w-full h-[350px] object-cover"
@@ -420,9 +411,17 @@ function CitaGoogleLlorona() {
                           aman nuestro lugar
                         </p> */}
                     </div>
+                    <div>
+                      <img
+                        className="rounded-lg w-full h-[350px] object-cover"
+                        src={image3}
+                        alt=""
+                      />
+                     
+                    </div>
                     {/* </Link> */}
                   </div>
-                  <p className="text-start text-gray-900 sm:text-xs md:text-md">
+                  <p className="text-start text-gray-900 sm:text-xs md:text-md mt-4">
                  El  <b>lugar perfecto </b>para tus citas y eventos especiales. Ven a
                     disfrutar de la terraza más impactante de CDMX con una buena
                     mixología y grandes sabores con el menú creado por el chef
