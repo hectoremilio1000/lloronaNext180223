@@ -17,8 +17,9 @@ import CalendarioTiktokTree from "../components/CalendarioTiktokTree";
 import QuickInfo5 from "../components/QuickInfo5";
 import QuickInfo6 from "../components/QuickInfo6";
 import CalendarioFoodie from "../components/CalendarioFoodie";
+import CalendarioGoogleAds from "../components/CalendarioGoogleAds";
 
-function CitaLlorona() {
+function CitaGoogleLlorona() {
   // useEffect(() => {
   //   fbq.event('reserva')
   // }, []);
@@ -109,7 +110,7 @@ function CitaLlorona() {
         )}
         <NavBarWhite />
         {espa ? (
-          <div className="d-flex subContenedor1Banner bannerHomeFinal">
+          <div className="d-flex subContenedor1Banner bannerHomeFinal1">
             <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada trans-transform">
               {/* <img src={logo2} width={450} alt="llorona" className="mt-5" /> */}
               {/* <video
@@ -132,6 +133,9 @@ function CitaLlorona() {
                   type="video/webm"
                 />
               </video> */}
+               <h1 className="text-center text-white text-[40px] md:text-[60px] leading-none font-bold">
+                    Una terraza única
+                  </h1>
               <Link
                 href={"/reserva"}
                 className="inline-block max-w-max mx-auto px-4 py-3 rounded-md text-green-900 font-bold bg-[#3eeb91] text-xl m:text-2xl"
@@ -139,7 +143,7 @@ function CitaLlorona() {
                 Reserva Ahora
               </Link>
             </div>
-            <div className="absolute overflow-hidden z-[1000] top-[50%] translate-y-[-50%] left-0 w-full flex flex-col justify-center">
+            {/* <div className="absolute overflow-hidden z-[1000] top-[50%] translate-y-[-50%] left-0 w-full flex flex-col justify-center">
               <div className="flex items-center whitespace-nowrap rail-left">
                 <div className="whitespace-nowrap inline-block  animate-marquee">
                   <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
@@ -242,10 +246,10 @@ function CitaLlorona() {
                   </h1>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         ) : (
-          <div className="d-flex subContenedor1Banner bannerHomeFinal banner">
+          <div className="d-flex subContenedor1Banner bannerHomeFinal1 banner">
             <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada trans-transform">
               {/* <img src={logo2} width={450} alt="llorona" className="mt-5" /> */}
               <video
@@ -419,7 +423,7 @@ function CitaLlorona() {
                     {/* </Link> */}
                   </div>
                   <p className="text-start text-gray-900 sm:text-xs md:text-md">
-                    Con un menú inspirado en <b>Cantinas Mexicanas</b>. Ven a
+                 El  <b>lugar perfecto </b>para tus citas y eventos especiales. Ven a
                     disfrutar de la terraza más impactante de CDMX con una buena
                     mixología y grandes sabores con el menú creado por el chef
                     galardonado internacionalmente{" "}
@@ -431,18 +435,27 @@ function CitaLlorona() {
                     </a>
                     .
                   </p>
+
+                  <p className="text-start text-gray-900 sm:text-xs md:text-md pt-2">
+                  <Link
+                href={"/reserva"}
+                className=" text-red-900 font-bold "
+              >
+                Reserva ahora 
+              </Link> y pide en tu confirmación por whatsapp un postre especial por parte de uno los mejores chefs de México.
+                  </p>
                   <div className="overflow-auto">
                     <ModalAll
                       className="w-[850px]"
                       open={open}
                       setOpen={setOpen}
                     >
-                      <InlineWidget url="https://calendly.com/reservaciones-14/tiktok-reservaciones-llorona-clon?hide_gdpr_banner=1" />
+                      <InlineWidget url="https://calendly.com/reservaciones-14/googleads-foodie-llorona" />
                     </ModalAll>
                   </div>
                 </div>
                 <div className="w-full">
-                  <CalendarioFoodie />
+                  <CalendarioGoogleAds />
                 </div>
               </div>
               <>
@@ -555,4 +568,4 @@ function CitaLlorona() {
   );
 }
 
-export default CitaLlorona;
+export default CitaGoogleLlorona;

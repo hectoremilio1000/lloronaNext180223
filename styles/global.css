@@ -203,6 +203,16 @@ h1 {
   background-attachment: fixed;
 }
 
+.bannerHomeFinal1 {
+  background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg");
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  height: 90vh;
+  background-position: center;
+  position: relative;
+  background-attachment: fixed;
+}
+
 .bannerVacantes {
   background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/vacante/Screenshot+2023-06-03+at+3.43.28.png");
   background-size: cover !important;
@@ -593,6 +603,16 @@ ul {
     height: 90vh;
     background-position: center;
     position: relative;
+  }
+
+  .bannerHomeFinal1 {
+    background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg");
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: top;
+    position: relative;
+    background-attachment: fixed;
   }
 
   .bannerSalsa {
