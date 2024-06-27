@@ -607,10 +607,10 @@ ul {
 
   .bannerHomeFinal1 {
     background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/terrazaespecialromanceromacondesaamigosllorona.jpg");
-    background-size: contain !important;
+    background-size: cover !important;
     background-repeat: no-repeat;
     height: 100vh;
-    background-position: bottom;
+    background-position: center;
     position: relative;
     background-attachment: fixed;
   }
