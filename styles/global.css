@@ -607,10 +607,10 @@ ul {
 
   .bannerHomeFinal1 {
     background-image: url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/terraza+especial+romance+roma+condesa+amigos+llorona.jpg");
-    background-size: cover !important;
+    background-size: contain !important;
     background-repeat: no-repeat;
-    height: 100vh;
-    background-position: top;
+    height: 90vh;
+    background-position: bottom;
     position: relative;
     background-attachment: fixed;
   }
