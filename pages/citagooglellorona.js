@@ -45,7 +45,7 @@ function CitaGoogleLlorona() {
   const image2 =
     "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg";
   const image3 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/lallorona+Laterraza+mas+bonita+de+CDMX.jpg";
+    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalalloronaromacondesa.JPG";
   const image4 =
     "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2048.jpg";
 
@@ -476,9 +476,9 @@ function CitaGoogleLlorona() {
               </>
 
               <>
-                <div className="overflow-hidden bg-black">
+                <div className="overflow-hidden">
                   <div className="flex items-center gap-4 whitespace-nowrap">
-                    <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
+                    <h1 className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
                       REVISTAS
                     </h1>
                     <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">

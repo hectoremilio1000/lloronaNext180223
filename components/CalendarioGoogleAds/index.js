@@ -23,7 +23,7 @@ function CalendarioGoogleAds() {
               My house is your house, Book now.
             </h1>
 
-            <InlineWidget url="https://calendly.com/reservaciones-14/tiktok-reservaciones-cumpleanos-llorona-clon" />
+            <InlineWidget url="https://calendly.com/reservaciones-14/googleads-foodie-llorona" />
           </div>
         </div>
       )}
