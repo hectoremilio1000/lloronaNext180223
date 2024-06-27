@@ -10,6 +10,8 @@ import { Pagination } from "swiper/modules";
 const TestimonialCard = ({ testimonial }) => {
   const { photo, rating, text, date, url, nombre } = testimonial;
   return (
+    <div className="shadow-2xl shadow-inner border-gray-800 rounded border" >
+    
     <a
       href={url}
       target="_blank"
@@ -49,6 +51,7 @@ const TestimonialCard = ({ testimonial }) => {
         </div>
       </div>
     </a>
+    </div>
   );
 };
 
