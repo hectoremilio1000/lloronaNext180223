@@ -1,8 +1,5 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import Calendario from "../components/Calendario/index";
-
-import title from "../components/Main/title.module.css";
 import { useAppContext } from "../components/context/Context";
 import Head from "next/head";
 import Script from "next/script";
@@ -19,7 +16,7 @@ import QuickInfo6 from "../components/QuickInfo6";
 import CalendarioFoodie from "../components/CalendarioFoodie";
 import CalendarioGoogleAds from "../components/CalendarioGoogleAds";
 
-function CitaGoogleLlorona() {
+function Cita() {
   // useEffect(() => {
   //   fbq.event('reserva')
   // }, []);
@@ -143,6 +140,110 @@ function CitaGoogleLlorona() {
                 Reserva Ahora
               </Link>
             </div>
+            {/* <div className="absolute overflow-hidden z-[1000] top-[50%] translate-y-[-50%] left-0 w-full flex flex-col justify-center">
+              <div className="flex items-center whitespace-nowrap rail-left">
+                <div className="whitespace-nowrap inline-block  animate-marquee">
+                  <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                    LA TERRAZA
+                  </h1>
+                  <h1 className="inline-block text-[#e82127] text-[70px] md:text-[140px] font-bold leading-none  ">
+                    PERFECTA
+                  </h1>
+                </div>
+                <div className="whitespace-nowrap  inline-block animate-marquee">
+                  <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                    LA TERRAZA
+                  </h1>
+                  <h1 className="inline-block text-[#e82127] text-[70px] md:text-[140px] font-bold leading-none">
+                    PERFECTA
+                  </h1>
+                </div>
+                <div className="whitespace-nowrap inline-block  animate-marquee">
+                  <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                    LA TERRAZA
+                  </h1>
+                  <h1 className="inline-block text-[#e82127] text-[70px] md:text-[140px] font-bold leading-none  ">
+                    PERFECTA
+                  </h1>
+                </div>
+                <div className="whitespace-nowrap  inline-block animate-marquee">
+                  <h1 className="inline-block text-[#e82127] text-[70px] md:text-[140px] leading-none font-bold">
+                    LA TERRAZA
+                  </h1>
+                  <h1 className="inline-block text-white text-[70px] md:text-[140px] font-bold leading-none">
+                    PERFECTA
+                  </h1>
+                </div>
+              </div>
+              <div className="flex items-center whitespace-nowrap rail-right">
+                <div className="whitespace-nowrap inline-block  animate-marquee delay-300">
+                  <h1 className="inline-block text-[#e82127] text-[70px] md:text-[140px] leading-none font-bold">
+                    LA TERRAZA
+                  </h1>
+                  <h1 className="inline-block text-white text-[70px] md:text-[140px] font-bold leading-none  ">
+                    PERFECTA
+                  </h1>
+                </div>
+                <div className="whitespace-nowrap  inline-block animate-marquee delay-300">
+                  <h1 className="inline-block text-[#e82127] text-[70px] md:text-[140px] leading-none font-bold">
+                    LA TERRAZA
+                  </h1>
+                  <h1 className="inline-block text-white text-[70px] md:text-[140px] font-bold leading-none">
+                    PERFECTA
+                  </h1>
+                </div>
+                <div className="whitespace-nowrap inline-block  animate-marquee delay-300">
+                  <h1 className="inline-block text-[#e82127] text-[70px] md:text-[140px] leading-none font-bold">
+                    LA TERRAZA
+                  </h1>
+                  <h1 className="inline-block text-white text-[70px] md:text-[140px] font-bold leading-none  ">
+                    PERFECTA
+                  </h1>
+                </div>
+                <div className="whitespace-nowrap  inline-block animate-marquee delay-300">
+                  <h1 className="inline-block text-[#e82127] text-[70px] md:text-[140px] leading-none font-bold">
+                    LA TERRAZA
+                  </h1>
+                  <h1 className="inline-block text-white text-[70px] md:text-[140px] font-bold leading-none">
+                    AHORA
+                  </h1>
+                </div>
+              </div>
+              <div className="flex items-center whitespace-nowrap rail-left">
+                <div className="whitespace-nowrap inline-block  animate-marquee delay-300">
+                  <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                    LA TERRAZA
+                  </h1>
+                  <h1 className="inline-block text-[#e82127] text-[70px] md:text-[140px] font-bold leading-none  ">
+                    PERFECTA
+                  </h1>
+                </div>
+                <div className="whitespace-nowrap  inline-block animate-marquee delay-300">
+                  <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                    LA TERRAZA
+                  </h1>
+                  <h1 className="inline-block text-[#e82127] text-[70px] md:text-[140px] font-bold leading-none">
+                    PERFECTA
+                  </h1>
+                </div>
+                <div className="whitespace-nowrap inline-block  animate-marquee delay-300">
+                  <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                    LA TERRAZA
+                  </h1>
+                  <h1 className="inline-block text-[#e82127] text-[70px] md:text-[140px] font-bold leading-none  ">
+                    PERFECTA
+                  </h1>
+                </div>
+                <div className="whitespace-nowrap  inline-block animate-marquee delay-300">
+                  <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                    LA TERRAZA
+                  </h1>
+                  <h1 className="inline-block text-[#e82127] text-[70px] md:text-[140px] font-bold leading-none">
+                    PERFECTA
+                  </h1>
+                </div>
+              </div>
+            </div> */}
           </div>
         ) : (
           <div className="d-flex subContenedor1Banner bannerHomeFinal1 banner">
@@ -337,6 +438,15 @@ function CitaGoogleLlorona() {
                     y pide en tu confirmación por whatsapp un postre especial
                     por parte de uno los mejores chefs de México.
                   </p>
+                  {/* <div className="overflow-auto">
+                    <ModalAll
+                      className="w-[850px]"
+                      open={open}
+                      setOpen={setOpen}
+                    >
+                      <InlineWidget url="https://calendly.com/reservaciones-14/googleads-foodie-llorona" />
+                    </ModalAll>
+                  </div> */}
                 </div>
                 <div className="w-full">
                   <CalendarioGoogleAds />
@@ -452,4 +562,4 @@ function CitaGoogleLlorona() {
   );
 }
 
-export default CitaGoogleLlorona;
+export default Cita;

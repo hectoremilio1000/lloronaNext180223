@@ -9,6 +9,7 @@ import Script from "next/script";
 import * as fbq from "../lib/fpixel";
 import YouTube from "react-youtube";
 import { FB_PIXEL_ID } from "../lib/fpixel";
+import QuickInfo6 from "../components/QuickInfo6";
 
 import { InlineWidget } from "react-calendly";
 import ModalAll from "../components/ModalAll";
@@ -154,6 +155,22 @@ function Reserva() {
               </div>
               <div className="bg-black py-[50px]">
                 <QuickInfo5 idioma={espa} />
+              </div>
+              <div className="bg-white">
+                <div className="overflow-hidden">
+                  <div className="flex items-center gap-4 whitespace-nowrap">
+                    <h1 className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
+                      REVISTAS
+                    </h1>
+                    <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                      RECOMENDADOS
+                    </h1>
+                  </div>
+                </div>
+
+                <div className="py-[50px] px-2">
+                  <QuickInfo6 idioma={espa} />
+                </div>
               </div>
             </>
           ) : (
