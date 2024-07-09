@@ -26,7 +26,7 @@ const CalendlyWidget = () => {
       <div
         className="calendly-inline-widget"
         data-url="https://calendly.com/reservaciones-14/googleads-foodie-llorona?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=3eeb91"
-        style={{ minWidth: "320px", height: "650px" }}
+        style={{ minWidth: "300px", height: "650px" }}
       ></div>
     </>
   );

@@ -51,8 +51,6 @@ const Slider = () => {
                   spaceBetween: 20,
                 },
               }}
-              onSlideChange={() => console.log("slide change")}
-              onSwiper={(swiper) => console.log(swiper)}
             >
               <SwiperSlide>
                 <div className="w-full">

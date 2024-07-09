@@ -13,6 +13,13 @@
 .swiper-button-next {
   color: #50eb91 !important;
 }
+
+@media (min-width: 1025px) {
+  .responsive-height {
+    height: 80vh;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
