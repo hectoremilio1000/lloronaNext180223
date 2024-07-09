@@ -104,7 +104,7 @@ function Reserva() {
               <>
                 <div className="w-full max-w-[1184px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-8 text-center">
                   <div className="w-full">
-                    <h1 className="font-bold text-4xl text-white pt-4">
+                    <h1 className="font-bold text-3xl md:text-4xl text-white pt-4">
                       Los jueves piñata cumpleañera <br />
                       con una botella de mezcal
                     </h1>
