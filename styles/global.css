@@ -5,6 +5,14 @@
   src: url("/Gagalin-Regular.otf");
 }
 
+/*Slider button*/
+.swiper-button-prev {
+  color: #50eb91 !important;
+}
+
+.swiper-button-next {
+  color: #50eb91 !important;
+}
 body {
   margin: 0;
   padding: 0;

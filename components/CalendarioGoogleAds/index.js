@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import Head from "next/head";
 import { InlineWidget } from "react-calendly";
@@ -40,8 +39,8 @@ function CalendarioGoogleAds() {
       {espa ? (
         <div className="w-full bg-white">
           <div className="w-full rounded max-w-[1184px] pt-4 mx-auto bg-gray-200">
-            <h1 className="text2xl md:text-5xl font-bold text-center text-gray-900">
-              Mi casa es tu Casa, Reserva ya
+            <h1 className="text-3xl md:text-5xl font-bold text-center text-gray-900 pb-2">
+              Reserva ya
             </h1>
 
             <CalendlyWidget />

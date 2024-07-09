@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 // import required modules
-import { Pagination } from "swiper/modules";
 const TestimonialCard = ({ testimonial }) => {
   const { photo, rating, text, date, url, nombre } = testimonial;
   return (
@@ -57,6 +57,14 @@ const Carousel = ({ testimonials }) => {
     <div className="relative max-w-[1080px] mx-auto bg-black">
       <div className="flex gap-x-1 md:gap-x-4">
         <Swiper
+          modules={[Autoplay, Pagination, Navigation]}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          navigation
+          scrollbar={{ draggable: true }}
+          loop={true}
           slidesPerView={1}
           spaceBetween={30}
           pagination={{
@@ -76,9 +84,6 @@ const Carousel = ({ testimonials }) => {
               spaceBetween: 50,
             },
           }}
-          modules={[Pagination]}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
         >
           {testimonials.map((testimonial, index) => {
             return (

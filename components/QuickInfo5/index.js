@@ -5,15 +5,6 @@ function QuickInfo5({ idioma }) {
   const testimonialsEs = [
     {
       photo:
-        "https://lh3.googleusercontent.com/a-/ALV-UjUxNJQuFLCTAQlSBGAdFgrpbL2zs-1PAWTDEfA0Jq14X7I=w120-h120-p-rp-mo-ba3-br100",
-      rating: 5,
-      nombre: "ethan carbajal",
-      url: "https://g.co/kgs/mJXTxJ1",
-      text: "Bonito restaurante con una vista simpática, si te sientas afuera es mucho mejor... Algo tiene la experiencia de comer en el exterior un restaurante y la zona es bonita, les recomiendo intentarlo <br/> Pedí un mezcal de gusano, una hamburguesa de pollo y una cerveza para acompañar!",
-      date: "2023-03-15",
-    },
-    {
-      photo:
         "https://lh3.googleusercontent.com/a-/ALV-UjV3DD882RNwLvufn4autcgyzu711qUmhKI2TzdjlOYcvcwBsaSYsA=w120-h120-p-rp-mo-br100",
       rating: 5,
       nombre: "Julia Didriksson",
@@ -21,6 +12,7 @@ function QuickInfo5({ idioma }) {
       text: "Es un lugar que me encanta 💌 los cócteles son lo màximo! Recomiendo mucho Cate de mi corazón y el martini de mazapán ❤️‍🔥",
       date: "2024-03-20",
     },
+
     {
       photo:
         "https://lh3.googleusercontent.com/a-/ALV-UjXK7_enaQuwynGEzJkhhVHU65TGBOg03ODSrY4GP_R8Y2TT=w120-h120-p-rp-mo-br100",
@@ -29,6 +21,15 @@ function QuickInfo5({ idioma }) {
       url: "https://g.co/kgs/wZbdKKg",
       text: "💯% recomendable, comida, atención y bebidas de lujo! Lugar Pet Friendly, recomiendo la hamburguesa crujicerdo y la variedad de tacos </br> En esta ocasión me atendió Roberto él mexicano🙌🏽",
       date: "2023-03-17",
+    },
+    {
+      photo:
+        "https://lh3.googleusercontent.com/a-/ALV-UjUxNJQuFLCTAQlSBGAdFgrpbL2zs-1PAWTDEfA0Jq14X7I=w120-h120-p-rp-mo-ba3-br100",
+      rating: 5,
+      nombre: "ethan carbajal",
+      url: "https://g.co/kgs/mJXTxJ1",
+      text: "Bonito restaurante con una vista simpática, si te sientas afuera es mucho mejor... Algo tiene la experiencia de comer en el exterior un restaurante y la zona es bonita, les recomiendo intentarlo <br/> Pedí un mezcal de gusano, una hamburguesa de pollo y una cerveza para acompañar!",
+      date: "2023-03-15",
     },
     {
       photo:
