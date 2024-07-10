@@ -56,10 +56,10 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/portadaHome/muertosDiamexicollorona.jpg)",
+              "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologiaIncreible.jpg)",
             height: "80vh",
             backgroundSize: "cover",
-            backgroundPosition: "center center",
+            backgroundPosition: "top center",
           }}
         ></div>
       </SwiperSlide>
