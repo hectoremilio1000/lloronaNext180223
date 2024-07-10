@@ -56,6 +56,17 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
+              "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/grupo+salsa+mexico.jpg)",
+            height: "80vh",
+            backgroundSize: "cover",
+            backgroundPosition: "top center",
+          }}
+        ></div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div
+          style={{
+            backgroundImage:
               "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologiaIncreible.jpg)",
             height: "80vh",
             backgroundSize: "cover",
@@ -63,6 +74,7 @@ const MySwiper = () => {
           }}
         ></div>
       </SwiperSlide>
+
       <SwiperSlide>
         <div
           style={{

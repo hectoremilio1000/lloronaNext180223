@@ -218,15 +218,6 @@ function Reserva() {
                       candies and a bottle of our best house mezcal 🍶🥃 madre
                       cuishe, which is handcrafted.
                     </p>
-                    <div className="overflow-auto">
-                      <ModalAll
-                        className="w-[850px]"
-                        open={open}
-                        setOpen={setOpen}
-                      >
-                        <InlineWidget url="https://calendly.com/reservaciones-14/reservaciones-llorona?hide_gdpr_banner=1" />
-                      </ModalAll>
-                    </div>
                   </div>
                   <div className="w-full">
                     <Calendario />
