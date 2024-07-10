@@ -24,7 +24,7 @@ const MySwiper = () => {
           style={{
             backgroundImage:
               "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg)",
-            height: "90vh",
+            height: "80vh",
             backgroundSize: "cover",
             backgroundPosition: "center center",
           }}
@@ -35,7 +35,7 @@ const MySwiper = () => {
           style={{
             backgroundImage:
               "url(https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/pinatacumpleanera.JPG)",
-            height: "90vh",
+            height: "80vh",
             backgroundSize: "cover",
             backgroundPosition: "center center",
           }}
@@ -46,7 +46,18 @@ const MySwiper = () => {
           style={{
             backgroundImage:
               "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/festejo+cantina+llorona+salsa+baile.jpg)",
-            height: "90vh",
+            height: "80vh",
+            backgroundSize: "cover",
+            backgroundPosition: "center center",
+          }}
+        ></div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div
+          style={{
+            backgroundImage:
+              "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/portadaHome/muertosDiamexicollorona.jpg)",
+            height: "80vh",
             backgroundSize: "cover",
             backgroundPosition: "center center",
           }}
@@ -57,7 +68,7 @@ const MySwiper = () => {
           style={{
             backgroundImage:
               "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/fotosBanner/IMG_3087.jpg)",
-            height: "90vh",
+            height: "80vh",
             backgroundSize: "cover",
             backgroundPosition: "center center",
           }}
