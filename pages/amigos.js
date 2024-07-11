@@ -50,7 +50,7 @@ function Reserva() {
   const image2 =
     "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg";
   const image3 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/franquicias/nin%CC%83as+hermosas.jpg";
+    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/terrazaespecialromanceromacondesaamigoscantina.jpg";
   const image4 =
     "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/amigasllorona.png";
 
@@ -105,8 +105,8 @@ function Reserva() {
                 <div className="w-full max-w-[1184px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-8 text-center">
                   <div className="w-full">
                     <h1 className="font-bold text-3xl md:text-4xl text-white pt-4">
-                      Mejor noche <br />
-                      fiesta y diversión
+                      El hot spot más espectacular <br />
+                      te espera
                     </h1>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <Link href="/reserva">
@@ -117,7 +117,7 @@ function Reserva() {
                             alt="Música en vivo"
                           />
                           <p className="text-white pt-2">
-                            Disfruta, baile <br />y festeja
+                            Diseño espectacular <br />y único en cdmx
                           </p>
                         </div>
                       </Link>
@@ -130,8 +130,7 @@ function Reserva() {
                             alt="Música en vivo"
                           />
                           <p className="text-white text-center">
-                            Grupos de salsa <br />
-                            en vivo
+                            Restaurante de fiesta, bebidas <br />y diversión
                           </p>
                         </div>
                       </Link>
