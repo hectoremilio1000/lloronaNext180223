@@ -110,7 +110,7 @@ function MenuFood() {
             className="w-full"
           />
         </div>
-        <div className="w-full px-4">
+        {/* <div className="w-full px-4">
           <img
             src={mixologia2}
             alt="comida sabrosa"
@@ -118,8 +118,8 @@ function MenuFood() {
             height={500}
             className="w-full"
           />
-        </div>
-        <div className="w-full px-4">
+        </div> */}
+        {/* <div className="w-full px-4">
           <img
             src={cervezaArtesanal}
             alt="comida sabrosa"
@@ -127,7 +127,7 @@ function MenuFood() {
             height={500}
             className="w-full"
           />
-        </div>{" "}
+        </div>{" "} */}
         <div className="w-full px-4">
           <img
             src={mezcales}
