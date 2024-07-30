@@ -144,7 +144,7 @@ function Reserva() {
                       experiencia única en Cantina La Llorona. ¡Te esperamos
                       para compartir una noche de sabores exquisitos y música en
                       vivo que te harán sentir la verdadera esencia de una
-                      <b>Cantina Mexicana! 🥁🪇🎺🇲🇽</b>
+                      <b> Cantina Mexicana! 🥁🪇🎺🇲🇽</b>
                     </p>
                   </div>
                   <div className="w-full">
