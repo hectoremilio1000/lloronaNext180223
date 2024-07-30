@@ -189,9 +189,8 @@ function Reserva() {
               <>
                 <div className="w-full max-w-[1184px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-8 text-center">
                   <div className="w-full">
-                    <h1 className="font-bold text-4xl text-white">
-                      On Thursdays, a birthday <br />
-                      piñata with a bottle of mezcal
+                    <h1 className="font-bold text-3xl md:text-4xl text-white pt-4">
+                      Enjoy the only Cantina with Live Cuban Son
                     </h1>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <Link href="/reserva">
@@ -199,8 +198,13 @@ function Reserva() {
                           <img
                             className="rounded-lg w-full h-[350px] object-cover"
                             src={image3}
-                            alt="Música en vivo"
+                            alt="Great Cuban 
+                            Son Orchestras Llorona Cantina"
                           />
+                          <p className="text-white pt-2">
+                            Great Cuban <br />
+                            Son Orchestras
+                          </p>
                         </div>
                       </Link>
 
@@ -209,17 +213,28 @@ function Reserva() {
                           <img
                             className="rounded-lg w-full h-[350px] object-cover"
                             src={image4}
-                            alt="Música en vivo"
+                            alt="The best atmosphere Llorona"
                           />
+                          <p className="text-white pt-2">
+                            The best <br />
+                            atmosphere
+                          </p>
                         </div>
                       </Link>
                     </div>
-                    <p className="text-start text-white sm:text-xs md:text-md mt-3">
-                      The birthday piñata is free of charge and applies every
-                      Thursday if your birthday is in the month. You just need
-                      to make a reservation. We give away traditional Mexican
-                      candies and a bottle of our best house mezcal 🍶🥃 madre
-                      cuishe, which is handcrafted.
+                    <p className="text-start text-white sm:text-xs md:text-2xl mt-3">
+                      At <b>Cantina La Llorona</b>, we offer a vibrant and
+                      authentic experience with Cuban son groups that will
+                      transport you with their warm and infectious rhythms.
+                      Every week we feature great orchestras directly from{" "}
+                      <b>Cuba 🇨🇺</b>.
+                    </p>
+                    <p className="text-start text-white sm:text-xs md:text-2xl mt-3">
+                      Don't miss the opportunity to book and live this unique
+                      experience at Cantina La Llorona. We look forward to
+                      sharing a night of exquisite flavors and live music that
+                      will make you feel the true essence of a{" "}
+                      <b>Mexican Cantina! 🥁🪇🎺🇲🇽</b>
                     </p>
                   </div>
                   <div className="w-full">
@@ -239,6 +254,22 @@ function Reserva() {
                 </div>
                 <div className="bg-black py-[50px]">
                   <QuickInfo5 idioma={espa} />
+                </div>
+                <div className="bg-white">
+                  <div className="overflow-hidden">
+                    <div className="flex items-center gap-4 whitespace-nowrap">
+                      <h1 className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
+                        RECOMMENDED
+                      </h1>
+                      <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                        INTERNATIONAL MAGAZINES
+                      </h1>
+                    </div>
+                  </div>
+
+                  <div className="py-[50px] px-2">
+                    <QuickInfo6 idioma={espa} />
+                  </div>
                 </div>
               </>
             )}

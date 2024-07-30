@@ -17,6 +17,7 @@ import Slider from "../components/Sliders/Slider";
 import Link from "next/link";
 import NavBar from "../components/NavBarEs/NavBarEs";
 import QuickInfo5 from "../components/QuickInfo5";
+import QuickInfo6 from "../components/QuickInfo6";
 // imagenes
 const image1 =
   "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg";
@@ -436,6 +437,22 @@ export default function Home() {
           <div className="bg-black py-[50px]">
             <QuickInfo5 idioma={espa} />
           </div>
+          <div className="bg-white">
+            <div className="overflow-hidden">
+              <div className="flex items-center gap-4 whitespace-nowrap">
+                <h1 className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
+                  RECOMENDADOS
+                </h1>
+                <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                  REVISTAS
+                </h1>
+              </div>
+            </div>
+
+            <div className="py-[50px] px-2">
+              <QuickInfo6 idioma={espa} />
+            </div>
+          </div>
         </>
       ) : (
         <>
@@ -451,6 +468,22 @@ export default function Home() {
           </div>
           <div className="bg-black py-[50px]">
             <QuickInfo5 idioma={espa} />
+          </div>
+          <div className="bg-white">
+            <div className="overflow-hidden">
+              <div className="flex items-center gap-4 whitespace-nowrap">
+                <h1 className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
+                  RECOMMENDED
+                </h1>
+                <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                  INTERNATIONAL MAGAZINES
+                </h1>
+              </div>
+            </div>
+
+            <div className="py-[50px] px-2">
+              <QuickInfo6 idioma={espa} />
+            </div>
           </div>
         </>
       )}

@@ -37,9 +37,9 @@ function QuickInfo() {
               <Link href="/menullorona/Alimentos">
                 <div className="w-full">
                   <img
-                    className="w-full h-[280px]  object-cover rounded"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2049.jpg"
-                    alt="Tacos y cocteles"
+                    className="h-[280px] object-contain w-full rounded"
+                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2050.jpg"
+                    alt="cocteles Llorona"
                   />
                 </div>
               </Link>
@@ -47,7 +47,8 @@ function QuickInfo() {
                 <div>
                   <img
                     className="h-[220px] object-cover w-full rounded"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2047.jpg"
+                    src="
+                    https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/tostadaCantinera.jpg"
                     alt="cocteles y tacos"
                   />
                 </div>
@@ -58,7 +59,7 @@ function QuickInfo() {
                 <div>
                   <img
                     className="h-[220px] object-cover w-full rounded"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/aguacateRibeyeLlorona.jpg"
+                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/postres+ricos+deliciosos.JPG"
                     alt="tacos y cocteles"
                   />
                 </div>
@@ -70,8 +71,8 @@ function QuickInfo() {
               >
                 <div>
                   <img
-                    className="h-[280px] object-contain w-full rounded"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2050.jpg"
+                    className="h-[280px] object-contain w-full rounded filter"
+                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/soncubano3Imagen.jpg"
                     alt="cocteles Llorona"
                   />
                 </div>

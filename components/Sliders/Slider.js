@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Pagination } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { useAppContext } from "../context/Context";
 const Slider = () => {
   const { espa } = useAppContext();
@@ -28,12 +28,19 @@ const Slider = () => {
           </div>
           <div className="w-full max-w-[1184px] mx-auto px-[20px]">
             <Swiper
-              spaceBetween={50}
+              spaceBetween={30}
               slidesPerView={2}
               pagination={{
                 clickable: true,
               }}
-              modules={[Pagination]}
+              modules={[Autoplay, Pagination, Navigation]}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              navigation
+              scrollbar={{ draggable: true }}
+              loop={true}
               breakpoints={{
                 // cuando el ancho de la ventana es igual o mayor a 640px
                 640: {
@@ -56,13 +63,14 @@ const Slider = () => {
                 <div className="w-full">
                   <img
                     className="rounded-lg border-2 border-white w-full h-[300px] object-top object-cover"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/tostadaCantinera.jpg"
+                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/ricaCarneLloronaCantina.jpg
+                    "
                     alt=""
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
-                    Tostada
+                    Cortes Premiun
                   </h1>
-                  <p className="text-xs md:text-xl text-white">Cantinera </p>
+                  <p className="text-xs md:text-xl text-white">Deliciosos </p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
@@ -78,6 +86,19 @@ const Slider = () => {
                   <p className="text-xs md:text-xl text-white">
                     de maíz criollo
                   </p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="w-full">
+                  <img
+                    className="rounded-lg border-2 border-white w-full h-[300px] object-left object-cover"
+                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/gruposcubanos1.png"
+                    alt=""
+                  />
+                  <h1 className="text-2xl md:text-5xl text-white mt-3">
+                    Son cubano
+                  </h1>
+                  <p className="text-xs md:text-xl text-white">en vivo</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
