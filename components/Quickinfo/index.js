@@ -80,15 +80,13 @@ function QuickInfo() {
             </div>
           </div>
 
-          {/* <div
-            style={{ display: "flex", justifyContent: "center", marginTop: 30 }}
-          >
+          <div style={{ display: "flex", justifyContent: "center" }}>
             <Link href="/reserva">
               <button className="buttonComponente" onClick={handleClick}>
                 ¡Reserva ya!
               </button>
             </Link>
-          </div> */}
+          </div>
         </div>
       ) : (
         <div className="w-full max-w-[1184px] py-[80px] px-[20px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -155,15 +153,15 @@ function QuickInfo() {
             </div>
           </div>
 
-          {/* <div
-          style={{ display: "flex", justifyContent: "center", marginTop: 30 }}
-        >
-          <Link href="/reserva">
-            <button className="buttonComponente" onClick={handleClick}>
-              ¡Reserva ya!
-            </button>
-          </Link>
-        </div> */}
+          <div
+            style={{ display: "flex", justifyContent: "center", marginTop: 30 }}
+          >
+            <Link href="/reserva">
+              <button className="buttonComponente" onClick={handleClick}>
+                ¡Book now!
+              </button>
+            </Link>
+          </div>
         </div>
       )}
     </>

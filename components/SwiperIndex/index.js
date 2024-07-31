@@ -136,14 +136,14 @@ const MySwiper = () => {
           }}
         >
           {" "}
-          <div className="absolute inset-0 flex items-center justify-center">
+          {/* <div className="absolute inset-0 flex items-center justify-center">
             <Link
               href={"/reserva"}
               className="inline-block px-4 py-3 rounded-md text-green-900 font-bold bg-[#3eeb91] text-xl m:text-2xl"
             >
               Reserva Ahora
             </Link>
-          </div>
+          </div> */}
         </div>
       </SwiperSlide>
       {/* Agrega más SwiperSlide según sea necesario */}
