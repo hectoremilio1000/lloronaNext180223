@@ -18,6 +18,7 @@ import Link from "next/link";
 import NavBar from "../components/NavBarEs/NavBarEs";
 import QuickInfo5 from "../components/QuickInfo5";
 import QuickInfo6 from "../components/QuickInfo6";
+import MySwiper from "../components/SwiperIndex";
 // imagenes
 const image1 =
   "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg";
@@ -123,37 +124,17 @@ export default function Home() {
       )}
       <NavBar />
       {espa ? (
-        <div className="d-flex subContenedor1Banner bannerHomeFinal banner">
-          <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada trans-transform">
-            {/* <img src={logo2} width={450} alt="llorona" className="mt-5" /> */}
-            <video
-              className="h-[75vh] scale-100"
-              playsInline={true}
-              webkit-playsinline="true"
-              x-webkit-airplay="true"
-              preload="auto"
-              autoPlay="autoplay"
-              loop="loop"
-              muted="muted"
-              poster=""
-            >
-              <source
-                src="https://www.goiko.com/es/wp-content/uploads/2023/07/KB-360x2-1.mov"
-                type='video/mp4; codecs="hvc1"'
-              />
-              <source
-                src="https://www.goiko.com/es/wp-content/uploads/2023/07/kb-360x2-1.webm"
-                type="video/webm"
-              />
-            </video>
-            <Link
-              href={"/reserva"}
-              className="inline-block max-w-max mx-auto px-4 py-3 rounded-md text-green-900 font-bold bg-[#3eeb91] text-xl m:text-2xl"
-            >
-              Reserva Ahora
-            </Link>
+        <>
+          <div>
+            <MySwiper />
           </div>
-          <div className="absolute overflow-hidden z-[1000] top-[50%] translate-y-[-50%] left-0 w-full flex flex-col justify-center">
+
+          {/* <div className="d-flex subContenedor1Banner bannerHomeFinal banner">
+          <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada trans-transform"> */}
+          {/* <img src={logo2} width={450} alt="llorona" className="mt-5" /> */}
+
+          {/* </div> */}
+          {/* <div className="absolute overflow-hidden z-[1000] top-[50%] translate-y-[-50%] left-0 w-full flex flex-col justify-center">
             <div className="flex items-center whitespace-nowrap rail-left">
               <div className="whitespace-nowrap inline-block  animate-marquee">
                 <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
@@ -256,8 +237,9 @@ export default function Home() {
                 </h1>
               </div>
             </div>
-          </div>
-        </div>
+          </div> */}
+          {/* </div> */}
+        </>
       ) : (
         <div className="d-flex subContenedor1Banner bannerHomeFinal banner">
           <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada trans-transform">
@@ -424,19 +406,6 @@ export default function Home() {
       <Calendario />
       {espa ? (
         <>
-          <div className="overflow-hidden bg-black">
-            <div className="flex items-center gap-4 whitespace-nowrap">
-              <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
-                TESTIMONIO
-              </h1>
-              <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
-                TESTIMONIO
-              </h1>
-            </div>
-          </div>
-          <div className="bg-black py-[50px]">
-            <QuickInfo5 idioma={espa} />
-          </div>
           <div className="bg-white">
             <div className="overflow-hidden">
               <div className="flex items-center gap-4 whitespace-nowrap">
@@ -453,22 +422,22 @@ export default function Home() {
               <QuickInfo6 idioma={espa} />
             </div>
           </div>
-        </>
-      ) : (
-        <>
           <div className="overflow-hidden bg-black">
             <div className="flex items-center gap-4 whitespace-nowrap">
               <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
-                TESTIMONIALS
+                TESTIMONIO
               </h1>
               <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
-                TESTIMONIALS
+                TESTIMONIO
               </h1>
             </div>
           </div>
           <div className="bg-black py-[50px]">
             <QuickInfo5 idioma={espa} />
           </div>
+        </>
+      ) : (
+        <>
           <div className="bg-white">
             <div className="overflow-hidden">
               <div className="flex items-center gap-4 whitespace-nowrap">
@@ -484,6 +453,19 @@ export default function Home() {
             <div className="py-[50px] px-2">
               <QuickInfo6 idioma={espa} />
             </div>
+          </div>
+          <div className="overflow-hidden bg-black">
+            <div className="flex items-center gap-4 whitespace-nowrap">
+              <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
+                TESTIMONIALS
+              </h1>
+              <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                TESTIMONIALS
+              </h1>
+            </div>
+          </div>
+          <div className="bg-black py-[50px]">
+            <QuickInfo5 idioma={espa} />
           </div>
         </>
       )}

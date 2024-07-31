@@ -16,16 +16,16 @@ function QuickInfo() {
   return (
     <>
       {espa ? (
-        <div className="w-full max-w-[1184px] py-[80px] px-[20px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="w-full max-w-[1184px] py-[40px] px-[20px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="w-full flex flex-col justify-center">
             {/* <h2 className="font-bold text-2xl">No solo somos</h2> */}
-            <h1 className="text-2xl md:text-5xl font-bold">
+            <h1 className="text-2xl md:text-5xl font-bold text-center md:text-left">
               Bienvenidos a Cantina la Llorona
             </h1>
 
             {/* <div className="h-2 bg-white w-full rounded"></div> */}
 
-            <p className="text-start sm:text-2xl text-xl text-black">
+            <p className="text-start sm:text-2xl text-xl text-black ext-center md:text-left">
               Menú inspirado en <b>Cantinas Mexicanas</b>. Es honesto pero con
               jiribilla para acompañar una buena mixología y recordarnos al
               méxico que nos hace vibrar.
