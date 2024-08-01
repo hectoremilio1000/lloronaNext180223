@@ -44,6 +44,49 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
+              "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/rib%2Beye%2Bllorona%2Bcarne.jpg)",
+            height: "80vh",
+            backgroundSize: "cover",
+            backgroundPosition: "center center",
+          }}
+        >
+          {" "}
+          {/* <div className="absolute inset-0 flex items-center justify-center">
+            <Link
+              href={"/reserva"}
+              className="inline-block px-4 py-3 rounded-md text-green-900 font-bold bg-[#3eeb91] text-xl m:text-2xl"
+            >
+              Reserva Ahora
+            </Link>
+          </div> */}
+        </div>
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <div
+          style={{
+            backgroundImage:
+              "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/tostadaMariscos%2Bllorona%2Bcantina.jpg)",
+            height: "80vh",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          {" "}
+          {/* <div className="absolute inset-0 flex items-center justify-center">
+            <Link
+              href={"/reserva"}
+              className="inline-block px-4 py-3 rounded-md text-green-900 font-bold bg-[#3eeb91] text-xl m:text-2xl"
+            >
+              Reserva Ahora
+            </Link>
+          </div> */}
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div
+          style={{
+            backgroundImage:
               "url(https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/pinatacumpleanera.JPG)",
             height: "80vh",
             backgroundSize: "cover",
@@ -65,7 +108,7 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              "url(https://imagenesrutalab.s3.amazonaws.com/llorona/franquicia/IMG_0071.jpg)",
+              "url(https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/cumplean%CC%83os%2Bsorpresa%2Bfiesta%2Bllorona%2Bcantina.png)",
             height: "80vh",
             backgroundSize: "cover",
             backgroundPosition: "center center",
@@ -103,49 +146,7 @@ const MySwiper = () => {
           </div> */}
         </div>
       </SwiperSlide>
-      <SwiperSlide>
-        <div
-          style={{
-            backgroundImage:
-              "url(https://imagenesrutalab.s3.amazonaws.com/llorona/franquicias/nin%CC%83as+hermosas.jpg)",
-            height: "80vh",
-            backgroundSize: "cover",
-            backgroundPosition: "center center",
-          }}
-        >
-          {" "}
-          {/* <div className="absolute inset-0 flex items-center justify-center">
-            <Link
-              href={"/reserva"}
-              className="inline-block px-4 py-3 rounded-md text-green-900 font-bold bg-[#3eeb91] text-xl m:text-2xl"
-            >
-              Reserva Ahora
-            </Link>
-          </div> */}
-        </div>
-      </SwiperSlide>
 
-      <SwiperSlide>
-        <div
-          style={{
-            backgroundImage:
-              "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg)",
-            height: "80vh",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          {" "}
-          {/* <div className="absolute inset-0 flex items-center justify-center">
-            <Link
-              href={"/reserva"}
-              className="inline-block px-4 py-3 rounded-md text-green-900 font-bold bg-[#3eeb91] text-xl m:text-2xl"
-            >
-              Reserva Ahora
-            </Link>
-          </div> */}
-        </div>
-      </SwiperSlide>
       {/* Agrega más SwiperSlide según sea necesario */}
     </Swiper>
   );

@@ -76,6 +76,20 @@ const Slider = () => {
               <SwiperSlide>
                 <div className="w-full">
                   <img
+                    className="rounded-lg border-2 border-white w-full h-[300px] object-top object-cover"
+                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/tostadaMariscos%2Bllorona%2Bcantina.jpg
+                    "
+                    alt=""
+                  />
+                  <h1 className="text-2xl md:text-5xl text-white mt-3">
+                    Tostadas deliciosas
+                  </h1>
+                  <p className="text-xs md:text-xl text-white">De mariscos </p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="w-full">
+                  <img
                     className="rounded-lg border-2 border-white w-full h-[300px] object-bottom object-cover"
                     src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologiaIncreible.jpg"
                     alt=""
