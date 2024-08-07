@@ -6,6 +6,19 @@ import Link from "next/link";
 import AppContextProvider, { useAppContext } from "../context/Context";
 import * as fbq from "../../lib/fpixel";
 
+//imagenes
+
+const image1 =
+  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2050.jpg";
+
+const image2 =
+  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/tostadaCantinera.jpg";
+
+const image3 =
+  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/postres+ricos+deliciosos.JPG";
+
+const image4 =
+  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/soncubano3Imagen.jpg";
 function QuickInfo() {
   const handleClick = () => {
     fbq.event("reserva");
@@ -38,7 +51,7 @@ function QuickInfo() {
                 <div className="w-full">
                   <img
                     className="h-[280px] object-contain w-full rounded"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2050.jpg"
+                    src={image1}
                     alt="cocteles Llorona"
                   />
                 </div>
@@ -47,8 +60,7 @@ function QuickInfo() {
                 <div>
                   <img
                     className="h-[220px] object-cover w-full rounded"
-                    src="
-                    https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/tostadaCantinera.jpg"
+                    src={image2}
                     alt="cocteles y tacos"
                   />
                 </div>
@@ -59,7 +71,7 @@ function QuickInfo() {
                 <div>
                   <img
                     className="h-[220px] object-cover w-full rounded"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/postres+ricos+deliciosos.JPG"
+                    src={image3}
                     alt="tacos y cocteles"
                   />
                 </div>
@@ -72,7 +84,7 @@ function QuickInfo() {
                 <div>
                   <img
                     className="h-[280px] object-contain w-full rounded filter"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/soncubano3Imagen.jpg"
+                    src={image4}
                     alt="cocteles Llorona"
                   />
                 </div>
@@ -112,7 +124,7 @@ function QuickInfo() {
                 <div className="w-full">
                   <img
                     className="w-full h-[280px]  object-cover rounded"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2049.jpg"
+                    src={image1}
                     alt="Tacos y cocteles"
                   />
                 </div>
@@ -121,7 +133,7 @@ function QuickInfo() {
                 <div>
                   <img
                     className="h-[220px] object-cover w-full rounded"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2050.jpg"
+                    src={image2}
                     alt="cocteles y tacos"
                   />
                 </div>
@@ -132,7 +144,7 @@ function QuickInfo() {
                 <div>
                   <img
                     className="h-[220px] object-cover w-full rounded"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2046.jpg"
+                    src={image3}
                     alt="tacos y cocteles"
                   />
                 </div>
@@ -145,7 +157,7 @@ function QuickInfo() {
                 <div>
                   <img
                     className="h-[280px] object-cover w-full rounded"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2047.jpg"
+                    src={image4}
                     alt="tacos y cocteles"
                   />
                 </div>

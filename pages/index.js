@@ -241,10 +241,15 @@ export default function Home() {
           {/* </div> */}
         </>
       ) : (
-        <div className="d-flex subContenedor1Banner bannerHomeFinal banner">
+        <>
+          <div>
+            <MySwiper />
+          </div>
+
+          {/* <div className="d-flex subContenedor1Banner bannerHomeFinal banner">
           <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada trans-transform">
             {/* <img src={logo2} width={450} alt="llorona" className="mt-5" /> */}
-            <video
+          {/* <video
               className="h-[75vh] scale-100"
               playsinline="true"
               webkit-playsinline="true"
@@ -263,15 +268,15 @@ export default function Home() {
                 src="https://www.goiko.com/es/wp-content/uploads/2023/07/kb-360x2-1.webm"
                 type="video/webm"
               />
-            </video>
-            <Link
+            </video> */}
+          {/* <Link
               href={"/reserva"}
               className="inline-block max-w-max mx-auto px-4 py-3 rounded-md text-green-900 font-bold bg-[#3eeb91] text-xl m:text-2xl"
             >
               Book Now
-            </Link>
-          </div>
-          <div className="absolute overflow-hidden z-[1000] top-[50%] translate-y-[-50%] left-0 w-full flex flex-col justify-center">
+            </Link> */}
+          {/* </div> */}
+          {/* <div className="absolute overflow-hidden z-[1000] top-[50%] translate-y-[-50%] left-0 w-full flex flex-col justify-center">
             <div className="flex items-center whitespace-nowrap rail-left">
               <div className="whitespace-nowrap inline-block  animate-marquee">
                 <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
@@ -374,8 +379,9 @@ export default function Home() {
                 </h1>
               </div>
             </div>
-          </div>
-        </div>
+          </div> */}
+          {/* </div>  */}
+        </>
       )}
       {espa ? (
         <div className="overflow-hidden bg-black">
