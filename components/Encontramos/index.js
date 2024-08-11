@@ -12,14 +12,16 @@ function Encontramos() {
           <>
             <div>
               <h1 className="text-center text-white text-3xl md:text-4xl uppercase font-black">
-                Nuestra ubicación
+                Nos localizamos en el corazón de la Roma Condesa
               </h1>
             </div>
             <div>
               <h4 className="text-white text-lg md:text-xl text-center">
                 Alvaro Obregón 308 Roma Condesa
+                <br />
+                Enfrente del Parque España
               </h4>
-              
+
               <div className="linea"></div>
             </div>
             <div
@@ -64,7 +66,7 @@ function Encontramos() {
               <h4 className="text-white text-lg md:text-xl text-center">
                 Alvaro Obregón 308 Roma Condesa
               </h4>
-             
+
               <div className="linea"></div>
             </div>
             <div

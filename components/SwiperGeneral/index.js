@@ -6,13 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-const MySwiper = () => {
-  const BannerImages = {
-    imagen1:
-      "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg)",
-    
-    imagen2: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/franquicia/IMG_0071.jpg)";
-  };
+const MySwiper = ({ BannerImages }) => {
   return (
     <Swiper
       modules={[Autoplay, Pagination, Navigation]}
@@ -38,8 +32,17 @@ const MySwiper = () => {
       <SwiperSlide>
         <div
           style={{
-            backgroundImage:
-              "url(https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/pinatacumpleanera.JPG)",
+            backgroundImage: BannerImages.imagen2,
+            height: "80vh",
+            backgroundSize: "cover",
+            backgroundPosition: "top center",
+          }}
+        ></div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div
+          style={{
+            backgroundImage: BannerImages.imagen3,
             height: "80vh",
             backgroundSize: "cover",
             backgroundPosition: "center center",
@@ -49,8 +52,7 @@ const MySwiper = () => {
       <SwiperSlide>
         <div
           style={{
-            backgroundImage:
-              ,
+            backgroundImage: BannerImages.imagen4,
             height: "80vh",
             backgroundSize: "cover",
             backgroundPosition: "center center",
@@ -60,19 +62,7 @@ const MySwiper = () => {
       <SwiperSlide>
         <div
           style={{
-            backgroundImage:
-              "url(https://imagenesrutalab.s3.amazonaws.com/llorona/franquicias/banner/IMG_8773.jpg)",
-            height: "80vh",
-            backgroundSize: "cover",
-            backgroundPosition: "center center",
-          }}
-        ></div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div
-          style={{
-            backgroundImage:
-              "url(https://imagenesrutalab.s3.amazonaws.com/llorona/franquicias/nin%CC%83as+hermosas.jpg)",
+            backgroundImage: BannerImages.imagen5,
             height: "80vh",
             backgroundSize: "cover",
             backgroundPosition: "center center",
@@ -83,11 +73,10 @@ const MySwiper = () => {
       <SwiperSlide>
         <div
           style={{
-            backgroundImage:
-              "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninas4pinata.jpeg)",
+            backgroundImage: BannerImages.imagen6,
             height: "80vh",
             backgroundSize: "cover",
-            backgroundPosition: "top center",
+            backgroundPosition: "center left",
           }}
         ></div>
       </SwiperSlide>
