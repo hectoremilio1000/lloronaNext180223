@@ -25,7 +25,7 @@ const Swiper1 = dynamic(() => import("../components/Swiper1"), {
   ssr: false,
 });
 
-function Reserva() {
+function Familia() {
   const BannerImages = {
     imagen1:
       "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg)",
@@ -313,4 +313,4 @@ function Reserva() {
   );
 }
 
-export default Reserva;
+export default Familia;
