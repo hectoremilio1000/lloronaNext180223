@@ -7,12 +7,6 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 const MySwiper = () => {
-  const BannerImages = {
-    imagen1:
-      "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg)",
-    
-    imagen2: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/franquicia/IMG_0071.jpg)";
-  };
   return (
     <Swiper
       modules={[Autoplay, Pagination, Navigation]}
@@ -28,7 +22,8 @@ const MySwiper = () => {
       <SwiperSlide>
         <div
           style={{
-            backgroundImage: BannerImages.imagen1,
+            backgroundImage:
+              "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg)",
             height: "80vh",
             backgroundSize: "cover",
             backgroundPosition: "center center",
@@ -50,7 +45,7 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              ,
+              "url(https://imagenesrutalab.s3.amazonaws.com/llorona/franquicia/IMG_0071.jpg)",
             height: "80vh",
             backgroundSize: "cover",
             backgroundPosition: "center center",
