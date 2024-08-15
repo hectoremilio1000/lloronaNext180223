@@ -12,14 +12,14 @@ function Encontramos() {
           <>
             <div>
               <h1 className="text-center text-white text-3xl md:text-4xl uppercase font-black">
-                Nos localizamos en el corazón de la Roma Condesa
+                Ubicados en el Corazón Vibrante de la Roma Condesa, Ciudad de
+                México
               </h1>
             </div>
             <div>
               <h4 className="text-white text-lg md:text-xl text-center">
-                Alvaro Obregón 308 Roma Condesa
+                En Álvaro Obregón 308
                 <br />
-                Enfrente del Parque España
               </h4>
 
               <div className="linea"></div>
@@ -48,7 +48,7 @@ function Encontramos() {
               <Link href="/reserva">
                 <button
                   type="button"
-                  className="buttonComponente focus:outline-none text-white bg-green-400 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+                  className="buttonComponente focus:outline-none text-white bg-red-500 hover:bg-red-700 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800"
                 >
                   ¡Reserva ya!
                 </button>
@@ -59,12 +59,16 @@ function Encontramos() {
           <>
             <div>
               <h1 className="text-center text-white text-3xl md:text-4xl uppercase font-black">
-                Location of this incredible experience
+                Experience Mexico in the Heart of Roma Condesa Mexico City
               </h1>
+              <p className="text-white text-center text-lg md:text-xl mt-2">
+                Discover the vibrant flavors of Mexico in our unique cantina,
+                located in the trendy Roma Condesa district.
+              </p>
             </div>
             <div>
               <h4 className="text-white text-lg md:text-xl text-center">
-                Alvaro Obregón 308 Roma Condesa
+                Alvaro Obregón 308
               </h4>
 
               <div className="linea"></div>
@@ -93,7 +97,7 @@ function Encontramos() {
               <Link href="/reserva">
                 <button
                   type="button"
-                  className="buttonComponente focus:outline-none text-white bg-green-400 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+                  className="buttonComponente focus:outline-none text-white bg-red-500 hover:bg-red-700 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800"
                 >
                   ¡Book Now!
                 </button>

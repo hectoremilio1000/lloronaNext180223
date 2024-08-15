@@ -141,7 +141,6 @@ h1 {
 
 .buttonComponent {
   width: 200px;
-  background-color: #28a745;
   color: #fff;
   border-radius: 4px;
   padding: 20px 14px;
@@ -388,8 +387,7 @@ background-repeat: no-repeat;
   font-size: 1.25rem;
   line-height: 1.5;
   padding: 0.5rem 1rem;
-  background-color: #28a745 !important;
-  border-color: #28a745 !important;
+
   color: #fff !important;
 }
 

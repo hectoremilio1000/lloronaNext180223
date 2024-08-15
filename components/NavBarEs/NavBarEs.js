@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import logo from "../../data/imagenes/logo_alta_sin_nombre.png";
 
@@ -18,7 +18,7 @@ const usFlag =
 const mxFlag =
   "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/banderas/mx.svg";
 
-function NavBar() {
+function NavBar({ onLanguageChange }) {
   const [current, setCurrent] = useState("");
   const [linkswraper, setLinkswraper] = useState(false);
   const [navbar, setNavbar] = useState(false);
@@ -46,9 +46,13 @@ function NavBar() {
     setLinkswraper(!linkswraper);
   };
 
-  const cambiarComponent = (e) => {
-    setCurrent(e.key);
-    navigate.push(`${e.key}`);
+  const handleLanguageSwitch = (language) => {
+    if (language === "ingles") {
+      onIdiomaIngles();
+    } else {
+      onIdiomaEspa();
+    }
+    onLanguageChange(language);
   };
 
   return (
@@ -74,14 +78,14 @@ function NavBar() {
               }}
             />
             <div
-              onClick={onIdiomaIngles}
+              onClick={() => handleLanguageSwitch("ingles")}
               className="hover:text-emerald-500 toggle-icon cursor-pointer mr-2"
             >
               <img src={usFlag} width={20} height={20} />
             </div>
 
             <div
-              onClick={onIdiomaEspa}
+              onClick={() => handleLanguageSwitch("espa")}
               className="hover:text-emerald-500 cursor-pointer toggle-icon"
             >
               <img src={mxFlag} width={20} height={20} />
@@ -96,58 +100,8 @@ function NavBar() {
         >
           <>
             {" "}
-            {espa ? (
+            {ingles ? (
               <>
-                {" "}
-                <li key="0">
-                  <Link href="/" className="nav-link hover:text-emerald-500">
-                    Inicio
-                  </Link>
-                </li>
-                <li key="1">
-                  <Link
-                    href="/reserva"
-                    className="nav-link hover:text-emerald-500"
-                  >
-                    Reserva
-                  </Link>
-                </li>
-                <li key="2">
-                  <Link
-                    href="/menullorona"
-                    className="nav-link hover:text-emerald-500"
-                  >
-                    Menu
-                  </Link>
-                </li>
-                <li key="3">
-                  <Link
-                    href="/mezcal"
-                    className="nav-link hover:text-emerald-500"
-                  >
-                    Mezcal
-                  </Link>
-                </li>
-                {/* <li key="4">
-                  <Link
-                    href="/salsavivo"
-                    className="nav-link hover:text-emerald-500"
-                  >
-                    Salsa en Vivo
-                  </Link>
-                </li>
-                <li key="5">
-                  <Link
-                    href="/paquetes"
-                    className="nav-link hover:text-emerald-500"
-                  >
-                    Paquetes navideños
-                  </Link>
-                </li> */}
-              </>
-            ) : (
-              <>
-                {" "}
                 <li key="0">
                   <Link href="/" className="nav-link hover:text-emerald-500">
                     Home
@@ -177,14 +131,6 @@ function NavBar() {
                     Mezcal
                   </Link>
                 </li>
-                {/* <li key="4">
-                  <Link
-                    href="/salsavivo"
-                    className="nav-link hover:text-emerald-500"
-                  >
-                    Live salsa
-                  </Link>
-                </li> */}
                 <li key="5">
                   <Link
                     href="/mixologia"
@@ -192,7 +138,39 @@ function NavBar() {
                   >
                     Mixology
                   </Link>
-                </li>{" "}
+                </li>
+              </>
+            ) : (
+              <>
+                <li key="0">
+                  <Link href="/" className="nav-link hover:text-emerald-500">
+                    Inicio
+                  </Link>
+                </li>
+                <li key="1">
+                  <Link
+                    href="/reserva"
+                    className="nav-link hover:text-emerald-500"
+                  >
+                    Reserva
+                  </Link>
+                </li>
+                <li key="2">
+                  <Link
+                    href="/menullorona"
+                    className="nav-link hover:text-emerald-500"
+                  >
+                    Menu
+                  </Link>
+                </li>
+                <li key="3">
+                  <Link
+                    href="/mezcal"
+                    className="nav-link hover:text-emerald-500"
+                  >
+                    Mezcal
+                  </Link>
+                </li>
               </>
             )}
           </>
