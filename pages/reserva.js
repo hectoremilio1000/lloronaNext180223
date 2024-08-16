@@ -36,7 +36,23 @@ function Reserva() {
     event.target.pauseVideo();
   };
 
-  const { espa } = useAppContext();
+  const { ingles, espa, onIdiomaIngles, onIdiomaEspa } = useAppContext();
+  const [hasInitialized, setHasInitialized] = useState(false);
+  useEffect(() => {
+    if (!hasInitialized) {
+      onIdiomaEspa();
+      setHasInitialized(true);
+    }
+  }, [hasInitialized, onIdiomaIngles]);
+
+  const handleLanguageChange = (language) => {
+    if (language === "espa") {
+      onIdiomaEspa();
+    } else {
+      onIdiomaIngles();
+    }
+    setHasInitialized(true);
+  };
   const image1 =
     "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg";
   const image2 =
@@ -83,7 +99,7 @@ function Reserva() {
             />
           </Head>
         )}
-        <NavBar />
+        <NavBar onLanguageChange={handleLanguageChange} />
         <div className="w-full bg-black h-[400px]"></div>
         <div className="w-full bg-[#020a06] -mt-[200px]">
           {espa ? (

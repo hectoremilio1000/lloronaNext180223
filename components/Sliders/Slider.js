@@ -162,12 +162,19 @@ const Slider = () => {
           </div>
           <div className="w-full max-w-[1184px] mx-auto px-[20px]">
             <Swiper
-              spaceBetween={50}
-              slidesPerView={3}
+              spaceBetween={30}
+              slidesPerView={2}
               pagination={{
                 clickable: true,
               }}
-              modules={[Pagination]}
+              modules={[Autoplay, Pagination, Navigation]}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              navigation
+              scrollbar={{ draggable: true }}
+              loop={true}
               breakpoints={{
                 // cuando el ancho de la ventana es igual o mayor a 640px
                 640: {
@@ -176,7 +183,7 @@ const Slider = () => {
                 },
                 // cuando el ancho de la ventana es igual o mayor a 768px
                 768: {
-                  slidesPerView: 2,
+                  slidesPerView: 3,
                   spaceBetween: 20,
                 },
                 // cuando el ancho de la ventana es igual o mayor a 1024px

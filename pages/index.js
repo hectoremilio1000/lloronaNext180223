@@ -6,6 +6,8 @@ import MenuDetail from "../components/MenuDetail";
 import Promociones from "../components/Promociones";
 // import videoPort from '../data/assets/portada.mp4'
 import { useRouter } from "next/router";
+
+import { useEffect, useState } from "react";
 import HeaderEn from "../components/Header-en/HeaderEn";
 import HeaderEs from "../components/Header-es/Header-es";
 import { useAppContext } from "../components/context/Context";
@@ -56,12 +58,27 @@ export default function Home() {
   };
 
   const router = useRouter();
+  const { ingles, espa, onIdiomaIngles, onIdiomaEspa } = useAppContext();
+  const [hasInitialized, setHasInitialized] = useState(false);
+  useEffect(() => {
+    if (!hasInitialized) {
+      onIdiomaEspa();
+      setHasInitialized(true);
+    }
+  }, [hasInitialized, onIdiomaIngles]);
+
+  const handleLanguageChange = (language) => {
+    if (language === "espa") {
+      onIdiomaEspa();
+    } else {
+      onIdiomaIngles();
+    }
+    setHasInitialized(true);
+  };
   const { locale } = router;
   let HeaderComponent;
   const logo2 =
     "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/logo_page_altaNUEVO_blanco.png";
-
-  const { ingles, espa } = useAppContext();
 
   return (
     <div>
@@ -122,7 +139,7 @@ export default function Home() {
           <link rel="manifest" href="../manifest.json" />
         </Head>
       )}
-      <NavBar />
+      <NavBar onLanguageChange={handleLanguageChange} />
       {espa ? (
         <>
           <div>

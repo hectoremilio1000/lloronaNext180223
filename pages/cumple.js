@@ -39,8 +39,23 @@ function Reserva() {
     // access to player in all event handlers via event.target
     event.target.pauseVideo();
   };
+  const { ingles, espa, onIdiomaIngles, onIdiomaEspa } = useAppContext();
+  const [hasInitialized, setHasInitialized] = useState(false);
+  useEffect(() => {
+    if (!hasInitialized) {
+      onIdiomaEspa();
+      setHasInitialized(true);
+    }
+  }, [hasInitialized, onIdiomaIngles]);
 
-  const { espa } = useAppContext();
+  const handleLanguageChange = (language) => {
+    if (language === "espa") {
+      onIdiomaEspa();
+    } else {
+      onIdiomaIngles();
+    }
+    setHasInitialized(true);
+  };
   const image1 =
     "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg";
   const image2 =
@@ -89,7 +104,7 @@ function Reserva() {
               />
             </Head>
           )}
-          <NavBar />
+          <NavBar onLanguageChange={handleLanguageChange} />
           <div>
             <MySwiper />
           </div>

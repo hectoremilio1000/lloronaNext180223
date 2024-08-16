@@ -12,7 +12,7 @@ import { FB_PIXEL_ID } from "../lib/fpixel";
 
 import { InlineWidget } from "react-calendly";
 import ModalAll from "../components/ModalAll";
-import NavBarWhite from "../components/NavbarWhite";
+import NavBar from "../components/NavBarEs/NavBarEs";
 import CalendarioTiktokTree from "../components/CalendarioTiktokTree";
 import QuickInfo5 from "../components/QuickInfo5";
 import QuickInfo6 from "../components/QuickInfo6";
@@ -39,7 +39,23 @@ function CitaGoogleLlorona() {
     event.target.pauseVideo();
   };
 
-  const { espa } = useAppContext();
+  const { ingles, espa, onIdiomaIngles, onIdiomaEspa } = useAppContext();
+  const [hasInitialized, setHasInitialized] = useState(false);
+  useEffect(() => {
+    if (!hasInitialized) {
+      onIdiomaEspa();
+      setHasInitialized(true);
+    }
+  }, [hasInitialized, onIdiomaIngles]);
+
+  const handleLanguageChange = (language) => {
+    if (language === "espa") {
+      onIdiomaEspa();
+    } else {
+      onIdiomaIngles();
+    }
+    setHasInitialized(true);
+  };
   const image1 =
     "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg";
   const image2 =
@@ -108,7 +124,7 @@ function CitaGoogleLlorona() {
             />
           </Head>
         )}
-        <NavBarWhite />
+        <NavBar onLanguageChange={handleLanguageChange} />
         {espa ? (
           <div className="d-flex subContenedor1Banner bannerHomeFinal1">
             <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada trans-transform">
