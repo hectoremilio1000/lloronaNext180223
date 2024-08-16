@@ -219,30 +219,45 @@ const Slider = () => {
               <SwiperSlide>
                 <div className="w-full">
                   <img
-                    className="rounded-lg border-2 border-white w-full h-[300px] object-top object-cover"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/postresDeliciosos.jpeg"
+                    className="rounded-lg border-2 border-white w-full h-[300px] object-left object-cover"
+                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/gruposcubanos1.png"
                     alt=""
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
-                    Chocolate Molten Cake
+                    Live Cuban
                   </h1>
-                  <p className="text-xs md:text-xl text-white">
-                    with Banana Ice Cream
-                  </p>
+                  <p className="text-xs md:text-xl text-white">Son Band</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="w-full">
                   <img
                     className="rounded-lg border-2 border-white w-full h-[300px] object-top object-cover"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologiaMexicana.jpg"
+                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/lugarincreible%2Bcomida%2Bdeliciosa%2Bcantina.jpg"
                     alt=""
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
-                    Modern mixology
+                    Unique Mexican Cantina
                   </h1>
                   <p className="text-xs md:text-xl text-white">
-                    with Mexican flavors
+                    Roma Condesa Mexico City
+                  </p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="w-full">
+                  <video
+                    className="rounded-lg border-2 border-white w-full h-[300px] object-top object-cover object-center"
+                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/llorona%2Bmariachi%2Bcantina.MP4"
+                    autoPlay
+                    loop
+                    muted
+                  />
+                  <h1 className="text-2xl md:text-5xl text-white mt-3">
+                    Meeting place for foreigners
+                  </h1>
+                  <p className="text-xs md:text-xl text-white">
+                    Mexican food in Mexico City
                   </p>
                 </div>
               </SwiperSlide>

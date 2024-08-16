@@ -19,6 +19,10 @@ const image3 =
 
 const image4 =
   "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/soncubano3Imagen.jpg";
+
+const image5 =
+  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/cantina%2Bllorona%2Btaco.jpg";
+
 function QuickInfo() {
   const handleClick = () => {
     fbq.event("reserva");
@@ -133,7 +137,7 @@ function QuickInfo() {
                 <div>
                   <img
                     className="h-[220px] object-cover w-full rounded"
-                    src={image2}
+                    src={image5}
                     alt="cocteles y tacos"
                   />
                 </div>
