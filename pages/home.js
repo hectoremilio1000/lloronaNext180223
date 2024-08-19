@@ -173,7 +173,6 @@ export default function Home() {
             <MySwiper />
           </div>
         </> */}
-      (
       <div className="overflow-hidden bg-black">
         <div className="inline-block whitespace-nowrap animate-marqueeleft">
           <h1 className="inline-block text-white text-[70px] md:text-[100px] font-bold px-4 py-2 w-full">
