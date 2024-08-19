@@ -128,7 +128,6 @@ export default function Home() {
         <link rel="apple-touch-icon" href="../logo192.png" />
         <link rel="manifest" href="../manifest.json" />
       </Head>
-      ) :
       {/* <Head>
           <title>La Llorona</title>
           <link rel="icon" href="../favicon.ico" />
