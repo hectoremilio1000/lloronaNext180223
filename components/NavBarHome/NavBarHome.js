@@ -100,79 +100,45 @@ function NavBar({ onLanguageChange }) {
         >
           <>
             {" "}
-            {ingles ? (
-              <>
-                <li key="0">
-                  <Link href="/" className="nav-link hover:text-emerald-500">
-                    Home
-                  </Link>
-                </li>
-                <li key="1">
-                  <Link
-                    href="/reserva"
-                    className="nav-link hover:text-emerald-500"
-                  >
-                    Book Now
-                  </Link>
-                </li>
-                <li key="2">
-                  <Link
-                    href="/menullorona"
-                    className="nav-link hover:text-emerald-500"
-                  >
-                    Menu
-                  </Link>
-                </li>
-                <li key="3">
-                  <Link
-                    href="/mezcal"
-                    className="nav-link hover:text-emerald-500"
-                  >
-                    Mezcal
-                  </Link>
-                </li>
-                <li key="5">
-                  <Link
-                    href="/mixologia"
-                    className="nav-link hover:text-emerald-500"
-                  >
-                    Mixology
-                  </Link>
-                </li>
-              </>
-            ) : (
-              <>
-                <li key="0">
-                  <Link href="/" className="nav-link hover:text-emerald-500">
-                    Inicio
-                  </Link>
-                </li>
-                <li key="1">
-                  <Link
-                    href="/reserva"
-                    className="nav-link hover:text-emerald-500"
-                  >
-                    Reserva
-                  </Link>
-                </li>
-                <li key="2">
-                  <Link
-                    href="/menullorona"
-                    className="nav-link hover:text-emerald-500"
-                  >
-                    Menu
-                  </Link>
-                </li>
-                <li key="3">
-                  <Link
-                    href="/mezcal"
-                    className="nav-link hover:text-emerald-500"
-                  >
-                    Mezcal
-                  </Link>
-                </li>
-              </>
-            )}
+            <>
+              <li key="0">
+                <Link href="/" className="nav-link hover:text-emerald-500">
+                  Home
+                </Link>
+              </li>
+              <li key="1">
+                <Link
+                  href="/reserva"
+                  className="nav-link hover:text-emerald-500"
+                >
+                  Book Now
+                </Link>
+              </li>
+              <li key="2">
+                <Link
+                  href="/menullorona"
+                  className="nav-link hover:text-emerald-500"
+                >
+                  Menu
+                </Link>
+              </li>
+              <li key="3">
+                <Link
+                  href="/mezcal"
+                  className="nav-link hover:text-emerald-500"
+                >
+                  Mezcal
+                </Link>
+              </li>
+              <li key="5">
+                <Link
+                  href="/mixologia"
+                  className="nav-link hover:text-emerald-500"
+                >
+                  Mixology
+                </Link>
+              </li>
+            </>
           </>
         </div>
         <div className="header-icons">

@@ -1,20 +1,15 @@
 import Head from "next/head";
-import QuickInfo from "../components/Quickinfo/index";
-import QuickInfo2 from "../components/QuickInfo2/index";
-import QuickInfo3 from "../components/QuickInfo3/index";
-import MenuDetail from "../components/MenuDetail";
-import Promociones from "../components/Promociones";
+import QuickInfo from "../components/QuickinfoIngles";
+
 // import videoPort from '../data/assets/portada.mp4'
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
 import { useAppContext } from "../components/context/Context";
-import Encontramos from "../components/Encontramos";
+import Encontramos from "../components/EncontramosIngles/index";
 import * as fbq from "../lib/fpixel";
 import Calendario from "../components/Calendario";
-import QuickInfo4 from "../components/QuickInfo4";
-import Slider from "../components/Sliders/Slider";
-import Link from "next/link";
+import Slider from "../components/SlidersIngles/Slider";
 import NavBar from "../components/NavBarHome/NavBarHome";
 import QuickInfo5 from "../components/QuickInfo5";
 import QuickInfo6 from "../components/QuickInfo6";
@@ -183,7 +178,7 @@ export default function Home() {
           </h1>
         </div>
       </div>
-      )
+
       {/* <div className="overflow-hidden bg-black">
           <div className="inline-block whitespace-nowrap animate-marqueeleft">
             <h1 className="inline-block text-white text-[70px] md:text-[100px] font-bold px-4 py-2 w-full">

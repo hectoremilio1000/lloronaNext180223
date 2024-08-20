@@ -151,13 +151,15 @@ const Slider = () => {
       ) : (
         <div className="w-full bg-black py-12">
           <div className="overflow-hidden bg-black">
-            <div className="flex items-center gap-4 whitespace-nowrap ">
-              <h1 className="animate-marquee inline-block text-white text-[70px] md:text-[100px] font-bold">
-                Our MENU
-              </h1>
-              <h1 className="animate-marquee inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold ">
-                Our MENU
-              </h1>
+            <div className="overflow-hidden bg-black">
+              <div className="flex items-center gap-4 whitespace-nowrap ">
+                <h1 className="animate-marqueeleft inline-block text-white text-[70px] md:text-[100px] font-bold">
+                  Our Menu
+                </h1>
+                <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold ">
+                  Our Menu
+                </h1>
+              </div>
             </div>
           </div>
           <div className="w-full max-w-[1184px] mx-auto px-[20px]">
