@@ -116,10 +116,10 @@ export default function Home() {
 
       <div className="overflow-hidden bg-black">
         <div className="inline-block whitespace-nowrap animate-marqueeleft">
-          <h1 className="inline-block text-white text-[70px] md:text-[100px] font-bold px-4 py-2 w-full">
+          <h1 className="inline-block text-red-500 text-[70px] md:text-[100px] font-bold px-4 py-2">
             The Perfect Spot for Your Next Date
           </h1>
-          <h1 className="inline-block text-white text-[70px] md:text-[100px] font-bold px-4 py-2 w-full">
+          <h1 className="inline-block text-white text-[70px] md:text-[100px] font-bold px-4 py-2">
             The Perfect Spot for Your Next Date
           </h1>
         </div>

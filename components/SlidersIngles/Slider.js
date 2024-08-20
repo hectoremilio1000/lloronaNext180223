@@ -15,12 +15,12 @@ const Slider = () => {
     <>
       <div className="w-full bg-black py-12">
         <div className="overflow-hidden bg-black">
-          <div className="flex items-center gap-4 whitespace-nowrap ">
-            <h1 className="animate-marqueeleft inline-block text-white text-[70px] md:text-[100px] font-bold">
-              Our Menu
+          <div className="inline-block whitespace-nowrap animate-marqueeleft">
+            <h1 className="inline-block text-red-500 text-[70px] md:text-[100px] font-bold px-4 py-2">
+              OUR MENU FOR YOUR DATE
             </h1>
-            <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold ">
-              Our Menu
+            <h1 className="inline-block text-white text-[70px] md:text-[100px] font-bold px-4 py-2">
+              OUR MENU FOR YOUR DATE
             </h1>
           </div>
         </div>
