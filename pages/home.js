@@ -59,24 +59,6 @@ export default function Home() {
   const { ingles, onIdiomaIngles, onIdiomaEspa } = useAppContext();
   const [hasInitialized, setHasInitialized] = useState(false);
 
-  // useEffect(() => {
-  //   // Solo cambiar a inglés si es la primera vez que se carga la página
-  //   if (!hasInitialized) {
-  //     onIdiomaIngles();
-  //     setHasInitialized(true);
-  //   }
-  // }, [hasInitialized, onIdiomaIngles]);
-
-  // const handleLanguageChange = (language) => {
-  //   if (language === "espa") {
-  //     onIdiomaEspa();
-  //     setHasInitialized(true);
-  //   } else {
-  //     onIdiomaIngles();
-  //     setHasInitialized(true);
-  //   }
-  // };
-
   return (
     <div>
       <Head>

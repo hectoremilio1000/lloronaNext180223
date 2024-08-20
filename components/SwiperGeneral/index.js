@@ -80,7 +80,6 @@ const MySwiper = ({ BannerImages }) => {
           }}
         ></div>
       </SwiperSlide>
-      {/* Agrega más SwiperSlide según sea necesario */}
     </Swiper>
   );
 };
