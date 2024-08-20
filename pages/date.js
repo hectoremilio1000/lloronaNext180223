@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import { useAppContext } from "../components/context/Context";
 import Encontramos from "../components/EncontramosIngles/index";
 import * as fbq from "../lib/fpixel";
-import Calendario from "../components/Calendario";
+import Calendario from "../components/CalendarioIngles";
 import Slider from "../components/SlidersIngles/Slider";
 import NavBar from "../components/NavBarHome/NavBarHome";
 import QuickInfo5 from "../components/QuickInfo5";
