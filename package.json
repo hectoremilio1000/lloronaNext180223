@@ -11,6 +11,7 @@
     "@headlessui/react": "^1.7.18",
     "flickity": "^2.3.0",
     "fs-extra": "^11.1.1",
+    "mysql2": "^3.11.0",
     "next": "latest",
     "owl.carousel": "^2.3.4",
     "postcss-cli": "^10.1.0",
