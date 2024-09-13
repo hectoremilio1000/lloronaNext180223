@@ -46,9 +46,9 @@ function Septiembre() {
   const image2 =
     "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg";
   const image3 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/soncubano3Imagen.jpg";
+    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/15septiembre/chileennogadamexicolloronacantina.jpg";
   const image4 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/comida/amigastomandoCantinaLlorona.JPG";
+    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/gruposcubanos1.png";
 
   const image5 =
     "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg";
@@ -101,7 +101,7 @@ function Septiembre() {
                 <div className="w-full max-w-[1184px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-8 text-center">
                   <div className="w-full">
                     <h1 className="font-bold text-3xl md:text-4xl text-white pt-4">
-                      Disfruta de la única Cantina con Son Cubano en Vivo
+                      Disfruta de las fiestas patrias con nosotros
                     </h1>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <Link href="/reserva">
@@ -112,8 +112,8 @@ function Septiembre() {
                             alt="Música en vivo"
                           />
                           <p className="text-white pt-2">
-                            Grandes orquestas <br />
-                            de son cubano
+                            El chile en <br />
+                            Nogada más famoso
                           </p>
                         </div>
                       </Link>
@@ -132,19 +132,20 @@ function Septiembre() {
                         </div>
                       </Link>
                     </div>
+
                     <p className="text-start text-white sm:text-xs md:text-2xl mt-3">
-                      En <b>Cantina La Llorona</b>, ofrecemos una experiencia
-                      vibrante y auténtica con grupos de son cubano, que te
-                      transportará con sus ritmos cálidos y contagiosos. Cada
-                      semana tenemos grandes orquestas directamente desde{" "}
-                      <b>Cuba 🇨🇺</b>.
+                      🇲🇽 ¡Disfruta de las <b>Fiestas Patrias con Nosotros! </b>
+                      🎉
                     </p>
                     <p className="text-start text-white sm:text-xs md:text-2xl mt-3">
-                      No pierdas la oportunidad de reservar y vivir esta
-                      experiencia única en Cantina La Llorona. ¡Te esperamos
-                      para compartir una noche de sabores exquisitos y música en
-                      vivo que te harán sentir la verdadera esencia de una
-                      <b> Cantina Mexicana! 🥁🪇🎺🇲🇽</b>
+                      Este septiembre, te invitamos a celebrar en grande 🎶,
+                      viviendo la esencia de las Fiestas Patrias al ritmo del
+                      mejor Son Cubano de México 🇨🇺. Únete a nuestra gran fiesta
+                      🎊 y deja que la música y la tradición te envuelvan
+                      mientras disfrutas del auténtico sabor de la temporada con
+                      nuestro exquisito Chile en Nogada 🌶️🍽️, preparado con los
+                      mejores ingredientes. ¡No te pierdas una noche llena de
+                      sabor, cultura y alegría! 🎶💃✨
                     </p>
                   </div>
                   <div className="w-full">

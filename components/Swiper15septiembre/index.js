@@ -31,7 +31,7 @@ const MySwiper = () => {
             <div
               style={{
                 backgroundImage:
-                  "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/gruposcubanos1.png)",
+                  "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/15septiembre/LaLloronaCantinaChileEnNogada.jpg)",
                 height: "80vh",
                 backgroundSize: "cover",
                 backgroundPosition: "center left",
@@ -39,7 +39,7 @@ const MySwiper = () => {
             >
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
                 <h2 className="text-white text-3xl md:text-4xl lg:text-6xl font-bold text-center p-4">
-                  Son Cubano en Vivo
+                  Celebra la gran fiesta con Nosotros de Septiembre
                 </h2>
               </div>
             </div>
@@ -63,7 +63,7 @@ const MySwiper = () => {
             <div
               style={{
                 backgroundImage:
-                  "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/gruposcubanos1.png)",
+                  "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/15septiembre/LaLloronaCantinaChileEnNogada.jpg)",
                 height: "80vh",
                 backgroundSize: "cover",
                 backgroundPosition: "center left",
@@ -71,7 +71,7 @@ const MySwiper = () => {
             >
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
                 <h2 className="text-white text-3xl md:text-4xl lg:text-6xl font-bold text-center p-4">
-                  Live Cuban Son
+                  Celebrate the September Mexican Party with Us
                 </h2>
               </div>
             </div>
