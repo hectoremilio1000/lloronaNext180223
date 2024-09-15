@@ -63,14 +63,14 @@ const Slider = () => {
                 <div className="w-full">
                   <img
                     className="rounded-lg border-2 border-white w-full h-[300px] object-top object-cover"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/ricaCarneLloronaCantina.jpg
+                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/15septiembre/chileennogadamexicolloronacantina.jpg
                     "
                     alt=""
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
-                    Cortes Premiun
+                    Comida
                   </h1>
-                  <p className="text-xs md:text-xl text-white">Deliciosos </p>
+                  <p className="text-xs md:text-xl text-white">Deliciosa </p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
@@ -119,29 +119,27 @@ const Slider = () => {
                 <div className="w-full">
                   <img
                     className="rounded-lg border-2 border-white w-full h-[300px] object-top object-cover"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/postresDeliciosos.jpeg"
+                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/comida/amigastomandoCantinaLlorona.JPG"
                     alt=""
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
-                    Molten de chocolate
+                    Festeja con nosotros
                   </h1>
-                  <p className="text-xs md:text-xl text-white">
-                    con Helado de Plátano
-                  </p>
+                  <p className="text-xs md:text-xl text-white">gran ambiente</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="w-full">
                   <img
                     className="rounded-lg border-2 border-white w-full h-[300px] object-top object-cover"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologiaMexicana.jpg"
+                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/festejo+cantina+llorona+salsa+baile.jpg"
                     alt=""
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
-                    Mixología
+                    Conoce amigos
                   </h1>
                   <p className="text-xs md:text-xl text-white">
-                    con sabores mexicanos
+                    mexicanos y extranjeros
                   </p>
                 </div>
               </SwiperSlide>

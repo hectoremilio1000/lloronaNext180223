@@ -44,7 +44,7 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/rib%2Beye%2Bllorona%2Bcarne.jpg)",
+              "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/15septiembre/LaLloronaCantinaChileEnNogada.jpg)",
             height: "80vh",
             backgroundSize: "cover",
             backgroundPosition: "center center",
@@ -108,10 +108,10 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              "url(https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/cumplean%CC%83os%2Bsorpresa%2Bfiesta%2Bllorona%2Bcantina.png)",
+              "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/comida+deliciosa+cantina+llorona.jpg)",
             height: "80vh",
             backgroundSize: "cover",
-            backgroundPosition: "center center",
+            backgroundPosition: "top center",
           }}
         >
           {" "}
