@@ -6,6 +6,7 @@ import QuickInfo5 from "../../components/QuickInfo5";
 import QuickInfo6 from "../../components/QuickInfo6";
 import NavBar from "../../components/NavBarEs/NavBarEs";
 import MySwiper from "../../components/SwiperGeneral";
+import Head from "next/head";
 
 const Evento = () => {
   const router = useRouter();
@@ -17,6 +18,13 @@ const Evento = () => {
     {
       nombre_evento: "familia",
       es: {
+        metas: {
+          title:
+            "El restaurante con un diseño sorprendente y la comida más sabrosa",
+          descripcion: "L amagia ya esta aqui",
+          image:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Hrg9XUZSQuu4rrsyx8wrkzbS0cLRsUTwSw&s",
+        },
         images: [
           {
             url: "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/terrazaespecialromanceromacondesaamigoscantina.jpg",
@@ -30,21 +38,27 @@ const Evento = () => {
         bannerImages: [
           {
             url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg)",
+            title: "SALSA MAGICA",
           },
           {
             url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/pan%2Belote%2Bcantina%2Bllorona%2Bdelicioso.JPG)",
+            title: "SALSA MAGICA",
           },
           {
             url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/comida/mariscos.jpg)",
+            title: "SALSA MAGICA",
           },
           {
             url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/costra%2Belote%2Bdelicia%2Bchef%2Bcantina%2Bllorona.JPG)",
+            title: "SALSA MAGICA",
           },
           {
             url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/cantina%2Bllorona%2Btaco.jpg)",
+            title: "SALSA MAGICA",
           },
           {
             url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/tostada%2Batun%2Baguachile%2Bcantina%2Bllorona+copy.jpg )",
+            title: "SALSA MAGICA",
           },
         ],
         titulo:
@@ -60,6 +74,13 @@ const Evento = () => {
         ),
       },
       en: {
+        metas: {
+          title:
+            "The restaurant with breathtaking design and the most delicious food",
+          descripcion: "L amagia ya esta aqui",
+          image:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Hrg9XUZSQuu4rrsyx8wrkzbS0cLRsUTwSw&s",
+        },
         images: [
           {
             url: "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg",
@@ -73,21 +94,27 @@ const Evento = () => {
         bannerImages: [
           {
             url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg)",
+            title: "SALSA MAGICA",
           },
           {
             url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/pan%2Belote%2Bcantina%2Bllorona%2Bdelicioso.JPG)",
+            title: "SALSA MAGICA",
           },
           {
             url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/comida/mariscos.jpg)",
+            title: "SALSA MAGICA",
           },
           {
             url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/costra%2Belote%2Bdelicia%2Bchef%2Bcantina%2Bllorona.JPG)",
+            title: "SALSA MAGICA",
           },
           {
             url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/cantina%2Bllorona%2Btaco.jpg)",
+            title: "SALSA MAGICA",
           },
           {
             url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/tostada%2Batun%2Baguachile%2Bcantina%2Bllorona+copy.jpg )",
+            title: "SALSA MAGICA",
           },
         ],
         titulo:
@@ -127,6 +154,14 @@ const Evento = () => {
 
   return (
     <>
+      <Head>
+        <title>{eventoData.metas.title}</title>
+        <meta
+          property="og:description"
+          content={eventoData.metas.descripcion}
+        />
+        <meta property="og:image" content={eventoData.metas.image} />
+      </Head>
       <NavBar />
       <div>
         <MySwiper BannerImages={eventoData.bannerImages} />
