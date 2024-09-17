@@ -19,67 +19,20 @@ const MySwiper = ({ BannerImages }) => {
       scrollbar={{ draggable: true }}
       loop={true}
     >
-      <SwiperSlide>
-        <div
-          style={{
-            backgroundImage: BannerImages.imagen1,
-            height: "80vh",
-            backgroundSize: "cover",
-            backgroundPosition: "center center",
-          }}
-        ></div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div
-          style={{
-            backgroundImage: BannerImages.imagen2,
-            height: "80vh",
-            backgroundSize: "cover",
-            backgroundPosition: "top center",
-          }}
-        ></div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div
-          style={{
-            backgroundImage: BannerImages.imagen3,
-            height: "80vh",
-            backgroundSize: "cover",
-            backgroundPosition: "center center",
-          }}
-        ></div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div
-          style={{
-            backgroundImage: BannerImages.imagen4,
-            height: "80vh",
-            backgroundSize: "cover",
-            backgroundPosition: "center center",
-          }}
-        ></div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div
-          style={{
-            backgroundImage: BannerImages.imagen5,
-            height: "80vh",
-            backgroundSize: "cover",
-            backgroundPosition: "center center",
-          }}
-        ></div>
-      </SwiperSlide>
-
-      <SwiperSlide>
-        <div
-          style={{
-            backgroundImage: BannerImages.imagen6,
-            height: "80vh",
-            backgroundSize: "cover",
-            backgroundPosition: "center left",
-          }}
-        ></div>
-      </SwiperSlide>
+      {BannerImages.map((img, index) => {
+        return (
+          <SwiperSlide>
+            <div
+              style={{
+                backgroundImage: img.url,
+                height: "80vh",
+                backgroundSize: "cover",
+                backgroundPosition: "center center",
+              }}
+            ></div>
+          </SwiperSlide>
+        );
+      })}
     </Swiper>
   );
 };
