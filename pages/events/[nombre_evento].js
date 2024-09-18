@@ -29,10 +29,12 @@ const Evento = () => {
           {
             url: "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/terrazaespecialromanceromacondesaamigoscantina.jpg",
             textImage: "Diseño espectacular y unico en CDMX",
+            alt: "Diseño espectacular y unico en CDMX",
           },
           {
             url: "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/niurka%2Bcantina%2Bla%2Bllorona%2Bfestejo%2Bcantina%2Bllorona.jpg",
             textImage: "Restaurante de familia y comida",
+            alt: "Restaurante de familia y comida",
           },
         ],
         bannerImages: [
@@ -85,10 +87,12 @@ const Evento = () => {
           {
             url: "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg",
             textImage: "Diseño espectacular y unico en CDMX",
+            alt: "Diseño espectacular y unico en CDMX",
           },
           {
             url: "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/niurka%2Bcantina%2Bla%2Bllorona%2Bfestejo%2Bcantina%2Bllorona.jpg",
             textImage: "Restaurante de familia y comida",
+            alt: "Restaurante de familia y comida",
           },
         ],
         bannerImages: [
@@ -182,7 +186,7 @@ const Evento = () => {
                       <img
                         className="rounded-lg w-full h-[350px] object-cover"
                         src={img.url}
-                        alt="Música en vivo"
+                        alt={img.alt}
                       />
                       <p className="text-white pt-2">{img.textImage}</p>
                     </div>
