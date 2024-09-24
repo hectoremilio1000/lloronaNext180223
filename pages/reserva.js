@@ -15,6 +15,7 @@ import { InlineWidget } from "react-calendly";
 import ModalAll from "../components/ModalAll";
 import NavBar from "../components/NavBarEs/NavBarEs";
 import QuickInfo5 from "../components/QuickInfo5";
+import Slider from "../components/Sliders/Slider";
 
 function Reserva() {
   // useEffect(() => {
@@ -58,9 +59,9 @@ function Reserva() {
   const image2 =
     "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg";
   const image3 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg";
+    "https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/cumplean%CC%83os%2Bsorpresa%2Bfiesta%2Bllorona%2Bcantina%2Bnin%CC%83as.png";
   const image4 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2048.jpg";
+    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/gruposcubanos1.png";
 
   const image5 =
     "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg";
@@ -114,7 +115,7 @@ function Reserva() {
                     <Link href="/reserva">
                       <div>
                         <img
-                          className="rounded-lg w-full h-[350px] object-cover"
+                          className="rounded-lg w-full h-[350px] object-top object-cover"
                           src={image3}
                           alt="Música en vivo"
                         />
@@ -133,7 +134,7 @@ function Reserva() {
                         />
                         <p className="text-white text-center">
                           Grandes artistas <br />
-                          aman nuestro lugar
+                          de son cubano
                         </p>
                       </div>
                     </Link>
@@ -179,6 +180,9 @@ function Reserva() {
                   <QuickInfo6 idioma={espa} />
                 </div>
               </div>
+              <>
+                <Slider />
+              </>
             </>
           ) : (
             <>
