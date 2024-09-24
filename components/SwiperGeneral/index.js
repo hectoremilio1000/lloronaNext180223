@@ -21,7 +21,7 @@ const MySwiper = ({ BannerImages }) => {
     >
       {BannerImages.map((img, index) => {
         return (
-          <SwiperSlide>
+          <SwiperSlide key={index}>
             <div
               style={{
                 backgroundImage: img.url,
