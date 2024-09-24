@@ -12,13 +12,13 @@ const image1 =
   "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2050.jpg";
 
 const image2 =
-  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/tostadaCantinera.jpg";
+  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/aguachile%2Bcantina%2Bllorona%2Bribeye%2Bdelicioso.jpg";
 
 const image3 =
   "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/postres+ricos+deliciosos.JPG";
 
 const image4 =
-  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/soncubano3Imagen.jpg";
+  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/gruposcubanos1.png";
 
 const image5 =
   "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/cantina%2Bllorona%2Btaco.jpg";

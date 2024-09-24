@@ -51,14 +51,6 @@ const MySwiper = () => {
           }}
         >
           {" "}
-          {/* <div className="absolute inset-0 flex items-center justify-center">
-            <Link
-              href={"/reserva"}
-              className="inline-block px-4 py-3 rounded-md text-green-900 font-bold bg-[#3eeb91] text-xl m:text-2xl"
-            >
-              Reserva Ahora
-            </Link>
-          </div> */}
         </div>
       </SwiperSlide>
 
@@ -66,7 +58,7 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/tostadaMariscos%2Bllorona%2Bcantina.jpg)",
+              "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/aguachile%2Bcantina%2Bllorona%2Bribeye%2Bdelicioso.jpg)",
             height: "80vh",
             backgroundSize: "cover",
             backgroundPosition: "center",
@@ -108,10 +100,10 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/comida+deliciosa+cantina+llorona.jpg)",
+              "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/chicharron%2Bpork%2Bbelly%2Bguacamole%2Bcantina%2Bllorona.jpg)",
             height: "80vh",
             backgroundSize: "cover",
-            backgroundPosition: "top center",
+            backgroundPosition: "center center",
           }}
         >
           {" "}

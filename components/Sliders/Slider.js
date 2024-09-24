@@ -62,44 +62,46 @@ const Slider = () => {
               <SwiperSlide>
                 <div className="w-full">
                   <img
-                    className="rounded-lg border-2 border-white w-full h-[300px] object-top object-cover"
+                    className="rounded-lg border-2 border-white w-full h-[300px] object-center object-cover"
                     src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/15septiembre/chileennogadamexicolloronacantina.jpg
                     "
                     alt=""
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
-                    Comida
+                    Chile en nogada
                   </h1>
-                  <p className="text-xs md:text-xl text-white">Deliciosa </p>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="w-full">
-                  <img
-                    className="rounded-lg border-2 border-white w-full h-[300px] object-top object-cover"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/tostadaMariscos%2Bllorona%2Bcantina.jpg
-                    "
-                    alt=""
-                  />
-                  <h1 className="text-2xl md:text-5xl text-white mt-3">
-                    Tostadas deliciosas
-                  </h1>
-                  <p className="text-xs md:text-xl text-white">De mariscos </p>
+                  <p className="text-xs md:text-xl text-white">
+                    Premiado en diversos concursos{" "}
+                  </p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="w-full">
                   <img
                     className="rounded-lg border-2 border-white w-full h-[300px] object-bottom object-cover"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologiaIncreible.jpg"
+                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/tostada%2Bcamaron%2Bcantina%2Bllorona%2Baguachile%2Bcdmx%2Broma%2Bcondesa.jpg
+                    "
                     alt=""
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
-                    Tacos
+                    Tostadas deliciosas
                   </h1>
                   <p className="text-xs md:text-xl text-white">
-                    de maíz criollo
+                    De Aguachile de camarón{" "}
                   </p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="w-full">
+                  <img
+                    className="rounded-lg border-2 border-white w-full h-[300px] object-bottom object-cover"
+                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/barbacoa%2Bpican%CC%83a%2Bcantina%2Bllorona%2Bsabor%2Broma%2Bcondesa%2Bcdmx.jpg"
+                    alt=""
+                  />
+                  <h1 className="text-2xl md:text-5xl text-white mt-3">
+                    Barbacoa de picaña
+                  </h1>
+                  <p className="text-xs md:text-xl text-white">Tacos</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
