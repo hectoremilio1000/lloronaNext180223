@@ -67,56 +67,6 @@ const Evento = ({ nombre_evento }) => {
               isActive: true, //activado true, desactivado false
             },
           },
-          {
-            url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/pan%2Belote%2Bcantina%2Bllorona%2Bdelicioso.JPG)",
-            title: "SALSA MAGICA",
-            buttonAction: {
-              type: "link_external", //tipos: phone_contact, link_external, popup, etc
-              valor: "https://facebook.com/",
-              name: "LLama Ahora",
-              isActive: true, //activado true, desactivado false
-            },
-          },
-          {
-            url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/comida/mariscos.jpg)",
-            title: "SALSA MAGICA",
-            buttonAction: {
-              type: "phone_contact", //tipos: phone_contact, link_external, popup, etc
-              valor: "99999999",
-              name: "LLama Ahora",
-              isActive: false, //activado true, desactivado false
-            },
-          },
-          {
-            url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/costra%2Belote%2Bdelicia%2Bchef%2Bcantina%2Bllorona.JPG)",
-            title: "SALSA MAGICA",
-            buttonAction: {
-              type: "phone_contact", //tipos: phone_contact, link_external, popup, etc
-              valor: "99999999",
-              name: "LLama Ahora",
-              isActive: false, //activado true, desactivado false
-            },
-          },
-          {
-            url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/cantina%2Bllorona%2Btaco.jpg)",
-            title: "SALSA MAGICA",
-            buttonAction: {
-              type: "phone_contact", //tipos: phone_contact, link_external, popup, etc
-              valor: "99999999",
-              name: "LLama Ahora",
-              isActive: false, //activado true, desactivado false
-            },
-          },
-          {
-            url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/tostada%2Batun%2Baguachile%2Bcantina%2Bllorona+copy.jpg )",
-            title: "SALSA MAGICA",
-            buttonAction: {
-              type: "phone_contact", //tipos: phone_contact, link_external, popup, etc
-              valor: "99999999",
-              name: "LLama Ahora",
-              isActive: false, //activado true, desactivado false
-            },
-          },
         ],
         titulo:
           "El restaurante con un diseño sorprendente y la comida más sabrosa",
@@ -153,56 +103,6 @@ const Evento = ({ nombre_evento }) => {
         bannerImages: [
           {
             url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg)",
-            title: "SALSA MAGICA",
-            buttonAction: {
-              type: "phone_contact", //tipos: phone_contact, link_external, popup, etc
-              valor: "99999999",
-              name: "LLama Ahora",
-              isActive: false, //activado true, desactivado false
-            },
-          },
-          {
-            url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/pan%2Belote%2Bcantina%2Bllorona%2Bdelicioso.JPG)",
-            title: "SALSA MAGICA",
-            buttonAction: {
-              type: "phone_contact", //tipos: phone_contact, link_external, popup, etc
-              valor: "99999999",
-              name: "LLama Ahora",
-              isActive: false, //activado true, desactivado false
-            },
-          },
-          {
-            url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/comida/mariscos.jpg)",
-            title: "SALSA MAGICA",
-            buttonAction: {
-              type: "phone_contact", //tipos: phone_contact, link_external, popup, etc
-              valor: "99999999",
-              name: "LLama Ahora",
-              isActive: false, //activado true, desactivado false
-            },
-          },
-          {
-            url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/costra%2Belote%2Bdelicia%2Bchef%2Bcantina%2Bllorona.JPG)",
-            title: "SALSA MAGICA",
-            buttonAction: {
-              type: "phone_contact", //tipos: phone_contact, link_external, popup, etc
-              valor: "99999999",
-              name: "LLama Ahora",
-              isActive: false, //activado true, desactivado false
-            },
-          },
-          {
-            url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/cantina%2Bllorona%2Btaco.jpg)",
-            title: "SALSA MAGICA",
-            buttonAction: {
-              type: "phone_contact", //tipos: phone_contact, link_external, popup, etc
-              valor: "99999999",
-              name: "LLama Ahora",
-              isActive: false, //activado true, desactivado false
-            },
-          },
-          {
-            url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/tostada%2Batun%2Baguachile%2Bcantina%2Bllorona+copy.jpg )",
             title: "SALSA MAGICA",
             buttonAction: {
               type: "phone_contact", //tipos: phone_contact, link_external, popup, etc
