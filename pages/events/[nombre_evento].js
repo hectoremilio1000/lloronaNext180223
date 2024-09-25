@@ -15,6 +15,7 @@ export const getStaticPaths = async () => {
   const paths = [
     { params: { nombre_evento: "familia" } },
     { params: { nombre_evento: "pizzapremiadacdmx" } },
+    { params: { nombre_evento: "eventosempresariales" } },
   ];
 
   return { paths, fallback: true }; // fallback: true permite la generación dinámica de páginas no especificadas.
@@ -199,6 +200,116 @@ const Evento = ({ nombre_evento }) => {
             📞 <strong>Reserva</strong>:{" "}
             <a href="tel:+525549242477">5549242477</a>
             <br />
+          </>
+        ),
+      },
+      en: {
+        metas: {
+          title:
+            "Award-Winning Pear and Cheese Pizza in CDMX Roma Condesa | Cantina La Llorona",
+          descripcion:
+            "Enjoy the most awarded pear and cheese pizza in Roma Condesa, CDMX at Cantina La Llorona. Unique flavors and culinary creativity. Reserve now!",
+          image:
+            "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg",
+        },
+        images: [
+          {
+            url: "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg",
+            textImage: "Try Mexico’s most awarded pizza",
+            alt: "Try the most awarded pizza in Mexico, CDMX, Roma Condesa",
+          },
+          {
+            url: "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg",
+            textImage: "Family restaurant and delicious food",
+            alt: "Restaurant with unique design",
+          },
+        ],
+        bannerImages: [
+          {
+            url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg)",
+            title: "The Most Awarded Pizza",
+          },
+        ],
+        titulo: "Come and try the most awarded pizza in CDMX Roma Condesa 🍐🧀",
+        descripcion: (
+          <>
+            Are you looking for a unique culinary experience in the heart of{" "}
+            <strong>Roma Condesa</strong>? At{" "}
+            <strong>Cantina La Llorona</strong>, we offer something
+            extraordinary: our <strong>pear and cheese pizza</strong>,
+            recognized as one of the most awarded pizzas in Mexico City.
+            <br></br>
+            📍<strong>Location</strong>:{" "}
+            <a href="https://maps.app.goo.gl/S6pGcf26H5iKgpwdA">
+              Álvaro Obregón 308, Roma Condesa, CDMX{" "}
+            </a>
+            <br />
+            📞 <strong>Reserve</strong>:{" "}
+            <a href="tel:+525549242477">5549242477</a>
+            <br />
+          </>
+        ),
+      },
+    },
+    {
+      nombre_evento: "eventosempresariales",
+      es: {
+        metas: {
+          title: "Cenas Navideñas y Fin de Año en CDMX | Cantina La Llorona",
+          descripcion:
+            "Reserva tus cenas navideñas, de fin de año o cierre de año en Roma Condesa CDMX. Paquetes a la medida con música en vivo y pantallas para mensajes. ¡Reserva ahora!",
+          image:
+            "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg",
+        },
+        images: [
+          {
+            url: "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg",
+            textImage: "Celebra tu cena navideña a lo grande con grupo en vivo",
+            alt: "Prueba la pizza más premiada de México cdmx roma condesa",
+          },
+          {
+            url: "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg",
+            textImage: "Paquetes a la medida para tus cenas",
+            alt: "Restaurante con diseño único",
+          },
+        ],
+        bannerImages: [
+          {
+            url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg)",
+            title: "Cenas Navideñas y Fin de Año",
+          },
+        ],
+        titulo:
+          "Reserva tu Cena Navideña o de Fin de Año en Cantina La Llorona 🎄🎉",
+        descripcion: (
+          <>
+            <h1 className="text-center text-xl">
+              🎄 ¡Celebra a lo grande en Cantina La Llorona! 🎉
+            </h1>
+            <h2 className="text-start text-white text-base md:text-lg">
+              ¿Buscas un lugar perfecto para tu cena navideña, de fin de año o
+              cierre de año en el corazón de la<strong> Roma Condesa</strong>?
+              En <strong>Cantina La Llorona</strong> te ofrecemos paquetes a la
+              medida para que tu evento sea inolvidable.
+            </h2>
+            <h3>
+              🎶 Disfruta de música en vivo con son cubano o mariachi, elige la
+              opción perfecta para tu celebración. 🎤 Te proporcionamos
+              pantallas y micrófonos con audio para que puedas transmitir videos
+              y dar tus mensajes personalizados.
+            </h3>
+
+            <h3>
+              {" "}
+              📍<strong>Ubicación</strong>:{" "}
+              <a href="https://maps.app.goo.gl/S6pGcf26H5iKgpwdA">
+                Álvaro Obregón 308 Roma Condesa, CDMX
+              </a>
+            </h3>
+            <h3>
+              📞 <strong>Reserva</strong>:{" "}
+              <a href="tel:+525549242477">5549242477</a>
+            </h3>
           </>
         ),
       },
