@@ -13,7 +13,8 @@ const Evento = () => {
   const router = useRouter();
   const { espa } = useAppContext();
   const { nombre_evento } = router.query; // Obtén el nombre del evento de la URL
-
+  // Asegúrate de que `nombre_evento` esté disponible antes de continuar
+  if (!nombre_evento) return null;
   // DATA PARA CAMBIAR SEGUN NUEVAS PAGINAS QUE SUBAS
   const data = [
     {
