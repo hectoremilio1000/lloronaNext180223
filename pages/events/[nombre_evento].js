@@ -263,7 +263,7 @@ const Evento = ({ nombre_evento }) => {
         },
         images: [
           {
-            url: "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg",
+            url: "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/gruposcubanos1.png",
             textImage: "Celebra tu cena navideña a lo grande con grupo en vivo",
             alt: "Prueba la pizza más premiada de México cdmx roma condesa",
           },
@@ -275,7 +275,7 @@ const Evento = ({ nombre_evento }) => {
         ],
         bannerImages: [
           {
-            url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg)",
+            url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/navidad/fiesta-empresa-mexico-cantina-llorona.jpg)",
             title: "Cenas Navideñas y Fin de Año",
           },
         ],
@@ -283,33 +283,23 @@ const Evento = ({ nombre_evento }) => {
           "Reserva tu Cena Navideña o de Fin de Año en Cantina La Llorona 🎄🎉",
         descripcion: (
           <>
-            <h1 className="text-center text-xl">
-              🎄 ¡Celebra a lo grande en Cantina La Llorona! 🎉
-            </h1>
-            <h2 className="text-start text-white text-base md:text-lg">
-              ¿Buscas un lugar perfecto para tu cena navideña, de fin de año o
-              cierre de año en el corazón de la<strong> Roma Condesa</strong>?
-              En <strong>Cantina La Llorona</strong> te ofrecemos paquetes a la
-              medida para que tu evento sea inolvidable.
-            </h2>
-            <h3>
-              🎶 Disfruta de música en vivo con son cubano o mariachi, elige la
-              opción perfecta para tu celebración. 🎤 Te proporcionamos
-              pantallas y micrófonos con audio para que puedas transmitir videos
-              y dar tus mensajes personalizados.
-            </h3>
-
-            <h3>
-              {" "}
-              📍<strong>Ubicación</strong>:{" "}
-              <a href="https://maps.app.goo.gl/S6pGcf26H5iKgpwdA">
-                Álvaro Obregón 308 Roma Condesa, CDMX
-              </a>
-            </h3>
-            <h3>
-              📞 <strong>Reserva</strong>:{" "}
-              <a href="tel:+525549242477">5549242477</a>
-            </h3>
+            🎄 ¡Celebra a lo grande en Cantina La Llorona! 🎉
+            <br />
+            ¿Buscas un lugar perfecto para tu cena navideña, de fin de año o
+            cierre de año en el corazón de la<strong> Roma Condesa</strong>? En{" "}
+            <strong>Cantina La Llorona</strong> te ofrecemos paquetes a la
+            medida para que tu evento sea inolvidable. <br /> 🎶 Disfruta de
+            música en vivo con son cubano o mariachi, elige la opción perfecta
+            para tu celebración. 🎤 Te proporcionamos pantallas y micrófonos con
+            audio para que puedas transmitir videos y dar tus mensajes
+            personalizados.
+            <br /> 📍<strong>Ubicación</strong>:{" "}
+            <a href="https://maps.app.goo.gl/S6pGcf26H5iKgpwdA">
+              Álvaro Obregón 308 Roma Condesa, CDMX
+            </a>
+            <br />
+            📞 <strong>Reserva</strong>:{" "}
+            <a href="tel:+525549242477">5549242477</a>
           </>
         ),
       },
