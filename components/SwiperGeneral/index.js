@@ -7,6 +7,24 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 const MySwiper = ({ BannerImages }) => {
+  const handleClick = (type, value) => {
+    switch (type) {
+      case "link_external":
+        // Abre un enlace externo en una nueva pestaña
+        window.open(value, "_blank");
+        break;
+      case "phone_contact":
+        // Realiza una llamada (solo en dispositivos que soportan llamadas)
+        window.location.href = `tel:${value}`;
+        break;
+      case "hash":
+        // Redirige a una sección o almohadilla #
+        window.location.href = `#${value}`;
+        break;
+      default:
+        console.warn("Tipo no soportado");
+    }
+  };
   return (
     <Swiper
       modules={[Autoplay, Pagination, Navigation]}
@@ -30,10 +48,20 @@ const MySwiper = ({ BannerImages }) => {
                 backgroundPosition: "center center",
               }}
             >
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
+              <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-30">
                 <h2 className="text-white text-3xl md:text-4xl lg:text-6xl font-bold text-center p-4">
                   {img.title}
                 </h2>
+                {img.buttonAction.isActive ? (
+                  <button
+                    onClick={() =>
+                      handleClick(img.buttonAction.type, img.buttonAction.valor)
+                    }
+                    className="bg-black px-3 py-2 rounded text-white"
+                  >
+                    {img.buttonAction.name}
+                  </button>
+                ) : null}
               </div>
             </div>
           </SwiperSlide>

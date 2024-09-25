@@ -60,26 +60,62 @@ const Evento = ({ nombre_evento }) => {
           {
             url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg)",
             title: "SALSA MAGICA",
+            buttonAction: {
+              type: "phone_contact", //tipos: phone_contact, link_external, popup, etc
+              valor: "9999999999",
+              name: "LLama Ahora",
+              isActive: true, //activado true, desactivado false
+            },
           },
           {
             url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/pan%2Belote%2Bcantina%2Bllorona%2Bdelicioso.JPG)",
             title: "SALSA MAGICA",
+            buttonAction: {
+              type: "link_external", //tipos: phone_contact, link_external, popup, etc
+              valor: "https://facebook.com/",
+              name: "LLama Ahora",
+              isActive: true, //activado true, desactivado false
+            },
           },
           {
             url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/comida/mariscos.jpg)",
             title: "SALSA MAGICA",
+            buttonAction: {
+              type: "phone_contact", //tipos: phone_contact, link_external, popup, etc
+              valor: "99999999",
+              name: "LLama Ahora",
+              isActive: false, //activado true, desactivado false
+            },
           },
           {
             url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/costra%2Belote%2Bdelicia%2Bchef%2Bcantina%2Bllorona.JPG)",
             title: "SALSA MAGICA",
+            buttonAction: {
+              type: "phone_contact", //tipos: phone_contact, link_external, popup, etc
+              valor: "99999999",
+              name: "LLama Ahora",
+              isActive: false, //activado true, desactivado false
+            },
           },
           {
             url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/cantina%2Bllorona%2Btaco.jpg)",
             title: "SALSA MAGICA",
+            buttonAction: {
+              type: "phone_contact", //tipos: phone_contact, link_external, popup, etc
+              valor: "99999999",
+              name: "LLama Ahora",
+              isActive: false, //activado true, desactivado false
+            },
           },
           {
             url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/tostada%2Batun%2Baguachile%2Bcantina%2Bllorona+copy.jpg )",
             title: "SALSA MAGICA",
+            buttonAction: {
+              type: "phone_contact", //tipos: phone_contact, link_external, popup, etc
+              valor: "99999999",
+              name: "LLama Ahora",
+              isActive: false, //activado true, desactivado false
+            },
           },
         ],
         titulo:
@@ -118,26 +154,62 @@ const Evento = ({ nombre_evento }) => {
           {
             url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg)",
             title: "SALSA MAGICA",
+            buttonAction: {
+              type: "phone_contact", //tipos: phone_contact, link_external, popup, etc
+              valor: "99999999",
+              name: "LLama Ahora",
+              isActive: false, //activado true, desactivado false
+            },
           },
           {
             url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/pan%2Belote%2Bcantina%2Bllorona%2Bdelicioso.JPG)",
             title: "SALSA MAGICA",
+            buttonAction: {
+              type: "phone_contact", //tipos: phone_contact, link_external, popup, etc
+              valor: "99999999",
+              name: "LLama Ahora",
+              isActive: false, //activado true, desactivado false
+            },
           },
           {
             url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/comida/mariscos.jpg)",
             title: "SALSA MAGICA",
+            buttonAction: {
+              type: "phone_contact", //tipos: phone_contact, link_external, popup, etc
+              valor: "99999999",
+              name: "LLama Ahora",
+              isActive: false, //activado true, desactivado false
+            },
           },
           {
             url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/costra%2Belote%2Bdelicia%2Bchef%2Bcantina%2Bllorona.JPG)",
             title: "SALSA MAGICA",
+            buttonAction: {
+              type: "phone_contact", //tipos: phone_contact, link_external, popup, etc
+              valor: "99999999",
+              name: "LLama Ahora",
+              isActive: false, //activado true, desactivado false
+            },
           },
           {
             url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/cantina%2Bllorona%2Btaco.jpg)",
             title: "SALSA MAGICA",
+            buttonAction: {
+              type: "phone_contact", //tipos: phone_contact, link_external, popup, etc
+              valor: "99999999",
+              name: "LLama Ahora",
+              isActive: false, //activado true, desactivado false
+            },
           },
           {
             url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/tostada%2Batun%2Baguachile%2Bcantina%2Bllorona+copy.jpg )",
             title: "SALSA MAGICA",
+            buttonAction: {
+              type: "phone_contact", //tipos: phone_contact, link_external, popup, etc
+              valor: "99999999",
+              name: "LLama Ahora",
+              isActive: false, //activado true, desactivado false
+            },
           },
         ],
         titulo:
@@ -180,6 +252,12 @@ const Evento = ({ nombre_evento }) => {
           {
             url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg)",
             title: "La pizza más premiada",
+            buttonAction: {
+              type: "phone_contact", //tipos: phone_contact, link_external, popup, etc
+              valor: "99999999",
+              name: "LLama Ahora",
+              isActive: false, //activado true, desactivado false
+            },
           },
         ],
         titulo:
@@ -228,6 +306,12 @@ const Evento = ({ nombre_evento }) => {
           {
             url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg)",
             title: "The Most Awarded Pizza",
+            buttonAction: {
+              type: "phone_contact", //tipos: phone_contact, link_external, popup, etc
+              valor: "99999999",
+              name: "LLama Ahora",
+              isActive: false, //activado true, desactivado false
+            },
           },
         ],
         titulo: "Come and try the most awarded pizza in CDMX Roma Condesa 🍐🧀",
@@ -277,6 +361,12 @@ const Evento = ({ nombre_evento }) => {
           {
             url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/navidad/fiesta-empresa-mexico-cantina-llorona.jpg)",
             title: "Cenas Navideñas y Fin de Año",
+            buttonAction: {
+              type: "phone_contact", //tipos: phone_contact, link_external, popup, etc
+              valor: "99999999",
+              name: "LLama Ahora",
+              isActive: false, //activado true, desactivado false
+            },
           },
         ],
         titulo:
@@ -328,6 +418,12 @@ const Evento = ({ nombre_evento }) => {
           {
             url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg)",
             title: "The Most Awarded Pizza",
+            buttonAction: {
+              type: "phone_contact", //tipos: phone_contact, link_external, popup, etc
+              valor: "99999999",
+              name: "LLama Ahora",
+              isActive: false, //activado true, desactivado false
+            },
           },
         ],
         titulo: "Come and try the most awarded pizza in CDMX Roma Condesa 🍐🧀",
