@@ -188,9 +188,8 @@ const Evento = ({ nombre_evento }) => {
             ¿Buscas una experiencia culinaria diferente en el corazón de{" "}
             <strong>Roma Condesa</strong>? En{" "}
             <strong>Cantina La Llorona</strong>, te ofrecemos algo fuera de lo
-            común: nuestra
-            <strong>pizza de pera y queso</strong>, reconocida como una de las
-            más premiadas en la Ciudad de México.
+            común: nuestra <strong> pizza de pera y queso</strong>, reconocida
+            como una de las más premiadas en la Ciudad de México.
             <br></br>
             📍<strong>Ubicación</strong>:{" "}
             <a href="https://maps.app.goo.gl/S6pGcf26H5iKgpwdA">
