@@ -111,9 +111,7 @@ export default function Home() {
 
       <NavBar />
       <>
-        <div>
-          <MySwiper BannerImages={BannerImages} />
-        </div>
+        <div>{/* <MySwiper BannerImages={BannerImages} /> */}</div>
       </>
 
       <div className="overflow-hidden bg-black">

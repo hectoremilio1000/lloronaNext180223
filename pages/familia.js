@@ -159,9 +159,7 @@ function Familia() {
             </Head>
           )}
           <NavBar />
-          <div>
-            <MySwiper BannerImages={BannerImages} />
-          </div>
+          <div>{/* <MySwiper BannerImages={BannerImages} /> */}</div>
 
           <div className="w-full bg-black h-[200px]"></div>
           <div className="w-full bg-[#020a06] -mt-[200px]">
