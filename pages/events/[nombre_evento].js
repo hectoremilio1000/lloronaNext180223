@@ -254,7 +254,7 @@ const Evento = ({ nombre_evento }) => {
             title: "La pizza más premiada",
             buttonAction: {
               type: "phone_contact", //tipos: phone_contact, link_external, popup, etc
-              valor: "99999999",
+              valor: "+525549242477",
               name: "LLama Ahora",
               isActive: false, //activado true, desactivado false
             },
@@ -308,7 +308,7 @@ const Evento = ({ nombre_evento }) => {
             title: "The Most Awarded Pizza",
             buttonAction: {
               type: "phone_contact", //tipos: phone_contact, link_external, popup, etc
-              valor: "99999999",
+              valor: "+525549242477",
               name: "LLama Ahora",
               isActive: false, //activado true, desactivado false
             },
@@ -363,9 +363,9 @@ const Evento = ({ nombre_evento }) => {
             title: "Cenas Navideñas y Fin de Año",
             buttonAction: {
               type: "phone_contact", //tipos: phone_contact, link_external, popup, etc
-              valor: "99999999",
+              valor: "+525549242477",
               name: "LLama Ahora",
-              isActive: false, //activado true, desactivado false
+              isActive: true, //activado true, desactivado false
             },
           },
         ],
