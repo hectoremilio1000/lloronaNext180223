@@ -8,11 +8,19 @@ import NavBar from "../../components/NavBarEs/NavBarEs";
 import MySwiper from "../../components/SwiperGeneral";
 import Head from "next/head";
 import Slider from "../../components/Sliders/Slider";
+import { useEffect, useState } from "react";
 
 const Evento = () => {
   const router = useRouter();
   const { espa } = useAppContext();
+  const [eventoData, setEventoData] = useState(null);
   const { nombre_evento } = router.query; // Obtén el nombre del evento de la URL
+  useEffect(() => {
+    if (nombre_evento) {
+      getEventData(nombre_evento, espa);
+    }
+  }, [nombre_evento]);
+
   // Asegúrate de que `nombre_evento` esté disponible antes de continuar
   if (!nombre_evento) return null;
   // DATA PARA CAMBIAR SEGUN NUEVAS PAGINAS QUE SUBAS
@@ -245,18 +253,15 @@ const Evento = () => {
     const evento = data.find((event) => event.nombre_evento === nombre_evento);
 
     if (!evento) {
-      return null; // Si no se encuentra el evento, devolver null
+      setEventoData(null);
     }
 
-    // Devolver la información en el idioma seleccionado
-    return evento[espa];
+    setEventoData(evento[espa]);
   };
-  const eventoData = getEventData(nombre_evento, espa);
 
-  if (!eventoData) {
+  if (eventoData === null) {
     return <p>Evento no encontrado</p>;
   }
-
   return (
     <>
       <Head>
