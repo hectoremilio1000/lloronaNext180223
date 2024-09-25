@@ -10,20 +10,28 @@ import Head from "next/head";
 import Slider from "../../components/Sliders/Slider";
 import { useEffect, useState } from "react";
 
-const Evento = () => {
-  const router = useRouter();
-  const { espa } = useAppContext();
-  const [eventoData, setEventoData] = useState(null);
-  const { nombre_evento } = router.query; // Obtén el nombre del evento de la URL
-  useEffect(() => {
-    if (nombre_evento) {
-      getEventData(nombre_evento, espa);
-    }
-  }, [nombre_evento]);
+export const getStaticPaths = async () => {
+  // Aquí defines las rutas dinámicas que quieres pre-generar.
+  const paths = [
+    { params: { nombre_evento: "familia" } },
+    { params: { nombre_evento: "pizzapremiadacdmx" } },
+  ];
 
-  // Asegúrate de que `nombre_evento` esté disponible antes de continuar
-  if (!nombre_evento) return null;
-  // DATA PARA CAMBIAR SEGUN NUEVAS PAGINAS QUE SUBAS
+  return { paths, fallback: true }; // fallback: true permite la generación dinámica de páginas no especificadas.
+};
+
+export const getStaticProps = async (context) => {
+  const { nombre_evento } = context.params;
+
+  return {
+    props: { nombre_evento }, // Pasas los datos del evento como props a la página.
+    revalidate: 10, // Opcional: permite que la página se revalide cada 10 segundos.
+  };
+};
+
+const Evento = ({ nombre_evento }) => {
+  const router = useRouter();
+  const { espa } = useAppContext(); // Obtén el nombre del evento de la URL
   const data = [
     {
       nombre_evento: "familia",
@@ -245,36 +253,32 @@ const Evento = () => {
     },
     //    ... establecer las demas paginas
   ];
+  const eventoData =
+    data.find((evento) => evento.nombre_evento === nombre_evento) || null;
 
-  // Función para filtrar por nombre_evento y idioma (lang)
-  const getEventData = (nombre_evento, lang) => {
-    // Buscar el evento por nombre_evento
-    const espa = lang ? "es" : "en";
-    const evento = data.find((event) => event.nombre_evento === nombre_evento);
-
-    if (!evento) {
-      setEventoData(null);
-    }
-
-    setEventoData(evento[espa]);
-  };
-
-  if (eventoData === null) {
-    return <p>Evento no encontrado</p>;
+  if (router.isFallback) {
+    return <div>Cargando...</div>;
   }
+
+  if (!eventoData) {
+    return <div>No se encontró el evento.</div>;
+  }
+  const lang = espa ? "es" : "en";
+  const data_detail = eventoData[lang];
+
   return (
     <>
       <Head>
-        <title>{eventoData.metas.title}</title>
+        <title>{data_detail.metas.title}</title>
         <meta
           property="og:description"
-          content={eventoData.metas.descripcion}
+          content={data_detail.metas.descripcion}
         />
-        <meta property="og:image" content={eventoData.metas.image} />
+        <meta property="og:image" content={data_detail.metas.image} />
       </Head>
       <NavBar />
       <div>
-        <MySwiper BannerImages={eventoData.bannerImages} />
+        <MySwiper BannerImages={data_detail.bannerImages} />
       </div>
 
       <div className="w-full bg-black h-[200px]"></div>
@@ -282,10 +286,10 @@ const Evento = () => {
         <div className="w-full max-w-[1184px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-8 text-center">
           <div className="w-full">
             <h1 className="font-bold text-3xl md:text-4xl text-white pt-4">
-              {eventoData.titulo}
+              {data_detail.titulo}
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {eventoData?.images.map((img, index) => {
+              {data_detail?.images.map((img, index) => {
                 return (
                   <Link href="/reserva">
                     <div>
@@ -301,7 +305,7 @@ const Evento = () => {
               })}
             </div>
             <p className="text-start text-white sm:text-xs md:text-2xl mt-3">
-              {eventoData.descripcion}
+              {data_detail.descripcion}
             </p>
           </div>
           <div className="w-full">
