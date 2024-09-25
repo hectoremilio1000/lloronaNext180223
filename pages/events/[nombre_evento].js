@@ -7,6 +7,7 @@ import QuickInfo6 from "../../components/QuickInfo6";
 import NavBar from "../../components/NavBarEs/NavBarEs";
 import MySwiper from "../../components/SwiperGeneral";
 import Head from "next/head";
+import Slider from "../../components/Sliders/Slider";
 
 const Evento = () => {
   const router = useRouter();
@@ -134,6 +135,105 @@ const Evento = () => {
         ),
       },
     },
+    {
+      nombre_evento: "pizzapremiadacdmx",
+      es: {
+        metas: {
+          title:
+            "Pizza de Pera y Queso Premiada CDMX roma condesa | Cantina La Llorona",
+          descripcion:
+            "Disfruta la pizza de pera y queso más premiada de roma condesa CDMX en Cantina La Llorona. Sabores únicos y creatividad culinaria. ¡Reserva ahora!",
+          image:
+            "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg",
+        },
+        images: [
+          {
+            url: "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg",
+            textImage: "Prueba la pizza más premiada de México",
+            alt: "Prueba la pizza más premiada de México cdmx roma condesa",
+          },
+          {
+            url: "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg",
+            textImage: "Restaurante de familia y comida",
+            alt: "Restaurante con diseño único",
+          },
+        ],
+        bannerImages: [
+          {
+            url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg)",
+            title: "La pizza más premiada",
+          },
+        ],
+        titulo:
+          "Ven a probar la pizza más premiada de cdmx en roma condesa 🍐🧀",
+        descripcion: (
+          <>
+            ¿Buscas una experiencia culinaria diferente en el corazón de{" "}
+            <strong>Roma Condesa</strong>? En{" "}
+            <strong>Cantina La Llorona</strong>, te ofrecemos algo fuera de lo
+            común: nuestra
+            <strong>pizza de pera y queso</strong>, reconocida como una de las
+            más premiadas en la Ciudad de México.
+            <br></br>
+            📍<strong>Ubicación</strong>:{" "}
+            <a href="https://maps.app.goo.gl/S6pGcf26H5iKgpwdA">
+              Álvaro Obregón 308 Roma Condesa, CDMX{" "}
+            </a>
+            <br />
+            📞 <strong>Reserva</strong>:{" "}
+            <a href="tel:+525549242477">5549242477</a>
+            <br />
+          </>
+        ),
+      },
+      en: {
+        metas: {
+          title:
+            "Award-Winning Pear and Cheese Pizza in CDMX Roma Condesa | Cantina La Llorona",
+          descripcion:
+            "Enjoy the most awarded pear and cheese pizza in Roma Condesa, CDMX at Cantina La Llorona. Unique flavors and culinary creativity. Reserve now!",
+          image:
+            "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg",
+        },
+        images: [
+          {
+            url: "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg",
+            textImage: "Try Mexico’s most awarded pizza",
+            alt: "Try the most awarded pizza in Mexico, CDMX, Roma Condesa",
+          },
+          {
+            url: "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg",
+            textImage: "Family restaurant and delicious food",
+            alt: "Restaurant with unique design",
+          },
+        ],
+        bannerImages: [
+          {
+            url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg)",
+            title: "The Most Awarded Pizza",
+          },
+        ],
+        titulo: "Come and try the most awarded pizza in CDMX Roma Condesa 🍐🧀",
+        descripcion: (
+          <>
+            Are you looking for a unique culinary experience in the heart of{" "}
+            <strong>Roma Condesa</strong>? At{" "}
+            <strong>Cantina La Llorona</strong>, we offer something
+            extraordinary: our <strong>pear and cheese pizza</strong>,
+            recognized as one of the most awarded pizzas in Mexico City.
+            <br></br>
+            📍<strong>Location</strong>:{" "}
+            <a href="https://maps.app.goo.gl/S6pGcf26H5iKgpwdA">
+              Álvaro Obregón 308, Roma Condesa, CDMX{" "}
+            </a>
+            <br />
+            📞 <strong>Reserve</strong>:{" "}
+            <a href="tel:+525549242477">5549242477</a>
+            <br />
+          </>
+        ),
+      },
+    },
     //    ... establecer las demas paginas
   ];
 
@@ -235,6 +335,7 @@ const Evento = () => {
             <QuickInfo6 idioma={espa} />
           </div>
         </div>
+        <Slider />
       </div>
     </>
   );
