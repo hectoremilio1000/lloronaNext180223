@@ -57,7 +57,7 @@ const MySwiper = ({ BannerImages }) => {
                     onClick={() =>
                       handleClick(img.buttonAction.type, img.buttonAction.valor)
                     }
-                    className="bg-black px-3 py-2 rounded text-white"
+                    className="bg-black px-4 py-4 rounded text-white bg-red-500"
                   >
                     {img.buttonAction.name}
                   </button>
