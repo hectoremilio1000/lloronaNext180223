@@ -16,6 +16,7 @@ export const getStaticPaths = async () => {
     { params: { nombre_evento: "familia" } },
     { params: { nombre_evento: "pizzapremiadacdmx" } },
     { params: { nombre_evento: "eventosempresariales" } },
+    { params: { nombre_evento: "carne" } },
   ];
 
   return { paths, fallback: true }; // fallback: true permite la generación dinámica de páginas no especificadas.
@@ -290,6 +291,137 @@ const Evento = ({ nombre_evento }) => {
             <br />
             📞 <strong>Reserva</strong>:{" "}
             <a href="tel:+525549242477">5549242477</a>
+          </>
+        ),
+      },
+      en: {
+        metas: {
+          title:
+            "Award-Winning Pear and Cheese Pizza in CDMX Roma Condesa | Cantina La Llorona",
+          descripcion:
+            "Enjoy the most awarded pear and cheese pizza in Roma Condesa, CDMX at Cantina La Llorona. Unique flavors and culinary creativity. Reserve now!",
+          image:
+            "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg",
+        },
+        images: [
+          {
+            url: "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg",
+            textImage: "Try Mexico’s most awarded pizza",
+            alt: "Try the most awarded pizza in Mexico, CDMX, Roma Condesa",
+          },
+          {
+            url: "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg",
+            textImage: "Family restaurant and delicious food",
+            alt: "Restaurant with unique design",
+          },
+        ],
+        bannerImages: [
+          {
+            url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg)",
+            title: "The Most Awarded Pizza",
+            buttonAction: {
+              type: "phone_contact", //tipos: phone_contact, link_external, popup, etc
+              valor: "99999999",
+              name: "LLama Ahora",
+              isActive: false, //activado true, desactivado false
+            },
+          },
+        ],
+        titulo: "Come and try the most awarded pizza in CDMX Roma Condesa 🍐🧀",
+        descripcion: (
+          <>
+            Are you looking for a unique culinary experience in the heart of{" "}
+            <strong>Roma Condesa</strong>? At{" "}
+            <strong>Cantina La Llorona</strong>, we offer something
+            extraordinary: our <strong>pear and cheese pizza</strong>,
+            recognized as one of the most awarded pizzas in Mexico City.
+            <br></br>
+            📍<strong>Location</strong>:{" "}
+            <a href="https://maps.app.goo.gl/S6pGcf26H5iKgpwdA">
+              Álvaro Obregón 308, Roma Condesa, CDMX{" "}
+            </a>
+            <br />
+            📞 <strong>Reserve</strong>:{" "}
+            <a href="tel:+525549242477">5549242477</a>
+            <br />
+          </>
+        ),
+      },
+    },
+    {
+      nombre_evento: "carne",
+      es: {
+        metas: {
+          title:
+            "Mejor Barbacoa de Picanha y Quesabirria en CDMX | Cantina La Llorona",
+          description:
+            "Prueba la barbacoa de picanha, la quesabirria más deliciosa y el ribeye con cocción perfecta en Roma Condesa. ¡Reserva tu mesa en Cantina La Llorona hoy mismo!",
+          image:
+            "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/carne/barbacoa%2Bpican%CC%83a%2Bcantina%2Bllorona%2Bsabor%2Broma%2Bcondesa%2Bcdmx.jpg",
+        },
+        images: [
+          {
+            url: "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/carne/aguachile%2Bcantina%2Bllorona%2Bribeye%2Bdelicioso.jpg",
+            textImage: "Disfruta del mejor ribeye con cocción perfecta",
+            alt: "Ribeye cocción perfecta en Cantina La Llorona CDMX",
+          },
+          {
+            url: "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/carne/chicharron%2Bpork%2Bbelly%2Bguacamole%2Bcantina%2Bllorona.jpg",
+            textImage: "Prueba la quesabirria más deliciosa de CDMX",
+            alt: "Quesabirria más deliciosa en Cantina La Llorona",
+          },
+        ],
+        bannerImages: [
+          {
+            url: "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/carne/barbacoa%2Bpican%CC%83a%2Bcantina%2Bllorona%2Bsabor%2Broma%2Bcondesa%2Bcdmx%2Bdeliciosa+copy.jpg)",
+            title: "Reserva ya en Cantina La Llorona",
+            buttonAction: {
+              type: "phone_contact",
+              valor: "+525549242477",
+              name: "Llama Ahora",
+              isActive: true,
+            },
+          },
+        ],
+        titulo:
+          "Disfruta la Mejor Barbacoa, Quesabirria y Ribeye en Cantina La Llorona 🍖🍴",
+        descripcion: (
+          <>
+            <strong>🍖 Bienvenidos a Cantina La Llorona 🍴</strong>
+            <br />
+            Si buscas una experiencia gastronómica inigualable, te invitamos a
+            probar la mejor <strong>barbacoa de picanha</strong>, nuestra famosa
+            quesabirria, el chicharrón de pork belly más crunchy y nuestro
+            ribeye con gran jugosidad por su perfecta cocción. Todo esto en un
+            ambiente vibrante y lleno de sabor en el corazón de Roma Condesa.
+            <br /> 🎶 Además, disfruta de nuestro inigualable ambiente con
+            música en vivo: grandes grupos de son cubano o mariachi para
+            acompañar tu comida. ¡La combinación perfecta de sabor y
+            entretenimiento!
+            <br /> 📍<strong>Ubicación</strong>:{" "}
+            <a href="https://maps.app.goo.gl/S6pGcf26H5iKgpwdA">
+              Álvaro Obregón 308, Roma Condesa, CDMX
+            </a>
+            <br />
+            📞 <strong>Reserva</strong>:{" "}
+            <a href="tel:+525549242477">5549242477</a>
+            <br />
+            <span style={{ display: "inline-flex", alignItems: "center" }}>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                alt="WhatsApp"
+                width="20px"
+                style={{ marginRight: "5px" }}
+              />
+              <strong>WhatsApp</strong>:
+              <a
+                href="https://wa.me/525549242477"
+                target="_blank"
+                style={{ marginLeft: "5px" }}
+              >
+                5549242477
+              </a>
+            </span>
           </>
         ),
       },
