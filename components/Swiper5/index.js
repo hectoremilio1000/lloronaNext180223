@@ -31,10 +31,10 @@ const MySwiper = () => {
             <div
               style={{
                 backgroundImage:
-                  "url(https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/cumplean%CC%83os%2Bsorpresa%2Bfiesta%2Bllorona%2Bcantina.png)",
+                  "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/festejo+cantina+llorona+salsa+baile.jpg)",
                 height: "80vh",
                 backgroundSize: "cover",
-                backgroundPosition: "bottom bottom",
+                backgroundPosition: "center right",
               }}
             >
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
@@ -63,7 +63,7 @@ const MySwiper = () => {
             <div
               style={{
                 backgroundImage:
-                  "url(https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/cumplean%CC%83os%2Bsorpresa%2Bfiesta%2Bllorona%2Bcantina.png)",
+                  "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/festejo+cantina+llorona+salsa+baile.jpg)",
                 height: "80vh",
                 backgroundSize: "cover",
                 backgroundPosition: "center left",
