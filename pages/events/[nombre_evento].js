@@ -490,7 +490,7 @@ const Evento = ({ nombre_evento }) => {
         },
         "images": [
           {
-            "url": "https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/formula1/Gran-Premio-de-Mexico-2024-F1-1024x614.jpg",
+            "url": "https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/formula1/463877887_1073765580790256_2252147552426801570_n.jpg",
             "textImage": "Vive el mejor Son Cubano",
             "alt": "Música en vivo Son Cubano en Cantina La Llorona"
           },
