@@ -514,7 +514,7 @@ const Evento = ({ nombre_evento }) => {
         ],
         "titulo": "Continúa la Fiesta del Gran Premio en Cantina La Llorona 🎉",
        "descripcion": (<>
-       "<strong>🎉 ¡Bienvenidos a la fiesta de Cantina La Llorona! 🎉</strong><br />Si vienes al Gran Premio de México, no puedes perderte la mejor fiesta en Roma Condesa. Disfruta de música en vivo con grandes grupos de Son Cubano en un ambiente lleno de sabor y buena compañía.<br />📍<strong>Ubicación</strong>: <a href="https://maps.app.goo.gl/S6pGcf26H5iKgpwdA">Álvaro Obregón 308, Roma Condesa, CDMX</a><br />📞 <strong>Reserva</strong>: <a href="tel:+525549242477">5549242477</a>
+       <strong>🎉Bienvenidos a la fiesta de Cantina La Llorona🎉</strong><br />Si vienes al Gran Premio de México, no puedes perderte la mejor fiesta en Roma Condesa. Disfruta de música en vivo con grandes grupos de Son Cubano en un ambiente lleno de sabor y buena compañía.<br />📍<strong>Ubicación</strong>: <a href="https://maps.app.goo.gl/S6pGcf26H5iKgpwdA">Álvaro Obregón 308, Roma Condesa, CDMX</a><br />📞 <strong>Reserva</strong>: <a href="tel:+525549242477">5549242477</a>
        </>)
        
       },
