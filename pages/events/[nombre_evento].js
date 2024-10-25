@@ -17,6 +17,7 @@ export const getStaticPaths = async () => {
     { params: { nombre_evento: "pizzapremiadacdmx" } },
     { params: { nombre_evento: "eventosempresariales" } },
     { params: { nombre_evento: "carne" } },
+    { params: { nombre_evento: "formula1" } },
   ];
 
   return { paths, fallback: true }; // fallback: true permite la generación dinámica de páginas no especificadas.
@@ -479,6 +480,85 @@ const Evento = ({ nombre_evento }) => {
         ),
       },
     },
+    {
+      "nombre_evento": "formula1",
+      "es": {
+        "metas": {
+          "title": "La mejor fiesta de la Fórmula 1 | Cantina La Llorona",
+          "description": "Continúa la fiesta después del Gran Premio en la mejor cantina de Roma Condesa con música en vivo de Son Cubano. ¡Reserva ahora en Cantina La Llorona!",
+          "image": "https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/formula1/Gran-Premio-de-Mexico-2024-F1-1024x614.jpg"
+        },
+        "images": [
+          {
+            "url": "https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/formula1/Gran-Premio-de-Mexico-2024-F1-1024x614.jpg",
+            "textImage": "Vive el mejor Son Cubano",
+            "alt": "Música en vivo Son Cubano en Cantina La Llorona"
+          },
+          {
+            "url": "https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/formula1/clienta%2Bfeliz%2Bcantina%2Bla%2Bllorona%2Bcdmx.jpg",
+            "textImage": "El ambiente perfecto para seguir la fiesta",
+            "alt": "Ambiente de fiesta en Cantina La Llorona después del Gran Premio"
+          }
+        ],
+        "bannerImages": [
+          {
+            "url": "url(https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/formula1/Gran-Premio-de-Mexico-2024-F1-1024x614.jpg)",
+            "title": "Fiesta Fórmula 1 Reserva ya en Cantina La Llorona",
+            "buttonAction": {
+              "type": "phone_contact",
+              "valor": "+525549242477",
+              "name": "Llama Ahora",
+              "isActive": true
+            }
+          }
+        ],
+        "titulo": "Continúa la Fiesta del Gran Premio en Cantina La Llorona 🎉",
+       "descripcion": (<>
+       "<strong>🎉 ¡Bienvenidos a la fiesta de Cantina La Llorona! 🎉</strong><br />Si vienes al Gran Premio de México, no puedes perderte la mejor fiesta en Roma Condesa. Disfruta de música en vivo con grandes grupos de Son Cubano en un ambiente lleno de sabor y buena compañía.<br />📍<strong>Ubicación</strong>: <a href="https://maps.app.goo.gl/S6pGcf26H5iKgpwdA">Álvaro Obregón 308, Roma Condesa, CDMX</a><br />📞 <strong>Reserva</strong>: <a href="tel:+525549242477">5549242477</a>
+       </>)
+       
+      },
+      "en": {
+        "metas": {
+          "title": "Best Post-Formula 1 Party | Cantina La Llorona",
+          "description": "Keep the party going after the Grand Prix at Cantina La Llorona. Enjoy live Cuban Son music and the best ambiance in Roma Condesa. Book your table today!",
+          "image": "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/fiesta/formula1/cantina-f1-party.jpg"
+        },
+        "images": [
+          {
+            "url": "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/fiesta/formula1/soncubano-live.jpg",
+            "textImage": "Experience the best Cuban Son",
+            "alt": "Live Cuban Son music at Cantina La Llorona"
+          },
+          {
+            "url": "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/fiesta/formula1/f1-afterparty.jpg",
+            "textImage": "The perfect ambiance for a post-race celebration",
+            "alt": "Party atmosphere at Cantina La Llorona after the Grand Prix"
+          }
+        ],
+        "bannerImages": [
+          {
+            "url": "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/fiesta/formula1/f1-party.jpg)",
+            "title": "Book Now at Cantina La Llorona",
+            "buttonAction": {
+              "type": "phone_contact",
+              "valor": "+525549242477",
+              "name": "Call Now",
+              "isActive": true
+            }
+          }
+        ],
+        "titulo": "Keep the Grand Prix Party Going at Cantina La Llorona 🎉",
+       "descripcion": (
+        <>
+        "<strong>🎉 Welcome to Cantina La Llorona's Party! 🎉</strong><br />If you're in town for the Mexican Grand Prix, join us for the best post-race celebration in Roma Condesa. Enjoy live Cuban Son music in a vibrant atmosphere with amazing food and drinks.<br />📍<strong>Location</strong>: <a href="https://maps.app.goo.gl/S6pGcf26H5iKgpwdA\"> Álvaro Obregón 308, Roma Condesa, CDMX</a><br />📞 <strong>Reserve</strong>: <a href="tel:+525549242477\">5549242477</a>
+        </>
+       )
+       
+       
+      }
+    },
+    
     //    ... establecer las demas paginas
   ];
   const eventoData =
