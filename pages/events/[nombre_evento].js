@@ -18,6 +18,7 @@ export const getStaticPaths = async () => {
     { params: { nombre_evento: "eventosempresariales" } },
     { params: { nombre_evento: "carne" } },
     { params: { nombre_evento: "formula1" } },
+    { params: { nombre_evento: "diademuertos" } },
   ];
 
   return { paths, fallback: true }; // fallback: true permite la generación dinámica de páginas no especificadas.
@@ -558,6 +559,135 @@ const Evento = ({ nombre_evento }) => {
        
       }
     },
+    {
+      nombre_evento: "diademuertos",
+      es: {
+        metas: {
+          title: "💀 ¡Celebra Día de Muertos en La Llorona! 💀",
+          description: "Disfruta de un menú especial de Día de Muertos en Cantina La Llorona, incluyendo pan de muerto con helado negro y helado de pan de muerto. Celebra con nosotros en Roma Condesa. ¡Reserva ahora!",
+          image: "https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/muertos/day-dead-celebration-with-altar1.jpg"
+        },
+        images: [
+          {
+            url: "https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/muertos/top-view-baked-pan-de-muerto1.jpg",
+            textImage: "Pan de Muerto con Helado Negro",
+            alt: "Pan de muerto con helado negro en Cantina La Llorona",
+          },
+          {
+            url: "  ",
+            textImage: "Ambiente único de Día de Muertos",
+            alt: "Ambiente de Día de Muertos en Cantina La Llorona",
+          },
+        ],
+        bannerImages: [
+          {
+            url: "url(https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/muertos/cantina%2Bdiademuertos%2Bamigos%2Bpan.jpg)",
+            title: "Reserva tu Mesa para Día de Muertos",
+            buttonAction: {
+              type: "phone_contact",
+              valor: "+525549242477",
+              name: "Llama Ahora",
+              isActive: true,
+            },
+          },
+        ],
+        titulo: "Celebra el Día de Muertos en Cantina La Llorona 🌺💀",
+        descripcion: (
+          <>
+            <strong>💀 ¡Celebra Día de Muertos en La Llorona! 💀</strong>
+            <br />
+            Esta semana de Día de Muertos, Cantina La Llorona te invita a disfrutar de un <strong>menú especial</strong> que no encontrarás en ningún otro lugar. Prueba nuestro <strong>pan de muerto con helado negro</strong> y <strong>helado de pan de muerto</strong> en un ambiente único que honra la tradición mexicana. Ven a vivir esta experiencia llena de sabor y tradición en <strong>Roma Condesa</strong>.
+            <br /> 📍<strong>Ubicación</strong>:{" "}
+            <a href="https://maps.app.goo.gl/S6pGcf26H5iKgpwdA">
+              Álvaro Obregón 308, Roma Condesa, CDMX
+            </a>
+            <br />
+            📞 <strong>Reserva</strong>:{" "}
+            <a href="tel:+525549242477">5549242477</a>
+            <br />
+            <span style={{ display: "inline-flex", alignItems: "center" }}>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                alt="WhatsApp"
+                width="20px"
+                style={{ marginRight: "5px" }}
+              />
+              <strong>WhatsApp</strong>:
+              <a
+                href="https://wa.me/525549242477"
+                target="_blank"
+                style={{ marginLeft: "5px" }}
+              >
+                5549242477
+              </a>
+            </span>
+          </>
+        ),
+      },
+      en: {
+        metas: {
+          title: "Celebrate Day of the Dead at La Llorona | Cantina La Llorona",
+          description: "Join us for a special Day of the Dead menu at Cantina La Llorona, featuring black ice cream pan de muerto. Experience tradition and flavor in Roma Condesa. Reserve now!",
+          image: "https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/muertos/top-view-baked-pan-de-muerto1.jpg",
+        },
+        images: [
+          {
+            url: "https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/muertos/top-view-baked-pan-de-muerto1.jpg",
+            textImage: "Pan de Muerto with Black Ice Cream",
+            alt: "Day of the Dead pan de muerto with black ice cream at Cantina La Llorona",
+          },
+          {
+            url: "https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/muertos/day-dead-celebration-with-altar1.jpg",
+            textImage: "Unique Day of the Dead Atmosphere",
+            alt: "Day of the Dead atmosphere at Cantina La Llorona",
+          },
+        ],
+        bannerImages: [
+          {
+            url: "url(https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/muertos/cantina%2Bdiademuertos%2Bamigos%2Bpan.jpg)",
+            title: "Book Your Table for Day of the Dead",
+            buttonAction: {
+              type: "phone_contact",
+              valor: "+525549242477",
+              name: "Call Now",
+              isActive: true,
+            },
+          },
+        ],
+        titulo: "Celebrate Day of the Dead at Cantina La Llorona 🌺💀",
+        descripcion: (
+          <>
+            <strong>💀 Celebrate Day of the Dead at La Llorona! 💀</strong>
+            <br />
+            Join us for a special <strong>Day of the Dead menu</strong> that you won't find anywhere else. Try our <strong>black ice cream pan de muerto</strong> and <strong>pan de muerto ice cream</strong> in a one-of-a-kind atmosphere that honors Mexican tradition. Come experience the flavors and traditions in <strong>Roma Condesa</strong>.
+            <br /> 📍<strong>Location</strong>:{" "}
+            <a href="https://maps.app.goo.gl/S6pGcf26H5iKgpwdA">
+              Álvaro Obregón 308, Roma Condesa, CDMX
+            </a>
+            <br />
+            📞 <strong>Reserve</strong>:{" "}
+            <a href="tel:+525549242477">5549242477</a>
+            <br />
+            <span style={{ display: "inline-flex", alignItems: "center" }}>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                alt="WhatsApp"
+                width="20px"
+                style={{ marginRight: "5px" }}
+              />
+              <strong>WhatsApp</strong>:
+              <a
+                href="https://wa.me/525549242477"
+                target="_blank"
+                style={{ marginLeft: "5px" }}
+              >
+                5549242477
+              </a>
+            </span>
+          </>
+        ),
+      },
+    }
     
     //    ... establecer las demas paginas
   ];

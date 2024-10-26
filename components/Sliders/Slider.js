@@ -63,6 +63,22 @@ const Slider = () => {
                 <div className="w-full">
                   <img
                     className="rounded-lg border-2 border-white w-full h-[300px] object-center object-cover"
+                    src="https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/top-view-baked-pan-de-muerto1.jpg
+                    "
+                    alt=""
+                  />
+                  <h1 className="text-2xl md:text-5xl text-white mt-3">
+                    Pan de muerto
+                  </h1>
+                  <p className="text-xs md:text-xl text-white">
+                    Con helado negro{" "}
+                  </p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="w-full">
+                  <img
+                    className="rounded-lg border-2 border-white w-full h-[300px] object-center object-cover"
                     src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/15septiembre/chileennogadamexicolloronacantina.jpg
                     "
                     alt=""
@@ -194,7 +210,23 @@ const Slider = () => {
                   spaceBetween: 20,
                 },
               }}
-            >
+            ><SwiperSlide>
+            <div className="w-full">
+              <img
+                className="rounded-lg border-2 border-white w-full h-[300px] object-center object-cover"
+                src="https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/top-view-baked-pan-de-muerto1.jpg
+                "
+                alt=""
+              />
+              <h1 className="text-2xl md:text-5xl text-white mt-3">
+  Day of the Dead Bread
+</h1>
+<p className="text-xs md:text-xl text-white">
+  With black ice cream{" "}
+</p>
+
+            </div>
+          </SwiperSlide>
               <SwiperSlide>
                 <div className="w-full">
                   <img
@@ -206,7 +238,7 @@ const Slider = () => {
                     Tostada Cantinera
                   </h1>
                   <p className="text-xs md:text-xl text-white">
-                    Our sourdough pizza
+                    Shrimp
                   </p>
                 </div>
               </SwiperSlide>

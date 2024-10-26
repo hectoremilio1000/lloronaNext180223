@@ -9,7 +9,7 @@ import * as fbq from "../../lib/fpixel";
 //imagenes
 
 const image1 =
-  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2050.jpg";
+  "https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/muertos/day-dead-celebration-with-altar1.jpg";
 
 const image2 =
   "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/aguachile%2Bcantina%2Bllorona%2Bribeye%2Bdelicioso.jpg";
