@@ -574,14 +574,14 @@ const Evento = ({ nombre_evento }) => {
             alt: "Pan de muerto con helado negro en Cantina La Llorona",
           },
           {
-            url: "  ",
+            url: "https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/muertos/day-dead-celebration-with-altar1.jpg",
             textImage: "Ambiente único de Día de Muertos",
             alt: "Ambiente de Día de Muertos en Cantina La Llorona",
           },
         ],
         bannerImages: [
           {
-            url: "url(https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/muertos/cantina%2Bdiademuertos%2Bamigos%2Bpan.jpg)",
+            url: "url(https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/dia%2Bmuertos%2Bcantina%2Bcomida.JPG)",
             title: "Reserva tu Mesa para Día de Muertos",
             buttonAction: {
               type: "phone_contact",
@@ -644,7 +644,7 @@ const Evento = ({ nombre_evento }) => {
         ],
         bannerImages: [
           {
-            url: "url(https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/muertos/cantina%2Bdiademuertos%2Bamigos%2Bpan.jpg)",
+            url: "url(https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/dia%2Bmuertos%2Bcantina%2Bcomida.JPG)",
             title: "Book Your Table for Day of the Dead",
             buttonAction: {
               type: "phone_contact",
