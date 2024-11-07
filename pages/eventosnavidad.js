@@ -66,7 +66,7 @@ function Reserva() {
   const image2 =
     "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg";
   const image3 =
-    "https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/eventos/Screenshot+2024-11-06+at+9.47.39%E2%80%AFp.m..png";
+    "https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/eventos/comida%2Bpavo%2Bdelicioso%2Bcantina.jpg";
   const image4 =
     "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/comida/amigastomandoCantinaLlorona.JPG";
 
@@ -138,26 +138,26 @@ function Reserva() {
                       <Link href="/reserva">
                         <div>
                           <img
-                            className="rounded-lg w-full h-[350px] object-cover "
+                            className="rounded-lg w-full h-[350px] object-cover object-center"
                             src={image4}
                             alt="Música en vivo"
                           />
                           <p className="text-white text-center">
                             El mejor <br />
-                            ambiente
+                            ambiente navideño
                           </p>
                         </div>
                       </Link>
                       <Link href="/reserva">
                         <div>
                           <img
-                            className="rounded-lg w-full h-[350px] object-cover object-center"
+                            className="rounded-lg w-full h-[350px] object-cover object-right-bottom "
                             src={image3}
                             alt="Música en vivo"
                           />
                           <p className="text-white pt-2">
-                            Grandes orquestas <br />
-                            de son cubano
+                            Comida que nunca <br />
+                            olvidarás
                           </p>
                         </div>
                       </Link>
