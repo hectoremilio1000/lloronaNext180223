@@ -39,7 +39,7 @@ const MySwiper = () => {
             >
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
                 <h2 className="text-white text-3xl md:text-4xl lg:text-6xl font-bold text-center p-4">
-                  Son Cubano en Vivo
+                  Eventos para recordar por siempre
                 </h2>
               </div>
             </div>
@@ -71,7 +71,7 @@ const MySwiper = () => {
             >
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
                 <h2 className="text-white text-3xl md:text-4xl lg:text-6xl font-bold text-center p-4">
-                  Live Cuban Son
+                Unforgettable Events
                 </h2>
               </div>
             </div>
