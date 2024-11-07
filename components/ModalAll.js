@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 // dialogos
-import { Fragment, useRef, useState } from "react";
-import { Dialog, Transition } from "@headlessui/react";
+import { Fragment, useRef, useState } from 'react';
+import { Dialog, Transition } from '@headlessui/react';
 const ModalAll = ({ open, setOpen, children }) => {
   const cancelButtonRef = useRef(null);
 

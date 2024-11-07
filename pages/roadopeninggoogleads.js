@@ -1,10 +1,10 @@
-import Head from "next/head";
-import NavBar from "../components/NavBarEs/NavBarEs";
-import ModalAll from "../components/ModalAll";
-import React, { useEffect, useState } from "react";
-import { InlineWidget } from "react-calendly";
-import CalendarioTiktokTree from "../components/CalendarioTiktokTree";
-import { useAppContext } from "../components/context/Context";
+import Head from 'next/head';
+import NavBar from '../components/NavBarEs/NavBarEs';
+import ModalAll from '../components/ModalAll';
+import React, { useEffect, useState } from 'react';
+import { InlineWidget } from 'react-calendly';
+import CalendarioTiktokTree from '../components/CalendarioTiktokTree';
+import { useAppContext } from '../components/context/Context';
 
 function RoadopeningGoogleAds() {
   const [open, setOpen] = useState(false);
@@ -32,10 +32,10 @@ function RoadopeningGoogleAds() {
               className="d-flex subContenedor1Banner"
               style={{
                 backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/aguacatechicharronrobeye.jpg")`,
-                backgroundSize: "cover",
-                height: "80vh",
-                backgroundPosition: "right center",
-                position: "relative",
+                backgroundSize: 'cover',
+                height: '80vh',
+                backgroundPosition: 'right center',
+                position: 'relative',
               }}
             ></div>
           </div>
@@ -57,7 +57,7 @@ function RoadopeningGoogleAds() {
               </p>
             </div>
             <div className="lg:w-3/4">
-              {" "}
+              {' '}
               <p className="w-full max-w-[800px]  mx-auto text-justify sm:text-2xl text-xl text-black text-bold ml-4 sm:text-lg text-sm">
                 Tenemos el gusto de invitarte a que degustes platillos que el
                 chef Jorge Dumit ha seleccionado para ti de nuestro nuevo menú,
@@ -72,7 +72,7 @@ function RoadopeningGoogleAds() {
                   className="w-64 h-64 object-cover"
                   src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/jorgedumit.jpg"
                   alt="Sunset in the mountains"
-                />{" "}
+                />{' '}
                 <div class="px-6 py-4">
                   <div class="font-bold text-xl mb-2">Jorge dumit</div>
                   <p class="text-gray-700 text-base">chef</p>
@@ -85,14 +85,14 @@ function RoadopeningGoogleAds() {
                   className="w-64 h-64 object-cover"
                   src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/Screenshot+2024-04-11+at+20.20.30.png"
                   alt="Sunset in the mountains"
-                />{" "}
+                />{' '}
                 <div class="px-6 py-4">
                   <div class="font-bold text-xl mb-2">rasnyshhdj</div>
                   <p class="text-gray-700 text-base">dj</p>
                 </div>
               </div>
             </div>
-          </div>{" "}
+          </div>{' '}
         </>
       ) : (
         <>
@@ -102,10 +102,10 @@ function RoadopeningGoogleAds() {
               className="d-flex subContenedor1Banner"
               style={{
                 backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/aguacatechicharronrobeye.jpg")`,
-                backgroundSize: "cover",
-                height: "80vh",
-                backgroundPosition: "right center",
-                position: "relative",
+                backgroundSize: 'cover',
+                height: '80vh',
+                backgroundPosition: 'right center',
+                position: 'relative',
               }}
             ></div>
           </div>
@@ -128,7 +128,7 @@ function RoadopeningGoogleAds() {
               </p>
             </div>
             <div className="md:w-3/4">
-              {" "}
+              {' '}
               <p className="w-full max-w-[800px]  mx-auto text-justify sm:text-2xl text-xl text-black text-bold sm:pl-4 sm:text-lg text-sm pt-2 px-2">
                 We are pleased to invite you to taste dishes that the chef Jorge
                 Dumit have selected for you from our new menu, accompanied by
@@ -144,7 +144,7 @@ function RoadopeningGoogleAds() {
                     className="w-64 h-64 object-cover"
                     src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/jorgedumit.jpg"
                     alt="Sunset in the mountains"
-                  />{" "}
+                  />{' '}
                   <div class="px-6 py-4">
                     <div class="font-bold text-xl mb-2">Jorge dumit</div>
                     <p class="text-gray-700 text-base">chef</p>
@@ -157,7 +157,7 @@ function RoadopeningGoogleAds() {
                     className="w-64 h-64 object-cover"
                     src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/Screenshot+2024-04-11+at+20.20.30.png"
                     alt="Sunset in the mountains"
-                  />{" "}
+                  />{' '}
                   <div class="px-6 py-4">
                     <div class="font-bold text-xl mb-2">rasnyshhdj</div>
                     <p class="text-gray-700 text-base">dj</p>

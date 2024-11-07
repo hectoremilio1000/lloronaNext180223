@@ -1,15 +1,15 @@
-import React from "react";
-import CalendarioFacebook from "../components/CalendarioFacebook";
-import NavBar from "../components/NavBarEs/NavBarEs";
-import Link from "next/link";
+import React from 'react';
+import CalendarioFacebook from '../components/CalendarioFacebook';
+import NavBar from '../components/NavBarEs/NavBarEs';
+import Link from 'next/link';
 
 const ReservaFront = () => {
   const image2 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg';
   const image3 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg';
   const image4 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2048.jpg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2048.jpg';
   return (
     <>
       <NavBar />

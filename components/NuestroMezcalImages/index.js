@@ -1,17 +1,17 @@
-import React from "react";
+import React from 'react';
 
-import title from "../Main/title.module.css";
-import card from "../Main/card.module.css";
+import title from '../Main/title.module.css';
+import card from '../Main/card.module.css';
 
 function NuestroMezcalImages() {
   const image1 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_0043+(1).jpg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_0043+(1).jpg';
   const image2 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/foto%2Bbotella%2Bcalaca%2Bmezcal%2Babbywood.jpeg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/foto%2Bbotella%2Bcalaca%2Bmezcal%2Babbywood.jpeg';
   const image3 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9973+(1).jpg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9973+(1).jpg';
   const image4 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mezcal%2Bcannabis%2Bllorona.jpg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mezcal%2Bcannabis%2Bllorona.jpg';
   return (
     <div>
       <div>
@@ -22,10 +22,10 @@ function NuestroMezcalImages() {
 
       <div
         style={{
-          display: "flex",
-          justifyContent: "center",
-          flexWrap: "wrap",
-          gap: "20px",
+          display: 'flex',
+          justifyContent: 'center',
+          flexWrap: 'wrap',
+          gap: '20px',
           margin: 20,
         }}
       >
@@ -171,23 +171,23 @@ function NuestroMezcalImages() {
 
 const itemData = [
   {
-    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/IMG_9973.jpg",
-    title: "Niurka con su hija Romi Marcos degustando nuestro Mezcal",
+    img: 'https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/IMG_9973.jpg',
+    title: 'Niurka con su hija Romi Marcos degustando nuestro Mezcal',
     rows: 2,
     cols: 2,
     featured: true,
   },
   {
-    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/IMG_0043.jpg",
-    title: "Nuestra botella Calavera",
+    img: 'https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/IMG_0043.jpg',
+    title: 'Nuestra botella Calavera',
   },
   {
-    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/mezcal+cannabis+llorona.jpg",
-    title: "Coyote con Cannabis",
+    img: 'https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/mezcal+cannabis+llorona.jpg',
+    title: 'Coyote con Cannabis',
   },
   {
-    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/foto+botella+calaca+mezcal+abbywood.JPG",
-    title: "La pasión nos une AbbyWoo",
+    img: 'https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/foto+botella+calaca+mezcal+abbywood.JPG',
+    title: 'La pasión nos une AbbyWoo',
     cols: 2,
   },
 ];

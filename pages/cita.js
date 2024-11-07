@@ -1,21 +1,21 @@
-import Link from "next/link";
-import React, { useEffect, useState } from "react";
-import { useAppContext } from "../components/context/Context";
-import Head from "next/head";
-import Script from "next/script";
-import * as fbq from "../lib/fpixel";
-import YouTube from "react-youtube";
-import { FB_PIXEL_ID } from "../lib/fpixel";
+import Link from 'next/link';
+import React, { useEffect, useState } from 'react';
+import { useAppContext } from '../components/context/Context';
+import Head from 'next/head';
+import Script from 'next/script';
+import * as fbq from '../lib/fpixel';
+import YouTube from 'react-youtube';
+import { FB_PIXEL_ID } from '../lib/fpixel';
 
-import { InlineWidget } from "react-calendly";
-import ModalAll from "../components/ModalAll";
-import NavBarWhite from "../components/NavbarWhite";
-import NavBar from "../components/NavBarEs/NavBarEs";
-import CalendarioTiktokTree from "../components/CalendarioTiktokTree";
-import QuickInfo5 from "../components/QuickInfo5";
-import QuickInfo6 from "../components/QuickInfo6";
-import CalendarioFoodie from "../components/CalendarioFoodie";
-import CalendarioGoogleAds from "../components/CalendarioGoogleAds";
+import { InlineWidget } from 'react-calendly';
+import ModalAll from '../components/ModalAll';
+import NavBarWhite from '../components/NavbarWhite';
+import NavBar from '../components/NavBarEs/NavBarEs';
+import CalendarioTiktokTree from '../components/CalendarioTiktokTree';
+import QuickInfo5 from '../components/QuickInfo5';
+import QuickInfo6 from '../components/QuickInfo6';
+import CalendarioFoodie from '../components/CalendarioFoodie';
+import CalendarioGoogleAds from '../components/CalendarioGoogleAds';
 
 function Cita() {
   // useEffect(() => {
@@ -23,8 +23,8 @@ function Cita() {
   // }, []);
 
   const opts = {
-    height: "350",
-    width: "300",
+    height: '350',
+    width: '300',
 
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
@@ -46,7 +46,7 @@ function Cita() {
   }, [hasInitialized, onIdiomaIngles]);
 
   const handleLanguageChange = (language) => {
-    if (language === "espa") {
+    if (language === 'espa') {
       onIdiomaEspa();
     } else {
       onIdiomaIngles();
@@ -54,22 +54,22 @@ function Cita() {
     setHasInitialized(true);
   };
   const image1 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg';
   const image2 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg';
   const image3 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalalloronaromacondesa.JPG";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalalloronaromacondesa.JPG';
   const image4 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2048.jpg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2048.jpg';
 
   const image5 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg';
   const image6 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia+mexicana+tragos+increibles.jpg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia+mexicana+tragos+increibles.jpg';
   const image7 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg';
   const image8 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/coctelDeliciosoMEzcal.jpg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/coctelDeliciosoMEzcal.jpg';
   const [open, setOpen] = useState(false);
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -95,7 +95,7 @@ function Cita() {
           <img
             height="1"
             width="1"
-            style={{ display: "none" }}
+            style={{ display: 'none' }}
             src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
           />
         </noscript>
@@ -150,7 +150,7 @@ function Cita() {
                 Una terraza única
               </h1>
               <Link
-                href={"/reserva"}
+                href={'/reserva'}
                 className="inline-block max-w-max mx-auto px-4 py-3 rounded-md text-green-900 font-bold bg-[#3eeb91] text-xl m:text-2xl"
               >
                 Reserva Ahora
@@ -286,7 +286,7 @@ function Cita() {
                 />
               </video>
               <Link
-                href={"/reserva"}
+                href={'/reserva'}
                 className="inline-block max-w-max mx-auto px-4 py-3 rounded-md text-green-900 font-bold bg-[#3eeb91] text-xl m:text-2xl"
               >
                 Book Now
@@ -434,7 +434,7 @@ function Cita() {
                     El <b>lugar perfecto </b>para tus citas y eventos
                     especiales. Ven a disfrutar de la terraza más impactante de
                     CDMX con una buena mixología y grandes sabores con el menú
-                    creado por el chef galardonado internacionalmente{" "}
+                    creado por el chef galardonado internacionalmente{' '}
                     <a
                       href="https://www.instagram.com/jorgedumit?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                       className="font-bold text-red-900"
@@ -446,11 +446,11 @@ function Cita() {
 
                   <p className="text-start text-gray-900 sm:text-xs md:text-md pt-2">
                     <Link
-                      href={"/reserva"}
+                      href={'/reserva'}
                       className=" text-red-900 font-bold "
                     >
                       Reserva ahora
-                    </Link>{" "}
+                    </Link>{' '}
                     y pide en tu confirmación por whatsapp un postre especial
                     por parte de uno los mejores chefs de México.
                   </p>

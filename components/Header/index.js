@@ -1,10 +1,10 @@
 function Header() {
-    const [active, setActive] = useState(false);
+  const [active, setActive] = useState(false);
 
-    const showMenu = () => {
-        setActive(!active);
-    }
+  const showMenu = () => {
+    setActive(!active);
+  };
 
-    return (<></>)
+  return <></>;
 }
 export default Header;

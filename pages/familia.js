@@ -1,27 +1,27 @@
-import Link from "next/link";
-import React, { useEffect, useState } from "react";
-import Calendario from "../components/Calendario/index";
-import title from "../components/Main/title.module.css";
-import { useAppContext } from "../components/context/Context";
-import Head from "next/head";
-import Script from "next/script";
-import * as fbq from "../lib/fpixel";
-import YouTube from "react-youtube";
-import { FB_PIXEL_ID } from "../lib/fpixel";
-import QuickInfo6 from "../components/QuickInfo6";
+import Link from 'next/link';
+import React, { useEffect, useState } from 'react';
+import Calendario from '../components/Calendario/index';
+import title from '../components/Main/title.module.css';
+import { useAppContext } from '../components/context/Context';
+import Head from 'next/head';
+import Script from 'next/script';
+import * as fbq from '../lib/fpixel';
+import YouTube from 'react-youtube';
+import { FB_PIXEL_ID } from '../lib/fpixel';
+import QuickInfo6 from '../components/QuickInfo6';
 
-import { InlineWidget } from "react-calendly";
-import ModalAll from "../components/ModalAll";
-import NavBar from "../components/NavBarEs/NavBarEs";
-import QuickInfo5 from "../components/QuickInfo5";
-import "../styles/Slider.module.css"; // Importa el archivo CSS aquí
+import { InlineWidget } from 'react-calendly';
+import ModalAll from '../components/ModalAll';
+import NavBar from '../components/NavBarEs/NavBarEs';
+import QuickInfo5 from '../components/QuickInfo5';
+import '../styles/Slider.module.css'; // Importa el archivo CSS aquí
 
-import dynamic from "next/dynamic";
-import MySwiper from "../components/SwiperGeneral";
-import CalendarioGoogleAds from "../components/CalendarioGoogleAds";
-import Encontramos from "../components/Encontramos/index";
+import dynamic from 'next/dynamic';
+import MySwiper from '../components/SwiperGeneral';
+import CalendarioGoogleAds from '../components/CalendarioGoogleAds';
+import Encontramos from '../components/Encontramos/index';
 
-const Swiper1 = dynamic(() => import("../components/Swiper1"), {
+const Swiper1 = dynamic(() => import('../components/Swiper1'), {
   ssr: false,
 });
 
@@ -29,18 +29,18 @@ function Familia() {
   const BannerImages = [
     {
       imagen1:
-        "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg)",
+        'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg)',
 
       imagen2:
-        "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/pan%2Belote%2Bcantina%2Bllorona%2Bdelicioso.JPG)",
+        'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/pan%2Belote%2Bcantina%2Bllorona%2Bdelicioso.JPG)',
       imagen3:
-        "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/comida/mariscos.jpg)",
+        'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/comida/mariscos.jpg)',
       imagen4:
-        "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/costra%2Belote%2Bdelicia%2Bchef%2Bcantina%2Bllorona.JPG)",
+        'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/costra%2Belote%2Bdelicia%2Bchef%2Bcantina%2Bllorona.JPG)',
       imagen5:
-        "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/cantina%2Bllorona%2Btaco.jpg)",
+        'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/cantina%2Bllorona%2Btaco.jpg)',
       imagen6:
-        "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/tostada%2Batun%2Baguachile%2Bcantina%2Bllorona+copy.jpg )",
+        'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/tostada%2Batun%2Baguachile%2Bcantina%2Bllorona+copy.jpg )',
     },
   ];
 
@@ -53,14 +53,14 @@ function Familia() {
       </>
     ),
     imagen1:
-      "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/terrazaespecialromanceromacondesaamigoscantina.jpg",
+      'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/terrazaespecialromanceromacondesaamigoscantina.jpg',
     imagen1Texto: (
       <>
         Diseño espectacular <br />y único en cdmx
       </>
     ),
     imagen2:
-      "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/niurka%2Bcantina%2Bla%2Bllorona%2Bfestejo%2Bcantina%2Bllorona.jpg",
+      'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/niurka%2Bcantina%2Bla%2Bllorona%2Bfestejo%2Bcantina%2Bllorona.jpg',
     imagen2Texto: (
       <>
         Restaurante de familia, comida <br />y diversión
@@ -86,7 +86,7 @@ function Familia() {
       </>
     ),
     imagen1:
-      "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/terrazaespecialromanceromacondesaamigoscantina.jpg",
+      'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/terrazaespecialromanceromacondesaamigoscantina.jpg',
     imagen1Texto: (
       <>
         Spectacular design <br />
@@ -94,7 +94,7 @@ function Familia() {
       </>
     ),
     imagen2:
-      "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/niurka%2Bcantina%2Bla%2Bllorona%2Bfestejo%2Bcantina%2Bllorona.jpg",
+      'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/niurka%2Bcantina%2Bla%2Bllorona%2Bfestejo%2Bcantina%2Bllorona.jpg',
     imagen2Texto: (
       <>
         Family restaurant, food <br />
@@ -113,8 +113,8 @@ function Familia() {
   };
 
   const opts = {
-    height: "350",
-    width: "300",
+    height: '350',
+    width: '300',
 
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
@@ -137,7 +137,7 @@ function Familia() {
             <img
               height="1"
               width="1"
-              style={{ display: "none" }}
+              style={{ display: 'none' }}
               src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
             />
           </noscript>

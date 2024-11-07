@@ -1,18 +1,18 @@
-import React from "react";
-import { useAppContext } from "../components/context/Context";
-import { useState } from "react";
-import ButtonComponent from "../components/ButtonComponent/index";
-import title from "../components/Main/title.module.css";
-import { paqueteSinAlcohol } from "../data/paquetes";
-import NavBar from "../components/NavBarEs/NavBarEs";
+import React from 'react';
+import { useAppContext } from '../components/context/Context';
+import { useState } from 'react';
+import ButtonComponent from '../components/ButtonComponent/index';
+import title from '../components/Main/title.module.css';
+import { paqueteSinAlcohol } from '../data/paquetes';
+import NavBar from '../components/NavBarEs/NavBarEs';
 
 function Paquetes() {
   const [english, setEnglish] = useState(false);
   const [spanish, setSpanish] = useState(true);
 
-  const whatsappNumber = "525549242477"; // Código de país +52 para México y tu número local
+  const whatsappNumber = '525549242477'; // Código de país +52 para México y tu número local
   const whatsappMessage = encodeURIComponent(
-    "Hola, me gustaría reservar una mesa para las fiestas navideñas."
+    'Hola, me gustaría reservar una mesa para las fiestas navideñas.'
   ); // Mensaje predeterminado
 
   const onEnglish = () => {
@@ -34,10 +34,10 @@ function Paquetes() {
         className="d-flex subContenedor1Banner banner"
         style={{
           backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/Screenshot+2023-11-10+at+22.04.18.png")`,
-          backgroundSize: "cover",
-          height: "90vh",
-          backgroundPosition: "center",
-          position: "relative",
+          backgroundSize: 'cover',
+          height: '90vh',
+          backgroundPosition: 'center',
+          position: 'relative',
         }}
       >
         {/* <video autoPlay muted loop src={videoPort} /> */}
@@ -51,9 +51,9 @@ function Paquetes() {
       <div
         className="mt-2"
         style={{
-          padding: "2rem 0",
-          width: "90vw",
-          margin: "0 auto",
+          padding: '2rem 0',
+          width: '90vw',
+          margin: '0 auto',
         }}
       >
         <div>

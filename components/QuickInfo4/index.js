@@ -1,7 +1,7 @@
-import React from "react";
-import title from "../Main/title.module.css";
-import { useAppContext } from "../context/Context";
-import Link from "next/link";
+import React from 'react';
+import title from '../Main/title.module.css';
+import { useAppContext } from '../context/Context';
+import Link from 'next/link';
 
 function QuickInfo4() {
   const { espa } = useAppContext();

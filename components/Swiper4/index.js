@@ -1,15 +1,15 @@
-import React, { useState } from "react";
-import { useAppContext } from "../context/Context";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import React, { useState } from 'react';
+import { useAppContext } from '../context/Context';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 const MySwiper = () => {
-  const [current, setCurrent] = useState("");
+  const [current, setCurrent] = useState('');
   const [navbar, setNavbar] = useState(false);
 
   const { espa, ingles, onIdiomaIngles, onIdiomaEspa } = useAppContext();
@@ -31,10 +31,10 @@ const MySwiper = () => {
             <div
               style={{
                 backgroundImage:
-                  "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/gruposcubanos1.png)",
-                height: "80vh",
-                backgroundSize: "cover",
-                backgroundPosition: "center left",
+                  'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/gruposcubanos1.png)',
+                height: '80vh',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center left',
               }}
             >
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
@@ -63,15 +63,15 @@ const MySwiper = () => {
             <div
               style={{
                 backgroundImage:
-                  "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/gruposcubanos1.png)",
-                height: "80vh",
-                backgroundSize: "cover",
-                backgroundPosition: "center left",
+                  'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/gruposcubanos1.png)',
+                height: '80vh',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center left',
               }}
             >
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
                 <h2 className="text-white text-3xl md:text-4xl lg:text-6xl font-bold text-center p-4">
-                Unforgettable Events
+                  Unforgettable Events
                 </h2>
               </div>
             </div>

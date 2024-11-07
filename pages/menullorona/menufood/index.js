@@ -1,18 +1,18 @@
-import React from "react";
-import title from "../../../components/Main/title.module.css";
+import React from 'react';
+import title from '../../../components/Main/title.module.css';
 
-import { menuFood1 } from "../../../data/menu/menuIngles";
-import { menuFood11 } from "../../../data/menu/menuIngles";
-import { menuFood2 } from "../../../data/menu/menuIngles";
-import { menuFood3 } from "../../../data/menu/menuIngles";
-import { mixoIngles } from "../../../data/menu/menuIngles";
+import { menuFood1 } from '../../../data/menu/menuIngles';
+import { menuFood11 } from '../../../data/menu/menuIngles';
+import { menuFood2 } from '../../../data/menu/menuIngles';
+import { menuFood3 } from '../../../data/menu/menuIngles';
+import { mixoIngles } from '../../../data/menu/menuIngles';
 
-import { mixoIngles2 } from "../../../data/menu/menuIngles";
-import { CervezaArteIngles } from "../../../data/menu/menuIngles";
-import { sodaEspaIngles } from "../../../data/menu/menuIngles";
-import { destiladosEspaIngles } from "../../../data/menu/menuIngles";
-import { mezcaEspaIngles } from "../../../data/menu/menuIngles";
-import { portadaIngles } from "../../../data/menu/menuIngles";
+import { mixoIngles2 } from '../../../data/menu/menuIngles';
+import { CervezaArteIngles } from '../../../data/menu/menuIngles';
+import { sodaEspaIngles } from '../../../data/menu/menuIngles';
+import { destiladosEspaIngles } from '../../../data/menu/menuIngles';
+import { mezcaEspaIngles } from '../../../data/menu/menuIngles';
+import { portadaIngles } from '../../../data/menu/menuIngles';
 
 function MenuFood() {
   const menuComida1 = menuFood1;
@@ -148,7 +148,7 @@ function MenuFood() {
             height={500}
             className="w-full"
           />
-        </div>{" "}
+        </div>{' '}
         <div className="w-full px-4">
           <img
             src={soda}

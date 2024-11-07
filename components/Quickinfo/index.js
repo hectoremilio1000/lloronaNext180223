@@ -1,31 +1,31 @@
-import React from "react";
-import title from "../Main/title.module.css";
-import card from "../Main/card.module.css";
-import Link from "next/link";
+import React from 'react';
+import title from '../Main/title.module.css';
+import card from '../Main/card.module.css';
+import Link from 'next/link';
 
-import AppContextProvider, { useAppContext } from "../context/Context";
-import * as fbq from "../../lib/fpixel";
+import AppContextProvider, { useAppContext } from '../context/Context';
+import * as fbq from '../../lib/fpixel';
 
 //imagenes
 
 const image1 =
-  "https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/muertos/day-dead-celebration-with-altar1.jpg";
+  'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/muertos/day-dead-celebration-with-altar1.jpg';
 
 const image2 =
-  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/aguachile%2Bcantina%2Bllorona%2Bribeye%2Bdelicioso.jpg";
+  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/aguachile%2Bcantina%2Bllorona%2Bribeye%2Bdelicioso.jpg';
 
 const image3 =
-  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/postres+ricos+deliciosos.JPG";
+  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/postres+ricos+deliciosos.JPG';
 
 const image4 =
-  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/gruposcubanos1.png";
+  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/gruposcubanos1.png';
 
 const image5 =
-  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/cantina%2Bllorona%2Btaco.jpg";
+  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/cantina%2Bllorona%2Btaco.jpg';
 
 function QuickInfo() {
   const handleClick = () => {
-    fbq.event("reserva");
+    fbq.event('reserva');
   };
 
   const { ingles, espa } = useAppContext();
@@ -96,7 +96,7 @@ function QuickInfo() {
             </div>
           </div>
 
-          <div style={{ display: "flex", justifyContent: "center" }}>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
             <Link href="/reserva">
               <button className="buttonComponente" onClick={handleClick}>
                 ¡Reserva ya!
@@ -170,7 +170,7 @@ function QuickInfo() {
           </div>
 
           <div
-            style={{ display: "flex", justifyContent: "center", marginTop: 30 }}
+            style={{ display: 'flex', justifyContent: 'center', marginTop: 30 }}
           >
             <Link href="/reserva">
               <button className="buttonComponente" onClick={handleClick}>

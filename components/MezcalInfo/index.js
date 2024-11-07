@@ -1,6 +1,6 @@
-import React from "react";
-import title from "../Main/title.module.css";
-import card from "../Main/card.module.css";
+import React from 'react';
+import title from '../Main/title.module.css';
+import card from '../Main/card.module.css';
 
 function MezcalInfo() {
   return (

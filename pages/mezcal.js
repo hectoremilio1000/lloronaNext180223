@@ -1,12 +1,12 @@
-import React from "react";
-import MezcalInfo from "../components/MezcalInfo";
-import ProcesoElaboracion from "../components/ProcesoElaborarion/index";
-import TitlebarImageList from "../components/TitlebarImageList/index";
+import React from 'react';
+import MezcalInfo from '../components/MezcalInfo';
+import ProcesoElaboracion from '../components/ProcesoElaborarion/index';
+import TitlebarImageList from '../components/TitlebarImageList/index';
 
-import NuestroMezcalInfo from "../components/NuestroMezcalInfo/index";
-import NuestroMezcalImages from "../components/NuestroMezcalImages/index";
-import Head from "next/head";
-import NavBar from "../components/NavBarEs/NavBarEs";
+import NuestroMezcalInfo from '../components/NuestroMezcalInfo/index';
+import NuestroMezcalImages from '../components/NuestroMezcalImages/index';
+import Head from 'next/head';
+import NavBar from '../components/NavBarEs/NavBarEs';
 
 function Mezcal() {
   return (
@@ -30,10 +30,10 @@ function Mezcal() {
           className="d-flex subContenedor1Banner"
           style={{
             backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/PHOTO-2022-04-27-10-56-11.jpg")`,
-            backgroundSize: "cover",
-            height: "100vh",
-            backgroundPosition: "right center",
-            position: "relative",
+            backgroundSize: 'cover',
+            height: '100vh',
+            backgroundPosition: 'right center',
+            position: 'relative',
           }}
         >
           {/* <video autoPlay muted loop src={videoPort} /> */}

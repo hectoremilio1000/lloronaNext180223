@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
-import { InlineWidget } from "react-calendly";
-import { useAppContext } from "../context/Context";
-import Head from "next/head";
+import React, { useEffect, useState } from 'react';
+import { InlineWidget } from 'react-calendly';
+import { useAppContext } from '../context/Context';
+import Head from 'next/head';
 
 function Calendario() {
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    const script = document.createElement('script');
+    script.src = 'https://assets.calendly.com/assets/external/widget.js';
     script.async = true;
     document.body.appendChild(script);
 

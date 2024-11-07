@@ -1,10 +1,10 @@
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 const MySwiper = () => {
   return (
@@ -23,10 +23,10 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/comida/mariscoplayacantinallorona1.jpg)",
-            height: "80vh",
-            backgroundSize: "cover",
-            backgroundPosition: "center right",
+              'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/comida/mariscoplayacantinallorona1.jpg)',
+            height: '80vh',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center right',
           }}
         >
           <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">

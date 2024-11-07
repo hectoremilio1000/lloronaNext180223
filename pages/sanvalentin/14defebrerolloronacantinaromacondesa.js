@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
-import Link from "next/link";
+import React, { useEffect } from 'react';
+import Link from 'next/link';
 // import title from "../components/Main/title.module.css";
-import { useAppContext } from "../../components/context/Context";
+import { useAppContext } from '../../components/context/Context';
 
-import { InlineWidget } from "react-calendly";
-import Head from "next/head";
-import Script from "next/script";
+import { InlineWidget } from 'react-calendly';
+import Head from 'next/head';
+import Script from 'next/script';
 
 function Promo3() {
   const { espa } = useAppContext();

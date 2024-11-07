@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react';
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-import "swiper/css";
+import 'swiper/css';
 
-import "swiper/css/pagination";
+import 'swiper/css/pagination';
 
 // import required modules
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import { useAppContext } from "../context/Context";
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { useAppContext } from '../context/Context';
 const Slider = () => {
   return (
     <>

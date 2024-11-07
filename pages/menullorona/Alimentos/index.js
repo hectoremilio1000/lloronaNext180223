@@ -1,17 +1,17 @@
-import React from "react";
-import title from "../../../components/Main/title.module.css";
-import { menuEspa1 } from "../../../data/menu/menuEspa/menuEspa";
-import { menuEspa2 } from "../../../data/menu/menuEspa/menuEspa";
-import { menuEspa3 } from "../../../data/menu/menuEspa/menuEspa";
-import { mixoEspa } from "../../../data/menu/menuEspa/menuEspa";
-import { CervezaArte } from "../../../data/menu/menuEspa/menuEspa";
-import { sodaEspa } from "../../../data/menu/menuEspa/menuEspa";
-import { destiladosEspa } from "../../../data/menu/menuEspa/menuEspa";
-import { mezcaEspa } from "../../../data/menu/menuEspa/menuEspa";
-import { portada } from "../../../data/menu/menuEspa/menuEspa";
-import { menuEspa11 } from "../../../data/menu/menuEspa/menuEspa";
-import { mixoEspa2 } from "../../../data/menu/menuEspa/menuEspa";
-import MenuDetail from "../../../components/MenuDetail";
+import React from 'react';
+import title from '../../../components/Main/title.module.css';
+import { menuEspa1 } from '../../../data/menu/menuEspa/menuEspa';
+import { menuEspa2 } from '../../../data/menu/menuEspa/menuEspa';
+import { menuEspa3 } from '../../../data/menu/menuEspa/menuEspa';
+import { mixoEspa } from '../../../data/menu/menuEspa/menuEspa';
+import { CervezaArte } from '../../../data/menu/menuEspa/menuEspa';
+import { sodaEspa } from '../../../data/menu/menuEspa/menuEspa';
+import { destiladosEspa } from '../../../data/menu/menuEspa/menuEspa';
+import { mezcaEspa } from '../../../data/menu/menuEspa/menuEspa';
+import { portada } from '../../../data/menu/menuEspa/menuEspa';
+import { menuEspa11 } from '../../../data/menu/menuEspa/menuEspa';
+import { mixoEspa2 } from '../../../data/menu/menuEspa/menuEspa';
+import MenuDetail from '../../../components/MenuDetail';
 
 function Alimentos() {
   const menuComida1 = menuEspa1;
@@ -118,7 +118,7 @@ function Alimentos() {
             height={500}
             className="w-full"
           />
-        </div>{" "}
+        </div>{' '}
         <div className="w-full px-4">
           <img
             src={soda}

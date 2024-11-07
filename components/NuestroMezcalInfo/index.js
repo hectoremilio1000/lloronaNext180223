@@ -1,6 +1,5 @@
-import React from 'react'
-import title from "../Main/title.module.css"
-
+import React from 'react';
+import title from '../Main/title.module.css';
 
 function NuestroMezcalInfo() {
   return (
@@ -22,21 +21,19 @@ function NuestroMezcalInfo() {
         </p>
 
         <div className="px-3 row-qh">
-          
-          <ol className='sm:text-2xl text-xl text-black list-disc px-4'>
-            <li className='list'>
-                Jabalí: el maguey Jabalí es un agave extravagante rojo de hojas
-                anchas y puntas filosas, se adorna con filos rojos y sus espinas
-                parecen sierras. Endémico en el Estado de Oaxaca, árido,
-                requiere poca agua y crece en las barrancas de clima árido.
-              </li>
-            <li className='list'>
-                Coyote: Los maestros mezcaleros coinciden que es un maguey
-                escurridizo como un “coyote” de ahí viene el origen de su nombre
-                común.
-              </li>
-            </ol>
-      
+          <ol className="sm:text-2xl text-xl text-black list-disc px-4">
+            <li className="list">
+              Jabalí: el maguey Jabalí es un agave extravagante rojo de hojas
+              anchas y puntas filosas, se adorna con filos rojos y sus espinas
+              parecen sierras. Endémico en el Estado de Oaxaca, árido, requiere
+              poca agua y crece en las barrancas de clima árido.
+            </li>
+            <li className="list">
+              Coyote: Los maestros mezcaleros coinciden que es un maguey
+              escurridizo como un “coyote” de ahí viene el origen de su nombre
+              común.
+            </li>
+          </ol>
         </div>
       </div>
     </div>

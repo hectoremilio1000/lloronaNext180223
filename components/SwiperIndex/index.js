@@ -1,11 +1,11 @@
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import Link from "next/link";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import Link from 'next/link';
 // Import Swiper styles
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 const MySwiper = () => {
   return (
@@ -24,10 +24,10 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              "url(https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/dia%2Bmuertos%2Bcantina%2Bcomida.JPG)",
-            height: "80vh",
-            backgroundSize: "cover",
-            backgroundPosition: "bottom center",
+              'url(https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/dia%2Bmuertos%2Bcantina%2Bcomida.JPG)',
+            height: '80vh',
+            backgroundSize: 'cover',
+            backgroundPosition: 'bottom center',
           }}
         >
           {/* <div className="absolute inset-0 flex items-center justify-center">
@@ -44,13 +44,13 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              "url(https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/muertos/day-dead-celebration-with-altar1.jpg)",
-            height: "80vh",
-            backgroundSize: "cover",
-            backgroundPosition: "center center",
+              'url(https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/muertos/day-dead-celebration-with-altar1.jpg)',
+            height: '80vh',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center center',
           }}
         >
-          {" "}
+          {' '}
         </div>
       </SwiperSlide>
 
@@ -58,13 +58,13 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/aguachile%2Bcantina%2Bllorona%2Bribeye%2Bdelicioso.jpg)",
-            height: "80vh",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
+              'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/aguachile%2Bcantina%2Bllorona%2Bribeye%2Bdelicioso.jpg)',
+            height: '80vh',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
           }}
         >
-          {" "}
+          {' '}
           {/* <div className="absolute inset-0 flex items-center justify-center">
             <Link
               href={"/reserva"}
@@ -79,13 +79,13 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              "url(https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/pinatacumpleanera.JPG)",
-            height: "80vh",
-            backgroundSize: "cover",
-            backgroundPosition: "center center",
+              'url(https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/pinatacumpleanera.JPG)',
+            height: '80vh',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center center',
           }}
         >
-          {" "}
+          {' '}
           {/* <div className="absolute inset-0 flex items-center justify-center">
             <Link
               href={"/reserva"}
@@ -100,13 +100,13 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              "url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/chicharron%2Bpork%2Bbelly%2Bguacamole%2Bcantina%2Bllorona.jpg)",
-            height: "80vh",
-            backgroundSize: "cover",
-            backgroundPosition: "center center",
+              'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/chicharron%2Bpork%2Bbelly%2Bguacamole%2Bcantina%2Bllorona.jpg)',
+            height: '80vh',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center center',
           }}
         >
-          {" "}
+          {' '}
           {/* <div className="absolute inset-0 flex items-center justify-center">
             <Link
               href={"/reserva"}
@@ -121,13 +121,13 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              "url(https://imagenesrutalab.s3.amazonaws.com/llorona/franquicias/banner/IMG_8773.jpg)",
-            height: "80vh",
-            backgroundSize: "cover",
-            backgroundPosition: "center center",
+              'url(https://imagenesrutalab.s3.amazonaws.com/llorona/franquicias/banner/IMG_8773.jpg)',
+            height: '80vh',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center center',
           }}
         >
-          {" "}
+          {' '}
           {/* <div className="absolute inset-0 flex items-center justify-center">
             <Link
               href={"/reserva"}

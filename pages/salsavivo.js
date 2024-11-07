@@ -1,18 +1,18 @@
-import React from "react";
-import title from "../components/Main/title.module.css";
-import card from "../components/Main/card.module.css";
-import Link from "next/link";
-import { useAppContext } from "../components/context/Context";
-import YouTube from "react-youtube";
-import Calendario from "../components/Calendario";
-import NavBar from "../components/NavBarEs/NavBarEs";
+import React from 'react';
+import title from '../components/Main/title.module.css';
+import card from '../components/Main/card.module.css';
+import Link from 'next/link';
+import { useAppContext } from '../components/context/Context';
+import YouTube from 'react-youtube';
+import Calendario from '../components/Calendario';
+import NavBar from '../components/NavBarEs/NavBarEs';
 
 function SalsaVivo() {
   const { ingles, espa } = useAppContext();
 
   const opts = {
-    height: "300",
-    width: "200",
+    height: '300',
+    width: '200',
 
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
@@ -76,7 +76,7 @@ function SalsaVivo() {
               <div className="py-3 px-4 row-qh">
                 <p className="text-center sm:text-2xl text-xl text-black">
                   En La Cantina La Llorona, estamos orgullosos de presentar los
-                  mejores grupos de salsa en vivo que llenan nuestras{" "}
+                  mejores grupos de salsa en vivo que llenan nuestras{' '}
                   <b>noches de energía y pasión</b>.
                   <br />
                   Déjate llevar por el vaivén de la salsa, ritmo que se respira
@@ -90,10 +90,10 @@ function SalsaVivo() {
               <>
                 <div
                   style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    flexWrap: "wrap",
-                    gap: "20px",
+                    display: 'flex',
+                    justifyContent: 'center',
+                    flexWrap: 'wrap',
+                    gap: '20px',
                   }}
                 >
                   <div>
@@ -139,10 +139,10 @@ function SalsaVivo() {
                   <Link href="/reserva">
                     <div
                       style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        flexWrap: "wrap",
-                        gap: "20px",
+                        display: 'flex',
+                        justifyContent: 'center',
+                        flexWrap: 'wrap',
+                        gap: '20px',
                       }}
                     >
                       <div>
@@ -179,23 +179,23 @@ function SalsaVivo() {
               <div className="py-0 px-4 row-qh">
                 <p className="text-center sm:text-2xl text-xl text-black">
                   Si eres amante de la música, te encantará saber que contamos
-                  con los mejores grupos de son cubano que llenarán tus{" "}
+                  con los mejores grupos de son cubano que llenarán tus{' '}
                   <b>noches de ritmo y sabor</b>.
                   <br />
-                  Pero eso no es todo,{" "}
+                  Pero eso no es todo,{' '}
                   <b>
                     nuestra cocina te espera con platos irresistibles, diseñados
                     para hacer que cada bocado sea un viaje de sabor
                   </b>
                   . Y para maridar tus comidas, te presentamos nuestra mixología
-                  especial con{" "}
+                  especial con{' '}
                   <b>
                     tequila y mezcal, creaciones originales que te sorprenderán
                   </b>
                   .
                   <br />
                   Así que, si estás buscando el lugar perfecto para disfrutar de
-                  buena música, comida deliciosa y cocteles excepcionales,{" "}
+                  buena música, comida deliciosa y cocteles excepcionales,{' '}
                   <b>La Cantina La Llorona </b>es el lugar que necesitas. ¡Te
                   esperamos con los brazos abiertos y las copas listas para
                   brindar! Ven a vivir la verdadera esencia de la fiesta y la
@@ -206,10 +206,10 @@ function SalsaVivo() {
               <>
                 <div
                   style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    flexWrap: "wrap",
-                    gap: "20px",
+                    display: 'flex',
+                    justifyContent: 'center',
+                    flexWrap: 'wrap',
+                    gap: '20px',
                   }}
                 >
                   <div>
@@ -256,10 +256,10 @@ function SalsaVivo() {
                   <Link href="/reserva">
                     <div
                       style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        flexWrap: "wrap",
-                        gap: "20px",
+                        display: 'flex',
+                        justifyContent: 'center',
+                        flexWrap: 'wrap',
+                        gap: '20px',
                       }}
                     >
                       <div>
@@ -280,7 +280,7 @@ function SalsaVivo() {
                 </div>
 
                 <div
-                  style={{ display: "flex", justifyContent: "center" }}
+                  style={{ display: 'flex', justifyContent: 'center' }}
                   className="py-3"
                 >
                   <Link href="#reservacubano">
@@ -316,11 +316,11 @@ function SalsaVivo() {
               <div className="py-3 px-4 row-qh">
                 <p className="text-center sm:text-2xl text-xl text-black">
                   At Cantina La Llorona, we are proud to present the best live
-                  salsa bands that fill our{" "}
+                  salsa bands that fill our{' '}
                   <b>nights with energy and passion</b>. Let yourself be carried
                   away by the sway of salsa, a rhythm that is felt in every
                   corner of our restaurant. Here, every dish is an excuse to
-                  celebrate, and every song is an{" "}
+                  celebrate, and every song is an{' '}
                   <b>invitation to get up from your seat and dance</b>. If you
                   delight in both your auditory and gustatory senses, you are in
                   the right place.
@@ -330,10 +330,10 @@ function SalsaVivo() {
               <>
                 <div
                   style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    flexWrap: "wrap",
-                    gap: "20px",
+                    display: 'flex',
+                    justifyContent: 'center',
+                    flexWrap: 'wrap',
+                    gap: '20px',
                   }}
                 >
                   <div>
@@ -378,10 +378,10 @@ function SalsaVivo() {
                   <Link href="/reserva">
                     <div
                       style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        flexWrap: "wrap",
-                        gap: "20px",
+                        display: 'flex',
+                        justifyContent: 'center',
+                        flexWrap: 'wrap',
+                        gap: '20px',
                       }}
                     >
                       <div>
@@ -415,7 +415,7 @@ function SalsaVivo() {
               <div className="py-0 px-4 row-qh">
                 <p className="text-center sm:text-2xl text-xl text-black">
                   If you are a music lover, you will be delighted to know that
-                  we have the best{" "}
+                  we have the best{' '}
                   <b>
                     Cuban son bands that will fill your nights with rhythm and
                     flavor
@@ -424,13 +424,13 @@ function SalsaVivo() {
                   dishes designed to make every bite a flavorful journey. And to
                   pair with your meals, we present our special mixology with
                   tequila and mezcal, original creations that will surprise you.
-                  So, if you're looking for the perfect place to enjoy{" "}
+                  So, if you're looking for the perfect place to enjoy{' '}
                   <b>
                     good music, delicious food, and exceptional cocktails,
                     Cantina La Llorona is the place you need
                   </b>
                   . We await you with open arms and glasses ready to toast! Come
-                  and experience the{" "}
+                  and experience the{' '}
                   <b>
                     true essence of celebration and gastronomy in our corner
                   </b>
@@ -441,10 +441,10 @@ function SalsaVivo() {
               <>
                 <div
                   style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    flexWrap: "wrap",
-                    gap: "20px",
+                    display: 'flex',
+                    justifyContent: 'center',
+                    flexWrap: 'wrap',
+                    gap: '20px',
                   }}
                 >
                   <div>
@@ -490,10 +490,10 @@ function SalsaVivo() {
                   <Link href="/reserva">
                     <div
                       style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        flexWrap: "wrap",
-                        gap: "20px",
+                        display: 'flex',
+                        justifyContent: 'center',
+                        flexWrap: 'wrap',
+                        gap: '20px',
                       }}
                     >
                       <div>
@@ -514,7 +514,7 @@ function SalsaVivo() {
                 </div>
 
                 <div
-                  style={{ display: "flex", justifyContent: "center" }}
+                  style={{ display: 'flex', justifyContent: 'center' }}
                   className="py-3"
                 >
                   <Link href="#reservacubano">

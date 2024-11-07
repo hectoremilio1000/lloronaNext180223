@@ -1,5 +1,5 @@
-import Link from "next/link";
-import React from "react";
+import Link from 'next/link';
+import React from 'react';
 
 const GraciasTiktokFoodie = () => {
   return (
@@ -12,15 +12,15 @@ const GraciasTiktokFoodie = () => {
           Gracias por elegir Cantina La Llorona para tu próxima experiencia
           culinaria! Nos llena de alegría saber que has decidido reservar una
           mesa con nosotros. Estamos emocionados de poder brindarte una velada
-          inolvidable llena de deliciosos sabores y momentos especiales. <br />{" "}
+          inolvidable llena de deliciosos sabores y momentos especiales. <br />{' '}
           Tu reserva ha sido confirmada con éxito. Prepárate para disfrutar de
-          auténticos platillos mexicanos en un ambiente cálido y acogedor.{" "}
+          auténticos platillos mexicanos en un ambiente cálido y acogedor.{' '}
           <br />
           Si necesitas realizar alguna modificación a tu reserva o tienes alguna
           pregunta, nuestro equipo está aquí para ayudarte. No dudes en ponerte
           en contacto con nosotros.
         </p>
-        <Link className="px-4 py-3 bg-white font-bold rounded" href={"/"}>
+        <Link className="px-4 py-3 bg-white font-bold rounded" href={'/'}>
           Volver al inicio
         </Link>
       </div>

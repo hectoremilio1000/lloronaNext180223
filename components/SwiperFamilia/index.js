@@ -1,10 +1,10 @@
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 const MySwiper = ({ BannerImages }) => {
   return (
@@ -23,9 +23,9 @@ const MySwiper = ({ BannerImages }) => {
         <div
           style={{
             backgroundImage: BannerImages.imagen1,
-            height: "80vh",
-            backgroundSize: "cover",
-            backgroundPosition: "center center",
+            height: '80vh',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center center',
           }}
         ></div>
       </SwiperSlide>
@@ -33,9 +33,9 @@ const MySwiper = ({ BannerImages }) => {
         <div
           style={{
             backgroundImage: BannerImages.imagen2,
-            height: "80vh",
-            backgroundSize: "cover",
-            backgroundPosition: "center center",
+            height: '80vh',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center center',
           }}
         ></div>
       </SwiperSlide>
@@ -43,9 +43,9 @@ const MySwiper = ({ BannerImages }) => {
         <div
           style={{
             backgroundImage: BannerImages.imagen3,
-            height: "80vh",
-            backgroundSize: "cover",
-            backgroundPosition: "center center",
+            height: '80vh',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center center',
           }}
         ></div>
       </SwiperSlide>
@@ -53,9 +53,9 @@ const MySwiper = ({ BannerImages }) => {
         <div
           style={{
             backgroundImage: BannerImages.imagen4,
-            height: "80vh",
-            backgroundSize: "cover",
-            backgroundPosition: "center center",
+            height: '80vh',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center center',
           }}
         ></div>
       </SwiperSlide>
@@ -63,9 +63,9 @@ const MySwiper = ({ BannerImages }) => {
         <div
           style={{
             backgroundImage: BannerImages.imagen5,
-            height: "80vh",
-            backgroundSize: "cover",
-            backgroundPosition: "center center",
+            height: '80vh',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center center',
           }}
         ></div>
       </SwiperSlide>
@@ -74,9 +74,9 @@ const MySwiper = ({ BannerImages }) => {
         <div
           style={{
             backgroundImage: BannerImages.imagen6,
-            height: "80vh",
-            backgroundSize: "cover",
-            backgroundPosition: "top center",
+            height: '80vh',
+            backgroundSize: 'cover',
+            backgroundPosition: 'top center',
           }}
         ></div>
       </SwiperSlide>

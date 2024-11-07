@@ -1,5 +1,5 @@
-import React from 'react'
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 
 function ButtonComponent({ titulo, enlace }) {
   return (
@@ -9,7 +9,6 @@ function ButtonComponent({ titulo, enlace }) {
       </div>
     </Link>
   );
-
 }
 
-export default ButtonComponent
+export default ButtonComponent;

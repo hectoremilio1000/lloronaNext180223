@@ -1,11 +1,11 @@
 // components/TikTokPixel.js
 
-import { useEffect } from "react";
+import { useEffect } from 'react';
 
 const TikTokPixel = ({ pixelId }) => {
   useEffect(() => {
     if (!pixelId) {
-      console.error("TikTok Pixel ID is missing.");
+      console.error('TikTok Pixel ID is missing.');
       return;
     }
 
@@ -13,19 +13,19 @@ const TikTokPixel = ({ pixelId }) => {
       w.TiktokAnalyticsObject = t;
       var ttq = (w[t] = w[t] || []);
       ttq.methods = [
-        "page",
-        "track",
-        "identify",
-        "instances",
-        "debug",
-        "on",
-        "off",
-        "once",
-        "ready",
-        "alias",
-        "group",
-        "enableCookie",
-        "disableCookie",
+        'page',
+        'track',
+        'identify',
+        'instances',
+        'debug',
+        'on',
+        'off',
+        'once',
+        'ready',
+        'alias',
+        'group',
+        'enableCookie',
+        'disableCookie',
       ];
       ttq.setAndDefer = function (t, e) {
         t[e] = function () {
@@ -40,7 +40,7 @@ const TikTokPixel = ({ pixelId }) => {
         return e;
       }),
         (ttq.load = function (e, n) {
-          var i = "https://analytics.tiktok.com/i18n/pixel/events.js";
+          var i = 'https://analytics.tiktok.com/i18n/pixel/events.js';
           (ttq._i = ttq._i || {}),
             (ttq._i[e] = []),
             (ttq._i[e]._u = i),
@@ -48,17 +48,17 @@ const TikTokPixel = ({ pixelId }) => {
             (ttq._t[e] = +new Date()),
             (ttq._o = ttq._o || {}),
             (ttq._o[e] = n || {});
-          var o = document.createElement("script");
-          (o.type = "text/javascript"),
+          var o = document.createElement('script');
+          (o.type = 'text/javascript'),
             (o.async = !0),
-            (o.src = i + "?sdkid=" + e + "&lib=" + t);
-          var a = document.getElementsByTagName("script")[0];
+            (o.src = i + '?sdkid=' + e + '&lib=' + t);
+          var a = document.getElementsByTagName('script')[0];
           a.parentNode.insertBefore(o, a);
         });
 
       ttq.load(pixelId);
       ttq.page();
-    })(window, document, "ttq");
+    })(window, document, 'ttq');
   }, []);
 
   return null;

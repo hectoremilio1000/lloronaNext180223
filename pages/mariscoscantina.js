@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from "react";
-import Head from "next/head";
-import { FB_PIXEL_ID } from "../lib/fpixel";
-import { useAppContext } from "../components/context/Context";
-import Script from "next/script";
-import NavBarWhite from "../components/NavbarWhite";
-import ModalAll from "../components/ModalAll";
-import { InlineWidget } from "react-calendly";
-import CalendarioFoodie from "../components/CalendarioFoodie";
-import QuickInfo5 from "../components/QuickInfo5";
+import React, { useEffect, useState } from 'react';
+import Head from 'next/head';
+import { FB_PIXEL_ID } from '../lib/fpixel';
+import { useAppContext } from '../components/context/Context';
+import Script from 'next/script';
+import NavBarWhite from '../components/NavbarWhite';
+import ModalAll from '../components/ModalAll';
+import { InlineWidget } from 'react-calendly';
+import CalendarioFoodie from '../components/CalendarioFoodie';
+import QuickInfo5 from '../components/QuickInfo5';
 function MariscosCantina() {
   const image4 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2048.jpg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2048.jpg';
   const image3 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/Tacos-de-aguachile-de-pulpo-LLORONA.jpg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/Tacos-de-aguachile-de-pulpo-LLORONA.jpg';
   const { espa } = useAppContext();
   const [open, setOpen] = useState(false);
   return (
@@ -22,7 +22,7 @@ function MariscosCantina() {
           <img
             height="1"
             width="1"
-            style={{ display: "none" }}
+            style={{ display: 'none' }}
             src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
           />
         </noscript>
@@ -91,12 +91,12 @@ function MariscosCantina() {
                     con jiribilla para acompañar una buena mixología y
                     recordarnos al méxico que nos hace vibrar. Nuestro menú es
                     creado por el famoso y reconocido internacionalmente chef
-                    Jorge Dumit.{" "}
+                    Jorge Dumit.{' '}
                     <a
                       href="https://www.instagram.com/jorgedumit/?hl=en"
                       target="_blank"
                     >
-                      {" "}
+                      {' '}
                       Jorge Dumit
                     </a>
                   </p>

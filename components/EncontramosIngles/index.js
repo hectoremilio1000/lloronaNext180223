@@ -1,7 +1,7 @@
-import React from "react";
-import { useAppContext } from "../context/Context";
-import title from "../Main/title.module.css";
-import Link from "next/link";
+import React from 'react';
+import { useAppContext } from '../context/Context';
+import title from '../Main/title.module.css';
+import Link from 'next/link';
 
 function Encontramos() {
   const { espa } = useAppContext();
@@ -27,9 +27,9 @@ function Encontramos() {
           </div>
           <div
             style={{
-              justifyContent: "center",
-              display: "flex",
-              width: "100%",
+              justifyContent: 'center',
+              display: 'flex',
+              width: '100%',
             }}
             className="px-2 py-2"
           >
@@ -43,7 +43,7 @@ function Encontramos() {
             ></iframe>
           </div>
           <div
-            style={{ display: "flex", justifyContent: "center" }}
+            style={{ display: 'flex', justifyContent: 'center' }}
             className="py-3"
           >
             <Link href="/reserva">

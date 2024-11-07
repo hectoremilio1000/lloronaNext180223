@@ -1,19 +1,19 @@
-import Link from "next/link";
-import React, { useEffect, useState } from "react";
-import Calendario from "../components/Calendario/index";
+import Link from 'next/link';
+import React, { useEffect, useState } from 'react';
+import Calendario from '../components/Calendario/index';
 
-import title from "../components/Main/title.module.css";
-import { useAppContext } from "../components/context/Context";
-import Head from "next/head";
-import Script from "next/script";
-import * as fbq from "../lib/fpixel";
-import YouTube from "react-youtube";
-import { FB_PIXEL_ID } from "../lib/fpixel";
+import title from '../components/Main/title.module.css';
+import { useAppContext } from '../components/context/Context';
+import Head from 'next/head';
+import Script from 'next/script';
+import * as fbq from '../lib/fpixel';
+import YouTube from 'react-youtube';
+import { FB_PIXEL_ID } from '../lib/fpixel';
 
-import { InlineWidget } from "react-calendly";
-import ModalAll from "../components/ModalAll";
-import NavBarWhite from "../components/NavbarWhite";
-import CalendarioTiktokTree from "../components/CalendarioTiktokTree";
+import { InlineWidget } from 'react-calendly';
+import ModalAll from '../components/ModalAll';
+import NavBarWhite from '../components/NavbarWhite';
+import CalendarioTiktokTree from '../components/CalendarioTiktokTree';
 
 function ReservaTiktokTree() {
   // useEffect(() => {
@@ -21,8 +21,8 @@ function ReservaTiktokTree() {
   // }, []);
 
   const opts = {
-    height: "350",
-    width: "300",
+    height: '350',
+    width: '300',
 
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
@@ -37,22 +37,22 @@ function ReservaTiktokTree() {
 
   const { espa } = useAppContext();
   const image1 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg';
   const image2 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg';
   const image3 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg';
   const image4 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2048.jpg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2048.jpg';
 
   const image5 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg';
   const image6 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia+mexicana+tragos+increibles.jpg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia+mexicana+tragos+increibles.jpg';
   const image7 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg';
   const image8 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/coctelDeliciosoMEzcal.jpg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/coctelDeliciosoMEzcal.jpg';
   const [open, setOpen] = useState(false);
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -78,7 +78,7 @@ function ReservaTiktokTree() {
           <img
             height="1"
             width="1"
-            style={{ display: "none" }}
+            style={{ display: 'none' }}
             src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
           />
         </noscript>

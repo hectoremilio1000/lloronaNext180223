@@ -1,5 +1,5 @@
-import React from 'react'
-import title from "../../../components/Main/title.module.css"
+import React from 'react';
+import title from '../../../components/Main/title.module.css';
 
 function Cantinero() {
   return (
@@ -22,16 +22,20 @@ function Cantinero() {
           </div>
           <div>
             <div>
-              <h4 className={title.fontTitleSub}>Pide un copa y te regalamos un llanto</h4>
-              <h2 className={title.fontTitleline}>Revivimos las cantinas mexicanas</h2>
+              <h4 className={title.fontTitleSub}>
+                Pide un copa y te regalamos un llanto
+              </h4>
+              <h2 className={title.fontTitleline}>
+                Revivimos las cantinas mexicanas
+              </h2>
               <div className="linea"></div>
             </div>
-            <div className='mt-16 mb-16'>
+            <div className="mt-16 mb-16">
               <p className="text-center sm:text-2xl text-xl text-black">
                 En las cantinas mexicanas la botana es una tradición, aquí el
-                cliente recibe comida gratis después de cada brebaje de enjundia. Es decir,
-                después de una mixologia, cerveza artesanal o
-                destilado favorito, un vaso con caldo de camarón, y
+                cliente recibe comida gratis después de cada brebaje de
+                enjundia. Es decir, después de una mixologia, cerveza artesanal
+                o destilado favorito, un vaso con caldo de camarón, y
                 posteriormente lo que el cuerpo aguante.
               </p>
             </div>
@@ -41,11 +45,11 @@ function Cantinero() {
       <div>
         <img
           src="https://imagenesrutalab.s3.amazonaws.com/llorona/menuDigital/espanol/jpg3/menucantinerofrente080223.jpg"
-          style={{ height: "30%", width: "100%" }}
+          style={{ height: '30%', width: '100%' }}
         />
       </div>
     </>
   );
 }
 
-export default Cantinero
+export default Cantinero;

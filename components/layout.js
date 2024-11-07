@@ -1,9 +1,9 @@
-import NavBar from "./Navbar";
-import FooterFinal from "./FooterFinal";
+import NavBar from './Navbar';
+import FooterFinal from './FooterFinal';
 
-import { useRouter } from "next/router";
-import NavBarEn from "../components/NavBarEn/NavBarEn";
-import NavBarEs from "../components/NavBarEs/NavBarEs";
+import { useRouter } from 'next/router';
+import NavBarEn from '../components/NavBarEn/NavBarEn';
+import NavBarEs from '../components/NavBarEs/NavBarEs';
 
 export default function Layout({ children }) {
   // const router = useRouter();

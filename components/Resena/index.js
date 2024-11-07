@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 function Resena() {
-  return (
-    <div>Resena</div>
-  )
+  return <div>Resena</div>;
 }
 
-export default Resena
+export default Resena;

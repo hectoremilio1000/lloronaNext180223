@@ -32,7 +32,7 @@
 
 .linkswraper li::marker {
   display: none;
-  content: "";
+  content: '';
 }
 
 .nav-link {

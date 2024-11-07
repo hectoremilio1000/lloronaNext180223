@@ -1,7 +1,7 @@
-import Link from "next/link";
-import React from "react";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
-import { useAppContext } from "../context/Context";
+import Link from 'next/link';
+import React from 'react';
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import { useAppContext } from '../context/Context';
 
 function FooterFinal() {
   const { espa, ingles } = useAppContext();
@@ -13,7 +13,7 @@ function FooterFinal() {
           <div className="max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8">
             <nav
               className="-my-2 flex flex-wrap justify-center"
-              style={{ width: "100%" }}
+              style={{ width: '100%' }}
             >
               <div className="px-5 py-2">
                 <Link href="/reserva">
@@ -62,7 +62,7 @@ function FooterFinal() {
           <div className="max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8">
             <nav
               className="-my-2 flex flex-wrap justify-center"
-              style={{ width: "100%" }}
+              style={{ width: '100%' }}
             >
               <div className="px-5 py-2">
                 <Link href="/reserva">

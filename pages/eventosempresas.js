@@ -1,24 +1,24 @@
-import Link from "next/link";
-import React, { useEffect, useState } from "react";
-import Calendario from "../components/Calendario/index";
-import title from "../components/Main/title.module.css";
-import { useAppContext } from "../components/context/Context";
-import Head from "next/head";
-import Script from "next/script";
-import * as fbq from "../lib/fpixel";
-import YouTube from "react-youtube";
-import { FB_PIXEL_ID } from "../lib/fpixel";
-import QuickInfo6 from "../components/QuickInfo6";
+import Link from 'next/link';
+import React, { useEffect, useState } from 'react';
+import Calendario from '../components/Calendario/index';
+import title from '../components/Main/title.module.css';
+import { useAppContext } from '../components/context/Context';
+import Head from 'next/head';
+import Script from 'next/script';
+import * as fbq from '../lib/fpixel';
+import YouTube from 'react-youtube';
+import { FB_PIXEL_ID } from '../lib/fpixel';
+import QuickInfo6 from '../components/QuickInfo6';
 
-import { InlineWidget } from "react-calendly";
-import ModalAll from "../components/ModalAll";
-import NavBar from "../components/NavBarEs/NavBarEs";
-import QuickInfo5 from "../components/QuickInfo5";
-import "../styles/Slider.module.css"; // Importa el archivo CSS aquí
+import { InlineWidget } from 'react-calendly';
+import ModalAll from '../components/ModalAll';
+import NavBar from '../components/NavBarEs/NavBarEs';
+import QuickInfo5 from '../components/QuickInfo5';
+import '../styles/Slider.module.css'; // Importa el archivo CSS aquí
 
-import dynamic from "next/dynamic";
-import MySwiper from "../components/Swiper15septiembre";
-import CalendarioGoogleAds from "../components/CalendarioGoogleAds";
+import dynamic from 'next/dynamic';
+import MySwiper from '../components/Swiper15septiembre';
+import CalendarioGoogleAds from '../components/CalendarioGoogleAds';
 
 function Eventos() {
   // useEffect(() => {
@@ -26,8 +26,8 @@ function Eventos() {
   // }, []);
 
   const opts = {
-    height: "350",
-    width: "300",
+    height: '350',
+    width: '300',
 
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
@@ -42,22 +42,22 @@ function Eventos() {
 
   const { espa } = useAppContext();
   const image1 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg';
   const image2 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg';
   const image3 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/15septiembre/chileennogadamexicolloronacantina.jpg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/15septiembre/chileennogadamexicolloronacantina.jpg';
   const image4 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/gruposcubanos1.png";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/gruposcubanos1.png';
 
   const image5 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg';
   const image6 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia+mexicana+tragos+increibles.jpg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia+mexicana+tragos+increibles.jpg';
   const image7 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg';
   const image8 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/coctelDeliciosoMEzcal.jpg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/coctelDeliciosoMEzcal.jpg';
   const [open, setOpen] = useState(false);
 
   return (
@@ -68,7 +68,7 @@ function Eventos() {
             <img
               height="1"
               width="1"
-              style={{ display: "none" }}
+              style={{ display: 'none' }}
               src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
             />
           </noscript>
@@ -227,14 +227,14 @@ function Eventos() {
                       At <b>Cantina La Llorona</b>, we offer a vibrant and
                       authentic experience with Cuban son groups that will
                       transport you with their warm and infectious rhythms.
-                      Every week we feature great orchestras directly from{" "}
+                      Every week we feature great orchestras directly from{' '}
                       <b>Cuba 🇨🇺</b>.
                     </p>
                     <p className="text-start text-white sm:text-xs md:text-2xl mt-3">
                       Don't miss the opportunity to book and live this unique
                       experience at Cantina La Llorona. We look forward to
                       sharing a night of exquisite flavors and live music that
-                      will make you feel the true essence of a{" "}
+                      will make you feel the true essence of a{' '}
                       <b>Mexican Cantina! 🥁🪇🎺🇲🇽</b>
                     </p>
                   </div>

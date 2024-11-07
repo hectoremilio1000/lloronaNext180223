@@ -32,7 +32,7 @@
 
 .linkswraper-white li::marker {
   display: none;
-  content: "";
+  content: '';
 }
 
 .nav-link-white {

@@ -1,60 +1,56 @@
-import Link from 'next/link'
-import React, { useState } from "react";
-import Image from 'next/image'
-import logo from '../../data/imagenes/logo_alta_sin_nombre.png'
+import Link from 'next/link';
+import React, { useState } from 'react';
+import Image from 'next/image';
+import logo from '../../data/imagenes/logo_alta_sin_nombre.png';
 
 // css navbar
 
 // icons react
-import { FaAlignRight } from "react-icons/fa";
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
-import './navbar.module.css'
+import { FaAlignRight } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import './navbar.module.css';
 import { useRouter } from 'next/navigation';
 
-
 function NavBar() {
-  const [current, setCurrent] = useState("");
+  const [current, setCurrent] = useState('');
   const [linkswraper, setLinkswraper] = useState(false);
-  const [navbar, setNavbar] = useState(false)
+  const [navbar, setNavbar] = useState(false);
 
   const changeBackground = () => {
-    if (typeof window !== "undefined") {
+    if (typeof window !== 'undefined') {
       if (window.scrollY >= 80) {
-        setNavbar(true)
+        setNavbar(true);
       } else {
-        setNavbar(false)
+        setNavbar(false);
       }
     }
-  }
-  if (typeof window !== "undefined") {
+  };
+  if (typeof window !== 'undefined') {
     // browser code
-    window.addEventListener("scroll", changeBackground);
+    window.addEventListener('scroll', changeBackground);
   }
   const navigate = useRouter();
 
   const handleNavbar = () => {
-    setLinkswraper(!linkswraper)
-  }
+    setLinkswraper(!linkswraper);
+  };
 
-  const cambiarComponent = e => {
+  const cambiarComponent = (e) => {
     setCurrent(e.key);
-    navigate.push(`${e.key}`)
-  }
+    navigate.push(`${e.key}`);
+  };
 
   return (
-
-    <div className={navbar ? "header-container sticky" : "header-container"}>
-      <div className='row-qh px-4'>
-
+    <div className={navbar ? 'header-container sticky' : 'header-container'}>
+      <div className="row-qh px-4">
         {/* <Link href="/">
         <Image src={logo} width={100}
           alt="llorona" priority />
 
       </Link> */}
-        <div className='header-logo'>
+        <div className="header-logo">
           <Link href="/" className="logo">
-            <Image src={logo} width={100}
-              alt="llorona" priority />
+            <Image src={logo} width={100} alt="llorona" priority />
           </Link>
           <FaAlignRight
             className="toggle-icon"
@@ -63,7 +59,12 @@ function NavBar() {
             }}
           />
         </div>
-        <div onClick={() => { handleNavbar() }} className={linkswraper ? 'linkswraper active' : 'linkswraper'}>
+        <div
+          onClick={() => {
+            handleNavbar();
+          }}
+          className={linkswraper ? 'linkswraper active' : 'linkswraper'}
+        >
           <li key="0">
             <Link href="/" className="nav-link hover:text-emerald-500">
               Inicio
@@ -75,7 +76,10 @@ function NavBar() {
             </Link>
           </li>
           <li key="2">
-            <Link href="/menullorona" className="nav-link hover:text-emerald-500">
+            <Link
+              href="/menullorona"
+              className="nav-link hover:text-emerald-500"
+            >
               Menu
             </Link>
           </li>
@@ -90,24 +94,35 @@ function NavBar() {
             </Link>
           </li>
           <li key="5">
-            <Link href="/franquicias" className="nav-link hover:text-emerald-500">
+            <Link
+              href="/franquicias"
+              className="nav-link hover:text-emerald-500"
+            >
               Franquicias
             </Link>
           </li>
         </div>
-        <div className='header-icons'>
-          <a key="0" href="https://www.facebook.com/Lalloronacantinacdmx" target="_blank" rel="noopener noreferrer">
+        <div className="header-icons">
+          <a
+            key="0"
+            href="https://www.facebook.com/Lalloronacantinacdmx"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaFacebook className="icon facebook-icon hover:text-emerald-500 cursor-pointer" />
           </a>
-          <a key="1" href="https://www.instagram.com/cantinalallorona/" target="_blank" rel="noopener noreferrer">
+          <a
+            key="1"
+            href="https://www.instagram.com/cantinalallorona/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaInstagram className="icon instagram-icon hover:text-emerald-500" />
           </a>
         </div>
       </div>
-
     </div>
-
-  )
+  );
 }
 
-export default NavBar
+export default NavBar;

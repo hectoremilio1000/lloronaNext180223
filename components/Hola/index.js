@@ -1,10 +1,8 @@
-import React from 'react'
-import texto from './Hola.module.css'
+import React from 'react';
+import texto from './Hola.module.css';
 
 function Hola() {
-  return (
-    <div className={texto.holaGrande}>Hola</div>
-  )
+  return <div className={texto.holaGrande}>Hola</div>;
 }
 
-export default Hola
+export default Hola;

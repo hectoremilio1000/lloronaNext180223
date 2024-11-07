@@ -1,31 +1,31 @@
-import React from "react";
-import title from "../Main/title.module.css";
-import card from "../Main/card.module.css";
-import Link from "next/link";
+import React from 'react';
+import title from '../Main/title.module.css';
+import card from '../Main/card.module.css';
+import Link from 'next/link';
 
-import AppContextProvider, { useAppContext } from "../context/Context";
-import * as fbq from "../../lib/fpixel";
+import AppContextProvider, { useAppContext } from '../context/Context';
+import * as fbq from '../../lib/fpixel';
 
 //imagenes
 
 const image1 =
-  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2050.jpg";
+  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2050.jpg';
 
 const image2 =
-  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/tostadaCantinera.jpg";
+  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/tostadaCantinera.jpg';
 
 const image3 =
-  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/postres+ricos+deliciosos.JPG";
+  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/postres+ricos+deliciosos.JPG';
 
 const image4 =
-  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/soncubano3Imagen.jpg";
+  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/soncubano3Imagen.jpg';
 
 const image5 =
-  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/cantina%2Bllorona%2Btaco.jpg";
+  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/cantina%2Bllorona%2Btaco.jpg';
 
 function QuickInfo() {
   const handleClick = () => {
-    fbq.event("reserva");
+    fbq.event('reserva');
   };
 
   return (
@@ -93,7 +93,7 @@ function QuickInfo() {
         </div>
 
         <div
-          style={{ display: "flex", justifyContent: "center", marginTop: 30 }}
+          style={{ display: 'flex', justifyContent: 'center', marginTop: 30 }}
         >
           <Link href="/reserva">
             <button className="buttonComponente" onClick={handleClick}>

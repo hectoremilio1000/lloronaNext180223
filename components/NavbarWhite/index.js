@@ -1,25 +1,25 @@
-import Link from "next/link";
-import React, { useState } from "react";
-import Image from "next/image";
-import logo from "../../data/imagenes/logo_alta_sin_nombre.png";
+import Link from 'next/link';
+import React, { useState } from 'react';
+import Image from 'next/image';
+import logo from '../../data/imagenes/logo_alta_sin_nombre.png';
 
 // css navbar
 
 // icons react
-import { FaAlignRight } from "react-icons/fa";
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
-import "./navbar.module.css";
-import { useRouter } from "next/navigation";
-import { useAppContext } from "../context/Context";
+import { FaAlignRight } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import './navbar.module.css';
+import { useRouter } from 'next/navigation';
+import { useAppContext } from '../context/Context';
 
 const usFlag =
-  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/banderas/um.svg";
+  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/banderas/um.svg';
 
 const mxFlag =
-  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/banderas/mx.svg";
+  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/banderas/mx.svg';
 
 function NavBarWhite() {
-  const [current, setCurrent] = useState("");
+  const [current, setCurrent] = useState('');
   const [linkswraper, setLinkswraper] = useState(false);
   const [navbar, setNavbar] = useState(false);
 
@@ -28,7 +28,7 @@ function NavBarWhite() {
   // console.log(espa, ingles);
 
   const changeBackground = () => {
-    if (typeof window !== "undefined") {
+    if (typeof window !== 'undefined') {
       if (window.scrollY >= 80) {
         setNavbar(true);
       } else {
@@ -36,9 +36,9 @@ function NavBarWhite() {
       }
     }
   };
-  if (typeof window !== "undefined") {
+  if (typeof window !== 'undefined') {
     // browser code
-    window.addEventListener("scroll", changeBackground);
+    window.addEventListener('scroll', changeBackground);
   }
   const navigate = useRouter();
 
@@ -54,7 +54,7 @@ function NavBarWhite() {
   return (
     <div
       className={
-        navbar ? "header-container-white sticky" : "header-container-white"
+        navbar ? 'header-container-white sticky' : 'header-container-white'
       }
     >
       <div className="max-w-[1184px] flex items-center justify-between flex-wrap w-full mx-auto  px-4">
@@ -97,14 +97,14 @@ function NavBarWhite() {
             handleNavbar();
           }}
           className={
-            linkswraper ? "linkswraper-white active" : "linkswraper-white"
+            linkswraper ? 'linkswraper-white active' : 'linkswraper-white'
           }
         >
           <>
-            {" "}
+            {' '}
             {espa ? (
               <>
-                {" "}
+                {' '}
                 <li key="0">
                   <Link
                     href="/"
@@ -156,7 +156,7 @@ function NavBarWhite() {
               </>
             ) : (
               <>
-                {" "}
+                {' '}
                 <li key="0">
                   <Link
                     href="/"
@@ -204,7 +204,7 @@ function NavBarWhite() {
                   >
                     Mixology
                   </Link>
-                </li>{" "}
+                </li>{' '}
               </>
             )}
           </>

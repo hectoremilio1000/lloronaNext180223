@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
+import 'swiper/css';
+import 'swiper/css/pagination';
 // import required modules
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 const TestimonialCard = ({ testimonial }) => {
   const { photo, rating, text, date, url, nombre } = testimonial;
   return (
@@ -23,7 +23,7 @@ const TestimonialCard = ({ testimonial }) => {
           alt="Revistas llorona"
         />
         <div className="text-center mt-4">
-          {" "}
+          {' '}
           {/* Centrar texto y añadir espacio en la parte superior */}
           <h2 className="text-sm md:text-base font-medium text-gray-500">
             Rating:

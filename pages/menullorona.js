@@ -1,10 +1,10 @@
-import React from "react";
-import { useState } from "react";
-import ButtonComponent from "../components/ButtonComponent/index";
-import { useAppContext } from "../components/context/Context";
-import Alimentos from "./menullorona/Alimentos";
-import Food from "./menullorona/menufood";
-import NavBar from "../components/NavBarEs/NavBarEs";
+import React from 'react';
+import { useState } from 'react';
+import ButtonComponent from '../components/ButtonComponent/index';
+import { useAppContext } from '../components/context/Context';
+import Alimentos from './menullorona/Alimentos';
+import Food from './menullorona/menufood';
+import NavBar from '../components/NavBarEs/NavBarEs';
 
 function MenuLlorona() {
   const [english, setEnglish] = useState(false);
@@ -29,10 +29,10 @@ function MenuLlorona() {
         className="d-flex subContenedor1Banner banner"
         style={{
           backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/llorona/banner/bannerMenu.jpg")`,
-          backgroundSize: "cover",
-          height: "40vh",
-          backgroundPosition: "center",
-          position: "relative",
+          backgroundSize: 'cover',
+          height: '40vh',
+          backgroundPosition: 'center',
+          position: 'relative',
         }}
       >
         {/* <video autoPlay muted loop src={videoPort} /> */}
@@ -54,9 +54,9 @@ function MenuLlorona() {
       <div
         className="mt-2"
         style={{
-          padding: "2rem 0",
-          width: "90vw",
-          margin: "0 auto",
+          padding: '2rem 0',
+          width: '90vw',
+          margin: '0 auto',
         }}
       >
         <div className="max-w-[1184px] mx-auto w-full px-[20px]">

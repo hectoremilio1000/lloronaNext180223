@@ -1,48 +1,48 @@
-import Head from "next/head";
-import QuickInfo from "../components/Quickinfo/index";
-import QuickInfo2 from "../components/QuickInfo2/index";
-import QuickInfo3 from "../components/QuickInfo3/index";
-import MenuDetail from "../components/MenuDetail";
-import Promociones from "../components/Promociones";
+import Head from 'next/head';
+import QuickInfo from '../components/Quickinfo/index';
+import QuickInfo2 from '../components/QuickInfo2/index';
+import QuickInfo3 from '../components/QuickInfo3/index';
+import MenuDetail from '../components/MenuDetail';
+import Promociones from '../components/Promociones';
 // import videoPort from '../data/assets/portada.mp4'
-import { useRouter } from "next/router";
+import { useRouter } from 'next/router';
 
-import { useEffect, useState } from "react";
-import HeaderEn from "../components/Header-en/HeaderEn";
-import HeaderEs from "../components/Header-es/Header-es";
-import { useAppContext } from "../components/context/Context";
-import Encontramos from "../components/Encontramos";
-import * as fbq from "../lib/fpixel";
-import Calendario from "../components/Calendario";
-import QuickInfo4 from "../components/QuickInfo4";
-import Slider from "../components/Sliders/Slider";
-import Link from "next/link";
-import NavBar from "../components/NavBarEs/NavBarEs";
-import QuickInfo5 from "../components/QuickInfo5";
-import QuickInfo6 from "../components/QuickInfo6";
-import MySwiper from "../components/SwiperIndex";
+import { useEffect, useState } from 'react';
+import HeaderEn from '../components/Header-en/HeaderEn';
+import HeaderEs from '../components/Header-es/Header-es';
+import { useAppContext } from '../components/context/Context';
+import Encontramos from '../components/Encontramos';
+import * as fbq from '../lib/fpixel';
+import Calendario from '../components/Calendario';
+import QuickInfo4 from '../components/QuickInfo4';
+import Slider from '../components/Sliders/Slider';
+import Link from 'next/link';
+import NavBar from '../components/NavBarEs/NavBarEs';
+import QuickInfo5 from '../components/QuickInfo5';
+import QuickInfo6 from '../components/QuickInfo6';
+import MySwiper from '../components/SwiperIndex';
 // imagenes
 const image1 =
-  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg";
+  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg';
 const image2 =
-  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg";
+  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg';
 const image3 =
-  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg";
+  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg';
 const image4 =
-  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2048.jpg";
+  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2048.jpg';
 
 const image5 =
-  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg";
+  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg';
 const image6 =
-  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia+mexicana+tragos+increibles.jpg";
+  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia+mexicana+tragos+increibles.jpg';
 const image7 =
-  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg";
+  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg';
 const image8 =
-  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/coctelDeliciosoMEzcal.jpg";
+  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/coctelDeliciosoMEzcal.jpg';
 export default function Home() {
   const opts = {
-    height: "350",
-    width: "100%",
+    height: '350',
+    width: '100%',
 
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
@@ -54,7 +54,7 @@ export default function Home() {
     event.target.pauseVideo();
   };
   const handleClick = () => {
-    fbq.event("Reserva");
+    fbq.event('Reserva');
   };
 
   const router = useRouter();
@@ -68,7 +68,7 @@ export default function Home() {
   }, [hasInitialized, onIdiomaIngles]);
 
   const handleLanguageChange = (language) => {
-    if (language === "espa") {
+    if (language === 'espa') {
       onIdiomaEspa();
     } else {
       onIdiomaIngles();
@@ -78,7 +78,7 @@ export default function Home() {
   const { locale } = router;
   let HeaderComponent;
   const logo2 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/logo_page_altaNUEVO_blanco.png";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/logo_page_altaNUEVO_blanco.png';
 
   return (
     <div>

@@ -1,28 +1,28 @@
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 const MySwiper = ({ BannerImages }) => {
   const handleClick = (type, value) => {
     switch (type) {
-      case "link_external":
+      case 'link_external':
         // Abre un enlace externo en una nueva pestaña
-        window.open(value, "_blank");
+        window.open(value, '_blank');
         break;
-      case "phone_contact":
+      case 'phone_contact':
         // Realiza una llamada (solo en dispositivos que soportan llamadas)
         window.location.href = `tel:${value}`;
         break;
-      case "hash":
+      case 'hash':
         // Redirige a una sección o almohadilla #
         window.location.href = `#${value}`;
         break;
       default:
-        console.warn("Tipo no soportado");
+        console.warn('Tipo no soportado');
     }
   };
   return (
@@ -43,9 +43,9 @@ const MySwiper = ({ BannerImages }) => {
             <div
               style={{
                 backgroundImage: img.url,
-                height: "80vh",
-                backgroundSize: "cover",
-                backgroundPosition: "center center",
+                height: '80vh',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center center',
               }}
             >
               <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-30">

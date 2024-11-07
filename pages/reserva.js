@@ -1,21 +1,21 @@
-import Link from "next/link";
-import React, { useEffect, useState } from "react";
-import Calendario from "../components/Calendario/index";
+import Link from 'next/link';
+import React, { useEffect, useState } from 'react';
+import Calendario from '../components/Calendario/index';
 
-import title from "../components/Main/title.module.css";
-import { useAppContext } from "../components/context/Context";
-import Head from "next/head";
-import Script from "next/script";
-import * as fbq from "../lib/fpixel";
-import YouTube from "react-youtube";
-import { FB_PIXEL_ID } from "../lib/fpixel";
-import QuickInfo6 from "../components/QuickInfo6";
+import title from '../components/Main/title.module.css';
+import { useAppContext } from '../components/context/Context';
+import Head from 'next/head';
+import Script from 'next/script';
+import * as fbq from '../lib/fpixel';
+import YouTube from 'react-youtube';
+import { FB_PIXEL_ID } from '../lib/fpixel';
+import QuickInfo6 from '../components/QuickInfo6';
 
-import { InlineWidget } from "react-calendly";
-import ModalAll from "../components/ModalAll";
-import NavBar from "../components/NavBarEs/NavBarEs";
-import QuickInfo5 from "../components/QuickInfo5";
-import Slider from "../components/Sliders/Slider";
+import { InlineWidget } from 'react-calendly';
+import ModalAll from '../components/ModalAll';
+import NavBar from '../components/NavBarEs/NavBarEs';
+import QuickInfo5 from '../components/QuickInfo5';
+import Slider from '../components/Sliders/Slider';
 
 function Reserva() {
   // useEffect(() => {
@@ -23,8 +23,8 @@ function Reserva() {
   // }, []);
 
   const opts = {
-    height: "350",
-    width: "300",
+    height: '350',
+    width: '300',
 
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
@@ -47,7 +47,7 @@ function Reserva() {
   }, [hasInitialized, onIdiomaIngles]);
 
   const handleLanguageChange = (language) => {
-    if (language === "espa") {
+    if (language === 'espa') {
       onIdiomaEspa();
     } else {
       onIdiomaIngles();
@@ -55,22 +55,22 @@ function Reserva() {
     setHasInitialized(true);
   };
   const image1 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg';
   const image2 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg';
   const image3 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/cumplean%CC%83os%2Bsorpresa%2Bfiesta%2Bllorona%2Bcantina%2Bnin%CC%83as.png";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/cumplean%CC%83os%2Bsorpresa%2Bfiesta%2Bllorona%2Bcantina%2Bnin%CC%83as.png';
   const image4 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/gruposcubanos1.png";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/gruposcubanos1.png';
 
   const image5 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg';
   const image6 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia+mexicana+tragos+increibles.jpg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia+mexicana+tragos+increibles.jpg';
   const image7 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg';
   const image8 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/coctelDeliciosoMEzcal.jpg";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/coctelDeliciosoMEzcal.jpg';
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -79,7 +79,7 @@ function Reserva() {
           <img
             height="1"
             width="1"
-            style={{ display: "none" }}
+            style={{ display: 'none' }}
             src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
           />
         </noscript>
@@ -143,7 +143,7 @@ function Reserva() {
                     La <b>piñata cumpleañera</b> no tiene costo, y aplica todos
                     los jueves si cumples años en el mes ❤️ y solo tienen que
                     hacer reservación. Les regalamos dulces típicos mexicanos y
-                    una botella de nuestro{" "}
+                    una botella de nuestro{' '}
                     <b>mezcal premium madre cuishe 🍶🥃</b>.
                   </p>
                 </div>
@@ -273,23 +273,23 @@ function Reserva() {
 }
 const itemData = [
   {
-    img: "https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/nina2pinata.JPG",
-    title: "Piñata cumpleañera",
+    img: 'https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/nina2pinata.JPG',
+    title: 'Piñata cumpleañera',
     rows: 2,
     cols: 2,
     featured: true,
   },
   {
-    img: "",
-    title: "novios",
+    img: '',
+    title: 'novios',
   },
   {
-    img: "",
-    title: "Pierde almas",
+    img: '',
+    title: 'Pierde almas',
   },
   {
-    img: "",
-    title: "amigas",
+    img: '',
+    title: 'amigas',
     cols: 2,
   },
 ];

@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 function FooterEs() {
-  return (
-    <div>FooterEs</div>
-  )
+  return <div>FooterEs</div>;
 }
 
-export default FooterEs
+export default FooterEs;

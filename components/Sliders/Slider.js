@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react';
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-import "swiper/css";
+import 'swiper/css';
 
-import "swiper/css/pagination";
+import 'swiper/css/pagination';
 
 // import required modules
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import { useAppContext } from "../context/Context";
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { useAppContext } from '../context/Context';
 const Slider = () => {
   const { espa } = useAppContext();
   return (
@@ -71,7 +71,7 @@ const Slider = () => {
                     Pan de muerto
                   </h1>
                   <p className="text-xs md:text-xl text-white">
-                    Con helado negro{" "}
+                    Con helado negro{' '}
                   </p>
                 </div>
               </SwiperSlide>
@@ -87,7 +87,7 @@ const Slider = () => {
                     Chile en nogada
                   </h1>
                   <p className="text-xs md:text-xl text-white">
-                    Premiado en diversos concursos{" "}
+                    Premiado en diversos concursos{' '}
                   </p>
                 </div>
               </SwiperSlide>
@@ -103,7 +103,7 @@ const Slider = () => {
                     Tostadas deliciosas
                   </h1>
                   <p className="text-xs md:text-xl text-white">
-                    De Aguachile de camarón{" "}
+                    De Aguachile de camarón{' '}
                   </p>
                 </div>
               </SwiperSlide>
@@ -210,23 +210,23 @@ const Slider = () => {
                   spaceBetween: 20,
                 },
               }}
-            ><SwiperSlide>
-            <div className="w-full">
-              <img
-                className="rounded-lg border-2 border-white w-full h-[300px] object-center object-cover"
-                src="https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/top-view-baked-pan-de-muerto1.jpg
+            >
+              <SwiperSlide>
+                <div className="w-full">
+                  <img
+                    className="rounded-lg border-2 border-white w-full h-[300px] object-center object-cover"
+                    src="https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/top-view-baked-pan-de-muerto1.jpg
                 "
-                alt=""
-              />
-              <h1 className="text-2xl md:text-5xl text-white mt-3">
-  Day of the Dead Bread
-</h1>
-<p className="text-xs md:text-xl text-white">
-  With black ice cream{" "}
-</p>
-
-            </div>
-          </SwiperSlide>
+                    alt=""
+                  />
+                  <h1 className="text-2xl md:text-5xl text-white mt-3">
+                    Day of the Dead Bread
+                  </h1>
+                  <p className="text-xs md:text-xl text-white">
+                    With black ice cream{' '}
+                  </p>
+                </div>
+              </SwiperSlide>
               <SwiperSlide>
                 <div className="w-full">
                   <img
@@ -237,9 +237,7 @@ const Slider = () => {
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
                     Tostada Cantinera
                   </h1>
-                  <p className="text-xs md:text-xl text-white">
-                    Shrimp
-                  </p>
+                  <p className="text-xs md:text-xl text-white">Shrimp</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>

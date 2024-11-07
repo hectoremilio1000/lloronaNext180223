@@ -1,41 +1,41 @@
-import Head from "next/head";
-import QuickInfo from "../components/QuickinfoIngles";
+import Head from 'next/head';
+import QuickInfo from '../components/QuickinfoIngles';
 
 // import videoPort from '../data/assets/portada.mp4'
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 
-import { useAppContext } from "../components/context/Context";
-import Encontramos from "../components/EncontramosIngles/index";
-import * as fbq from "../lib/fpixel";
-import Calendario from "../components/Calendario";
-import Slider from "../components/SlidersIngles/Slider";
-import NavBar from "../components/NavBarHome/NavBarHome";
-import QuickInfo5 from "../components/QuickInfo5";
-import QuickInfo6 from "../components/QuickInfo6";
-import MySwiper from "../components/SwiperIndex";
+import { useAppContext } from '../components/context/Context';
+import Encontramos from '../components/EncontramosIngles/index';
+import * as fbq from '../lib/fpixel';
+import Calendario from '../components/Calendario';
+import Slider from '../components/SlidersIngles/Slider';
+import NavBar from '../components/NavBarHome/NavBarHome';
+import QuickInfo5 from '../components/QuickInfo5';
+import QuickInfo6 from '../components/QuickInfo6';
+import MySwiper from '../components/SwiperIndex';
 // imagenes
 const image1 =
-  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg";
+  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg';
 const image2 =
-  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg";
+  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg';
 const image3 =
-  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg";
+  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg';
 const image4 =
-  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2048.jpg";
+  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2048.jpg';
 
 const image5 =
-  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg";
+  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg';
 const image6 =
-  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia+mexicana+tragos+increibles.jpg";
+  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia+mexicana+tragos+increibles.jpg';
 const image7 =
-  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg";
+  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg';
 const image8 =
-  "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/coctelDeliciosoMEzcal.jpg";
+  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/coctelDeliciosoMEzcal.jpg';
 export default function Home() {
   const opts = {
-    height: "350",
-    width: "100%",
+    height: '350',
+    width: '100%',
 
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
@@ -47,14 +47,14 @@ export default function Home() {
     event.target.pauseVideo();
   };
   const handleClick = () => {
-    fbq.event("Reserva");
+    fbq.event('Reserva');
   };
 
   const router = useRouter();
   const { locale } = router;
   let HeaderComponent;
   const logo2 =
-    "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/logo_page_altaNUEVO_blanco.png";
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/logo_page_altaNUEVO_blanco.png';
 
   const { ingles, onIdiomaIngles, onIdiomaEspa } = useAppContext();
   const [hasInitialized, setHasInitialized] = useState(false);

@@ -1,15 +1,17 @@
+import React from 'react';
+import card from '../Main/card.module.css';
 
-import React from 'react'
-import card from '../Main/card.module.css'
-
-import title from '../Main/title.module.css'
-
+import title from '../Main/title.module.css';
 
 function TitlebarImageList() {
-  const image1 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_1905.jpg"
-  const image2 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9982.jpg"
-  const image3 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9983.jpg"
-  const image4 = "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9984.jpg"
+  const image1 =
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_1905.jpg';
+  const image2 =
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9982.jpg';
+  const image3 =
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9983.jpg';
+  const image4 =
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9984.jpg';
   return (
     <div>
       <div>
@@ -18,26 +20,30 @@ function TitlebarImageList() {
         <div className="linea"></div>
       </div>
 
-      <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "20px", margin:20 }}>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          flexWrap: 'wrap',
+          gap: '20px',
+          margin: 20,
+        }}
+      >
         <div className={card.card_box}>
           <img
             alt=""
             src={image1}
             layout="fill"
-           
             className="group-hover:opacity-75"
           />
-
         </div>
         <div className={card.card_box}>
           <img
             alt=""
             src={image2}
             layout="fill"
-            
             className="group-hover:opacity-75"
           />
-
         </div>
         <div className={card.card_box}>
           <img
@@ -47,7 +53,6 @@ function TitlebarImageList() {
             objectFit="cover"
             className="group-hover:opacity-75"
           />
-
         </div>
         <div className={card.card_box}>
           <img
@@ -57,13 +62,8 @@ function TitlebarImageList() {
             objectFit="cover"
             className="group-hover:opacity-75"
           />
-
         </div>
       </div>
-
-
-
-
 
       {/* <div className={card.cardContainer}>
         
