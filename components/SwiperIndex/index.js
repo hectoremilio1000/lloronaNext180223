@@ -24,7 +24,7 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              'url(https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/dia%2Bmuertos%2Bcantina%2Bcomida.JPG)',
+              'url(https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/fotosBanner/cantina%2Bllorona%2Bafuera%2Blugar.jpg)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'bottom center',
@@ -44,7 +44,7 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              'url(https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/muertos/day-dead-celebration-with-altar1.jpg)',
+              'url(https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/fotosBanner/tiraditoRibEye%2Bllorona%2Bcantina.jpg)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center center',
@@ -58,7 +58,7 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/aguachile%2Bcantina%2Bllorona%2Bribeye%2Bdelicioso.jpg)',
+              'url(https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/fotosBanner/mandarinaBanner.jpg)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
