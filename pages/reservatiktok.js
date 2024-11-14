@@ -13,6 +13,9 @@ import { FB_PIXEL_ID } from '../lib/fpixel';
 import { InlineWidget } from 'react-calendly';
 import ModalAll from '../components/ModalAll';
 import CalendarioTiktok from '../components/CalendarioTiktok';
+import QuickInfo5 from '../components/QuickInfo5';
+import QuickInfo6 from '../components/QuickInfo6';
+import NavBar from '../components/NavBarEs/NavBarEs';
 
 function ReservaTiktok() {
   // useEffect(() => {
@@ -42,7 +45,7 @@ function ReservaTiktok() {
   const image3 =
     'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg';
   const image4 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2048.jpg';
+    'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/reservatiktok/WhatsApp+Image+2024-11-08+at+15.10.24+(6).jpeg';
 
   const image5 =
     'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg';
@@ -66,6 +69,7 @@ function ReservaTiktok() {
         </noscript>
       </Head>
       <>
+      <NavBar />
         {espa ? (
           <Head>
             <Script
@@ -82,7 +86,7 @@ function ReservaTiktok() {
           </Head>
         )}
         <div className="w-full bg-black h-[400px]"></div>
-        <div className="w-full bg-[#020a06] -mt-[200px]">
+        <div className="w-full bg-[#020a06] -mt-[250px]">
           {espa ? (
             <div className="w-full max-w-[1184px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-8 text-center">
               <div className="w-full">
@@ -125,7 +129,7 @@ function ReservaTiktok() {
                         src={image3}
                         alt="Música en vivo"
                       />
-                      <p className="text-white">
+                      <p className="text-white font-bold pt-2">
                         Disfruta, baile <br />y festeja
                       </p>
                     </div>
@@ -138,30 +142,24 @@ function ReservaTiktok() {
                         src={image4}
                         alt="Música en vivo"
                       />
-                      <p className="text-white text-center">
+                      <p className="text-white text-center font-bold pt-2">
                         Grandes artistas <br />
                         aman nuestro lugar
                       </p>
                     </div>
                   </Link>
                 </div>
-                <p className="text-start text-white sm:text-xs md:text-md">
+                <p className="text-start text-white sm:text-xs md:text-md pt-2">
                   La <b>piñata cumpleañera</b> no tiene costo, y aplica todos
                   los jueves si cumples años en el mes ❤️ y solo tienen que
-                  hacer reservación en cualquiera de nuestras redes sociales.
+                  hacer reservación. <br/><br/>
                   Les regalamos dulces típicos mexicanos y una botella de
-                  nuestro mejor mezcal de la casa 🍶🥃 madre cuishe el cual está
-                  elaborado artesanalmente. Este <b>mezcal premium </b>de la más
+                  nuestro mejor mezcal de la casa 🍶🥃 madre cuishe. Este <b>mezcal premium </b>de la más
                   alta calidad y está elaborado con un proceso artesanal
                   proveniente de un gran maestro mezcalero de la Ciudad de
                   Oaxaca, México.
                 </p>
-                {/* <button
-                  className="bg-[#3eeb91] px-4 py-3 text-white text-xs font-bold"
-                  onClick={() => setOpen(true)}
-                >
-                  Reservar Ahora
-                </button> */}
+              
                 <div className="overflow-auto">
                   <ModalAll className="w-[850px]" open={open} setOpen={setOpen}>
                     <InlineWidget url="https://calendly.com/reservaciones-14/reservaciones-llorona?hide_gdpr_banner=1" />
@@ -169,68 +167,7 @@ function ReservaTiktok() {
                 </div>
               </div>
               <div className="w-full">
-                {/* <div className="bg-[#3eeb91] grid grid-cols-1 px-10 py-12 gap-4 sticky top-[100px]">
-                  <h1 className="text-black text-3xl">Reserva Ahora</h1>
-                  <div className="box w-full">
-                    <label
-                      htmlFor="nombres"
-                      className="text-black font-bold mb-3"
-                    >
-                      Nombres
-                    </label>
-
-                    <input
-                      type="text"
-                      placeholder="Ingresa aqui tus nombres completos"
-                      className="border-2 w-full bg-black border-black text-white rounded px-4 py-2"
-                    />
-                  </div>
-                  <div className="box w-full">
-                    <label
-                      htmlFor="nombres"
-                      className="text-black font-bold mb-3"
-                    >
-                      Nombres
-                    </label>
-
-                    <input
-                      type="text"
-                      placeholder="Ingresa aqui tus nombres completos"
-                      className="border-2 w-full bg-black border-black text-white rounded px-4 py-2"
-                    />
-                  </div>
-                  <div className="box w-full">
-                    <label
-                      htmlFor="nombres"
-                      className="text-black font-bold mb-3"
-                    >
-                      Nombres
-                    </label>
-
-                    <input
-                      type="text"
-                      placeholder="Ingresa aqui tus nombres completos"
-                      className="border-2 w-full bg-black border-black text-white rounded px-4 py-2"
-                    />
-                  </div>
-                  <div className="box w-full">
-                    <label
-                      htmlFor="nombres"
-                      className="text-black font-bold mb-3"
-                    >
-                      Nombres
-                    </label>
-
-                    <input
-                      type="text"
-                      placeholder="Ingresa aqui tus nombres completos"
-                      className="border-2 w-full bg-black border-black text-white rounded px-4 py-2"
-                    />
-                  </div>
-                  <button className="bg-black text-white text-sm font-bold px-4 py-3">
-                    Rerservar
-                  </button>
-                </div> */}
+                
 
                 <CalendarioTiktok />
               </div>
@@ -264,7 +201,38 @@ function ReservaTiktok() {
               </h1>
             </div>
           </div>
-          <div className="mx-auto max-w-[1184px] grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 px-8">
+
+          <div className="overflow-hidden bg-black">
+                  {/* <div className="flex items-center gap-4 whitespace-nowrap">
+                    <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
+                      TESTIMONIOS
+                    </h1>
+                    <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                      TESTIMONIOS
+                    </h1>
+                  </div> */}
+                </div>
+               
+                <div className="bg-black py-[50px]">
+                  <QuickInfo5 idioma={espa} />
+                </div>
+                <div className="bg-white">
+                  <div className="overflow-hidden">
+                    <div className="flex items-center gap-4 whitespace-nowrap">
+                      <h1 className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
+                        RECOMENDADOS
+                      </h1>
+                      <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                        REVISTAS
+                      </h1>
+                    </div>
+                  </div>
+
+                  <div className="py-[50px] px-2">
+                    <QuickInfo6 idioma={espa} />
+                  </div>
+                </div>
+          {/* <div className="mx-auto max-w-[1184px] grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 px-8">
             <div>
               <Link href="/reserva">
                 <YouTube
@@ -326,7 +294,7 @@ function ReservaTiktok() {
                 YO SOY COMO EL CHILE VERDE LLORONA, PICANTE PERO SABROSO
               </h1>
             </div>
-          </div>
+          </div> */}
         </div>
       </>
     </>
