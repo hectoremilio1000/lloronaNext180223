@@ -39,7 +39,7 @@ const MySwiper = () => {
             >
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
                 <h2 className="text-white text-3xl md:text-4xl lg:text-6xl font-bold text-center p-4">
-                  Eventos para recordar por siempre
+                  Paquetes premium con grupo en vivo
                 </h2>
               </div>
             </div>
