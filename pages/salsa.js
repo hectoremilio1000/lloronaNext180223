@@ -46,7 +46,7 @@ function Reserva() {
   const image2 =
     'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg';
   const image3 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/soncubano3Imagen.jpg';
+    'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/salsa/llorona%2Bson%2Bgrupo%2Bcuano%2Bcantina%2Bweb.jpg';
   const image4 =
     'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/comida/amigastomandoCantinaLlorona.JPG';
 
@@ -100,7 +100,7 @@ function Reserva() {
               <>
                 <div className="w-full max-w-[1184px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-8 text-center">
                   <div className="w-full">
-                    <h1 className="font-bold text-3xl md:text-4xl text-white pt-4">
+                    <h1 className="text-3xl md:text-4xl text-white pt-4 font-bold">
                       Disfruta de la única Cantina con Son Cubano en Vivo
                     </h1>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -111,7 +111,7 @@ function Reserva() {
                             src={image3}
                             alt="Música en vivo"
                           />
-                          <p className="text-white pt-2">
+                          <p className="text-white pt-2 font-bold ">
                             Grandes orquestas <br />
                             de son cubano
                           </p>
@@ -125,7 +125,7 @@ function Reserva() {
                             src={image4}
                             alt="Música en vivo"
                           />
-                          <p className="text-white text-center">
+                          <p className="text-white text-center font-bold ">
                             El mejor <br />
                             ambiente
                           </p>
@@ -154,10 +154,10 @@ function Reserva() {
                 <div className="overflow-hidden bg-black">
                   <div className="flex items-center gap-4 whitespace-nowrap">
                     <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
-                      TESTIMONIOS
+                      EN VIVO
                     </h1>
                     <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
-                      TESTIMONIOS
+                      ORQUESTAS SON CUBANO
                     </h1>
                   </div>
                 </div>

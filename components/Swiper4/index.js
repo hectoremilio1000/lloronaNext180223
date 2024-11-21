@@ -31,10 +31,10 @@ const MySwiper = () => {
             <div
               style={{
                 backgroundImage:
-                  'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/gruposcubanos1.png)',
+                  'url(https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/salsa/salsa%2Bgrupo%2Bbailando%2Bcantina%2Bllorona.jpg)',
                 height: '80vh',
                 backgroundSize: 'cover',
-                backgroundPosition: 'center left',
+                backgroundPosition: 'center right',
               }}
             >
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">

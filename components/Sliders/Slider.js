@@ -137,7 +137,7 @@ const Slider = () => {
                 <div className="w-full">
                   <img
                     className="rounded-lg border-2 border-white w-full h-[300px] object-top object-cover"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/comida/amigastomandoCantinaLlorona.JPG"
+                    src="https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/clienta%2Bfeliz%2Bcantina%2Bla%2Bllorona%2Bcdmx.jpg"
                     alt=""
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
