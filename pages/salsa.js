@@ -161,10 +161,7 @@ function Reserva() {
                     </h1>
                   </div>
                 </div>
-                {/* <p className="text-white pt-2 text-center text-2xl md:text-4xl">
-                  ¿Por qué somos <br />
-                  los <b>preferidos</b>?
-                </p> */}
+               
                 <div className="bg-black py-[50px]">
                   <QuickInfo5 idioma={espa} />
                 </div>
