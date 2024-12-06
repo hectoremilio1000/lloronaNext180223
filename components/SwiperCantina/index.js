@@ -22,16 +22,15 @@ const MySwiper = ({ title, imageURL }) => {
       <SwiperSlide>
         <div
           style={{
-            backgroundImage:
-              `url(${imageURL})`,
+            backgroundImage: `url(${imageURL})`,
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center right',
           }}
         >
-          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
-            <h2 className="text-white text-3xl md:text-4xl lg:text-6xl font-bold text-center p-4">
-            {title}
+          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 px-0 md:px-40">
+            <h2 className="text-white text-3xl md:text-4xl lg:text-6xl font-bold text-center p-4 uppercase">
+              {title}
             </h2>
           </div>
         </div>
