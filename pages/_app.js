@@ -16,6 +16,10 @@ import { GTM_ID, pageview } from '../lib/gtm';
 import * as gtag from '../lib/gtag';
 import { TIXTOK_PIXEL_ID } from '../lib/tikp';
 import TikTokPixel from '../components/PixelTiktok/TiktokPixel';
+import { Amplify } from 'aws-amplify';
+import outputs from '../amplify_outputs.json';
+
+Amplify.configure(outputs);
 
 export default function MyApp({ Component, pageProps }) {
   // console.log(TIXTOK_PIXEL_ID);
