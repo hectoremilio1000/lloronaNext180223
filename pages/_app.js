@@ -18,7 +18,7 @@ import { TIXTOK_PIXEL_ID } from '../lib/tikp';
 import TikTokPixel from '../components/PixelTiktok/TiktokPixel';
 import '@aws-amplify/ui-react/styles.css';
 import { Amplify } from 'aws-amplify';
-import outputs from '../amplify_outputs.json';
+import outputs from '../amplify/amplify_outputs.json';
 
 Amplify.configure(outputs);
 
