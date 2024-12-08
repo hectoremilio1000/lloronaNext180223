@@ -2,7 +2,6 @@
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-  target: 'server',
   trailingSlash: true,
   // output: "export",
   images: {
