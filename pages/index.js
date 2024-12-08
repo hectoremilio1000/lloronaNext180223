@@ -322,10 +322,10 @@ export default function Home() {
             <div className="overflow-hidden">
               <div className="flex items-center gap-4 whitespace-nowrap">
                 <h1 className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
-                EN VIVO
+                  EN VIVO
                 </h1>
                 <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
-                GRUPO DE SON CUBANO 
+                  GRUPO DE SON CUBANO
                 </h1>
               </div>
             </div>

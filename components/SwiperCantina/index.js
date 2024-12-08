@@ -1,7 +1,5 @@
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
@@ -16,27 +14,47 @@ const MySwiper = ({ title, imageURL }) => {
         delay: 2500,
         disableOnInteraction: false,
       }}
-      scrollbar={{ draggable: true }}
+      // scrollbar={{ draggable: false }}
       loop={true}
     >
       <SwiperSlide>
         <div
           style={{
             backgroundImage: `url(${imageURL})`,
-            height: '80vh',
+            height: '70vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center right',
+            position: 'relative',
           }}
         >
-          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 px-0 md:px-40">
-            <h2 className="text-white text-3xl md:text-4xl lg:text-6xl font-bold text-center p-4 uppercase">
-              {title}
-            </h2>
+          {/* Overlay para oscurecer la imagen */}
+          <div
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              backgroundColor: 'rgba(0, 0, 0, 0.5)', // Oscurece con un overlay semitransparente
+              zIndex: 1,
+            }}
+          ></div>
+
+          {/* Título centrado */}
+          <div
+            style={{
+              position: 'absolute',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              zIndex: 2, // Asegura que esté sobre el overlay
+              textAlign: 'center',
+            }}
+          >
+            <h2 className="text-white text-4xl font-bold">{title}</h2>
           </div>
         </div>
       </SwiperSlide>
-
-      {/* Agrega más SwiperSlide según sea necesario */}
     </Swiper>
   );
 };

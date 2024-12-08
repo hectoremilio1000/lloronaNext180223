@@ -22,7 +22,7 @@ import CalendarioInversion from '../components/CalendarioInversion';
 import { FaWhatsapp } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
-function Reserva() {
+function Inversionstas() {
   // useEffect(() => {
   //   fbq.event('reserva')
   // }, []);
@@ -58,6 +58,35 @@ function Reserva() {
       onIdiomaIngles();
     }
     setHasInitialized(true);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const data = { nombre, whatsapp, email };
+
+    try {
+      const response = await fetch('/api/contacto', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+      if (response.ok) {
+        alert('Contacto guardado exitosamente');
+        setNombre('');
+        setWhatsapp('');
+        setEmail('');
+      } else {
+        alert('Error al guardar contacto: ' + result.message);
+      }
+    } catch (error) {
+      console.error('Error al enviar datos:', error);
+      alert('Hubo un problema al guardar el contacto');
+    }
   };
 
   const bannerData = espa
@@ -373,4 +402,4 @@ function Reserva() {
   );
 }
 
-export default Reserva;
+export default Inversionstas;
