@@ -23,9 +23,9 @@ import { FaWhatsapp } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 function Inversionstas() {
-  // useEffect(() => {
-  //   fbq.event('reserva')
-  // }, []);
+  const [nombre, setNombre] = useState('');
+  const [whatsapp, setWhatsapp] = useState('');
+  const [email, setEmail] = useState('');
 
   const opts = {
     height: '350',
@@ -77,6 +77,7 @@ function Inversionstas() {
       const result = await response.json();
       if (response.ok) {
         alert('Contacto guardado exitosamente');
+        // Limpiar los campos del formulario
         setNombre('');
         setWhatsapp('');
         setEmail('');
@@ -273,11 +274,7 @@ function Inversionstas() {
                       </h2>
                       <form
                         className="max-w-xl mx-auto bg-gray-100 shadow-lg rounded-lg p-6"
-                        onSubmit={(e) => {
-                          e.preventDefault();
-                          // Aquí puedes manejar el envío de datos
-                          console.log('Formulario enviado');
-                        }}
+                        onSubmit={handleSubmit}
                       >
                         <div className="mb-4">
                           <label
@@ -290,6 +287,8 @@ function Inversionstas() {
                             type="text"
                             id="name"
                             name="name"
+                            value={nombre}
+                            onChange={(e) => setNombre(e.target.value)}
                             required
                             className="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm"
                             placeholder="Escribe tu nombre"
@@ -306,6 +305,8 @@ function Inversionstas() {
                             type="text"
                             id="whatsapp"
                             name="whatsapp"
+                            value={whatsapp}
+                            onChange={(e) => setWhatsapp(e.target.value)}
                             required
                             className="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm"
                             placeholder="Escribe tu número de WhatsApp"
@@ -322,6 +323,8 @@ function Inversionstas() {
                             type="email"
                             id="email"
                             name="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                             required
                             className="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm"
                             placeholder="Escribe tu correo electrónico"
