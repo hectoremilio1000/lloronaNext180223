@@ -289,29 +289,6 @@ export default function Home() {
           {/* </div>  */}
         </>
       )}
-      {espa ? (
-        <div className="overflow-hidden bg-black">
-          <div className="inline-block whitespace-nowrap animate-marqueeleft">
-            <h1 className="inline-block text-white text-[70px] md:text-[100px] font-bold px-4 py-2 w-full">
-              Te queremos acá
-            </h1>
-            <h1 className="inline-block text-white text-[70px] md:text-[100px] font-bold px-4 py-2 w-full">
-              Te queremos acá
-            </h1>
-          </div>
-        </div>
-      ) : (
-        <div className="overflow-hidden bg-black">
-          <div className="inline-block whitespace-nowrap animate-marqueeleft">
-            <h1 className="inline-block text-white text-[70px] md:text-[100px] font-bold px-4 py-2 w-full">
-              We want you here
-            </h1>
-            <h1 className="inline-block text-white text-[70px] md:text-[100px] font-bold px-4 py-2 w-full">
-              We want you here
-            </h1>
-          </div>
-        </div>
-      )}
 
       <QuickInfo />
       <Slider />
