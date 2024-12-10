@@ -12,7 +12,7 @@ import QuickInfo6 from '../components/QuickInfo6';
 
 import { InlineWidget } from 'react-calendly';
 import ModalAll from '../components/ModalAll';
-import NavBar from '../components/NavBarEs/NavBarEs';
+import NavBar from '../components/NavInversionista/NavBarEs';
 import QuickInfo5 from '../components/QuickInfo5';
 import '../styles/Slider.module.css'; // Importa el archivo CSS aquí
 
@@ -113,7 +113,7 @@ function Inversionstas() {
     'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/comida/amigastomandoCantinaLlorona.JPG';
 
   const image5 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg';
+    'https://imagenesrutalab.s3.us-east-1.amazonaws.com/maximiliano/restaurante7.png';
   const image6 =
     'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia+mexicana+tragos+increibles.jpg';
   const image7 =
@@ -184,7 +184,7 @@ function Inversionstas() {
                       <Link href="/reserva">
                         <div>
                           <img
-                            className="rounded-lg w-full h-[350px] object-cover "
+                            className="rounded-lg w-full h-[350px] object-cover"
                             src={image4}
                             alt="Música en vivo"
                           />
@@ -206,39 +206,37 @@ function Inversionstas() {
                   </div>
                 </div>
 
-                <div className=" bg-white pt-20 grid-cols-1 md:grid-cols-2 px-20">
+                <div className=" bg-white pt-20 grid-cols-1 md:grid-cols-2 px-10">
                   <motion.div
                     className="w-full"
                     initial={{ opacity: 0, y: 100 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                   >
-                    <h1 className="font-bold text-3xl md:text-4xl text-black text-center">
+                    <h1 className="font-bold text-2xl md:text-4xl text-black text-center">
                       Nuestro nuevo concepto
                     </h1>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
                       <div>
-                        <h1 className="font-bold text-3xl md:text-4xl text-black text-center">
+                        <h2 className="font-bold text-3xl md:text-4xl text-black text-center">
                           Maximiliano
-                        </h1>
-                        <p className="text-black pt-2">
-                          Un concepto mexicano y cool: <br />
-                          por las mañanas, panadería deliciosa; <br />
-                          en la tarde, comida que conquista; <br />y en la
-                          noche, un toque vibrante con son cubano.
+                        </h2>
+                        <p className="text-black pt-2 text-lg md:text-2xl text-center">
+                          Modernizamos el concepto de restaurante mexicano para
+                          conectar <b> generaciones con elementos mexicanos</b>
                         </p>
                       </div>
 
                       <div>
                         <img
-                          className="rounded-lg w-full h-[450px] object-cover "
+                          className="rounded-lg w-fit object-cover "
                           src={image5}
-                          alt="Música en vivo"
+                          alt="Maximiliano"
                         />
                         <p className="text-white text-center">
-                          Ambientes <br />
-                          Aspiracionales
+                          Concepto <br />
+                          Innovador
                         </p>
                       </div>
                     </div>
@@ -255,7 +253,7 @@ function Inversionstas() {
                       Si tienes alguna duda no dudes en contactarnos
                     </h1>
                     <a
-                      href="https://wa.me/525549242477?text=Hola,%20me%20gustaría%20cotizar%20con%20ustedes."
+                      href="https://wa.me/525620305618?text=Hola,%20me%20gustaría%20ganar%20con%20ustedes."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center bg-green-500 hover:bg-green-600 text-white font-bold py-2 my-2 md:mx-36 rounded-full shadow-lg transition duration-200 ease-in-out"
