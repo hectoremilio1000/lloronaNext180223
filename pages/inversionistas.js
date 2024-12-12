@@ -66,7 +66,7 @@ function Inversionstas() {
     const data = { nombre, whatsapp, email };
 
     try {
-      const response = await fetch('/api/contacto', {
+      const response = await fetch('/api/inversionistas', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
