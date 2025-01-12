@@ -31,7 +31,13 @@ function Recursoshumanos() {
   };
 
   const handleFileChange = (e) => {
-    setCv(e.target.files[0]);
+    const file = e.target.files[0];
+    if (file) {
+      setCv(file);
+      console.log('Archivo seleccionado:', file.name); // Verifica que el archivo sea capturado
+    } else {
+      console.log('No se seleccionó ningún archivo');
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -39,14 +45,16 @@ function Recursoshumanos() {
 
     const data = new FormData();
     Object.keys(formData).forEach((key) => data.append(key, formData[key]));
+
     if (cv) {
       data.append('cv', cv);
+    } else {
+      alert('Por favor, selecciona un archivo para continuar.');
+      return;
     }
-    const newData = { ...formData, cv: data };
-    console.log(newData);
 
     try {
-      const response = await fetch('/api/candidatos', {
+      const response = await fetch('/api/candidatos/post', {
         method: 'POST',
         body: data,
       });
@@ -58,16 +66,6 @@ function Recursoshumanos() {
           whatsapp: '',
           email: '',
           puesto: '',
-          referencia1_empresa: '',
-          referencia1_cargo: '',
-          referencia1_nombre: '',
-          referencia1_tiempo: '',
-          referencia1_whatsapp: '',
-          referencia2_empresa: '',
-          referencia2_cargo: '',
-          referencia2_nombre: '',
-          referencia2_tiempo: '',
-          referencia2_whatsapp: '',
         });
         setCv(null);
       } else {
@@ -187,6 +185,7 @@ function Recursoshumanos() {
             <label className="block text-lg font-medium mb-2">Sube tu CV</label>
             <input
               type="file"
+              name="cv"
               accept=".pdf,.doc,.docx,.jpg,.png"
               onChange={(e) => handleFileChange(e)}
               className="block w-full text-gray-700 p-2 border rounded"

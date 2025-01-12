@@ -1,88 +1,116 @@
 import React, { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 
 function Recursoshumanosrevisar() {
   const [candidatos, setCandidatos] = useState([]);
   const [loading, setLoading] = useState(true);
+  const router = useRouter();
 
   // Obtener candidatos desde la API
-  useEffect(() => {
-    const fetchCandidatos = async () => {
-      try {
-        const response = await fetch('/api/getCandidatos');
-        const data = await response.json();
-        setCandidatos(data);
-        setLoading(false);
-      } catch (error) {
-        console.error('Error al obtener candidatos:', error);
-        setLoading(false);
-      }
-    };
-
-    fetchCandidatos();
-  }, []);
+  const fetchCandidatos = async () => {
+    try {
+      const response = await fetch('/api/candidatos/get');
+      const data = await response.json();
+      setCandidatos(data);
+      setLoading(false);
+    } catch (error) {
+      console.error('Error al obtener candidatos:', error);
+      setLoading(false);
+    }
+  };
 
   // Guardar comentarios en la base de datos
+
   const handleCommentSave = async (id, comentarios) => {
+    if (!id || !comentarios) {
+      console.error('Datos faltantes:', { id, comentarios });
+      return;
+    }
+
     try {
-      const response = await fetch('/api/updateCandidato', {
+      const response = await fetch('/api/candidatos/put', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ id, comentarios }),
+        body: JSON.stringify({ id, comentarios, estado: 'Por Revisar' }),
       });
 
-      if (response.ok) {
-        const updatedCandidato = await response.json();
-        setCandidatos((prev) =>
-          prev.map((candidato) =>
-            candidato.id === id ? updatedCandidato : candidato
-          )
-        );
-      } else {
+      if (!response.ok) {
         console.error('Error al guardar comentarios:', await response.json());
+      } else {
+        console.log('Comentario guardado.');
       }
     } catch (error) {
       console.error('Error al enviar los comentarios:', error);
     }
   };
 
-  // Alternar el estado de descartado
-  const handleToggleDescartar = async (id, currentState) => {
+  const handleEstadoChange = async (id, newEstado, candidato) => {
+    if (newEstado === 'Iniciar Examen') {
+      try {
+        const response = await fetch('/api/preguntas/preguntas', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            candidatoId: id,
+            puesto: candidato.puesto,
+            etapa: 'psicométricos',
+          }),
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          // Redirigir al examen con el intentoId calculado
+          router.push(
+            `/examen/${candidato.id}?intentoId=${data.intentoId}&puesto=${candidato.puesto}`
+          );
+        } else {
+          const error = await response.json();
+          console.error('Error al iniciar examen:', error);
+        }
+      } catch (error) {
+        console.error('Error al cambiar estado:', error);
+      }
+      return;
+    }
+
+    // Lógica para otros estados
     try {
-      const newState = currentState === 1 ? 0 : 1;
-      const response = await fetch('/api/updateCandidato', {
+      const response = await fetch('/api/candidatos/put', {
         method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ id, descartado: newState }),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          id,
+          estado: newEstado,
+          comentarios: candidato.comentarios,
+        }),
       });
 
-      if (response.ok) {
-        const updatedCandidato = await response.json();
-        setCandidatos((prev) =>
-          prev.map((candidato) =>
-            candidato.id === id ? updatedCandidato : candidato
-          )
-        );
+      if (!response.ok) {
+        const error = await response.json();
+        console.error('Error al actualizar el estado:', error);
       } else {
-        console.error(
-          'Error al alternar estado de descartado:',
-          await response.json()
+        console.log('Estado actualizado correctamente.');
+        setCandidatos((prev) =>
+          prev.map((c) => (c.id === id ? { ...c, estado: newEstado } : c))
         );
       }
     } catch (error) {
-      console.error('Error al alternar estado de descartado:', error);
+      console.error('Error al cambiar estado:', error);
     }
   };
 
+  useEffect(() => {
+    fetchCandidatos();
+  }, []);
+
   if (loading) {
-    return (
-      <p style={{ textAlign: 'center', fontSize: '18px', marginTop: '20px' }}>
-        Cargando candidatos...
-      </p>
-    );
+    return <p>Cargando candidatos...</p>;
+  }
+
+  if (candidatos.length === 0) {
+    return <p>No hay candidatos registrados.</p>;
   }
 
   if (candidatos.length === 0) {
@@ -267,23 +295,23 @@ function Recursoshumanosrevisar() {
                 </button>
               </td>
               <td style={{ border: '1px solid #ddd', padding: '8px' }}>
-                <button
-                  onClick={() =>
-                    handleToggleDescartar(candidato.id, candidato.descartado)
+                <select
+                  value={candidato.estado || 'Por Revisar'}
+                  onChange={(e) =>
+                    handleEstadoChange(candidato.id, e.target.value, candidato)
                   }
                   style={{
-                    backgroundColor: '#dc3545',
-                    color: 'white',
-                    padding: '5px 10px',
-                    border: 'none',
+                    padding: '5px',
                     borderRadius: '4px',
-                    cursor: 'pointer',
+                    border: '1px solid #ccc',
                   }}
                 >
-                  {Number(candidato.descartado) === 1
-                    ? 'Quitar Descartado'
-                    : 'Descartar'}
-                </button>
+                  <option value="Por Revisar">Por Revisar</option>
+                  <option value="Iniciar Examen">Iniciar Examen</option>
+                  <option value="Examen Finalizado">Examen Finalizado</option>
+                  <option value="Aprobado">Aprobado</option>
+                  <option value="Descartado">Descartado</option>
+                </select>
               </td>
             </tr>
           ))}

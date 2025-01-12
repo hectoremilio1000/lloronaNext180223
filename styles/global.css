@@ -77,6 +77,17 @@ h1 {
   background: #1677ff;
 }
 
+/* PREGUNTAS*/
+.preguntaExamen {
+  width: 250px !important;
+  font-size: 11px;
+}
+
+.peso {
+  font-size: 11px;
+  width: 40px !important;
+}
+
 /* BANEER*/
 .ant-menu-horizontal {
   border-bottom: 0px !important;
