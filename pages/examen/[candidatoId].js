@@ -61,9 +61,10 @@ const Examen = () => {
 
         const preguntasPsicometrico = habilidadesPsicométricas.flatMap(
           (habilidad) =>
-            preguntas
-              .filter((pregunta) => pregunta.examen_id === habilidad.examenId)
-              .slice(0, 2) // Limitar en el front
+            preguntas.filter(
+              (pregunta) => pregunta.examen_id === habilidad.examenId
+            )
+          // .slice(0, 2) // Limitar en el front
         );
         setPreguntasPsicometrico(preguntasPsicometrico);
 
@@ -79,8 +80,9 @@ const Examen = () => {
         const { preguntas: preguntasConocimiento } =
           await responseConocimiento.json();
 
+        setPreguntaConocimiento(preguntasConocimiento);
         // Limitar en el front
-        setPreguntaConocimiento(preguntasConocimiento.slice(0, 2));
+        // setPreguntaConocimiento(preguntasConocimiento.slice(0, 2));
 
         setLoading(false);
       } catch (error) {
