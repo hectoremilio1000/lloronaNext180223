@@ -1,5 +1,25 @@
 import poolCandidatos from '../../../lib/dbCandidatos';
 
+// Función genérica para calcular puntajes
+function calcularPuntajePorExamen(respuestas, examenNombre) {
+  let puntaje = 0;
+
+  respuestas.forEach((respuesta) => {
+    if (respuesta.examen_nombre === examenNombre) {
+      const calculo = respuesta.peso_respuesta * respuesta.peso_pregunta;
+      puntaje += calculo;
+
+      // Log detallado para depuración
+      console.log(
+        `${examenNombre} -> Pregunta ID: ${respuesta.pregunta_id}, Peso Respuesta: ${respuesta.peso_respuesta}, Peso Pregunta: ${respuesta.peso_pregunta}, Puntaje Calculado: ${calculo}`
+      );
+    }
+  });
+
+  // Asegurarse de que el puntaje no exceda 10
+  return Math.min(puntaje, 10);
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ message: 'Método no permitido' });
@@ -38,114 +58,116 @@ export default async function handler(req, res) {
       puntaje_autoconciencia: 0,
       puntaje_empatia: 0,
       puntaje_conocimientos: 0,
-      bondad_examen_id: null,
-      bondad_version: null,
-      optimismo_examen_id: null,
-      optimismo_version: null,
-      etica_trabajo_examen_id: null,
-      etica_trabajo_version: null,
-      curiosidad_examen_id: null,
-      curiosidad_version: null,
-      integridad_examen_id: null,
-      integridad_version: null,
-      autoconciencia_examen_id: null,
-      autoconciencia_version: null,
-      empatia_examen_id: null,
-      empatia_version: null,
-      conocimientos_examen_id: null,
-      conocimientos_version: null,
     };
 
-    // Procesar respuestas para calcular puntajes
-    respuestas.forEach((respuesta) => {
-      const puntaje = respuesta.peso_respuesta * respuesta.peso_pregunta;
+    // Paso 1: Calcular puntajes psicométricos
+    const habilidadesPsicométricas = [
+      'Bondad',
+      'Optimismo',
+      'Ética en el Trabajo',
+      'Inteligencia Curiosa',
+      'Integridad',
+      'Autoconciencia',
+      'Empatía',
+    ];
 
-      switch (respuesta.examen_nombre) {
-        case 'Bondad':
-          resultados.puntaje_bondad += puntaje;
-          resultados.bondad_examen_id = respuesta.examen_id;
-          resultados.bondad_version = respuesta.examen_version;
-          break;
-        case 'Optimismo':
-          resultados.puntaje_optimismo += puntaje;
-          resultados.optimismo_examen_id = respuesta.examen_id;
-          resultados.optimismo_version = respuesta.examen_version;
-          break;
-        case 'Ética en el Trabajo':
-          resultados.puntaje_etica_trabajo += puntaje;
-          resultados.etica_trabajo_examen_id = respuesta.examen_id;
-          resultados.etica_trabajo_version = respuesta.examen_version;
-          break;
-        case 'Inteligencia Curiosa':
-          resultados.puntaje_curiosidad += puntaje;
-          resultados.curiosidad_examen_id = respuesta.examen_id;
-          resultados.curiosidad_version = respuesta.examen_version;
-          break;
-        case 'Integridad':
-          resultados.puntaje_integridad += puntaje;
-          resultados.integridad_examen_id = respuesta.examen_id;
-          resultados.integridad_version = respuesta.examen_version;
-          break;
-        case 'Autoconciencia':
-          resultados.puntaje_autoconciencia += puntaje;
-          resultados.autoconciencia_examen_id = respuesta.examen_id;
-          resultados.autoconciencia_version = respuesta.examen_version;
-          break;
-        case 'Empatía':
-          resultados.puntaje_empatia += puntaje;
-          resultados.empatia_examen_id = respuesta.examen_id;
-          resultados.empatia_version = respuesta.examen_version;
-          break;
-        case 'Conocimientos':
-          resultados.puntaje_conocimientos += puntaje;
-          resultados.conocimientos_examen_id = respuesta.examen_id;
-          resultados.conocimientos_version = respuesta.examen_version;
-          break;
-        default:
-          console.warn(`Examen desconocido: ${respuesta.examen_nombre}`);
-          break;
+    habilidadesPsicométricas.forEach((nombreExamen) => {
+      const puntaje = calcularPuntajePorExamen(respuestas, nombreExamen);
+      resultados[`puntaje_${nombreExamen.toLowerCase()}`] = puntaje;
+
+      const examen = respuestas.find(
+        (respuesta) => respuesta.examen_nombre === nombreExamen
+      );
+
+      if (examen) {
+        resultados[`${nombreExamen.toLowerCase()}_examen_id`] =
+          examen.examen_id;
+        resultados[`${nombreExamen.toLowerCase()}_version`] =
+          examen.examen_version;
+      } else {
+        resultados[`${nombreExamen.toLowerCase()}_examen_id`] = null;
+        resultados[`${nombreExamen.toLowerCase()}_version`] = null;
       }
     });
 
-    // Validar y asignar campos de conocimientos si no se calcularon correctamente
-    if (!resultados.conocimientos_examen_id) {
-      const [conocimiento] = await poolCandidatos.query(
-        `SELECT id AS examen_id, version 
-         FROM examenes 
-         WHERE nombre = ? AND tipo = 'Conocimientos' AND activo = 1`,
-        [puesto]
-      );
+    console.log('Puntajes psicométricos calculados:', resultados);
 
-      if (conocimiento.length) {
-        resultados.conocimientos_examen_id = conocimiento[0].examen_id;
-        resultados.conocimientos_version = conocimiento[0].version;
-      } else {
-        console.error(
-          `No se encontró un examen de conocimientos para el puesto: ${puesto}`
-        );
-      }
+    // Paso 2: Calcular puntaje de conocimientos
+    const [examenConocimientos] = await poolCandidatos.query(
+      `SELECT id, version FROM examenes WHERE nombre = ? AND tipo = 'Conocimientos' AND activo = 1`,
+      [puesto]
+    );
+
+    if (examenConocimientos.length) {
+      const { id: conocimientosExamenId, version: conocimientosVersion } =
+        examenConocimientos[0];
+
+      resultados.puntaje_conocimientos = calcularPuntajePorExamen(
+        respuestas,
+        puesto
+      );
+      resultados.conocimientos_examen_id = conocimientosExamenId;
+      resultados.conocimientos_version = conocimientosVersion;
+
+      console.log(
+        'Conocimientos -> Puntaje:',
+        resultados.puntaje_conocimientos,
+        'Examen ID:',
+        conocimientosExamenId
+      );
+    } else {
+      resultados.conocimientos_examen_id = null;
+      resultados.conocimientos_version = null;
+
+      console.log(
+        'No se encontró examen de conocimientos para el puesto:',
+        puesto
+      );
     }
 
-    // Validar y calcular puntaje de conocimientos si sigue siendo 0
-    if (
-      resultados.puntaje_conocimientos === 0 &&
-      resultados.conocimientos_examen_id
-    ) {
-      const [puntajeConocimientos] = await poolCandidatos.query(
-        `SELECT SUM(r.peso_respuesta * p.peso_pregunta) AS puntaje 
-         FROM respuestas r
-         JOIN preguntas p ON r.pregunta_id = p.id
-         WHERE r.candidato_id = ? AND r.intento_id = ? AND p.examen_id = ?`,
-        [candidatoId, intentoId, resultados.conocimientos_examen_id]
-      );
+    // Log final antes de guardar
+    console.log('Resultados completos:', resultados);
 
-      resultados.puntaje_conocimientos = puntajeConocimientos[0]?.puntaje || 0;
-    }
-
-    // Guardar resultados en la tabla
-    await poolCandidatos.query(`INSERT INTO resultados SET ?, fecha = NOW()`, [
-      resultados,
-    ]);
+    // Paso 3: Guardar resultados en la base de datos
+    await poolCandidatos.query(
+      `INSERT INTO resultados (
+        candidato_id, puesto, puntaje_bondad, puntaje_optimismo, puntaje_etica_trabajo,
+        puntaje_curiosidad, puntaje_integridad, puntaje_autoconciencia, puntaje_empatia,
+        puntaje_conocimientos, bondad_examen_id, bondad_version, optimismo_examen_id,
+        optimismo_version, etica_trabajo_examen_id, etica_trabajo_version,
+        curiosidad_examen_id, curiosidad_version, integridad_examen_id, integridad_version,
+        autoconciencia_examen_id, autoconciencia_version, empatia_examen_id, empatia_version,
+        conocimientos_examen_id, conocimientos_version, fecha
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, NOW())`,
+      [
+        resultados.candidato_id,
+        resultados.puesto,
+        resultados.puntaje_bondad,
+        resultados.puntaje_optimismo,
+        resultados.puntaje_etica_trabajo,
+        resultados.puntaje_curiosidad,
+        resultados.puntaje_integridad,
+        resultados.puntaje_autoconciencia,
+        resultados.puntaje_empatia,
+        resultados.puntaje_conocimientos,
+        resultados.bondad_examen_id,
+        resultados.bondad_version,
+        resultados.optimismo_examen_id,
+        resultados.optimismo_version,
+        resultados.etica_trabajo_examen_id,
+        resultados.etica_trabajo_version,
+        resultados.curiosidad_examen_id,
+        resultados.curiosidad_version,
+        resultados.integridad_examen_id,
+        resultados.integridad_version,
+        resultados.autoconciencia_examen_id,
+        resultados.autoconciencia_version,
+        resultados.empatia_examen_id,
+        resultados.empatia_version,
+        resultados.conocimientos_examen_id,
+        resultados.conocimientos_version,
+      ]
+    );
 
     return res
       .status(201)
