@@ -17,7 +17,7 @@ function calcularPuntajePorExamen(respuestas, examenNombre) {
   });
 
   // Asegurarse de que el puntaje no exceda 10
-  return Math.min(puntaje, 10);
+  return Math.max(Math.min(puntaje, 10), 0.1);
 }
 
 export default async function handler(req, res) {
@@ -64,11 +64,11 @@ export default async function handler(req, res) {
     const habilidadesPsicométricas = [
       'Bondad',
       'Optimismo',
-      'Ética en el Trabajo',
-      'Inteligencia Curiosa',
+      'Etica',
+      'Curiosidad',
       'Integridad',
       'Autoconciencia',
-      'Empatía',
+      'Empatia',
     ];
 
     habilidadesPsicométricas.forEach((nombreExamen) => {
@@ -131,10 +131,10 @@ export default async function handler(req, res) {
     // Paso 3: Guardar resultados en la base de datos
     await poolCandidatos.query(
       `INSERT INTO resultados (
-        candidato_id, puesto, puntaje_bondad, puntaje_optimismo, puntaje_etica_trabajo,
+        candidato_id, puesto, puntaje_bondad, puntaje_optimismo, puntaje_etica,
         puntaje_curiosidad, puntaje_integridad, puntaje_autoconciencia, puntaje_empatia,
         puntaje_conocimientos, bondad_examen_id, bondad_version, optimismo_examen_id,
-        optimismo_version, etica_trabajo_examen_id, etica_trabajo_version,
+        optimismo_version, etica_examen_id, etica_version,
         curiosidad_examen_id, curiosidad_version, integridad_examen_id, integridad_version,
         autoconciencia_examen_id, autoconciencia_version, empatia_examen_id, empatia_version,
         conocimientos_examen_id, conocimientos_version, fecha
@@ -144,7 +144,7 @@ export default async function handler(req, res) {
         resultados.puesto,
         resultados.puntaje_bondad,
         resultados.puntaje_optimismo,
-        resultados.puntaje_etica_trabajo,
+        resultados.puntaje_etica,
         resultados.puntaje_curiosidad,
         resultados.puntaje_integridad,
         resultados.puntaje_autoconciencia,
@@ -154,8 +154,8 @@ export default async function handler(req, res) {
         resultados.bondad_version,
         resultados.optimismo_examen_id,
         resultados.optimismo_version,
-        resultados.etica_trabajo_examen_id,
-        resultados.etica_trabajo_version,
+        resultados.etica_examen_id, // Actualizado
+        resultados.etica_version, // Actualizado
         resultados.curiosidad_examen_id,
         resultados.curiosidad_version,
         resultados.integridad_examen_id,

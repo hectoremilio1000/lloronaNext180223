@@ -104,7 +104,7 @@ const PanelResultados = () => {
         data: [
           selectedCandidato?.actual.puntaje_bondad,
           selectedCandidato?.actual.puntaje_optimismo,
-          selectedCandidato?.actual.puntaje_etica_trabajo,
+          selectedCandidato?.actual.puntaje_etica,
           selectedCandidato?.actual.puntaje_curiosidad,
           selectedCandidato?.actual.puntaje_integridad,
           selectedCandidato?.actual.puntaje_autoconciencia,
@@ -121,7 +121,7 @@ const PanelResultados = () => {
         data: [
           selectedCandidato?.ideal.puntaje_bondad,
           selectedCandidato?.ideal.puntaje_optimismo,
-          selectedCandidato?.ideal.puntaje_etica_trabajo,
+          selectedCandidato?.ideal.puntaje_etica,
           selectedCandidato?.ideal.puntaje_curiosidad,
           selectedCandidato?.ideal.puntaje_integridad,
           selectedCandidato?.ideal.puntaje_autoconciencia,
@@ -176,7 +176,7 @@ const PanelResultados = () => {
         data: [
           selectedCandidato?.actual.puntaje_bondad,
           selectedCandidato?.actual.puntaje_optimismo,
-          selectedCandidato?.actual.puntaje_etica_trabajo,
+          selectedCandidato?.actual.puntaje_etica,
           selectedCandidato?.actual.puntaje_curiosidad,
           selectedCandidato?.actual.puntaje_integridad,
           selectedCandidato?.actual.puntaje_autoconciencia,
@@ -192,7 +192,7 @@ const PanelResultados = () => {
         data: [
           selectedCandidato?.ideal.puntaje_bondad,
           selectedCandidato?.ideal.puntaje_optimismo,
-          selectedCandidato?.ideal.puntaje_etica_trabajo,
+          selectedCandidato?.ideal.puntaje_etica,
           selectedCandidato?.ideal.puntaje_curiosidad,
           selectedCandidato?.ideal.puntaje_integridad,
           selectedCandidato?.ideal.puntaje_autoconciencia,

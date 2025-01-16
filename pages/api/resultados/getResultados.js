@@ -13,7 +13,7 @@ export default async function handler(req, res) {
         r.puesto,
         r.puntaje_bondad,
         r.puntaje_optimismo,
-        r.puntaje_etica_trabajo,
+        r.puntaje_etica,
         r.puntaje_curiosidad,
         r.puntaje_integridad,
         r.puntaje_autoconciencia,

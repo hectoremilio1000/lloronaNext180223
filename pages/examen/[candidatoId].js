@@ -52,11 +52,11 @@ const Examen = () => {
         const habilidadesPsicométricas = [
           { nombre: 'Bondad', examenId: 49 },
           { nombre: 'Optimismo', examenId: 50 },
-          { nombre: 'Ética en el Trabajo', examenId: 51 },
-          { nombre: 'Inteligencia Curiosa', examenId: 52 },
+          { nombre: 'Etica', examenId: 51 },
+          { nombre: 'Curiosidad', examenId: 52 },
           { nombre: 'Integridad', examenId: 53 },
           { nombre: 'Autoconciencia', examenId: 54 },
-          { nombre: 'Empatía', examenId: 55 },
+          { nombre: 'Empatia', examenId: 55 },
         ];
 
         const preguntasPsicometrico = habilidadesPsicométricas.flatMap(

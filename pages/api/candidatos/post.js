@@ -37,7 +37,22 @@ export default async function handler(req, res) {
     console.log('Campos recibidos:', fields);
     console.log('Archivos recibidos:', files);
 
-    const { nombre, whatsapp, email, puesto } = fields;
+    const {
+      nombre,
+      whatsapp,
+      email,
+      puesto,
+      referencia1_empresa,
+      referencia1_cargo,
+      referencia1_nombre,
+      referencia1_tiempo,
+      referencia1_whatsapp,
+      referencia2_empresa,
+      referencia2_cargo,
+      referencia2_nombre,
+      referencia2_tiempo,
+      referencia2_whatsapp,
+    } = fields;
 
     if (!nombre || !whatsapp || !email || !puesto) {
       return res
@@ -70,9 +85,33 @@ export default async function handler(req, res) {
     try {
       const query = `
         INSERT INTO candidatos 
-        (nombre, whatsapp, email, puesto, cv_path, estado) 
-        VALUES (?, ?, ?, ?, ?, ?)`;
-      const values = [nombre, whatsapp, email, puesto, cvPath, 'Por Revisar'];
+        (
+          nombre, whatsapp, email, puesto, cv_path,
+          referencia1_empresa, referencia1_cargo, referencia1_nombre, referencia1_tiempo, referencia1_whatsapp,
+          referencia2_empresa, referencia2_cargo, referencia2_nombre, referencia2_tiempo, referencia2_whatsapp,
+          estado
+        ) 
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`;
+
+      const values = [
+        nombre,
+        whatsapp,
+        email,
+        puesto,
+        cvPath,
+        referencia1_empresa || null,
+        referencia1_cargo || null,
+        referencia1_nombre || null,
+        referencia1_tiempo || null,
+        referencia1_whatsapp || null,
+        referencia2_empresa || null,
+        referencia2_cargo || null,
+        referencia2_nombre || null,
+        referencia2_tiempo || null,
+        referencia2_whatsapp || null,
+        'Por Revisar',
+      ];
+
       await poolCandidatos.query(query, values);
 
       res.status(201).json({ message: 'Candidato registrado exitosamente' });
