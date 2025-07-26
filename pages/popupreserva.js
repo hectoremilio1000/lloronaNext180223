@@ -67,7 +67,7 @@ export default function ReservaEvento() {
       />
 
       <div className="w-full bg-black h-[300px]"></div>
-      <div className="w-full bg-[#020a06] -mt-[150px] pt-[50px] pb-16">
+      <div className="w-full bg-[#020a06] -mt-[150px] pb-16">
         {espa ? (
           <>
             <div className="max-w-[800px] mx-auto text-center px-4">
@@ -102,10 +102,62 @@ export default function ReservaEvento() {
               </a>
             </div>
 
-            {/* Opcional: Calendario visual */}
-            {/* <div className="mt-12">
-              <Calendario />
-            </div> */}
+            <section className="max-w-2xl mx-auto pt-8 px-6 text-center text-[#F4F1EE] rounded-2xl shadow-lg">
+              <h2 className="text-3xl md:text-4xl font-bold mb-2 text-[#3eeb91]">
+                🌺 Cantinazo de Sabores
+              </h2>
+              <h3 className="text-xl font-medium mb-6">
+                Un Menú de degustación exclusivo de Cantina La Llorona
+              </h3>
+
+              <p className="mb-4 text-lg text-[#F4F1EE]">
+                Una noche para probar lo irrepetible.
+                <br />
+                <span className="font-semibold">
+                  Sólo para quienes saben que la mejor mesa no se pide... se
+                  gana.
+                </span>
+              </p>
+
+              <div className="text-left mt-10 mb-6">
+                <h4 className="text-2xl font-semibold mb-4">🍽 El Menú</h4>
+                <ul className="space-y-3 list-decimal list-inside text-[#F4F1EE]/90">
+                  <li>
+                    Flor de calabaza rellena de queso de montaña con trufa
+                  </li>
+                  <li>
+                    Tostada de lengua en escabeche con hummus de tortilla y
+                    aguacate
+                  </li>
+                  <li>
+                    Chile ancho relleno de carnitas de pato, mole manchamanteles
+                    y chochoyota con hoja santa
+                  </li>
+                  <li>Tamal canario relleno de cajeta y espuma de guayaba</li>
+                </ul>
+              </div>
+
+              <p className="mb-6 text-lg text-[#F4F1EE]">
+                Cada platillo ha sido creado como una historia para contarse con
+                los sentidos.
+                <br />
+                Sabores atrevidos. Texturas inesperadas. Un festín cantinero,
+                sin reglas.
+              </p>
+
+              <p className="text-xl font-semibold mb-4 text-[#3eeb91]">
+                🎟 Cupo limitado. Solo por reservación.
+              </p>
+
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg transition"
+              >
+                Reservar por WhatsApp
+              </a>
+            </section>
 
             {/* Testimonios, Revistas y Slider como en tu diseño original */}
             <div className="overflow-hidden bg-black mt-16 py-8">
