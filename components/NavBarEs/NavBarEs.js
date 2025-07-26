@@ -171,6 +171,15 @@ function NavBar({ onLanguageChange }) {
                     Salsa en Vivo
                   </Link>
                 </li>
+
+                <li key="4">
+                  <Link
+                    href="/popupreserva"
+                    className="nav-link hover:text-emerald-500"
+                  >
+                    Pop up
+                  </Link>
+                </li>
               </>
             )}
           </>
