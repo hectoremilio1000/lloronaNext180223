@@ -43,6 +43,18 @@ const MySwiper = () => {
       <SwiperSlide>
         <div
           style={{
+            backgroundImage: "url('/images/banner/posteo_chileC.jpg')",
+            height: '80vh',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center center',
+          }}
+        >
+          {' '}
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div
+          style={{
             backgroundImage:
               'url(https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/fotosBanner/tiraditoRibEye%2Bllorona%2Bcantina.jpg)',
             height: '80vh',

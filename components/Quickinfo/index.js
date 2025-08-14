@@ -11,8 +11,10 @@ import * as fbq from '../../lib/fpixel';
 const image1 =
   'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/llorona%2Bson%2Bgrupo%2Bcuano%2Bcantina%2Bweb.jpg';
 
-const image2 =
-  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/aguachile%2Bcantina%2Bllorona%2Bribeye%2Bdelicioso.jpg';
+// const image2 =
+//   'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/aguachile%2Bcantina%2Bllorona%2Bribeye%2Bdelicioso.jpg';
+
+const image2 = '/images/banner/posteo_chileC.jpg';
 
 const image3 =
   'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/postres+ricos+deliciosos.JPG';
