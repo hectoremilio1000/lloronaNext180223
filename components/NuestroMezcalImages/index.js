@@ -17,6 +17,8 @@ function NuestroMezcalImages() {
     'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/mezcal/IMG_9982.jpg';
   const image6 =
     'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/mezcal/IMG_9983.jpg';
+  const image7 =
+    'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/mezcal/IMG_9984.jpg';
   return (
     <div>
       <div>
@@ -100,19 +102,15 @@ function NuestroMezcalImages() {
             Destilación en Ollas de Barro de Cobre
           </p>
         </div>
-        {/* <div className="h-64 w-96 relative">
+        <div className={card.cardBox}>
           <img
-            src={image3}
-            layout="fill" // required
-            objectFit="cover" // change to suit your needs
-            className="rounded-full" // just an example
+            className="imagenAbajoTexto1Home"
+            src={image7}
             alt="Nuestro Palenque, Santa Catarina Minas, Oaxaca"
             height="360"
           />
-          <p className="textoFotosHome text-black">
-            Fermentación 100% libre de químicos
-          </p>
-        </div> */}
+          <p className="textoFotosHome text-black">100% hecho a mano</p>
+        </div>
 
         {/* <div className="h-64 w-96 relative">
           <img
