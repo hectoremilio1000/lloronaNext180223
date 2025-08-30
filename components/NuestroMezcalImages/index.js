@@ -2,16 +2,21 @@ import React from 'react';
 
 import title from '../Main/title.module.css';
 import card from '../Main/card.module.css';
+import Image from 'next/image';
 
 function NuestroMezcalImages() {
   const image1 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_0043+(1).jpg';
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/IMG_9973.jpg';
   const image2 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/foto%2Bbotella%2Bcalaca%2Bmezcal%2Babbywood.jpeg';
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/IMG_0043.jpg';
   const image3 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9973+(1).jpg';
+    'https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/foto+botella+calaca+mezcal+abbywood.JPG';
   const image4 =
     'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mezcal%2Bcannabis%2Bllorona.jpg';
+  const image5 =
+    'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/mezcal/IMG_9982.jpg';
+  const image6 =
+    'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/mezcal/IMG_9983.jpg';
   return (
     <div>
       <div>
@@ -71,62 +76,64 @@ function NuestroMezcalImages() {
         Alvaro Obregón 308 Roma Condesa, hacemos delivery.
       </p>
 
-      {/* <div className={card.cardContainer}>
-        
-        
-      <div className={card.cardBox}>
-            <Image
-              className="imagenAbajoTexto1Home"
-            src={image1}
-            width="640" height="360"
-            alt="Nuestro Palenque, Santa Catarina Minas, Oaxaca" 
-            
-            />
-          <p className="textoFotosHome text-black">Nuestro Palenque, Santa Catarina Minas, Oaxaca</p>
-        </div>
-        
-        
-      
+      <div className={card.cardContainer}>
         <div className={card.cardBox}>
-          <Image
+          <img
             className="imagenAbajoTexto1Home"
-            src={image2}
-            alt="Nuestro Palenque, Santa Catarina Minas, Oaxaca" 
-            width="640" height="360"
+            src={image5}
+            height="360"
+            alt="Nuestro Palenque, Santa Catarina Minas, Oaxaca"
           />
-          <p className="textoFotosHome text-black">Molienda con manos de artesanos oaxaqueños</p>
+          <p className="textoFotosHome text-black">
+            Nuestro Palenque, Santa Catarina Minas, Oaxaca
+          </p>
         </div>
-        <div className="h-64 w-96 relative">
-          <Image
-            
+
+        <div className={card.cardBox}>
+          <img
+            className="imagenAbajoTexto1Home"
+            src={image6}
+            alt="Nuestro Palenque, Santa Catarina Minas, Oaxaca"
+            height="360"
+          />
+          <p className="textoFotosHome text-black">
+            Destilación en Ollas de Barro de Cobre
+          </p>
+        </div>
+        {/* <div className="h-64 w-96 relative">
+          <img
             src={image3}
-            
             layout="fill" // required
             objectFit="cover" // change to suit your needs
             className="rounded-full" // just an example
             alt="Nuestro Palenque, Santa Catarina Minas, Oaxaca"
+            height="360"
           />
-          <p className="textoFotosHome text-black">Fermentación 100% libre de químicos</p>
-        </div>
-
-        <div className="h-64 w-96 relative">
-          <Image
-            className="imagenAbajoTexto1Home"
-            src={image4}
-            alt="Nuestro Palenque, Santa Catarina Minas, Oaxaca" 
-          />
-          <p className="textoFotosHome text-black">Destilación en Ollas de Barro de Cobre</p>
-        </div>
-   
+          <p className="textoFotosHome text-black">
+            Fermentación 100% libre de químicos
+          </p>
         </div> */}
 
-      <div className="subSubDiv1Banner">
+        {/* <div className="h-64 w-96 relative">
+          <img
+            className="imagenAbajoTexto1Home"
+            src={image4}
+            alt="Nuestro Palenque, Santa Catarina Minas, Oaxaca"
+            height="360"
+          />
+          <p className="textoFotosHome text-black">
+            Destilación en Ollas de Barro de Cobre
+          </p>
+        </div> */}
+      </div>
+
+      {/* <div className="subSubDiv1Banner">
         <a href="https://wa.me/+5215549242477">
           <button type="button" className="buttonComponente">
             ¡Comprar ahora!
           </button>
         </a>
-      </div>
+      </div> */}
     </div>
 
     // <Section>
