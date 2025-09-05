@@ -19,6 +19,8 @@ function NuestroMezcalImages() {
     'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/mezcal/IMG_9983.jpg';
   const image7 =
     'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/mezcal/IMG_9984.jpg';
+  const image8 =
+    'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/mezcal/IMG_9984.jpg';
   return (
     <div>
       <div>

@@ -1,135 +1,247 @@
+// pages/paquetes.js
 import React from 'react';
-import { useAppContext } from '../components/context/Context';
-import { useState } from 'react';
-import ButtonComponent from '../components/ButtonComponent/index';
-import title from '../components/Main/title.module.css';
-import { paqueteSinAlcohol } from '../data/paquetes';
-import NavBar from '../components/NavBarEs/NavBarEs';
+import Head from 'next/head';
+import Link from 'next/link';
+import NavBarEs from '../components/NavBarEs/NavBarEs';
 
-function Paquetes() {
-  const [english, setEnglish] = useState(false);
-  const [spanish, setSpanish] = useState(true);
+const gold = '#D4AF37';
+const WHATSAPP = '525549242477';
+const waText = encodeURIComponent(
+  'Hola, quiero cotizar un evento/grupo en Cantina La Llorona (Roma–Condesa). Fecha: __ Personas: __ Hora: __'
+);
+const WA_URL = `https://wa.me/${WHATSAPP}?text=${waText}`;
 
-  const whatsappNumber = '525549242477'; // Código de país +52 para México y tu número local
-  const whatsappMessage = encodeURIComponent(
-    'Hola, me gustaría reservar una mesa para las fiestas navideñas.'
-  ); // Mensaje predeterminado
-
-  const onEnglish = () => {
-    setEnglish(true);
-    setSpanish(false);
-  };
-
-  const onSpanish = () => {
-    setEnglish(false);
-    setSpanish(true);
-  };
-
-  const { espa } = useAppContext();
-
+function Hero() {
   return (
-    <>
-      <NavBar />
-      <div
-        className="d-flex subContenedor1Banner banner"
-        style={{
-          backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/Screenshot+2023-11-10+at+22.04.18.png")`,
-          backgroundSize: 'cover',
-          height: '90vh',
-          backgroundPosition: 'center',
-          position: 'relative',
-        }}
-      >
-        {/* <video autoPlay muted loop src={videoPort} /> */}
-
-        <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada">
-          <h3 className=" font-weight-bold proximamente2 text-white">
-            <b>Celebra con nosotros</b>
-          </h3>
+    <section
+      className="relative grid min-h-[88vh] place-items-center overflow-hidden bg-black"
+      style={{
+        backgroundImage: 'url(/images/eventos/despedida.jpeg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'top',
+      }}
+    >
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black" />
+      <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
+        <h1 className="text-3xl font-black uppercase tracking-wide text-white sm:text-5xl">
+          Eventos en CDMX
+        </h1>
+        <p className="mx-auto mt-4 max-w-2xl text-lg text-white/90 sm:text-xl">
+          Restaurantes para grupos en Roma–Condesa. Cocina creativa, coctelería
+          de autor y música en vivo.
+        </p>
+        <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <a
+            href={WA_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-full bg-white px-6 py-3 font-bold text-black shadow-lg transition hover:bg-white/90"
+          >
+            Cotizar por WhatsApp
+          </a>
+          <Link
+            href="#menus"
+            className="rounded-full border px-6 py-3 font-semibold text-white transition hover:bg-white/10"
+            style={{ borderColor: gold }}
+          >
+            Ver menús de grupos
+          </Link>
         </div>
       </div>
-      <div
-        className="mt-2"
-        style={{
-          padding: '2rem 0',
-          width: '90vw',
-          margin: '0 auto',
-        }}
-      >
-        <div>
-          {espa ? (
-            <>
-              <div>
-                <h1 className="text-center text-3xl md:text-4xl uppercase font-black">
-                  La Llorona - Una Navidad Inolvidable
-                </h1>
-              </div>
-              <div>
-                <h4 className={title.fontTitleSub}>
-                  Celebra la Navidad en La Llorona
-                </h4>
-                <h2 className={title.fontTitleline}>
-                  Donde cada bocado es una celebración
-                </h2>
-                <div className="linea"></div>
-              </div>
-
-              <p className="text-center text-black sm:text-2xl text-xl">
-                Esta Navidad, envuelve a tus seres queridos con la magia de una
-                celebración inolvidable en La Llorona. Nuestra cálida atmósfera,
-                los sabores auténticos de nuestros platos especiales y el brillo
-                festivo te esperan para compartir momentos mágicos en la Roma
-                Condesa. Deja que cada bocado te transporte a una festividad
-                llena de sabor y alegría. Con ingredientes seleccionados y
-                recetas que hablan la lengua de la tradición y la innovación,
-                nuestros paquetes navideños están diseñados para deleitar y
-                crear recuerdos eternos.
-              </p>
-              <p className="text-center text-black sm:text-2xl text-xl">
-                Haz que esta Navidad sea memorable y reserva tu mesa ahora. Con
-                espacio limitado, ofrecemos una experiencia exclusiva donde cada
-                detalle está pensado para tu disfrute. Ven y celebra con
-                nosotros - cada sonrisa, cada brindis, cada momento cuenta en La
-                Llorona.
-              </p>
-              <p className="text-center text-black sm:text-2xl text-xl">
-                Estamos ubicados en el corazón de la Roma Condesa, un lugar
-                donde la historia y la modernidad se encuentran para brindarte
-                una experiencia única. Nuestro personal está dedicado a hacer de
-                tu visita algo más que una comida, es una celebración de la vida
-                misma.
-              </p>
-
-              <div className="flex justify-center items-center">
-                <a
-                  href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
-                  className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  role="button"
-                >
-                  Reserva por WhatsApp
-                </a>
-              </div>
-
-              {/* Aquí puedes agregar una imagen representativa de tu menú o del restaurante */}
-              <div className="my-4 flex justify-center">
-                <img
-                  src={paqueteSinAlcohol}
-                  alt="comida sabrosa"
-                  width={1000}
-                  height={500}
-                  className="w-full"
-                />
-              </div>
-            </>
-          ) : (
-            <>hola</>
-          )}
-        </div>
-      </div>
-    </>
+    </section>
   );
 }
 
-export default Paquetes;
+function Benefits() {
+  const items = [
+    {
+      title: 'Pastel del festejado',
+      desc: 'Cortesía con reservas de 4+ personas.',
+    },
+    {
+      title: 'Brindis de mezcal',
+      desc: 'Shot de bienvenida para el cumpleañero.',
+    },
+    {
+      title: 'Mesa decorada',
+      desc: 'Velas, letrero y detalles (bajo reserva).',
+    },
+    { title: 'Música en vivo', desc: 'Son cubano y ambiente para celebrar.' },
+    {
+      title: 'Menús para compartir',
+      desc: 'Opciones vegetarianas y sin gluten disponibles.',
+    },
+    { title: 'Ubicación premium', desc: 'Roma–Condesa, fácil acceso y valet.' },
+  ];
+
+  return (
+    <section className="bg-neutral-950 py-14">
+      <div className="mx-auto max-w-7xl px-6">
+        <h2 className="text-center text-2xl font-extrabold tracking-wide text-white sm:text-3xl">
+          Beneficios para grupos y cumpleaños
+        </h2>
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {items.map((b) => (
+            <div
+              key={b.title}
+              className="rounded-2xl border border-white/10 bg-black/40 p-6"
+            >
+              <h3 className="text-lg font-bold text-white">{b.title}</h3>
+              <p className="mt-2 text-sm text-white/70">{b.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function EventTypes() {
+  const cards = [
+    {
+      title: 'Cumpleaños',
+      img: 'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/amigastomandoCantinaLlorona.JPG',
+    },
+    {
+      title: 'Despedida de soltera',
+      img: '/images/eventos/despedida.jpeg',
+    },
+    {
+      title: 'Cenas empresariales',
+      img: 'https://www.lalloronacantina.com/images/banner/posteo_chileC.jpg',
+    },
+    {
+      title: 'Aniversarios',
+      img: 'https://images.unsplash.com/photo-1516685018646-549198525c1b?q=80&w=1200&auto=format&fit=crop',
+    },
+    {
+      title: 'Networking / After Office',
+      img: 'https://images.unsplash.com/photo-1498654896293-37aacf113fd9?q=80&w=1200&auto=format&fit=crop',
+    },
+    {
+      title: '15 de Septiembre',
+      img: 'https://images.unsplash.com/photo-1519677100203-a0e668c92439?q=80&w=1200&auto=format&fit=crop',
+    },
+  ];
+
+  return (
+    <section className="bg-black py-14">
+      <div className="mx-auto max-w-7xl px-6">
+        <h2 className="text-center text-2xl font-extrabold tracking-wide text-white sm:text-3xl">
+          Tipos de eventos
+        </h2>
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {cards.map((c, idx) => (
+            <div
+              key={c.title}
+              className="group overflow-hidden rounded-2xl border border-white/10 bg-neutral-900"
+            >
+              <div className="relative h-48 w-full overflow-hidden sm:h-56">
+                <img
+                  src={c.img}
+                  alt={c.title}
+                  className={
+                    `h-full w-full object-cover transition duration-500 group-hover:scale-105 ` +
+                    (idx === 1 ? 'object-[50%_20%]' : 'object-center') // 50% horizontal (centro), 20% vertical (sube encuadre)
+                  }
+                />
+              </div>
+              <div className="p-5">...</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function GroupMenus() {
+  const menus = [
+    {
+      name: 'Menú Compartir – Clásicos',
+      desc: 'Entradas al centro, plato fuerte a elegir, postre para compartir. Opciones vegetarianas disponibles.',
+      link: '/menullorona',
+    },
+    {
+      name: 'Mar y Tierra – 3 tiempos',
+      desc: 'Selección de mariscos + cortes. Ideal para celebraciones de 8–20 personas.',
+      link: '/menullorona',
+    },
+    {
+      name: 'Coctelería de Autor + Botellas',
+      desc: 'Paquetes de botellas y cocteles firma para celebrar en grande.',
+      link: '/menullorona',
+    },
+  ];
+
+  return (
+    <section id="menus" className="bg-neutral-950 py-14">
+      <div className="mx-auto max-w-7xl px-6">
+        <h2 className="text-center text-2xl font-extrabold tracking-wide text-white sm:text-3xl">
+          Menús para grupos
+        </h2>
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {menus.map((m) => (
+            <div
+              key={m.name}
+              className="rounded-2xl border border-white/10 bg-black/40 p-6"
+            >
+              <h3 className="text-lg font-bold text-white">{m.name}</h3>
+              <p className="mt-2 text-sm text-white/70">{m.desc}</p>
+              <Link
+                href={m.link}
+                className="mt-4 inline-block rounded-full border px-4 py-2 text-sm font-semibold text-white hover:bg-white/10"
+                style={{ borderColor: gold }}
+              >
+                Ver menú
+              </Link>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-12 flex items-center justify-center">
+          <a
+            href={WA_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-full bg-white px-6 py-3 font-bold text-black shadow-lg transition hover:bg-white/90"
+          >
+            Reservar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default function Paquetes() {
+  return (
+    <>
+      <Head>
+        <title>Eventos | Cantina La Llorona</title>
+        <meta
+          name="description"
+          content="Eventos y grupos en Roma–Condesa. Cumpleaños, cenas empresariales y celebraciones con música en vivo."
+        />
+      </Head>
+
+      <NavBarEs />
+
+      <main className="bg-black pt-[72px] sm:pt-[80px]">
+        <Hero />
+        <Benefits />
+        <EventTypes />
+        <GroupMenus />
+      </main>
+
+      <footer className="border-t border-white/10 bg-black py-10 text-center text-white/60">
+        <div className="mx-auto max-w-7xl px-6">
+          <p>
+            © {new Date().getFullYear()} Cantina La Llorona. Todos los derechos
+            reservados.
+          </p>
+        </div>
+      </footer>
+    </>
+  );
+}
