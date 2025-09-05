@@ -44,7 +44,7 @@ function Hero() {
             className="rounded-full border px-6 py-3 font-semibold text-white transition hover:bg-white/10"
             style={{ borderColor: gold }}
           >
-            Ver menús de grupos
+            Eventos especiales
           </Link>
         </div>
       </div>
@@ -112,20 +112,20 @@ function EventTypes() {
     },
     {
       title: 'Aniversarios',
-      img: 'https://images.unsplash.com/photo-1516685018646-549198525c1b?q=80&w=1200&auto=format&fit=crop',
+      img: 'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/clienta%2Bfeliz%2Bcantina%2Bla%2Bllorona%2Bcdmx.jpg',
     },
     {
       title: 'Networking / After Office',
-      img: 'https://images.unsplash.com/photo-1498654896293-37aacf113fd9?q=80&w=1200&auto=format&fit=crop',
+      img: 'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/llorona%2Bson%2Bgrupo%2Bcuano%2Bcantina%2Bweb.jpg',
     },
     {
-      title: '15 de Septiembre',
-      img: 'https://images.unsplash.com/photo-1519677100203-a0e668c92439?q=80&w=1200&auto=format&fit=crop',
+      title: 'Bodas',
+      img: '/images/eventos/bodas_2.jpeg',
     },
   ];
 
   return (
-    <section className="bg-black py-14">
+    <section className="bg-black py-14" id="menus">
       <div className="mx-auto max-w-7xl px-6">
         <h2 className="text-center text-2xl font-extrabold tracking-wide text-white sm:text-3xl">
           Tipos de eventos
@@ -146,7 +146,18 @@ function EventTypes() {
                   }
                 />
               </div>
-              <div className="p-5">...</div>
+              <div className="p-5">
+                <h3 className="text-lg font-bold text-white">{c.title}</h3>
+                <a
+                  href={WA_URL}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-3 inline-block rounded-full border px-4 py-2 text-sm font-semibold text-white hover:bg-white/10"
+                  style={{ borderColor: gold }}
+                >
+                  Cotizar
+                </a>
+              </div>
             </div>
           ))}
         </div>
@@ -175,9 +186,9 @@ function GroupMenus() {
   ];
 
   return (
-    <section id="menus" className="bg-neutral-950 py-14">
+    <section className="bg-neutral-950 py-14">
       <div className="mx-auto max-w-7xl px-6">
-        <h2 className="text-center text-2xl font-extrabold tracking-wide text-white sm:text-3xl">
+        {/* <h2 className="text-center text-2xl font-extrabold tracking-wide text-white sm:text-3xl">
           Menús para grupos
         </h2>
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -197,7 +208,7 @@ function GroupMenus() {
               </Link>
             </div>
           ))}
-        </div>
+        </div> */}
 
         <div className="mt-12 flex items-center justify-center">
           <a
