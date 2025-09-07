@@ -108,7 +108,7 @@ function Reserva() {
               <div className="w-full max-w-[1184px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-8 text-center">
                 <div className="w-full">
                   <h1 className="font-bold text-4xl text-white">
-                    Los jueves piñata cumpleañera <br />
+                    Lunes, Martes, Miércoles piñata cumpleañera <br />
                     con una botella de mezcal
                   </h1>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -140,11 +140,12 @@ function Reserva() {
                     </Link>
                   </div>
                   <p className="text-start text-white sm:text-xs md:text-md mt-3">
-                    La <b>piñata cumpleañera</b> no tiene costo, y aplica todos
-                    los jueves si cumples años en el mes ❤️ y solo tienen que
-                    hacer reservación. Les regalamos dulces típicos mexicanos y
-                    una botella de nuestro{' '}
-                    <b>mezcal premium madre cuishe 🍶🥃</b>.
+                    La <b>piñata cumpleañera</b> no tiene costo y aplica todos
+                    los
+                    <b> lunes, martes y miércoles</b> si cumples años en el mes
+                    ❤️. Solo necesitas hacer tu reservación y nosotros te
+                    regalamos dulces típicos mexicanos y una botella de nuestro
+                    <b> mezcal premium madre cuishe 🍶🥃</b>.
                   </p>
                 </div>
                 <div className="w-full">
