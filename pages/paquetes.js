@@ -6,10 +6,20 @@ import NavBarEs from '../components/NavBarEs/NavBarEs';
 
 const gold = '#D4AF37';
 const WHATSAPP = '525549242477';
-const waText = encodeURIComponent(
-  'Hola, quiero cotizar un evento/grupo en Cantina La Llorona (Roma–Condesa). Fecha: __ Personas: __ Hora: __'
-);
-const WA_URL = `https://wa.me/${WHATSAPP}?text=${waText}`;
+
+// 🔧 Helper para construir el mensaje de WhatsApp con contexto
+function buildWaUrl({ source, eventType = null }) {
+  const base = `https://wa.me/${WHATSAPP}`;
+  const text = [
+    `Hola, quiero cotizar ${
+      eventType ? `un evento de *${eventType}* ` : 'un evento '
+    }en Cantina La Llorona (Roma–Condesa).`,
+    'Fecha: __  Personas: __  Hora: __',
+    `[Fuente: ${source}]`, // ← etiqueta para identificar desde dónde escribieron
+  ].join('\n');
+
+  return `${base}?text=${encodeURIComponent(text)}`;
+}
 
 function Hero() {
   return (
@@ -28,14 +38,14 @@ function Hero() {
         </h1>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-white/90 sm:text-xl">
           Organizamos{' '}
-          <b>bodas civiles, cenas de fin de año, cumpleaños, despedidas</b>y
+          <b>bodas civiles, cenas de fin de año, cumpleaños, despedidas</b> y
           todo tipo de celebraciones privadas en Roma–Condesa. Disfruta de{' '}
-          <b>cocina creativa, coctelería de autor y música en vivo</b>
-          para que tu evento sea inolvidable.
+          <b>cocina creativa, coctelería de autor y música en vivo</b> para que
+          tu evento sea inolvidable.
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <a
-            href={WA_URL}
+            href={buildWaUrl({ source: 'hero-cotizar' })}
             target="_blank"
             rel="noreferrer"
             className="rounded-full bg-white px-6 py-3 font-bold text-black shadow-lg transition hover:bg-white/90"
@@ -43,7 +53,7 @@ function Hero() {
             Cotizar por WhatsApp
           </a>
           <Link
-            href="#menus"
+            href="#tipos-evento"
             className="rounded-full border px-6 py-3 font-semibold text-white transition hover:bg-white/10"
             style={{ borderColor: gold }}
           >
@@ -94,6 +104,18 @@ function Benefits() {
             </div>
           ))}
         </div>
+
+        {/* CTA con etiqueta propia */}
+        <div className="mt-10 flex items-center justify-center">
+          <a
+            href={buildWaUrl({ source: 'beneficios-cta' })}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-full bg-white px-6 py-3 font-bold text-black shadow-lg transition hover:bg-white/90"
+          >
+            Reservar por WhatsApp
+          </a>
+        </div>
       </div>
     </section>
   );
@@ -105,10 +127,7 @@ function EventTypes() {
       title: 'Cumpleaños',
       img: 'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/amigastomandoCantinaLlorona.JPG',
     },
-    {
-      title: 'Despedida de soltera',
-      img: '/images/eventos/despedida.jpeg',
-    },
+    { title: 'Despedida de soltera', img: '/images/eventos/despedida.jpeg' },
     {
       title: 'Cenas empresariales',
       img: 'https://www.lalloronacantina.com/images/banner/posteo_chileC.jpg',
@@ -121,14 +140,11 @@ function EventTypes() {
       title: 'Networking / After Office',
       img: 'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/llorona%2Bson%2Bgrupo%2Bcuano%2Bcantina%2Bweb.jpg',
     },
-    {
-      title: 'Bodas',
-      img: '/images/eventos/bodas_2.jpeg',
-    },
+    { title: 'Bodas', img: '/images/eventos/bodas_2.jpeg' },
   ];
 
   return (
-    <section className="bg-black py-14" id="menus">
+    <section className="bg-black py-14" id="tipos-evento">
       <div className="mx-auto max-w-7xl px-6">
         <h2 className="text-center text-2xl font-extrabold tracking-wide text-white sm:text-3xl">
           Tipos de eventos
@@ -145,14 +161,19 @@ function EventTypes() {
                   alt={c.title}
                   className={
                     `h-full w-full object-cover transition duration-500 group-hover:scale-105 ` +
-                    (idx === 1 ? 'object-[50%_20%]' : 'object-center') // 50% horizontal (centro), 20% vertical (sube encuadre)
+                    (idx === 1 ? 'object-[50%_20%]' : 'object-center')
                   }
                 />
               </div>
               <div className="p-5">
                 <h3 className="text-lg font-bold text-white">{c.title}</h3>
                 <a
-                  href={WA_URL}
+                  href={buildWaUrl({
+                    source: `card-${c.title
+                      .toLowerCase()
+                      .replace(/\s+/g, '-')}`,
+                    eventType: c.title,
+                  })}
                   target="_blank"
                   rel="noreferrer"
                   className="mt-3 inline-block rounded-full border px-4 py-2 text-sm font-semibold text-white hover:bg-white/10"
@@ -170,52 +191,13 @@ function EventTypes() {
 }
 
 function GroupMenus() {
-  const menus = [
-    {
-      name: 'Menú Compartir – Clásicos',
-      desc: 'Entradas al centro, plato fuerte a elegir, postre para compartir. Opciones vegetarianas disponibles.',
-      link: '/menullorona',
-    },
-    {
-      name: 'Mar y Tierra – 3 tiempos',
-      desc: 'Selección de mariscos + cortes. Ideal para celebraciones de 8–20 personas.',
-      link: '/menullorona',
-    },
-    {
-      name: 'Coctelería de Autor + Botellas',
-      desc: 'Paquetes de botellas y cocteles firma para celebrar en grande.',
-      link: '/menullorona',
-    },
-  ];
-
   return (
     <section className="bg-neutral-950 py-14">
       <div className="mx-auto max-w-7xl px-6">
-        {/* <h2 className="text-center text-2xl font-extrabold tracking-wide text-white sm:text-3xl">
-          Menús para grupos
-        </h2>
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {menus.map((m) => (
-            <div
-              key={m.name}
-              className="rounded-2xl border border-white/10 bg-black/40 p-6"
-            >
-              <h3 className="text-lg font-bold text-white">{m.name}</h3>
-              <p className="mt-2 text-sm text-white/70">{m.desc}</p>
-              <Link
-                href={m.link}
-                className="mt-4 inline-block rounded-full border px-4 py-2 text-sm font-semibold text-white hover:bg-white/10"
-                style={{ borderColor: gold }}
-              >
-                Ver menú
-              </Link>
-            </div>
-          ))}
-        </div> */}
-
-        <div className="mt-12 flex items-center justify-center">
+        {/* Si en el futuro quieres listar menús, aquí */}
+        <div className="mt-2 flex items-center justify-center">
           <a
-            href={WA_URL}
+            href={buildWaUrl({ source: 'group-menus-cta' })}
             target="_blank"
             rel="noreferrer"
             className="rounded-full bg-white px-6 py-3 font-bold text-black shadow-lg transition hover:bg-white/90"
