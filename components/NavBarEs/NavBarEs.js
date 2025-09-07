@@ -174,10 +174,10 @@ function NavBar({ onLanguageChange }) {
 
                 <li key="4">
                   <Link
-                    href="/popupreserva"
+                    href="/paquetes"
                     className="nav-link hover:text-emerald-500"
                   >
-                    Pop up
+                    Paquetes&Eventos
                   </Link>
                 </li>
               </>

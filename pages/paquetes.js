@@ -24,11 +24,14 @@ function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black" />
       <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
         <h1 className="text-3xl font-black uppercase tracking-wide text-white sm:text-5xl">
-          Eventos en CDMX
+          Eventos y Contrataciones
         </h1>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-white/90 sm:text-xl">
-          Restaurantes para grupos en Roma–Condesa. Cocina creativa, coctelería
-          de autor y música en vivo.
+          Organizamos{' '}
+          <b>bodas civiles, cenas de fin de año, cumpleaños, despedidas</b>y
+          todo tipo de celebraciones privadas en Roma–Condesa. Disfruta de{' '}
+          <b>cocina creativa, coctelería de autor y música en vivo</b>
+          para que tu evento sea inolvidable.
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <a
@@ -44,7 +47,7 @@ function Hero() {
             className="rounded-full border px-6 py-3 font-semibold text-white transition hover:bg-white/10"
             style={{ borderColor: gold }}
           >
-            Eventos especiales
+            Ver paquetes de eventos
           </Link>
         </div>
       </div>
