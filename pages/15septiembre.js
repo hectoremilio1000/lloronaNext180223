@@ -47,8 +47,7 @@ function Septiembre() {
     'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg';
   const image3 =
     'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/15septiembre/chileennogadamexicolloronacantina.jpg';
-  const image4 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/gruposcubanos1.png';
+  const image4 = '/images/15_septiembre.jpg';
 
   const image5 =
     'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg';
@@ -139,13 +138,12 @@ function Septiembre() {
                     </p>
                     <p className="text-start text-white sm:text-xs md:text-2xl mt-3">
                       Este septiembre, te invitamos a celebrar en grande 🎶,
-                      viviendo la esencia de las Fiestas Patrias al ritmo del
-                      mejor Son Cubano de México 🇨🇺. Únete a nuestra gran fiesta
-                      🎊 y deja que la música y la tradición te envuelvan
-                      mientras disfrutas del auténtico sabor de la temporada con
-                      nuestro exquisito Chile en Nogada 🌶️🍽️, preparado con los
-                      mejores ingredientes. ¡No te pierdas una noche llena de
-                      sabor, cultura y alegría! 🎶💃✨
+                      viviendo la esencia de las Fiestas Patrias con mariachi y
+                      al ritmo del mejor Son Cubano de México 🇨🇺. Únete a
+                      nuestra gran fiesta 🎊 y deja que la música y la tradición
+                      te envuelvan mientras disfrutas del auténtico sabor de la
+                      temporada con nuestro exquisito Chile en Nogada 🌶️🍽️,
+                      preparado con los mejores ingredientes. 🎶💃✨
                     </p>
                   </div>
                   <div className="w-full">
