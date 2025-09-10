@@ -23,11 +23,10 @@ const MySwiper = () => {
       <SwiperSlide>
         <div
           style={{
-            backgroundImage:
-              'url(https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/fotosBanner/cantina%2Bllorona%2Bafuera%2Blugar.jpg)',
+            backgroundImage: 'url(/images/banner/posteo_chileC.jpg)',
             height: '80vh',
             backgroundSize: 'cover',
-            backgroundPosition: 'bottom center',
+            backgroundPosition: 'center center',
           }}
         >
           {/* <div className="absolute inset-0 flex items-center justify-center">
@@ -43,7 +42,7 @@ const MySwiper = () => {
       <SwiperSlide>
         <div
           style={{
-            backgroundImage: "url('/images/banner/posteo_chileC.jpg')",
+            backgroundImage: "url('images/PICANIA1.jpg')",
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center center',
@@ -132,8 +131,7 @@ const MySwiper = () => {
       <SwiperSlide>
         <div
           style={{
-            backgroundImage:
-              'url(https://imagenesrutalab.s3.amazonaws.com/llorona/franquicias/banner/IMG_8773.jpg)',
+            backgroundImage: 'url(images/pan_muerto.jpg)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center center',
