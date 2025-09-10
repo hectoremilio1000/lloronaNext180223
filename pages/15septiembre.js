@@ -46,7 +46,7 @@ function Septiembre() {
   const image2 =
     'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg';
   const image3 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/15septiembre/chileennogadamexicolloronacantina.jpg';
+    'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/llorona%2Bson%2Bgrupo%2Bcuano%2Bcantina%2Bweb.jpg';
   const image4 = '/images/15_septiembre.jpg';
 
   const image5 =
@@ -111,8 +111,8 @@ function Septiembre() {
                             alt="Música en vivo"
                           />
                           <p className="text-white pt-2">
-                            El chile en <br />
-                            Nogada más famoso
+                            Salsa en <br />
+                            vivo
                           </p>
                         </div>
                       </Link>
@@ -125,8 +125,8 @@ function Septiembre() {
                             alt="Música en vivo"
                           />
                           <p className="text-white text-center">
-                            El mejor <br />
-                            ambiente
+                            Noche de <br />
+                            mariachi
                           </p>
                         </div>
                       </Link>

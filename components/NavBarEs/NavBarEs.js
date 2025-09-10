@@ -165,10 +165,10 @@ function NavBar({ onLanguageChange }) {
                 </li>
                 <li key="3">
                   <Link
-                    href="/salsa"
+                    href="/15septiembre"
                     className="nav-link hover:text-emerald-500"
                   >
-                    Salsa en Vivo
+                    15 de septiembre
                   </Link>
                 </li>
 
