@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@aws-amplify/adapter-nextjs": "^1.2.32",
+    "@calcom/embed-react": "^1.5.3",
     "@emotion/react": "^11.10.6",
     "@headlessui/react": "^1.7.18",
     "flickity": "^2.3.0",
