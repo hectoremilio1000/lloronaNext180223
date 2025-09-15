@@ -48,7 +48,7 @@ function Calendario() {
               My house is your house, Book now.
             </h1>
 
-            <InlineWidget url="https://calendly.com/reservaciones-14/reservaciones-llorona" />
+            <InlineWidget url="https://calendly.com/reservaciones-14/reserva-llorona" />
           </div>
         </div>
       )}
