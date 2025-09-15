@@ -227,7 +227,7 @@ function Reserva() {
                       open={open}
                       setOpen={setOpen}
                     >
-                      <InlineWidget url="https://calendly.com/reservaciones-14/reserva-llorona?hide_gdpr_banner=1" />
+                      <InlineWidget url="https://calendly.com/reservaciones-14/reserva-llorona" />
                     </ModalAll>
                   </div>
                 </div>
