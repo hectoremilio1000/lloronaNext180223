@@ -36,7 +36,7 @@ function Calendario() {
 
             <div
               className="calendly-inline-widget"
-              data-url="https://calendly.com/reservaciones-14/reserva-llorona?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=3eeb91"
+              data-url="https://calendly.com/reservaciones-14/reservaciones-llorona"
               style={{ minWidth: '320px', height: '650px' }}
             ></div>
           </div>
@@ -48,7 +48,7 @@ function Calendario() {
               My house is your house, Book now.
             </h1>
 
-            <InlineWidget url="https://calendly.com/reservaciones-14/reserva-llorona" />
+            <InlineWidget url="https://calendly.com/reservaciones-14/reservaciones-llorona" />
           </div>
         </div>
       )}
