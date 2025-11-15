@@ -109,8 +109,7 @@ function Reserva() {
                 <div className="w-full">
                   <h1 className="font-bold text-4xl text-white">
                     {' '}
-                    Los jueves piñata cumpleañera <br /> con una botella de
-                    mezcal{' '}
+                    Los jueves piñata cumpleañera{' '}
                   </h1>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <Link href="/reserva">
@@ -144,8 +143,7 @@ function Reserva() {
                     La <b>piñata cumpleañera</b> no tiene costo, y aplica todos
                     los jueves si cumples años en el mes ❤️ y solo tienen que
                     hacer reservación. Les regalamos dulces típicos mexicanos y
-                    una botella de nuestro{' '}
-                    <b>mezcal premium madre cuishe 🍶🥃</b>.
+                    un postre especial de nuestro chef Fernando Rayón{' '}
                   </p>
                 </div>
                 <div className="w-full">
@@ -191,7 +189,7 @@ function Reserva() {
                 <div className="w-full">
                   <h1 className="font-bold text-4xl text-white">
                     On Thursdays, a birthday <br />
-                    piñata with a bottle of mezcal
+                    piñata with mexican candies
                   </h1>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <Link href="/reserva">
@@ -218,8 +216,7 @@ function Reserva() {
                     The birthday piñata is free of charge and applies every
                     Thursday if your birthday is in the month. You just need to
                     make a reservation. We give away traditional Mexican candies
-                    and a bottle of our best house mezcal 🍶🥃 madre cuishe,
-                    which is handcrafted.
+                    and a special dessert from our chef.
                   </p>
                   <div className="overflow-auto">
                     <ModalAll

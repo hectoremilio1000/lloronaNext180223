@@ -163,14 +163,14 @@ function NavBar({ onLanguageChange }) {
                     Menu
                   </Link>
                 </li>
-                <li key="3">
+                {/* <li key="3">
                   <Link
                     href="/15septiembre"
                     className="nav-link hover:text-emerald-500"
                   >
                     15 de septiembre
                   </Link>
-                </li>
+                </li> */}
 
                 <li key="4">
                   <Link
