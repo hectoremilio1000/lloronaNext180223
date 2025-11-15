@@ -1,3 +1,4 @@
+// /Users/hectoremilio/Proyectos/nextjs/lallorona/lloronaNext180223/pages/menullorona.js
 import React from 'react';
 import { useState } from 'react';
 import ButtonComponent from '../components/ButtonComponent/index';
