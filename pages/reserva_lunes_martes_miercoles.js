@@ -109,7 +109,7 @@ function Reserva() {
                 <div className="w-full">
                   <h1 className="font-bold text-4xl text-white">
                     Lunes, Martes, Miércoles piñata cumpleañera <br />
-                    con una botella de mezcal
+                    con dulces típicos mexicanos
                   </h1>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <Link href="/reserva">
@@ -144,8 +144,8 @@ function Reserva() {
                     los
                     <b> lunes, martes y miércoles</b> si cumples años en el mes
                     ❤️. Solo necesitas hacer tu reservación y nosotros te
-                    regalamos dulces típicos mexicanos y una botella de nuestro
-                    <b> mezcal premium madre cuishe 🍶🥃</b>.
+                    regalamos dulces típicos mexicanos y un pastel especial de
+                    nuestro chef Fernando Rayón.
                   </p>
                 </div>
                 <div className="w-full">
