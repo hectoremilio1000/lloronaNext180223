@@ -109,7 +109,8 @@ function Reserva() {
                 <div className="w-full">
                   <h1 className="font-bold text-4xl text-white">
                     {' '}
-                    Los jueves piñata cumpleañera{' '}
+                    Los jueves piñata cumpleañera con botella de mezcal
+                    artesanal
                   </h1>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <Link href="/reserva">
@@ -143,7 +144,7 @@ function Reserva() {
                     La <b>piñata cumpleañera</b> no tiene costo, y aplica todos
                     los jueves si cumples años en el mes ❤️ y solo tienen que
                     hacer reservación. Les regalamos dulces típicos mexicanos y
-                    un postre especial de nuestro chef Fernando Rayón{' '}
+                    una botella de mezcal artesanal🍾.
                   </p>
                 </div>
                 <div className="w-full">
@@ -189,7 +190,8 @@ function Reserva() {
                 <div className="w-full">
                   <h1 className="font-bold text-4xl text-white">
                     On Thursdays, a birthday <br />
-                    piñata with mexican candies
+                    piñata with mexican candies and a bottle of artisan mezcal
+                    🍾
                   </h1>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <Link href="/reserva">
