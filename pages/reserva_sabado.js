@@ -109,7 +109,7 @@ function Reserva() {
                 <div className="w-full">
                   <h1 className="font-bold text-4xl text-white">
                     {' '}
-                    Los sábado piñata cumpleañera con botella de mezcal
+                    Los sábados piñata cumpleañera con botella de mezcal
                     artesanal
                   </h1>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -142,7 +142,7 @@ function Reserva() {
                   </div>
                   <p className="text-start text-white sm:text-xs md:text-md mt-3">
                     La <b>piñata cumpleañera</b> no tiene costo, y aplica todos
-                    los sábado si cumples años en el mes ❤️ y solo tienen que
+                    los sábados si cumples años en el mes ❤️ y solo tienen que
                     hacer reservación. Les regalamos dulces típicos mexicanos y
                     una botella de mezcal artesanal🍾.
                   </p>
