@@ -123,6 +123,14 @@ function NavBar({ onLanguageChange }) {
                     Menu
                   </Link>
                 </li>
+                <li key="3">
+                  <Link
+                    href="/tacoanticruda"
+                    className="nav-link hover:text-emerald-500"
+                  >
+                    Hangover Taco
+                  </Link>
+                </li>
                 {/* <li key="3">
                   <Link
                     href="/mezcal"
@@ -161,6 +169,14 @@ function NavBar({ onLanguageChange }) {
                     className="nav-link hover:text-emerald-500"
                   >
                     Menu
+                  </Link>
+                </li>
+                <li key="3">
+                  <Link
+                    href="/tacoanticruda"
+                    className="nav-link hover:text-emerald-500"
+                  >
+                    Taco anticruda
                   </Link>
                 </li>
                 {/* <li key="3">
