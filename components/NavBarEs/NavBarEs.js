@@ -115,6 +115,14 @@ function NavBar({ onLanguageChange }) {
                     Book Now
                   </Link>
                 </li>
+                <li key="superbowl-en">
+                  <Link
+                    href="/superbowl"
+                    className="nav-link hover:text-emerald-500"
+                  >
+                    Super Bowl
+                  </Link>
+                </li>
                 <li key="2">
                   <Link
                     href="/menullorona"
@@ -161,6 +169,14 @@ function NavBar({ onLanguageChange }) {
                     className="nav-link hover:text-emerald-500"
                   >
                     Reserva
+                  </Link>
+                </li>
+                <li key="superbowl-es">
+                  <Link
+                    href="/superbowl"
+                    className="nav-link hover:text-emerald-500"
+                  >
+                    Super Bowl
                   </Link>
                 </li>
                 <li key="2">
