@@ -19,11 +19,17 @@ import '../styles/Slider.module.css'; // Importa el archivo CSS aquí
 import dynamic from 'next/dynamic';
 import MySwiper from '../components/Swiper5';
 import CalendarioGoogleAds from '../components/CalendarioGoogleAds';
+import useCalendlyTracking from '../lib/useCalendlyTracking';
 
 function Reserva() {
-  // useEffect(() => {
-  //   fbq.event('reserva')
-  // }, []);
+  useCalendlyTracking('organic', 'cumple');
+
+  useEffect(() => {
+    fbq.event('ViewContent', {
+      content_name: 'Pagina Cumple',
+      content_category: 'landing_organic',
+    });
+  }, []);
 
   const opts = {
     height: '350',

@@ -22,9 +22,9 @@ import CalendarioGoogleAds from '../components/CalendarioGoogleAds';
 import { FaWhatsapp } from 'react-icons/fa';
 
 function Reserva() {
-  // useEffect(() => {
-  //   fbq.event('reserva')
-  // }, []);
+  useEffect(() => {
+    fbq.event('reserva')
+  }, []);
 
 
 

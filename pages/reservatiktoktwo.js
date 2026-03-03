@@ -15,11 +15,17 @@ import ModalAll from '../components/ModalAll';
 import CalendarioTiktok from '../components/CalendarioTiktok';
 import QuickInfo5 from '../components/QuickInfo5';
 import NavBar from '../components/NavBarEs/NavBarEs';
+import useCalendlyTracking from '../lib/useCalendlyTracking';
 
 function ReservaTiktok() {
-  // useEffect(() => {
-  //   fbq.event('reserva')
-  // }, []);
+  useCalendlyTracking('tiktok', 'general');
+
+  useEffect(() => {
+    fbq.event('ViewContent', {
+      content_name: 'Pagina Reserva TikTok Two',
+      content_category: 'landing_tiktok',
+    });
+  }, []);
 
   const opts = {
     height: '350',

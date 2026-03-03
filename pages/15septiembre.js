@@ -21,9 +21,9 @@ import MySwiper from '../components/Swiper15septiembre';
 import CalendarioGoogleAds from '../components/CalendarioGoogleAds';
 
 function Septiembre() {
-  // useEffect(() => {
-  //   fbq.event('reserva')
-  // }, []);
+  useEffect(() => {
+    fbq.event('reserva')
+  }, []);
 
   const opts = {
     height: '350',

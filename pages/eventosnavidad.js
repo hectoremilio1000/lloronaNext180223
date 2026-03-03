@@ -55,9 +55,9 @@ function Reserva() {
       price: 'Costo: $699 por persona',
     },
   ];
-  // useEffect(() => {
-  //   fbq.event('reserva')
-  // }, []);
+  useEffect(() => {
+    fbq.event('reserva')
+  }, []);
 
   const opts = {
     height: '350',

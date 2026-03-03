@@ -18,11 +18,19 @@ import QuickInfo5 from '../components/QuickInfo5';
 import NavBar from '../components/NavBarEs/NavBarEs';
 import CalendarioTiktok from '../components/CalendarioTiktok';
 import CalendarioFestejoFacebook from '../components/CalendarioFestejoFacebook';
+import useCalendlyTracking from '../lib/useCalendlyTracking';
 
 function ReservaFacebook() {
-  // useEffect(() => {
-  //   fbq.event('reserva')
-  // }, []);
+  // Dispara conversión SOLO cuando completan la reserva en Calendly
+  useCalendlyTracking('facebook', 'cumple');
+
+  useEffect(() => {
+    // ViewContent: vieron la página (NO es conversión)
+    fbq.event('ViewContent', {
+      content_name: 'Pagina Reserva Facebook',
+      content_category: 'landing_facebook',
+    });
+  }, []);
 
   const opts = {
     height: '350',

@@ -14,11 +14,17 @@ import { InlineWidget } from 'react-calendly';
 import ModalAll from '../components/ModalAll';
 import NavBarWhite from '../components/NavbarWhite';
 import CalendarioTiktokTree from '../components/CalendarioTiktokTree';
+import useCalendlyTracking from '../lib/useCalendlyTracking';
 
 function ReservaTiktokTree() {
-  // useEffect(() => {
-  //   fbq.event('reserva')
-  // }, []);
+  useCalendlyTracking('tiktok', 'general');
+
+  useEffect(() => {
+    fbq.event('ViewContent', {
+      content_name: 'Pagina Reserva TikTok Tree',
+      content_category: 'landing_tiktok',
+    });
+  }, []);
 
   const opts = {
     height: '350',

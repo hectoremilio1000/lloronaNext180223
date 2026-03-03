@@ -16,11 +16,17 @@ import NavBarWhite from '../components/NavbarWhite';
 import CalendarioTiktokTree from '../components/CalendarioTiktokTree';
 import QuickInfo5 from '../components/QuickInfo5';
 import CalendarioFoodie from '../components/CalendarioFoodie';
+import useCalendlyTracking from '../lib/useCalendlyTracking';
 
 function FoodieLlorona() {
-  // useEffect(() => {
-  //   fbq.event('reserva')
-  // }, []);
+  useCalendlyTracking('tiktok', 'foodie');
+
+  useEffect(() => {
+    fbq.event('ViewContent', {
+      content_name: 'Pagina Foodie Llorona',
+      content_category: 'landing_tiktok',
+    });
+  }, []);
 
   const opts = {
     height: '350',

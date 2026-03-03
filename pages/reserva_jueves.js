@@ -16,11 +16,17 @@ import ModalAll from '../components/ModalAll';
 import NavBar from '../components/NavBarEs/NavBarEs';
 import QuickInfo5 from '../components/QuickInfo5';
 import Slider from '../components/Sliders/Slider';
+import useCalendlyTracking from '../lib/useCalendlyTracking';
 
 function Reserva() {
-  // useEffect(() => {
-  //   fbq.event('reserva')
-  // }, []);
+  useCalendlyTracking('organic', 'general');
+
+  useEffect(() => {
+    fbq.event('ViewContent', {
+      content_name: 'Pagina Reserva Jueves',
+      content_category: 'landing_organic',
+    });
+  }, []);
 
   const opts = {
     height: '350',

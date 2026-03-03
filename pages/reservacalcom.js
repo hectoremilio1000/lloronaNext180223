@@ -19,9 +19,9 @@ import Slider from '../components/Sliders/Slider';
 import Cal, { getCalApi } from '@calcom/embed-react';
 
 function Reserva() {
-  // useEffect(() => {
-  //   fbq.event('reserva')
-  // }, []);
+  useEffect(() => {
+    fbq.event('reserva')
+  }, []);
 
   const opts = {
     height: '350',

@@ -18,11 +18,17 @@ import QuickInfo5 from '../components/QuickInfo5';
 import Slider from '../components/Sliders/Slider';
 import { useRouter } from 'next/router';
 import LoopVideo from '../components/LoopVideo';
+import useCalendlyTracking from '../lib/useCalendlyTracking';
 
 function Reserva() {
-  // useEffect(() => {
-  //   fbq.event('reserva_domingo')
-  // }, []);
+  useCalendlyTracking('organic', 'cumple');
+
+  useEffect(() => {
+    fbq.event('ViewContent', {
+      content_name: 'Pagina Reserva Cumple Domingo',
+      content_category: 'landing_organic',
+    });
+  }, []);
 
   const opts = {
     height: '350',

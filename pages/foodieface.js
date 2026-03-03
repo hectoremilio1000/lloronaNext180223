@@ -16,8 +16,18 @@ import NavBarWhite from '../components/NavbarWhite';
 import QuickInfo5 from '../components/QuickInfo5';
 import NavBar from '../components/NavBarEs/NavBarEs';
 import CalendarioFoodieFacebook from '../components/CalendarioFoodieFacebook';
+import useCalendlyTracking from '../lib/useCalendlyTracking';
 
 function Foodieface() {
+  useCalendlyTracking('facebook', 'foodie');
+
+  useEffect(() => {
+    fbq.event('ViewContent', {
+      content_name: 'Pagina Foodie Facebook',
+      content_category: 'landing_facebook',
+    });
+  }, []);
+
   const opts = {
     height: '350',
     width: '300',

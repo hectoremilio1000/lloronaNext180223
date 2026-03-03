@@ -16,11 +16,17 @@ import QuickInfo5 from '../components/QuickInfo5';
 import QuickInfo6 from '../components/QuickInfo6';
 import CalendarioFoodie from '../components/CalendarioFoodie';
 import CalendarioGoogleAds from '../components/CalendarioGoogleAds';
+import useCalendlyTracking from '../lib/useCalendlyTracking';
 
 function Cita() {
-  // useEffect(() => {
-  //   fbq.event('reserva')
-  // }, []);
+  useCalendlyTracking('organic', 'cita');
+
+  useEffect(() => {
+    fbq.event('ViewContent', {
+      content_name: 'Pagina Cita',
+      content_category: 'landing_organic',
+    });
+  }, []);
 
   const opts = {
     height: '350',

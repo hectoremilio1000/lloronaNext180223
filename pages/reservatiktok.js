@@ -16,11 +16,17 @@ import CalendarioTiktok from '../components/CalendarioTiktok';
 import QuickInfo5 from '../components/QuickInfo5';
 import QuickInfo6 from '../components/QuickInfo6';
 import NavBar from '../components/NavBarEs/NavBarEs';
+import useCalendlyTracking from '../lib/useCalendlyTracking';
 
 function ReservaTiktok() {
-  // useEffect(() => {
-  //   fbq.event('reserva')
-  // }, []);
+  useCalendlyTracking('tiktok', 'general');
+
+  useEffect(() => {
+    fbq.event('ViewContent', {
+      content_name: 'Pagina Reserva TikTok',
+      content_category: 'landing_tiktok',
+    });
+  }, []);
 
   const opts = {
     height: '350',

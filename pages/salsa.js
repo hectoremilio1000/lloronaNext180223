@@ -21,9 +21,9 @@ import MySwiper from '../components/Swiper4';
 import CalendarioGoogleAds from '../components/CalendarioGoogleAds';
 
 function Reserva() {
-  // useEffect(() => {
-  //   fbq.event('reserva')
-  // }, []);
+  useEffect(() => {
+    fbq.event('reserva')
+  }, []);
 
   const opts = {
     height: '350',

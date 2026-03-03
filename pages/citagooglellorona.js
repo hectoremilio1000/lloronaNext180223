@@ -18,11 +18,17 @@ import QuickInfo5 from '../components/QuickInfo5';
 import QuickInfo6 from '../components/QuickInfo6';
 import CalendarioFoodie from '../components/CalendarioFoodie';
 import CalendarioGoogleAds from '../components/CalendarioGoogleAds';
+import useCalendlyTracking from '../lib/useCalendlyTracking';
 
 function CitaGoogleLlorona() {
-  // useEffect(() => {
-  //   fbq.event('reserva')
-  // }, []);
+  useCalendlyTracking('google', 'cita');
+
+  useEffect(() => {
+    fbq.event('ViewContent', {
+      content_name: 'Pagina Cita Google Llorona',
+      content_category: 'landing_google',
+    });
+  }, []);
 
   const opts = {
     height: '350',
