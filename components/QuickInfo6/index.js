@@ -22,8 +22,7 @@ function QuickInfo6({ idioma }) {
       date: '2024-03-20',
     },
     {
-      photo:
-        'https://www.att.com.mx/dw/image/v2/BJKW_PRD/on/demandware.static/-/Sites-att-Library/default/dw148ea01a/images/migration/entretenimiento/DondeIR.jpeg',
+      photo: '/images/logo-dondeir.png',
       rating: 5,
       nombre: 'Donde ir',
       url: 'https://www.dondeir.com/restaurante/la-llorona-restaurante-cantina-grill-en-condesa/14684/',
@@ -68,8 +67,7 @@ function QuickInfo6({ idioma }) {
       date: '2024-03-20',
     },
     {
-      photo:
-        'https://www.att.com.mx/dw/image/v2/BJKW_PRD/on/demandware.static/-/Sites-att-Library/default/dw148ea01a/images/migration/entretenimiento/DondeIR.jpeg',
+      photo: '/images/logo-dondeir.png',
       rating: 5,
       nombre: 'Donde ir',
       url: 'https://www.dondeir.com/restaurante/la-llorona-restaurante-cantina-grill-en-condesa/14684/',

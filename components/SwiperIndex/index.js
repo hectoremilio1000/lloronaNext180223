@@ -23,7 +23,7 @@ const MySwiper = () => {
       <SwiperSlide>
         <div
           style={{
-            backgroundImage: 'url(/images/banner/posteo_chileC.jpg)',
+            backgroundImage: 'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/cantina%2Bllorona%2Btaco.jpg)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center center',
@@ -131,21 +131,13 @@ const MySwiper = () => {
       <SwiperSlide>
         <div
           style={{
-            backgroundImage: 'url(images/pan_muerto.jpg)',
+            backgroundImage: 'url(https://imagenesrutalab.s3.amazonaws.com/llorona/tacos/IMG_8757.jpg)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center center',
           }}
         >
           {' '}
-          {/* <div className="absolute inset-0 flex items-center justify-center">
-            <Link
-              href={"/reserva"}
-              className="inline-block px-4 py-3 rounded-md text-green-900 font-bold bg-[#3eeb91] text-xl m:text-2xl"
-            >
-              Reserva Ahora
-            </Link>
-          </div> */}
         </div>
       </SwiperSlide>
 

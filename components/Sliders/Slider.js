@@ -63,15 +63,14 @@ const Slider = () => {
                 <div className="w-full">
                   <img
                     className="rounded-lg border-2 border-white w-full h-[300px] object-center object-cover"
-                    src="https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/top-view-baked-pan-de-muerto1.jpg
-                    "
-                    alt=""
+                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/cantina%2Bllorona%2Btaco.jpg"
+                    alt="Tacos de la Llorona Cantina"
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
-                    Pan de muerto
+                    Tacos de la casa
                   </h1>
                   <p className="text-xs md:text-xl text-white">
-                    Con helado negro{' '}
+                    Tortilla de maíz nixtamalizado{' '}
                   </p>
                 </div>
               </SwiperSlide>
@@ -79,15 +78,14 @@ const Slider = () => {
                 <div className="w-full">
                   <img
                     className="rounded-lg border-2 border-white w-full h-[300px] object-center object-cover"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/15septiembre/chileennogadamexicolloronacantina.jpg
-                    "
-                    alt=""
+                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/carne/aguachile%2Bcantina%2Bllorona%2Bribeye%2Bdelicioso.jpg"
+                    alt="Aguachile de ribeye Cantina La Llorona"
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
-                    Chile en nogada
+                    Aguachile de ribeye
                   </h1>
                   <p className="text-xs md:text-xl text-white">
-                    Premiado en diversos concursos{' '}
+                    Ribeye prime con toque ahumado{' '}
                   </p>
                 </div>
               </SwiperSlide>
@@ -215,15 +213,14 @@ const Slider = () => {
                 <div className="w-full">
                   <img
                     className="rounded-lg border-2 border-white w-full h-[300px] object-center object-cover"
-                    src="https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/top-view-baked-pan-de-muerto1.jpg
-                "
-                    alt=""
+                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/cantina%2Bllorona%2Btaco.jpg"
+                    alt="Tacos at La Llorona Cantina"
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
-                    Day of the Dead Bread
+                    House Tacos
                   </h1>
                   <p className="text-xs md:text-xl text-white">
-                    With black ice cream{' '}
+                    Nixtamal heirloom corn tortilla{' '}
                   </p>
                 </div>
               </SwiperSlide>
