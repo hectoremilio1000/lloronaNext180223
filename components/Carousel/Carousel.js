@@ -20,6 +20,7 @@ const TestimonialCard = ({ testimonial }) => {
         className="h-32 w-32 md:h-30 md:w-30 rounded-full object-cover" // Tamaños diferentes para móvil (h-32 w-32) y escritorio (md:h-48 md:w-48)
         src={photo}
         alt="Client photo"
+        referrerPolicy="no-referrer"
       />
       <div className="text-center mt-4">
         {' '}
