@@ -1,32 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { InlineWidget } from 'react-calendly';
 import { useAppContext } from '../context/Context';
-import Head from 'next/head';
 
 function Calendario() {
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://assets.calendly.com/assets/external/widget.js';
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   const { espa } = useAppContext();
   return (
     <div id="reserva">
-      <>
-        <Head>
-          <link
-            href="https://assets.calendly.com/assets/external/widget.css"
-            rel="stylesheet"
-          />
-        </Head>
-      </>
-
       {espa ? (
         <div className="w-full bg-black">
           <div className="w-full rounded bg-[#141414] max-w-[1184px] py-[80px] px-[20px] mx-auto">
@@ -34,11 +13,7 @@ function Calendario() {
               Reserva ya
             </h1>
 
-            <div
-              className="calendly-inline-widget"
-              data-url="https://calendly.com/reservaciones-14/reservaciones-llorona"
-              style={{ minWidth: '320px', height: '650px' }}
-            ></div>
+            <InlineWidget url="https://calendly.com/reservaciones-14/reservaciones-llorona" />
           </div>
         </div>
       ) : (

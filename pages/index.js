@@ -21,6 +21,7 @@ import NavBar from '../components/NavBarEs/NavBarEs';
 import QuickInfo5 from '../components/QuickInfo5';
 import QuickInfo6 from '../components/QuickInfo6';
 import MySwiper from '../components/SwiperIndex';
+import useCalendlyTracking from '../lib/useCalendlyTracking';
 // imagenes
 const image1 =
   'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg';
@@ -40,6 +41,8 @@ const image7 =
 const image8 =
   'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/coctelDeliciosoMEzcal.jpg';
 export default function Home() {
+  useCalendlyTracking('organic', 'general');
+
   const opts = {
     height: '350',
     width: '100%',
@@ -84,19 +87,23 @@ export default function Home() {
     <div>
       {espa ? (
         <Head>
-          <title>La Llorona</title>
+          <title>La Llorona Cantina | Restaurante Mexicano en Roma Condesa CDMX – Música en Vivo y Mezcal</title>
+          <meta
+            name="description"
+            content="Cantina mexicana premium en Roma Condesa, CDMX. Tacos, aguachile, mezcal artesanal y música cubana en vivo. Reserva tu mesa hoy. ¡Piñata cumpleañera los jueves!"
+          />
           <link rel="icon" href="../favicon.ico" />
-          <meta name="of:title" content="Llorona" />
+          <meta name="of:title" content="La Llorona Cantina | Restaurante Mexicano Roma Condesa" />
           <meta
             name="of:description"
-            content="Somos un restaurante mexicano con buen son"
+            content="Cantina mexicana premium en Roma Condesa, CDMX. Tacos, aguachile, mezcal artesanal y música cubana en vivo."
           />
           <meta
             name="og:description"
-            content="Somos un restaurante mexicano con buen son"
+            content="Cantina mexicana premium en Roma Condesa, CDMX. Tacos, aguachile, mezcal artesanal y música cubana en vivo. Reserva tu mesa hoy."
           />
           <meta property="og:url" content="https://lalloronacantina.com/" />
-          <meta name="og:title" content="La Llorona" />
+          <meta name="og:title" content="La Llorona Cantina | Restaurante Mexicano Roma Condesa CDMX" />
           <meta property="og:type" content="La Llorona" />
           <meta
             property="og:image"
