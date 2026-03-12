@@ -1,6 +1,6 @@
-import React from 'react'
-import title from "../Main/title.module.css"
-import card from "../Main/card.module.css"
+import React from 'react';
+import title from '../Main/title.module.css';
+import card from '../Main/card.module.css';
 
 function ProcesoElaboracion() {
   return (
@@ -26,14 +26,10 @@ function ProcesoElaboracion() {
           causa cruda.
         </p>
         <div className="py-3 px-3 row-qh">
-          <p className="sm:text-2xl text-xl text-black">
-            El proceso es:
-            </p>
-          <div className="px-3 row-qh" >
-            
-        
-          <ul className='sm:text-2xl text-xl text-black list-disc' >
-            <li className='list'>
+          <p className="sm:text-2xl text-xl text-black">El proceso es:</p>
+          <div className="px-3 row-qh">
+            <ul className="sm:text-2xl text-xl text-black list-disc">
+              <li className="list">
                 Se escoge el mejor agave silvestre en este caso Jabalí o
                 Tepeztate.
               </li>

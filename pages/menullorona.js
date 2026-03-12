@@ -1,7 +1,11 @@
-import React from 'react'
-import { useState } from "react";
+// /Users/hectoremilio/Proyectos/nextjs/lallorona/lloronaNext180223/pages/menullorona.js
+import React from 'react';
+import { useState } from 'react';
 import ButtonComponent from '../components/ButtonComponent/index';
 import { useAppContext } from '../components/context/Context';
+import Alimentos from './menullorona/Alimentos';
+import Food from './menullorona/menufood';
+import NavBar from '../components/NavBarEs/NavBarEs';
 
 function MenuLlorona() {
   const [english, setEnglish] = useState(false);
@@ -21,20 +25,22 @@ function MenuLlorona() {
 
   return (
     <div>
-      <div className="d-flex subContenedor1Banner banner"
+      <NavBar />
+      <div
+        className="d-flex subContenedor1Banner banner"
         style={{
           backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/llorona/banner/bannerMenu.jpg")`,
-          backgroundSize: "cover",
-          height: "40vh",
-          backgroundPosition: "center",
-          position: "relative"
-        }}>
-
+          backgroundSize: 'cover',
+          height: '40vh',
+          backgroundPosition: 'center',
+          position: 'relative',
+        }}
+      >
         {/* <video autoPlay muted loop src={videoPort} /> */}
 
         <div className="d-flex w-44 sm:w-60 md:w-80 mx-2 title-portada">
           <h3 className=" font-weight-bold proximamente2 text-white">
-            <b>Mexican Experience</b>
+            <b>Menú</b>
           </h3>
 
           {/* <div className="subSubDiv1Banner">
@@ -46,44 +52,44 @@ function MenuLlorona() {
           </div> */}
         </div>
       </div>
-      <div className="mt-2" style={{
-        padding: "2rem 0",
-        width: "90vw",
-        margin: "0 auto"
-      }}>
-        <div>
-          
-          {espa ? <h2 className="text-center font-weight-bold">Menú</h2> :
-            <h2 className="text-center font-weight-bold">Menu</h2>}
-          
+      <div
+        className="mt-2"
+        style={{
+          padding: '2rem 0',
+          width: '90vw',
+          margin: '0 auto',
+        }}
+      >
+        <div className="max-w-[1184px] mx-auto w-full px-[20px]">
           <div className="contenedorLenguaje">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={onEnglish}>English</button>
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={onSpanish}>Español</button>
+            <button
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              onClick={onEnglish}
+            >
+              English
+            </button>
+            <button
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              onClick={onSpanish}
+            >
+              Español
+            </button>
           </div>
         </div>
 
         {spanish && (
-          <div className="contenedorMenu">
-            <ButtonComponent
-              titulo="ALIMENTOS"
-              enlace="/menullorona/Alimentos"
-            />
-            <ButtonComponent
+          <div className="max-w-[1184px] mx-auto w-full px-[20px] py-[40px]">
+            <Alimentos />
+            {/* <ButtonComponent
               titulo="BEBIDAS"
               enlace="/menullorona/Bebidas"
-            />
-            <ButtonComponent
-              titulo="ESPECIAL"
-              enlace="/menullorona/Cantinero"
-            />
+            /> */}
           </div>
         )}
 
         {english && (
-          <div className="contenedorMenu">
-            <ButtonComponent titulo="FOOD" enlace="/menullorona/menufood" />
-            <ButtonComponent titulo="DRINKS & BEERS" enlace="/menullorona/drinks" />
-            <ButtonComponent titulo="SPECIAL" enlace="/menullorona/special" />
+          <div className="max-w-[1184px] mx-auto w-full px-[20px] py-[40px]">
+            <Food />
           </div>
         )}
       </div>
@@ -91,4 +97,4 @@ function MenuLlorona() {
   );
 }
 
-export default MenuLlorona
+export default MenuLlorona;

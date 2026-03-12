@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 function FooterEn() {
-  return (
-    <div>FooterEn</div>
-  )
+  return <div>FooterEn</div>;
 }
 
-export default FooterEn
+export default FooterEn;

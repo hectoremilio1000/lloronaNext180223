@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-import title from "../Main/title.module.css"
+import title from '../Main/title.module.css';
 import TitlebarImageListFranquicias from '../TitlebarImageListFranquicias/index';
 
 function FranquiciaInfo() {
@@ -11,9 +11,7 @@ function FranquiciaInfo() {
       </div>
       <div>
         <h4 className={title.fontTitleSub}>Te garantizamos</h4>
-        <h2 className={title.fontTitleline}>
-          Retornos de Inversión de 1 año
-        </h2>
+        <h2 className={title.fontTitleline}>Retornos de Inversión de 1 año</h2>
         <div className="linea"></div>
       </div>
 
@@ -26,47 +24,43 @@ function FranquiciaInfo() {
         <p className="text-center sm:text-2xl text-xl text-black">
           Con un modelo único de experiencias gastronómicas que incluyen:
         </p>
-        <div className='px-6'>
-          
-        <ul className='sm:text-2xl text-xl text-black list-disc'>
-          <li className='list'>
-            Mixología y Gastronomía única con un recetario mejorado
-            continúamente y con procesos claros.
-          </li>
-          <li className='list'>
-            Producción y Venta de nuestro propio <b>Mezcal Artesanal</b>{" "}
-            producido en Santa Catarina Minas, Oaxaca.
-          </li>
-          <li className='list'>
-            Diseño y Venta de <b>Playeras y Sudaderas</b> realizado por
-            grandes artistas mexicanos contemporáneos.
-          </li>
-          <li className='list'>
-            Un modelo de crecimiento acelerado en ventas (growth hacking) a
-            través de la
-            <b> viralidad de nuestro contenido</b> en redes sociales.
-          </li>
-          <li className='list'>
-            <b>Procesos y manuales exactos </b>que han sido elaborados con
-            grandes mixólogos, chefs y operadores nacionales e
-            internacionales, y plasmados en documentos fáciles de leer y
-            seguir para nuestro personal.
-          </li>
-          <li className='list'>
-            <b>Software</b> programado especialmente para nuestra empresa para
-            Administrar los Inventarios, así como acceder a las Ventas, Costos
-            y Utilidades en tiempo real, permitiéndonos que la información sea
-            muy transparente en todo momento, y que nos ayude a analizar y
-            exponenciar nuestras capacidades como Modelo de Negocio.
-          </li>
+        <div className="px-6">
+          <ul className="sm:text-2xl text-xl text-black list-disc">
+            <li className="list">
+              Mixología y Gastronomía única con un recetario mejorado
+              continúamente y con procesos claros.
+            </li>
+            <li className="list">
+              Producción y Venta de nuestro propio <b>Mezcal Artesanal</b>{' '}
+              producido en Santa Catarina Minas, Oaxaca.
+            </li>
+            <li className="list">
+              Diseño y Venta de <b>Playeras y Sudaderas</b> realizado por
+              grandes artistas mexicanos contemporáneos.
+            </li>
+            <li className="list">
+              Un modelo de crecimiento acelerado en ventas (growth hacking) a
+              través de la
+              <b> viralidad de nuestro contenido</b> en redes sociales.
+            </li>
+            <li className="list">
+              <b>Procesos y manuales exactos </b>que han sido elaborados con
+              grandes mixólogos, chefs y operadores nacionales e
+              internacionales, y plasmados en documentos fáciles de leer y
+              seguir para nuestro personal.
+            </li>
+            <li className="list">
+              <b>Software</b> programado especialmente para nuestra empresa para
+              Administrar los Inventarios, así como acceder a las Ventas, Costos
+              y Utilidades en tiempo real, permitiéndonos que la información sea
+              muy transparente en todo momento, y que nos ayude a analizar y
+              exponenciar nuestras capacidades como Modelo de Negocio.
+            </li>
           </ul>
-          </div>
-        <p className="sm:text-2xl text-xl text-black"> 
-        Siendo esto, así como la experiencia del grupo restaurantero plasmada
+        </div>
+        <p className="sm:text-2xl text-xl text-black">
+          Siendo esto, así como la experiencia del grupo restaurantero plasmada
           en varios modelos de negocio exitósos lo que nos permite tener un
-   
-       
-     
           <b> retorno de inversión de 1 año.</b>
         </p>
 
@@ -82,9 +76,9 @@ function FranquiciaInfo() {
         <p className="sm:text-2xl text-xl text-black">
           Espacio requerido: 200 a 300 m2
         </p>
-    <p className="sm:text-2xl text-xl text-black">
+        <p className="sm:text-2xl text-xl text-black">
           Monto de la inversión: 4 a 6 mdp
-          </p>
+        </p>
         <p className="sm:text-2xl text-xl text-black">
           Nuestro concepto único de mixología espectacular y recetas únicas
           gastrónomicas nos han permitido posicionarnos como un ícono en cuanto
@@ -94,7 +88,6 @@ function FranquiciaInfo() {
           concepto de SpeakEasy que explota las recetas de la mixología en un
           ambiente que contrasta lo moderno con lo tradicional.
         </p>
-
 
         <h2 className={title.fontTitlemain}>SpeakEasy</h2>
         <p className="sm:text-2xl text-xl text-black">

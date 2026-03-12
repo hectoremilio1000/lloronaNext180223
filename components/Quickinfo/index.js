@@ -1,223 +1,187 @@
-import React from 'react'
-import title from "../Main/title.module.css"
-import card from "../Main/card.module.css"
+import React from 'react';
+import title from '../Main/title.module.css';
+import card from '../Main/card.module.css';
 import Link from 'next/link';
-import image1 from '../../public/images/home/quickinfo1/mexican-shredded-pork-recipes-900x900 (1).jpg'
 
-import image2 from '../../public/images/home/quickinfo1/aguachileVerde (1).jpg'
-import image3 from '../../public/images/home/quickinfo1/HAMBURGUESA_jack_suizo (2).jpeg'
-import image4 from '../../public/images/home/quickinfo1/IMG_8064.jpg'
 import AppContextProvider, { useAppContext } from '../context/Context';
+import * as fbq from '../../lib/fpixel';
 
+//imagenes
 
+const image1 =
+  'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/llorona%2Bson%2Bgrupo%2Bcuano%2Bcantina%2Bweb.jpg';
+
+const image2 =
+  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/carne/aguachile%2Bcantina%2Bllorona%2Bribeye%2Bdelicioso.jpg';
+
+const image3 =
+  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/postres+ricos+deliciosos.JPG';
+
+const image4 =
+  'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/amigastomandoCantinaLlorona.JPG';
+
+const image5 =
+  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/cantina%2Bllorona%2Btaco.jpg';
 
 function QuickInfo() {
+  const handleClick = () => {
+    fbq.event('reserva');
+  };
 
   const { ingles, espa } = useAppContext();
 
-
   return (
     <>
-      {espa ? <div className="container-llorona px-2">
-        <div>
-          <h1 className={title.fontTitlemain}>La Llorona Xperience</h1>
-        </div>
-        <div className='row-qh'>
-          <h4 className={title.fontTitleSub}>¿Cómo ser un</h4>
-          <h2 className={title.fontTitleline}>Mexicano?</h2>
-          <div className="linea"></div>
-        </div>
+      {espa ? (
+        <div className="w-full max-w-[1184px] py-[40px] px-[20px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div className="w-full flex flex-col justify-center">
+            {/* <h2 className="font-bold text-2xl">No solo somos</h2> */}
+            <h1 className="text-2xl md:text-5xl font-bold text-center md:text-left">
+              Bienvenidos a Cantina la Llorona
+            </h1>
 
+            {/* <div className="h-2 bg-white w-full rounded"></div> */}
 
-        <div className="py-3 px-3 row-qh">
-          <p className="text-center sm:text-2xl text-xl text-black">
-            Atrévete a probar una experiencia mexicana diferente. Somos un restaurante con una propuesta inovadora que fusiona <b>la cocina urbana contemporánea con la vida de la cantina Mexicana</b>. Prueba las hamburguesas más premiadas de todo México, en especial la galardonada <b>Miss Jack</b> que tiene una torre de aros de cebolla y un fondue de Quesos. Toma las pocimas (mixología) de la llorona, preparadas con <b>Pulque, Tepache o Mezcal</b>, y deleítate con nuestra exquisita selección de
-            <b> Cervezas Artesanales Mexicanas</b>.
-          </p>
-        </div>
-
-
-
-
-        <div
-          style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "20px" }}
-        >
-          <Link href="/menullorona/Alimentos">
-            <div className={card.cardBox}>
-              <img
-                className="imagenAbajoTexto1Home"
-                src="https://imagenesrutalab.s3.amazonaws.com/llorona/HAMBURGUESA_jack_suizo.JPG"
-                alt="Tacos deliciosos de Cochinita Pibil"
-              />
-              <p className="textoFotosHome text-black">
-                La más galardonada <br />
-                <b> Oaxaca Burguer</b>
-              </p>
-            </div>
-          </Link>
-          <Link href="/menullorona/Alimentos">
-            <div>
-              <img
-                className="imagenAbajoTexto1Home"
-                src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/FotosBurguer/IMG_2177.jpg"
-                alt="Las hamburguesas más deliciosas CDMX LLORONA"
-              />
-              <p className="textoFotosHome text-black">Hamburguesas deliciosas = <br /><b>Clientes felices</b></p>
-            </div>
-
-
-
-          </Link>
-          <Link href="/menullorona/Alimentos">
-            <div className={card.cardBox}>
-              <img
-                className="imagenAbajoTexto1Home"
-                src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/FotosBurguer/IMG_2178.jpg"
-                alt="Las hamburguesas más ricas"
-              />
-              <p className="textoFotosHome text-black">
-                Las más ricas hamburguesas <br />
-                <b>de CDMX</b>
-              </p>
-            </div>
-          </Link>
-
-          <Link href="/menullorona/Bebidas/Artesanal">
-            <div className={card.cardBox}>
-              <img
-                className="imagenAbajoTexto1Home"
-                src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/FotosBurguer/IMG_2179.jpg"
-                alt="Pierde Almas con Mezcal"
-              />
-              <p className="textoFotosHome text-black">
-                Hamburguesas Ricas hacen<b>
-                  <br />hombres sonrientes
-                </b>
-
-
-              </p>
-            </div>
-          </Link>
-        </div>
-
-        <div style={{ display: "flex", justifyContent: "center" }}>
-          <Link href="reserva">
-            <button type="button" className="buttonComponente">
-              ¡Reserva ya!
-            </button>
-          </Link>
-        </div>
-      </div> : 
-      
-        
-        <div className="container-llorona px-2">
-          <div>
-            <h1 className={title.fontTitlemain}>Llorona Xperience</h1>
-          </div>
-          <div className='row-qh'>
-            <h4 className={title.fontTitleSub}>
-              How to be a</h4>
-            <h2 className={title.fontTitleline}>Mexican?</h2>
-            <div className="linea"></div>
-          </div>
-
-
-          <div className="py-3 px-3 row-qh">
-            <p className="text-center sm:text-2xl text-xl text-black">
-              Experience the true spirit of Mexico at La Llorona Restaurant! To immerse yourself in the authentic Mexican culture, you must come and savor our exquisite dishes. Taste our mouth-watering <b>Suadero tacos</b>, a delectable treasure from Mexico City, or indulge in traditional Mexican <b>Pulque, Mezcal or Tepache </b>. And if you're looking for a unique twist on a classic guacamole, try our special <b>Guacamole with grasshoppers and our Oaxacan peanuts, brought to you straight from Oaxaca</b>. Don't miss the chance to awaken your senses with the vibrant flavors of Mexico!
+            <p className="text-start sm:text-2xl text-xl text-black ext-center md:text-left">
+              Menú inspirado en <b>Cantinas Mexicanas</b>. Es honesto pero con
+              jiribilla para acompañar una buena mixología y recordarnos al
+              méxico que nos hace vibrar.
             </p>
           </div>
 
+          <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
+            <div className="">
+              <Link href="/menullorona/Alimentos">
+                <div className="w-full">
+                  <img
+                    className="h-[280px] object-contain w-full rounded"
+                    src={image1}
+                    alt="cocteles Llorona"
+                  />
+                </div>
+              </Link>
+              <Link href="/menullorona/Alimentos" className="mt-4 block">
+                <div>
+                  <img
+                    className="h-[220px] object-cover w-full rounded"
+                    src={image2}
+                    alt="cocteles y tacos"
+                  />
+                </div>
+              </Link>
+            </div>
+            <div className="w-full grid grid-cols-1">
+              <Link href="/menullorona/Alimentos" className="mt-12">
+                <div>
+                  <img
+                    className="h-[220px] object-cover w-full rounded"
+                    src={image3}
+                    alt="tacos y cocteles"
+                  />
+                </div>
+              </Link>
 
-
-
-          <div
-            style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "20px" }}
-          >
-            <Link href="/menullorona/Alimentos">
-              <div className={card.cardBox}>
-                <img
-                  className="imagenAbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/receta-de-guacamole-con-chapulines.jpg"
-                  alt="guacamole con chapulines"
-                />
-                <p className="textoFotosHome text-black">
-                  Guacamole with <br />
-                  <b> Grasshoppers</b>
-                </p>
-              </div>
-            </Link>
-            <Link href="/menullorona/Alimentos">
-              <div>
-                <img
-                  className="imagenAbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/tacosEstiloBaja.png"
-                  alt="Baja California style shrimp tacos"
-                />
-                <p className="textoFotosHome text-black">Baja California style <br /><b>shrimp Tacos</b></p>
-              </div>
-
-
-
-            </Link>
-            <Link href="/menullorona/Alimentos">
-              <div className={card.cardBox}>
-                <img
-                  className="imagenAbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/tacosdesuadero2.jpg"
-                  alt="Tacos suadero"
-                />
-                <p className="textoFotosHome text-black">
-                  Tacos Suadero = <br />
-                  <b>Happy Clients</b>
-                </p>
-              </div>
-            </Link>
-
-            <Link href="/menullorona/Bebidas/Artesanal">
-              <div className={card.cardBox}>
-                <img
-                  className="imagenAbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/hamburguesaLlorona.jpg"
-                  alt="Llorona Burger with a jalapeño"
-                />
-                <p className="textoFotosHome text-black">
-                  Llorona Burger<b>
-                    <br />with a jalapeño
-                  </b>
-
-                </p>
-              </div>
-            </Link>
-            <Link href="/menullorona/Bebidas/Artesanal">
-              <div className={card.cardBox}>
-                <img
-                  className="imagenAbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/hawaiian-pizza.jpg"
-                  alt="Pizza hawaiana with sesame seeds"
-                />
-                <p className="textoFotosHome text-black">
-                  Pizza hawaiana<b>
-                    <br />with sesame seeds
-                  </b>
-
-                </p>
-              </div>
-            </Link>
+              <Link
+                href="/menullorona/Bebidas/Artesanal"
+                className="mt-4 block"
+              >
+                <div>
+                  <img
+                    className="h-[280px] object-contain w-full rounded filter"
+                    src={image4}
+                    alt="cocteles Llorona"
+                  />
+                </div>
+              </Link>
+            </div>
           </div>
 
-          <div style={{ display: "flex", justifyContent: "center" }}>
-            <Link href="reserva">
-              <button type="button" className="buttonComponente">
-                Book now!
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <Link href="/reserva">
+              <button className="buttonComponente" onClick={handleClick}>
+                ¡Reserva ya!
               </button>
             </Link>
           </div>
-        </div>}
-    
-    
+        </div>
+      ) : (
+        <div className="w-full max-w-[1184px] py-[80px] px-[20px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div className="w-full flex flex-col justify-center">
+            {/* <h2 className="font-bold text-2xl">No solo somos</h2> */}
+            <h1 className="text-2xl md:text-5xl font-bold">
+              Welcome to Cantina La Llorona
+            </h1>
+
+            {/* <div className="h-2 bg-white w-full rounded"></div> */}
+
+            <p className="text-start sm:text-2xl text-xl text-black">
+              A combination of tradition and modernity in a cozy space. Located
+              in front of Parque España in the heart of Roma Condesa, we offer a
+              <b> unique sensory journey</b>, making each bite and each sip an
+              unforgettable symphony of flavors
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
+            <div className="">
+              <Link href="/menullorona/Alimentos">
+                <div className="w-full">
+                  <img
+                    className="w-full h-[280px]  object-cover rounded"
+                    src={image1}
+                    alt="Tacos y cocteles"
+                  />
+                </div>
+              </Link>
+              <Link href="/menullorona/Alimentos" className="mt-4 block">
+                <div>
+                  <img
+                    className="h-[220px] object-cover w-full rounded"
+                    src={image5}
+                    alt="cocteles y tacos"
+                  />
+                </div>
+              </Link>
+            </div>
+            <div className="w-full grid grid-cols-1">
+              <Link href="/menullorona/Alimentos" className="mt-12">
+                <div>
+                  <img
+                    className="h-[220px] object-cover w-full rounded"
+                    src={image3}
+                    alt="tacos y cocteles"
+                  />
+                </div>
+              </Link>
+
+              <Link
+                href="/menullorona/Bebidas/Artesanal"
+                className="mt-4 block"
+              >
+                <div>
+                  <img
+                    className="h-[280px] object-cover w-full rounded"
+                    src={image4}
+                    alt="tacos y cocteles"
+                  />
+                </div>
+              </Link>
+            </div>
+          </div>
+
+          <div
+            style={{ display: 'flex', justifyContent: 'center', marginTop: 30 }}
+          >
+            <Link href="/reserva">
+              <button className="buttonComponente" onClick={handleClick}>
+                ¡Book now!
+              </button>
+            </Link>
+          </div>
+        </div>
+      )}
     </>
   );
 }
 
-export default QuickInfo
+export default QuickInfo;
