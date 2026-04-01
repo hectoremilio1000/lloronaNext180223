@@ -109,7 +109,7 @@ function NavBar({ onLanguageChange }) {
                 </li>
                 <li key="1">
                   <Link
-                    href="/reserva"
+                    href="/jueves_mariachi"
                     className="nav-link hover:text-emerald-500"
                   >
                     Book Now
@@ -157,7 +157,7 @@ function NavBar({ onLanguageChange }) {
                 </li>
                 <li key="1">
                   <Link
-                    href="/reserva"
+                    href="/jueves_mariachi"
                     className="nav-link hover:text-emerald-500"
                   >
                     Reserva
