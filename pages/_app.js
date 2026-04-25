@@ -15,9 +15,16 @@ import { FB_PIXEL_ID } from '../lib/fpixel';
 import * as gtag from '../lib/gtag';
 import { GA_TRACKING_ID } from '../lib/gtag';
 import { TIXTOK_PIXEL_ID } from '../lib/tikp';
+import { initTracker, trackPageview } from '../lib/tracker';
 
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
+
+  // Initialize the first-party tracker once on mount.
+  // NEXT_PUBLIC_TRACKING_API_URL controls where touchpoints are sent.
+  useEffect(() => {
+    initTracker({ site: 'llorona', debug: process.env.NODE_ENV !== 'production' });
+  }, []);
 
   useEffect(() => {
     // Track page views on route change
@@ -27,6 +34,7 @@ export default function MyApp({ Component, pageProps }) {
       if (window.ttq) {
         window.ttq.page();
       }
+      trackPageview({ event_name: 'page_view', landing_page: url });
     };
 
     router.events.on('routeChangeComplete', handleRouteChange);
