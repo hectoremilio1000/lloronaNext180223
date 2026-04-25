@@ -3,7 +3,7 @@ import { InlineWidget } from 'react-calendly';
 import { useAppContext } from '../context/Context';
 import { buildCalendlyUrl } from '../../lib/tracker';
 
-const BASE_URL = 'https://calendly.com/reservaciones-14/reservaciones-prueba-jampier?hide_gdpr_banner=1';
+const BASE_URL = 'https://calendly.com/reservaciones-14/reservaciones-llorona?hide_gdpr_banner=1';
 
 function CalendarioMariachi() {
   const { espa } = useAppContext();
