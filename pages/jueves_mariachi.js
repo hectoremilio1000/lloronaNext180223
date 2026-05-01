@@ -6,15 +6,12 @@ import Script from 'next/script';
 import * as fbq from '../lib/fpixel';
 import { FB_PIXEL_ID } from '../lib/fpixel';
 
-import CalendarioMariachi from '../components/CalendarioMariachi';
+import BookingWidget from '../components/BookingWidget';
 import QuickInfo5 from '../components/QuickInfo5';
 import QuickInfo6 from '../components/QuickInfo6';
 import NavBar from '../components/NavBarEs/NavBarEs';
-import useCalendlyTracking from '../lib/useCalendlyTracking';
 
 function JuevesMariachi() {
-  useCalendlyTracking('organic', 'mariachi');
-
   useEffect(() => {
     fbq.event('ViewContent', {
       content_name: 'Jueves de Mariachi',
@@ -179,7 +176,7 @@ function JuevesMariachi() {
 
                 {/* Columna derecha: Calendario */}
                 <div className="w-full">
-                  <CalendarioMariachi />
+                  <BookingWidget slug="llorona" eventTypeSlug="reservaciones-llorona" />
                 </div>
               </div>
 
@@ -288,7 +285,7 @@ function JuevesMariachi() {
                 </div>
 
                 <div className="w-full">
-                  <CalendarioMariachi />
+                  <BookingWidget slug="llorona" eventTypeSlug="reservaciones-llorona" />
                 </div>
               </div>
 
