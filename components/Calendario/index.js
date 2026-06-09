@@ -1,6 +1,6 @@
 import React from 'react';
-import { InlineWidget } from 'react-calendly';
 import { useAppContext } from '../context/Context';
+import TrackedCalendly from '../TrackedCalendly';
 
 function Calendario() {
   const { espa } = useAppContext();
@@ -13,7 +13,7 @@ function Calendario() {
               Reserva ya
             </h1>
 
-            <InlineWidget url="https://calendly.com/reservaciones-14/reservaciones-llorona" />
+            <TrackedCalendly url="https://calendly.com/reservaciones-14/reservaciones-llorona" />
           </div>
         </div>
       ) : (
@@ -23,7 +23,7 @@ function Calendario() {
               My house is your house, Book now.
             </h1>
 
-            <InlineWidget url="https://calendly.com/reservaciones-14/reservaciones-llorona" />
+            <TrackedCalendly url="https://calendly.com/reservaciones-14/reservaciones-llorona" />
           </div>
         </div>
       )}
