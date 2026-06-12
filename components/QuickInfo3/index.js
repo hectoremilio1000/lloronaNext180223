@@ -81,7 +81,7 @@ function QuickInfo3() {
               <div>
                 <img
                   className="imagen2AbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/ninas4pinata.JPG"
+                  src="/img/cumple/amigas-festejo-bar.webp"
                   alt="Música en vivo"
                 />
                 <p className="textoFotosHome text-black">
@@ -95,7 +95,7 @@ function QuickInfo3() {
               <div>
                 <img
                   className="imagen2AbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/festejo+cantina+llorona+salsa+baile.jpg"
+                  src="/img/salsa/cantante-son-cubano.webp"
                   alt="Baila en grande con tus amigos"
                 />
                 <p className="textoFotosHome text-black">
@@ -108,7 +108,7 @@ function QuickInfo3() {
               <div>
                 <img
                   className="imagen2AbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/niurka+cantina+la+llorona+festejo.jpg"
+                  src="/img/ambiente/entrada-terraza-noche.webp"
                 />
                 <p className="textoFotosHome text-black">
                   Baila y disfruta
@@ -189,7 +189,7 @@ function QuickInfo3() {
               <div>
                 <img
                   className="imagen2AbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/ninas4pinata.JPG"
+                  src="/img/cumple/amigas-festejo-bar.webp"
                   alt="Música en vivo"
                 />
                 <p className="textoFotosHome text-black">
@@ -202,7 +202,7 @@ function QuickInfo3() {
               <div>
                 <img
                   className="imagen2AbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/festejo+cantina+llorona+salsa+baile.jpg"
+                  src="/img/salsa/cantante-son-cubano.webp"
                   alt="Baila en grande con tus amigos"
                 />
                 <p className="textoFotosHome text-black">
@@ -215,7 +215,7 @@ function QuickInfo3() {
               <div>
                 <img
                   className="imagen2AbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/niurka+cantina+la+llorona+festejo.jpg"
+                  src="/img/ambiente/entrada-terraza-noche.webp"
                 />
                 <p className="textoFotosHome text-black">
                   Dance and enjoy with great <br />

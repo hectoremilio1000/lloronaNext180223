@@ -85,12 +85,12 @@ function Recursoshumanos() {
     ? {
         title: 'Únete al mejor equipo',
         imageURL:
-          'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/recursoshumanos/recursos%2Bhumanos%2Bllorona%2Bcantina.jpg',
+          '/img/ambiente/mesa-tacos-domino.webp',
       }
     : {
         title: 'From the sea to your palate',
         imageURL:
-          'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/comida/mariscos.jpg',
+          '/img/platos/tostada-aguachile-aguacate-llorona.webp',
       };
 
   return (

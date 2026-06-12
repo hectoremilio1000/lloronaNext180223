@@ -21,7 +21,7 @@ const HeaderEn = () => {
       <meta property="og:type" content="Llorona" />
       <meta
         property="og:image"
-        content="https://imagenesrutalab.s3.amazonaws.com/llorona/logo/logo_alta_sin_nombre.png"
+        content="/img/logo/logo-llorona-calaca.png"
       />
       <link rel="apple-touch-icon" href="../logo192.png" />
       <link rel="manifest" href="../manifest.json" />

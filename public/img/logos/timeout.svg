@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Time Out">
+  <rect width="200" height="200" rx="14" fill="#E4002B"/>
+  <g fill="#ffffff" font-family="Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text x="100" y="92" font-size="58" letter-spacing="-2">Time</text>
+    <text x="100" y="158" font-size="58" letter-spacing="-2">Out</text>
+  </g>
+</svg>

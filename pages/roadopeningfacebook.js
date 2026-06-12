@@ -31,7 +31,7 @@ function RoadopeningFacebook() {
             <div
               className="d-flex subContenedor1Banner"
               style={{
-                backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/aguacatechicharronrobeye.jpg")`,
+                backgroundImage: `url("/img/platos/ribeye-pure-cantina-llorona.webp")`,
                 backgroundSize: 'cover',
                 height: '80vh',
                 backgroundPosition: 'right center',
@@ -70,7 +70,7 @@ function RoadopeningFacebook() {
               <div class="max-w-sm rounded overflow-hidden shadow-lg">
                 <img
                   className="w-64 h-64 object-cover"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/jorgedumit.jpg"
+                  src="/img/equipo/jorge-dumit.webp"
                   alt="Sunset in the mountains"
                 />{' '}
                 <div class="px-6 py-4">
@@ -83,7 +83,7 @@ function RoadopeningFacebook() {
               <div class="max-w-sm rounded overflow-hidden shadow-lg">
                 <img
                   className="w-64 h-64 object-cover"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/Screenshot+2024-04-11+at+20.20.30.png"
+                  src="/img/ambiente/mesa-tacos-domino.webp"
                   alt="Sunset in the mountains"
                 />{' '}
                 <div class="px-6 py-4">
@@ -101,7 +101,7 @@ function RoadopeningFacebook() {
             <div
               className="d-flex subContenedor1Banner"
               style={{
-                backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/aguacatechicharronrobeye.jpg")`,
+                backgroundImage: `url("/img/platos/ribeye-pure-cantina-llorona.webp")`,
                 backgroundSize: 'cover',
                 height: '80vh',
                 backgroundPosition: 'right center',
@@ -142,7 +142,7 @@ function RoadopeningFacebook() {
                 <div class="max-w-sm rounded overflow-hidden shadow-lg">
                   <img
                     className="w-64 h-64 object-cover"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/jorgedumit.jpg"
+                    src="/img/equipo/jorge-dumit.webp"
                     alt="Sunset in the mountains"
                   />{' '}
                   <div class="px-6 py-4">
@@ -155,7 +155,7 @@ function RoadopeningFacebook() {
                 <div class="max-w-sm rounded overflow-hidden shadow-lg">
                   <img
                     className="w-64 h-64 object-cover"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/Screenshot+2024-04-11+at+20.20.30.png"
+                    src="/img/ambiente/mesa-tacos-domino.webp"
                     alt="Sunset in the mountains"
                   />{' '}
                   <div class="px-6 py-4">

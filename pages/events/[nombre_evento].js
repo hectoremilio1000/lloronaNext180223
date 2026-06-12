@@ -49,19 +49,19 @@ const Evento = ({ nombre_evento }) => {
         },
         images: [
           {
-            url: 'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/terrazaespecialromanceromacondesaamigoscantina.jpg',
+            url: '/img/ambiente/entrada-terraza-noche.webp',
             textImage: 'Diseño espectacular y unico en CDMX',
             alt: 'Diseño espectacular y unico en CDMX',
           },
           {
-            url: 'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/niurka%2Bcantina%2Bla%2Bllorona%2Bfestejo%2Bcantina%2Bllorona.jpg',
+            url: '/img/ambiente/entrada-terraza-noche.webp',
             textImage: 'Restaurante de familia y comida',
             alt: 'Restaurante de familia y comida',
           },
         ],
         bannerImages: [
           {
-            url: 'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg)',
+            url: 'url(/img/ambiente/terraza-noche.webp)',
             title: 'SALSA MAGICA',
             buttonAction: {
               type: 'phone_contact', //tipos: phone_contact, link_external, popup, etc
@@ -93,19 +93,19 @@ const Evento = ({ nombre_evento }) => {
         },
         images: [
           {
-            url: 'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg',
+            url: '/img/ambiente/terraza-noche.webp',
             textImage: 'Diseño espectacular y unico en CDMX',
             alt: 'Diseño espectacular y unico en CDMX',
           },
           {
-            url: 'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/niurka%2Bcantina%2Bla%2Bllorona%2Bfestejo%2Bcantina%2Bllorona.jpg',
+            url: '/img/ambiente/entrada-terraza-noche.webp',
             textImage: 'Restaurante de familia y comida',
             alt: 'Restaurante de familia y comida',
           },
         ],
         bannerImages: [
           {
-            url: 'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg)',
+            url: 'url(/img/ambiente/terraza-noche.webp)',
             title: 'SALSA MAGICA',
             buttonAction: {
               type: 'phone_contact', //tipos: phone_contact, link_external, popup, etc
@@ -137,23 +137,23 @@ const Evento = ({ nombre_evento }) => {
           descripcion:
             'Disfruta la pizza de pera y queso más premiada de roma condesa CDMX en Cantina La Llorona. Sabores únicos y creatividad culinaria. ¡Reserva ahora!',
           image:
-            'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg',
+            '/img/comida/pizza-pera-queso.webp',
         },
         images: [
           {
-            url: 'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg',
+            url: '/img/comida/pizza-pera-queso.webp',
             textImage: 'Prueba la pizza más premiada de México',
             alt: 'Prueba la pizza más premiada de México cdmx roma condesa',
           },
           {
-            url: 'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg',
+            url: '/img/ambiente/terraza-noche.webp',
             textImage: 'Restaurante de familia y comida',
             alt: 'Restaurante con diseño único',
           },
         ],
         bannerImages: [
           {
-            url: 'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg)',
+            url: 'url(/img/comida/pizza-pera-queso.webp)',
             title: 'La pizza más premiada',
             buttonAction: {
               type: 'phone_contact', //tipos: phone_contact, link_external, popup, etc
@@ -191,23 +191,23 @@ const Evento = ({ nombre_evento }) => {
           descripcion:
             'Enjoy the most awarded pear and cheese pizza in Roma Condesa, CDMX at Cantina La Llorona. Unique flavors and culinary creativity. Reserve now!',
           image:
-            'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg',
+            '/img/comida/pizza-pera-queso.webp',
         },
         images: [
           {
-            url: 'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg',
+            url: '/img/comida/pizza-pera-queso.webp',
             textImage: 'Try Mexico’s most awarded pizza',
             alt: 'Try the most awarded pizza in Mexico, CDMX, Roma Condesa',
           },
           {
-            url: 'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg',
+            url: '/img/ambiente/terraza-noche.webp',
             textImage: 'Family restaurant and delicious food',
             alt: 'Restaurant with unique design',
           },
         ],
         bannerImages: [
           {
-            url: 'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg)',
+            url: 'url(/img/comida/pizza-pera-queso.webp)',
             title: 'The Most Awarded Pizza',
             buttonAction: {
               type: 'phone_contact', //tipos: phone_contact, link_external, popup, etc
@@ -246,23 +246,23 @@ const Evento = ({ nombre_evento }) => {
           descripcion:
             'Reserva tus cenas navideñas, de fin de año o cierre de año en Roma Condesa CDMX. Paquetes a la medida con música en vivo y pantallas para mensajes. ¡Reserva ahora!',
           image:
-            'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg',
+            '/img/comida/pizza-pera-queso.webp',
         },
         images: [
           {
-            url: 'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/gruposcubanos1.png',
+            url: '/img/salsa/son-cubano.webp',
             textImage: 'Celebra tu cena navideña a lo grande con grupo en vivo',
             alt: 'Prueba la pizza más premiada de México cdmx roma condesa',
           },
           {
-            url: 'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg',
+            url: '/img/ambiente/terraza-noche.webp',
             textImage: 'Paquetes a la medida para tus cenas',
             alt: 'Restaurante con diseño único',
           },
         ],
         bannerImages: [
           {
-            url: 'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/navidad/fiesta-empresa-mexico-cantina-llorona.jpg)',
+            url: 'url(/img/ambiente/entrada-terraza-noche.webp)',
             title: 'Cenas Navideñas y Fin de Año',
             buttonAction: {
               type: 'phone_contact', //tipos: phone_contact, link_external, popup, etc
@@ -303,23 +303,23 @@ const Evento = ({ nombre_evento }) => {
           descripcion:
             'Enjoy the most awarded pear and cheese pizza in Roma Condesa, CDMX at Cantina La Llorona. Unique flavors and culinary creativity. Reserve now!',
           image:
-            'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg',
+            '/img/comida/pizza-pera-queso.webp',
         },
         images: [
           {
-            url: 'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg',
+            url: '/img/comida/pizza-pera-queso.webp',
             textImage: 'Try Mexico’s most awarded pizza',
             alt: 'Try the most awarded pizza in Mexico, CDMX, Roma Condesa',
           },
           {
-            url: 'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg',
+            url: '/img/ambiente/terraza-noche.webp',
             textImage: 'Family restaurant and delicious food',
             alt: 'Restaurant with unique design',
           },
         ],
         bannerImages: [
           {
-            url: 'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg)',
+            url: 'url(/img/comida/pizza-pera-queso.webp)',
             title: 'The Most Awarded Pizza',
             buttonAction: {
               type: 'phone_contact', //tipos: phone_contact, link_external, popup, etc
@@ -359,23 +359,23 @@ const Evento = ({ nombre_evento }) => {
           description:
             'Prueba la barbacoa de picanha, la quesabirria más deliciosa y el ribeye con cocción perfecta en Roma Condesa. ¡Reserva tu mesa en Cantina La Llorona hoy mismo!',
           image:
-            'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/carne/barbacoa%2Bpican%CC%83a%2Bcantina%2Bllorona%2Bsabor%2Broma%2Bcondesa%2Bcdmx.jpg',
+            '/img/carne/arrachera-cenital.webp',
         },
         images: [
           {
-            url: 'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/carne/aguachile%2Bcantina%2Bllorona%2Bribeye%2Bdelicioso.jpg',
+            url: '/img/carne/arrachera-coctel.webp',
             textImage: 'Disfruta del mejor ribeye con cocción perfecta',
             alt: 'Ribeye cocción perfecta en Cantina La Llorona CDMX',
           },
           {
-            url: 'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/carne/chicharron%2Bpork%2Bbelly%2Bguacamole%2Bcantina%2Bllorona.jpg',
+            url: '/img/platos/plato-fuerte-guacamole-martini-mazapan.webp',
             textImage: 'Prueba la quesabirria más deliciosa de CDMX',
             alt: 'Quesabirria más deliciosa en Cantina La Llorona',
           },
         ],
         bannerImages: [
           {
-            url: 'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/carne/barbacoa%2Bpican%CC%83a%2Bcantina%2Bllorona%2Bsabor%2Broma%2Bcondesa%2Bcdmx%2Bdeliciosa+copy.jpg)',
+            url: 'url(/img/carne/arrachera-cenital.webp)',
             title: 'Reserva ya en Cantina La Llorona',
             buttonAction: {
               type: 'phone_contact',
@@ -434,23 +434,23 @@ const Evento = ({ nombre_evento }) => {
           descripcion:
             'Enjoy the most awarded pear and cheese pizza in Roma Condesa, CDMX at Cantina La Llorona. Unique flavors and culinary creativity. Reserve now!',
           image:
-            'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg',
+            '/img/comida/pizza-pera-queso.webp',
         },
         images: [
           {
-            url: 'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg',
+            url: '/img/comida/pizza-pera-queso.webp',
             textImage: 'Try Mexico’s most awarded pizza',
             alt: 'Try the most awarded pizza in Mexico, CDMX, Roma Condesa',
           },
           {
-            url: 'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg',
+            url: '/img/ambiente/terraza-noche.webp',
             textImage: 'Family restaurant and delicious food',
             alt: 'Restaurant with unique design',
           },
         ],
         bannerImages: [
           {
-            url: 'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/pizza/pizza%2Bpera%2Bqueso%2Bsabores%2Bdeliciosos%2Bllorona%2Bmexico%2Bcdmx%2Broma%2Bcondesa.jpg)',
+            url: 'url(/img/comida/pizza-pera-queso.webp)',
             title: 'The Most Awarded Pizza',
             buttonAction: {
               type: 'phone_contact', //tipos: phone_contact, link_external, popup, etc
@@ -489,23 +489,23 @@ const Evento = ({ nombre_evento }) => {
           description:
             'Continúa la fiesta después del Gran Premio en la mejor cantina de Roma Condesa con música en vivo de Son Cubano. ¡Reserva ahora en Cantina La Llorona!',
           image:
-            'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/formula1/Gran-Premio-de-Mexico-2024-F1-1024x614.jpg',
+            '/img/ambiente/terraza-noche.webp',
         },
         images: [
           {
-            url: 'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/formula1/463877887_1073765580790256_2252147552426801570_n.jpg',
+            url: '/img/ambiente/entrada-terraza-noche.webp',
             textImage: 'Vive el mejor Son Cubano',
             alt: 'Música en vivo Son Cubano en Cantina La Llorona',
           },
           {
-            url: 'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/formula1/clienta%2Bfeliz%2Bcantina%2Bla%2Bllorona%2Bcdmx.jpg',
+            url: '/img/ambiente/terraza-noche.webp',
             textImage: 'El ambiente perfecto para seguir la fiesta',
             alt: 'Ambiente de fiesta en Cantina La Llorona después del Gran Premio',
           },
         ],
         bannerImages: [
           {
-            url: 'url(https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/formula1/Gran-Premio-de-Mexico-2024-F1-1024x614.jpg)',
+            url: 'url(/img/ambiente/terraza-noche.webp)',
             title: 'Fiesta Fórmula 1 Reserva ya en Cantina La Llorona',
             buttonAction: {
               type: 'phone_contact',
@@ -540,23 +540,23 @@ const Evento = ({ nombre_evento }) => {
           description:
             'Keep the party going after the Grand Prix at Cantina La Llorona. Enjoy live Cuban Son music and the best ambiance in Roma Condesa. Book your table today!',
           image:
-            'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/fiesta/formula1/cantina-f1-party.jpg',
+            '/img/ambiente/entrada-terraza-noche.webp',
         },
         images: [
           {
-            url: 'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/fiesta/formula1/soncubano-live.jpg',
+            url: '/img/salsa/cantante-son-cubano.webp',
             textImage: 'Experience the best Cuban Son',
             alt: 'Live Cuban Son music at Cantina La Llorona',
           },
           {
-            url: 'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/fiesta/formula1/f1-afterparty.jpg',
+            url: '/img/ambiente/interior-techo-raices.webp',
             textImage: 'The perfect ambiance for a post-race celebration',
             alt: 'Party atmosphere at Cantina La Llorona after the Grand Prix',
           },
         ],
         bannerImages: [
           {
-            url: 'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/fiesta/formula1/f1-party.jpg)',
+            url: 'url(/img/ambiente/terraza-noche.webp)',
             title: 'Book Now at Cantina La Llorona',
             buttonAction: {
               type: 'phone_contact',
@@ -595,23 +595,23 @@ const Evento = ({ nombre_evento }) => {
           description:
             'Disfruta de un menú especial de Día de Muertos en Cantina La Llorona, incluyendo pan de muerto con helado negro y helado de pan de muerto. Celebra con nosotros en Roma Condesa. ¡Reserva ahora!',
           image:
-            'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/muertos/day-dead-celebration-with-altar1.jpg',
+            '/img/eventos/pan-muerto-relleno.webp',
         },
         images: [
           {
-            url: 'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/muertos/top-view-baked-pan-de-muerto1.jpg',
+            url: '/img/eventos/pan-de-muerto.webp',
             textImage: 'Pan de Muerto con Helado Negro',
             alt: 'Pan de muerto con helado negro en Cantina La Llorona',
           },
           {
-            url: 'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/muertos/day-dead-celebration-with-altar1.jpg',
+            url: '/img/eventos/pan-muerto-relleno.webp',
             textImage: 'Ambiente único de Día de Muertos',
             alt: 'Ambiente de Día de Muertos en Cantina La Llorona',
           },
         ],
         bannerImages: [
           {
-            url: 'url(https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/dia%2Bmuertos%2Bcantina%2Bcomida.JPG)',
+            url: 'url(/img/eventos/pan-muerto-relleno.webp)',
             title: 'Reserva tu Mesa para Día de Muertos',
             buttonAction: {
               type: 'phone_contact',
@@ -666,23 +666,23 @@ const Evento = ({ nombre_evento }) => {
           description:
             'Join us for a special Day of the Dead menu at Cantina La Llorona, featuring black ice cream pan de muerto. Experience tradition and flavor in Roma Condesa. Reserve now!',
           image:
-            'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/muertos/top-view-baked-pan-de-muerto1.jpg',
+            '/img/eventos/pan-de-muerto.webp',
         },
         images: [
           {
-            url: 'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/muertos/top-view-baked-pan-de-muerto1.jpg',
+            url: '/img/eventos/pan-de-muerto.webp',
             textImage: 'Pan de Muerto with Black Ice Cream',
             alt: 'Day of the Dead pan de muerto with black ice cream at Cantina La Llorona',
           },
           {
-            url: 'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/muertos/day-dead-celebration-with-altar1.jpg',
+            url: '/img/eventos/pan-muerto-relleno.webp',
             textImage: 'Unique Day of the Dead Atmosphere',
             alt: 'Day of the Dead atmosphere at Cantina La Llorona',
           },
         ],
         bannerImages: [
           {
-            url: 'url(https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/dia%2Bmuertos%2Bcantina%2Bcomida.JPG)',
+            url: 'url(/img/eventos/pan-muerto-relleno.webp)',
             title: 'Book Your Table for Day of the Dead',
             buttonAction: {
               type: 'phone_contact',

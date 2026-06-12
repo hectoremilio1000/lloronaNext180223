@@ -29,7 +29,7 @@ function Mezcal() {
         <div
           className="d-flex subContenedor1Banner"
           style={{
-            backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/PHOTO-2022-04-27-10-56-11.jpg")`,
+            backgroundImage: `url("/img/mezcal/palenque-santa-catarina-minas.webp")`,
             backgroundSize: 'cover',
             height: '100vh',
             backgroundPosition: 'right center',
