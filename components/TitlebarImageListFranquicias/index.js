@@ -2,22 +2,14 @@ import React from 'react';
 import title from '../Main/title.module.css';
 
 function TitlebarImageListFranquicias() {
-  const image1 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_0059+(1).jpg';
-  const image2 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_0062+(1).jpg';
-  const image3 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_0063+(1).jpg';
-  const image4 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_0071+(1).jpg';
-  const image5 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/lloronaDentro+(2).jpg';
-  const image6 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/lugarAfuera+(2).jpg';
-  const image7 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/menu%CC%81Veggie+(1).jpg';
-  const image8 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologi%CC%81a%2Bautor+(1).jpg';
+  const image1 = '/img/franquicia/bebidas-unicas.webp';
+  const image2 = '/img/franquicia/experiencias-gastronomicas.webp';
+  const image3 = '/img/franquicia/hamburguesas-trendy.webp';
+  const image4 = '/img/franquicia/embajadores-marca.webp';
+  const image5 = '/img/franquicia/diseno-industrial-terraza.webp';
+  const image6 = '/img/franquicia/diseno-exterior.webp';
+  const image7 = '/img/franquicia/menu-veggie.webp';
+  const image8 = '/img/franquicia/mixologia-autor.webp';
   return (
     <div>
       <div>

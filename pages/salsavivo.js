@@ -113,7 +113,7 @@ function SalsaVivo() {
                     <div>
                       <img
                         className="imagenTopTexto"
-                        src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/grupo+salsa+mexico.jpg"
+                        src="/img/salsa/cantante-son-cubano.webp"
                         alt="Música en vivo"
                       />
                       <p className="textoFotosHome text-black">
@@ -127,7 +127,7 @@ function SalsaVivo() {
                     <div>
                       <img
                         className="imagenTopTexto"
-                        src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/grupocubanomexico.jpg"
+                        src="/img/salsa/son-cubano.webp"
                         alt="Baila con el mejor grupo de salsa"
                       />
                       <p className="textoFotosHome text-black">
@@ -230,7 +230,7 @@ function SalsaVivo() {
                     <div>
                       <img
                         className="imagenTopTexto"
-                        src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/mejor+grupo+salsa+vivo+cdmx+cantina+llorona.jpg"
+                        src="/img/salsa/cantante-son-cubano.webp"
                         alt="mejores grupos de salsa"
                       />
                       <p className="textoFotosHome text-black">
@@ -244,7 +244,7 @@ function SalsaVivo() {
                     <div>
                       <img
                         className="imagenTopTexto"
-                        src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/nin%CC%83a+bailando+cantina+llorona+.PNG"
+                        src="/img/salsa/son-cubano.webp"
                         alt="niñas más hermosas bailando salsa"
                       />
                       <p className="textoFotosHome text-black">
@@ -353,7 +353,7 @@ function SalsaVivo() {
                     <div>
                       <img
                         className="imagenTopTexto"
-                        src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/grupo+salsa+mexico.jpg"
+                        src="/img/salsa/cantante-son-cubano.webp"
                         alt="Música en vivo"
                       />
                       <p className="textoFotosHome text-black">
@@ -366,7 +366,7 @@ function SalsaVivo() {
                     <div>
                       <img
                         className="imagenTopTexto"
-                        src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/grupocubanomexico.jpg"
+                        src="/img/salsa/son-cubano.webp"
                         alt="Baila con el mejor grupo de salsa"
                       />
                       <p className="textoFotosHome text-black">
@@ -465,7 +465,7 @@ function SalsaVivo() {
                     <div>
                       <img
                         className="imagenTopTexto"
-                        src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/mejor+grupo+salsa+vivo+cdmx+cantina+llorona.jpg"
+                        src="/img/salsa/cantante-son-cubano.webp"
                         alt="mejores grupos de salsa"
                       />
                       <p className="textoFotosHome text-black">
@@ -478,7 +478,7 @@ function SalsaVivo() {
                     <div>
                       <img
                         className="imagenTopTexto"
-                        src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/nin%CC%83a+bailando+cantina+llorona+.PNG"
+                        src="/img/salsa/son-cubano.webp"
                         alt="Most beautiful girls dancing salsa."
                       />
                       <p className="textoFotosHome text-black">

@@ -47,7 +47,7 @@ function QuickInfo2() {
               <div>
                 <img
                   className="iconoAbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/iconos/bol.png"
+                  src="/img/iconos/bol.svg"
                   alt="menú alimentos"
                 />
                 <p className="textoFotosHome text-black">Menú Alimentos</p>
@@ -57,7 +57,7 @@ function QuickInfo2() {
               <div>
                 <img
                   className="iconoAbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/iconos/tequila.png"
+                  src="/img/iconos/tequila.svg"
                   alt="Pierde Almas con Mezcal"
                 />
                 <p className="textoFotosHome text-black">Mixología Artesanal</p>
@@ -67,7 +67,7 @@ function QuickInfo2() {
               <div>
                 <img
                   className="iconoAbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/iconos/mezcal.png"
+                  src="/img/iconos/mezcal.svg"
                   alt="Mezcales y Pulque Artesanal"
                 />
                 <p className="textoFotosHome text-black">
@@ -81,7 +81,7 @@ function QuickInfo2() {
               <div>
                 <img
                   className="iconoAbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/iconos/cerveza+(1).png"
+                  src="/img/iconos/cerveza.svg"
                   alt="Cervezas Artesanales"
                 />
                 <p className="textoFotosHome text-black">
@@ -95,7 +95,7 @@ function QuickInfo2() {
               <div>
                 <img
                   className="iconoAbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/iconos/whisky.png"
+                  src="/img/iconos/whisky.svg"
                   alt="Destilados"
                 />
                 <p className="textoFotosHome text-black">Destilados</p>
@@ -105,7 +105,7 @@ function QuickInfo2() {
               <div>
                 <img
                   className="iconoAbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/iconos/taza-de-cafe.png"
+                  src="/img/iconos/cafe.svg"
                   alt="Pierde Almas con Mezcal"
                 />
                 <p className="textoFotosHome text-black">
@@ -164,7 +164,7 @@ function QuickInfo2() {
               <div>
                 <img
                   className="iconoAbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/iconos/bol.png"
+                  src="/img/iconos/bol.svg"
                   alt="food menu"
                 />
                 <p className="textoFotosHome text-black">Food menu</p>
@@ -174,7 +174,7 @@ function QuickInfo2() {
               <div>
                 <img
                   className="iconoAbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/iconos/tequila.png"
+                  src="/img/iconos/tequila.svg"
                   alt="Artisan Mixology"
                 />
                 <p className="textoFotosHome text-black">Artisan Mixology</p>
@@ -184,7 +184,7 @@ function QuickInfo2() {
               <div>
                 <img
                   className="iconoAbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/iconos/mezcal.png"
+                  src="/img/iconos/mezcal.svg"
                   alt="Mezcales & Sotoles Handmade"
                 />
                 <p className="textoFotosHome text-black">
@@ -198,7 +198,7 @@ function QuickInfo2() {
               <div>
                 <img
                   className="iconoAbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/iconos/cerveza+(1).png"
+                  src="/img/iconos/cerveza.svg"
                   alt="Mexican Craft Beer "
                 />
                 <p className="textoFotosHome text-black">
@@ -212,7 +212,7 @@ function QuickInfo2() {
               <div>
                 <img
                   className="iconoAbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/iconos/whisky.png"
+                  src="/img/iconos/whisky.svg"
                   alt="Distillates"
                 />
                 <p className="textoFotosHome text-black">Distillates</p>
@@ -222,7 +222,7 @@ function QuickInfo2() {
               <div>
                 <img
                   className="iconoAbajoTexto1Home"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/iconos/taza-de-cafe.png"
+                  src="/img/iconos/cafe.svg"
                   alt="Coffee, Sodas and Industrial Beers"
                 />
                 <p className="textoFotosHome text-black">

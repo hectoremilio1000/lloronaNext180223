@@ -23,7 +23,7 @@ const MySwiper = () => {
       <SwiperSlide>
         <div
           style={{
-            backgroundImage: 'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/cantina%2Bllorona%2Btaco.jpg)',
+            backgroundImage: 'url(/img/ambiente/mesa-tacos-domino.webp)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center center',
@@ -55,7 +55,7 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              'url(https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/fotosBanner/tiraditoRibEye%2Bllorona%2Bcantina.jpg)',
+              'url(/img/carne/arrachera-coctel.webp)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center center',
@@ -69,7 +69,7 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              'url(https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/fotosBanner/mandarinaBanner.jpg)',
+              'url(/img/comida/ensalada-espinaca-mandarina.webp)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
@@ -90,7 +90,7 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              'url(https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/pinatacumpleanera.JPG)',
+              'url(/img/cumple/carrito-dulces-cumpleanera.webp)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center center',
@@ -111,7 +111,7 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/chicharron%2Bpork%2Bbelly%2Bguacamole%2Bcantina%2Bllorona.jpg)',
+              'url(/img/platos/plato-fuerte-guacamole-martini-mazapan.webp)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center center',
@@ -131,7 +131,7 @@ const MySwiper = () => {
       <SwiperSlide>
         <div
           style={{
-            backgroundImage: 'url(https://imagenesrutalab.s3.amazonaws.com/llorona/tacos/IMG_8757.jpg)',
+            backgroundImage: 'url(/img/ambiente/mesa-tacos-domino.webp)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center center',

@@ -5,22 +5,14 @@ import card from '../Main/card.module.css';
 import Image from 'next/image';
 
 function NuestroMezcalImages() {
-  const image1 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/IMG_9973.jpg';
-  const image2 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/IMG_0043.jpg';
-  const image3 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/foto+botella+calaca+mezcal+abbywood.JPG';
-  const image4 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mezcal%2Bcannabis%2Bllorona.jpg';
-  const image5 =
-    'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/mezcal/IMG_9982.jpg';
-  const image6 =
-    'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/mezcal/IMG_9983.jpg';
-  const image7 =
-    'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/mezcal/IMG_9984.jpg';
-  const image8 =
-    'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/mezcal/IMG_9984.jpg';
+  const image1 = '/img/mezcal/niurka-hija-degustando-mezcal.webp';
+  const image2 = '/img/mezcal/botella-calavera-mezcal.webp';
+  const image3 = '/img/mezcal/botella-calaca-abbywood-mezcal.webp';
+  const image4 = '/img/mezcal/coyote-cannabis-mezcal.webp';
+  const image5 = '/img/mezcal/palenque-santa-catarina-minas.webp';
+  const image6 = '/img/mezcal/destilacion-ollas-barro-cobre.webp';
+  const image7 = '/img/mezcal/mezcal-hecho-a-mano.webp';
+  const image8 = '/img/mezcal/mezcal-hecho-a-mano.webp';
   return (
     <div>
       <div>
@@ -178,22 +170,22 @@ function NuestroMezcalImages() {
 
 const itemData = [
   {
-    img: 'https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/IMG_9973.jpg',
+    img: '/img/mezcal/niurka-hija-degustando-mezcal.webp',
     title: 'Niurka con su hija Romi Marcos degustando nuestro Mezcal',
     rows: 2,
     cols: 2,
     featured: true,
   },
   {
-    img: 'https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/IMG_0043.jpg',
+    img: '/img/mezcal/botella-calavera-mezcal.webp',
     title: 'Nuestra botella Calavera',
   },
   {
-    img: 'https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/mezcal+cannabis+llorona.jpg',
+    img: '/img/mezcal/coyote-cannabis-mezcal.webp',
     title: 'Coyote con Cannabis',
   },
   {
-    img: 'https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/foto+botella+calaca+mezcal+abbywood.JPG',
+    img: '/img/mezcal/botella-calaca-abbywood-mezcal.webp',
     title: 'La pasión nos une AbbyWoo',
     cols: 2,
   },
