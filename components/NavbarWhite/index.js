@@ -13,10 +13,10 @@ import { useRouter } from 'next/navigation';
 import { useAppContext } from '../context/Context';
 
 const usFlag =
-  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/banderas/um.svg';
+  '/img/banderas/us.svg';
 
 const mxFlag =
-  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/banderas/mx.svg';
+  '/img/banderas/mx.svg';
 
 function NavBarWhite() {
   const [current, setCurrent] = useState('');

@@ -10,9 +10,9 @@ import CalendarioFoodie from '../components/CalendarioFoodie';
 import QuickInfo5 from '../components/QuickInfo5';
 function MariscosCantina() {
   const image4 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2048.jpg';
+    '/img/ambiente/mesa-tacos-domino.webp';
   const image3 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/Tacos-de-aguachile-de-pulpo-LLORONA.jpg';
+    '/img/platos/tostada-aguachile-aguacate-llorona.webp';
   const { espa } = useAppContext();
   const [open, setOpen] = useState(false);
   return (

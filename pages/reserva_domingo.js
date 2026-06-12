@@ -47,7 +47,7 @@ function ReservaDomingo() {
 
   const imageMariachi = '/mariachi_cantando.jpg';
   const imageCumple =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/cumplean%CC%83os%2Bsorpresa%2Bfiesta%2Bllorona%2Bcantina%2Bnin%CC%83as.png';
+    '/img/cumple/carrito-dulces-sorpresa.webp';
 
   return (
     <>

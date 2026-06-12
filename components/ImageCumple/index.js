@@ -46,44 +46,44 @@ function ImageCumple() {
 
 const itemData = [
   {
-    img: 'https://imagenesrutalab.s3.amazonaws.com/llorona/franquicias/lugarAfuera.jpg',
+    img: '/img/franquicia/diseno-exterior.webp',
     title: 'Diseño único exterior',
     rows: 2,
     cols: 2,
     featured: true,
   },
   {
-    img: 'https://imagenesrutalab.s3.amazonaws.com/llorona/franquicias/lloronaDentro.jpg',
+    img: '/img/franquicia/diseno-industrial-terraza.webp',
     title: 'Diseño industrial contrastando con una terraza floral',
   },
   {
-    img: 'https://imagenesrutalab.s3.amazonaws.com/llorona/franquicias/menu%CC%81Veggie.jpg',
+    img: '/img/franquicia/menu-veggie.webp',
     title: 'Menú Veggie',
   },
   {
-    img: 'https://imagenesrutalab.s3.amazonaws.com/llorona/franquicias/mixologi%CC%81a+autor.jpg',
+    img: '/img/franquicia/mixologia-autor.webp',
     title: 'Mixología de autor',
     cols: 2,
   },
   {
-    img: 'https://imagenesrutalab.s3.amazonaws.com/llorona/franquicia/IMG_0071.jpg',
+    img: '/img/franquicia/embajadores-marca.webp',
     title: 'Embajadores de la Marca',
     cols: 2,
   },
   {
-    img: 'https://imagenesrutalab.s3.amazonaws.com/llorona/franquicia/IMG_0059.jpg',
+    img: '/img/franquicia/bebidas-unicas.webp',
     title: 'Bebidas Únicas',
     rows: 2,
     cols: 2,
     featured: true,
   },
   {
-    img: 'https://imagenesrutalab.s3.amazonaws.com/llorona/franquicia/IMG_0062.jpg',
+    img: '/img/franquicia/experiencias-gastronomicas.webp',
     title: 'Experiencias gastronómicas',
     cols: 2,
   },
   {
-    img: 'https://imagenesrutalab.s3.amazonaws.com/llorona/franquicia/IMG_0063.jpg',
+    img: '/img/franquicia/hamburguesas-trendy.webp',
     title: 'Hamburguesas Trendy',
     rows: 2,
     cols: 2,

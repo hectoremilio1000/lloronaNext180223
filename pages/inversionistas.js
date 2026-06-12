@@ -95,31 +95,31 @@ function Inversionstas() {
         title:
           'Aliados en el crecimiento de conceptos únicos que conectan con la gente',
         imageURL:
-          'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/inversionistas/bannerChile.jpg',
+          '/img/eventos/chile-en-nogada.webp',
       }
     : {
         title: 'From the sea to your palate',
         imageURL:
-          'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/comida/mariscos.jpg',
+          '/img/platos/tostada-aguachile-aguacate-llorona.webp',
       };
 
   const image1 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg';
+    '/img/reserva/chica-coctel-calavera.webp';
   const image2 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg';
+    '/img/cumple/chica-carrito-dulces.webp';
   const image3 =
-    'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/inversionistas/panMuerto%2Bsabroso%2Bdelicioso%2Bfiesta.jpg';
+    '/img/eventos/pan-de-muerto.webp';
   const image4 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/comida/amigastomandoCantinaLlorona.JPG';
+    '/img/ambiente/mesa-tacos-domino.webp';
 
   const image5 =
-    'https://imagenesrutalab.s3.us-east-1.amazonaws.com/maximiliano/restaurante7.png';
+    '/img/logos/maximiliano-restaurante.webp';
   const image6 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia+mexicana+tragos+increibles.jpg';
+    '/img/mixologia/amigas-martini-rosa.webp';
   const image7 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg';
+    '/img/cumple/festejo-bengala-terraza.webp';
   const image8 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/coctelDeliciosoMEzcal.jpg';
+    '/img/mixologia/coctel-mazapan-martini.webp';
   const [open, setOpen] = useState(false);
 
   return (

@@ -23,7 +23,7 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg)',
+              'url(/img/ambiente/terraza-noche.webp)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center center',
@@ -34,7 +34,7 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              'url(https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/pinatacumpleanera.JPG)',
+              'url(/img/cumple/carrito-dulces-cumpleanera.webp)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center center',
@@ -45,7 +45,7 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              'url(https://imagenesrutalab.s3.amazonaws.com/llorona/franquicia/IMG_0071.jpg)',
+              'url(/img/franquicia/embajadores-marca.webp)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center center',
@@ -56,7 +56,7 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              'url(https://imagenesrutalab.s3.amazonaws.com/llorona/franquicias/banner/IMG_8773.jpg)',
+              'url(/img/franquicia/diseno-exterior.webp)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center center',
@@ -67,7 +67,7 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              'url(https://imagenesrutalab.s3.amazonaws.com/llorona/franquicias/nin%CC%83as+hermosas.jpg)',
+              'url(/img/ambiente/entrada-terraza-noche.webp)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center center',
@@ -79,7 +79,7 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninas4pinata.jpeg)',
+              'url(/img/cumple/amigas-festejo-bar.webp)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'top center',

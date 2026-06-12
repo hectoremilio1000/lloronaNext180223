@@ -39,7 +39,7 @@ function Mezcal() {
           <div>
             <img
               className="imagenAbajoTexto1Home"
-              src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/hamburguesas/1528926142blue-cheese-and-caramelized-onion-burgers-large.jpg"
+              src="/img/comida/hamburguesa-jack-suizo.webp"
               alt="Premio pruébala"
             />
             <p className="textoFotosHome text-black">
@@ -53,7 +53,7 @@ function Mezcal() {
           <div className={card.cardBox}>
             <img
               className="imagenAbajoTexto1Home"
-              src="https://imagenesrutalab.s3.amazonaws.com/llorona/HAMBURGUESA_jack_suizo.JPG"
+              src="/img/comida/hamburguesa-jack-suizo.webp"
               alt="Hamburguesa deliciosa Llorona"
             />
             <p className="textoFotosHome text-black">
@@ -67,7 +67,7 @@ function Mezcal() {
           <div className={card.cardBox}>
             <img
               className="imagenAbajoTexto1Home"
-              src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/hamburguesaChile.jpg"
+              src="/img/comida/hamburguesa-jack-suizo.webp"
               alt="Hamburguesa chile llorona"
             />
             <p className="textoFotosHome text-black">
