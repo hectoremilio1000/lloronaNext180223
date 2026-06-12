@@ -22,7 +22,7 @@ function Spirits() {
       <div
         className="d-flex subContenedor1Banner banner"
         style={{
-          backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/llorona/banner/bannerMenu.jpg")`,
+          backgroundImage: `url("/img/ambiente/interior-techo-raices.webp")`,
           backgroundSize: 'cover',
           height: '40vh',
           backgroundPosition: 'center',

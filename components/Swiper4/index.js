@@ -31,7 +31,7 @@ const MySwiper = () => {
             <div
               style={{
                 backgroundImage:
-                  'url(https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/salsa/salsa%2Bgrupo%2Bbailando%2Bcantina%2Bllorona.jpg)',
+                  'url(/img/salsa/son-cubano.webp)',
                 height: '80vh',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center right',
@@ -63,7 +63,7 @@ const MySwiper = () => {
             <div
               style={{
                 backgroundImage:
-                  'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/gruposcubanos1.png)',
+                  'url(/img/salsa/son-cubano.webp)',
                 height: '80vh',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center left',

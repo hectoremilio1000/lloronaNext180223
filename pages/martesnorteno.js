@@ -61,11 +61,11 @@ function MartesNorteno() {
 
   // Imágenes — reemplaza con fotos reales de tus noches de norteño
   const heroImage =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg';
+    '/img/reserva/chica-coctel-calavera.webp';
   const image1 =
     '/norteno_banda.png';
   const image2 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia+mexicana+tragos+increibles.jpg';
+    '/img/mixologia/amigas-martini-rosa.webp';
   const image3 =
     '/ninas_banda.png';
   const image4 =

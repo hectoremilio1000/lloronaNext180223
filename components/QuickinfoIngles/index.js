@@ -9,19 +9,19 @@ import * as fbq from '../../lib/fpixel';
 //imagenes
 
 const image1 =
-  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2050.jpg';
+  '/img/ambiente/terraza-noche.webp';
 
 const image2 =
-  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/tostadaCantinera.jpg';
+  '/img/platos/aguachile-aguacate-closeup.webp';
 
 const image3 =
-  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/postres+ricos+deliciosos.JPG';
+  '/img/comida/postres-deliciosos.webp';
 
 const image4 =
-  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/soncubano3Imagen.jpg';
+  '/img/salsa/cantante-son-cubano.webp';
 
 const image5 =
-  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/cantina%2Bllorona%2Btaco.jpg';
+  '/img/ambiente/mesa-tacos-domino.webp';
 
 function QuickInfo() {
   const handleClick = () => {

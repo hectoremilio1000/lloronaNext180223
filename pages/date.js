@@ -19,18 +19,18 @@ export default function Home() {
   const BannerImages = [
     {
       imagen1:
-        'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg)',
+        'url(/img/ambiente/terraza-noche.webp)',
 
       imagen2:
-        'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/pan%2Belote%2Bcantina%2Bllorona%2Bdelicioso.JPG)',
+        'url(/img/platos/plato-fuerte-guacamole-martini-mazapan.webp)',
       imagen3:
-        'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/comida/mariscos.jpg)',
+        'url(/img/platos/tostada-aguachile-aguacate-llorona.webp)',
       imagen4:
-        'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/costra%2Belote%2Bdelicia%2Bchef%2Bcantina%2Bllorona.JPG)',
+        'url(/img/platos/plato-fuerte-guacamole-martini-mazapan.webp)',
       imagen5:
-        'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/cantina%2Bllorona%2Btaco.jpg)',
+        'url(/img/ambiente/mesa-tacos-domino.webp)',
       imagen6:
-        'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/familia/tostada%2Batun%2Baguachile%2Bcantina%2Bllorona+copy.jpg )',
+        'url(/img/platos/torre-aguachile-camaron-aguacate.webp )',
     },
   ];
 
@@ -57,7 +57,7 @@ export default function Home() {
   const { locale } = router;
   let HeaderComponent;
   const logo2 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/logo_page_altaNUEVO_blanco.png';
+    '/img/logo/logo-llorona-blanco.webp';
 
   const { ingles, onIdiomaIngles, onIdiomaEspa } = useAppContext();
   const [hasInitialized, setHasInitialized] = useState(false);
@@ -103,7 +103,7 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://imagenesrutalab.s3.amazonaws.com/llorona/logo/logo_alta_sin_nombre.png"
+          content="/img/logo/logo-llorona-calaca.png"
         />
         <link rel="apple-touch-icon" href="../logo192.png" />
         <link rel="manifest" href="../manifest.json" />

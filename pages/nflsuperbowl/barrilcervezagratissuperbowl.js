@@ -10,22 +10,22 @@ import Script from 'next/script';
 function Promo1() {
   const { espa } = useAppContext();
   const image1 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia/nin%CC%83as+tequila+mezcal+pulque.jpg';
+    '/img/mixologia/amigas-martini-rosa.webp';
   const image2 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia/llorona+mixologia+cdmx+.PNG';
+    '/img/mixologia/amigas-martini-rosa.webp';
   const image3 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia/mixologia+sin+alcohol+modelo+cdmx+roma+condesa+llorona.jpg';
+    '/img/mixologia/coctel-sin-alcohol.webp';
   const image4 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia/amigas+disfrutando+mixologia+cdmx+bares.PNG';
+    '/img/mixologia/amigas-martini-rosa.webp';
 
   const image5 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia/mixologia+exotica+mexico+ciudad.PNG';
+    '/img/mixologia/coctel-mazapan-martini.webp';
   const image6 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia/tragos+calavera+aperol+fresa.jpg';
+    '/img/mixologia/coctel-mazapan-martini.webp';
   const image7 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mazapan+matini+nin%CC%83as.jpg';
+    '/img/mixologia/coctel-mazapan-martini.webp';
   const image8 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia/lugar+sorprendente+coctel+mixology.jpg';
+    '/img/mixologia/coctel-entrada.webp';
 
   return (
     <>

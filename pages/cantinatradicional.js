@@ -63,32 +63,32 @@ function Reserva() {
   ? {
       title: 'Disfruta un buen trago con comida sabrosa',
       imageURL:
-        'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/cantina/terraza%2Bcomida%2Bdeliciosa%2Bcantina.jpeg',
+        '/img/ambiente/interior-techo-raices.webp',
     }
   : {
       title: 'From the sea to your palate',
       imageURL:
-        'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/comida/mariscos.jpg',
+        '/img/platos/tostada-aguachile-aguacate-llorona.webp',
     };
 
     
   const image1 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg';
+    '/img/reserva/chica-coctel-calavera.webp';
   const image2 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg';
+    '/img/cumple/chica-carrito-dulces.webp';
   const image3 =
-    'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/cantina/ribeye%2Bcantina%2Bcdmx%2Bmexico%2Broma%2Bcondesa.jpg';
+    '/img/carne/arrachera-cenital.webp';
   const image4 =
-    'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/cantina/clienta%2Bfeliz%2Bcantina%2Bla%2Bllorona%2Bcdmx.jpg';
+    '/img/ambiente/terraza-noche.webp';
 
   const image5 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg';
+    '/img/reserva/chica-coctel-calavera.webp';
   const image6 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia+mexicana+tragos+increibles.jpg';
+    '/img/mixologia/amigas-martini-rosa.webp';
   const image7 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg';
+    '/img/cumple/festejo-bengala-terraza.webp';
   const image8 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/coctelDeliciosoMEzcal.jpg';
+    '/img/mixologia/coctel-mazapan-martini.webp';
   const [open, setOpen] = useState(false);
 
   return (

@@ -5,7 +5,7 @@ function RevistasPopup({ idioma }) {
   const testimonialsEs = [
     {
       photo:
-        'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/logo+timeout.jpeg',
+        '/img/logos/timeout.svg',
       rating: 5,
       nombre: 'Revista Time Out',
       url: 'https://www.timeoutmexico.mx/ciudad-de-mexico/bares-y-cantinas/la-llorona',
@@ -51,7 +51,7 @@ function RevistasPopup({ idioma }) {
   const testimonialsEn = [
     {
       photo:
-        'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/logo+timeout.jpeg',
+        '/img/logos/timeout.svg',
       rating: 5,
       nombre: 'Revista Time Out',
       url: 'https://www.timeoutmexico.mx/ciudad-de-mexico/bares-y-cantinas/la-llorona',
