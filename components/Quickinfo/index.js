@@ -15,7 +15,7 @@ const image2 =
   '/img/carne/arrachera-coctel.webp';
 
 const image3 =
-  '/img/comida/postres-deliciosos.webp';
+  '/img/eventos/pan-muerto-cafe.webp';
 
 const image4 =
   '/img/ambiente/mesa-tacos-domino.webp';

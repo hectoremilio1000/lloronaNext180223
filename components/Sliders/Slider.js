@@ -109,7 +109,7 @@ const Slider = () => {
                 <div className="w-full">
                   <img
                     className="rounded-lg border-2 border-white w-full h-[300px] object-bottom object-cover"
-                    src="/img/carne/arrachera-cenital.webp"
+                    src="/img/carne/barbacoa-picana.webp"
                     alt=""
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
@@ -147,8 +147,8 @@ const Slider = () => {
               <SwiperSlide>
                 <div className="w-full">
                   <img
-                    className="rounded-lg border-2 border-white w-full h-[300px] object-top object-cover"
-                    src="/img/salsa/cantante-son-cubano.webp"
+                    className="rounded-lg border-2 border-white w-full h-[300px] object-center object-cover"
+                    src="/img/reserva/chica-coctel-calavera.webp"
                     alt=""
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
