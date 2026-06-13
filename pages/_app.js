@@ -15,18 +15,21 @@ import { FB_PIXEL_ID } from '../lib/fpixel';
 import * as gtag from '../lib/gtag';
 import { GA_TRACKING_ID } from '../lib/gtag';
 import { TIXTOK_PIXEL_ID } from '../lib/tikp';
+import { initTracker, trackPageview } from '../lib/tracker';
 
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
   useEffect(() => {
-    // Track page views on route change
+    initTracker({ site: 'llorona' });
+
     const handleRouteChange = (url) => {
       fbq.pageview();
       gtag.pageview(url);
       if (window.ttq) {
         window.ttq.page();
       }
+      trackPageview();
     };
 
     router.events.on('routeChangeComplete', handleRouteChange);
