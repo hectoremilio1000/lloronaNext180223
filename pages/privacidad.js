@@ -8,7 +8,7 @@ function Privacidad() {
         <div
           className="d-flex subContenedor1Banner"
           style={{
-            backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/FotosBurguer/IMG_2177.jpg")`,
+            backgroundImage: `url("/img/comida/hamburguesa-jack-suizo.webp")`,
             backgroundSize: 'cover',
             height: '100vh',
             backgroundPosition: 'center',

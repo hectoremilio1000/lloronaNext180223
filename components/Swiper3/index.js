@@ -23,7 +23,7 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/comida/mariscoplayacantinallorona1.jpg)',
+              'url(/img/platos/torre-aguachile-camaron-aguacate.webp)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center right',

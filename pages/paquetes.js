@@ -125,7 +125,7 @@ function EventTypes() {
   const cards = [
     {
       title: 'Cumpleaños',
-      img: 'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/amigastomandoCantinaLlorona.JPG',
+      img: '/img/ambiente/mesa-tacos-domino.webp',
     },
     { title: 'Despedida de soltera', img: '/images/eventos/despedida.jpeg' },
     {
@@ -134,11 +134,11 @@ function EventTypes() {
     },
     {
       title: 'Aniversarios',
-      img: 'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/clienta%2Bfeliz%2Bcantina%2Bla%2Bllorona%2Bcdmx.jpg',
+      img: '/img/ambiente/terraza-noche.webp',
     },
     {
       title: 'Networking / After Office',
-      img: 'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/llorona%2Bson%2Bgrupo%2Bcuano%2Bcantina%2Bweb.jpg',
+      img: '/img/salsa/cantante-son-cubano.webp',
     },
     { title: 'Bodas', img: '/images/eventos/bodas_2.jpeg' },
   ];

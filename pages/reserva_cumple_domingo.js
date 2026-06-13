@@ -69,7 +69,7 @@ function Reserva() {
   const ninas_cumple = '/cumple_cover.jpg';
 
   const image_cubano =
-    'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/llorona%2Bson%2Bgrupo%2Bcuano%2Bcantina%2Bweb.jpg';
+    '/img/salsa/cantante-son-cubano.webp';
 
   const [open, setOpen] = useState(false);
 
@@ -270,7 +270,7 @@ function Reserva() {
 
 const itemData = [
   {
-    img: 'https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/nina2pinata.JPG',
+    img: '/img/cumple/chica-carrito-dulces.webp',
     title: 'Piñata cumpleañera',
     rows: 2,
     cols: 2,

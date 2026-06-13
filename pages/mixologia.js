@@ -31,22 +31,22 @@ function Migologia() {
 
   const { espa } = useAppContext();
   const image1 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia/nin%CC%83as+tequila+mezcal+pulque.jpg';
+    '/img/mixologia/amigas-martini-rosa.webp';
   const image2 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia/llorona+mixologia+cdmx+.PNG';
+    '/img/mixologia/amigas-martini-rosa.webp';
   const image3 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia/mixologia+sin+alcohol+modelo+cdmx+roma+condesa+llorona.jpg';
+    '/img/mixologia/coctel-sin-alcohol.webp';
   const image4 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia/amigas+disfrutando+mixologia+cdmx+bares.PNG';
+    '/img/mixologia/amigas-martini-rosa.webp';
 
   const image5 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia/mixologia+exotica+mexico+ciudad.PNG';
+    '/img/mixologia/coctel-mazapan-martini.webp';
   const image6 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia/tragos+calavera+aperol+fresa.jpg';
+    '/img/mixologia/coctel-mazapan-martini.webp';
   const image7 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mazapan+matini+nin%CC%83as.jpg';
+    '/img/mixologia/coctel-mazapan-martini.webp';
   const image8 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia/lugar+sorprendente+coctel+mixology.jpg';
+    '/img/mixologia/coctel-entrada.webp';
 
   return (
     <>
@@ -68,7 +68,7 @@ function Migologia() {
       <div
         className="d-flex subContenedor1Banner banner"
         style={{
-          backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia/mixologia+tragos+roma+condesa+mujer+cdmx+llorona.PNG")`,
+          backgroundImage: `url("/img/mixologia/coctel-mazapan-martini.webp")`,
           backgroundSize: 'cover',
           height: '90vh',
           backgroundRepeat: 'no-repeat',
@@ -518,7 +518,7 @@ function Migologia() {
 }
 const itemData = [
   {
-    img: 'https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/nina2pinata.JPG',
+    img: '/img/cumple/chica-carrito-dulces.webp',
     title: 'Piñata cumpleañera',
     rows: 2,
     cols: 2,

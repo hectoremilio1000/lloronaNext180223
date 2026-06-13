@@ -61,7 +61,7 @@ const Slider = () => {
               <div className="w-full">
                 <img
                   className="rounded-lg border-2 border-white w-full h-[300px] object-top object-cover"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/tostadaCantinera.jpg"
+                  src="/img/platos/aguachile-aguacate-closeup.webp"
                   alt=""
                 />
                 <h1 className="text-2xl md:text-5xl text-white mt-3">
@@ -76,7 +76,7 @@ const Slider = () => {
               <div className="w-full">
                 <img
                   className="rounded-lg border-2 border-white w-full h-[300px] object-top object-cover"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologiaIncreible.jpg"
+                  src="/img/mixologia/amigas-martini-rosa.webp"
                   alt=""
                 />
                 <h1 className="text-2xl md:text-5xl text-white mt-3">
@@ -91,7 +91,7 @@ const Slider = () => {
               <div className="w-full">
                 <img
                   className="rounded-lg border-2 border-white w-full h-[300px] object-left object-cover"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/gruposcubanos1.png"
+                  src="/img/salsa/son-cubano.webp"
                   alt=""
                 />
                 <h1 className="text-2xl md:text-5xl text-white mt-3">
@@ -104,7 +104,7 @@ const Slider = () => {
               <div className="w-full">
                 <img
                   className="rounded-lg border-2 border-white w-full h-[300px] object-top object-cover"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/lugarincreible%2Bcomida%2Bdeliciosa%2Bcantina.jpg"
+                  src="/img/ambiente/interior-techo-raices.webp"
                   alt=""
                 />
                 <h1 className="text-2xl md:text-5xl text-white mt-3">
@@ -119,7 +119,7 @@ const Slider = () => {
               <div className="w-full">
                 <video
                   className="rounded-lg border-2 border-white w-full h-[300px] object-top object-cover object-center"
-                  src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/llorona%2Bmariachi%2Bcantina.MP4"
+                  src="/img/video/mariachi-cantina.mp4"
                   autoPlay
                   loop
                   muted

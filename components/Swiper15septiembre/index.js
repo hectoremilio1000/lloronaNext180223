@@ -31,7 +31,7 @@ const MySwiper = () => {
             <div
               style={{
                 backgroundImage:
-                  'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/15septiembre/LaLloronaCantinaChileEnNogada.jpg)',
+                  'url(/img/eventos/chile-en-nogada.webp)',
                 height: '80vh',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center left',
@@ -63,7 +63,7 @@ const MySwiper = () => {
             <div
               style={{
                 backgroundImage:
-                  'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/15septiembre/LaLloronaCantinaChileEnNogada.jpg)',
+                  'url(/img/eventos/chile-en-nogada.webp)',
                 height: '80vh',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center left',
