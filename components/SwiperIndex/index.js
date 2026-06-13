@@ -26,7 +26,7 @@ const MySwiper = () => {
             backgroundImage: 'url(/img/ambiente/mesa-tacos-domino.webp)',
             height: '80vh',
             backgroundSize: 'cover',
-            backgroundPosition: 'center center',
+            backgroundPosition: 'center 70%',
           }}
         >
           {/* <div className="absolute inset-0 flex items-center justify-center">
@@ -58,7 +58,7 @@ const MySwiper = () => {
               'url(/img/carne/arrachera-coctel.webp)',
             height: '80vh',
             backgroundSize: 'cover',
-            backgroundPosition: 'center center',
+            backgroundPosition: 'center 70%',
           }}
         >
           {' '}
@@ -72,7 +72,7 @@ const MySwiper = () => {
               'url(/img/comida/ensalada-espinaca-mandarina.webp)',
             height: '80vh',
             backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            backgroundPosition: 'center 70%',
           }}
         >
           {' '}
@@ -114,7 +114,7 @@ const MySwiper = () => {
               'url(/img/platos/plato-fuerte-guacamole-martini-mazapan.webp)',
             height: '80vh',
             backgroundSize: 'cover',
-            backgroundPosition: 'center center',
+            backgroundPosition: 'center 70%',
           }}
         >
           {' '}
@@ -131,7 +131,7 @@ const MySwiper = () => {
       <SwiperSlide>
         <div
           style={{
-            backgroundImage: 'url(/img/ambiente/mesa-tacos-domino.webp)',
+            backgroundImage: 'url(/img/salsa/son-cubano.webp)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center center',
