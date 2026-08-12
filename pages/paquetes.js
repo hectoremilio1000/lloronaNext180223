@@ -3,6 +3,7 @@ import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import NavBarEs from '../components/NavBarEs/NavBarEs';
+import { trackWhatsAppClick } from '../lib/waClick';
 
 const gold = '#D4AF37';
 const WHATSAPP = '525549242477';
@@ -19,6 +20,23 @@ function buildWaUrl({ source, eventType = null }) {
   ].join('\n');
 
   return `${base}?text=${encodeURIComponent(text)}`;
+}
+
+// 📎 Link de WhatsApp que además dispara el tracking (Meta/Google/TikTok +
+// tracker propio) en el click, antes de abrir wa.me en la pestaña nueva.
+function WhatsAppLink({ source, eventType = null, className, style, children }) {
+  return (
+    <a
+      href={buildWaUrl({ source, eventType })}
+      target="_blank"
+      rel="noreferrer"
+      className={className}
+      style={style}
+      onClick={() => trackWhatsAppClick({ source, eventType })}
+    >
+      {children}
+    </a>
+  );
 }
 
 function Hero() {
@@ -44,14 +62,12 @@ function Hero() {
           tu evento sea inolvidable.
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <a
-            href={buildWaUrl({ source: 'hero-cotizar' })}
-            target="_blank"
-            rel="noreferrer"
+          <WhatsAppLink
+            source="hero-cotizar"
             className="rounded-full bg-white px-6 py-3 font-bold text-black shadow-lg transition hover:bg-white/90"
           >
             Cotizar por WhatsApp
-          </a>
+          </WhatsAppLink>
           <Link
             href="#tipos-evento"
             className="rounded-full border px-6 py-3 font-semibold text-white transition hover:bg-white/10"
@@ -107,14 +123,12 @@ function Benefits() {
 
         {/* CTA con etiqueta propia */}
         <div className="mt-10 flex items-center justify-center">
-          <a
-            href={buildWaUrl({ source: 'beneficios-cta' })}
-            target="_blank"
-            rel="noreferrer"
+          <WhatsAppLink
+            source="beneficios-cta"
             className="rounded-full bg-white px-6 py-3 font-bold text-black shadow-lg transition hover:bg-white/90"
           >
             Reservar por WhatsApp
-          </a>
+          </WhatsAppLink>
         </div>
       </div>
     </section>
@@ -167,20 +181,14 @@ function EventTypes() {
               </div>
               <div className="p-5">
                 <h3 className="text-lg font-bold text-white">{c.title}</h3>
-                <a
-                  href={buildWaUrl({
-                    source: `card-${c.title
-                      .toLowerCase()
-                      .replace(/\s+/g, '-')}`,
-                    eventType: c.title,
-                  })}
-                  target="_blank"
-                  rel="noreferrer"
+                <WhatsAppLink
+                  source={`card-${c.title.toLowerCase().replace(/\s+/g, '-')}`}
+                  eventType={c.title}
                   className="mt-3 inline-block rounded-full border px-4 py-2 text-sm font-semibold text-white hover:bg-white/10"
                   style={{ borderColor: gold }}
                 >
                   Cotizar
-                </a>
+                </WhatsAppLink>
               </div>
             </div>
           ))}
@@ -196,14 +204,12 @@ function GroupMenus() {
       <div className="mx-auto max-w-7xl px-6">
         {/* Si en el futuro quieres listar menús, aquí */}
         <div className="mt-2 flex items-center justify-center">
-          <a
-            href={buildWaUrl({ source: 'group-menus-cta' })}
-            target="_blank"
-            rel="noreferrer"
+          <WhatsAppLink
+            source="group-menus-cta"
             className="rounded-full bg-white px-6 py-3 font-bold text-black shadow-lg transition hover:bg-white/90"
           >
             Reservar por WhatsApp
-          </a>
+          </WhatsAppLink>
         </div>
       </div>
     </section>
