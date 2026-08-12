@@ -16,11 +16,17 @@ import CalendarioTiktok from '../components/CalendarioTiktok';
 import QuickInfo5 from '../components/QuickInfo5';
 import QuickInfo6 from '../components/QuickInfo6';
 import NavBar from '../components/NavBarEs/NavBarEs';
+import useCalendlyTracking from '../lib/useCalendlyTracking';
 
 function ReservaTiktok() {
-  // useEffect(() => {
-  //   fbq.event('reserva')
-  // }, []);
+  useCalendlyTracking('tiktok', 'general');
+
+  useEffect(() => {
+    fbq.event('ViewContent', {
+      content_name: 'Pagina Reserva TikTok',
+      content_category: 'landing_tiktok',
+    });
+  }, []);
 
   const opts = {
     height: '350',
@@ -39,22 +45,22 @@ function ReservaTiktok() {
 
   const { espa } = useAppContext();
   const image1 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg';
+    '/img/reserva/chica-coctel-calavera.webp';
   const image2 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg';
+    '/img/cumple/chica-carrito-dulces.webp';
   const image3 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg';
+    '/img/cumple/festejo-bengala-terraza.webp';
   const image4 =
-    'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/reservatiktok/WhatsApp+Image+2024-11-08+at+15.10.24+(6).jpeg';
+    '/img/ambiente/interior-techo-raices.webp';
 
   const image5 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg';
+    '/img/reserva/chica-coctel-calavera.webp';
   const image6 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia+mexicana+tragos+increibles.jpg';
+    '/img/mixologia/amigas-martini-rosa.webp';
   const image7 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg';
+    '/img/cumple/festejo-bengala-terraza.webp';
   const image8 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/coctelDeliciosoMEzcal.jpg';
+    '/img/mixologia/coctel-mazapan-martini.webp';
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -302,7 +308,7 @@ function ReservaTiktok() {
 }
 const itemData = [
   {
-    img: 'https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/nina2pinata.JPG',
+    img: '/img/cumple/chica-carrito-dulces.webp',
     title: 'Piñata cumpleañera',
     rows: 2,
     cols: 2,

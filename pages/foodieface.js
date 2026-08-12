@@ -16,8 +16,18 @@ import NavBarWhite from '../components/NavbarWhite';
 import QuickInfo5 from '../components/QuickInfo5';
 import NavBar from '../components/NavBarEs/NavBarEs';
 import CalendarioFoodieFacebook from '../components/CalendarioFoodieFacebook';
+import useCalendlyTracking from '../lib/useCalendlyTracking';
 
 function Foodieface() {
+  useCalendlyTracking('facebook', 'foodie');
+
+  useEffect(() => {
+    fbq.event('ViewContent', {
+      content_name: 'Pagina Foodie Facebook',
+      content_category: 'landing_facebook',
+    });
+  }, []);
+
   const opts = {
     height: '350',
     width: '300',
@@ -35,22 +45,22 @@ function Foodieface() {
 
   const { espa } = useAppContext();
   const image1 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg';
+    '/img/reserva/chica-coctel-calavera.webp';
   const image2 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg';
+    '/img/cumple/chica-carrito-dulces.webp';
   const image3 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg';
+    '/img/cumple/festejo-bengala-terraza.webp';
   const image4 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2048.jpg';
+    '/img/ambiente/mesa-tacos-domino.webp';
 
   const image5 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg';
+    '/img/reserva/chica-coctel-calavera.webp';
   const image6 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia+mexicana+tragos+increibles.jpg';
+    '/img/mixologia/amigas-martini-rosa.webp';
   const image7 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg';
+    '/img/cumple/festejo-bengala-terraza.webp';
   const image8 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/coctelDeliciosoMEzcal.jpg';
+    '/img/mixologia/coctel-mazapan-martini.webp';
   const [open, setOpen] = useState(false);
   useEffect(() => {
     const intervalId = setInterval(() => {

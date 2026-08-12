@@ -23,7 +23,7 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mejorterrazaCDMXcantinalallorona.jpg)',
+              'url(/img/ambiente/terraza-noche.webp)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center center',
@@ -34,7 +34,7 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              'url(https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/pinatacumpleanera.JPG)',
+              'url(/img/cumple/carrito-dulces-cumpleanera.webp)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center center',
@@ -45,7 +45,7 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/festejo+cantina+llorona+salsa+baile.jpg)',
+              'url(/img/salsa/cantante-son-cubano.webp)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center center',
@@ -56,7 +56,7 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/grupo+salsa+mexico.jpg)',
+              'url(/img/salsa/cantante-son-cubano.webp)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'top center',
@@ -67,7 +67,7 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologiaIncreible.jpg)',
+              'url(/img/mixologia/amigas-martini-rosa.webp)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'top center',
@@ -79,7 +79,7 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/fotosBanner/IMG_3087.jpg)',
+              'url(/img/carne/arrachera-cenital.webp)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center center',

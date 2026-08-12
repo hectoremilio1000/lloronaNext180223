@@ -7,47 +7,46 @@ function QuickInfo5({ idioma }) {
       photo:
         'https://lh3.googleusercontent.com/a-/ALV-UjV3DD882RNwLvufn4autcgyzu711qUmhKI2TzdjlOYcvcwBsaSYsA=w120-h120-p-rp-mo-br100',
       rating: 5,
-      nombre: 'Julia Didriksson',
-      url: 'https://g.co/kgs/aSThmNh',
-      text: 'Es un lugar que me encanta 💌 los cócteles son lo màximo! Recomiendo mucho Cate de mi corazón y el martini de mazapán ❤️‍🔥',
-      date: '2024-03-20',
+      nombre: 'Alba Magali Juarez',
+      url: 'https://maps.app.goo.gl/cantinalallorona',
+      text: 'Atención súper amable por parte de la mesera, los músicos cubanos también muy amables. La comida es muy sabrosa de verdad, realmente me gustó mucho el lugar 🎶',
+      date: '2026-03-04',
     },
-
     {
       photo:
         'https://lh3.googleusercontent.com/a-/ALV-UjXK7_enaQuwynGEzJkhhVHU65TGBOg03ODSrY4GP_R8Y2TT=w120-h120-p-rp-mo-br100',
       rating: 5,
-      nombre: 'Ivan Ramirez Trejo',
-      url: 'https://g.co/kgs/wZbdKKg',
-      text: '💯% recomendable, comida, atención y bebidas de lujo! Lugar Pet Friendly, recomiendo la hamburguesa crujicerdo y la variedad de tacos </br> En esta ocasión me atendió Roberto él mexicano🙌🏽',
-      date: '2023-03-17',
+      nombre: 'Antilla Day',
+      url: 'https://maps.app.goo.gl/cantinalallorona',
+      text: '¡Una cena fabulosa con muchas gracias a Javier! Tuvimos una cena encantadora al aire libre con música en vivo y un servicio maravilloso 🌟',
+      date: '2026-03-03',
     },
     {
       photo:
         'https://lh3.googleusercontent.com/a-/ALV-UjUxNJQuFLCTAQlSBGAdFgrpbL2zs-1PAWTDEfA0Jq14X7I=w120-h120-p-rp-mo-ba3-br100',
       rating: 5,
-      nombre: 'ethan carbajal',
-      url: 'https://g.co/kgs/mJXTxJ1',
-      text: 'Bonito restaurante con una vista simpática, si te sientas afuera es mucho mejor... Algo tiene la experiencia de comer en el exterior un restaurante y la zona es bonita, les recomiendo intentarlo <br/> Pedí un mezcal de gusano, una hamburguesa de pollo y una cerveza para acompañar!',
-      date: '2023-03-15',
+      nombre: 'Sandra Espinosa',
+      url: 'https://maps.app.goo.gl/cantinalallorona',
+      text: 'Muy buen lugar! Comida deli, buena música en vivo y la atención de Brenda de lujo! 👌🏻 Sin duda regresamos y recomendamos 😉',
+      date: '2026-03-02',
     },
     {
       photo:
         'https://lh3.googleusercontent.com/a-/ALV-UjVHTZs61uPphRYtaHBB1ZHCHIaah1PelMVFWSHGUF4Kq4w=w120-h120-p-rp-mo-ba5-br100',
       rating: 5,
-      nombre: 'Raul Arreaza mijares',
-      url: 'https://g.co/kgs/rS2hRTg',
-      text: 'Excelente lugar, la atención es muy cordial y amable, los platillos de verdad vienen cargados de sabor, todos tienen un toque original en su receta, la pizza de la casa está increíble con peperonni salchicha italiana y aceitunas negras , el guacamole muy rico también y los cócteles se llevaron 5 estrellas en sabor y presentación ! Un lugar muy agradable para disfrutar un buen rato.',
-      date: '2023-03-17',
+      nombre: 'Alessandra',
+      url: 'https://maps.app.goo.gl/cantinalallorona',
+      text: 'Las instalaciones 10/10 y la comida ni se diga, mis favoritas las mini flautas de mole 😍😍😍',
+      date: '2026-03-03',
     },
     {
       photo:
         'https://lh3.googleusercontent.com/a-/ALV-UjU6hsbL81jwtge5BeiLkVptdtmN_iWWRNJFQFtLqdPKxhs=w120-h120-p-rp-mo-ba4-br100',
       rating: 5,
-      nombre: 'Jorge David Santacruz Morhy',
-      url: 'https://g.co/kgs/gVgZDhf',
-      text: 'Excelente lugar - la cerveza oscura está exquisita, así cómo la  hamburguesa. El servicio muy amable.',
-      date: '2023-03-17',
+      nombre: 'Ian Magargee',
+      url: 'https://maps.app.goo.gl/cantinalallorona',
+      text: 'Comida muy sabrosa con un ambiente increíble — había una banda de salsa. Nuestro mesero Najar fue muy amable y nos dio buenas sugerencias. Este lugar es fantástico 🔥',
+      date: '2026-03-01',
     },
   ];
   const testimonialsEn = [

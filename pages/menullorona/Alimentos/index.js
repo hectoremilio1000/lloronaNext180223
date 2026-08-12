@@ -1,4 +1,6 @@
-import React from 'react';
+// /Users/hectoremilio/Proyectos/nextjs/lallorona/lloronaNext180223/pages/menullorona/Alimentos/index.js
+
+import React, { useEffect, useState } from 'react';
 import title from '../../../components/Main/title.module.css';
 import { menuEspa1 } from '../../../data/menu/menuEspa/menuEspa';
 import { menuEspa2 } from '../../../data/menu/menuEspa/menuEspa';
@@ -13,7 +15,70 @@ import { menuEspa11 } from '../../../data/menu/menuEspa/menuEspa';
 import { mixoEspa2 } from '../../../data/menu/menuEspa/menuEspa';
 import MenuDetail from '../../../components/MenuDetail';
 
+const API_BASE = process.env.NEXT_PUBLIC_RESTAURANT_API_BASE;
+const RESTAURANT_SLUG = process.env.NEXT_PUBLIC_RESTAURANT_SLUG || 'la-llorona';
+
 function Alimentos() {
+  const [photos, setPhotos] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    async function load() {
+      // Si no está configurado el API_BASE, no intentamos llamar nada
+      if (!API_BASE) {
+        setLoading(false);
+        return;
+      }
+
+      try {
+        const res = await fetch(
+          `${API_BASE}/api/restaurants/${RESTAURANT_SLUG}/menus/es/alimentos/photos`
+        );
+
+        if (!res.ok) {
+          throw new Error('HTTP ' + res.status);
+        }
+
+        const data = await res.json();
+        if (!data.ok) {
+          throw new Error('Respuesta inválida del API');
+        }
+
+        setPhotos(data.photos || []);
+      } catch (err) {
+        console.error(err);
+        setError(err.message || 'Error cargando menú');
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    load();
+  }, []);
+
+  if (loading) {
+    return <p className="text-center py-8 text-white">Cargando menú…</p>;
+  }
+
+  if (photos.length > 0) {
+    return (
+      <div className="pt-3 grid grid-cols-1 md:grid-cols-1 gap-2 my-8">
+        {photos.map((p) => (
+          <div key={p.id} className="w-full px-4">
+            <img
+              src={p.url}
+              alt={p.altText || 'Menú La Llorona'}
+              width={400}
+              height={500}
+              className="w-full"
+            />
+          </div>
+        ))}
+      </div>
+    );
+  }
+
   const menuComida1 = menuEspa1;
   const menuComida2 = menuEspa2;
   const mixologia = mixoEspa;

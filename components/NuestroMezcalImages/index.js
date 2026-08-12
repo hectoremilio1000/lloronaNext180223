@@ -2,16 +2,25 @@ import React from 'react';
 
 import title from '../Main/title.module.css';
 import card from '../Main/card.module.css';
+import Image from 'next/image';
 
 function NuestroMezcalImages() {
   const image1 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_0043+(1).jpg';
+    '/img/mezcal/niurka-hija-degustando-mezcal.webp';
   const image2 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/foto%2Bbotella%2Bcalaca%2Bmezcal%2Babbywood.jpeg';
+    '/img/mezcal/botella-calavera-mezcal.webp';
   const image3 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9973+(1).jpg';
+    '/img/mezcal/botella-calaca-abbywood-mezcal.webp';
   const image4 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mezcal%2Bcannabis%2Bllorona.jpg';
+    '/img/mezcal/coyote-cannabis-mezcal.webp';
+  const image5 =
+    '/img/mezcal/palenque-santa-catarina-minas.webp';
+  const image6 =
+    '/img/mezcal/destilacion-ollas-barro-cobre.webp';
+  const image7 =
+    '/img/mezcal/niurka-hija-degustando-mezcal.webp';
+  const image8 =
+    '/img/mezcal/niurka-hija-degustando-mezcal.webp';
   return (
     <div>
       <div>
@@ -71,62 +80,60 @@ function NuestroMezcalImages() {
         Alvaro Obregón 308 Roma Condesa, hacemos delivery.
       </p>
 
-      {/* <div className={card.cardContainer}>
-        
-        
-      <div className={card.cardBox}>
-            <Image
-              className="imagenAbajoTexto1Home"
-            src={image1}
-            width="640" height="360"
-            alt="Nuestro Palenque, Santa Catarina Minas, Oaxaca" 
-            
-            />
-          <p className="textoFotosHome text-black">Nuestro Palenque, Santa Catarina Minas, Oaxaca</p>
-        </div>
-        
-        
-      
+      <div className={card.cardContainer}>
         <div className={card.cardBox}>
-          <Image
+          <img
             className="imagenAbajoTexto1Home"
-            src={image2}
-            alt="Nuestro Palenque, Santa Catarina Minas, Oaxaca" 
-            width="640" height="360"
-          />
-          <p className="textoFotosHome text-black">Molienda con manos de artesanos oaxaqueños</p>
-        </div>
-        <div className="h-64 w-96 relative">
-          <Image
-            
-            src={image3}
-            
-            layout="fill" // required
-            objectFit="cover" // change to suit your needs
-            className="rounded-full" // just an example
+            src={image5}
+            height="360"
             alt="Nuestro Palenque, Santa Catarina Minas, Oaxaca"
           />
-          <p className="textoFotosHome text-black">Fermentación 100% libre de químicos</p>
+          <p className="textoFotosHome text-black">
+            Nuestro Palenque, Santa Catarina Minas, Oaxaca
+          </p>
         </div>
 
-        <div className="h-64 w-96 relative">
-          <Image
+        <div className={card.cardBox}>
+          <img
+            className="imagenAbajoTexto1Home"
+            src={image6}
+            alt="Nuestro Palenque, Santa Catarina Minas, Oaxaca"
+            height="360"
+          />
+          <p className="textoFotosHome text-black">
+            Destilación en Ollas de Barro de Cobre
+          </p>
+        </div>
+        <div className={card.cardBox}>
+          <img
+            className="imagenAbajoTexto1Home"
+            src={image7}
+            alt="Nuestro Palenque, Santa Catarina Minas, Oaxaca"
+            height="360"
+          />
+          <p className="textoFotosHome text-black">100% hecho a mano</p>
+        </div>
+
+        {/* <div className="h-64 w-96 relative">
+          <img
             className="imagenAbajoTexto1Home"
             src={image4}
-            alt="Nuestro Palenque, Santa Catarina Minas, Oaxaca" 
+            alt="Nuestro Palenque, Santa Catarina Minas, Oaxaca"
+            height="360"
           />
-          <p className="textoFotosHome text-black">Destilación en Ollas de Barro de Cobre</p>
-        </div>
-   
+          <p className="textoFotosHome text-black">
+            Destilación en Ollas de Barro de Cobre
+          </p>
         </div> */}
+      </div>
 
-      <div className="subSubDiv1Banner">
+      {/* <div className="subSubDiv1Banner">
         <a href="https://wa.me/+5215549242477">
           <button type="button" className="buttonComponente">
             ¡Comprar ahora!
           </button>
         </a>
-      </div>
+      </div> */}
     </div>
 
     // <Section>
@@ -171,22 +178,22 @@ function NuestroMezcalImages() {
 
 const itemData = [
   {
-    img: 'https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/IMG_9973.jpg',
+    img: '/img/mezcal/niurka-hija-degustando-mezcal.webp',
     title: 'Niurka con su hija Romi Marcos degustando nuestro Mezcal',
     rows: 2,
     cols: 2,
     featured: true,
   },
   {
-    img: 'https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/IMG_0043.jpg',
+    img: '/img/mezcal/botella-calavera-mezcal.webp',
     title: 'Nuestra botella Calavera',
   },
   {
-    img: 'https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/mezcal+cannabis+llorona.jpg',
+    img: '/img/mezcal/coyote-cannabis-mezcal.webp',
     title: 'Coyote con Cannabis',
   },
   {
-    img: 'https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/foto+botella+calaca+mezcal+abbywood.JPG',
+    img: '/img/mezcal/botella-calaca-abbywood-mezcal.webp',
     title: 'La pasión nos une AbbyWoo',
     cols: 2,
   },

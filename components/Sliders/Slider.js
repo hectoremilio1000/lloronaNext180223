@@ -63,15 +63,14 @@ const Slider = () => {
                 <div className="w-full">
                   <img
                     className="rounded-lg border-2 border-white w-full h-[300px] object-center object-cover"
-                    src="https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/top-view-baked-pan-de-muerto1.jpg
-                    "
-                    alt=""
+                    src="/img/ambiente/mesa-tacos-domino.webp"
+                    alt="Tacos de la Llorona Cantina"
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
-                    Pan de muerto
+                    Tacos de la casa
                   </h1>
                   <p className="text-xs md:text-xl text-white">
-                    Con helado negro{' '}
+                    Tortilla de maíz nixtamalizado{' '}
                   </p>
                 </div>
               </SwiperSlide>
@@ -79,15 +78,14 @@ const Slider = () => {
                 <div className="w-full">
                   <img
                     className="rounded-lg border-2 border-white w-full h-[300px] object-center object-cover"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/15septiembre/chileennogadamexicolloronacantina.jpg
-                    "
-                    alt=""
+                    src="/img/carne/arrachera-coctel.webp"
+                    alt="Aguachile de ribeye Cantina La Llorona"
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
-                    Chile en nogada
+                    Aguachile de ribeye
                   </h1>
                   <p className="text-xs md:text-xl text-white">
-                    Premiado en diversos concursos{' '}
+                    Ribeye prime con toque ahumado{' '}
                   </p>
                 </div>
               </SwiperSlide>
@@ -95,7 +93,7 @@ const Slider = () => {
                 <div className="w-full">
                   <img
                     className="rounded-lg border-2 border-white w-full h-[300px] object-bottom object-cover"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/tostada%2Bcamaron%2Bcantina%2Bllorona%2Baguachile%2Bcdmx%2Broma%2Bcondesa.jpg
+                    src="/img/platos/aguachile-aguacate-closeup.webp
                     "
                     alt=""
                   />
@@ -111,7 +109,7 @@ const Slider = () => {
                 <div className="w-full">
                   <img
                     className="rounded-lg border-2 border-white w-full h-[300px] object-bottom object-cover"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/barbacoa%2Bpican%CC%83a%2Bcantina%2Bllorona%2Bsabor%2Broma%2Bcondesa%2Bcdmx.jpg"
+                    src="/img/carne/arrachera-cenital.webp"
                     alt=""
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
@@ -124,7 +122,7 @@ const Slider = () => {
                 <div className="w-full">
                   <img
                     className="rounded-lg border-2 border-white w-full h-[300px] object-left object-cover"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/gruposcubanos1.png"
+                    src="/img/salsa/son-cubano.webp"
                     alt=""
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
@@ -137,7 +135,7 @@ const Slider = () => {
                 <div className="w-full">
                   <img
                     className="rounded-lg border-2 border-white w-full h-[300px] object-top object-cover"
-                    src="https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/clienta%2Bfeliz%2Bcantina%2Bla%2Bllorona%2Bcdmx.jpg"
+                    src="/img/ambiente/terraza-noche.webp"
                     alt=""
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
@@ -150,7 +148,7 @@ const Slider = () => {
                 <div className="w-full">
                   <img
                     className="rounded-lg border-2 border-white w-full h-[300px] object-top object-cover"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/festejo+cantina+llorona+salsa+baile.jpg"
+                    src="/img/salsa/cantante-son-cubano.webp"
                     alt=""
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
@@ -215,15 +213,14 @@ const Slider = () => {
                 <div className="w-full">
                   <img
                     className="rounded-lg border-2 border-white w-full h-[300px] object-center object-cover"
-                    src="https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/top-view-baked-pan-de-muerto1.jpg
-                "
-                    alt=""
+                    src="/img/ambiente/mesa-tacos-domino.webp"
+                    alt="Tacos at La Llorona Cantina"
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
-                    Day of the Dead Bread
+                    House Tacos
                   </h1>
                   <p className="text-xs md:text-xl text-white">
-                    With black ice cream{' '}
+                    Nixtamal heirloom corn tortilla{' '}
                   </p>
                 </div>
               </SwiperSlide>
@@ -231,7 +228,7 @@ const Slider = () => {
                 <div className="w-full">
                   <img
                     className="rounded-lg border-2 border-white w-full h-[300px] object-top object-cover"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/tostadaCantinera.jpg"
+                    src="/img/platos/aguachile-aguacate-closeup.webp"
                     alt=""
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
@@ -244,7 +241,7 @@ const Slider = () => {
                 <div className="w-full">
                   <img
                     className="rounded-lg border-2 border-white w-full h-[300px] object-top object-cover"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologiaIncreible.jpg"
+                    src="/img/mixologia/amigas-martini-rosa.webp"
                     alt=""
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
@@ -259,7 +256,7 @@ const Slider = () => {
                 <div className="w-full">
                   <img
                     className="rounded-lg border-2 border-white w-full h-[300px] object-left object-cover"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/gruposcubanos1.png"
+                    src="/img/salsa/son-cubano.webp"
                     alt=""
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
@@ -272,7 +269,7 @@ const Slider = () => {
                 <div className="w-full">
                   <img
                     className="rounded-lg border-2 border-white w-full h-[300px] object-top object-cover"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/lugarincreible%2Bcomida%2Bdeliciosa%2Bcantina.jpg"
+                    src="/img/ambiente/interior-techo-raices.webp"
                     alt=""
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
@@ -287,7 +284,7 @@ const Slider = () => {
                 <div className="w-full">
                   <video
                     className="rounded-lg border-2 border-white w-full h-[300px] object-top object-cover object-center"
-                    src="https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/llorona%2Bmariachi%2Bcantina.MP4"
+                    src="/img/video/mariachi-cantina.mp4"
                     autoPlay
                     loop
                     muted

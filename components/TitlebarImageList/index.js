@@ -5,13 +5,13 @@ import title from '../Main/title.module.css';
 
 function TitlebarImageList() {
   const image1 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_1905.jpg';
+    '/img/mezcal/palenque-santa-catarina-minas.webp';
   const image2 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9982.jpg';
+    '/img/mezcal/palenque-santa-catarina-minas.webp';
   const image3 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9983.jpg';
+    '/img/mezcal/destilacion-ollas-barro-cobre.webp';
   const image4 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9984.jpg';
+    '/img/mezcal/mezcal-hecho-a-mano.webp';
   return (
     <div>
       <div>
@@ -127,14 +127,14 @@ function TitlebarImageList() {
 
 // const itemData = [
 //   {
-//     img: "https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/IMG_9982.jpg",
+//     img: "/img/mezcal/palenque-santa-catarina-minas.webp",
 //     title: "Nuestro Palenque, Santa Catarina Minas, Oaxaca",
 //     rows: 2,
 //     cols: 2,
 //     featured: true,
 //   },
 //   {
-//     img: "https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/IMG_9984.jpg",
+//     img: "/img/mezcal/mezcal-hecho-a-mano.webp",
 //     title: "Molienda con manos de artesanos oaxaqueños",
 //   },
 //   {
@@ -142,7 +142,7 @@ function TitlebarImageList() {
 //     title: "Fermentación 100% libre de químicos",
 //   },
 //   {
-//     img: "https://imagenesrutalab.s3.amazonaws.com/llorona/mezcal/IMG_9983.jpg",
+//     img: "/img/mezcal/destilacion-ollas-barro-cobre.webp",
 //     title: "Destilación en Ollas de Barro de Cobre",
 //     cols: 2,
 //   },

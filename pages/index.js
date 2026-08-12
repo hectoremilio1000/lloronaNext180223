@@ -21,25 +21,28 @@ import NavBar from '../components/NavBarEs/NavBarEs';
 import QuickInfo5 from '../components/QuickInfo5';
 import QuickInfo6 from '../components/QuickInfo6';
 import MySwiper from '../components/SwiperIndex';
+import useCalendlyTracking from '../lib/useCalendlyTracking';
 // imagenes
 const image1 =
-  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg';
+  '/img/reserva/chica-coctel-calavera.webp';
 const image2 =
-  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg';
+  '/img/cumple/chica-carrito-dulces.webp';
 const image3 =
-  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg';
+  '/img/cumple/festejo-bengala-terraza.webp';
 const image4 =
-  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/IMG_2048.jpg';
+  '/img/ambiente/mesa-tacos-domino.webp';
 
 const image5 =
-  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg';
+  '/img/reserva/chica-coctel-calavera.webp';
 const image6 =
-  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia+mexicana+tragos+increibles.jpg';
+  '/img/mixologia/amigas-martini-rosa.webp';
 const image7 =
-  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg';
+  '/img/cumple/festejo-bengala-terraza.webp';
 const image8 =
-  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/coctelDeliciosoMEzcal.jpg';
+  '/img/mixologia/coctel-mazapan-martini.webp';
 export default function Home() {
+  useCalendlyTracking('organic', 'general');
+
   const opts = {
     height: '350',
     width: '100%',
@@ -78,29 +81,33 @@ export default function Home() {
   const { locale } = router;
   let HeaderComponent;
   const logo2 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/logo_page_altaNUEVO_blanco.png';
+    '/img/logo/logo-llorona-blanco.webp';
 
   return (
     <div>
       {espa ? (
         <Head>
-          <title>La Llorona</title>
+          <title>La Llorona Cantina | Restaurante Mexicano en Roma Condesa CDMX – Música en Vivo y Mezcal</title>
+          <meta
+            name="description"
+            content="Cantina mexicana premium en Roma Condesa, CDMX. Tacos, aguachile, mezcal artesanal y música cubana en vivo. Reserva tu mesa hoy. ¡Piñata cumpleañera los jueves!"
+          />
           <link rel="icon" href="../favicon.ico" />
-          <meta name="of:title" content="Llorona" />
+          <meta name="of:title" content="La Llorona Cantina | Restaurante Mexicano Roma Condesa" />
           <meta
             name="of:description"
-            content="Somos un restaurante mexicano con buen son"
+            content="Cantina mexicana premium en Roma Condesa, CDMX. Tacos, aguachile, mezcal artesanal y música cubana en vivo."
           />
           <meta
             name="og:description"
-            content="Somos un restaurante mexicano con buen son"
+            content="Cantina mexicana premium en Roma Condesa, CDMX. Tacos, aguachile, mezcal artesanal y música cubana en vivo. Reserva tu mesa hoy."
           />
           <meta property="og:url" content="https://lalloronacantina.com/" />
-          <meta name="og:title" content="La Llorona" />
+          <meta name="og:title" content="La Llorona Cantina | Restaurante Mexicano Roma Condesa CDMX" />
           <meta property="og:type" content="La Llorona" />
           <meta
             property="og:image"
-            content="https://imagenesrutalab.s3.amazonaws.com/llorona/logo/logo_alta_sin_nombre.png"
+            content="/img/logo/logo-llorona-calaca.png"
           />
           <link rel="apple-touch-icon" href="../logo192.png" />
           <link rel="manifest" href="../manifest.json" />
@@ -133,7 +140,7 @@ export default function Home() {
           <meta property="og:type" content="Llorona" />
           <meta
             property="og:image"
-            content="https://imagenesrutalab.s3.amazonaws.com/llorona/logo/logo_alta_sin_nombre.png"
+            content="/img/logo/logo-llorona-calaca.png"
           />
           <link rel="apple-touch-icon" href="../logo192.png" />
           <link rel="manifest" href="../manifest.json" />

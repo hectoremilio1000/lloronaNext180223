@@ -21,9 +21,9 @@ import MySwiper from '../components/Swiper15septiembre';
 import CalendarioGoogleAds from '../components/CalendarioGoogleAds';
 
 function Septiembre() {
-  // useEffect(() => {
-  //   fbq.event('reserva')
-  // }, []);
+  useEffect(() => {
+    fbq.event('reserva')
+  }, []);
 
   const opts = {
     height: '350',
@@ -42,22 +42,21 @@ function Septiembre() {
 
   const { espa } = useAppContext();
   const image1 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg';
+    '/img/reserva/chica-coctel-calavera.webp';
   const image2 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg';
+    '/img/cumple/chica-carrito-dulces.webp';
   const image3 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/15septiembre/chileennogadamexicolloronacantina.jpg';
-  const image4 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/gruposcubanos1.png';
+    '/img/salsa/cantante-son-cubano.webp';
+  const image4 = '/images/15_septiembre.jpg';
 
   const image5 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg';
+    '/img/reserva/chica-coctel-calavera.webp';
   const image6 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia+mexicana+tragos+increibles.jpg';
+    '/img/mixologia/amigas-martini-rosa.webp';
   const image7 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg';
+    '/img/cumple/festejo-bengala-terraza.webp';
   const image8 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/coctelDeliciosoMEzcal.jpg';
+    '/img/mixologia/coctel-mazapan-martini.webp';
   const [open, setOpen] = useState(false);
 
   return (
@@ -112,8 +111,8 @@ function Septiembre() {
                             alt="Música en vivo"
                           />
                           <p className="text-white pt-2">
-                            El chile en <br />
-                            Nogada más famoso
+                            Salsa en <br />
+                            vivo
                           </p>
                         </div>
                       </Link>
@@ -126,8 +125,8 @@ function Septiembre() {
                             alt="Música en vivo"
                           />
                           <p className="text-white text-center">
-                            El mejor <br />
-                            ambiente
+                            Noche de <br />
+                            mariachi
                           </p>
                         </div>
                       </Link>
@@ -139,13 +138,12 @@ function Septiembre() {
                     </p>
                     <p className="text-start text-white sm:text-xs md:text-2xl mt-3">
                       Este septiembre, te invitamos a celebrar en grande 🎶,
-                      viviendo la esencia de las Fiestas Patrias al ritmo del
-                      mejor Son Cubano de México 🇨🇺. Únete a nuestra gran fiesta
-                      🎊 y deja que la música y la tradición te envuelvan
-                      mientras disfrutas del auténtico sabor de la temporada con
-                      nuestro exquisito Chile en Nogada 🌶️🍽️, preparado con los
-                      mejores ingredientes. ¡No te pierdas una noche llena de
-                      sabor, cultura y alegría! 🎶💃✨
+                      viviendo la esencia de las Fiestas Patrias con mariachi y
+                      al ritmo del mejor Son Cubano de México 🇨🇺. Únete a
+                      nuestra gran fiesta 🎊 y deja que la música y la tradición
+                      te envuelvan mientras disfrutas del auténtico sabor de la
+                      temporada con nuestro exquisito Chile en Nogada 🌶️🍽️,
+                      preparado con los mejores ingredientes. 🎶💃✨
                     </p>
                   </div>
                   <div className="w-full">

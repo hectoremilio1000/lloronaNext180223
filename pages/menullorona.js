@@ -1,3 +1,4 @@
+// /Users/hectoremilio/Proyectos/nextjs/lallorona/lloronaNext180223/pages/menullorona.js
 import React from 'react';
 import { useState } from 'react';
 import ButtonComponent from '../components/ButtonComponent/index';
@@ -28,7 +29,7 @@ function MenuLlorona() {
       <div
         className="d-flex subContenedor1Banner banner"
         style={{
-          backgroundImage: `url("https://imagenesrutalab.s3.amazonaws.com/llorona/banner/bannerMenu.jpg")`,
+          backgroundImage: `url("/img/ambiente/interior-techo-raices.webp")`,
           backgroundSize: 'cover',
           height: '40vh',
           backgroundPosition: 'center',

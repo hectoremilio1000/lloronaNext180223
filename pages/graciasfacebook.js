@@ -1,7 +1,57 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect } from 'react';
+import * as fbq from '../lib/fpixel';
 
 const GraciasFacebook = () => {
+  useEffect(() => {
+    // Facebook Pixel - Lead conversion from Facebook campaign
+    fbq.event('Lead', {
+      content_name: 'Reservacion Facebook',
+      content_category: 'reserva_facebook',
+      value: 500,
+      currency: 'MXN',
+    });
+
+    // Facebook Pixel - Purchase event for campaign optimization
+    fbq.event('Purchase', {
+      content_name: 'Reservacion Facebook',
+      content_type: 'product',
+      value: 500,
+      currency: 'MXN',
+    });
+
+    // TikTok Pixel - Cross-platform tracking
+    if (typeof window !== 'undefined' && window.ttq) {
+      window.ttq.track('SubmitForm', {
+        content_name: 'Reservacion Facebook',
+        content_type: 'product',
+        value: 500,
+        currency: 'MXN',
+      });
+    }
+
+    // Google Ads - Conversion
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'conversion', {
+        send_to: 'AW-11160821109/6PCACIi1ypEZEPW68skp',
+        value: 500,
+        currency: 'MXN',
+      });
+    }
+
+    // GTM DataLayer
+    if (typeof window !== 'undefined') {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'reserva_completada',
+        conversion_type: 'reserva_facebook',
+        source: 'facebook',
+        value: 500,
+        currency: 'MXN',
+      });
+    }
+  }, []);
+
   return (
     <div className="h-[100vh] w-full bg-black py-[120px] flex flex-col justify-center items-center fixed z-[6000] left-0 right-0">
       <div className="w-full max-w-[1184px] mx-auto flex flex-col items-center">

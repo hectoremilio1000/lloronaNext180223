@@ -16,11 +16,17 @@ import ModalAll from '../components/ModalAll';
 import NavBar from '../components/NavBarEs/NavBarEs';
 import QuickInfo5 from '../components/QuickInfo5';
 import Slider from '../components/Sliders/Slider';
+import useCalendlyTracking from '../lib/useCalendlyTracking';
 
 function Reserva() {
-  // useEffect(() => {
-  //   fbq.event('reserva')
-  // }, []);
+  useCalendlyTracking('organic', 'general');
+
+  useEffect(() => {
+    fbq.event('ViewContent', {
+      content_name: 'Pagina Reserva',
+      content_category: 'landing_organic',
+    });
+  }, []);
 
   const opts = {
     height: '350',
@@ -55,22 +61,22 @@ function Reserva() {
     setHasInitialized(true);
   };
   const image1 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg';
+    '/img/reserva/chica-coctel-calavera.webp';
   const image2 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/nina2pinata.jpeg';
+    '/img/cumple/chica-carrito-dulces.webp';
   const image3 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/cumplean%CC%83os%2Bsorpresa%2Bfiesta%2Bllorona%2Bcantina%2Bnin%CC%83as.png';
+    '/img/cumple/carrito-dulces-sorpresa.webp';
   const image4 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/salsa/gruposcubanos1.png';
+    '/img/salsa/son-cubano.webp';
 
   const image5 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg';
+    '/img/reserva/chica-coctel-calavera.webp';
   const image6 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/mixologia+mexicana+tragos+increibles.jpg';
+    '/img/mixologia/amigas-martini-rosa.webp';
   const image7 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/ninapinata.jpeg';
+    '/img/cumple/festejo-bengala-terraza.webp';
   const image8 =
-    'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/coctelDeliciosoMEzcal.jpg';
+    '/img/mixologia/coctel-mazapan-martini.webp';
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -108,8 +114,9 @@ function Reserva() {
               <div className="w-full max-w-[1184px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-8 text-center">
                 <div className="w-full">
                   <h1 className="font-bold text-4xl text-white">
-                    Los jueves piñata cumpleañera <br />
-                    con una botella de mezcal
+                    {' '}
+                    Los jueves piñata cumpleañera con botella de mezcal
+                    artesanal
                   </h1>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <Link href="/reserva">
@@ -143,8 +150,7 @@ function Reserva() {
                     La <b>piñata cumpleañera</b> no tiene costo, y aplica todos
                     los jueves si cumples años en el mes ❤️ y solo tienen que
                     hacer reservación. Les regalamos dulces típicos mexicanos y
-                    una botella de nuestro{' '}
-                    <b>mezcal premium madre cuishe 🍶🥃</b>.
+                    una botella de mezcal artesanal🍾.
                   </p>
                 </div>
                 <div className="w-full">
@@ -190,7 +196,8 @@ function Reserva() {
                 <div className="w-full">
                   <h1 className="font-bold text-4xl text-white">
                     On Thursdays, a birthday <br />
-                    piñata with a bottle of mezcal
+                    piñata with mexican candies and a bottle of artisan mezcal
+                    🍾
                   </h1>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <Link href="/reserva">
@@ -217,8 +224,7 @@ function Reserva() {
                     The birthday piñata is free of charge and applies every
                     Thursday if your birthday is in the month. You just need to
                     make a reservation. We give away traditional Mexican candies
-                    and a bottle of our best house mezcal 🍶🥃 madre cuishe,
-                    which is handcrafted.
+                    and a special dessert from our chef.
                   </p>
                   <div className="overflow-auto">
                     <ModalAll
@@ -226,7 +232,7 @@ function Reserva() {
                       open={open}
                       setOpen={setOpen}
                     >
-                      <InlineWidget url="https://calendly.com/reservaciones-14/reservaciones-llorona?hide_gdpr_banner=1" />
+                      <InlineWidget url="https://calendly.com/reservaciones-14/reserva-llorona" />
                     </ModalAll>
                   </div>
                 </div>
@@ -273,7 +279,7 @@ function Reserva() {
 }
 const itemData = [
   {
-    img: 'https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/nina2pinata.JPG',
+    img: '/img/cumple/chica-carrito-dulces.webp',
     title: 'Piñata cumpleañera',
     rows: 2,
     cols: 2,

@@ -9,21 +9,19 @@ import * as fbq from '../../lib/fpixel';
 //imagenes
 
 const image1 =
-  'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/llorona%2Bson%2Bgrupo%2Bcuano%2Bcantina%2Bweb.jpg';
+  '/img/salsa/cantante-son-cubano.webp';
 
-// const image2 =
-//   'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/aguachile%2Bcantina%2Bllorona%2Bribeye%2Bdelicioso.jpg';
-
-const image2 = '/images/banner/posteo_chileC.jpg';
+const image2 =
+  '/img/carne/arrachera-coctel.webp';
 
 const image3 =
-  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/postres+ricos+deliciosos.JPG';
+  '/img/comida/postres-deliciosos.webp';
 
 const image4 =
-  'https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/inicio/amigastomandoCantinaLlorona.JPG';
+  '/img/ambiente/mesa-tacos-domino.webp';
 
 const image5 =
-  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/cantina%2Bllorona%2Btaco.jpg';
+  '/img/ambiente/mesa-tacos-domino.webp';
 
 function QuickInfo() {
   const handleClick = () => {

@@ -13,10 +13,10 @@ import { useRouter } from 'next/navigation';
 import { useAppContext } from '../context/Context';
 
 const usFlag =
-  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/banderas/um.svg';
+  '/img/banderas/us.svg';
 
 const mxFlag =
-  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/banderas/mx.svg';
+  '/img/banderas/mx.svg';
 
 function NavBar({ onLanguageChange }) {
   const [current, setCurrent] = useState('');
@@ -123,6 +123,14 @@ function NavBar({ onLanguageChange }) {
                     Menu
                   </Link>
                 </li>
+                <li key="3">
+                  <Link
+                    href="/tacoanticruda"
+                    className="nav-link hover:text-emerald-500"
+                  >
+                    Hangover Taco
+                  </Link>
+                </li>
                 {/* <li key="3">
                   <Link
                     href="/mezcal"
@@ -165,19 +173,27 @@ function NavBar({ onLanguageChange }) {
                 </li>
                 <li key="3">
                   <Link
-                    href="/salsa"
+                    href="/tacoanticruda"
                     className="nav-link hover:text-emerald-500"
                   >
-                    Salsa en Vivo
+                    Taco anticruda
                   </Link>
                 </li>
+                {/* <li key="3">
+                  <Link
+                    href="/15septiembre"
+                    className="nav-link hover:text-emerald-500"
+                  >
+                    15 de septiembre
+                  </Link>
+                </li> */}
 
                 <li key="4">
                   <Link
-                    href="/popupreserva"
+                    href="/paquetes"
                     className="nav-link hover:text-emerald-500"
                   >
-                    Pop up
+                    Paquetes&Eventos
                   </Link>
                 </li>
               </>

@@ -23,11 +23,10 @@ const MySwiper = () => {
       <SwiperSlide>
         <div
           style={{
-            backgroundImage:
-              'url(https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/fotosBanner/cantina%2Bllorona%2Bafuera%2Blugar.jpg)',
+            backgroundImage: 'url(/img/ambiente/mesa-tacos-domino.webp)',
             height: '80vh',
             backgroundSize: 'cover',
-            backgroundPosition: 'bottom center',
+            backgroundPosition: 'center center',
           }}
         >
           {/* <div className="absolute inset-0 flex items-center justify-center">
@@ -43,7 +42,7 @@ const MySwiper = () => {
       <SwiperSlide>
         <div
           style={{
-            backgroundImage: "url('/images/banner/posteo_chileC.jpg')",
+            backgroundImage: "url('images/PICANIA1.jpg')",
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center center',
@@ -56,7 +55,7 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              'url(https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/fotosBanner/tiraditoRibEye%2Bllorona%2Bcantina.jpg)',
+              'url(/img/carne/arrachera-coctel.webp)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center center',
@@ -70,7 +69,7 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              'url(https://imagenesrutalab.s3.us-east-1.amazonaws.com/llorona/nextImage/fotosBanner/mandarinaBanner.jpg)',
+              'url(/img/comida/ensalada-espinaca-mandarina.webp)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
@@ -91,7 +90,7 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              'url(https://imagenesrutalab.s3.amazonaws.com/llorona/cumple/pinatacumpleanera.JPG)',
+              'url(/img/cumple/carrito-dulces-cumpleanera.webp)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center center',
@@ -112,7 +111,7 @@ const MySwiper = () => {
         <div
           style={{
             backgroundImage:
-              'url(https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/inicio/chicharron%2Bpork%2Bbelly%2Bguacamole%2Bcantina%2Bllorona.jpg)',
+              'url(/img/platos/plato-fuerte-guacamole-martini-mazapan.webp)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center center',
@@ -132,22 +131,13 @@ const MySwiper = () => {
       <SwiperSlide>
         <div
           style={{
-            backgroundImage:
-              'url(https://imagenesrutalab.s3.amazonaws.com/llorona/franquicias/banner/IMG_8773.jpg)',
+            backgroundImage: 'url(/img/ambiente/mesa-tacos-domino.webp)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center center',
           }}
         >
           {' '}
-          {/* <div className="absolute inset-0 flex items-center justify-center">
-            <Link
-              href={"/reserva"}
-              className="inline-block px-4 py-3 rounded-md text-green-900 font-bold bg-[#3eeb91] text-xl m:text-2xl"
-            >
-              Reserva Ahora
-            </Link>
-          </div> */}
         </div>
       </SwiperSlide>
 
