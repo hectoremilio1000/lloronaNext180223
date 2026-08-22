@@ -125,10 +125,10 @@ function NavBar({ onLanguageChange }) {
                 </li>
                 <li key="3">
                   <Link
-                    href="/tacoanticruda"
+                    href="/chiles-en-nogada-cdmx"
                     className="nav-link hover:text-emerald-500"
                   >
-                    Hangover Taco
+                    September Mariachi
                   </Link>
                 </li>
                 {/* <li key="3">
@@ -173,10 +173,10 @@ function NavBar({ onLanguageChange }) {
                 </li>
                 <li key="3">
                   <Link
-                    href="/tacoanticruda"
+                    href="/chiles-en-nogada-cdmx"
                     className="nav-link hover:text-emerald-500"
                   >
-                    Taco anticruda
+                    Septiembre Mariachi
                   </Link>
                 </li>
                 {/* <li key="3">
