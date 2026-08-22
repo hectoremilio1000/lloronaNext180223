@@ -1,4 +1,4 @@
-// pages/reserva-chile-nogada.js
+// pages/chiles-en-nogada-cdmx.js
 
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
@@ -29,19 +29,78 @@ export default function ReservaChileNogada() {
   }, [hasInitialized, onIdiomaEspa]);
 
   // Imagen destacada del platillo
-  const chileNogadaImg = '/images/chile_en_nogada.jpg';
+  const chileNogadaImg = '/img/eventos/chile-en-nogada.webp';
 
   // Link de WhatsApp con mensaje predefinido
   const whatsappLink = `https://wa.me/525549242477?text=${encodeURIComponent(
-    'Hola, quiero reservar una mesa para disfrutar los Chiles en Nogada en Cantina La Llorona.'
+    'Hola, quiero reservar una mesa para los Chiles en Nogada en Cantina La Llorona. ¿Qué disponibilidad tienen?'
   )}`;
+
+  // Schema.org: ayuda a Google a mostrar rich results del platillo
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Restaurant',
+    name: 'Cantina La Llorona',
+    servesCuisine: 'Mexicana',
+    url: 'https://lalloronacantina.com/chiles-en-nogada-cdmx/',
+    image: 'https://lalloronacantina.com/img/eventos/chile-en-nogada.webp',
+    telephone: '+525549242477',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Ciudad de México',
+      addressCountry: 'MX',
+    },
+    acceptsReservations: 'True',
+    hasMenu: {
+      '@type': 'Menu',
+      hasMenuSection: {
+        '@type': 'MenuSection',
+        name: 'Temporada',
+        hasMenuItem: {
+          '@type': 'MenuItem',
+          name: 'Chiles en Nogada',
+          description:
+            'Chiles en nogada de temporada con nogada cremosa y granada fresca, acompañados de mariachi y son cubano en vivo todos los días.',
+        },
+      },
+    },
+  };
 
   return (
     <>
       <Head>
+        <title>
+          Chiles en Nogada en CDMX con Mariachi y Son Cubano en Vivo | Cantina
+          La Llorona
+        </title>
         <meta
           name="description"
-          content="Reserva tu mesa para disfrutar los mejores Chiles en Nogada en Cantina La Llorona, Roma/Condesa."
+          content="Chiles en nogada de temporada en Cantina La Llorona, Roma/Condesa, con mariachi y son cubano en vivo todos los días. Ya disponibles por tiempo limitado. Reserva tu mesa."
+        />
+        <link
+          rel="canonical"
+          href="https://lalloronacantina.com/chiles-en-nogada-cdmx/"
+        />
+        <meta
+          property="og:title"
+          content="Chiles en Nogada con Mariachi y Son Cubano en Vivo | Cantina La Llorona"
+        />
+        <meta
+          property="og:description"
+          content="Ya disponibles y por tiempo limitado. Chiles en nogada acompañados de mariachi y son cubano en vivo todos los días en Cantina La Llorona."
+        />
+        <meta
+          property="og:image"
+          content="https://lalloronacantina.com/img/eventos/chile-en-nogada.webp"
+        />
+        <meta
+          property="og:url"
+          content="https://lalloronacantina.com/chiles-en-nogada-cdmx/"
+        />
+        <meta property="og:type" content="website" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <noscript>
           <img
@@ -68,11 +127,14 @@ export default function ReservaChileNogada() {
         {espa ? (
           <>
             <div className="max-w-[800px] mx-auto text-center px-4">
+              <p className="inline-block bg-[#3eeb91] text-black font-bold text-sm tracking-widest uppercase px-4 py-2 rounded-full mb-4">
+                Ya disponibles · Por tiempo limitado
+              </p>
               <h1 className="font-bold text-5xl text-white mb-4">
-                Chiles en Nogada
+                Chiles en Nogada en CDMX
               </h1>
               <h2 className="text-2xl text-[#3eeb91] mb-6">
-                La joya de la temporada en Cantina La Llorona
+                Con mariachi y son cubano en vivo todos los días
               </h2>
               <p className="text-white mb-8">
                 Ven a disfrutar los{' '}
@@ -99,6 +161,55 @@ export default function ReservaChileNogada() {
                 Reservar por WhatsApp
               </a>
             </div>
+
+            <section className="max-w-[900px] mx-auto mt-16 px-6 text-center text-[#F4F1EE]">
+              <h2 className="text-3xl md:text-4xl font-bold mb-2 text-[#3eeb91]">
+                🎺 Acompáñalos con música en vivo
+              </h2>
+              <h3 className="text-xl font-medium mb-8">
+                Mariachi y son cubano en vivo, todos los días
+              </h3>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <Link href="/jueves_mariachi">
+                  <div className="bg-black/40 rounded-2xl p-6 h-full hover:bg-black/60 transition cursor-pointer">
+                    <h4 className="text-2xl font-bold text-[#3eeb91] mb-2">
+                      Mariachi en vivo
+                    </h4>
+                    <p className="text-[#F4F1EE]">
+                      El mariachi llega a tu mesa mientras disfrutas tus chiles
+                      en nogada. Pide tu canción favorita.
+                    </p>
+                  </div>
+                </Link>
+                <Link href="/salsa">
+                  <div className="bg-black/40 rounded-2xl p-6 h-full hover:bg-black/60 transition cursor-pointer">
+                    <img
+                      className="rounded-xl w-full h-[220px] object-cover mb-4"
+                      src="/img/salsa/cantante-son-cubano.webp"
+                      alt="Son cubano en vivo en Cantina La Llorona"
+                      loading="lazy"
+                    />
+                    <h4 className="text-2xl font-bold text-[#3eeb91] mb-2">
+                      Son cubano en vivo
+                    </h4>
+                    <p className="text-[#F4F1EE]">
+                      Sones, boleros y salsa en vivo para cerrar la noche
+                      bailando.
+                    </p>
+                  </div>
+                </Link>
+              </div>
+
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg transition"
+              >
+                Reservar mesa con música en vivo
+              </a>
+            </section>
 
             <section className="max-w-2xl mx-auto pt-8 px-6 text-center text-[#F4F1EE] rounded-2xl shadow-lg">
               <h2 className="text-3xl md:text-4xl font-bold mb-2 text-[#3eeb91]">
@@ -160,16 +271,20 @@ export default function ReservaChileNogada() {
           // English version
           <>
             <div className="max-w-[800px] mx-auto text-center px-4">
+              <p className="inline-block bg-[#3eeb91] text-black font-bold text-sm tracking-widest uppercase px-4 py-2 rounded-full mb-4">
+                Available now · Limited time
+              </p>
               <h1 className="font-bold text-5xl text-white mb-4">
-                Chiles en Nogada
+                Chiles en Nogada in Mexico City
               </h1>
               <h2 className="text-2xl text-[#3eeb91] mb-6">
-                The seasonal jewel at Cantina La Llorona
+                With live mariachi and son cubano every day
               </h2>
               <p className="text-white mb-8">
                 Taste the <strong>best chiles en nogada in Mexico City</strong>,
                 creamy nogada, fresh pomegranate and all the flavor of
-                tradition.
+                tradition — with{' '}
+                <strong>live mariachi and son cubano every day</strong>.
               </p>
               <div className="mb-8">
                 <img
