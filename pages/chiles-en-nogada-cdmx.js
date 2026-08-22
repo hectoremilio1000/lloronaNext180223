@@ -173,6 +173,12 @@ export default function ReservaChileNogada() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <Link href="/jueves_mariachi">
                   <div className="bg-black/40 rounded-2xl p-6 h-full hover:bg-black/60 transition cursor-pointer">
+                    <img
+                      className="rounded-xl w-full h-[220px] object-cover mb-4"
+                      src="/img/mariachi/mariachi-en-vivo-mesas.webp"
+                      alt="Mariachi en vivo tocando entre las mesas de Cantina La Llorona"
+                      loading="lazy"
+                    />
                     <h4 className="text-2xl font-bold text-[#3eeb91] mb-2">
                       Mariachi en vivo
                     </h4>
