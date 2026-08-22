@@ -93,6 +93,13 @@ function Reserva() {
       <>
         {espa ? (
           <Head>
+            <title>Cantina abierta los lunes en la Roma | Cantina La Llorona</title>
+            <meta name="description" content="Arranca la semana en Cantina La Llorona. Los lunes reserva sin prisas en la Roma Condesa: mezcales artesanales, cocina de cantina y tu pinata cumpleañera con botella de mezcal." />
+            <link rel="canonical" href="https://lalloronacantina.com/reserva_lunes/" />
+            <meta property="og:title" content="Cantina abierta los lunes en la Roma | Cantina La Llorona" />
+            <meta property="og:description" content="Arranca la semana en Cantina La Llorona. Los lunes reserva sin prisas en la Roma Condesa: mezcales artesanales, cocina de cantina y tu pinata cumpleañera con botella de mezcal." />
+            <meta property="og:url" content="https://lalloronacantina.com/reserva_lunes/" />
+            <meta property="og:type" content="website" />
             <Script
               strategy="beforeInteractive"
               src="https://www.googletagmanager.com/gtag/js?id=AW-11160821109" // reemplaza con tu código de seguimiento de Google
@@ -100,6 +107,13 @@ function Reserva() {
           </Head>
         ) : (
           <Head>
+            <title>Open on Mondays in Roma, Mexico City | Cantina La Llorona</title>
+            <meta name="description" content="Start the week at Cantina La Llorona. Book an easy Monday in Roma Condesa: artisanal mezcal, cantina food and a birthday pinata with a bottle of mezcal." />
+            <link rel="canonical" href="https://lalloronacantina.com/reserva_lunes/" />
+            <meta property="og:title" content="Open on Mondays in Roma, Mexico City | Cantina La Llorona" />
+            <meta property="og:description" content="Start the week at Cantina La Llorona. Book an easy Monday in Roma Condesa: artisanal mezcal, cantina food and a birthday pinata with a bottle of mezcal." />
+            <meta property="og:url" content="https://lalloronacantina.com/reserva_lunes/" />
+            <meta property="og:type" content="website" />
             <Script
               strategy="beforeInteractive"
               src="https://www.googletagmanager.com/gtag/js?id=AW-11160821109" // reemplaza con tu código de seguimiento de Google
@@ -158,12 +172,12 @@ function Reserva() {
               </div>
               <div className="overflow-hidden bg-black">
                 <div className="flex items-center gap-4 whitespace-nowrap">
-                  <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
+                  <div className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
                     TESTIMONIOS
-                  </h1>
-                  <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                  </div>
+                  <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
                     TESTIMONIOS
-                  </h1>
+                  </div>
                 </div>
               </div>
               <div className="bg-black py-[50px]">
@@ -172,12 +186,12 @@ function Reserva() {
               <div className="bg-white">
                 <div className="overflow-hidden">
                   <div className="flex items-center gap-4 whitespace-nowrap">
-                    <h1 className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
+                    <div className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
                       REVISTAS
-                    </h1>
-                    <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                    </div>
+                    <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
                       RECOMENDADOS
-                    </h1>
+                    </div>
                   </div>
                 </div>
 
@@ -242,12 +256,12 @@ function Reserva() {
 
               <div className="overflow-hidden bg-black">
                 <div className="flex items-center gap-4 whitespace-nowrap">
-                  <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
+                  <div className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
                     TESTIMONIALS
-                  </h1>
-                  <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                  </div>
+                  <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
                     TESTIMONIALS
-                  </h1>
+                  </div>
                 </div>
               </div>
               <div className="bg-black py-[50px]">
@@ -256,12 +270,12 @@ function Reserva() {
               <div className="bg-white">
                 <div className="overflow-hidden">
                   <div className="flex items-center gap-4 whitespace-nowrap">
-                    <h1 className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
+                    <div className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
                       RECOMMENDED
-                    </h1>
-                    <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                    </div>
+                    <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
                       INTERNATIONAL MAGAZINES
-                    </h1>
+                    </div>
                   </div>
                 </div>
 

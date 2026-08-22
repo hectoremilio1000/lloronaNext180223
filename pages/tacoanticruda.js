@@ -112,12 +112,12 @@ function TacoAnticruda() {
               </div>
               <div className="overflow-hidden bg-black">
                 <div className="flex items-center gap-4 whitespace-nowrap">
-                  <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
+                  <div className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
                     TESTIMONIOS
-                  </h1>
-                  <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                  </div>
+                  <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
                     TESTIMONIOS
-                  </h1>
+                  </div>
                 </div>
               </div>
               <div className="bg-black py-[50px]">
@@ -126,12 +126,12 @@ function TacoAnticruda() {
               <div className="bg-white">
                 <div className="overflow-hidden">
                   <div className="flex items-center gap-4 whitespace-nowrap">
-                    <h1 className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
+                    <div className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
                       REVISTAS
-                    </h1>
-                    <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                    </div>
+                    <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
                       RECOMENDADOS
-                    </h1>
+                    </div>
                   </div>
                 </div>
 
@@ -192,12 +192,12 @@ function TacoAnticruda() {
 
               <div className="overflow-hidden bg-black">
                 <div className="flex items-center gap-4 whitespace-nowrap">
-                  <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
+                  <div className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
                     TESTIMONIALS
-                  </h1>
-                  <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                  </div>
+                  <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
                     TESTIMONIALS
-                  </h1>
+                  </div>
                 </div>
               </div>
               <div className="bg-black py-[50px]">
@@ -206,12 +206,12 @@ function TacoAnticruda() {
               <div className="bg-white">
                 <div className="overflow-hidden">
                   <div className="flex items-center gap-4 whitespace-nowrap">
-                    <h1 className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
+                    <div className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
                       RECOMMENDED
-                    </h1>
-                    <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                    </div>
+                    <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
                       INTERNATIONAL MAGAZINES
-                    </h1>
+                    </div>
                   </div>
                 </div>
 

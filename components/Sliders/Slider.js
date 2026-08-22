@@ -18,12 +18,12 @@ const Slider = () => {
         <div className="w-full bg-black py-12">
           <div className="overflow-hidden bg-black">
             <div className="flex items-center gap-4 whitespace-nowrap ">
-              <h1 className="animate-marqueeleft inline-block text-white text-[70px] md:text-[100px] font-bold">
+              <div className="animate-marqueeleft inline-block text-white text-[70px] md:text-[100px] font-bold">
                 Nuestra CARTA
-              </h1>
-              <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold ">
+              </div>
+              <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold ">
                 NUESTRA CARTA
-              </h1>
+              </div>
             </div>
           </div>
           <div className="w-full max-w-[1184px] mx-auto px-[20px]">
@@ -167,12 +167,12 @@ const Slider = () => {
           <div className="overflow-hidden bg-black">
             <div className="overflow-hidden bg-black">
               <div className="flex items-center gap-4 whitespace-nowrap ">
-                <h1 className="animate-marqueeleft inline-block text-white text-[70px] md:text-[100px] font-bold">
+                <div className="animate-marqueeleft inline-block text-white text-[70px] md:text-[100px] font-bold">
                   Our Menu
-                </h1>
-                <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold ">
+                </div>
+                <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold ">
                   Our Menu
-                </h1>
+                </div>
               </div>
             </div>
           </div>

@@ -80,6 +80,7 @@ function ReservaTiktokTree() {
   return (
     <>
       <Head>
+        <meta name="robots" content="noindex, follow" />
         <noscript>
           <img
             height="1"

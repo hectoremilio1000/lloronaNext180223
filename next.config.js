@@ -16,6 +16,20 @@ const nextConfig = {
         destination: '/chiles-en-nogada-cdmx/',
         permanent: true,
       },
+      // Copias casi identicas de /jueves_mariachi que competian por la misma
+      // busqueda. Ninguna recibia enlaces internos, asi que se consolidan ahi.
+      // (/reserva NO se redirige: 208 enlaces internos apuntan a ella y es la
+      // pagina general de reservas del sitio.)
+      {
+        source: '/reserva_jueves',
+        destination: '/jueves_mariachi/',
+        permanent: true,
+      },
+      {
+        source: '/reservaciones',
+        destination: '/jueves_mariachi/',
+        permanent: true,
+      },
     ];
   },
 };
