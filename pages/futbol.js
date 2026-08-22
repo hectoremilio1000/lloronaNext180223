@@ -141,12 +141,12 @@ function Futbol() {
               </div>
               <div className="overflow-hidden bg-black">
                 <div className="flex items-center gap-4 whitespace-nowrap">
-                  <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
+                  <div className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
                     AMBIENTE
-                  </h1>
-                  <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                  </div>
+                  <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
                     AMBIENTE
-                  </h1>
+                  </div>
                 </div>
               </div>
               <div className="bg-black py-[50px]">
@@ -155,12 +155,12 @@ function Futbol() {
               <div className="bg-white">
                 <div className="overflow-hidden">
                   <div className="flex items-center gap-4 whitespace-nowrap">
-                    <h1 className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
+                    <div className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
                       PANTALLAS
-                    </h1>
-                    <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                    </div>
+                    <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
                       BUEN SON
-                    </h1>
+                    </div>
                   </div>
                 </div>
 
@@ -229,12 +229,12 @@ function Futbol() {
 
               <div className="overflow-hidden bg-black">
                 <div className="flex items-center gap-4 whitespace-nowrap">
-                  <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
+                  <div className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
                     ATMOSPHERE
-                  </h1>
-                  <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                  </div>
+                  <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
                     ATMOSPHERE
-                  </h1>
+                  </div>
                 </div>
               </div>
               <div className="bg-black py-[50px]">
@@ -243,12 +243,12 @@ function Futbol() {
               <div className="bg-white">
                 <div className="overflow-hidden">
                   <div className="flex items-center gap-4 whitespace-nowrap">
-                    <h1 className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
+                    <div className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
                       BIG SCREENS
-                    </h1>
-                    <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                    </div>
+                    <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
                       GOOD VIBES
-                    </h1>
+                    </div>
                   </div>
                 </div>
 

@@ -195,12 +195,12 @@ function SuperBowl() {
 
         <div className="overflow-hidden bg-black">
           <div className="flex items-center gap-4 whitespace-nowrap">
-            <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold w-full">
+            <div className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold w-full">
               {copy.testimonialRail}
-            </h1>
-            <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold">
+            </div>
+            <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold">
               {copy.testimonialRail}
-            </h1>
+            </div>
           </div>
         </div>
 
@@ -211,12 +211,12 @@ function SuperBowl() {
         <div className="bg-white">
           <div className="overflow-hidden">
             <div className="flex items-center gap-4 whitespace-nowrap">
-              <h1 className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold w-full">
+              <div className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold w-full">
                 {copy.magazineLeft}
-              </h1>
-              <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold">
+              </div>
+              <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold">
                 {copy.magazineRight}
-              </h1>
+              </div>
             </div>
           </div>
 

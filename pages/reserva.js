@@ -93,6 +93,13 @@ function Reserva() {
       <>
         {espa ? (
           <Head>
+            <title>Reserva tu mesa en Cantina La Llorona | Roma Condesa CDMX</title>
+            <meta name="description" content="Reserva tu mesa en Cantina La Llorona, Roma Condesa. Cocina mexicana de cantina, mezcales artesanales y musica en vivo. Celebra tu cumpleanos con pinata y botella de mezcal." />
+            <link rel="canonical" href="https://lalloronacantina.com/reserva/" />
+            <meta property="og:title" content="Reserva tu mesa en Cantina La Llorona | Roma Condesa CDMX" />
+            <meta property="og:description" content="Reserva tu mesa en Cantina La Llorona, Roma Condesa. Cocina mexicana de cantina, mezcales artesanales y musica en vivo. Celebra tu cumpleanos con pinata y botella de mezcal." />
+            <meta property="og:url" content="https://lalloronacantina.com/reserva/" />
+            <meta property="og:type" content="website" />
             <Script
               strategy="beforeInteractive"
               src="https://www.googletagmanager.com/gtag/js?id=AW-11160821109" // reemplaza con tu código de seguimiento de Google
@@ -100,6 +107,13 @@ function Reserva() {
           </Head>
         ) : (
           <Head>
+            <title>Book a Table at Cantina La Llorona | Roma Condesa, Mexico City</title>
+            <meta name="description" content="Book your table at Cantina La Llorona in Roma Condesa. Mexican cantina food, artisanal mezcal and live music. Celebrate your birthday with a pinata and a bottle of mezcal." />
+            <link rel="canonical" href="https://lalloronacantina.com/reserva/" />
+            <meta property="og:title" content="Book a Table at Cantina La Llorona | Roma Condesa, Mexico City" />
+            <meta property="og:description" content="Book your table at Cantina La Llorona in Roma Condesa. Mexican cantina food, artisanal mezcal and live music. Celebrate your birthday with a pinata and a bottle of mezcal." />
+            <meta property="og:url" content="https://lalloronacantina.com/reserva/" />
+            <meta property="og:type" content="website" />
             <Script
               strategy="beforeInteractive"
               src="https://www.googletagmanager.com/gtag/js?id=AW-11160821109" // reemplaza con tu código de seguimiento de Google
@@ -114,10 +128,12 @@ function Reserva() {
               <div className="w-full max-w-[1184px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-8 text-center">
                 <div className="w-full">
                   <h1 className="font-bold text-4xl text-white">
-                    {' '}
-                    Los jueves piñata cumpleañera con botella de mezcal
-                    artesanal
+                    Reserva tu mesa en Cantina La Llorona
                   </h1>
+                  <h2 className="text-xl text-[#3eeb91] mt-2 mb-2">
+                    Y en tu cumpleaños, piñata cumpleañera con botella de mezcal
+                    artesanal
+                  </h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <Link href="/reserva">
                       <div>
@@ -159,12 +175,12 @@ function Reserva() {
               </div>
               <div className="overflow-hidden bg-black">
                 <div className="flex items-center gap-4 whitespace-nowrap">
-                  <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
+                  <div className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
                     TESTIMONIOS
-                  </h1>
-                  <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                  </div>
+                  <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
                     TESTIMONIOS
-                  </h1>
+                  </div>
                 </div>
               </div>
               <div className="bg-black py-[50px]">
@@ -173,12 +189,12 @@ function Reserva() {
               <div className="bg-white">
                 <div className="overflow-hidden">
                   <div className="flex items-center gap-4 whitespace-nowrap">
-                    <h1 className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
+                    <div className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
                       REVISTAS
-                    </h1>
-                    <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                    </div>
+                    <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
                       RECOMENDADOS
-                    </h1>
+                    </div>
                   </div>
                 </div>
 
@@ -195,10 +211,12 @@ function Reserva() {
               <div className="w-full max-w-[1184px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-8 text-center">
                 <div className="w-full">
                   <h1 className="font-bold text-4xl text-white">
-                    On Thursdays, a birthday <br />
-                    piñata with mexican candies and a bottle of artisan mezcal
-                    🍾
+                    Book your table at Cantina La Llorona
                   </h1>
+                  <h2 className="text-xl text-[#3eeb91] mt-2 mb-2">
+                    And on your birthday, a piñata with mexican candies and a
+                    bottle of artisan mezcal 🍾
+                  </h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <Link href="/reserva">
                       <div>
@@ -243,12 +261,12 @@ function Reserva() {
 
               <div className="overflow-hidden bg-black">
                 <div className="flex items-center gap-4 whitespace-nowrap">
-                  <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
+                  <div className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
                     TESTIMONIALS
-                  </h1>
-                  <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                  </div>
+                  <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
                     TESTIMONIALS
-                  </h1>
+                  </div>
                 </div>
               </div>
               <div className="bg-black py-[50px]">
@@ -257,12 +275,12 @@ function Reserva() {
               <div className="bg-white">
                 <div className="overflow-hidden">
                   <div className="flex items-center gap-4 whitespace-nowrap">
-                    <h1 className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
+                    <div className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
                       RECOMMENDED
-                    </h1>
-                    <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                    </div>
+                    <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
                       INTERNATIONAL MAGAZINES
-                    </h1>
+                    </div>
                   </div>
                 </div>
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import CalendarioFacebook from '../components/CalendarioFacebook';
 import NavBar from '../components/NavBarEs/NavBarEs';
 import Link from 'next/link';
@@ -12,6 +13,9 @@ const ReservaFront = () => {
     '/img/ambiente/mesa-tacos-domino.webp';
   return (
     <>
+      <Head>
+        <meta name="robots" content="noindex, follow" />
+      </Head>
       <NavBar />
       <div className="w-full bg-black relative">
         <div className=" grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -50,7 +54,7 @@ const ReservaFront = () => {
           <p className="text-3xl text-white text-center">Piñata cumpleañera</p>
           <p className="text-xl text-white text-center">gratis</p>
           <img
-            src="../images/pinatacumpleanerafondo.png"
+            src="/img/cumple/pinata-cumpleanera-fondo.webp"
             className="w-[280px] object-cover object-right relative my-8 z-[1000]"
             alt=""
           />

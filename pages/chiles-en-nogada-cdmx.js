@@ -251,12 +251,12 @@ export default function ReservaChileNogada() {
             {/* Testimonios, Revistas */}
             <div className="overflow-hidden bg-black mt-16 py-8">
               <div className="flex items-center gap-4 whitespace-nowrap animate-marqueeleft">
-                <h1 className="text-white text-[80px] font-bold">
+                <div className="text-white text-[80px] font-bold">
                   TESTIMONIOS
-                </h1>
-                <h1 className="text-[#3eeb91] text-[80px] font-bold">
+                </div>
+                <div className="text-[#3eeb91] text-[80px] font-bold">
                   TESTIMONIOS
-                </h1>
+                </div>
               </div>
               <PopupTestimonios idioma={espa} />
             </div>
@@ -264,10 +264,10 @@ export default function ReservaChileNogada() {
             <div className="bg-white py-8">
               <div className="overflow-hidden mb-4">
                 <div className="flex items-center gap-4 whitespace-nowrap animate-marqueeleft">
-                  <h1 className="text-black text-[80px] font-bold">REVISTAS</h1>
-                  <h1 className="text-[#3eeb91] text-[80px] font-bold">
+                  <div className="text-black text-[80px] font-bold">REVISTAS</div>
+                  <div className="text-[#3eeb91] text-[80px] font-bold">
                     RECOMENDADOS
-                  </h1>
+                  </div>
                 </div>
               </div>
               <RevistasPopup idioma={espa} />

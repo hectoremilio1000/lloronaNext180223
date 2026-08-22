@@ -65,6 +65,7 @@ function ReservaTiktok() {
   return (
     <>
       <Head>
+        <meta name="robots" content="noindex, follow" />
         <noscript>
           <img
             height="1"
@@ -202,20 +203,20 @@ function ReservaTiktok() {
         <div className="w-full bg-[#020a06] py-12">
           <div className="overflow-hidden bg-black">
             <div className="inline-block whitespace-nowrap animate-marqueeleft">
-              <h1 className="inline-block text-white text-[100px] font-bold px-4 py-2">
+              <div className="inline-block text-white text-[100px] font-bold px-4 py-2">
                 MUSICA Y SALSA EN VIVO EN CANTINA LA LLORONA
-              </h1>
+              </div>
             </div>
           </div>
 
           <div className="overflow-hidden bg-black">
                   {/* <div className="flex items-center gap-4 whitespace-nowrap">
-                    <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
+                    <div className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
                       TESTIMONIOS
-                    </h1>
-                    <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                    </div>
+                    <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
                       TESTIMONIOS
-                    </h1>
+                    </div>
                   </div> */}
                 </div>
                
@@ -225,12 +226,12 @@ function ReservaTiktok() {
                 <div className="bg-white">
                   <div className="overflow-hidden">
                     <div className="flex items-center gap-4 whitespace-nowrap">
-                      <h1 className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
+                      <div className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
                         RECOMENDADOS
-                      </h1>
-                      <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                      </div>
+                      <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
                         REVISTAS
-                      </h1>
+                      </div>
                     </div>
                   </div>
 
@@ -296,9 +297,9 @@ function ReservaTiktok() {
           </div>
           <div className="overflow-hidden bg-black">
             <div className="inline-block whitespace-nowrap animate-marqueeleft">
-              <h1 className="inline-block text-white text-[100px] font-bold px-4 py-2">
+              <div className="inline-block text-white text-[100px] font-bold px-4 py-2">
                 YO SOY COMO EL CHILE VERDE LLORONA, PICANTE PERO SABROSO
-              </h1>
+              </div>
             </div>
           </div> */}
         </div>

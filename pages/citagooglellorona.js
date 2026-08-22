@@ -200,104 +200,104 @@ function CitaGoogleLlorona() {
             <div className="absolute overflow-hidden z-[1000] top-[50%] translate-y-[-50%] left-0 w-full flex flex-col justify-center">
               <div className="flex items-center whitespace-nowrap rail-left">
                 <div className="whitespace-nowrap inline-block  animate-marquee">
-                  <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  <div className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
                     BOOK
-                  </h1>
-                  <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
+                  </div>
+                  <div className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
                     NOW
-                  </h1>
+                  </div>
                 </div>
                 <div className="whitespace-nowrap inline-block  animate-marquee">
-                  <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  <div className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
                     BOOK
-                  </h1>
-                  <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
+                  </div>
+                  <div className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
                     NOW
-                  </h1>
+                  </div>
                 </div>
                 <div className="whitespace-nowrap inline-block  animate-marquee">
-                  <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  <div className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
                     BOOK
-                  </h1>
-                  <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
+                  </div>
+                  <div className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
                     NOW
-                  </h1>
+                  </div>
                 </div>
                 <div className="whitespace-nowrap inline-block  animate-marquee">
-                  <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  <div className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
                     BOOK
-                  </h1>
-                  <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
+                  </div>
+                  <div className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
                     NOW
-                  </h1>
+                  </div>
                 </div>
               </div>
               <div className="flex items-center whitespace-nowrap rail-right">
                 <div className="whitespace-nowrap inline-block  animate-marquee">
-                  <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  <div className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
                     BOOK
-                  </h1>
-                  <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
+                  </div>
+                  <div className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
                     NOW
-                  </h1>
+                  </div>
                 </div>
                 <div className="whitespace-nowrap inline-block  animate-marquee">
-                  <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  <div className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
                     BOOK
-                  </h1>
-                  <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
+                  </div>
+                  <div className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
                     NOW
-                  </h1>
+                  </div>
                 </div>
                 <div className="whitespace-nowrap inline-block  animate-marquee">
-                  <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  <div className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
                     BOOK
-                  </h1>
-                  <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
+                  </div>
+                  <div className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
                     NOW
-                  </h1>
+                  </div>
                 </div>
                 <div className="whitespace-nowrap inline-block  animate-marquee">
-                  <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  <div className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
                     BOOK
-                  </h1>
-                  <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
+                  </div>
+                  <div className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
                     NOW
-                  </h1>
+                  </div>
                 </div>
               </div>
               <div className="flex items-center whitespace-nowrap rail-left">
                 <div className="whitespace-nowrap inline-block  animate-marquee">
-                  <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  <div className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
                     BOOK
-                  </h1>
-                  <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
+                  </div>
+                  <div className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
                     NOW
-                  </h1>
+                  </div>
                 </div>
                 <div className="whitespace-nowrap inline-block  animate-marquee">
-                  <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  <div className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
                     BOOK
-                  </h1>
-                  <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
+                  </div>
+                  <div className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
                     NOW
-                  </h1>
+                  </div>
                 </div>
                 <div className="whitespace-nowrap inline-block  animate-marquee">
-                  <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  <div className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
                     BOOK
-                  </h1>
-                  <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
+                  </div>
+                  <div className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
                     NOW
-                  </h1>
+                  </div>
                 </div>
                 <div className="whitespace-nowrap inline-block  animate-marquee">
-                  <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
+                  <div className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
                     BOOK
-                  </h1>
-                  <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
+                  </div>
+                  <div className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
                     NOW
-                  </h1>
+                  </div>
                 </div>
               </div>
             </div>
@@ -367,12 +367,12 @@ function CitaGoogleLlorona() {
               <>
                 <div className="overflow-hidden bg-black">
                   <div className="flex items-center gap-4 whitespace-nowrap">
-                    <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
+                    <div className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
                       TESTIMONIOS
-                    </h1>
-                    <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                    </div>
+                    <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
                       TESTIMONIOS
-                    </h1>
+                    </div>
                   </div>
                 </div>
 
@@ -384,12 +384,12 @@ function CitaGoogleLlorona() {
               <>
                 <div className="overflow-hidden">
                   <div className="flex items-center gap-4 whitespace-nowrap">
-                    <h1 className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
+                    <div className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
                       REVISTAS
-                    </h1>
-                    <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                    </div>
+                    <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
                       RECOMENDADOS
-                    </h1>
+                    </div>
                   </div>
                 </div>
 
@@ -455,12 +455,12 @@ function CitaGoogleLlorona() {
               </div>
               <div className="overflow-hidden bg-black">
                 <div className="flex items-center gap-4 whitespace-nowrap">
-                  <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
+                  <div className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
                     TESTIMONIALS
-                  </h1>
-                  <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                  </div>
+                  <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
                     TESTIMONIALS
-                  </h1>
+                  </div>
                 </div>
               </div>
               <div className="bg-black py-[50px]">

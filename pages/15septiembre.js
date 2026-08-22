@@ -47,7 +47,7 @@ function Septiembre() {
     '/img/cumple/chica-carrito-dulces.webp';
   const image3 =
     '/img/salsa/cantante-son-cubano.webp';
-  const image4 = '/images/15_septiembre.jpg';
+  const image4 = '/img/eventos/15-septiembre.webp';
 
   const image5 =
     '/img/reserva/chica-coctel-calavera.webp';
@@ -152,12 +152,12 @@ function Septiembre() {
                 </div>
                 <div className="overflow-hidden bg-black">
                   <div className="flex items-center gap-4 whitespace-nowrap">
-                    <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
+                    <div className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
                       TESTIMONIOS
-                    </h1>
-                    <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                    </div>
+                    <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
                       TESTIMONIOS
-                    </h1>
+                    </div>
                   </div>
                 </div>
                 {/* <p className="text-white pt-2 text-center text-2xl md:text-4xl">
@@ -170,12 +170,12 @@ function Septiembre() {
                 <div className="bg-white">
                   <div className="overflow-hidden">
                     <div className="flex items-center gap-4 whitespace-nowrap">
-                      <h1 className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
+                      <div className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
                         RECOMENDADOS
-                      </h1>
-                      <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                      </div>
+                      <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
                         REVISTAS
-                      </h1>
+                      </div>
                     </div>
                   </div>
 
@@ -243,12 +243,12 @@ function Septiembre() {
 
                 <div className="overflow-hidden bg-black">
                   <div className="flex items-center gap-4 whitespace-nowrap">
-                    <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
+                    <div className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
                       TESTIMONIALS
-                    </h1>
-                    <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                    </div>
+                    <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
                       TESTIMONIALS
-                    </h1>
+                    </div>
                   </div>
                 </div>
                 <div className="bg-black py-[50px]">
@@ -257,12 +257,12 @@ function Septiembre() {
                 <div className="bg-white">
                   <div className="overflow-hidden">
                     <div className="flex items-center gap-4 whitespace-nowrap">
-                      <h1 className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
+                      <div className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
                         RECOMMENDED
-                      </h1>
-                      <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                      </div>
+                      <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
                         INTERNATIONAL MAGAZINES
-                      </h1>
+                      </div>
                     </div>
                   </div>
 

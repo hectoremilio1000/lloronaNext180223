@@ -152,23 +152,23 @@ export default function Home() {
         </> */}
       <div className="overflow-hidden bg-black">
         <div className="inline-block whitespace-nowrap animate-marqueeleft">
-          <h1 className="inline-block text-white text-[70px] md:text-[100px] font-bold px-4 py-2 w-full">
+          <div className="inline-block text-white text-[70px] md:text-[100px] font-bold px-4 py-2 w-full">
             We want you here
-          </h1>
-          <h1 className="inline-block text-white text-[70px] md:text-[100px] font-bold px-4 py-2 w-full">
+          </div>
+          <div className="inline-block text-white text-[70px] md:text-[100px] font-bold px-4 py-2 w-full">
             We want you here
-          </h1>
+          </div>
         </div>
       </div>
 
       {/* <div className="overflow-hidden bg-black">
           <div className="inline-block whitespace-nowrap animate-marqueeleft">
-            <h1 className="inline-block text-white text-[70px] md:text-[100px] font-bold px-4 py-2 w-full">
+            <div className="inline-block text-white text-[70px] md:text-[100px] font-bold px-4 py-2 w-full">
               Te queremos acá
-            </h1>
-            <h1 className="inline-block text-white text-[70px] md:text-[100px] font-bold px-4 py-2 w-full">
+            </div>
+            <div className="inline-block text-white text-[70px] md:text-[100px] font-bold px-4 py-2 w-full">
               Te queremos acá
-            </h1>
+            </div>
           </div>
         </div> */}
       <QuickInfo />
@@ -178,12 +178,12 @@ export default function Home() {
         <div className="bg-white">
           <div className="overflow-hidden">
             <div className="flex items-center gap-4 whitespace-nowrap">
-              <h1 className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
+              <div className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
                 RECOMMENDED
-              </h1>
-              <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+              </div>
+              <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
                 INTERNATIONAL MAGAZINES
-              </h1>
+              </div>
             </div>
           </div>
 
@@ -193,12 +193,12 @@ export default function Home() {
         </div>
         <div className="overflow-hidden bg-black">
           <div className="flex items-center gap-4 whitespace-nowrap">
-            <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
+            <div className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
               TESTIMONIALS
-            </h1>
-            <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+            </div>
+            <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
               TESTIMONIALS
-            </h1>
+            </div>
           </div>
         </div>
         <div className="bg-black py-[50px]">
@@ -209,12 +209,12 @@ export default function Home() {
           <div className="bg-white">
             <div className="overflow-hidden">
               <div className="flex items-center gap-4 whitespace-nowrap">
-                <h1 className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
+                <div className="inline-block animate-marqueeleft text-black text-[70px] md:text-[100px] font-bold  w-full">
                   RECOMENDADOS
-                </h1>
-                <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+                </div>
+                <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
                   REVISTAS
-                </h1>
+                </div>
               </div>
             </div>
 
@@ -224,12 +224,12 @@ export default function Home() {
           </div>
           <div className="overflow-hidden bg-black">
             <div className="flex items-center gap-4 whitespace-nowrap">
-              <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
+              <div className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
                 TESTIMONIO
-              </h1>
-              <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
+              </div>
+              <div className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
                 TESTIMONIO
-              </h1>
+              </div>
             </div>
           </div>
           <div className="bg-black py-[50px]">
