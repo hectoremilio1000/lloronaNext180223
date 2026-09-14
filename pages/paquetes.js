@@ -126,21 +126,33 @@ function EventTypes() {
     {
       title: 'Cumpleaños',
       img: '/img/ambiente/mesa-tacos-domino.webp',
+      href: '/cumple/',
     },
-    { title: 'Despedida de soltera', img: '/images/eventos/despedida.jpeg' },
+    {
+      title: 'Despedida de soltera',
+      img: '/images/eventos/despedida.jpeg',
+      href: '/despedida-de-soltera/',
+    },
     {
       title: 'Cenas empresariales',
       img: 'https://www.lalloronacantina.com/images/banner/posteo_chileC.jpg',
+      href: '/eventos-empresariales/',
     },
     {
       title: 'Aniversarios',
       img: '/img/ambiente/terraza-noche.webp',
+      href: '/aniversarios/',
     },
     {
       title: 'Networking / After Office',
       img: '/img/salsa/cantante-son-cubano.webp',
+      href: '/after-office/',
     },
-    { title: 'Bodas', img: '/images/eventos/bodas_2.jpeg' },
+    {
+      title: 'Bodas',
+      img: '/images/eventos/bodas_2.jpeg',
+      href: '/bodas-civiles/',
+    },
   ];
 
   return (
@@ -151,9 +163,10 @@ function EventTypes() {
         </h2>
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {cards.map((c, idx) => (
-            <div
+            <Link
               key={c.title}
-              className="group overflow-hidden rounded-2xl border border-white/10 bg-neutral-900"
+              href={c.href}
+              className="group block overflow-hidden rounded-2xl border border-white/10 bg-neutral-900"
             >
               <div className="relative h-48 w-full overflow-hidden sm:h-56">
                 <img
@@ -167,22 +180,14 @@ function EventTypes() {
               </div>
               <div className="p-5">
                 <h3 className="text-lg font-bold text-white">{c.title}</h3>
-                <a
-                  href={buildWaUrl({
-                    source: `card-${c.title
-                      .toLowerCase()
-                      .replace(/\s+/g, '-')}`,
-                    eventType: c.title,
-                  })}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-3 inline-block rounded-full border px-4 py-2 text-sm font-semibold text-white hover:bg-white/10"
+                <span
+                  className="mt-3 inline-block rounded-full border px-4 py-2 text-sm font-semibold text-white group-hover:bg-white/10"
                   style={{ borderColor: gold }}
                 >
-                  Cotizar
-                </a>
+                  Ver evento
+                </span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
