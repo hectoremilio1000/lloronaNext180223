@@ -207,7 +207,7 @@ function DomingoFamiliarMariachi() {
               {/* Calendario */}
               <div className="w-full">
                 <CalendarioMariachiDomingo
-                  utmCampaign="domingo_familiar"
+                  campaignType="mariachi_domingo_familiar"
                   titleEs="Reserva tu mesa familiar"
                 />
               </div>
@@ -394,7 +394,7 @@ function DomingoFamiliarMariachi() {
 
               <div className="w-full">
                 <CalendarioMariachiDomingo
-                  utmCampaign="domingo_familiar"
+                  campaignType="mariachi_domingo_familiar"
                   titleEn="Book your family table"
                 />
               </div>

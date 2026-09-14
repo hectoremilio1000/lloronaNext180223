@@ -1,10 +1,16 @@
 import React from 'react';
-import { InlineWidget } from 'react-calendly';
 import { useAppContext } from '../context/Context';
+import ReservaEmbed from '../ReservaEmbed';
 
-function CalendarioMariachiDomingo({ utmCampaign, titleEs, titleEn } = {}) {
+const CALENDLY_URL = 'https://calendly.com/reservaciones-14/reservaciones-llorona?hide_gdpr_banner=1';
+const CALENDLY_STYLES = { height: '650px', minWidth: '320px' };
+
+function CalendarioMariachiDomingo({
+  titleEs,
+  titleEn,
+  campaignType = 'mariachi_domingo',
+} = {}) {
   const { espa } = useAppContext();
-  const utm = utmCampaign ? { utmCampaign } : undefined;
   const headingEs = titleEs || 'Reserva tu mesa para Domingo de Mariachi';
   const headingEn = titleEn || 'Book your table for Mariachi Sundays';
   return (
@@ -19,10 +25,10 @@ function CalendarioMariachiDomingo({ utmCampaign, titleEs, titleEn } = {}) {
               Selecciona fecha y horario
             </p>
 
-            <InlineWidget
-              url="https://calendly.com/reservaciones-14/reservaciones-llorona?hide_gdpr_banner=1"
-              utm={utm}
-              styles={{ height: '650px', minWidth: '320px' }}
+            <ReservaEmbed
+              calendlyUrl={CALENDLY_URL}
+              calendlyStyles={CALENDLY_STYLES}
+              campaignType={campaignType}
             />
           </div>
         </div>
@@ -36,10 +42,10 @@ function CalendarioMariachiDomingo({ utmCampaign, titleEs, titleEn } = {}) {
               Select date and time
             </p>
 
-            <InlineWidget
-              url="https://calendly.com/reservaciones-14/reservaciones-llorona?hide_gdpr_banner=1"
-              utm={utm}
-              styles={{ height: '650px', minWidth: '320px' }}
+            <ReservaEmbed
+              calendlyUrl={CALENDLY_URL}
+              calendlyStyles={CALENDLY_STYLES}
+              campaignType={campaignType}
             />
           </div>
         </div>

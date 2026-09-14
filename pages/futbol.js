@@ -136,7 +136,7 @@ function Futbol() {
                   </p>
                 </div>
                 <div className="w-full">
-                  <Calendario />
+                  <Calendario campaignType="futbol" />
                 </div>
               </div>
               <div className="overflow-hidden bg-black">
@@ -223,7 +223,7 @@ function Futbol() {
                   </p>
                 </div>
                 <div className="w-full">
-                  <Calendario />
+                  <Calendario campaignType="futbol" />
                 </div>
               </div>
 
