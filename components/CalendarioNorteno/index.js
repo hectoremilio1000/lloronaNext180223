@@ -1,8 +1,11 @@
 import React from 'react';
-import { InlineWidget } from 'react-calendly';
 import { useAppContext } from '../context/Context';
+import ReservaEmbed from '../ReservaEmbed';
 
-function CalendarioNorteno() {
+const CALENDLY_URL = 'https://calendly.com/reservaciones-14/reservaciones-llorona?hide_gdpr_banner=1';
+const CALENDLY_STYLES = { height: '650px', minWidth: '320px' };
+
+function CalendarioNorteno({ campaignType = 'norteno' }) {
   const { espa } = useAppContext();
   return (
     <div id="reserva">
@@ -16,9 +19,10 @@ function CalendarioNorteno() {
               Selecciona fecha y horario
             </p>
 
-            <InlineWidget 
-              url="https://calendly.com/reservaciones-14/reservaciones-llorona?hide_gdpr_banner=1"
-              styles={{ height: '650px', minWidth: '320px' }}
+            <ReservaEmbed
+              calendlyUrl={CALENDLY_URL}
+              calendlyStyles={CALENDLY_STYLES}
+              campaignType={campaignType}
             />
           </div>
         </div>
@@ -32,9 +36,10 @@ function CalendarioNorteno() {
               Select date and time
             </p>
 
-            <InlineWidget 
-              url="https://calendly.com/reservaciones-14/reservaciones-llorona?hide_gdpr_banner=1"
-              styles={{ height: '650px', minWidth: '320px' }}
+            <ReservaEmbed
+              calendlyUrl={CALENDLY_URL}
+              calendlyStyles={CALENDLY_STYLES}
+              campaignType={campaignType}
             />
           </div>
         </div>
