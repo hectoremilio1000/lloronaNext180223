@@ -1,78 +1,75 @@
-import { useEffect, useRef, useState } from "react";
-import { buildBookingWidgetUrl } from "../../lib/tracker";
+import { useEffect, useRef, useState } from 'react';
+import { buildBookingWidgetUrl, bookingWidgetOrigin } from '../../lib/bookingWidget';
+import { trackReservaCompletada } from '../../lib/reservaConversion';
+import { getCurrentAttribution } from '../../lib/tracker';
 
 /**
- * Embebe el pos_booking_widget en un iframe pasando lead_uid + UTMs del
- * navegador como query params. Auto-redimensiona escuchando los mensajes
- * `widget_height` que postea el widget vía postMessage.
+ * Widget de reservas de GrowthSuite incrustado en el sitio.
+ *
+ * - La URL se arma al montar (client-side) con lead_uid + UTMs para atribuir
+ *   la reserva, igual que TrackedCalendly.
+ * - El widget avisa su altura (`widget_height`) y el iframe se ajusta: sin
+ *   scroll dentro de otro scroll en el celular.
+ * - Al completar la reserva (`reservation_completed`) dispara las mismas
+ *   conversiones que Calendly, una sola vez por código de reserva.
  */
-const WIDGET_BASE_URL =
-  process.env.NEXT_PUBLIC_BOOKING_WIDGET_URL || "http://localhost:5174";
-
-const DEFAULT_SLUG = "llorona";
-
-const MIN_HEIGHT = 400;
-const MAX_HEIGHT = 1800;
-
 export default function BookingWidget({
-  slug = DEFAULT_SLUG,
-  eventTypeSlug,
-  initialHeight = 600,
+  type,
+  source,
+  campaignType = 'general',
+  minHeight = 640,
+  onComplete,
 }) {
-  const [src, setSrc] = useState("");
-  const [height, setHeight] = useState(initialHeight);
+  const [src, setSrc] = useState(null);
+  const [height, setHeight] = useState(minHeight);
   const iframeRef = useRef(null);
+  const convertidas = useRef(new Set());
 
   useEffect(() => {
-    const url = buildBookingWidgetUrl(WIDGET_BASE_URL, slug, eventTypeSlug);
-    setSrc(url);
-  }, [slug, eventTypeSlug]);
+    setSrc(buildBookingWidgetUrl({ type }));
+  }, [type]);
 
   useEffect(() => {
-    function handleMessage(event) {
-      const data = event?.data;
-      if (!data || typeof data !== "object") return;
-      if (data.source !== "booking-widget") return;
+    const origin = bookingWidgetOrigin();
 
-      if (data.type === "widget_height" && typeof data.height === "number") {
-        const clamped = Math.max(MIN_HEIGHT, Math.min(MAX_HEIGHT, data.height));
-        setHeight((prev) => (Math.abs(prev - clamped) > 4 ? clamped : prev));
+    const onMessage = (e) => {
+      if (origin && e.origin !== origin) return;
+      if (iframeRef.current && e.source !== iframeRef.current.contentWindow) return;
+      const data = e.data || {};
+      if (data.source !== 'booking-widget') return;
+
+      if (data.type === 'widget_height' && typeof data.height === 'number') {
+        setHeight(Math.max(minHeight, Math.ceil(data.height)));
+        return;
       }
-    }
-    window.addEventListener("message", handleMessage);
-    return () => window.removeEventListener("message", handleMessage);
-  }, []);
+
+      if (data.type === 'reservation_completed' || data.type === 'booking_completed') {
+        const code = String(data.confirmationCode || data.code || '');
+        const key = code || `${data.type}-${Date.now()}`;
+        if (code && convertidas.current.has(code)) return;
+        convertidas.current.add(key);
+        // Sin `source` explícito, el canal real del visitante (tiktok, google, meta…).
+        const canal = source || getCurrentAttribution().channel || 'organic';
+        trackReservaCompletada({ source: canal, campaignType, transactionId: code || undefined });
+        if (typeof onComplete === 'function') onComplete({ confirmationCode: code || null });
+      }
+    };
+
+    window.addEventListener('message', onMessage);
+    return () => window.removeEventListener('message', onMessage);
+  }, [source, campaignType, minHeight, onComplete]);
 
   if (!src) {
-    return (
-      <div
-        style={{
-          height: initialHeight,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          color: "#94a3b8",
-        }}
-      >
-        Cargando widget…
-      </div>
-    );
+    return <div style={{ minHeight }} aria-busy="true" />;
   }
 
   return (
     <iframe
       ref={iframeRef}
       src={src}
-      title="Reserva en La Llorona Cantina"
-      style={{
-        width: "100%",
-        height,
-        border: 0,
-        borderRadius: 12,
-        background: "#fff",
-        display: "block",
-        transition: "height 200ms ease-out",
-      }}
+      title="Reserva tu mesa en La Llorona Cantina"
+      style={{ width: '100%', height, border: 0, display: 'block', background: 'transparent' }}
+      allow="clipboard-write"
     />
   );
 }

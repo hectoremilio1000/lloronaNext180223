@@ -1,6 +1,18 @@
 import React from 'react';
 import { InlineWidget } from 'react-calendly';
 import { useAppContext } from '../context/Context';
+import BookingWidget from '../BookingWidget';
+
+/* Reserva principal con el widget de GrowthSuite: la reserva cae directo al
+ * POS (Admin, Caja y Comandero). Para regresar a Calendly sin tocar código:
+ * NEXT_PUBLIC_RESERVAS_CALENDLY=1 y volver a desplegar. Las páginas de
+ * campaña siguen con Calendly mientras se valida en paralelo. */
+const USAR_CALENDLY = process.env.NEXT_PUBLIC_RESERVAS_CALENDLY === '1';
+const CALENDLY_URL = 'https://calendly.com/reservaciones-14/reservaciones-llorona';
+
+function Reserva() {
+  return USAR_CALENDLY ? <InlineWidget url={CALENDLY_URL} /> : <BookingWidget />;
+}
 
 function Calendario() {
   const { espa } = useAppContext();
@@ -13,7 +25,7 @@ function Calendario() {
               Reserva ya
             </h1>
 
-            <InlineWidget url="https://calendly.com/reservaciones-14/reservaciones-llorona" />
+            <Reserva />
           </div>
         </div>
       ) : (
@@ -23,7 +35,7 @@ function Calendario() {
               My house is your house, Book now.
             </h1>
 
-            <InlineWidget url="https://calendly.com/reservaciones-14/reservaciones-llorona" />
+            <Reserva />
           </div>
         </div>
       )}
