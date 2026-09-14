@@ -361,7 +361,7 @@ function CitaGoogleLlorona() {
                   </p>
                 </div>
                 <div className="w-full">
-                  <CalendarioGoogleAds />
+                  <CalendarioGoogleAds campaignType="cita" />
                 </div>
               </div>
               <>

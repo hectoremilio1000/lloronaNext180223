@@ -142,7 +142,7 @@ function Reserva() {
               </div>
 
               <div className="w-full">
-                <Calendario />
+                <Calendario campaignType="cumple" />
               </div>
             </div>
 
@@ -226,7 +226,7 @@ function Reserva() {
               </div>
 
               <div className="w-full">
-                <Calendario />
+                <Calendario campaignType="cumple" />
               </div>
             </div>
 
