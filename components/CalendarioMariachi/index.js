@@ -1,19 +1,11 @@
-import React, { useMemo, useState, useEffect } from 'react';
-import { InlineWidget } from 'react-calendly';
+import React, { useMemo } from 'react';
 import { useAppContext } from '../context/Context';
-import { buildCalendlyUrl } from '../../lib/tracker';
+import ReservaEmbed from '../ReservaEmbed';
 
-const BASE_URL = 'https://calendly.com/reservaciones-14/reservaciones-llorona?hide_gdpr_banner=1';
+const CALENDLY_URL = 'https://calendly.com/reservaciones-14/reservaciones-llorona?hide_gdpr_banner=1';
 
 function CalendarioMariachi() {
   const { espa } = useAppContext();
-
-  /* The tracker only works client-side; compute the URL after mount so the
-   * lead_uid cookie is already set. */
-  const [calendlyUrl, setCalendlyUrl] = useState(BASE_URL);
-  useEffect(() => {
-    setCalendlyUrl(buildCalendlyUrl(BASE_URL));
-  }, []);
 
   const content = useMemo(() => (espa
     ? {
@@ -36,9 +28,10 @@ function CalendarioMariachi() {
             {content.subtitle}
           </p>
 
-          <InlineWidget
-            url={calendlyUrl}
-            styles={{ height: '650px', minWidth: '320px' }}
+          <ReservaEmbed
+            calendlyUrl={CALENDLY_URL}
+            calendlyStyles={{ height: '650px', minWidth: '320px' }}
+            campaignType="mariachi"
           />
         </div>
       </div>
