@@ -57,8 +57,11 @@ a[href="https://elfsight.com/google-reviews-widget/?utm_source=websites&utm_medi
 .rail-right .animate-marquee {
   animation: marqueeright 15s linear infinite;
 }
+/* Franjas de texto (TESTIMONIOS, REVISTAS, JUEVES DE MARIACHI…) con la
+ * tipografía de marca, como en las landings de LandingEvento. */
 .animate-marqueeleft {
   animation: marqueeleft 8s linear infinite;
+  font-family: 'Gagalin-Regular';
 }
 .stroke_text {
   color: rgba(0, 0, 0, 0);
