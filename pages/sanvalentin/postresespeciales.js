@@ -14,17 +14,9 @@ function Promo2() {
       {espa ? (
         <Head>
           <title>Sorprende a tu pareja en San Valentín</title>
-          <Script
-            strategy="beforeInteractive"
-            src="https://www.googletagmanager.com/gtag/js?id=AW-11160821109" // reemplaza con tu código de seguimiento de Google
-          />
         </Head>
       ) : (
         <Head>
-          <Script
-            strategy="beforeInteractive"
-            src="https://www.googletagmanager.com/gtag/js?id=AW-11160821109" // reemplaza con tu código de seguimiento de Google
-          />
         </Head>
       )}
       <div className="w-full bg-red-800 py-[150px] ">

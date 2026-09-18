@@ -1,46 +1,25 @@
 import Link from 'next/link';
 import React, { useEffect } from 'react';
-import * as fbq from '../lib/fpixel';
+import { trackReservaCompletada } from '../lib/reservaConversion';
 
 const Gracias = () => {
   useEffect(() => {
-    // Facebook Pixel - Conversion event
-    fbq.event('Lead', {
-      content_name: 'Reservacion General',
-      content_category: 'reserva',
-      value: 500,
-      currency: 'MXN',
+    /* Una sola señal, al Tag Manager (ver lib/reservaConversion.js).
+     *
+     * Antes esta página llamaba directo a fbq, ttq y gtag, con el identificador
+     * de conversión de Google Ads escrito a mano. Se quitó porque el Tag
+     * Manager es ahora la única fuente de conexión a Google Ads, Meta y TikTok:
+     * tener las dos vías haría que cada reserva contara DOS veces.
+     *
+     * OJO: esta página mide por VISITA. El widget de reservas nuevo no redirige
+     * aquí —confirma la reserva sin salir de la página—, así que una campaña
+     * que se pase al widget deja de pasar por aquí y hay que quitarle esta
+     * página de gracias para no medir doble. */
+    trackReservaCompletada({
+      source: 'organic',
+      campaignType: 'general',
+      provider: 'calendly',
     });
-
-    // TikTok Pixel - Conversion event
-    if (typeof window !== 'undefined' && window.ttq) {
-      window.ttq.track('SubmitForm', {
-        content_name: 'Reservacion General',
-        content_type: 'product',
-        value: 500,
-        currency: 'MXN',
-      });
-    }
-
-    // Google Ads - Conversion event
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'conversion', {
-        send_to: 'AW-11160821109/6PCACIi1ypEZEPW68skp',
-        value: 500,
-        currency: 'MXN',
-      });
-    }
-
-    // GTM DataLayer - Conversion event
-    if (typeof window !== 'undefined') {
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({
-        event: 'reserva_completada',
-        conversion_type: 'reserva_general',
-        value: 500,
-        currency: 'MXN',
-      });
-    }
   }, []);
 
   return (
