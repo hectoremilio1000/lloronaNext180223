@@ -3,7 +3,7 @@ import Link from 'next/link';
 // import title from "../components/Main/title.module.css";
 import { useAppContext } from '../../components/context/Context';
 
-import { InlineWidget } from 'react-calendly';
+import ReservaEmbed from '../../components/ReservaEmbed';
 import Head from 'next/head';
 import Script from 'next/script';
 
@@ -37,7 +37,7 @@ function Promo2() {
                   inigualable.
                 </p>
 
-                <InlineWidget url="https://calendly.com/reservaciones-14/reserva-al-superbowl-recibe-descuento-llorona-cantina" />
+                <ReservaEmbed calendlyUrl="https://calendly.com/reservaciones-14/reserva-al-superbowl-recibe-descuento-llorona-cantina" />
               </>
             ) : (
               <>
@@ -53,7 +53,7 @@ function Promo2() {
                   in the excitement of the game.
                 </p>
 
-                <InlineWidget url="https://calendly.com/reservaciones-14/book-superbowl-discount-15-percent-account-llorona?hide_gdpr_banner=1" />
+                <ReservaEmbed calendlyUrl="https://calendly.com/reservaciones-14/book-superbowl-discount-15-percent-account-llorona?hide_gdpr_banner=1" />
               </>
             )}
           </div>

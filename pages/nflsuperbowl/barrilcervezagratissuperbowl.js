@@ -3,7 +3,7 @@ import Link from 'next/link';
 // import title from "../components/Main/title.module.css";
 import { useAppContext } from '../../components/context/Context';
 
-import { InlineWidget } from 'react-calendly';
+import ReservaEmbed from '../../components/ReservaEmbed';
 import Head from 'next/head';
 import Script from 'next/script';
 
@@ -54,7 +54,7 @@ function Promo1() {
                   rodeado de buena compañía y un ambiente inigualable.
                 </p>
 
-                <InlineWidget url="https://calendly.com/reservaciones-14/cervezabarrilgratissuperbowl?hide_gdpr_banner=1" />
+                <ReservaEmbed calendlyUrl="https://calendly.com/reservaciones-14/cervezabarrilgratissuperbowl?hide_gdpr_banner=1" />
               </>
             ) : (
               <>
@@ -70,7 +70,7 @@ function Promo1() {
                   great company and an unparalleled ambiance.
                 </p>
 
-                <InlineWidget url="https://calendly.com/reservaciones-14/bookforthesuperbowlandgetafreedraftbeer" />
+                <ReservaEmbed calendlyUrl="https://calendly.com/reservaciones-14/bookforthesuperbowlandgetafreedraftbeer" />
               </>
             )}
           </div>

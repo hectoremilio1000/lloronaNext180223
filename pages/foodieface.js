@@ -139,7 +139,7 @@ function Foodieface() {
                   </div>
                 </div>
                 <div className="w-full">
-                  <CalendarioFoodieFacebook />
+                  <CalendarioFoodieFacebook campaignType="foodie" />
                 </div>
               </div>
 
@@ -203,7 +203,7 @@ function Foodieface() {
                   </div>
                 </div>
                 <div className="w-full">
-                  <CalendarioFoodieFacebook />
+                  <CalendarioFoodieFacebook campaignType="foodie" />
                 </div>
               </div>
 

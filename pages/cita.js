@@ -543,7 +543,7 @@ function Cita() {
                   </div>
                 </div>
                 <div className="w-full">
-                  <CalendarioFoodie />
+                  <CalendarioFoodie campaignType="cita" />
                 </div>
               </div>
               <div className="overflow-hidden bg-black">
