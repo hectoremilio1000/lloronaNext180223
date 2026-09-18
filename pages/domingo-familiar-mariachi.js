@@ -5,7 +5,6 @@ import Head from 'next/head';
 import Script from 'next/script';
 import Link from 'next/link';
 import * as fbq from '../lib/fpixel';
-import { FB_PIXEL_ID } from '../lib/fpixel';
 
 import CalendarioMariachiDomingo from '../components/CalendarioMariachiDomingo';
 import QuickInfo5 from '../components/QuickInfo5';
@@ -81,21 +80,9 @@ function DomingoFamiliarMariachi() {
           property="og:description"
           content="Domingo de comida en familia con mariachi en vivo en la Roma-Condesa. La sobremesa mexicana de siempre, ahora en Cantina La Llorona."
         />
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style={{ display: 'none' }}
-            src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
-          />
-        </noscript>
       </Head>
 
       <Head>
-        <Script
-          strategy="beforeInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=AW-11160821109"
-        />
       </Head>
 
       <NavBar onLanguageChange={handleLanguageChange} />

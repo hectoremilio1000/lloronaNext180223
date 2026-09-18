@@ -6,7 +6,6 @@ import { useAppContext } from '../components/context/Context';
 import Head from 'next/head';
 import Script from 'next/script';
 import * as fbq from '../lib/fpixel';
-import { FB_PIXEL_ID } from '../lib/fpixel';
 import QuickInfo6 from '../components/QuickInfo6';
 import NavBar from '../components/NavBarEs/NavBarEs';
 import QuickInfo5 from '../components/QuickInfo5';
@@ -47,14 +46,6 @@ function Futbol() {
   return (
     <>
       <Head>
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style={{ display: 'none' }}
-            src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
-          />
-        </noscript>
       </Head>
       <>
         {espa ? (
@@ -64,10 +55,6 @@ function Futbol() {
               name="description"
               content="Vive todos los partidos de fútbol en pantalla grande en Cantina La Llorona, Roma Condesa. Comida mexicana, mezcal y micheladas. Reserva tu mesa."
             />
-            <Script
-              strategy="beforeInteractive"
-              src="https://www.googletagmanager.com/gtag/js?id=AW-11160821109"
-            />
           </Head>
         ) : (
           <Head>
@@ -75,10 +62,6 @@ function Futbol() {
             <meta
               name="description"
               content="Watch every football match on big screens at Cantina La Llorona, Roma Condesa. Mexican food, mezcal and micheladas. Book your table."
-            />
-            <Script
-              strategy="beforeInteractive"
-              src="https://www.googletagmanager.com/gtag/js?id=AW-11160821109"
             />
           </Head>
         )}

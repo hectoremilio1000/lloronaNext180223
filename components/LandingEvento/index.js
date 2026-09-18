@@ -184,12 +184,8 @@ export default function LandingEvento({ config }) {
       </Head>
 
       <>
-        <Head>
-          <Script
-            strategy="beforeInteractive"
-            src="https://www.googletagmanager.com/gtag/js?id=AW-11160821109"
-          />
-        </Head>
+        {/* La etiqueta de Google Ads la carga el Tag Manager en todas las
+            páginas: cargarla aquí la duplicaba. */}
 
         <NavBar onLanguageChange={handleLanguageChange} />
 

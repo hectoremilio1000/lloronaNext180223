@@ -7,7 +7,6 @@ import { useAppContext } from '../components/context/Context';
 import Head from 'next/head';
 import Script from 'next/script';
 import * as fbq from '../lib/fpixel';
-import { FB_PIXEL_ID } from '../lib/fpixel';
 import NavBar from '../components/NavBarEs/NavBarEs';
 import RevistasPopup from '../components/RevistasPopup';
 import dynamic from 'next/dynamic';
@@ -101,18 +100,6 @@ export default function ReservaChileNogada() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style={{ display: 'none' }}
-            src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
-          />
-        </noscript>
-        <Script
-          strategy="beforeInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=AW-11160821109`}
         />
       </Head>
 
