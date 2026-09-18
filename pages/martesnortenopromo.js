@@ -5,7 +5,6 @@ import { useAppContext } from '../components/context/Context';
 import Head from 'next/head';
 import Script from 'next/script';
 import * as fbq from '../lib/fpixel';
-import { FB_PIXEL_ID } from '../lib/fpixel';
 
 import { InlineWidget } from 'react-calendly';
 import ModalAll from '../components/ModalAll';
@@ -90,22 +89,10 @@ function MartesNortenoPromo() {
           property="og:description"
           content="Música norteña en vivo todos los martes. Charro Pilsner + Espadín artesanal $180. Reserva ya."
         />
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style={{ display: 'none' }}
-            src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
-          />
-        </noscript>
       </Head>
 
       <>
         <Head>
-          <Script
-            strategy="beforeInteractive"
-            src="https://www.googletagmanager.com/gtag/js?id=AW-11160821109"
-          />
         </Head>
 
         <NavBar onLanguageChange={handleLanguageChange} />

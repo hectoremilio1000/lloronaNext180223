@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import * as fbq from '../lib/fpixel';
-import { FB_PIXEL_ID } from '../lib/fpixel';
 import NavBar from '../components/NavBarEs/NavBarEs';
 import { useAppContext } from '../components/context/Context';
 
@@ -11,82 +9,30 @@ function GraciasMartesNorteno() {
   const [hasInitialized, setHasInitialized] = useState(false);
 
   useEffect(() => {
-    if (!hasInitialized) {
-      onIdiomaEspa();
-      setHasInitialized(true);
-    }
-  }, [hasInitialized]);
-
-  useEffect(() => {
-    // Facebook Pixel - Lead conversion
-    fbq.event('Lead', {
-      content_name: 'Reservacion Martes Norteño',
-      content_category: 'reserva_norteno',
-      value: 500,
-      currency: 'MXN',
+    /* Una sola señal, al Tag Manager (ver lib/reservaConversion.js).
+     *
+     * Antes esta página llamaba directo a fbq, ttq y gtag, con el identificador
+     * de conversión de Google Ads escrito a mano. Se quitó porque el Tag
+     * Manager es ahora la única fuente de conexión a Google Ads, Meta y TikTok:
+     * tener las dos vías haría que cada reserva contara DOS veces.
+     *
+     * OJO: esta página mide por VISITA. El widget de reservas nuevo no redirige
+     * aquí —confirma la reserva sin salir de la página—, así que una campaña
+     * que se pase al widget deja de pasar por aquí y hay que quitarle esta
+     * página de gracias para no medir doble. */
+    trackReservaCompletada({
       source: 'tiktok',
-      campaign_type: 'norteno',
+      campaignType: 'martes_norteno',
+      provider: 'calendly',
     });
-
-    fbq.event('Schedule', {
-      content_name: 'Reservacion Martes Norteño',
-      value: 500,
-      currency: 'MXN',
-    });
-
-    // TikTok Pixel
-    if (typeof window !== 'undefined' && window.ttq) {
-      window.ttq.track('SubmitForm', {
-        content_name: 'Reservacion Martes Norteño',
-        content_type: 'product',
-        value: 500,
-        currency: 'MXN',
-        description: 'source:tiktok_norteno',
-      });
-
-      window.ttq.track('CompletePayment', {
-        content_name: 'Reservacion Martes Norteño',
-        content_type: 'product',
-        value: 500,
-        currency: 'MXN',
-      });
-    }
-
-    // Google Ads conversion
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'conversion', {
-        send_to: 'AW-11160821109/6PCACIi1ypEZEPW68skp',
-        value: 500,
-        currency: 'MXN',
-        transaction_id: `norteno_${Date.now()}`,
-      });
-    }
-
-    // GTM dataLayer
-    if (typeof window !== 'undefined') {
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({
-        event: 'reserva_completada',
-        conversion_type: 'norteno',
-        source: 'tiktok',
-        value: 500,
-        currency: 'MXN',
-      });
-    }
   }, []);
 
   return (
     <>
       <Head>
         <title>¡Reservación confirmada! | Martes de Norteño</title>
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style={{ display: 'none' }}
-            src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
-          />
-        </noscript>
+        {/* El respaldo sin JavaScript del píxel de Meta lo pone el Tag Manager
+            en todas las páginas: aquí duplicaba la visita. */}
       </Head>
 
       <NavBar />
