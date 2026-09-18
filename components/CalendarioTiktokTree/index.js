@@ -1,34 +1,12 @@
 import React from 'react';
-import { InlineWidget } from 'react-calendly';
-import { useAppContext } from '../context/Context';
+import Calendario from '../Calendario';
 
-function CalendarioTiktokTree() {
-  const { espa } = useAppContext();
-  return (
-    <div id="reserva">
-      {espa ? (
-        <div className="w-full bg-white">
-          <div className="w-full rounded bg-gray-200 max-w-[1184px] py-[80px] px-[20px] mx-auto">
-            <h1 className="text2xl md:text-5xl font-bold text-center text-gray-900">
-              Mi casa es tu Casa, Reserva ya
-            </h1>
+/* Landings de TikTok y road opening: mismo bloque de reserva que el home. Con
+ * NEXT_PUBLIC_RESERVAS_CALENDLY=1 vuelve a su evento propio de Calendly. */
+const CALENDLY_URL = 'https://calendly.com/reservaciones-14/reservaciones-llorona-tiktok-clon';
 
-            <InlineWidget url="https://calendly.com/reservaciones-14/reservaciones-llorona-tiktok-clon" />
-          </div>
-        </div>
-      ) : (
-        <div className="w-full bg-white">
-          <div className="w-full rounded bg-gray-200 max-w-[1184px] py-[80px] px-[20px] mx-auto">
-            <h1 className="text2xl md:text-5xl font-bold text-center text-gray-900">
-              My house is your house, Book now.
-            </h1>
-
-            <InlineWidget url="https://calendly.com/reservaciones-14/reservaciones-llorona-tiktok-clon" />
-          </div>
-        </div>
-      )}
-    </div>
-  );
+function CalendarioTiktokTree({ campaignType = 'general' }) {
+  return <Calendario calendlyUrl={CALENDLY_URL} campaignType={campaignType} />;
 }
 
 export default CalendarioTiktokTree;

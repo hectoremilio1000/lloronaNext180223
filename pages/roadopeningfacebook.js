@@ -2,7 +2,7 @@ import Head from 'next/head';
 import NavBar from '../components/NavBarEs/NavBarEs';
 import ModalAll from '../components/ModalAll';
 import React, { useEffect, useState } from 'react';
-import { InlineWidget } from 'react-calendly';
+import ReservaEmbed from '../components/ReservaEmbed';
 import CalendarioTiktokTree from '../components/CalendarioTiktokTree';
 import { useAppContext } from '../components/context/Context';
 
@@ -176,7 +176,7 @@ function RoadopeningFacebook() {
               Reserva ya y pide un postre especial del chef
             </h1>
 
-            <InlineWidget url="https://calendly.com/reservaciones-14/facebook-roadopening-14-04-24" />
+            <ReservaEmbed calendlyUrl="https://calendly.com/reservaciones-14/facebook-roadopening-14-04-24" />
           </div>
         </div>
       ) : (
@@ -186,7 +186,7 @@ function RoadopeningFacebook() {
               book now for a special dessert by the chef
             </h1>
 
-            <InlineWidget url="https://calendly.com/reservaciones-14/facebook-roadopening-14-04-24" />
+            <ReservaEmbed calendlyUrl="https://calendly.com/reservaciones-14/facebook-roadopening-14-04-24" />
           </div>
         </div>
       )}

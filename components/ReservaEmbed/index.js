@@ -23,5 +23,11 @@ export default function ReservaEmbed({ calendlyUrl, calendlyStyles, campaignType
   if (USAR_CALENDLY && calendlyUrl) {
     return <CalendlyRespaldo url={calendlyUrl} styles={calendlyStyles} />;
   }
-  return <BookingWidget campaignType={campaignType} />;
+  /* El contenido del widget mide ~600px: a todo lo ancho quedaban franjas
+   * blancas a los lados. En columnas angostas (/reserva) no cambia nada. */
+  return (
+    <div className="w-full max-w-[600px] mx-auto">
+      <BookingWidget campaignType={campaignType} />
+    </div>
+  );
 }

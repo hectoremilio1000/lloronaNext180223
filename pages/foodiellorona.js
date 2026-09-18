@@ -150,7 +150,7 @@ function FoodieLlorona() {
                   </div>
                 </div>
                 <div className="w-full">
-                  <CalendarioFoodie />
+                  <CalendarioFoodie campaignType="foodie" />
                 </div>
               </div>
               <div className="overflow-hidden bg-black">
@@ -220,7 +220,7 @@ function FoodieLlorona() {
                   </div>
                 </div>
                 <div className="w-full">
-                  <CalendarioFoodie />
+                  <CalendarioFoodie campaignType="foodie" />
                 </div>
               </div>
               <div className="overflow-hidden bg-black">

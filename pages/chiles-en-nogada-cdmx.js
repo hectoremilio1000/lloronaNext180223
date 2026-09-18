@@ -8,6 +8,8 @@ import Head from 'next/head';
 import Script from 'next/script';
 import * as fbq from '../lib/fpixel';
 import NavBar from '../components/NavBarEs/NavBarEs';
+import Calendario from '../components/Calendario';
+import useCalendlyTracking from '../lib/useCalendlyTracking';
 import RevistasPopup from '../components/RevistasPopup';
 import dynamic from 'next/dynamic';
 
@@ -17,6 +19,7 @@ const PopupTestimonios = dynamic(
 );
 
 export default function ReservaChileNogada() {
+  useCalendlyTracking('organic', 'chiles_nogada');
   const { ingles, espa, onIdiomaIngles, onIdiomaEspa } = useAppContext();
   const [hasInitialized, setHasInitialized] = useState(false);
 
@@ -138,15 +141,16 @@ export default function ReservaChileNogada() {
                   />
                 </div>
               </div>
-              {/* Botón de WhatsApp */}
               <a
-                href={whatsappLink}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#reserva"
                 className="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg transition"
               >
-                Reservar por WhatsApp
+                Reservar mesa
               </a>
+            </div>
+
+            <div className="mt-16">
+              <Calendario campaignType="chiles_nogada" />
             </div>
 
             <section className="max-w-[900px] mx-auto mt-16 px-6 text-center text-[#F4F1EE]">
@@ -195,9 +199,7 @@ export default function ReservaChileNogada() {
               </div>
 
               <a
-                href={whatsappLink}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#reserva"
                 className="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg transition"
               >
                 Reservar mesa con música en vivo
@@ -231,7 +233,7 @@ export default function ReservaChileNogada() {
                 rel="noopener noreferrer"
                 className="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg transition"
               >
-                Reservar por WhatsApp
+                ¿Grupo grande o dudas? Escríbenos por WhatsApp
               </a>
             </section>
 
@@ -287,12 +289,25 @@ export default function ReservaChileNogada() {
                 />
               </div>
               <a
+                href="#reserva"
+                className="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg transition"
+              >
+                Book a table
+              </a>
+            </div>
+
+            <div className="mt-16">
+              <Calendario campaignType="chiles_nogada" />
+            </div>
+
+            <div className="max-w-[800px] mx-auto text-center px-4 mt-8">
+              <a
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg transition"
               >
-                Book via WhatsApp
+                Questions or a large group? Message us on WhatsApp
               </a>
             </div>
           </>

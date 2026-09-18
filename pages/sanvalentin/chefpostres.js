@@ -3,7 +3,7 @@ import Link from 'next/link';
 // import title from "../components/Main/title.module.css";
 import { useAppContext } from '../../components/context/Context';
 
-import { InlineWidget } from 'react-calendly';
+import ReservaEmbed from '../../components/ReservaEmbed';
 import Head from 'next/head';
 import Script from 'next/script';
 
@@ -32,7 +32,7 @@ function Promo1() {
                   febrero, nuestro chef te preparará un postre especialmente
                   para Ti.
                 </p>
-                <InlineWidget url="https://calendly.com/reservaciones-14/reserva-ahora-y-gana-un-2x1-en-cocteles-llorona-clon" />
+                <ReservaEmbed calendlyUrl="https://calendly.com/reservaciones-14/reserva-ahora-y-gana-un-2x1-en-cocteles-llorona-clon" />
               </>
             ) : (
               <>
@@ -44,7 +44,7 @@ function Promo1() {
                   our chef will prepare a dessert especially for You.
                 </p>
 
-                <InlineWidget url="https://calendly.com/reservaciones-14/book-now-and-get-2-for-1-on-cocktails-clon" />
+                <ReservaEmbed calendlyUrl="https://calendly.com/reservaciones-14/book-now-and-get-2-for-1-on-cocktails-clon" />
               </>
             )}
           </div>

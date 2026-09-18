@@ -146,7 +146,7 @@ function ReservaFacebook() {
                   </div>
                 </div>
                 <div className="w-full">
-                  <CalendarioFestejoFacebook />
+                  <CalendarioFestejoFacebook campaignType="cumple" />
                 </div>
               </div>
 
@@ -211,7 +211,7 @@ function ReservaFacebook() {
                   </div>
                 </div>
                 <div className="w-full">
-                  <CalendarioTiktok />
+                  <CalendarioTiktok campaignType="cumple" />
                 </div>
               </div>
 
