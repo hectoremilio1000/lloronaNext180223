@@ -68,7 +68,17 @@ export default function BookingWidget({
       ref={iframeRef}
       src={src}
       title="Reserva tu mesa en La Llorona Cantina"
-      style={{ width: '100%', height, border: 0, display: 'block', background: 'transparent' }}
+      /* Tope de altura: en columnas angostas el widget mide 1,700px+ y había
+       * que deslizar una tira blanca. Arriba del tope, el scroll es dentro del
+       * iframe (el widget no bloquea su overflow). */
+      style={{
+        width: '100%',
+        height,
+        maxHeight: 'min(720px, 80vh)',
+        border: 0,
+        display: 'block',
+        background: 'transparent',
+      }}
       allow="clipboard-write"
     />
   );
