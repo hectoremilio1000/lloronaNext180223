@@ -454,7 +454,7 @@ function Cita() {
                   </div> */}
                 </div>
                 <div className="w-full">
-                  <CalendarioGoogleAds />
+                  <CalendarioGoogleAds campaignType="cita" />
                 </div>
               </div>
               <>

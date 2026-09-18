@@ -173,7 +173,7 @@ function MartesNortenoPromo() {
 
                 {/* Columna derecha: Calendario */}
                 <div className="w-full">
-                  <CalendarioNorteno />
+                  <CalendarioNorteno campaignType="norteno_promo" />
                 </div>
               </div>
 
@@ -274,7 +274,7 @@ function MartesNortenoPromo() {
                 </div>
 
                 <div className="w-full">
-                  <CalendarioNorteno />
+                  <CalendarioNorteno campaignType="norteno_promo" />
                 </div>
               </div>
 

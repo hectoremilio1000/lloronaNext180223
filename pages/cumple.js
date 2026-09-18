@@ -157,7 +157,7 @@ function Reserva() {
                     </p>
                   </div>
                   <div className="w-full">
-                    <CalendarioGoogleAds />
+                    <CalendarioGoogleAds campaignType="cumple" />
                   </div>
                 </div>
                 <div className="bg-white">
@@ -252,7 +252,7 @@ function Reserva() {
                     </p>
                   </div>
                   <div className="w-full">
-                    <Calendario />
+                    <Calendario campaignType="cumple" />
                   </div>
                 </div>
                 <div className="bg-white">
