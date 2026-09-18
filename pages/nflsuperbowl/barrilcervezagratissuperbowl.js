@@ -32,17 +32,9 @@ function Promo1() {
       {espa ? (
         <Head>
           <title>Super Bowl Cantina La Llorona</title>
-          <Script
-            strategy="beforeInteractive"
-            src="https://www.googletagmanager.com/gtag/js?id=AW-11160821109" // reemplaza con tu código de seguimiento de Google
-          />
         </Head>
       ) : (
         <Head>
-          <Script
-            strategy="beforeInteractive"
-            src="https://www.googletagmanager.com/gtag/js?id=AW-11160821109" // reemplaza con tu código de seguimiento de Google
-          />
         </Head>
       )}
       <div className="w-full bg-gray-900 py-[150px] ">

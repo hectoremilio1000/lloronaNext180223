@@ -8,7 +8,6 @@ import Head from 'next/head';
 import Script from 'next/script';
 import * as fbq from '../lib/fpixel';
 import YouTube from 'react-youtube';
-import { FB_PIXEL_ID } from '../lib/fpixel';
 
 import { InlineWidget } from 'react-calendly';
 import ModalAll from '../components/ModalAll';
@@ -80,14 +79,6 @@ function ReservaTiktokTree() {
   return (
     <>
       <Head>
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style={{ display: 'none' }}
-            src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
-          />
-        </noscript>
         <script
           src="https://static.elfsight.com/platform/platform.js"
           data-use-service-core
@@ -97,17 +88,9 @@ function ReservaTiktokTree() {
       <>
         {espa ? (
           <Head>
-            <Script
-              strategy="beforeInteractive"
-              src="https://www.googletagmanager.com/gtag/js?id=AW-11160821109" // reemplaza con tu código de seguimiento de Google
-            />
           </Head>
         ) : (
           <Head>
-            <Script
-              strategy="beforeInteractive"
-              src="https://www.googletagmanager.com/gtag/js?id=AW-11160821109" // reemplaza con tu código de seguimiento de Google
-            />
           </Head>
         )}
         <NavBarWhite />
