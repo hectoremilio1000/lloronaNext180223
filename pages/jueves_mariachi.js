@@ -4,7 +4,6 @@ import { useAppContext } from '../components/context/Context';
 import Head from 'next/head';
 import Script from 'next/script';
 import * as fbq from '../lib/fpixel';
-import { FB_PIXEL_ID } from '../lib/fpixel';
 
 import CalendarioMariachi from '../components/CalendarioMariachi';
 import QuickInfo5 from '../components/QuickInfo5';
@@ -82,22 +81,10 @@ function JuevesMariachi() {
           property="og:description"
           content="Mariachi en vivo todos los jueves. Piñata cumpleañera gratis si cumples en el mes. Reserva ya."
         />
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style={{ display: 'none' }}
-            src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
-          />
-        </noscript>
       </Head>
 
       <>
         <Head>
-          <Script
-            strategy="beforeInteractive"
-            src="https://www.googletagmanager.com/gtag/js?id=AW-11160821109"
-          />
         </Head>
 
         <NavBar onLanguageChange={handleLanguageChange} />
