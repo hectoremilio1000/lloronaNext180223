@@ -18,6 +18,9 @@ export default function BookingWidget({
   source,
   campaignType = 'general',
   minHeight = 640,
+  /* 'none' en /reserva-widget: ahí el widget es toda la página y se muestra
+   * completo, sin scroll dentro de otro scroll. */
+  maxHeight = 'min(720px, 80vh)',
   onComplete,
 }) {
   const [src, setSrc] = useState(null);
@@ -74,7 +77,7 @@ export default function BookingWidget({
       style={{
         width: '100%',
         height,
-        maxHeight: 'min(720px, 80vh)',
+        maxHeight,
         border: 0,
         display: 'block',
         background: 'transparent',
