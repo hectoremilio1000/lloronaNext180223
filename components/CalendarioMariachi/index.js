@@ -20,7 +20,7 @@ function CalendarioMariachi() {
   return (
     <div id="reserva">
       <div className="w-full bg-black">
-        <div className="w-full rounded bg-[#141414] max-w-[1184px] py-[80px] px-[20px] mx-auto">
+        <div className="w-full rounded bg-[#141414] max-w-[1184px] py-[80px] px-0 md:px-[20px] mx-auto">
           <h1 className="text-2xl md:text-4xl font-bold text-center text-white">
             {content.title}
           </h1>
