@@ -3,6 +3,26 @@ import { buildBookingWidgetUrl, bookingWidgetOrigin } from '../../lib/bookingWid
 import { trackReservaCompletada } from '../../lib/reservaConversion';
 import { getCurrentAttribution } from '../../lib/tracker';
 
+/* iOS Safari dibuja el teclado ENCIMA de la página (no la achica, como
+ * Android) y con un input dentro de un iframe de otro dominio no lo trae a la
+ * vista. Solo en iOS se acomoda el iframe a mano mientras el teclado está abierto. */
+const esIOS = () =>
+  typeof navigator !== 'undefined' &&
+  (/iP(hone|ad|od)/.test(navigator.userAgent) ||
+    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1));
+
+/* Borde inferior del navbar fijo (si lo hay): el iframe debe quedar debajo. */
+function bordeInferiorNavbarFijo() {
+  let bottom = 0;
+  document.querySelectorAll('header, nav, .header-container').forEach((el) => {
+    const { position } = getComputedStyle(el);
+    if (position !== 'fixed' && position !== 'sticky') return;
+    const r = el.getBoundingClientRect();
+    if (r.height > 0 && r.top <= 1 && r.bottom > bottom) bottom = r.bottom;
+  });
+  return bottom;
+}
+
 /**
  * Widget de reservas de GrowthSuite incrustado en el sitio.
  *
@@ -25,6 +45,8 @@ export default function BookingWidget({
 }) {
   const [src, setSrc] = useState(null);
   const [height, setHeight] = useState(minHeight);
+  // Alto disponible sobre el teclado (solo iOS, solo con el teclado abierto).
+  const [tecladoMaxHeight, setTecladoMaxHeight] = useState(null);
   const iframeRef = useRef(null);
   const convertidas = useRef(new Set());
 
@@ -62,6 +84,39 @@ export default function BookingWidget({
     return () => window.removeEventListener('message', onMessage);
   }, [source, campaignType, minHeight, onComplete]);
 
+  /* Teclado de iOS abierto con el foco dentro del iframe: el iframe se limita
+   * al espacio visible y se sube justo debajo del navbar; así el scroll interno
+   * de Safari trabaja sobre una zona que sí se ve completa. */
+  useEffect(() => {
+    const vv = typeof window !== 'undefined' ? window.visualViewport : null;
+    if (!vv || !esIOS()) return undefined;
+
+    let timer;
+    const acomodar = () => {
+      const iframe = iframeRef.current;
+      const tecladoAbierto =
+        iframe && document.activeElement === iframe && window.innerHeight - vv.height > 120;
+      if (!tecladoAbierto) {
+        setTecladoMaxHeight(null);
+        return;
+      }
+      const navbar = Math.max(0, bordeInferiorNavbarFijo() - vv.offsetTop);
+      setTecladoMaxHeight(Math.max(240, Math.floor(vv.height - navbar - 8)));
+      const top = iframe.getBoundingClientRect().top;
+      window.scrollBy({ top: top - vv.offsetTop - navbar, behavior: 'smooth' });
+    };
+    const onViewport = () => {
+      clearTimeout(timer);
+      timer = setTimeout(acomodar, 120);
+    };
+
+    vv.addEventListener('resize', onViewport);
+    return () => {
+      clearTimeout(timer);
+      vv.removeEventListener('resize', onViewport);
+    };
+  }, []);
+
   if (!src) {
     return <div style={{ minHeight }} aria-busy="true" />;
   }
@@ -77,7 +132,7 @@ export default function BookingWidget({
       style={{
         width: '100%',
         height,
-        maxHeight,
+        maxHeight: tecladoMaxHeight ?? maxHeight,
         border: 0,
         display: 'block',
         background: 'transparent',
