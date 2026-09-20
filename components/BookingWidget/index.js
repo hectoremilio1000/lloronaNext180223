@@ -86,28 +86,42 @@ export default function BookingWidget({
 
   /* Teclado de iOS abierto con el foco dentro del iframe: el iframe se limita
    * al espacio visible y se sube justo debajo del navbar; así el scroll interno
-   * de Safari trabaja sobre una zona que sí se ve completa. */
+   * de Safari trabaja sobre una zona que sí se ve completa.
+   *
+   * Se acomoda UNA sola vez por apertura del teclado. Reaccionar a cada resize
+   * hacía un ciclo: scrollBy → Safari colapsa/expande su barra → cambia
+   * visualViewport → otro scrollBy… y la pantalla no paraba de moverse. */
   useEffect(() => {
     const vv = typeof window !== 'undefined' ? window.visualViewport : null;
     if (!vv || !esIOS()) return undefined;
 
+    /* iOS 26 dibuja sobre el teclado una barra flotante (autorrelleno:
+     * llave / tarjeta / ubicación) que tapa unos ~70px del contenido. */
+    const BARRA_FLOTANTE = 72;
     let timer;
+    let acomodado = false;
+
     const acomodar = () => {
       const iframe = iframeRef.current;
       const tecladoAbierto =
         iframe && document.activeElement === iframe && window.innerHeight - vv.height > 120;
       if (!tecladoAbierto) {
-        setTecladoMaxHeight(null);
+        if (acomodado) {
+          acomodado = false;
+          setTecladoMaxHeight(null);
+        }
         return;
       }
+      if (acomodado) return;
+      acomodado = true;
       const navbar = Math.max(0, bordeInferiorNavbarFijo() - vv.offsetTop);
-      setTecladoMaxHeight(Math.max(240, Math.floor(vv.height - navbar - 8)));
+      setTecladoMaxHeight(Math.max(240, Math.floor(vv.height - navbar - 8 - BARRA_FLOTANTE)));
       const top = iframe.getBoundingClientRect().top;
-      window.scrollBy({ top: top - vv.offsetTop - navbar, behavior: 'smooth' });
+      window.scrollBy({ top: top - vv.offsetTop - navbar, behavior: 'auto' });
     };
     const onViewport = () => {
       clearTimeout(timer);
-      timer = setTimeout(acomodar, 120);
+      timer = setTimeout(acomodar, 200);
     };
 
     vv.addEventListener('resize', onViewport);
