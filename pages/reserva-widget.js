@@ -23,7 +23,7 @@ export default function ReservaWidget() {
 
       <main className="min-h-screen w-full bg-[#020a06] py-6 px-3">
         <div className="w-full max-w-[600px] mx-auto">
-          <BookingWidget campaignType="anuncios" maxHeight="none" />
+          <BookingWidget campaignType="anuncios" alturaAuto />
         </div>
       </main>
     </>

@@ -3,33 +3,19 @@ import { buildBookingWidgetUrl, bookingWidgetOrigin } from '../../lib/bookingWid
 import { trackReservaCompletada } from '../../lib/reservaConversion';
 import { getCurrentAttribution } from '../../lib/tracker';
 
-/* iOS Safari dibuja el teclado ENCIMA de la página (no la achica, como
- * Android) y con un input dentro de un iframe de otro dominio no lo trae a la
- * vista. Solo en iOS se acomoda el iframe a mano mientras el teclado está abierto. */
-const esIOS = () =>
-  typeof navigator !== 'undefined' &&
-  (/iP(hone|ad|od)/.test(navigator.userAgent) ||
-    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1));
-
-/* Borde inferior del navbar fijo (si lo hay): el iframe debe quedar debajo. */
-function bordeInferiorNavbarFijo() {
-  let bottom = 0;
-  document.querySelectorAll('header, nav, .header-container').forEach((el) => {
-    const { position } = getComputedStyle(el);
-    if (position !== 'fixed' && position !== 'sticky') return;
-    const r = el.getBoundingClientRect();
-    if (r.height > 0 && r.top <= 1 && r.bottom > bottom) bottom = r.bottom;
-  });
-  return bottom;
-}
+const ALTURA_FIJA = 650;
 
 /**
  * Widget de reservas de GrowthSuite incrustado en el sitio.
  *
  * - La URL se arma al montar (client-side) con lead_uid + UTMs para atribuir
  *   la reserva, igual que TrackedCalendly.
- * - El widget avisa su altura (`widget_height`) y el iframe se ajusta: sin
- *   scroll dentro de otro scroll en el celular.
+ * - El iframe mide 650px fijos (igual que el InlineWidget de Calendly) y el
+ *   widget hace scroll por dentro. Así el teclado de iPhone funciona: con un
+ *   iframe de alto variable o que se encogía con el teclado, Safari dejaba el
+ *   input tapado o la pantalla no paraba de moverse.
+ * - Con `alturaAuto` (/reserva-widget) el widget es toda la página: el
+ *   iframe adopta la altura que avisa el widget (`widget_height`).
  * - Al completar la reserva (`reservation_completed`) dispara las mismas
  *   conversiones que Calendly, una sola vez por código de reserva.
  */
@@ -38,32 +24,19 @@ export default function BookingWidget({
   source,
   campaignType = 'general',
   minHeight = 640,
-  /* 'none' en /reserva-widget: ahí el widget es toda la página y se muestra
+  /* true en /reserva-widget: ahí el widget es toda la página y se muestra
    * completo, sin scroll dentro de otro scroll. */
-  maxHeight = 'min(720px, 80vh)',
+  alturaAuto = false,
   onComplete,
 }) {
   const [src, setSrc] = useState(null);
   const [height, setHeight] = useState(minHeight);
-  /* PRUEBA TEMPORAL del teclado en iPhone: ?kb=fixed | full | hack.
-   * Sin el parámetro no cambia nada. Se quita al elegir la variante ganadora.
-   *  - fixed: iframe de 650px fijos, como el InlineWidget de Calendly.
-   *  - full:  iframe a la altura completa del widget, sin tope ni scroll interno.
-   *  - hack:  encoge el iframe con el teclado abierto (solo iOS). */
-  const [modoKb, setModoKb] = useState(null);
-  // Alto disponible sobre el teclado (solo modo hack, solo con el teclado abierto).
-  const [tecladoMaxHeight, setTecladoMaxHeight] = useState(null);
   const iframeRef = useRef(null);
   const convertidas = useRef(new Set());
 
   useEffect(() => {
     setSrc(buildBookingWidgetUrl({ type }));
   }, [type]);
-
-  useEffect(() => {
-    const kb = new URLSearchParams(window.location.search).get('kb');
-    setModoKb(['fixed', 'full', 'hack'].includes(kb) ? kb : null);
-  }, []);
 
   useEffect(() => {
     const origin = bookingWidgetOrigin();
@@ -95,85 +68,23 @@ export default function BookingWidget({
     return () => window.removeEventListener('message', onMessage);
   }, [source, campaignType, minHeight, onComplete]);
 
-  /* Teclado de iOS abierto con el foco dentro del iframe: el iframe se limita
-   * al espacio visible y se sube justo debajo del navbar; así el scroll interno
-   * de Safari trabaja sobre una zona que sí se ve completa.
-   *
-   * Se acomoda UNA sola vez por apertura del teclado. Reaccionar a cada resize
-   * hacía un ciclo: scrollBy → Safari colapsa/expande su barra → cambia
-   * visualViewport → otro scrollBy… y la pantalla no paraba de moverse. */
-  useEffect(() => {
-    const vv = typeof window !== 'undefined' ? window.visualViewport : null;
-    if (modoKb !== 'hack' || !vv || !esIOS()) return undefined;
-
-    /* iOS 26 dibuja sobre el teclado una barra flotante (autorrelleno:
-     * llave / tarjeta / ubicación) que tapa unos ~70px del contenido. */
-    const BARRA_FLOTANTE = 72;
-    let timer;
-    let acomodado = false;
-
-    const acomodar = () => {
-      const iframe = iframeRef.current;
-      const tecladoAbierto =
-        iframe && document.activeElement === iframe && window.innerHeight - vv.height > 120;
-      if (!tecladoAbierto) {
-        if (acomodado) {
-          acomodado = false;
-          setTecladoMaxHeight(null);
-        }
-        return;
-      }
-      if (acomodado) return;
-      acomodado = true;
-      const navbar = Math.max(0, bordeInferiorNavbarFijo() - vv.offsetTop);
-      setTecladoMaxHeight(Math.max(240, Math.floor(vv.height - navbar - 8 - BARRA_FLOTANTE)));
-      const top = iframe.getBoundingClientRect().top;
-      window.scrollBy({ top: top - vv.offsetTop - navbar, behavior: 'auto' });
-    };
-    const onViewport = () => {
-      clearTimeout(timer);
-      timer = setTimeout(acomodar, 200);
-    };
-
-    vv.addEventListener('resize', onViewport);
-    return () => {
-      clearTimeout(timer);
-      vv.removeEventListener('resize', onViewport);
-    };
-  }, [modoKb]);
-
   if (!src) {
     return <div style={{ minHeight }} aria-busy="true" />;
   }
 
-  const alto = modoKb === 'fixed' ? 650 : height;
-  const altoMaximo =
-    modoKb === 'fixed' || modoKb === 'full' ? 'none' : tecladoMaxHeight ?? maxHeight;
-
   return (
-    <>
-      {modoKb && (
-        <p style={{ font: '12px monospace', color: '#3eeb91', margin: '0 0 4px' }}>
-          prueba teclado: kb={modoKb}
-        </p>
-      )}
-      <iframe
-        ref={iframeRef}
-        src={src}
-        title="Reserva tu mesa en La Llorona Cantina"
-        /* Tope de altura: en columnas angostas el widget mide 1,700px+ y había
-         * que deslizar una tira blanca. Arriba del tope, el scroll es dentro del
-         * iframe (el widget no bloquea su overflow). */
-        style={{
-          width: '100%',
-          height: alto,
-          maxHeight: altoMaximo,
-          border: 0,
-          display: 'block',
-          background: 'transparent',
-        }}
-        allow="clipboard-write"
-      />
-    </>
+    <iframe
+      ref={iframeRef}
+      src={src}
+      title="Reserva tu mesa en La Llorona Cantina"
+      style={{
+        width: '100%',
+        height: alturaAuto ? height : ALTURA_FIJA,
+        border: 0,
+        display: 'block',
+        background: 'transparent',
+      }}
+      allow="clipboard-write"
+    />
   );
 }
