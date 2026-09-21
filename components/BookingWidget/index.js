@@ -45,7 +45,13 @@ export default function BookingWidget({
 }) {
   const [src, setSrc] = useState(null);
   const [height, setHeight] = useState(minHeight);
-  // Alto disponible sobre el teclado (solo iOS, solo con el teclado abierto).
+  /* PRUEBA TEMPORAL del teclado en iPhone: ?kb=fixed | full | hack.
+   * Sin el parámetro no cambia nada. Se quita al elegir la variante ganadora.
+   *  - fixed: iframe de 650px fijos, como el InlineWidget de Calendly.
+   *  - full:  iframe a la altura completa del widget, sin tope ni scroll interno.
+   *  - hack:  encoge el iframe con el teclado abierto (solo iOS). */
+  const [modoKb, setModoKb] = useState(null);
+  // Alto disponible sobre el teclado (solo modo hack, solo con el teclado abierto).
   const [tecladoMaxHeight, setTecladoMaxHeight] = useState(null);
   const iframeRef = useRef(null);
   const convertidas = useRef(new Set());
@@ -53,6 +59,11 @@ export default function BookingWidget({
   useEffect(() => {
     setSrc(buildBookingWidgetUrl({ type }));
   }, [type]);
+
+  useEffect(() => {
+    const kb = new URLSearchParams(window.location.search).get('kb');
+    setModoKb(['fixed', 'full', 'hack'].includes(kb) ? kb : null);
+  }, []);
 
   useEffect(() => {
     const origin = bookingWidgetOrigin();
@@ -93,7 +104,7 @@ export default function BookingWidget({
    * visualViewport → otro scrollBy… y la pantalla no paraba de moverse. */
   useEffect(() => {
     const vv = typeof window !== 'undefined' ? window.visualViewport : null;
-    if (!vv || !esIOS()) return undefined;
+    if (modoKb !== 'hack' || !vv || !esIOS()) return undefined;
 
     /* iOS 26 dibuja sobre el teclado una barra flotante (autorrelleno:
      * llave / tarjeta / ubicación) que tapa unos ~70px del contenido. */
@@ -129,29 +140,40 @@ export default function BookingWidget({
       clearTimeout(timer);
       vv.removeEventListener('resize', onViewport);
     };
-  }, []);
+  }, [modoKb]);
 
   if (!src) {
     return <div style={{ minHeight }} aria-busy="true" />;
   }
 
+  const alto = modoKb === 'fixed' ? 650 : height;
+  const altoMaximo =
+    modoKb === 'fixed' || modoKb === 'full' ? 'none' : tecladoMaxHeight ?? maxHeight;
+
   return (
-    <iframe
-      ref={iframeRef}
-      src={src}
-      title="Reserva tu mesa en La Llorona Cantina"
-      /* Tope de altura: en columnas angostas el widget mide 1,700px+ y había
-       * que deslizar una tira blanca. Arriba del tope, el scroll es dentro del
-       * iframe (el widget no bloquea su overflow). */
-      style={{
-        width: '100%',
-        height,
-        maxHeight: tecladoMaxHeight ?? maxHeight,
-        border: 0,
-        display: 'block',
-        background: 'transparent',
-      }}
-      allow="clipboard-write"
-    />
+    <>
+      {modoKb && (
+        <p style={{ font: '12px monospace', color: '#3eeb91', margin: '0 0 4px' }}>
+          prueba teclado: kb={modoKb}
+        </p>
+      )}
+      <iframe
+        ref={iframeRef}
+        src={src}
+        title="Reserva tu mesa en La Llorona Cantina"
+        /* Tope de altura: en columnas angostas el widget mide 1,700px+ y había
+         * que deslizar una tira blanca. Arriba del tope, el scroll es dentro del
+         * iframe (el widget no bloquea su overflow). */
+        style={{
+          width: '100%',
+          height: alto,
+          maxHeight: altoMaximo,
+          border: 0,
+          display: 'block',
+          background: 'transparent',
+        }}
+        allow="clipboard-write"
+      />
+    </>
   );
 }
