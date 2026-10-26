@@ -12,21 +12,3 @@ export const menuFood2 =
 
 export const menuFood3 =
   'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/menuIngles/food3.jpg';
-
-export const mixoIngles =
-  '/images/menuIngles/MixologyEnglish.jpg';
-
-export const mixoIngles2 =
-  'https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/menuIngles/MixologyEnglish2.jpg';
-
-export const CervezaArteIngles =
-  '/images/menuIngles/draftbeer.jpg';
-
-export const sodaEspaIngles =
-  '/images/menuIngles/SpiritsBeersSodas.jpg';
-
-export const mezcaEspaIngles =
-  '/images/menuIngles/mezcalIngles.jpg';
-
-export const destiladosEspaIngles =
-  '/images/menuIngles/distillates.jpg';

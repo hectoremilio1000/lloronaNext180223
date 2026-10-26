@@ -53,11 +53,9 @@ function MenuLlorona() {
         </div>
       </div>
       <div
-        className="mt-2"
+        className="mt-2 mx-auto w-full md:w-[90vw]"
         style={{
           padding: '2rem 0',
-          width: '90vw',
-          margin: '0 auto',
         }}
       >
         <div className="max-w-[1184px] mx-auto w-full px-[20px]">
@@ -78,7 +76,7 @@ function MenuLlorona() {
         </div>
 
         {spanish && (
-          <div className="max-w-[1184px] mx-auto w-full px-[20px] py-[40px]">
+          <div className="max-w-[1184px] mx-auto w-full px-2 md:px-[20px] py-[40px]">
             <Alimentos />
             {/* <ButtonComponent
               titulo="BEBIDAS"
@@ -88,7 +86,7 @@ function MenuLlorona() {
         )}
 
         {english && (
-          <div className="max-w-[1184px] mx-auto w-full px-[20px] py-[40px]">
+          <div className="max-w-[1184px] mx-auto w-full px-2 md:px-[20px] py-[40px]">
             <Food />
           </div>
         )}

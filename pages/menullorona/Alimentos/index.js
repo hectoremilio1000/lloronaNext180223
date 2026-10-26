@@ -1,30 +1,16 @@
 import React from 'react';
-import {
-  menuEspa1,
-  menuEspa2,
-  mixoEspa,
-  mezcaEspa,
-  destiladosEspa,
-  sodaEspa,
-} from '../../../data/menu/menuEspa/menuEspa';
+import { SECCIONES_MENU } from '../../../data/menu/menuSecciones';
 import MenuSections from '../../../components/MenuSections';
 
-const SECTIONS = [
-  {
-    key: 'alimentos',
-    alt: 'Menú de comida La Llorona',
-    fallback: [menuEspa1, menuEspa2],
-  },
-  {
-    key: 'bebidas',
-    alt: 'Menú de bebidas La Llorona',
-    fallback: [mixoEspa, mezcaEspa, destiladosEspa, sodaEspa],
-  },
-];
+const { alimentos, bebidas } = SECCIONES_MENU.es;
 
 function Alimentos() {
   return (
-    <MenuSections locale="es" sections={SECTIONS} loadingText="Cargando menú…" />
+    <MenuSections
+      locale="es"
+      sections={[alimentos, bebidas]}
+      loadingText="Cargando menú…"
+    />
   );
 }
 

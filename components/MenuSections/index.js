@@ -53,7 +53,7 @@ function MenuSection({ locale, section, loadingText }) {
       data-menu-source={useFallback ? 'local' : 'api'}
     >
       {images.map((p) => (
-        <div key={p.id} className="w-full px-4">
+        <div key={p.id} className="w-full px-0 md:px-4">
           <img
             src={p.url}
             alt={p.altText || section.alt}
