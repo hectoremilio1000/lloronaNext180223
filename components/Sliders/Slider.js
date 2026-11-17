@@ -62,6 +62,7 @@ const Slider = () => {
               <SwiperSlide>
                 <div className="w-full">
                   <img
+                    loading="lazy"
                     className="rounded-lg border-2 border-white w-full h-[300px] object-center object-cover"
                     src="/img/ambiente/mesa-tacos-domino.webp"
                     alt="Tacos de la Llorona Cantina"
@@ -77,6 +78,7 @@ const Slider = () => {
               <SwiperSlide>
                 <div className="w-full">
                   <img
+                    loading="lazy"
                     className="rounded-lg border-2 border-white w-full h-[300px] object-center object-cover"
                     src="/img/carne/arrachera-coctel.webp"
                     alt="Aguachile de ribeye Cantina La Llorona"
@@ -92,10 +94,10 @@ const Slider = () => {
               <SwiperSlide>
                 <div className="w-full">
                   <img
+                    loading="lazy"
                     className="rounded-lg border-2 border-white w-full h-[300px] object-bottom object-cover"
-                    src="/img/platos/aguachile-aguacate-closeup.webp
-                    "
-                    alt=""
+                    src="/img/platos/aguachile-aguacate-closeup.webp"
+                    alt="Tostada de aguachile de camarón con abanico de aguacate"
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
                     Tostadas deliciosas
@@ -108,9 +110,10 @@ const Slider = () => {
               <SwiperSlide>
                 <div className="w-full">
                   <img
+                    loading="lazy"
                     className="rounded-lg border-2 border-white w-full h-[300px] object-bottom object-cover"
                     src="/img/carne/barbacoa-picana.webp"
-                    alt=""
+                    alt="Taco de barbacoa de picaña con cebolla morada encurtida"
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
                     Barbacoa de picaña
@@ -121,9 +124,10 @@ const Slider = () => {
               <SwiperSlide>
                 <div className="w-full">
                   <img
+                    loading="lazy"
                     className="rounded-lg border-2 border-white w-full h-[300px] object-left object-cover"
                     src="/img/salsa/son-cubano.webp"
-                    alt=""
+                    alt="Músicos de son cubano tocando en vivo en La Llorona"
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
                     Son cubano
@@ -134,9 +138,10 @@ const Slider = () => {
               <SwiperSlide>
                 <div className="w-full">
                   <img
+                    loading="lazy"
                     className="rounded-lg border-2 border-white w-full h-[300px] object-top object-cover"
                     src="/img/ambiente/terraza-noche.webp"
-                    alt=""
+                    alt="Terraza de La Llorona de noche, con mesas llenas y luces colgantes"
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
                     Festeja con nosotros
@@ -147,9 +152,10 @@ const Slider = () => {
               <SwiperSlide>
                 <div className="w-full">
                   <img
+                    loading="lazy"
                     className="rounded-lg border-2 border-white w-full h-[300px] object-center object-cover"
                     src="/img/reserva/chica-coctel-calavera.webp"
-                    alt=""
+                    alt="Clienta bebiendo un coctel servido en una copa con forma de calavera"
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
                     Conoce amigos
@@ -212,6 +218,7 @@ const Slider = () => {
               <SwiperSlide>
                 <div className="w-full">
                   <img
+                    loading="lazy"
                     className="rounded-lg border-2 border-white w-full h-[300px] object-center object-cover"
                     src="/img/ambiente/mesa-tacos-domino.webp"
                     alt="Tacos at La Llorona Cantina"
@@ -227,9 +234,10 @@ const Slider = () => {
               <SwiperSlide>
                 <div className="w-full">
                   <img
+                    loading="lazy"
                     className="rounded-lg border-2 border-white w-full h-[300px] object-top object-cover"
                     src="/img/platos/aguachile-aguacate-closeup.webp"
-                    alt=""
+                    alt="Shrimp aguachile tostada topped with a fan of avocado"
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
                     Tostada Cantinera
@@ -240,9 +248,10 @@ const Slider = () => {
               <SwiperSlide>
                 <div className="w-full">
                   <img
+                    loading="lazy"
                     className="rounded-lg border-2 border-white w-full h-[300px] object-top object-cover"
                     src="/img/mixologia/amigas-martini-rosa.webp"
-                    alt=""
+                    alt="Two friends toasting with pink martinis on the terrace"
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
                     Tacos with heirloom corn
@@ -255,9 +264,10 @@ const Slider = () => {
               <SwiperSlide>
                 <div className="w-full">
                   <img
+                    loading="lazy"
                     className="rounded-lg border-2 border-white w-full h-[300px] object-left object-cover"
                     src="/img/salsa/son-cubano.webp"
-                    alt=""
+                    alt="Cuban son musicians playing live at La Llorona"
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
                     Live Cuban
@@ -268,9 +278,10 @@ const Slider = () => {
               <SwiperSlide>
                 <div className="w-full">
                   <img
+                    loading="lazy"
                     className="rounded-lg border-2 border-white w-full h-[300px] object-top object-cover"
                     src="/img/ambiente/interior-techo-raices.webp"
-                    alt=""
+                    alt="Dining room under a ceiling of carved tree roots, with guests at their tables"
                   />
                   <h1 className="text-2xl md:text-5xl text-white mt-3">
                     Unique Mexican Cantina

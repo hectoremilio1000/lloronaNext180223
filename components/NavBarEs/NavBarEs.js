@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import logo from '../../data/imagenes/logo_alta_sin_nombre.png';
+import logo from '../../data/imagenes/logo-llorona-300.png';
 
 // css navbar
 
@@ -81,14 +81,14 @@ function NavBar({ onLanguageChange }) {
               onClick={() => handleLanguageSwitch('ingles')}
               className="hover:text-emerald-500 toggle-icon cursor-pointer mr-2"
             >
-              <img src={usFlag} width={20} height={20} />
+              <img src={usFlag} width={20} height={20} alt="English" />
             </div>
 
             <div
               onClick={() => handleLanguageSwitch('espa')}
               className="hover:text-emerald-500 cursor-pointer toggle-icon"
             >
-              <img src={mxFlag} width={20} height={20} />
+              <img src={mxFlag} width={20} height={20} alt="Español" />
             </div>
           </div>
         </div>
@@ -221,14 +221,14 @@ function NavBar({ onLanguageChange }) {
             onClick={onIdiomaIngles}
             className="hover:text-emerald-500 cursor-pointer"
           >
-            <img src={usFlag} width={20} height={20} />
+            <img src={usFlag} width={20} height={20} alt="English" />
           </div>
 
           <div
             onClick={onIdiomaEspa}
             className="hover:text-emerald-500 cursor-pointer"
           >
-            <img src={mxFlag} width={20} height={20} />
+            <img src={mxFlag} width={20} height={20} alt="Español" />
           </div>
         </div>
       </div>
