@@ -18,7 +18,10 @@ const MySwiper = () => {
         disableOnInteraction: false,
       }}
       scrollbar={{ draggable: true }}
-      loop={true}
+      // rewind en vez de loop: loop reinserta las diapositivas al arrancar el
+      // JS y Chrome cuenta la foto principal como pintada de nuevo (LCP de ~9 s
+      // en celular). rewind regresa a la primera sin tocar el DOM.
+      rewind={true}
     >
       <SwiperSlide>
         <div
@@ -42,7 +45,7 @@ const MySwiper = () => {
       <SwiperSlide>
         <div
           style={{
-            backgroundImage: "url('images/PICANIA1.jpg')",
+            backgroundImage: 'url(/img/carne/picania-hero.webp)',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center center',
