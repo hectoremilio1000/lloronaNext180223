@@ -54,6 +54,7 @@ function QuickInfo() {
               <Link href="/menullorona/Alimentos">
                 <div className="w-full">
                   <img
+                    loading="lazy"
                     className="h-[280px] object-contain w-full rounded"
                     src={image1}
                     alt="cocteles Llorona"
@@ -63,6 +64,7 @@ function QuickInfo() {
               <Link href="/menullorona/Alimentos" className="mt-4 block">
                 <div>
                   <img
+                    loading="lazy"
                     className="h-[220px] object-cover w-full rounded"
                     src={image2}
                     alt="cocteles y tacos"
@@ -74,6 +76,7 @@ function QuickInfo() {
               <Link href="/menullorona/Alimentos" className="mt-12">
                 <div>
                   <img
+                    loading="lazy"
                     className="h-[220px] object-cover w-full rounded"
                     src={image3}
                     alt="tacos y cocteles"
@@ -87,6 +90,7 @@ function QuickInfo() {
               >
                 <div>
                   <img
+                    loading="lazy"
                     className="h-[280px] object-contain w-full rounded filter"
                     src={image4}
                     alt="cocteles Llorona"
@@ -127,6 +131,7 @@ function QuickInfo() {
               <Link href="/menullorona/Alimentos">
                 <div className="w-full">
                   <img
+                    loading="lazy"
                     className="w-full h-[280px]  object-cover rounded"
                     src={image1}
                     alt="Tacos y cocteles"
@@ -136,6 +141,7 @@ function QuickInfo() {
               <Link href="/menullorona/Alimentos" className="mt-4 block">
                 <div>
                   <img
+                    loading="lazy"
                     className="h-[220px] object-cover w-full rounded"
                     src={image5}
                     alt="cocteles y tacos"
@@ -147,6 +153,7 @@ function QuickInfo() {
               <Link href="/menullorona/Alimentos" className="mt-12">
                 <div>
                   <img
+                    loading="lazy"
                     className="h-[220px] object-cover w-full rounded"
                     src={image3}
                     alt="tacos y cocteles"
@@ -160,6 +167,7 @@ function QuickInfo() {
               >
                 <div>
                   <img
+                    loading="lazy"
                     className="h-[280px] object-cover w-full rounded"
                     src={image4}
                     alt="tacos y cocteles"

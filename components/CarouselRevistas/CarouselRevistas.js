@@ -18,6 +18,7 @@ const TestimonialCard = ({ testimonial }) => {
       >
         {/* Contenedor de la imagen ajustado para dispositivos móviles y escritorio */}
         <img
+          loading="lazy"
           className="h-28 w-28 md:h-29 md:w-29 rounded object-scale-down" // Tamaños diferentes para móvil (h-32 w-32) y escritorio (md:h-48 md:w-48)
           src={photo}
           alt="Revistas llorona"
